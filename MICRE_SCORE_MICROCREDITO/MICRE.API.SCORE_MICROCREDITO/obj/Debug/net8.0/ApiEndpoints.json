@@ -1,0 +1,158 @@
+[
+  {
+    "ContainingType": "MICRE.API.SCORE_MICROCREDITO.Controllers.PreScoreMicrocreditoController",
+    "Method": "GetCalculadoraPreScoreMicrocredito",
+    "RelativePath": "api/PreScoreMicrocredito/CalculadoraPreScoreMicrocredito",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.ENTITY.Request.PreCalculadoraRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.COMMON.Model.Response\u00601[[MICRE.ENTITY.Response.CalculadoraResponse, MICRE.ENTITY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.API.SCORE_MICROCREDITO.Controllers.PreScoreMicrocreditoController",
+    "Method": "GetPreScoreGeneradoByIdc",
+    "RelativePath": "api/PreScoreMicrocredito/GetPreScoreGeneradoByIdc",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IDC",
+        "Type": "MICRE.ENTITY.Request.GetPreScoreRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.COMMON.Model.Response\u00601[[System.Collections.Generic.List\u00601[[MICRE.ENTITY.Response.ResultadoPreScoreResponse, MICRE.ENTITY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.API.SCORE_MICROCREDITO.Controllers.ScoreMicrocreditoController",
+    "Method": "GetCalculadoraScoreMicrocredito",
+    "RelativePath": "api/ScoreMicrocredito/CalculadoraScoreMicrocredito",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.ENTITY.Request.CalculadoraRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.COMMON.Model.Response\u00601[[MICRE.ENTITY.Response.CalculadoraResponse, MICRE.ENTITY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.API.SCORE_MICROCREDITO.Controllers.ScoreMicrocreditoController",
+    "Method": "GetCalculadoraScoreMicrocredito",
+    "RelativePath": "api/ScoreMicrocredito/CalculadoraScoreMicrocreditoEvaluacion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.ENTITY.Request.CalculadoraEvaluacionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.COMMON.Model.Response\u00601[[MICRE.ENTITY.Response.CalculadoraResponse, MICRE.ENTITY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.API.SCORE_MICROCREDITO.Controllers.ScoreMicrocreditoController",
+    "Method": "GetCosultaScoreMicrocredito",
+    "RelativePath": "api/ScoreMicrocredito/ConsultaScoreMicrocredito",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.ENTITY.Request.ScoreMicrocreditoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.COMMON.Model.Response\u00601[[MICRE.ENTITY.Response.ScoreMicrocreditoResponse, MICRE.ENTITY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.API.SCORE_MICROCREDITO.Controllers.ScoreMicrocreditoController",
+    "Method": "GetScoreGeneradoByCodSolicitud",
+    "RelativePath": "api/ScoreMicrocredito/GetScoreGeneradoByCodSolicitud",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.ENTITY.Request.ScoreMicrocreditoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.COMMON.Model.Response\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

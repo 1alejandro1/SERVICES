@@ -1,0 +1,201 @@
+﻿@model MICREDITO.WebSite.Models.HomeModel
+
+@{
+
+}
+
+<div class="container">
+    <div class="row">
+        <h2>BANDEJA</h2>
+    </div>
+    <div class="row">
+        <table id="Bandeja" class="table table-bordered table-hover" style="width:100%">
+            <thead class="table-primary-bcp">
+                <tr>
+                    <th>ID</th>
+                    <th>NRO EVALUACION</th>
+                    <th>CLIENTE</th>
+                    <th>IDC</th>
+                    <th>USUARIO MODIFICACION</th>
+                    <th>FECHA MODIFICACION</th>
+                    <th>USUARIO APROBACION</th>
+                    <th>FECHA APROBACION</th>
+                    <th>ESTADO</th>
+                    <th>USUARIO RECHAZADO</th>
+                    <th>FECHA RECHAZADO</th>
+                    <th hidden>FECHA ULTIMA MODIFICACION</th>
+                    <th>COD MICREDITO</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.bandeja)
+                {
+                    <tr>
+                        <td>@item.codEvaluacion</td>
+                        <td>
+                            @if (string.IsNullOrEmpty(item.usuarioRechazado))
+                            {
+                                @Html.ActionLink(item.nroEvaluacion, "GetEvaluacion", "Evaluacion", new { nroEvaluacion = item.nroEvaluacion }, null)
+                            }
+                            else
+                            {
+                                @item.nroEvaluacion
+                            }
+                        </td>
+                        <td width="100px">@item.cliente</td>
+                        <td>@($"{item.idcCliente}-{item.tipoIdcCliente}")</td>
+                        <td>@item.usuarioModificacion</td>
+                        <td>@item.fechaModificacion.ToString("dd/MM/yyyy HH:mm:ss")</td>
+                        <td>@item.usuarioAprobacion</td>
+                        <td>@item.fechaAprobacion.ToString("dd/MM/yyyy HH:mm:ss")</td>
+                        @if (string.IsNullOrEmpty(item.usuarioAprobacion) && string.IsNullOrEmpty(item.usuarioRechazado))
+                        {
+                            <td><h6><span class="badge badge-primary-bcp">PENDIENTE</span></h6></td>
+                        }
+                        @if (!string.IsNullOrEmpty(item.usuarioAprobacion))
+                        {
+                            <td><h6><span class="badge badge-success-bcp">APROBADO</span></h6></td>
+                        }
+                        @if (!string.IsNullOrEmpty(item.usuarioRechazado))
+                        {
+                            <td><h6><span class="badge badge-danger-bcp">RECHAZADO</span></h6></td>
+                        }
+                        <td>@item.usuarioRechazado</td>
+                        <td>@item.fechaRechazado.ToString("dd/MM/yyyy HH:mm:ss")</td>
+                        <td hidden>@item.fechaModificacion</td>
+                        <td>@item.codSolicitud</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div id='slider' class="slider">
+    @using (Html.BeginForm("Search", "Home", FormMethod.Post, new { id = "FormBusqueda", autocomplete = "off" }))
+    {
+        <div class="container">
+            <div class="row">
+                <h2 style="margin-left: 10px">BUSCADOR</h2>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-12">
+                    <label>NRO EVALUACION</label>
+                    @Html.TextBoxFor(x => x.busqueda.nroEvaluacion, new { @class = "form-control", data_val = true })
+                    @Html.ValidationMessageFor(x => x.busqueda.nroEvaluacion, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-12">
+                    <label>CLIENTE</label>
+                    @Html.TextBoxFor(x => x.busqueda.cliente, new { @class = "form-control", data_val = true })
+                    @Html.ValidationMessageFor(x => x.busqueda.cliente, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-12">
+                    <label>NRO IDC</label>
+                    @Html.TextBoxFor(x => x.busqueda.nroIDC, new { @class = "form-control", data_val = true })
+                    @Html.ValidationMessageFor(x => x.busqueda.nroIDC, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <button class="btn btn-primary" type="submit">BUSCAR</button>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+
+            $('#Bandeja').DataTable({
+                paging: false,
+                searching: false,
+                info: false,
+                responsive: true,
+                columnDefs: [{ type: 'date', 'targets': [11] }],
+                order: [[11, "desc"]]
+            });
+
+            RulesNroEvaluacion();
+            RulesNombre();
+            RulesIDC();
+
+            $('input[data-val=True]').on('blur', function () {
+                var value = $(this).valid();
+            });
+
+            $.validator.addMethod("alphanumeric", function (value, element) {
+                return this.optional(element) || /^[\w ]+$/i.test(value);
+            }, "Letters, numbers only please");
+            jQuery.validator.addMethod("alphabet", function (value, element) {
+                return this.optional(element) || /^[A-Z," "]+$/i.test(value);
+            }, "Letters and spaces only please");
+        })
+
+        var validator = $("#FormBusqueda").validate();
+
+        $("#slider").slideReveal({
+            trigger: $("#trigger"),
+            push: false,
+            overlay: true,
+            width: 350,
+            autoEscape: true
+        });
+
+        function RulesNroEvaluacion() {
+            $('input[name="busqueda.nroEvaluacion"]').rules("remove");
+            $("#busqueda_nroEvaluacion").removeAttr("disabled", "");
+            $("#busqueda_nroEvaluacion").rules("add", "required");
+            $('input[name="busqueda.nroEvaluacion"]').rules('add', {
+                required: false,
+                minlength: 18,
+                maxlength: 18,
+                alphanumeric: true,
+                messages: {
+                    required: jQuery.validator.format("Campo requerido."),
+                    minlength: jQuery.validator.format("El tamaño maximo es de {0} caracteres"),
+                    maxlength: jQuery.validator.format("El tamaño maximo es de {0} caracteres"),
+                    alphanumeric: jQuery.validator.format("Solo se permiten caracteres alfanumericos.")
+                }
+            });
+        }
+
+
+        function RulesNombre() {
+            $('input[name="busqueda.cliente"]').rules("remove");
+            $("#busqueda_cliente").removeAttr("disabled", "");
+            $("#busqueda_cliente").rules("add", "required");
+            $('input[name="busqueda.cliente"]').rules('add', {
+                required: false,
+                maxlength: 50,
+                alphabet: true,
+                messages: {
+                    required: jQuery.validator.format("Campo requerido."),
+                    maxlength: jQuery.validator.format("El tamaño maximo es de {0} caracteres"),
+                    alphabet: jQuery.validator.format("Solo se permiten caracteres del A a la Z.")
+                }
+            });
+        }
+
+        function RulesIDC() {
+            $('input[name="busqueda.nroIDC"]').rules("remove");
+            $("#busqueda_nroIDC").removeAttr("disabled", "");
+            $("#busqueda_nroIDC").rules("add", "required");
+            $('input[name="busqueda.nroIDC"]').rules('add', {
+                required: false,
+                alphanumeric: true,
+                messages: {
+                    required: jQuery.validator.format("Campo requerido."),
+                    alphanumeric: jQuery.validator.format("Solo se permiten caracteres alfanumericos.")
+                }
+            });
+        }
+
+    </script>
+}

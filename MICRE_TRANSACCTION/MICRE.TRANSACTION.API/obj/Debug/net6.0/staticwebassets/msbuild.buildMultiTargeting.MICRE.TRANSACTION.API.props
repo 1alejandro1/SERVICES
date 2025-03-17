@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MICRE.TRANSACTION.API.props" />
+</Project>

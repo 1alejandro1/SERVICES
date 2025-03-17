@@ -1,0 +1,67 @@
+﻿@using BCP.CROSS.MODELS.Reportes
+@using Newtonsoft.Json
+@using Sarc.WebApp.Components.Reportes
+@using Sarc.WebApp.Models.Reportes
+@using BCP.CROSS.MODELS
+@model ReportesFormViewModel
+@using Sarc.WebApp.Components
+@using System.Data
+@{
+    ViewData["Title"] = "Reporte capacidad instalada por especialidad";
+    bool responseExist = false;
+    Meta meta = new Meta();
+    List<CapacidadEspecialidadModel> lst = new();
+    var data = "[{}]";
+    var dataJson = Json.Serialize(data);
+    var excelTitle = "Reporte_CE_" + DateTime.Now.ToString("yyyyMMdd") + ".xlsx";
+    if (ViewBag.response != null)
+    {
+        meta = ViewBag.response.Meta;
+        responseExist = true;
+        lst = ViewBag.response.Data;
+    }
+}
+<div class="container">
+    <div class="card bg-dark">
+        <div class="card-body">
+            <form asp-action="CapacidadEspecialidad" asp-controller="Reportes" method="post" class="row">
+                <div class="col-12 col-md-4 my-2">
+                    <label for="FechaIni" class="form-label">Fecha de inicio</label>
+                    <input type="date" class="form-control" asp-for="FechaIni" id="FechaIni" placeholder="name@example.com">
+                </div>
+                <div class="col-12 col-md-4  my-2">
+                    <label for="FechaFin" class="form-label">Fecha Final</label>
+                    <input type="date" class="form-control" asp-for="FechaFin" id="FechaFin" placeholder="name@example.com">
+                </div>
+                <div class="col-12 mt-2">
+                    <button type="submit" class="btn btn-primary mb-3">Generar Reporte</button>
+                </div>
+            </form>
+            @if (responseExist)
+            {
+                @if (ViewBag.response.Data != null)
+                {
+                    dataJson = Json.Serialize(lst.ToArray());
+                    <component type="typeof(CapacidadEspecialidadTableComponent)" render-mode="ServerPrerendered" param-Data='ViewBag.response.Data' />
+                    <button type="button" id="downloadexcel" class="btn btn-primary">Descargar Excel</button>
+
+                }
+                else
+                {
+                    <div class="alert alert-warning" role="alert">
+                        @meta.Msj
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+@section scripts{
+<script type="text/javascript">
+    var data=@dataJson;
+    var title="@excelTitle";
+        $("#downloadexcel").click(function(){
+                GenerarExcel(data,title);
+        });
+</script>
+}

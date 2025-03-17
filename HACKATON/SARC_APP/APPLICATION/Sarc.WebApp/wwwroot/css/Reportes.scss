@@ -1,0 +1,13 @@
+﻿.table {
+    color: white !important;
+    vertical-align: middle;
+}
+.table-tomato {
+    background-color: tomato !important;
+    @extend .table
+}
+
+.table-midnightblue {
+    background-color: midnightblue !important;
+    @extend .table
+}

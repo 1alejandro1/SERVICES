@@ -1,0 +1,1389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BD_MICREDITOModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <Function Name="INDICETRE_Add" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="INDICE_CH" Type="char" Mode="In" />
+    <Parameter Name="INDICADORDESACTIVADA_CH" Type="char" Mode="In" />
+    <Parameter Name="SPREADTREE_DC" Type="decimal" Mode="In" />
+    <Parameter Name="TASA_DC" Type="decimal" Mode="In" />
+  </Function>
+  <Function Name="INDICETRE_Delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="INDICE_CH" Type="char" Mode="In" />
+  </Function>
+  <Function Name="INDICETRE_List" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="INDICETRE_Update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="INDICE_CH" Type="char" Mode="In" />
+    <Parameter Name="INDICADORDESACTIVADA_CH" Type="char" Mode="In" />
+    <Parameter Name="SPREADTREE_DC" Type="decimal" Mode="In" />
+    <Parameter Name="TASA_DC" Type="decimal" Mode="In" />
+  </Function>
+  <Function Name="SP_SEL_CARGO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="SP_SEL_LOCALIDAD" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="TasaSolicitud_G" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="TipoSolicitud" Type="char" Mode="In" />
+    <Parameter Name="Producto" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="TasaSolicitud_U" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="Tipo_solicitud" Type="char" Mode="In" />
+    <Parameter Name="Producto" Type="varchar" Mode="In" />
+    <Parameter Name="Tiposeguro" Type="varchar" Mode="In" />
+    <Parameter Name="Tasa" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="spMapActualizarTipoIngreso" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodCampanna" Type="varchar" Mode="In" />
+    <Parameter Name="Valor" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="spMapObtenerTipoIngreso" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodCampanna" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_AdmPar_Sel_VPSEGMENTO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodVPSegmento" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_InsEmpleado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="P_USER_ID" Type="varchar" Mode="In" />
+    <Parameter Name="P_FIRST_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="P_MIDL_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="p_LAST_NAME" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_InsEmpleadoEquipo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="P_TEAM_ID" Type="varchar" Mode="In" />
+    <Parameter Name="P_USER_ID" Type="varchar" Mode="In" />
+    <Parameter Name="P_TEAM_LEDR" Type="char" Mode="In" />
+    <Parameter Name="P_ACTIVE_FLAG" Type="numeric" Mode="In" />
+  </Function>
+  <Function Name="usp_InsEquipo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="P_TEAM_ID" Type="varchar" Mode="In" />
+    <Parameter Name="P_TEAM_NAME" Type="varchar" Mode="In" />
+    <Parameter Name="P_PARENT_TEAM_ID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_MAPSelJerarquiaEmpleado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapAsignaEntidadObjInves" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodTipoEntidad" Type="char" Mode="In" />
+    <Parameter Name="CodObjInves" Type="int" Mode="In" />
+    <Parameter Name="CodTipoSolicitudFiltro" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapBNModCalPrestamo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="Valor" Type="decimal" Mode="In" />
+    <Parameter Name="Esquema_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapBNModRatiosFinancieros" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="ValorRatio" Type="decimal" Mode="In" />
+    <Parameter Name="CodGrupoCIIU" Type="int" Mode="In" />
+    <Parameter Name="Esquema_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapBNModRestricciones" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="Valor" Type="decimal" Mode="In" />
+    <Parameter Name="CodOperador" Type="varchar" Mode="In" />
+    <Parameter Name="Esquema_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapBNSelCalPrestamo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapBNSelGruposCIIU" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapBNSelRatiosFinancieros" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodGrupoCIIU" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapBNSelRestricciones" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapCambioMatricula" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="chrMatriculaAnterior" Type="char" Mode="In" />
+    <Parameter Name="chrMatriculaNueva" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapCambioMatriculaUC" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="chrMatriculaAnterior" Type="char" Mode="In" />
+    <Parameter Name="chrMatriculaNueva" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapCheckStoredProc" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="vchStoredProc" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_MapCopAsignacionBonus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodCreditoCampannaOrigen" Type="char" Mode="In" />
+    <Parameter Name="CodCreditoCampannaDetino" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapCopCutoffNegocio" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodCampanaHereda" Type="char" Mode="In" />
+    <Parameter Name="CodCampana" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapCopDatosDocumento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodCreditoCampannaOrigen" Type="char" Mode="In" />
+    <Parameter Name="CodCreditoCampannaDetino" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapCopLineaCredito" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodCreditoCampannaOrigen" Type="char" Mode="In" />
+    <Parameter Name="CodCreditoCampannaDetino" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapCopMontosMaximos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodCreditoCampannaOrigen" Type="char" Mode="In" />
+    <Parameter Name="CodCreditoCampannaDetino" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapCopMontosMinimos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodCreditoCampannaOrigen" Type="char" Mode="In" />
+    <Parameter Name="CodCreditoCampannaDetino" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapCopParamProdHost" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodCreditoCampannaOrigen" Type="char" Mode="In" />
+    <Parameter Name="CodCreditoCampannaDetino" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapCopParamTransmision" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodCampanaHereda" Type="char" Mode="In" />
+    <Parameter Name="CodCampana" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapCopSegmentacion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodCreditoCampannaOrigen" Type="char" Mode="In" />
+    <Parameter Name="CodCreditoCampannaDetino" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapCopSegmentacionCondicion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodCreditoCampannaOrigen" Type="char" Mode="In" />
+    <Parameter Name="CodCreditoCampannaDetino" Type="char" Mode="In" />
+    <Parameter Name="CodProducto" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapCopTasaPonderada" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodCreditoCampannaOrigen" Type="char" Mode="In" />
+    <Parameter Name="CodCreditoCampannaDetino" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapCopTasas" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodCreditoCampannaOrigen" Type="char" Mode="In" />
+    <Parameter Name="CodCreditoCampannaDetino" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapCrearProductoCC" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodProductoHost" Type="varchar" Mode="In" />
+    <Parameter Name="dcNombreProducto" Type="char" Mode="In" />
+    <Parameter Name="pcCodProductoBase" Type="char" Mode="In" />
+    <Parameter Name="pcDiasPago" Type="char" Mode="In" />
+    <Parameter Name="pcMoneda" Type="char" Mode="In" />
+    <Parameter Name="pcMonedaDefault" Type="char" Mode="In" />
+    <Parameter Name="pcValorALS" Type="char" Mode="In" />
+    <Parameter Name="pcValidaCta" Type="char" Mode="In" />
+    <Parameter Name="pcValidaPlazo" Type="char" Mode="In" />
+    <Parameter Name="pcValidaPago" Type="char" Mode="In" />
+    <Parameter Name="pcValidaDesem" Type="char" Mode="In" />
+    <Parameter Name="pnCanal" Type="int" Mode="In" />
+    <Parameter Name="pcDescEnvio" Type="char" Mode="In" />
+    <Parameter Name="pcTipoCuenta" Type="char" Mode="In" />
+    <Parameter Name="pcNroCuenta" Type="char" Mode="In" />
+    <Parameter Name="pcFlagAmpliacion" Type="char" Mode="In" />
+    <Parameter Name="pcCodProductoNew" Type="char" Mode="InOut" />
+  </Function>
+  <Function Name="usp_MapCrearProductoCH" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodProductoHost" Type="varchar" Mode="In" />
+    <Parameter Name="dcNombreProducto" Type="char" Mode="In" />
+    <Parameter Name="pcCodProductoBase" Type="char" Mode="In" />
+    <Parameter Name="pcDiasPago" Type="char" Mode="In" />
+    <Parameter Name="pcMoneda" Type="char" Mode="In" />
+    <Parameter Name="pcMonedaDefault" Type="char" Mode="In" />
+    <Parameter Name="pcValorALS" Type="char" Mode="In" />
+    <Parameter Name="pcValidaCta" Type="char" Mode="In" />
+    <Parameter Name="pcValidaPlazo" Type="char" Mode="In" />
+    <Parameter Name="pcValidaPago" Type="char" Mode="In" />
+    <Parameter Name="pcValidaDesem" Type="char" Mode="In" />
+    <Parameter Name="pnCanal" Type="int" Mode="In" />
+    <Parameter Name="pcDescEnvio" Type="char" Mode="In" />
+    <Parameter Name="pcFlagMiVivienda" Type="char" Mode="In" />
+    <Parameter Name="pcFlagValorConstr" Type="char" Mode="In" />
+    <Parameter Name="pcFlagAmpliacion" Type="char" Mode="In" />
+    <Parameter Name="pcModalidad" Type="varchar" Mode="In" />
+    <Parameter Name="fcCodProducto" Type="char" Mode="InOut" />
+  </Function>
+  <Function Name="usp_MapCrearProductoCN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodProductoHost" Type="varchar" Mode="In" />
+    <Parameter Name="dcNombreProducto" Type="char" Mode="In" />
+    <Parameter Name="pcCodProductoBase" Type="char" Mode="In" />
+    <Parameter Name="pcDiasPago" Type="char" Mode="In" />
+    <Parameter Name="pcMoneda" Type="char" Mode="In" />
+    <Parameter Name="pcMonedaDefault" Type="char" Mode="In" />
+    <Parameter Name="pcValorALS" Type="char" Mode="In" />
+    <Parameter Name="pcValidaCta" Type="char" Mode="In" />
+    <Parameter Name="pcValidaPago" Type="char" Mode="In" />
+    <Parameter Name="pcValidaDesem" Type="char" Mode="In" />
+    <Parameter Name="pnCanal" Type="int" Mode="In" />
+    <Parameter Name="pcDescEnvio" Type="char" Mode="In" />
+    <Parameter Name="fcCodProducto" Type="char" Mode="InOut" />
+  </Function>
+  <Function Name="usp_MapCrearProductoTC" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodProductoHost" Type="char" Mode="In" />
+    <Parameter Name="dcNombreProducto" Type="char" Mode="In" />
+    <Parameter Name="pcCodProductoBase" Type="char" Mode="In" />
+    <Parameter Name="pcDiasPago" Type="char" Mode="In" />
+    <Parameter Name="pcMoneda" Type="char" Mode="In" />
+    <Parameter Name="pcMonedaDefault" Type="char" Mode="In" />
+    <Parameter Name="pcValidaCta" Type="char" Mode="In" />
+    <Parameter Name="pcValidaPago" Type="char" Mode="In" />
+    <Parameter Name="dcEsquema" Type="char" Mode="In" />
+    <Parameter Name="pnCanal" Type="int" Mode="In" />
+    <Parameter Name="pcDescEnvio" Type="char" Mode="In" />
+    <Parameter Name="dcCardholder" Type="char" Mode="In" />
+    <Parameter Name="dcPCTID" Type="char" Mode="In" />
+    <Parameter Name="fcCodProducto" Type="char" Mode="InOut" />
+  </Function>
+  <Function Name="usp_MapCrearProductoTN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodProductoHost" Type="char" Mode="In" />
+    <Parameter Name="dcNombreProducto" Type="char" Mode="In" />
+    <Parameter Name="pcCodProductoBase" Type="char" Mode="In" />
+    <Parameter Name="pcDiasPago" Type="char" Mode="In" />
+    <Parameter Name="pcMoneda" Type="char" Mode="In" />
+    <Parameter Name="pcMonedaDefault" Type="char" Mode="In" />
+    <Parameter Name="dcEsquema" Type="char" Mode="In" />
+    <Parameter Name="pcValidaCta" Type="char" Mode="In" />
+    <Parameter Name="pcValidaPago" Type="char" Mode="In" />
+    <Parameter Name="pnCanal" Type="int" Mode="In" />
+    <Parameter Name="pcDescEnvio" Type="char" Mode="In" />
+    <Parameter Name="dcCardholder" Type="char" Mode="In" />
+    <Parameter Name="dcPCTID" Type="char" Mode="In" />
+    <Parameter Name="fcCodProducto" Type="char" Mode="InOut" />
+  </Function>
+  <Function Name="usp_MapDelAceptacionEspecial" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodUsuarioSAPE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelCondicion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodCondicion" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelCondicionVP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodTipoCredito" Type="char" Mode="In" />
+    <Parameter Name="CodVPSegmento" Type="char" Mode="In" />
+    <Parameter Name="Afiliacion" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelDatosDocumentoCam" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodCampana" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelDatosDocumentoPorCam" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodCampana" Type="char" Mode="In" />
+    <Parameter Name="pcCodDatosDocumento" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelDiasPago" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelObjInves" Type="int" Mode="In" />
+    <Parameter Name="DiasPago" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelDocumento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodDatosDocumento" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelEmpresaPermitida" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="dcRUC" Type="char" Mode="In" />
+    <Parameter Name="dcProceso" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelEntidadFinanciera" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pnCodEntidad" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelEstadoSolicitud" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodEstadoSolicitud" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelEstadoSolicitudCondi" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodEstadoSolicitud" Type="char" Mode="In" />
+    <Parameter Name="pcCodCondicion" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelEstadoSolicitudJusti" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodEstadoSolicitud" Type="char" Mode="In" />
+    <Parameter Name="pcCodJustificacion" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelFraudes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodFraude" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelJustificacion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodJustificacion" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelPI_Estudio" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="dnNumEstudio" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelPI_Notaria" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="dnNumNotaria" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelPI_Tasador" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="dnNumTasador" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelParamHipotecario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="dcCodProducto" Type="char" Mode="In" />
+    <Parameter Name="dcCodMoneda" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelParamLineaCredito" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodLineaCredito" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelParamLineaCreditoDe" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodLineaCredito" Type="int" Mode="In" />
+    <Parameter Name="PuntajeInicial" Type="decimal" Mode="In" />
+    <Parameter Name="PuntajeFinal" Type="decimal" Mode="In" />
+    <Parameter Name="IngresoBrutoInicial" Type="decimal" Mode="In" />
+    <Parameter Name="IngresoBrutoFinal" Type="decimal" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelParamLineaCreditoOP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodLineaCredito" Type="int" Mode="In" />
+    <Parameter Name="CodRelObjInves" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelParamMontoMaximo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelObjInves" Type="int" Mode="In" />
+    <Parameter Name="CodMoneda" Type="char" Mode="In" />
+    <Parameter Name="Plazo" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelParamMontoMinimo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelObjInves" Type="int" Mode="In" />
+    <Parameter Name="CodMoneda" Type="char" Mode="In" />
+    <Parameter Name="Plazo" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelParamPlazo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelObjInves" Type="int" Mode="In" />
+    <Parameter Name="Plazo" Type="int" Mode="In" />
+    <Parameter Name="ProductoHost" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelParamProductoHost" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelObjInves" Type="int" Mode="In" />
+    <Parameter Name="Plazo" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelParamTasa" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelObjInves" Type="int" Mode="In" />
+    <Parameter Name="CodMoneda" Type="char" Mode="In" />
+    <Parameter Name="Opcion" Type="char" Mode="In" />
+    <Parameter Name="PuntajeInicial" Type="decimal" Mode="In" />
+    <Parameter Name="PuntajeFinal" Type="decimal" Mode="In" />
+    <Parameter Name="TipoTasa" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelPerfilInfocorp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="dcPerfil" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelPeriodoGracia" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelObjInves" Type="int" Mode="In" />
+    <Parameter Name="PeriodoGracia" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelRegla" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRegla" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelReglaCondicion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodReglaCondicion" Type="int" Mode="In" />
+    <Parameter Name="CodEntidad" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelReglaCondicionDet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodReglaCondicionDetalle" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelRelObjInvAutonomia" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelObjInvesAutonomia" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelTarjetaEntidad" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pnCodEntidad" Type="int" Mode="In" />
+    <Parameter Name="pnCodTarjeta" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelUsuarioCredito" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="NombreUsuario" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapDelVersionTablasMant" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pnCodTabla" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapEliAsignacionBonus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodCreditoCampanna" Type="char" Mode="In" />
+    <Parameter Name="PuntosBonus" Type="money" Mode="In" />
+  </Function>
+  <Function Name="usp_MapEliCampana" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodCampana" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapEliDecision" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodReglaCondicionDecision" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapEliParametros" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodReglaParametro" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapEliminaProducto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodProducto" Type="char" Mode="In" />
+    <Parameter Name="intResultado" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_MapExisteProducto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="dcDescripcion" Type="char" Mode="In" />
+    <Parameter Name="CodProductoHost" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapFijaMontosMaximos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="chrCodProducto" Type="char" Mode="In" />
+    <Parameter Name="chrCodMoneda" Type="char" Mode="In" />
+    <Parameter Name="mnyMonto" Type="money" Mode="In" />
+  </Function>
+  <Function Name="usp_MapFijaMontosMinimos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="chrCodProducto" Type="char" Mode="In" />
+    <Parameter Name="chrCodMoneda" Type="char" Mode="In" />
+    <Parameter Name="mnyMonto" Type="money" Mode="In" />
+  </Function>
+  <Function Name="usp_MapGetParametros" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="COD_TIPOPARAMETRO" Type="int" Mode="In" />
+    <Parameter Name="COD_PRODUCTO" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapGetTipoParametro" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapIngAsignacionBonus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodCreditoCampanna" Type="char" Mode="In" />
+    <Parameter Name="PuntosBonus" Type="money" Mode="In" />
+    <Parameter Name="Beneficiario" Type="char" Mode="In" />
+    <Parameter Name="Activo_Desactivo" Type="char" Mode="In" />
+    <Parameter Name="Fecha_Inicio" Type="datetime" Mode="In" />
+    <Parameter Name="Fecha_Fin" Type="datetime" Mode="In" />
+    <Parameter Name="Usr_Create" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_MapIngCampana" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="fcCodProducto" Type="char" Mode="In" />
+    <Parameter Name="dcCodCampanaHost" Type="char" Mode="In" />
+    <Parameter Name="dcDescripcion" Type="varchar" Mode="In" />
+    <Parameter Name="dcIndicadorDesactivada" Type="char" Mode="In" />
+    <Parameter Name="dcIndicadorRegistroActivo" Type="char" Mode="In" />
+    <Parameter Name="CodTipoDiferencia" Type="char" Mode="In" />
+    <Parameter Name="ddFechaInicio" Type="datetime" Mode="In" />
+    <Parameter Name="ddFechaFin" Type="datetime" Mode="In" />
+    <Parameter Name="CodCampanaHereda" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapIngCampanaPorDefecto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodCampana" Type="char" Mode="In" />
+    <Parameter Name="TipoSolicitud" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapIngCampanaViaBCP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="fcCodProducto" Type="char" Mode="In" />
+    <Parameter Name="dcDescripcion" Type="varchar" Mode="In" />
+    <Parameter Name="dcIndicadorDesactivada" Type="char" Mode="In" />
+    <Parameter Name="CodCampanaHeredaVia" Type="char" Mode="In" />
+    <Parameter Name="CodCampanaHeredaNor" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapIngComportamiento1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="NombreObjInves" Type="char" Mode="In" />
+    <Parameter Name="CodTipoEntidad" Type="char" Mode="In" />
+    <Parameter Name="CodTipoRelacion" Type="char" Mode="In" />
+    <Parameter Name="CodRelacion" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapIngComportamiento2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodReglaCondicion" Type="int" Mode="In" />
+    <Parameter Name="CodTipoEntidad" Type="char" Mode="In" />
+    <Parameter Name="CodCampo" Type="char" Mode="In" />
+    <Parameter Name="CodOperador" Type="char" Mode="In" />
+    <Parameter Name="Valor" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapIngCond" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRegla" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapIngCondicionDetalle" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodReglaCondicion" Type="int" Mode="In" />
+    <Parameter Name="CodEntidad" Type="char" Mode="In" />
+    <Parameter Name="CodCampo" Type="char" Mode="In" />
+    <Parameter Name="CodOperador" Type="char" Mode="In" />
+    <Parameter Name="Valor" Type="char" Mode="In" />
+    <Parameter Name="CodOperadorLogico" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapIngControlOperativo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="NombreObjInves" Type="char" Mode="In" />
+    <Parameter Name="CodTipoEntidad" Type="char" Mode="In" />
+    <Parameter Name="CodEntidad" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapIngCopiaEntidades" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodTipoEntidad" Type="char" Mode="In" />
+    <Parameter Name="CodEntidad" Type="char" Mode="In" />
+    <Parameter Name="CodEntidadHereda" Type="char" Mode="In" />
+    <Parameter Name="TipoSolicitud" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapIngDecision" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodReglaCondicion" Type="int" Mode="In" />
+    <Parameter Name="CodEntidad" Type="char" Mode="In" />
+    <Parameter Name="CodCampo" Type="char" Mode="In" />
+    <Parameter Name="CodOperador" Type="char" Mode="In" />
+    <Parameter Name="Valor" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapIngParametros" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRegla" Type="int" Mode="In" />
+    <Parameter Name="CodEntidad" Type="char" Mode="In" />
+    <Parameter Name="CodCampo" Type="char" Mode="In" />
+    <Parameter Name="Valor" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapIngRegla" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="Nombre" Type="char" Mode="In" />
+    <Parameter Name="CodTipoRegla" Type="char" Mode="In" />
+    <Parameter Name="CodSubTipoRegla" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapIngReglaCondicionDet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodReglaCondicion" Type="int" Mode="In" />
+    <Parameter Name="CodEntidad" Type="char" Mode="In" />
+    <Parameter Name="CodCampo" Type="char" Mode="In" />
+    <Parameter Name="CodOperador" Type="char" Mode="In" />
+    <Parameter Name="Valor" Type="char" Mode="In" />
+    <Parameter Name="CodOperadorLogico" Type="char" Mode="In" />
+    <Parameter Name="CodTipoDato" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapIngRelObjInvesRegla" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelObjInves" Type="int" Mode="In" />
+    <Parameter Name="CodRegla" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapIngRelacionObjInves" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelacion" Type="char" Mode="In" />
+    <Parameter Name="CodTipoRelacion" Type="char" Mode="In" />
+    <Parameter Name="NombreObjInves" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsAceptacionEspecial" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodUsuarioSAPE" Type="varchar" Mode="In" />
+    <Parameter Name="pcApellidoPaterno" Type="char" Mode="In" />
+    <Parameter Name="pcApellidoMaterno" Type="char" Mode="In" />
+    <Parameter Name="pcNombres" Type="char" Mode="In" />
+    <Parameter Name="pcCargo" Type="char" Mode="In" />
+    <Parameter Name="pcDominio" Type="char" Mode="In" />
+    <Parameter Name="pcActivo" Type="char" Mode="In" />
+    <Parameter Name="nRangoAniosPlazoMenor" Type="int" Mode="In" />
+    <Parameter Name="nRangoAniosPlazoMayor" Type="int" Mode="In" />
+    <Parameter Name="cIndicadorGarantia" Type="char" Mode="In" />
+    <Parameter Name="nMontoLimiteAprobacion" Type="money" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsCondicion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodCondicion" Type="char" Mode="In" />
+    <Parameter Name="dcDescripcion" Type="char" Mode="In" />
+    <Parameter Name="dcIndicadorRegistroActivo" Type="char" Mode="In" />
+    <Parameter Name="dcDescripcionConsulta" Type="varchar" Mode="In" />
+    <Parameter Name="dcIndPermisoParaConsulta" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsCondicionVP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodTipoCredito" Type="char" Mode="In" />
+    <Parameter Name="CodVPSegmento" Type="char" Mode="In" />
+    <Parameter Name="Afiliacion" Type="char" Mode="In" />
+    <Parameter Name="PCT_ID" Type="char" Mode="In" />
+    <Parameter Name="Pricing_Ctrl" Type="char" Mode="In" />
+    <Parameter Name="pmLineaCredito" Type="money" Mode="In" />
+    <Parameter Name="CodCampana" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsDatosDocumentoPorCam" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodCampana" Type="char" Mode="In" />
+    <Parameter Name="pcCodDatosDocumento" Type="char" Mode="In" />
+    <Parameter Name="dcDestinoEnvio" Type="char" Mode="In" />
+    <Parameter Name="dcCodSituacion" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsDiasPago" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelObjInves" Type="int" Mode="In" />
+    <Parameter Name="DiasPago" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsDocumento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodDatosDocumento" Type="char" Mode="In" />
+    <Parameter Name="dcDescripcion" Type="char" Mode="In" />
+    <Parameter Name="dcCodTipoPersona" Type="char" Mode="In" />
+    <Parameter Name="dcCodTipoCampoCorreccion" Type="char" Mode="In" />
+    <Parameter Name="dcCodSituacionCorreccion" Type="char" Mode="In" />
+    <Parameter Name="dcCodTipoDatoDocumento" Type="char" Mode="In" />
+    <Parameter Name="dcMensajeAdicionalInternet" Type="char" Mode="In" />
+    <Parameter Name="dcNuevaDescripcion" Type="char" Mode="In" />
+    <Parameter Name="dcCodigoPadre" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsEmpresaPermitida" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="dcRUC" Type="char" Mode="In" />
+    <Parameter Name="dcProceso" Type="char" Mode="In" />
+    <Parameter Name="dcIndicadorValidez" Type="char" Mode="In" />
+    <Parameter Name="dcIndicadorActivo" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsEntidadFinanciera" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pnCodEntidad" Type="int" Mode="In" />
+    <Parameter Name="dcDescEntidad" Type="char" Mode="In" />
+    <Parameter Name="dcEstado" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsEstadoSolicitud" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodEstadoSolicitud" Type="char" Mode="In" />
+    <Parameter Name="dcDescripcion" Type="char" Mode="In" />
+    <Parameter Name="dcDescripcionConsulta" Type="char" Mode="In" />
+    <Parameter Name="dcCodEstadoConsulta" Type="char" Mode="In" />
+    <Parameter Name="dcAsignadoPorSistema" Type="char" Mode="In" />
+    <Parameter Name="dcIndicadorRegistroActivo" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsEstadoSolicitudCondi" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodEstadoSolicitud" Type="char" Mode="In" />
+    <Parameter Name="pcCodCondicion" Type="char" Mode="In" />
+    <Parameter Name="dcTipoCondicion" Type="char" Mode="In" />
+    <Parameter Name="dcIndicadorRegistroActivo" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsEstadoSolicitudJusti" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodEstadoSolicitud" Type="char" Mode="In" />
+    <Parameter Name="pcCodJustificacion" Type="char" Mode="In" />
+    <Parameter Name="dcIndicadorRegistroActivo" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsFraudes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="TipoIDC" Type="char" Mode="In" />
+    <Parameter Name="NumIDC" Type="char" Mode="In" />
+    <Parameter Name="ApellidoPaterno" Type="char" Mode="In" />
+    <Parameter Name="ApellidoMaterno" Type="char" Mode="In" />
+    <Parameter Name="Nombres" Type="char" Mode="In" />
+    <Parameter Name="Direccion" Type="char" Mode="In" />
+    <Parameter Name="CodLocalidad" Type="char" Mode="In" />
+    <Parameter Name="Telefono" Type="char" Mode="In" />
+    <Parameter Name="Empleador" Type="char" Mode="In" />
+    <Parameter Name="Observacion" Type="char" Mode="In" />
+    <Parameter Name="Activo" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsJustificacion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodJustificacion" Type="char" Mode="In" />
+    <Parameter Name="dcDescripcion" Type="char" Mode="In" />
+    <Parameter Name="dcIndicadorRegistroActivo" Type="char" Mode="In" />
+    <Parameter Name="dcDescripcionConsulta" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsPI_Estudio" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="dnNumEstudio" Type="int" Mode="In" />
+    <Parameter Name="dcDesEstudio" Type="char" Mode="In" />
+    <Parameter Name="dcDirEstudio" Type="char" Mode="In" />
+    <Parameter Name="dcTelEstudio" Type="char" Mode="In" />
+    <Parameter Name="dcDesPersonaContacto" Type="char" Mode="In" />
+    <Parameter Name="dcDirCorreoEstudio" Type="char" Mode="In" />
+    <Parameter Name="chrUsuario" Type="char" Mode="In" />
+    <Parameter Name="dcIndicadorActivo" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsPI_Notaria" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="dnNumNotaria" Type="int" Mode="In" />
+    <Parameter Name="dcDesNotaria" Type="varchar" Mode="In" />
+    <Parameter Name="dcDirNotaria" Type="varchar" Mode="In" />
+    <Parameter Name="dcTelNotaria" Type="varchar" Mode="In" />
+    <Parameter Name="dcDesPersonaContacto" Type="char" Mode="In" />
+    <Parameter Name="dcCodNotariaConsist" Type="char" Mode="In" />
+    <Parameter Name="chrUsuario" Type="char" Mode="In" />
+    <Parameter Name="dcIndicadorActivo" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsPI_Tasador" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="dnNumTasador" Type="int" Mode="In" />
+    <Parameter Name="dcDesTasador" Type="char" Mode="In" />
+    <Parameter Name="dcDirTasador" Type="char" Mode="In" />
+    <Parameter Name="dcTelTasador" Type="char" Mode="In" />
+    <Parameter Name="dcDirCorreoTasador" Type="char" Mode="In" />
+    <Parameter Name="chrUsuario" Type="char" Mode="In" />
+    <Parameter Name="dcIndicadorActivoAS" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsParamHipotecario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="dcCodProducto" Type="char" Mode="In" />
+    <Parameter Name="dcCodMoneda" Type="char" Mode="In" />
+    <Parameter Name="dnNumPlazoMedio" Type="int" Mode="In" />
+    <Parameter Name="dnNumPlazoMaximo" Type="int" Mode="In" />
+    <Parameter Name="dnTasaSeguroVivienda" Type="money" Mode="In" />
+    <Parameter Name="dnTasaEfectiva" Type="money" Mode="In" />
+    <Parameter Name="dmMonPortesMensual" Type="money" Mode="In" />
+    <Parameter Name="dmMonMaximo" Type="money" Mode="In" />
+    <Parameter Name="dmMonMinimo" Type="money" Mode="In" />
+    <Parameter Name="dcCodUsuarioAuditoria" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsParamLineaCredito" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="Descripcion" Type="char" Mode="In" />
+    <Parameter Name="IndRegistroActivo" Type="char" Mode="In" />
+    <Parameter Name="TipoCruce" Type="char" Mode="In" />
+    <Parameter Name="IndicadorMasivo" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsParamLineaCreditoDe" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodLineaCredito" Type="int" Mode="In" />
+    <Parameter Name="PuntajeInicial" Type="decimal" Mode="In" />
+    <Parameter Name="PuntajeFinal" Type="decimal" Mode="In" />
+    <Parameter Name="IngresoBrutoInicial" Type="decimal" Mode="In" />
+    <Parameter Name="IngresoBrutoFinal" Type="decimal" Mode="In" />
+    <Parameter Name="MontoLineaCredito" Type="decimal" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsParamLineaCreditoOP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodLineaCredito" Type="int" Mode="In" />
+    <Parameter Name="CodRelObjInves" Type="int" Mode="In" />
+    <Parameter Name="CodOpcionPago" Type="char" Mode="In" />
+    <Parameter Name="IndicadorMasivo" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsParamMontoMaximo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelObjInves" Type="int" Mode="In" />
+    <Parameter Name="CodMoneda" Type="char" Mode="In" />
+    <Parameter Name="Plazo" Type="int" Mode="In" />
+    <Parameter Name="MontoMaximo" Type="decimal" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsParamMontoMinimo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelObjInves" Type="int" Mode="In" />
+    <Parameter Name="CodMoneda" Type="char" Mode="In" />
+    <Parameter Name="Plazo" Type="int" Mode="In" />
+    <Parameter Name="MontoMinimo" Type="decimal" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsParamPlazo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelObjInves" Type="int" Mode="In" />
+    <Parameter Name="Plazo" Type="int" Mode="In" />
+    <Parameter Name="ProductoHost" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsParamProductoHost" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelObjInves" Type="int" Mode="In" />
+    <Parameter Name="Plazo" Type="int" Mode="In" />
+    <Parameter Name="ProductoHost" Type="char" Mode="In" />
+    <Parameter Name="CodALSProductoHost" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsParamTasa" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelObjInves" Type="int" Mode="In" />
+    <Parameter Name="CodMoneda" Type="char" Mode="In" />
+    <Parameter Name="Opcion" Type="char" Mode="In" />
+    <Parameter Name="IndicadorBancaExclusiva" Type="char" Mode="In" />
+    <Parameter Name="PuntajeInicial" Type="decimal" Mode="In" />
+    <Parameter Name="PuntajeFinal" Type="decimal" Mode="In" />
+    <Parameter Name="Tasa" Type="decimal" Mode="In" />
+    <Parameter Name="IndPorDefecto" Type="char" Mode="In" />
+    <Parameter Name="CodIndiceTasa" Type="char" Mode="In" />
+    <Parameter Name="CodTipoTasa" Type="char" Mode="In" />
+    <Parameter Name="PCT_ID" Type="char" Mode="In" />
+    <Parameter Name="Pricing_Ctrl" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsPerfilInfocorp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="dcPerfil" Type="char" Mode="In" />
+    <Parameter Name="dcDescripcion" Type="char" Mode="In" />
+    <Parameter Name="dcIndicadorActivo" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsPeriodoGracia" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelObjInves" Type="int" Mode="In" />
+    <Parameter Name="PeriodoGracia" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsRelObjInvAutonomia" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="NombreUsuario" Type="char" Mode="In" />
+    <Parameter Name="RangoAniosPlazoMenor" Type="int" Mode="In" />
+    <Parameter Name="RangoAniosPlazoMayor" Type="int" Mode="In" />
+    <Parameter Name="IndicadorGarantia" Type="char" Mode="In" />
+    <Parameter Name="MontoLimiteAprobacion" Type="decimal" Mode="In" />
+    <Parameter Name="NombreUsuarioSuperior" Type="char" Mode="In" />
+    <Parameter Name="Activo" Type="char" Mode="In" />
+    <Parameter Name="TipoSolicitud" Type="char" Mode="In" />
+    <Parameter Name="CodPRoducto" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsRelacionObjInves" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelacion" Type="char" Mode="In" />
+    <Parameter Name="CodTipoRelacion" Type="char" Mode="In" />
+    <Parameter Name="CodObjInves" Type="int" Mode="In" />
+    <Parameter Name="IndNivel" Type="char" Mode="In" />
+    <Parameter Name="IndRegistroActivo" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsTarjetaEntidad" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pnCodEntidad" Type="int" Mode="In" />
+    <Parameter Name="pnCodTarjeta" Type="int" Mode="In" />
+    <Parameter Name="dcDescTarjeta" Type="char" Mode="In" />
+    <Parameter Name="dcCodProducto" Type="char" Mode="In" />
+    <Parameter Name="dcEstado" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsTipoCambio" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="Monto" Type="decimal" Mode="In" />
+    <Parameter Name="Fecha" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsUsuarioCredito" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="NombreUsuario" Type="char" Mode="In" />
+    <Parameter Name="PerfilUsuario" Type="int" Mode="In" />
+    <Parameter Name="CodNivelUsuario" Type="char" Mode="In" />
+    <Parameter Name="CodInfocorpVerif" Type="char" Mode="In" />
+    <Parameter Name="IndicadorRegistroActivo" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapInsVersionTablasMant" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pnCodTabla" Type="int" Mode="InOut" />
+    <Parameter Name="dcNombre" Type="char" Mode="In" />
+    <Parameter Name="ddVersion" Type="datetime" Mode="In" />
+    <Parameter Name="dcStoredProcedure" Type="varchar" Mode="In" />
+    <Parameter Name="dbParametros" Type="varbinary" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModAsignacionBonus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodCreditoCampanna" Type="char" Mode="In" />
+    <Parameter Name="PuntosBonus" Type="money" Mode="In" />
+    <Parameter Name="Beneficiario" Type="char" Mode="In" />
+    <Parameter Name="Activo_Desactivo" Type="char" Mode="In" />
+    <Parameter Name="Fecha_Inicio" Type="datetime" Mode="In" />
+    <Parameter Name="Fecha_Fin" Type="datetime" Mode="In" />
+    <Parameter Name="Usr_Update" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModCEM" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodReglaCondicionDetalle" Type="int" Mode="In" />
+    <Parameter Name="ValorCondicion" Type="char" Mode="In" />
+    <Parameter Name="CodReglaCondicionDecision" Type="int" Mode="In" />
+    <Parameter Name="ValorDecision" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModCampana" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodCampana" Type="char" Mode="In" />
+    <Parameter Name="dcCodCampanaHost" Type="char" Mode="In" />
+    <Parameter Name="dcDescripcion" Type="char" Mode="In" />
+    <Parameter Name="dcIndicadorDesactivada" Type="char" Mode="In" />
+    <Parameter Name="dcIndicadorRegistroActivo" Type="char" Mode="In" />
+    <Parameter Name="CodTipoDiferencia" Type="char" Mode="In" />
+    <Parameter Name="ddFechaInicio" Type="datetime" Mode="In" />
+    <Parameter Name="ddFechaFin" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModCamposPoliticas" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRegla" Type="int" Mode="In" />
+    <Parameter Name="CodEntidad" Type="char" Mode="In" />
+    <Parameter Name="CodTipoRelacion" Type="char" Mode="In" />
+    <Parameter Name="CodCampo" Type="char" Mode="In" />
+    <Parameter Name="Valor" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModCamposPoliticas2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodReglaCondicion" Type="int" Mode="In" />
+    <Parameter Name="CodEntidad" Type="char" Mode="In" />
+    <Parameter Name="CodCampo" Type="char" Mode="In" />
+    <Parameter Name="Valor" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModComportamiento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodReglaCondicionDecision" Type="int" Mode="In" />
+    <Parameter Name="CodOperador" Type="char" Mode="In" />
+    <Parameter Name="Valor" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModCondicion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodCondicion" Type="char" Mode="In" />
+    <Parameter Name="dcDescripcion" Type="char" Mode="In" />
+    <Parameter Name="dcIndicadorRegistroActivo" Type="char" Mode="In" />
+    <Parameter Name="dcDescripcionConsulta" Type="varchar" Mode="In" />
+    <Parameter Name="dcIndPermisoParaConsulta" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModCondicionDetalle" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodReglaCondicionDetalle" Type="int" Mode="In" />
+    <Parameter Name="CodCampo" Type="char" Mode="In" />
+    <Parameter Name="CodOperador" Type="char" Mode="In" />
+    <Parameter Name="Valor" Type="char" Mode="In" />
+    <Parameter Name="CodOperadorLogico" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModCondicionVP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodTipoCredito" Type="char" Mode="In" />
+    <Parameter Name="CodVPSegmento" Type="char" Mode="In" />
+    <Parameter Name="Afiliacion" Type="char" Mode="In" />
+    <Parameter Name="PCT_ID" Type="char" Mode="In" />
+    <Parameter Name="Pricing_Ctrl" Type="char" Mode="In" />
+    <Parameter Name="pmLineaCredito" Type="money" Mode="In" />
+    <Parameter Name="dcHabilitado" Type="char" Mode="In" />
+    <Parameter Name="CodCampana" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModControlOperativo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodReglaParametro" Type="char" Mode="In" />
+    <Parameter Name="Valor" Type="char" Mode="In" />
+    <Parameter Name="CodRelacion" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModDatosDocumentoPorCam" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodCampana" Type="char" Mode="In" />
+    <Parameter Name="pcCodDatosDocumento" Type="char" Mode="In" />
+    <Parameter Name="dcDestinoEnvio" Type="char" Mode="In" />
+    <Parameter Name="dcCodSituacion" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModDecision" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodReglaCondicionDecision" Type="int" Mode="In" />
+    <Parameter Name="CodReglaCondicion" Type="int" Mode="In" />
+    <Parameter Name="CodEntidad" Type="char" Mode="In" />
+    <Parameter Name="CodCampo" Type="char" Mode="In" />
+    <Parameter Name="CodOperador" Type="char" Mode="In" />
+    <Parameter Name="Valor" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModDocumento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodDatosDocumento" Type="char" Mode="In" />
+    <Parameter Name="dcDescripcion" Type="char" Mode="In" />
+    <Parameter Name="dcCodTipoPersona" Type="char" Mode="In" />
+    <Parameter Name="dcCodTipoCampoCorreccion" Type="char" Mode="In" />
+    <Parameter Name="dcCodSituacionCorreccion" Type="char" Mode="In" />
+    <Parameter Name="dcCodTipoDatoDocumento" Type="char" Mode="In" />
+    <Parameter Name="dcMensajeAdicionalInternet" Type="char" Mode="In" />
+    <Parameter Name="dcNuevaDescripcion" Type="char" Mode="In" />
+    <Parameter Name="dcCodigoPadre" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModEmpresaPermitida" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="dcRUC" Type="char" Mode="In" />
+    <Parameter Name="dcRUCOld" Type="char" Mode="In" />
+    <Parameter Name="dcProceso" Type="char" Mode="In" />
+    <Parameter Name="dcIndicadorValidez" Type="char" Mode="In" />
+    <Parameter Name="dcIndicadorActivo" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModEntidadFinanciera" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pnCodEntidad" Type="int" Mode="In" />
+    <Parameter Name="dcDescEntidad" Type="char" Mode="In" />
+    <Parameter Name="dcEstado" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModEstadoCampana" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodCampana" Type="char" Mode="In" />
+    <Parameter Name="dcIndicadorDesactivada" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModEstadoSolicitud" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodEstadoSolicitud" Type="char" Mode="In" />
+    <Parameter Name="dcDescripcion" Type="char" Mode="In" />
+    <Parameter Name="dcAsignadoPorSistema" Type="char" Mode="In" />
+    <Parameter Name="dcDescripcionConsulta" Type="char" Mode="In" />
+    <Parameter Name="dcCodEstadoConsulta" Type="char" Mode="In" />
+    <Parameter Name="dcIndicadorRegistroActivo" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModEstadoSolicitudCondi" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodEstadoSolicitud" Type="char" Mode="In" />
+    <Parameter Name="pcCodCondicion" Type="char" Mode="In" />
+    <Parameter Name="dcTipoCondicion" Type="char" Mode="In" />
+    <Parameter Name="dcIndicadorRegistroActivo" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModEstadoSolicitudJusti" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodEstadoSolicitud" Type="char" Mode="In" />
+    <Parameter Name="pcCodJustificacion" Type="char" Mode="In" />
+    <Parameter Name="dcIndicadorRegistroActivo" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModFraudes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodFraude" Type="int" Mode="In" />
+    <Parameter Name="TipoIDC" Type="char" Mode="In" />
+    <Parameter Name="NumIDC" Type="char" Mode="In" />
+    <Parameter Name="ApellidoPaterno" Type="char" Mode="In" />
+    <Parameter Name="ApellidoMaterno" Type="char" Mode="In" />
+    <Parameter Name="Nombres" Type="char" Mode="In" />
+    <Parameter Name="Direccion" Type="char" Mode="In" />
+    <Parameter Name="CodLocalidad" Type="char" Mode="In" />
+    <Parameter Name="Telefono" Type="char" Mode="In" />
+    <Parameter Name="Empleador" Type="char" Mode="In" />
+    <Parameter Name="Observacion" Type="char" Mode="In" />
+    <Parameter Name="Activo" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModJustificacion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodJustificacion" Type="char" Mode="In" />
+    <Parameter Name="dcDescripcion" Type="char" Mode="In" />
+    <Parameter Name="dcIndicadorRegistroActivo" Type="char" Mode="In" />
+    <Parameter Name="dcDescripcionConsulta" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModPI_Estudio" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="dnNumEstudio" Type="int" Mode="In" />
+    <Parameter Name="dcDesEstudio" Type="char" Mode="In" />
+    <Parameter Name="dcDirEstudio" Type="char" Mode="In" />
+    <Parameter Name="dcTelEstudio" Type="char" Mode="In" />
+    <Parameter Name="dcDesPersonaContacto" Type="char" Mode="In" />
+    <Parameter Name="dcDirCorreoEstudio" Type="char" Mode="In" />
+    <Parameter Name="chrUsuario" Type="char" Mode="In" />
+    <Parameter Name="dcIndicadorActivo" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModPI_Notaria" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="dnNumNotaria" Type="int" Mode="In" />
+    <Parameter Name="dcDesNotaria" Type="varchar" Mode="In" />
+    <Parameter Name="dcDirNotaria" Type="varchar" Mode="In" />
+    <Parameter Name="dcTelNotaria" Type="varchar" Mode="In" />
+    <Parameter Name="dcDesPersonaContacto" Type="char" Mode="In" />
+    <Parameter Name="dcCodNotariaConsist" Type="char" Mode="In" />
+    <Parameter Name="chrUsuario" Type="char" Mode="In" />
+    <Parameter Name="dcIndicadorActivo" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModPI_Tasador" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="dnNumTasador" Type="int" Mode="In" />
+    <Parameter Name="dcDesTasador" Type="char" Mode="In" />
+    <Parameter Name="dcDirTasador" Type="char" Mode="In" />
+    <Parameter Name="dcTelTasador" Type="char" Mode="In" />
+    <Parameter Name="dcDirCorreoTasador" Type="char" Mode="In" />
+    <Parameter Name="chrUsuario" Type="char" Mode="In" />
+    <Parameter Name="dcIndicadorActivoAS" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModParamHipotecario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="dcCodProducto" Type="char" Mode="In" />
+    <Parameter Name="dcCodMoneda" Type="char" Mode="In" />
+    <Parameter Name="dnNumPlazoMedio" Type="int" Mode="In" />
+    <Parameter Name="dnNumPlazoMaximo" Type="int" Mode="In" />
+    <Parameter Name="dnTasaSeguroVivienda" Type="money" Mode="In" />
+    <Parameter Name="dnTasaEfectiva" Type="money" Mode="In" />
+    <Parameter Name="dmMonPortesMensual" Type="money" Mode="In" />
+    <Parameter Name="dmMonMaximo" Type="money" Mode="In" />
+    <Parameter Name="dmMonMinimo" Type="money" Mode="In" />
+    <Parameter Name="dcCodUsuarioAuditoria" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModParamLineaCredito" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodLineaCredito" Type="int" Mode="In" />
+    <Parameter Name="Descripcion" Type="char" Mode="In" />
+    <Parameter Name="IndRegistroActivo" Type="char" Mode="In" />
+    <Parameter Name="TipoCruce" Type="char" Mode="In" />
+    <Parameter Name="IndicadorMasivo" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModParamTransmision" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodCampana" Type="char" Mode="In" />
+    <Parameter Name="dcRequiereTransmision" Type="char" Mode="In" />
+    <Parameter Name="dcRequiereActConsist" Type="char" Mode="In" />
+    <Parameter Name="dcRequiereEnvioCarta" Type="char" Mode="In" />
+    <Parameter Name="dcDiasEnvioCartasDenegacion" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModParametros" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodReglaParametro" Type="int" Mode="In" />
+    <Parameter Name="CodCampo" Type="char" Mode="In" />
+    <Parameter Name="Valor" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModPerfilCliente" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodReglaCondicionDetalle" Type="int" Mode="In" />
+    <Parameter Name="NuevoValor" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModPerfilInfocorp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="dcPerfil" Type="char" Mode="In" />
+    <Parameter Name="dcDescripcion" Type="char" Mode="In" />
+    <Parameter Name="dcIndicadorActivo" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModPortesSeguroPorProducto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodProducto" Type="char" Mode="In" />
+    <Parameter Name="CodMoneda" Type="char" Mode="In" />
+    <Parameter Name="Portes" Type="money" Mode="In" />
+    <Parameter Name="Seguro" Type="money" Mode="In" />
+    <Parameter Name="GastosNotariales" Type="money" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModReglaCondicionDet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodReglaCondicionDetalle" Type="int" Mode="In" />
+    <Parameter Name="CodCampo" Type="char" Mode="In" />
+    <Parameter Name="CodOperador" Type="char" Mode="In" />
+    <Parameter Name="Valor" Type="char" Mode="In" />
+    <Parameter Name="CodOperadorLogico" Type="char" Mode="In" />
+    <Parameter Name="CodTipoDato" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModRelObjInvAutonomia" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelObjInvesAutonomia" Type="int" Mode="In" />
+    <Parameter Name="RangoAniosPlazoMenor" Type="int" Mode="In" />
+    <Parameter Name="RangoAniosPlazoMayor" Type="int" Mode="In" />
+    <Parameter Name="IndicadorGarantia" Type="char" Mode="In" />
+    <Parameter Name="MontoLimiteAprobacion" Type="decimal" Mode="In" />
+    <Parameter Name="Activo" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModRelObjInvAutonomiaUS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="NombreUsuario" Type="char" Mode="In" />
+    <Parameter Name="NombreUsuarioSuperior" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModSegmentacion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="fcCodCampana" Type="char" Mode="In" />
+    <Parameter Name="fcCodVPSegmento" Type="char" Mode="In" />
+    <Parameter Name="dcHabilitado" Type="char" Mode="In" />
+    <Parameter Name="dcAfiliacion" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModTarjetaEntidad" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pnCodEntidad" Type="int" Mode="In" />
+    <Parameter Name="pnCodTarjeta" Type="int" Mode="In" />
+    <Parameter Name="dcDescTarjeta" Type="char" Mode="In" />
+    <Parameter Name="dcCodProducto" Type="char" Mode="In" />
+    <Parameter Name="dcEstado" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModUserCode6" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="ClienteConRuc" Type="char" Mode="In" />
+    <Parameter Name="SeguroCrediticio" Type="char" Mode="In" />
+    <Parameter Name="ClienteConGarantias" Type="char" Mode="In" />
+    <Parameter Name="IndicadorBloqueoLinea" Type="char" Mode="In" />
+    <Parameter Name="UserCode6" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModUsuarioCredito" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="NombreUsuario" Type="char" Mode="In" />
+    <Parameter Name="IndicadorRegistroActivo" Type="char" Mode="In" />
+    <Parameter Name="CodInfocorpVerif" Type="char" Mode="In" />
+    <Parameter Name="PerfilUsuario" Type="int" Mode="In" />
+    <Parameter Name="CodNivelUsuario" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModVersionTablasMant" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pnCodTabla" Type="int" Mode="In" />
+    <Parameter Name="dcNombre" Type="char" Mode="In" />
+    <Parameter Name="ddVersion" Type="datetime" Mode="In" />
+    <Parameter Name="dcStoredProcedure" Type="varchar" Mode="In" />
+    <Parameter Name="dbParametros" Type="varbinary" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModificarCutoff" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodCampana" Type="char" Mode="In" />
+    <Parameter Name="pnValor" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapModificarProducto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodProducto" Type="char" Mode="In" />
+    <Parameter Name="dcNombreProducto" Type="char" Mode="In" />
+    <Parameter Name="pcDiasPago" Type="char" Mode="In" />
+    <Parameter Name="pcMoneda" Type="char" Mode="In" />
+    <Parameter Name="pcMonedaDefault" Type="char" Mode="In" />
+    <Parameter Name="pcValorALS" Type="char" Mode="In" />
+    <Parameter Name="pcValidaCta" Type="char" Mode="In" />
+    <Parameter Name="pcValidaPlazo" Type="char" Mode="In" />
+    <Parameter Name="pcValidaPago" Type="char" Mode="In" />
+    <Parameter Name="pcValidaDesem" Type="char" Mode="In" />
+    <Parameter Name="pnCanal" Type="int" Mode="In" />
+    <Parameter Name="pcDescEnvio" Type="char" Mode="In" />
+    <Parameter Name="pcTipoCuenta" Type="char" Mode="In" />
+    <Parameter Name="pcNroCuenta" Type="char" Mode="In" />
+    <Parameter Name="pcFlagMiVivienda" Type="char" Mode="In" />
+    <Parameter Name="pcFlagValorConstr" Type="char" Mode="In" />
+    <Parameter Name="pcFlagAmpliacion" Type="char" Mode="In" />
+    <Parameter Name="pcModalidad" Type="varchar" Mode="In" />
+    <Parameter Name="dcCardholder" Type="varchar" Mode="In" />
+    <Parameter Name="dcEsquema" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapObtenerCutoff" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodCampana" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapObtenerProducto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodProducto" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapProCopiaReglas" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodCampanaOrigen" Type="char" Mode="In" />
+    <Parameter Name="CodCampanaNueva" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapReglasCampanaConyuge" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodCampanna" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelAceptacionEspecialDe" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodUsuarioSAPE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelAceptacionEspecialLi" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapSelAsignacionBonus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodCampana" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelBanca" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodBanca" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelBuscaReglas" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodCampo" Type="char" Mode="In" />
+    <Parameter Name="CodEntidad" Type="char" Mode="In" />
+    <Parameter Name="CodTipoRelacion" Type="char" Mode="In" />
+    <Parameter Name="CodOperador" Type="char" Mode="In" />
+    <Parameter Name="Valor" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelBuscaReglas2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="NombreObjInves" Type="char" Mode="In" />
+    <Parameter Name="CodCampo" Type="char" Mode="In" />
+    <Parameter Name="CodEntidad" Type="char" Mode="In" />
+    <Parameter Name="CodTipoRelacion" Type="char" Mode="In" />
+    <Parameter Name="CodRelacion" Type="char" Mode="In" />
+    <Parameter Name="CodOperador" Type="char" Mode="In" />
+    <Parameter Name="Valor" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelCEM" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="NombreObjInves" Type="char" Mode="In" />
+    <Parameter Name="CodTipoEntidad" Type="char" Mode="In" />
+    <Parameter Name="CodTipoRelacion" Type="char" Mode="In" />
+    <Parameter Name="CodRelacion" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelCampana" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodProducto" Type="char" Mode="In" />
+    <Parameter Name="CodCampana" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelCampos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapSelCanal" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapSelCardHolder" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="dcCardholder" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelCodRelObjInves" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelacion" Type="char" Mode="In" />
+    <Parameter Name="CodTipoRelacion" Type="char" Mode="In" />
+    <Parameter Name="CodObjInves" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelComportamiento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="NombreObjInves" Type="char" Mode="In" />
+    <Parameter Name="CodTipoEntidad" Type="char" Mode="In" />
+    <Parameter Name="CodTipoRelacion" Type="char" Mode="In" />
+    <Parameter Name="CodRelacion" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelCondicion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapSelCondicionVP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodTipoCredito" Type="char" Mode="In" />
+    <Parameter Name="CodVPSegmento" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelCondicionVPxCampana" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodCampana" Type="char" Mode="In" />
+    <Parameter Name="CodVPSegmento" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelCondicionVPxProducto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="fcCodCampana" Type="char" Mode="In" />
+    <Parameter Name="CodVPSegmento" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelCondiciones" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodEntidad" Type="char" Mode="In" />
+    <Parameter Name="CodReglaCondicion" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelDatosDocNoAsigCam" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodCampana" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelDatosDocumentoPorCam" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodCampana" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelDecisiones" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodEntidad" Type="char" Mode="In" />
+    <Parameter Name="CodReglaCondicion" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelDiasPago" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelObjInves" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelDocumento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapSelEmpresaPermitida" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="dcProceso" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelEntidadFinanciera" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapSelEntidadIntObjInves" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodObjInves" Type="int" Mode="In" />
+    <Parameter Name="CodTipoSolicitud" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelEntidadObjInves" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="Entidad" Type="char" Mode="In" />
+    <Parameter Name="CodEntidad" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelEstadoSolicitud" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapSelEstadoSolicitudCondi" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodEstadoSolicitud" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelEstadoSolicitudJusti" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodEstadoSolicitud" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelFinalidad" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapSelFinalidadCC" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapSelFraudePorCod" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodFraude" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelFraudePorIdc" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="NumIDC" Type="char" Mode="In" />
+    <Parameter Name="TipoIDC" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelFraudes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapSelGastosNotariales" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelObjInves" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelJustificacion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapSelMoneda" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapSelMontoMaximo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelObjInves" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelMontoMinimo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelObjInves" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelNivelUsuario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CODPERFIL" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelNombreCampana" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodProducto" Type="char" Mode="In" />
+    <Parameter Name="NombreCampana" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelNombreEntidad" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodTipoEntidad" Type="char" Mode="In" />
+    <Parameter Name="CodEntidad" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelObjInvesCampo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="NombreObjInves" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelObjInvesHijos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="NombreObjInvesPadre" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelObjInvesOperacion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodObjInves" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelOperador" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapSelPI_Estudio" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapSelPI_Notaria" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapSelPI_Tasador" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapSelParamHipotecario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="dcCodProducto" Type="char" Mode="In" />
+    <Parameter Name="dcCodMoneda" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelParamLineaCredito" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodLineaCredito" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelParamLineaCreditoDet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodLineaCredito" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelParamLineaCreditoOP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelObjInves" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelParamPlazo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelObjInves" Type="int" Mode="In" />
+    <Parameter Name="CodTipoProducto" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelParamProductoHost" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelObjInves" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelParamTasas" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelObjInves" Type="int" Mode="In" />
+    <Parameter Name="CodMoneda" Type="char" Mode="In" />
+    <Parameter Name="Opcion" Type="char" Mode="In" />
+    <Parameter Name="TipoTasa" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelParamTransmision" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodCampana" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelParametros" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="NomObjInves" Type="char" Mode="In" />
+    <Parameter Name="CodTipoEntidad" Type="char" Mode="In" />
+    <Parameter Name="CodEntidad" Type="char" Mode="In" />
+    <Parameter Name="CodTipoPersona" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelParametrosValores" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapSelPerfil" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapSelPerfilCliente" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodTipoRelacion" Type="char" Mode="In" />
+    <Parameter Name="CodRelacion" Type="char" Mode="In" />
+    <Parameter Name="CodEntidad" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelPerfilInfocorp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapSelPeriodoGracia" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelObjInves" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelPortesSeguroPorProducto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodProducto" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelProducto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodTipoSolicitud" Type="char" Mode="In" />
+    <Parameter Name="CodProducto" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelProductoCanal" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="fcCodTipoSolicitud" Type="char" Mode="In" />
+    <Parameter Name="fnCodCanal" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelProductos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapSelReglaCondicionDet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodEntidad" Type="char" Mode="In" />
+    <Parameter Name="CodReglaCondicion" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelReglasCondicion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="NombreObjInves" Type="char" Mode="In" />
+    <Parameter Name="CodEntidad" Type="char" Mode="In" />
+    <Parameter Name="CodTipoRelacion" Type="char" Mode="In" />
+    <Parameter Name="CodRelacion" Type="char" Mode="In" />
+    <Parameter Name="CodReglaP" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelReglasCondicion2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="NombreObjInves" Type="char" Mode="In" />
+    <Parameter Name="CodEntidad" Type="char" Mode="In" />
+    <Parameter Name="CodTipoRelacion" Type="char" Mode="In" />
+    <Parameter Name="CodRelacion" Type="char" Mode="In" />
+    <Parameter Name="CodReglaP" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelReglasxPolRel" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="NombreObjInves" Type="char" Mode="In" />
+    <Parameter Name="CodTipoRelacion" Type="char" Mode="In" />
+    <Parameter Name="CodRelacion" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelRelObjInvAutonomia" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="NombreUsuario" Type="char" Mode="In" />
+    <Parameter Name="TipoSolicitud" Type="char" Mode="In" />
+    <Parameter Name="CodProducto" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelRelObjInvAutonomiaRN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="NombreUsuarioSuperior" Type="char" Mode="In" />
+    <Parameter Name="CodNivelUsuario" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelRelObjInvAutonomiaRe" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="NombreUsuarioSuperior" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelRutaMdbLocal" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapSelSegDes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="Producto" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelSegmentacion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="fcCodCampana" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelTarjetaEntidad" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pnCodEntidad" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelTipoCambio" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapSelTipoSeguroBien" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodProducto" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelTipoSolicitud" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodBanca" Type="char" Mode="In" />
+    <Parameter Name="CodTipoSolicitud" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelTipoSolixCampana" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodCampana" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelTipoTasa" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapSelUltRegla" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapSelUltReglaCondicion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapSelUserCode6" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapSelUsuarioCredito" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapSelUsuarioSamNUC" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="perfiles" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelValidaCodCampanaHost" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="fcCodProducto" Type="char" Mode="In" />
+    <Parameter Name="dcCodCampanaHost" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelValorALS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="TipoSolicitud" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelVerifEntObjInves" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="Entidad" Type="char" Mode="In" />
+    <Parameter Name="CodEntidad" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelVerificaRelCampana" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="pcCodCampana" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapSelVersionTablasMant" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_MapUpdGastosNotariales" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodRelObjInves" Type="int" Mode="In" />
+    <Parameter Name="GastosNotariales" Type="money" Mode="In" />
+    <Parameter Name="CodMoneda" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_MapUpdParametro" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodParametro" Type="int" Mode="In" />
+    <Parameter Name="ValorMaximo" Type="varchar" Mode="In" />
+    <Parameter Name="ValorMinimo" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_MapUpdSegDes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="Producto" Type="char" Mode="In" />
+    <Parameter Name="CodMoneda" Type="char" Mode="In" />
+    <Parameter Name="SegDes" Type="money" Mode="In" />
+  </Function>
+  <Function Name="usp_MapUpdTipoSeguroBien" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="CodProducto" Type="varchar" Mode="In" />
+    <Parameter Name="TasaSeguro" Type="money" Mode="In" />
+    <Parameter Name="CodTipoSeguro" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_SelDetalleEquipo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="P_TEAM_ID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_SelDettalleEmpleado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="P_USER_ID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_SelEmpleados" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito" />
+  <Function Name="usp_SelEmpleadosDisponibles" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="P_TEAM_ID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_SelEmpleadosEquipo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="micredito">
+    <Parameter Name="P_TEAM_ID" Type="varchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="BD_MICREDITOModelStoreContainer" />
+</Schema>

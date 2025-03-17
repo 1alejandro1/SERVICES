@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\T25208\\MICREDITO\\MICRE_EVALUACION\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{86044AD9-C1FF-4D5A-BEB1-5F01C9875571}|MICREDITO.EVALUACION.EXCEL\\MICREDITO.EVALUACION.EXCEL.csproj|d:\\t25208\\micredito\\micre_evaluacion\\micredito.evaluacion.excel\\micredito.evaluacion.excel.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{86044AD9-C1FF-4D5A-BEB1-5F01C9875571}|MICREDITO.EVALUACION.EXCEL\\MICREDITO.EVALUACION.EXCEL.csproj|solutionrelative:micredito.evaluacion.excel\\micredito.evaluacion.excel.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05A6F378-57DF-4EA3-98E3-961B8762D56F}|BCP.CROSS.SECRYPT\\BCP.CROSS.SECRYPT.csproj|d:\\t25208\\micredito\\micre_evaluacion\\bcp.cross.secrypt\\bcp.cross.secrypt.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{05A6F378-57DF-4EA3-98E3-961B8762D56F}|BCP.CROSS.SECRYPT\\BCP.CROSS.SECRYPT.csproj|solutionrelative:bcp.cross.secrypt\\bcp.cross.secrypt.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06D74D4D-2E25-4912-AE45-FAF28B98F0E9}|BCP.CROSS.LOGGER\\BCP.CROSS.LOGGER.csproj|d:\\t25208\\micredito\\micre_evaluacion\\bcp.cross.logger\\bcp.cross.logger.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{06D74D4D-2E25-4912-AE45-FAF28B98F0E9}|BCP.CROSS.LOGGER\\BCP.CROSS.LOGGER.csproj|solutionrelative:bcp.cross.logger\\bcp.cross.logger.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38E453F7-8D26-430D-A710-F0B419357B97}|BCP.CROSS.DATAACCESS\\BCP.CROSS.DATAACCESS.csproj|d:\\t25208\\micredito\\micre_evaluacion\\bcp.cross.dataaccess\\bcp.cross.dataaccess.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{38E453F7-8D26-430D-A710-F0B419357B97}|BCP.CROSS.DATAACCESS\\BCP.CROSS.DATAACCESS.csproj|solutionrelative:bcp.cross.dataaccess\\bcp.cross.dataaccess.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE5BEC5-F2B5-47A7-9DA7-887C432BA9E7}|MICREDITO.EVALUACION.INTEGRATION.TEST\\MICREDITO.EVALUACION.INTEGRATION.TEST.csproj|d:\\t25208\\micredito\\micre_evaluacion\\micredito.evaluacion.integration.test\\micredito.evaluacion.integration.test.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{ABE5BEC5-F2B5-47A7-9DA7-887C432BA9E7}|MICREDITO.EVALUACION.INTEGRATION.TEST\\MICREDITO.EVALUACION.INTEGRATION.TEST.csproj|solutionrelative:micredito.evaluacion.integration.test\\micredito.evaluacion.integration.test.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BCP.CROSS.SECRYPT",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_EVALUACION\\BCP.CROSS.SECRYPT\\BCP.CROSS.SECRYPT.csproj",
+              "RelativeDocumentMoniker": "BCP.CROSS.SECRYPT\\BCP.CROSS.SECRYPT.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_EVALUACION\\BCP.CROSS.SECRYPT\\BCP.CROSS.SECRYPT.csproj",
+              "RelativeToolTip": "BCP.CROSS.SECRYPT\\BCP.CROSS.SECRYPT.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-31T21:28:24.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BCP.CROSS.LOGGER",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_EVALUACION\\BCP.CROSS.LOGGER\\BCP.CROSS.LOGGER.csproj",
+              "RelativeDocumentMoniker": "BCP.CROSS.LOGGER\\BCP.CROSS.LOGGER.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_EVALUACION\\BCP.CROSS.LOGGER\\BCP.CROSS.LOGGER.csproj",
+              "RelativeToolTip": "BCP.CROSS.LOGGER\\BCP.CROSS.LOGGER.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-31T21:28:18.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BCP.CROSS.DATAACCESS",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_EVALUACION\\BCP.CROSS.DATAACCESS\\BCP.CROSS.DATAACCESS.csproj",
+              "RelativeDocumentMoniker": "BCP.CROSS.DATAACCESS\\BCP.CROSS.DATAACCESS.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_EVALUACION\\BCP.CROSS.DATAACCESS\\BCP.CROSS.DATAACCESS.csproj",
+              "RelativeToolTip": "BCP.CROSS.DATAACCESS\\BCP.CROSS.DATAACCESS.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-31T21:28:12.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MICREDITO.EVALUACION.INTEGRATION.TEST",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_EVALUACION\\MICREDITO.EVALUACION.INTEGRATION.TEST\\MICREDITO.EVALUACION.INTEGRATION.TEST.csproj",
+              "RelativeDocumentMoniker": "MICREDITO.EVALUACION.INTEGRATION.TEST\\MICREDITO.EVALUACION.INTEGRATION.TEST.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_EVALUACION\\MICREDITO.EVALUACION.INTEGRATION.TEST\\MICREDITO.EVALUACION.INTEGRATION.TEST.csproj",
+              "RelativeToolTip": "MICREDITO.EVALUACION.INTEGRATION.TEST\\MICREDITO.EVALUACION.INTEGRATION.TEST.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-31T21:28:06.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MICREDITO.EVALUACION.EXCEL",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_EVALUACION\\MICREDITO.EVALUACION.EXCEL\\MICREDITO.EVALUACION.EXCEL.csproj",
+              "RelativeDocumentMoniker": "MICREDITO.EVALUACION.EXCEL\\MICREDITO.EVALUACION.EXCEL.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_EVALUACION\\MICREDITO.EVALUACION.EXCEL\\MICREDITO.EVALUACION.EXCEL.csproj",
+              "RelativeToolTip": "MICREDITO.EVALUACION.EXCEL\\MICREDITO.EVALUACION.EXCEL.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-31T21:27:37.016Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

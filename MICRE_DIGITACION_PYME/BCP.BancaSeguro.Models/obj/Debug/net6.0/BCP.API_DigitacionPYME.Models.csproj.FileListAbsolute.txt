@@ -1,0 +1,15 @@
+D:\T25208\MICREDITO\MICRE_DIGITACION_PYME\BCP.BancaSeguro.Models\bin\Debug\net6.0\BCP.API_DigitacionPYME.Models.deps.json
+D:\T25208\MICREDITO\MICRE_DIGITACION_PYME\BCP.BancaSeguro.Models\bin\Debug\net6.0\BCP.API_DigitacionPYME.Models.dll
+D:\T25208\MICREDITO\MICRE_DIGITACION_PYME\BCP.BancaSeguro.Models\bin\Debug\net6.0\BCP.API_DigitacionPYME.Models.pdb
+D:\T25208\MICREDITO\MICRE_DIGITACION_PYME\BCP.BancaSeguro.Models\bin\Debug\net6.0\BCP.Framework.Common.dll
+D:\T25208\MICREDITO\MICRE_DIGITACION_PYME\BCP.BancaSeguro.Models\bin\Debug\net6.0\BCP.Framework.Common.pdb
+D:\T25208\MICREDITO\MICRE_DIGITACION_PYME\BCP.BancaSeguro.Models\obj\Debug\net6.0\BCP.API_DigitacionPYME.Models.csproj.AssemblyReference.cache
+D:\T25208\MICREDITO\MICRE_DIGITACION_PYME\BCP.BancaSeguro.Models\obj\Debug\net6.0\BCP.API_DigitacionPYME.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\T25208\MICREDITO\MICRE_DIGITACION_PYME\BCP.BancaSeguro.Models\obj\Debug\net6.0\BCP.API_DigitacionPYME.Models.AssemblyInfoInputs.cache
+D:\T25208\MICREDITO\MICRE_DIGITACION_PYME\BCP.BancaSeguro.Models\obj\Debug\net6.0\BCP.API_DigitacionPYME.Models.AssemblyInfo.cs
+D:\T25208\MICREDITO\MICRE_DIGITACION_PYME\BCP.BancaSeguro.Models\obj\Debug\net6.0\BCP.API_DigitacionPYME.Models.csproj.CoreCompileInputs.cache
+D:\T25208\MICREDITO\MICRE_DIGITACION_PYME\BCP.BancaSeguro.Models\obj\Debug\net6.0\BCP.API_.4494D33B.Up2Date
+D:\T25208\MICREDITO\MICRE_DIGITACION_PYME\BCP.BancaSeguro.Models\obj\Debug\net6.0\BCP.API_DigitacionPYME.Models.dll
+D:\T25208\MICREDITO\MICRE_DIGITACION_PYME\BCP.BancaSeguro.Models\obj\Debug\net6.0\refint\BCP.API_DigitacionPYME.Models.dll
+D:\T25208\MICREDITO\MICRE_DIGITACION_PYME\BCP.BancaSeguro.Models\obj\Debug\net6.0\BCP.API_DigitacionPYME.Models.pdb
+D:\T25208\MICREDITO\MICRE_DIGITACION_PYME\BCP.BancaSeguro.Models\obj\Debug\net6.0\ref\BCP.API_DigitacionPYME.Models.dll

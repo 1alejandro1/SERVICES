@@ -1,0 +1,325 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FF12464B-0678-4E37-923A-75FE0DD8FD2F}|MICRE.DataAccess\\MICRE.DataAccess.csproj|d:\\t25208\\micredito\\robots y ws\\micre_rbt_creacion_garantia_fogagre\\micre.dataaccess\\dataaccessmicredito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF12464B-0678-4E37-923A-75FE0DD8FD2F}|MICRE.DataAccess\\MICRE.DataAccess.csproj|solutionrelative:micre.dataaccess\\dataaccessmicredito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9462602A-E149-4204-95CC-3CF06642F70F}|MICRE.Business\\MICRE.Business.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\micre.business\\procesorobot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9462602A-E149-4204-95CC-3CF06642F70F}|MICRE.Business\\MICRE.Business.csproj|solutionrelative:micre.business\\procesorobot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EF61A61-2246-4EE2-BA72-1FD92D18442A}|CreaGarantiaFogagre\\RbtCreaGarantiaFogagre.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\creagarantiafogagre\\rbtcreagarantiafogagre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EF61A61-2246-4EE2-BA72-1FD92D18442A}|CreaGarantiaFogagre\\RbtCreaGarantiaFogagre.csproj|solutionrelative:creagarantiafogagre\\rbtcreagarantiafogagre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EF61A61-2246-4EE2-BA72-1FD92D18442A}|CreaGarantiaFogagre\\RbtCreaGarantiaFogagre.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\creagarantiafogagre\\rbtcreagarantiafogagre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4EF61A61-2246-4EE2-BA72-1FD92D18442A}|CreaGarantiaFogagre\\RbtCreaGarantiaFogagre.csproj|solutionrelative:creagarantiafogagre\\rbtcreagarantiafogagre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EF61A61-2246-4EE2-BA72-1FD92D18442A}|CreaGarantiaFogagre\\RbtCreaGarantiaFogagre.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\creagarantiafogagre\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{4EF61A61-2246-4EE2-BA72-1FD92D18442A}|CreaGarantiaFogagre\\RbtCreaGarantiaFogagre.csproj|solutionrelative:creagarantiafogagre\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|MICRE.DataAccess||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|MICRE.Business||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|MICRE.Business.Test||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|MICRE.Common||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|MICRE.Entity||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|MICRE.Logger||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|MICRE.SegCrypt||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|WinFX3270Library||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|RbtCreaGarantiaFogagre||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9462602A-E149-4204-95CC-3CF06642F70F}|MICRE.Business\\MICRE.Business.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\micre.business\\sesionesextra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9462602A-E149-4204-95CC-3CF06642F70F}|MICRE.Business\\MICRE.Business.csproj|solutionrelative:micre.business\\sesionesextra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 20,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataAccessMiCredito.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\MICRE.DataAccess\\DataAccessMiCredito.cs",
+              "RelativeDocumentMoniker": "MICRE.DataAccess\\DataAccessMiCredito.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\MICRE.DataAccess\\DataAccessMiCredito.cs",
+              "RelativeToolTip": "MICRE.DataAccess\\DataAccessMiCredito.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAYwFgAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T16:11:36.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MICRE.Logger",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\MICRE.Logger\\MICRE.Logger.csproj",
+              "RelativeDocumentMoniker": "MICRE.Logger\\MICRE.Logger.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\MICRE.Logger\\MICRE.Logger.csproj",
+              "RelativeToolTip": "MICRE.Logger\\MICRE.Logger.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-02-07T15:28:12.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MICRE.SegCrypt",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\MICRE.Security\\MICRE.SegCrypt.csproj",
+              "RelativeDocumentMoniker": "MICRE.Security\\MICRE.SegCrypt.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\MICRE.Security\\MICRE.SegCrypt.csproj",
+              "RelativeToolTip": "MICRE.Security\\MICRE.SegCrypt.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-02-07T15:28:09.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "WinFX3270Library",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\WinFX3270Library\\WinFX3270Library.csproj",
+              "RelativeDocumentMoniker": "WinFX3270Library\\WinFX3270Library.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\WinFX3270Library\\WinFX3270Library.csproj",
+              "RelativeToolTip": "WinFX3270Library\\WinFX3270Library.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-02-07T15:28:05.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RbtCreaGarantiaFogagre.cs [Design]",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\CreaGarantiaFogagre\\RbtCreaGarantiaFogagre.cs",
+              "RelativeDocumentMoniker": "CreaGarantiaFogagre\\RbtCreaGarantiaFogagre.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\CreaGarantiaFogagre\\RbtCreaGarantiaFogagre.cs [Design]",
+              "RelativeToolTip": "CreaGarantiaFogagre\\RbtCreaGarantiaFogagre.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T20:27:32.999Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RbtCreaGarantiaFogagre.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\CreaGarantiaFogagre\\RbtCreaGarantiaFogagre.cs",
+              "RelativeDocumentMoniker": "CreaGarantiaFogagre\\RbtCreaGarantiaFogagre.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\CreaGarantiaFogagre\\RbtCreaGarantiaFogagre.cs",
+              "RelativeToolTip": "CreaGarantiaFogagre\\RbtCreaGarantiaFogagre.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAADgvzsAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T20:28:05.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProcesoRobot.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\MICRE.Business\\ProcesoRobot.cs",
+              "RelativeDocumentMoniker": "MICRE.Business\\ProcesoRobot.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\MICRE.Business\\ProcesoRobot.cs",
+              "RelativeToolTip": "MICRE.Business\\ProcesoRobot.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAADwvy8AAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T20:58:43.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MICRE.Entity",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\MICRE.Entity\\MICRE.Entity.csproj",
+              "RelativeDocumentMoniker": "MICRE.Entity\\MICRE.Entity.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\MICRE.Entity\\MICRE.Entity.csproj",
+              "RelativeToolTip": "MICRE.Entity\\MICRE.Entity.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-02-07T15:28:16.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MICRE.DataAccess",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\MICRE.DataAccess\\MICRE.DataAccess.csproj",
+              "RelativeDocumentMoniker": "MICRE.DataAccess\\MICRE.DataAccess.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\MICRE.DataAccess\\MICRE.DataAccess.csproj",
+              "RelativeToolTip": "MICRE.DataAccess\\MICRE.DataAccess.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-02-07T15:28:19.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MICRE.Common",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\MICRE.Common\\MICRE.Common.csproj",
+              "RelativeDocumentMoniker": "MICRE.Common\\MICRE.Common.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\MICRE.Common\\MICRE.Common.csproj",
+              "RelativeToolTip": "MICRE.Common\\MICRE.Common.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-02-07T15:28:23.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\CreaGarantiaFogagre\\App.config",
+              "RelativeDocumentMoniker": "CreaGarantiaFogagre\\App.config",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\CreaGarantiaFogagre\\App.config",
+              "RelativeToolTip": "CreaGarantiaFogagre\\App.config",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACYAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-02-07T14:50:29.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RbtCreaGarantiaFogagre",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\CreaGarantiaFogagre\\RbtCreaGarantiaFogagre.csproj",
+              "RelativeDocumentMoniker": "CreaGarantiaFogagre\\RbtCreaGarantiaFogagre.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\CreaGarantiaFogagre\\RbtCreaGarantiaFogagre.csproj",
+              "RelativeToolTip": "CreaGarantiaFogagre\\RbtCreaGarantiaFogagre.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-02-07T15:28:01.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MICRE.Business.Test",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\MICRE.Business.Test\\MICRE.Business.Test.csproj",
+              "RelativeDocumentMoniker": "MICRE.Business.Test\\MICRE.Business.Test.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\MICRE.Business.Test\\MICRE.Business.Test.csproj",
+              "RelativeToolTip": "MICRE.Business.Test\\MICRE.Business.Test.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-02-07T15:28:27.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MICRE.Business",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\MICRE.Business\\MICRE.Business.csproj",
+              "RelativeDocumentMoniker": "MICRE.Business\\MICRE.Business.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\MICRE.Business\\MICRE.Business.csproj",
+              "RelativeToolTip": "MICRE.Business\\MICRE.Business.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-02-07T15:28:30.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SesionesExtra.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\MICRE.Business\\SesionesExtra.cs",
+              "RelativeDocumentMoniker": "MICRE.Business\\SesionesExtra.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREACION_GARANTIA_FOGAGRE\\MICRE.Business\\SesionesExtra.cs",
+              "RelativeToolTip": "MICRE.Business\\SesionesExtra.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T20:58:14.406Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

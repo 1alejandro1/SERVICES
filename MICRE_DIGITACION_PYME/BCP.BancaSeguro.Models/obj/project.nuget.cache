@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "awo9r/wrzXvoRLasflTtqYvZl7L+H+yKp9+eRFq48cJ6+F5nIKXGNKmXSFJKxsdLqtnhfqZAFe0fBrcppP0/Jw==",
+  "success": true,
+  "projectFilePath": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.BancaSeguro.Models\\BCP.API_DigitacionPYME.Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\T25208\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

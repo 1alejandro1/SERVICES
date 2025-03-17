@@ -1,0 +1,276 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7F6CBF2F-CA3B-41CF-88E4-FFA1BECF118B}|Rbt.DataAccess\\Rbt.DataAccess.csproj|d:\\t25208\\micredito\\robots y ws\\micre_rbt_creasion_als\\rbt.dataaccess\\dataacessrobot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F6CBF2F-CA3B-41CF-88E4-FFA1BECF118B}|Rbt.DataAccess\\Rbt.DataAccess.csproj|solutionrelative:rbt.dataaccess\\dataacessrobot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C09AE4C9-BA2E-4629-91E3-C369F44CBEBC}|Rbt.Bussiness\\Rbt.Bussiness.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\rbt.bussiness\\procesorobot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C09AE4C9-BA2E-4629-91E3-C369F44CBEBC}|Rbt.Bussiness\\Rbt.Bussiness.csproj|solutionrelative:rbt.bussiness\\procesorobot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C09AE4C9-BA2E-4629-91E3-C369F44CBEBC}|Rbt.Bussiness\\Rbt.Bussiness.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\rbt.bussiness\\sesionesextra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C09AE4C9-BA2E-4629-91E3-C369F44CBEBC}|Rbt.Bussiness\\Rbt.Bussiness.csproj|solutionrelative:rbt.bussiness\\sesionesextra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE43011A-080A-41EF-865E-2BDAF297AE77}|CreaCreditoAls.Windows.Service\\CreaCreditoAls.Windows.Service.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\creacreditoals.windows.service\\rbtcreacreditoals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE43011A-080A-41EF-865E-2BDAF297AE77}|CreaCreditoAls.Windows.Service\\CreaCreditoAls.Windows.Service.csproj|solutionrelative:creacreditoals.windows.service\\rbtcreacreditoals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE43011A-080A-41EF-865E-2BDAF297AE77}|CreaCreditoAls.Windows.Service\\CreaCreditoAls.Windows.Service.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\creacreditoals.windows.service\\rbtcreacreditoals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EE43011A-080A-41EF-865E-2BDAF297AE77}|CreaCreditoAls.Windows.Service\\CreaCreditoAls.Windows.Service.csproj|solutionrelative:creacreditoals.windows.service\\rbtcreacreditoals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE43011A-080A-41EF-865E-2BDAF297AE77}|CreaCreditoAls.Windows.Service\\CreaCreditoAls.Windows.Service.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\creacreditoals.windows.service\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{EE43011A-080A-41EF-865E-2BDAF297AE77}|CreaCreditoAls.Windows.Service\\CreaCreditoAls.Windows.Service.csproj|solutionrelative:creacreditoals.windows.service\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C1C4A52-4B1A-49E3-B980-B11C6D8B51EE}|WinFX3270Library\\WinFX3270Library.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\winfx3270library\\engine\\tnxmlscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C1C4A52-4B1A-49E3-B980-B11C6D8B51EE}|WinFX3270Library\\WinFX3270Library.csproj|solutionrelative:winfx3270library\\engine\\tnxmlscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C1C4A52-4B1A-49E3-B980-B11C6D8B51EE}|WinFX3270Library\\WinFX3270Library.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\winfx3270library\\tn3270e\\x3270\\telnet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C1C4A52-4B1A-49E3-B980-B11C6D8B51EE}|WinFX3270Library\\WinFX3270Library.csproj|solutionrelative:winfx3270library\\tn3270e\\x3270\\telnet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50070DDB-B5FE-46A9-B176-10BD6D28C90D}|Rbt.Common\\Rbt.Common.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\rbt.common\\funciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50070DDB-B5FE-46A9-B176-10BD6D28C90D}|Rbt.Common\\Rbt.Common.csproj|solutionrelative:rbt.common\\funciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA1BEC6D-EA57-48C1-BA85-B656D7BCF1F0}|Rbt.Logger\\Rbt.Logger.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\rbt.logger\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA1BEC6D-EA57-48C1-BA85-B656D7BCF1F0}|Rbt.Logger\\Rbt.Logger.csproj|solutionrelative:rbt.logger\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42BC1393-8CBD-4DBC-A6E9-8F31E687FD9E}|Rbt.Entities\\Rbt.Entities.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\rbt.entities\\focremiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42BC1393-8CBD-4DBC-A6E9-8F31E687FD9E}|Rbt.Entities\\Rbt.Entities.csproj|solutionrelative:rbt.entities\\focremiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 20,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataAcessRobot.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\Rbt.DataAccess\\DataAcessRobot.cs",
+              "RelativeDocumentMoniker": "Rbt.DataAccess\\DataAcessRobot.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\Rbt.DataAccess\\DataAcessRobot.cs",
+              "RelativeToolTip": "Rbt.DataAccess\\DataAcessRobot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T15:58:12.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SesionesExtra.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\Rbt.Bussiness\\SesionesExtra.cs",
+              "RelativeDocumentMoniker": "Rbt.Bussiness\\SesionesExtra.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\Rbt.Bussiness\\SesionesExtra.cs",
+              "RelativeToolTip": "Rbt.Bussiness\\SesionesExtra.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAiwNQCAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T15:38:10.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RbtCreaCreditoAls.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\CreaCreditoAls.Windows.Service\\RbtCreaCreditoAls.cs",
+              "RelativeDocumentMoniker": "CreaCreditoAls.Windows.Service\\RbtCreaCreditoAls.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\CreaCreditoAls.Windows.Service\\RbtCreaCreditoAls.cs",
+              "RelativeToolTip": "CreaCreditoAls.Windows.Service\\RbtCreaCreditoAls.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAIwE8AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T15:37:38.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RbtCreaCreditoAls.cs [Design]",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\CreaCreditoAls.Windows.Service\\RbtCreaCreditoAls.cs",
+              "RelativeDocumentMoniker": "CreaCreditoAls.Windows.Service\\RbtCreaCreditoAls.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\CreaCreditoAls.Windows.Service\\RbtCreaCreditoAls.cs [Design]",
+              "RelativeToolTip": "CreaCreditoAls.Windows.Service\\RbtCreaCreditoAls.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T15:37:37.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProcesoRobot.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\Rbt.Bussiness\\ProcesoRobot.cs",
+              "RelativeDocumentMoniker": "Rbt.Bussiness\\ProcesoRobot.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\Rbt.Bussiness\\ProcesoRobot.cs",
+              "RelativeToolTip": "Rbt.Bussiness\\ProcesoRobot.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAtwCoAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T21:42:17.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\CreaCreditoAls.Windows.Service\\App.config",
+              "RelativeDocumentMoniker": "CreaCreditoAls.Windows.Service\\App.config",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\CreaCreditoAls.Windows.Service\\App.config",
+              "RelativeToolTip": "CreaCreditoAls.Windows.Service\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-08-02T20:07:43.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FocremiResponse.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\Rbt.Entities\\FocremiResponse.cs",
+              "RelativeDocumentMoniker": "Rbt.Entities\\FocremiResponse.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\Rbt.Entities\\FocremiResponse.cs",
+              "RelativeToolTip": "Rbt.Entities\\FocremiResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T22:17:16.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Log.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\Rbt.Logger\\Log.cs",
+              "RelativeDocumentMoniker": "Rbt.Logger\\Log.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\Rbt.Logger\\Log.cs",
+              "RelativeToolTip": "Rbt.Logger\\Log.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJ4AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T13:38:53.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TnXMLScreen.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\WinFX3270Library\\Engine\\TnXMLScreen.cs",
+              "RelativeDocumentMoniker": "WinFX3270Library\\Engine\\TnXMLScreen.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\WinFX3270Library\\Engine\\TnXMLScreen.cs",
+              "RelativeToolTip": "WinFX3270Library\\Engine\\TnXMLScreen.cs",
+              "ViewState": "AQIAAHQBAAAAAAAAAAAowJgBAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T13:50:40.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Funciones.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\Rbt.Common\\Funciones.cs",
+              "RelativeDocumentMoniker": "Rbt.Common\\Funciones.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\Rbt.Common\\Funciones.cs",
+              "RelativeToolTip": "Rbt.Common\\Funciones.cs",
+              "ViewState": "AQIAAPYAAAAAAAAAAAAlwAgBAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T13:50:02.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Telnet.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\WinFX3270Library\\TN3270E\\X3270\\Telnet.cs",
+              "RelativeDocumentMoniker": "WinFX3270Library\\TN3270E\\X3270\\Telnet.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_CREASION_ALS\\WinFX3270Library\\TN3270E\\X3270\\Telnet.cs",
+              "RelativeToolTip": "WinFX3270Library\\TN3270E\\X3270\\Telnet.cs",
+              "ViewState": "AQIAANkDAAAAAAAAAAAtwOwDAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T13:50:52.112Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

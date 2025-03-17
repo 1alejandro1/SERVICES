@@ -1,0 +1,295 @@
+﻿@using Card_App.Models.Generated
+@using Microsoft.AspNetCore.Authorization
+@using System.Web
+@inject IAuthorizationService AuthorizationService
+
+@model GeneratedViewModel
+@{
+    ViewData["Title"] = "Generación de Tarjeta";
+}
+
+<link rel="stylesheet" type="text/css" href="~/css/datatables.min.css" />
+<div class="container-fluid">
+      @if (Model != null && Model.Registro != null && Model.Registro.message == "COMPLETADO")
+    {
+          <div class="row">
+            <div class="col">
+                <div class="alert alert-success">Las tarjetas fueron cargadas satisfactoriamente con el siguiente mensaje: @Model.Registro.message</div>
+            </div>
+        </div>
+    }else if(Model != null && Model.Registro != null)
+    {
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-danger">@Model.Registro.message</div>
+            </div>
+        </div>
+    }
+    else
+    {
+      @*  <div class="row">
+            <div class="col">
+                <div >Aún no realizó ningún registro</div>
+            </div>
+        </div>*@
+    }
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card bg-bgcontent-dark rounded shadow-sm mb-3">
+                <div class="card-header fw-bold">Registro Masivo de Tarjetas</div>
+                <div class="col-sm-10"></div>
+                 <div class="card-body"> 
+                     <div class="col-sm-12">   
+                      
+                     <form class="row" asp-action="CargaGenerated" id="frmCarga" enctype="multipart/form-data" method="post">  
+      
+                         <div class="col-sm-8">
+                                <label asp-for="Files" class="form-label"></label>
+                                <input accept="application/vnd.ms-excel, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" class="form-control form-control-sm" type="file" asp-for="Files" multiple onchange="ShowListFiles()">
+                                <span asp-validation-for="Files" class="validation-text-danger"></span>
+                                <div id="fileList"></div>
+                            </div>
+                         <div style="display: none" class="col-sm-12">
+                                <label asp-for="Generated.DocumentosAdjuntoIn" class="form-label"></label>
+                                <textarea asp-for="Generated.DocumentosAdjuntoIn" class="form-control form-control-sm"
+                                          style="height: 70px" readonly></textarea>
+                                <span asp-validation-for="Generated.DocumentosAdjuntoIn" class="validation-text-danger"></span>
+                            </div>
+                            <div class="col-sm-2">
+                        <button disabled id="btnCarga" class="btn btn-primary mt-3 w-100" type="submit" onclick="DefineAccion()">Registrar Carga</button>
+                    </div>
+        </form>  
+        </div>        
+   
+                </div>  
+            </div>
+        </div>      
+    </div>
+</div>
+<partial name="_Loading" />
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/datatables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#tblIndiceCobros').dataTable({
+                "info": false,
+                "lengthMenu": [5, 25, 50],
+                "language": {
+                    "search": "Filtrar:",
+                    "lengthMenu": "Mostar _MENU_",
+                    "paginate": {
+                        "first": "Primero",
+                        "last": "Último",
+                        "next": "Siguiente",
+                        "previous": "Atras"
+                    }
+                }
+            });
+
+
+            $("#btnUpload").click(function () {
+                var formData = new FormData();
+                var files = $("#FileUpload_FormFile");
+                console.log("files");
+                console.log(files);
+                console.log(files.length);
+                for (var i = 0; i < files.length; i++) {
+                    if (files[i].value == "" || files[i].value == null) {
+                        console.log("error");
+                        console.log(files[i].value);
+                        console.log(files.length);
+                        return false;
+                    }
+                    else {
+                        formData.append(files[i].name, files[i].files[0]);
+                        console.log("formData");
+                        console.log(formData);
+                        console.log(files[i].value);
+                    }
+                    }
+//var formSerializeArray = $("#frmCarga").serializeArray();
+//for (var i = 0; i < formSerializeArray.length; i++) {
+//  formData.append(formSerializeArray[i].name, formSerializeArray[i].value)
+//}
+   $.ajax({
+       type: 'POST',
+       data: formData,
+       contentType: false,
+       processData: false,
+       cache: false,
+       url: '/Generated/GeneratedCarga',
+       success: function (response) {
+           if (response.Success == true) {
+               console.log("true");
+               return true;
+           }
+           else {
+               console.log("false");
+               return false;
+           }
+       },
+       error: function () {
+           return false;
+       },
+       failure: function () {
+           return false;
+       }
+       });
+       });
+            
+    //        $("#btnUpload").click(function () {
+    //            var selectFile = ($("#FileUpload_FormFile"))[0].files[0];
+    //            console.log("File:");
+    //            console.log(selectFile);
+    //            var dataString = new FormData();
+    //            if (!selectFile) {
+    //                alert("No se ha Cargado El Archivo (html)");
+    //            }
+                
+    //            dataString.append("FileUpload_FormFile", selectFile);
+    //            console.log("DATA: ");
+    //            console.log(dataString);
+    //            $.ajax({
+    //                url: '@Url.Action("GeneratedCarga","Generated")',
+    //                type: "Post",
+    //                data: dataString,
+    //                contentType: false,
+    //                processData: false,
+    //                async:true,
+    //                success: function (data) {
+    //                    if (typeof (data.value) != "undefined") {
+    //                        alert(data.Message);
+    //                    } else {
+    //                        alert("Error No identificado");
+    //                    }
+    //                },
+
+    //        error: function (data) {
+
+    //        }
+
+    //    });
+    //});
+        });
+        function sendRow(id) {
+            let renglonPorEnviar = miArray.find(x => x.id == id);
+            $.ajax({
+                url: "tu/url",
+                data: renglonPorEnviar,
+                type: "POST",
+                dataType: "Json",
+                success: function (data) { }
+            });
+        };
+        $(".btnEdit").on("click", function (e) {
+            e.preventDefault();
+            HabilitarButtons();
+            tr = $(this).closest('tr');
+            console.log(tr.find("td:eq(1)").text());
+            var ProdOld = tr.find("td:eq(1)").text();
+            var valorProdOld = ProdOld.split("-");
+            console.log(valorProdOld[0]);
+            document.getElementById("ProductoOld").value = valorProdOld[0].replace(/ /g, "");
+            document.getElementById("Producto").value = valorProdOld[0].replace(/ /g, "");
+            
+            if (tr.find("td:eq(2)").text() == "BOB") {
+                document.getElementById("rbtMonedaOldBol").checked = true;
+                document.getElementById("rbtMonedaOldDol").checked = false;
+                document.getElementById("rbtMonedaBol").checked = true;
+                document.getElementById("rbtMonedaDol").checked = false;
+            }
+            else {
+                document.getElementById("rbtMonedaOldBol").checked = false;
+                document.getElementById("rbtMonedaOldDol").checked = true;
+                document.getElementById("rbtMonedaBol").checked = false;
+                document.getElementById("rbtMonedaDol").checked = true;
+            }
+            document.getElementById("Minimo").value = tr.find("td:eq(3)").text();
+            document.getElementById("Maximo").value = tr.find("td:eq(4)").text();
+            document.getElementById("Promedio").value = tr.find("td:eq(5)").text();
+            console.log(tr.find("td:eq(6)").text());
+            if (tr.find("td:eq(6)").text() == "true") {
+                document.getElementById("cbEstado").checked = true;
+            }
+            else {
+                document.getElementById("cbEstado").checked = false;
+            }
+
+        });
+        function HabilitarButtons() {
+            $("button#btnModificar").attr('disabled', false);
+            $("button#btnCarga").attr('disabled', false);
+        };
+        function DeshabilitarButtons() {
+            $("button#btnModificar").attr('disabled', true);
+            $("button#btnCarga").attr('disabled', true);
+        };
+        function Limpiar() {
+            DeshabilitarButtons();
+            location.reload();
+        };
+         function Carga() {            
+            $("form#frmCarga").attr("action", "@Url.Action("GeneratedCarga", "Generated")");            
+            $("form#frmCarga").submit();
+            
+        };
+        function DescargarCarta(){
+        let tipo=document.getElementById("UpdateCaso_TipoCarta").value;
+        let caso=document.getElementById("UpdateCaso_NroCarta").value;
+        window.open(`${urlGetCartaFile}?tipo=${tipo}&nroCaso=${caso}`,"_blank");
+};
+
+
+//async function AJAXSubmit (oFormElement) {
+//    var resultElement = oFormElement.elements.namedItem("result");
+//    console.log(oFormElement);
+//    const formData = new FormData(oFormElement);    
+//    console.log(formData);
+//    try {
+//    const response = await fetch(oFormElement.action, {
+//      method: 'POST',
+//      body: formData
+//    });
+//        console.log(response.status);
+//    if (response.ok) {
+//      window.location.href = '/';
+//    }
+
+//    resultElement.value = 'Result: ' + response.status + ' ' + 
+//      response.statusText;
+//      console.log(resultElement.value);
+//    } catch (error) {
+//      console.error('Error:', error);
+//    }
+//  };
+//// "use strict";
+
+  function AJAXSubmit (oFormElement) {
+    var oReq = new XMLHttpRequest();
+      console.log(oReq);
+    oReq.onload = function(e) { 
+    oFormElement.elements.namedItem("result").value = 
+      'Result: ' + this.status + ' ' + this.statusText;
+    };
+    console.log(oReq);
+    var resultElement = oFormElement.elements.namedItem("result").value;
+      console.log(oFormElement.action);
+      console.log(oFormElement);
+    oReq.open("post", oFormElement.action);
+    oReq.send(new FormData(oFormElement));
+};
+function ShowListFiles(){
+            HabilitarButtons();
+            var input = document.getElementById('Files');
+            var output = document.getElementById('fileList');
+
+            output.innerHTML = '<ul>';
+            for (var i = 0; i < input.files.length; ++i) {
+            output.innerHTML += '<li>' + input.files.item(i).name + '</li>';
+            }
+            output.innerHTML += '</ul>';
+};
+    </script>
+}

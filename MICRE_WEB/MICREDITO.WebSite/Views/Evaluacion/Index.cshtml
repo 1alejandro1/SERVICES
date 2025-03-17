@@ -1,0 +1,42 @@
+﻿<div class="container body-content">
+    @using (Html.BeginForm("Index",
+                            "Evaluacion",
+                            FormMethod.Post,
+                            new { enctype = "multipart/form-data" }))
+    {
+        <div class="card">
+            <div class="card-header">EVALUACION</div>
+            <div class="card-body container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        Cargar el archivo el excel de la evaluación
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 ControlFiles">
+                        @Html.TextBox("fileBase", "", new { type = "file", @onchange = "update();", accept = "application/vnd.ms-excel.sheet.macroEnabled.12" })
+                        <label for="fileBase">Elija el Archivo</label>
+                        <span id="file-chosen">Ningún archivo elegido</span>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-sm-12">
+                        <button type="submit" class="btn btn-block btn-primary">CARGAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<script>
+    window.onload = function () {
+
+    }
+
+    update = function () {
+        var input = document.getElementById('fileBase');
+        $('#file-chosen').html(input.files.item(0).name);
+    }
+</script>

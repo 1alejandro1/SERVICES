@@ -1,0 +1,194 @@
+﻿@model MICREDITO.WebSite.Models.SolicitudModel
+
+@{
+
+}
+
+
+@if (!string.IsNullOrEmpty(ViewBag.Mensaje))
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @ViewBag.Mensaje
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+
+<div class="card">
+    <div class="card-header">DATOS BASICOS</div>
+    <div class="card-body">
+        @using (Html.BeginForm("Index", "Solicitud", FormMethod.Post, new { autocomplete = "off" }))
+        {
+            @Html.HiddenFor(x => x.consultado)
+            <div class="row">
+                <div class="form-group col_4">
+                    <label>NRO. DOCUMENTO</label>
+                    @Html.TextBoxFor(x => x.nroDocumento, new { @class = "form-control", Type = "text" })
+                </div>
+                <div class="form-group col_4">
+                    <label>TIPO DOCUMENTO</label>
+                    @Html.DropDownListFor(x => x.tipoDocumento, new SelectList(ViewBag.lstTipoDocumento, "tipo", "descripcion"), new { @class = "form-control" })
+                </div>
+                <div class="form-group col_4">
+                    <label>CIUDAD</label>
+                    @Html.DropDownListFor(x => x.ciudad, new SelectList(ViewBag.lstTipoCiudad, "codCiudad", "descripcion"), new { @class = "form-control" })
+                </div>
+                <div class="form-group col_4">
+                    <label>COMPLEMENTO</label>
+                    @Html.TextBoxFor(x => x.complemento, new { @class = "form-control", Type = "text" })
+                </div>
+                <div class="form-group col_3">
+                    <label>MARCA TIPO PROCESO</label>
+                    @Html.TextBoxFor(x => x.marcaTipoProceso, new { @class = "form-control", Type = "text" })
+                </div>
+            </div>
+            <div class="row" style="margin-top: 15px">
+                <button class="btn btn-primary" type="submit">BUSCAR</button>
+            </div>
+        }
+    </div>
+</div>
+
+@if (Model.consultado)
+{
+    <div class="card">
+        <div class="card-header">DATOS PERSONALES</div>
+        <div class="card-body">
+            <div class="row">
+                <div class="form-group col_3">
+                    <label>NOMBRES</label>
+                    @Html.TextBoxFor(x => x.Titular.nombre, new { @class = "form-control", Type = "text", @readonly = "readonly" })
+                </div>
+                <div class="form-group col_3">
+                    <label>PATERNO</label>
+                    @Html.TextBoxFor(x => x.Titular.paterno, new { @class = "form-control", Type = "text", @readonly = "readonly" })
+                </div>
+                <div class="form-group col_3">
+                    <label>MATERNO</label>
+                    @Html.TextBoxFor(x => x.Titular.materno, new { @class = "form-control", Type = "text", @readonly = "readonly" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col_3">
+                    <label>FECHA NACIMIENTO</label>
+                    @Html.TextBoxFor(x => x.Titular.fechaNacimiento, new { @class = "form-control", Type = "text", @readonly = "readonly" })
+                </div>
+                <div class="form-group col_3">
+                    <label>ESTADO CIVIL</label>
+                    @Html.TextBoxFor(x => x.Titular.estadoCivil, new { @class = "form-control", Type = "text", @readonly = "readonly" })
+                </div>
+                <div class="form-group col_3">
+                    <label>SEXO</label>
+                    @Html.TextBoxFor(x => x.Titular.sexo, new { @class = "form-control", Type = "text", @readonly = "readonly" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col_3">
+                    <label>TELEFONO</label>
+                    @Html.TextBoxFor(x => x.Titular.telefono, new { @class = "form-control", Type = "text", @readonly = "readonly" })
+                </div>
+                <div class="form-group col_3">
+                    <label>CELULAR</label>
+                    @Html.TextBoxFor(x => x.Titular.celular, new { @class = "form-control", Type = "text", @readonly = "readonly" })
+                </div>
+                <div class="form-group col_3">
+                    <label>CORREO ELECTRONICO</label>
+                    @Html.TextBoxFor(x => x.Titular.correoElectronico, new { @class = "form-control", Type = "text", @readonly = "readonly" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col_3">
+                    <label>INSTRUCCION</label>
+                    @Html.TextBoxFor(x => x.Titular.instruccion, new { @class = "form-control", Type = "text", @readonly = "readonly" })
+                </div>
+                <div class="form-group col_3">
+                    <label>SITUACION LABORAL</label>
+                    @Html.TextBoxFor(x => x.Titular.situacionLaboral, new { @class = "form-control", Type = "text", @readonly = "readonly" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col_3">
+                    <label>PROFESION</label>
+                    @Html.TextBoxFor(x => x.Titular.profesion, new { @class = "form-control", Type = "text", @readonly = "readonly" })
+                </div>
+                <div class="form-group col_3">
+                    <label>OCUPACION</label>
+                    @Html.TextBoxFor(x => x.Titular.ocupacion, new { @class = "form-control", Type = "text", @readonly = "readonly" })
+                </div>
+                <div class="form-group col_3">
+                    <label>TIPO DE RENTA</label>
+                    @Html.TextBoxFor(x => x.Titular.tipoVivienda, new { @class = "form-control", Type = "text", @readonly = "readonly" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col_3">
+                    <label>LOCALIDAD</label>
+                    @Html.TextBoxFor(x => x.Titular.codlocalidad, new { @class = "form-control", Type = "text", @readonly = "readonly" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col_4">
+                    <label>TIPO DIRECCION</label>
+                    @Html.TextBoxFor(x => x.Titular.tipoDireccion, new { @class = "form-control", Type = "text", @readonly = "readonly" })
+                </div>
+                <div class="form-group col_4_colspan_2">
+                    <label>DIRECCION</label>
+                    @Html.TextBoxFor(x => x.Titular.direccion, new { @class = "form-control", Type = "text", @readonly = "readonly" })
+                </div>
+                <div class="form-group col_4">
+                    <label>NRO DIRECCION</label>
+                    @Html.TextBoxFor(x => x.Titular.numeroDireccion, new { @class = "form-control", Type = "text", @readonly = "readonly" })
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">DATOS LABORALES</div>
+        <div class="card-body">
+            <div class="row">
+                <div class="form-group col_3">
+                    <label>NOMBRE EMPRESA</label>
+                    @Html.TextBoxFor(x => x.Titular.nombreEmpresa, new { @class = "form-control", Type = "text", @readonly = "readonly" })
+                </div>
+                <div class="form-group col_3">
+                    <label>NIT</label>
+                    @Html.TextBoxFor(x => x.Titular.nit, new { @class = "form-control", Type = "text", @readonly = "readonly" })
+                </div>
+                <div class="form-group col_3">
+                    <label>GIRO</label>
+                    @Html.TextBoxFor(x => x.Titular.giro, new { @class = "form-control", Type = "text", @readonly = "readonly" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col_3">
+                    <label>FECHA INGRESO</label>
+                    @Html.TextBoxFor(x => x.Titular.fechaIngreso, new { @class = "form-control", Type = "text", @readonly = "readonly" })
+                </div>
+                <div class="form-group col_3">
+                    <label>CARGO ACTUAL</label>
+                    @Html.TextBoxFor(x => x.Titular.cargoActual, new { @class = "form-control", Type = "text", @readonly = "readonly" })
+                </div>
+                <div class="form-group col_3">
+                    <label>INGRESO BRUTO</label>
+                    @Html.TextBoxFor(x => x.Titular.ingresoBruto, new { @class = "form-control", Type = "text", @readonly = "readonly" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col_4">
+                    <label>TIPO DIRECCION</label>
+                    @Html.TextBoxFor(x => x.Titular.tipoDireccionLaboral, new { @class = "form-control", Type = "text", @readonly = "readonly" })
+                </div>
+                <div class="form-group col_4_colspan_2">
+                    <label>DIRECCION</label>
+                    @Html.TextBoxFor(x => x.Titular.direccionLaboral, new { @class = "form-control", Type = "text", @readonly = "readonly" })
+                </div>
+                <div class="form-group col_4">
+                    <label>NRO DIRECCION</label>
+                    @Html.TextBoxFor(x => x.Titular.numeroDireccionLaboral, new { @class = "form-control", Type = "text", @readonly = "readonly" })
+                </div>
+            </div>
+        </div>
+    </div>
+}

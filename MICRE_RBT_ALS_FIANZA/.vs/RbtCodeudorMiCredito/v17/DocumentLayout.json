@@ -1,0 +1,338 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{519C7EA3-0A0C-489C-9ADB-6250F06E939B}|CapaNegocios\\CapaNegocios.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\capanegocios\\relacioncodeudor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{519C7EA3-0A0C-489C-9ADB-6250F06E939B}|CapaNegocios\\CapaNegocios.csproj|solutionrelative:capanegocios\\relacioncodeudor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{519C7EA3-0A0C-489C-9ADB-6250F06E939B}|CapaNegocios\\CapaNegocios.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\capanegocios\\sesiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{519C7EA3-0A0C-489C-9ADB-6250F06E939B}|CapaNegocios\\CapaNegocios.csproj|solutionrelative:capanegocios\\sesiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D526CEAA-AB7D-4213-8AC2-97EF63A5374A}|Clases\\Clases.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\clases\\logs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D526CEAA-AB7D-4213-8AC2-97EF63A5374A}|Clases\\Clases.csproj|solutionrelative:clases\\logs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{180A2724-BE8A-4EB8-A37B-2D3024CA7D22}|Rbt.Business\\Rbt.Business.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\rbt.business\\procesoextra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{180A2724-BE8A-4EB8-A37B-2D3024CA7D22}|Rbt.Business\\Rbt.Business.csproj|solutionrelative:rbt.business\\procesoextra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95A255E7-FBD9-4D6E-9B8D-D1DF06E21F2D}|ServRbtCodeudorMicre\\ServRbtCodeudorMicre.csproj|d:\\t25208\\micredito\\robots y ws\\micre_rbt_als_fianza\\servrbtcodeudormicre\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{95A255E7-FBD9-4D6E-9B8D-D1DF06E21F2D}|ServRbtCodeudorMicre\\ServRbtCodeudorMicre.csproj|solutionrelative:servrbtcodeudormicre\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95A255E7-FBD9-4D6E-9B8D-D1DF06E21F2D}|ServRbtCodeudorMicre\\ServRbtCodeudorMicre.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\servrbtcodeudormicre\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95A255E7-FBD9-4D6E-9B8D-D1DF06E21F2D}|ServRbtCodeudorMicre\\ServRbtCodeudorMicre.csproj|solutionrelative:servrbtcodeudormicre\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Rbt.Business.Test||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Rbt.Business||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Clases||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|CapaNegocios||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95A255E7-FBD9-4D6E-9B8D-D1DF06E21F2D}|ServRbtCodeudorMicre\\ServRbtCodeudorMicre.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\servrbtcodeudormicre\\servrbtcodeudormicre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95A255E7-FBD9-4D6E-9B8D-D1DF06E21F2D}|ServRbtCodeudorMicre\\ServRbtCodeudorMicre.csproj|solutionrelative:servrbtcodeudormicre\\servrbtcodeudormicre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95A255E7-FBD9-4D6E-9B8D-D1DF06E21F2D}|ServRbtCodeudorMicre\\ServRbtCodeudorMicre.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\servrbtcodeudormicre\\servrbtcodeudormicre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{95A255E7-FBD9-4D6E-9B8D-D1DF06E21F2D}|ServRbtCodeudorMicre\\ServRbtCodeudorMicre.csproj|solutionrelative:servrbtcodeudormicre\\servrbtcodeudormicre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95A255E7-FBD9-4D6E-9B8D-D1DF06E21F2D}|ServRbtCodeudorMicre\\ServRbtCodeudorMicre.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\servrbtcodeudormicre\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{95A255E7-FBD9-4D6E-9B8D-D1DF06E21F2D}|ServRbtCodeudorMicre\\ServRbtCodeudorMicre.csproj|solutionrelative:servrbtcodeudormicre\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95A255E7-FBD9-4D6E-9B8D-D1DF06E21F2D}|ServRbtCodeudorMicre\\ServRbtCodeudorMicre.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\servrbtcodeudormicre\\servrbtcodeudormicre.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95A255E7-FBD9-4D6E-9B8D-D1DF06E21F2D}|ServRbtCodeudorMicre\\ServRbtCodeudorMicre.csproj|solutionrelative:servrbtcodeudormicre\\servrbtcodeudormicre.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C01FCC-C38B-4068-A678-CEE9E1766882}|Rbt.Business.Test\\Rbt.Business.Test.csproj|d:\\t25208\\micredito\\robots y ws\\micre_rbt_als_fianza\\rbt.business.test\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|a54ad834-9219-4aa6-b589-607af21c3e26"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{519C7EA3-0A0C-489C-9ADB-6250F06E939B}|CapaNegocios\\CapaNegocios.csproj|d:\\t25208\\micredito\\robots y ws\\micre_rbt_als_fianza\\capanegocios\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|a54ad834-9219-4aa6-b589-607af21c3e26"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D526CEAA-AB7D-4213-8AC2-97EF63A5374A}|Clases\\Clases.csproj|d:\\t25208\\micredito\\robots y ws\\micre_rbt_als_fianza\\clases\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|a54ad834-9219-4aa6-b589-607af21c3e26"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{180A2724-BE8A-4EB8-A37B-2D3024CA7D22}|Rbt.Business\\Rbt.Business.csproj|d:\\t25208\\micredito\\robots y ws\\micre_rbt_als_fianza\\rbt.business\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|a54ad834-9219-4aa6-b589-607af21c3e26"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 26,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Sesiones.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\CapaNegocios\\Sesiones.cs",
+              "RelativeDocumentMoniker": "CapaNegocios\\Sesiones.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\CapaNegocios\\Sesiones.cs",
+              "RelativeToolTip": "CapaNegocios\\Sesiones.cs",
+              "ViewState": "AQIAAFMDAAAAAAAAAAAlwGUDAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T15:45:48.775Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\ServRbtCodeudorMicre\\Program.cs",
+              "RelativeDocumentMoniker": "ServRbtCodeudorMicre\\Program.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\ServRbtCodeudorMicre\\Program.cs",
+              "RelativeToolTip": "ServRbtCodeudorMicre\\Program.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwCIAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T23:10:09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\ServRbtCodeudorMicre\\App.config",
+              "RelativeDocumentMoniker": "ServRbtCodeudorMicre\\App.config",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\ServRbtCodeudorMicre\\App.config",
+              "RelativeToolTip": "ServRbtCodeudorMicre\\App.config",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAAG4AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-10-24T14:59:16.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProcesoExtra.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\Rbt.Business\\ProcesoExtra.cs",
+              "RelativeDocumentMoniker": "Rbt.Business\\ProcesoExtra.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\Rbt.Business\\ProcesoExtra.cs",
+              "RelativeToolTip": "Rbt.Business\\ProcesoExtra.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAAAEcAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T15:45:36.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CapaNegocios",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\CapaNegocios\\CapaNegocios.csproj",
+              "RelativeDocumentMoniker": "CapaNegocios\\CapaNegocios.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\CapaNegocios\\CapaNegocios.csproj",
+              "RelativeToolTip": "CapaNegocios\\CapaNegocios.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-14T16:47:13.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Clases",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\Clases\\Clases.csproj",
+              "RelativeDocumentMoniker": "Clases\\Clases.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\Clases\\Clases.csproj",
+              "RelativeToolTip": "Clases\\Clases.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-14T16:47:18.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RelacionCodeudor.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\CapaNegocios\\RelacionCodeudor.cs",
+              "RelativeDocumentMoniker": "CapaNegocios\\RelacionCodeudor.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\CapaNegocios\\RelacionCodeudor.cs",
+              "RelativeToolTip": "CapaNegocios\\RelacionCodeudor.cs",
+              "ViewState": "AQIAANoAAAAAAAAAAAAtwBoBAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T13:35:09.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Logs.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\Clases\\Logs.cs",
+              "RelativeDocumentMoniker": "Clases\\Logs.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\Clases\\Logs.cs",
+              "RelativeToolTip": "Clases\\Logs.cs",
+              "ViewState": "AQIAAK8AAAAAAAAAAAAlwMEAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T21:59:09.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Rbt.Business.Test",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\Rbt.Business.Test\\Rbt.Business.Test.csproj",
+              "RelativeDocumentMoniker": "Rbt.Business.Test\\Rbt.Business.Test.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\Rbt.Business.Test\\Rbt.Business.Test.csproj",
+              "RelativeToolTip": "Rbt.Business.Test\\Rbt.Business.Test.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-14T16:46:41.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Rbt.Business",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\Rbt.Business\\Rbt.Business.csproj",
+              "RelativeDocumentMoniker": "Rbt.Business\\Rbt.Business.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\Rbt.Business\\Rbt.Business.csproj",
+              "RelativeToolTip": "Rbt.Business\\Rbt.Business.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-14T16:47:23.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ServRbtCodeudorMicre.cs [Design]",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\ServRbtCodeudorMicre\\ServRbtCodeudorMicre.cs",
+              "RelativeDocumentMoniker": "ServRbtCodeudorMicre\\ServRbtCodeudorMicre.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\ServRbtCodeudorMicre\\ServRbtCodeudorMicre.cs [Design]",
+              "RelativeToolTip": "ServRbtCodeudorMicre\\ServRbtCodeudorMicre.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T13:33:02.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ServRbtCodeudorMicre.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\ServRbtCodeudorMicre\\ServRbtCodeudorMicre.cs",
+              "RelativeDocumentMoniker": "ServRbtCodeudorMicre\\ServRbtCodeudorMicre.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\ServRbtCodeudorMicre\\ServRbtCodeudorMicre.cs",
+              "RelativeToolTip": "ServRbtCodeudorMicre\\ServRbtCodeudorMicre.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAmwEcAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T20:05:01.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "packages.config",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\ServRbtCodeudorMicre\\packages.config",
+              "RelativeDocumentMoniker": "ServRbtCodeudorMicre\\packages.config",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\ServRbtCodeudorMicre\\packages.config",
+              "RelativeToolTip": "ServRbtCodeudorMicre\\packages.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-02-13T20:26:41.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ServRbtCodeudorMicre.Designer.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\ServRbtCodeudorMicre\\ServRbtCodeudorMicre.Designer.cs",
+              "RelativeDocumentMoniker": "ServRbtCodeudorMicre\\ServRbtCodeudorMicre.Designer.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_ALS_FIANZA\\ServRbtCodeudorMicre\\ServRbtCodeudorMicre.Designer.cs",
+              "RelativeToolTip": "ServRbtCodeudorMicre\\ServRbtCodeudorMicre.Designer.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA1wBoAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T15:45:08.174Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Excepciones de crédito</title>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/fontawesome.css" rel="stylesheet" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/brands.css" rel="stylesheet" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/solid.css" rel="stylesheet" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+    <script src="~/js/theme-switcher.js"></script>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <link rel="icon" href="~/images/logobcp.svg" type="image/x-icon" />
+    <script src="~/xlsx/xlsx.js"></script>
+    <script>
+        const temaGuardado = getCookie('tema');
+        if (temaGuardado) {
+            document.documentElement.setAttribute('data-bs-theme', temaGuardado);
+        }
+        imgHandler(temaGuardado);
+    </script>
+</head>
+<body>
+    
+    @if (!string.IsNullOrEmpty(ViewBag.Message))
+    {
+        <div class="toast-container position-fixed bottom-0 end-0 p-3" id="toast-button">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <img src="~/images/logobcp.svg" style="width: 50px; height: 50px;" class="rounded me-2 miBCPLogo2" id="miBCPLogo2" alt="BCP logo">
+                    <strong class="me-auto">Mensaje</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    @ViewBag.Message
+                </div>
+            </div>
+        </div>
+    }
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="ps-5" style="width: 12rem;">
+                    <img src="~/images/logobcp.svg" class="rounded mx-auto d-block card-img-top img-fluid miBCPIcon" id="miBCPLogo" alt="BCP logo">
+                </div>
+            </div>
+            <div class="btn-group dropstart border border-2 px-2 pb-1" style="white-space: nowrap;">
+                <div id="userName">@ViewBag.NombreUsuario</div>
+            </div>
+
+            <div class="btn-group dropstart px-1">
+                <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle px-3 border-0" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                    </svg>
+                </button>
+                <ul class="dropdown-menu px-1">
+                    <li><a class="dropdown-item" href="@Url.Action("Logout", "Login")">Salir</a></li>
+                </ul>
+            </div>
+            <div class="btn-group dropstart">
+                <button id="miBCPIcon" type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle px-3 border-0" data-bs-toggle="dropdown" aria-expanded="false">
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <button class="dropdown-item btn" onclick="cambiarTema('light')" style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                                <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+                            </svg> Claro
+                        </button>
+                    </li>
+                    <li>
+                        <button class="dropdown-item btn" onclick="cambiarTema('dark')" style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
+                                <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
+                                <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z" />
+                            </svg>Oscuro
+                        </button>
+                    </li>
+                    <li>
+                        <button class="dropdown-item btn" onclick="cambiarTema('auto')" style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-half" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16" />
+                            </svg>Auto
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="d-flex full-height">
+            <div class="custom-navbar">
+                <div class="card p-3 card-full-height">
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill-add" viewBox="0 0 16 16">
+                            <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4" />
+                        </svg>
+                        <a class="btn" href="@Url.Action("IndexExcepcion", "Home")" type="button">
+                            Registro excepciones
+                        </a>
+                    </p>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-list" viewBox="0 0 16 16">
+                            <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z" />
+                            <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8m0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0" />
+                        </svg>
+                        <a class="btn" href="@Url.Action("SolicitudTable", "Solicitud")" type="button">
+                            Bandeja excepciones
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="custom-content">
+                <div class="container text-start">
+                    <main role="main" class="pb-3">
+                        @RenderBody()
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/carrusel-handler.js" asp-append-version="true"></script>
+    <script>
+        document.addEventListener('keydown', function (event) {
+            if (event.key === "ArrowRight") {
+                event.preventDefault();
+            }
+        });
+        var _urlAccountCheck = "@Url.Action("CheckSession", "Login")";
+        var _urlLoginDefault = "@Url.Action("Login", "Login")";
+        document.addEventListener('DOMContentLoaded', function () {
+            var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+            var toastList = toastElList.map(function (toastEl) {
+                return new bootstrap.Toast(toastEl)
+            })
+            toastList.forEach(toast => toast.show())
+        });
+        function checkSession() {
+            // /AppMainExcepciones/
+            fetch(_urlAccountCheck)
+                .then(response => {
+                    if (response.status === 401) {
+                        window.location.href = _urlLoginDefault; // Redirigir al login
+                    }
+                })
+                .catch(error => {
+                    console.error('Error al verificar la sesión:', error);
+                });
+        }
+
+        setInterval(checkSession, 60000); // Verificar cada 60 segundos
+    </script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

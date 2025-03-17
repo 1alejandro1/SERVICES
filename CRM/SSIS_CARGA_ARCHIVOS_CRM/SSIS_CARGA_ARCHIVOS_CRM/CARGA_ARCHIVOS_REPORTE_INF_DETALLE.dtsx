@@ -1,0 +1,3009 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/14/2024 9:57:20 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="W204SISF35030"
+  DTS:CreatorName="BTBNET\T25208"
+  DTS:DelayValidation="True"
+  DTS:DTSID="{36BAE07D-B178-4A5F-B1F9-2D3B76DC304B}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5397.1"
+  DTS:LocaleID="16394"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="74"
+  DTS:VersionGUID="{FAFBE78B-9A7E-44AE-9613-3BDECAA786BA}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[20240614_1350.log]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{4B7BC3C1-D599-4A21-A4E5-21A8C73EA21F}"
+      DTS:ObjectName="20240614_1350.log">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::v_rutalog] +  @[User::v_logname]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="1"
+          DTS:ConnectionString="D:\BCB_LOGS\Paquetes\CRM\CARGA_ARCHIVOS_REPORTE_INF_DETALLE\LOGS\20240905_1424.log" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ConexionArchivoREPORTE_INF_DETALLE]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{1EF8C1B2-FA5F-47C8-BA4B-116965CF3539}"
+      DTS:ObjectName="ConexionArchivoREPORTE_INF_DETALLE">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="RaggedRight"
+          DTS:LocaleID="16394"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter="_x000D__x000A_"
+          DTS:DataRowsToSkip="1"
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="D:\BCB_LOGS\Paquetes\CRM\CARGA_ARCHIVOS_REPORTE_INF_DETALLE\ARCHIVOS\REPORTE_INF_DETALLE.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="13"
+              DTS:MaximumWidth="8"
+              DTS:DataType="129"
+              DTS:ObjectName="FECHA_INICIO"
+              DTS:DTSID="{B5D7BA71-CFB8-49E1-ACE8-C4E5CDD5FD95}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="10"
+              DTS:MaximumWidth="6"
+              DTS:DataType="129"
+              DTS:ObjectName="MATRICULA"
+              DTS:DTSID="{CA9DC1BC-3352-4EE4-AD41-9DD31ADE1132}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="13"
+              DTS:MaximumWidth="12"
+              DTS:DataType="129"
+              DTS:ObjectName="CIC"
+              DTS:DTSID="{15E32D97-62ED-487D-A8A6-FA44D2CCA131}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="257"
+              DTS:MaximumWidth="77"
+              DTS:DataType="129"
+              DTS:ObjectName="NOMBRE_COMPLETO"
+              DTS:DTSID="{E9971DA4-B6E5-4A88-9977-702C0CF745A7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="78"
+              DTS:MaximumWidth="77"
+              DTS:DataType="129"
+              DTS:ObjectName="PRODUCTO"
+              DTS:DTSID="{7ABADCF7-DE96-495A-9175-F8D45F59EA3B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="14"
+              DTS:MaximumWidth="12"
+              DTS:DataType="129"
+              DTS:ObjectName="ESTADO_SEGURO"
+              DTS:DTSID="{586C1C24-E272-4F30-9F92-9055BB120AD3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="11"
+              DTS:MaximumWidth="11"
+              DTS:DataType="129"
+              DTS:ObjectName="MARCA"
+              DTS:DTSID="{D7AE6B81-4938-4A6D-B365-A5B1A0DBD1F3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="257"
+              DTS:MaximumWidth="257"
+              DTS:DataType="129"
+              DTS:ObjectName="INF_GENERADO"
+              DTS:DTSID="{35A86795-E4D3-438B-9ABA-0E0770E6A338}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="12"
+              DTS:MaximumWidth="12"
+              DTS:DataType="129"
+              DTS:ObjectName="PONDERACION"
+              DTS:DTSID="{A3568A93-E437-424C-B50C-DDF0FEB93FE0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="129"
+              DTS:ObjectName="FECHA_REGISTRO"
+              DTS:DTSID="{98CCC3E7-CBE8-4AE6-911D-CE5DE1FCA40F}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:LogProviders>
+    <DTS:LogProvider
+      DTS:ConfigString="20240614_1350.log"
+      DTS:CreationName="Microsoft.LogProviderTextFile"
+      DTS:Description="Writes log entries for events to a CSV file"
+      DTS:DTSID="{E0925D63-28B0-4A6D-8458-5889FA31B0BF}"
+      DTS:ObjectName="SSIS log provider for Text files">
+      <DTS:ObjectData>
+        <InnerObject />
+      </DTS:ObjectData>
+    </DTS:LogProvider>
+  </DTS:LogProviders>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="3"
+      DTS:DTSID="{F0DEDE25-8DAA-4BA8-BF51-65651E1B1319}"
+      DTS:ObjectName="P_Depuracion_Logs">
+      <DTS:Property
+        DTS:DataType="3"
+        DTS:Name="ParameterValue">8</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{ECC5531A-4CC2-4025-8F03-CAAFCD87E81F}"
+      DTS:ObjectName="P_mailError">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">dtoro@bcp.com.bo</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{142CF9D6-326F-4CD6-B7D1-A17B556FE14A}"
+      DTS:ObjectName="P_mailExito">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">dtoro@bcp.com.bo</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{EF187CE6-960E-4C15-9A9A-CDDEE9161141}"
+      DTS:ObjectName="P_mailRemitente">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">jllanos@bcp.com.bo</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{1A5101A4-8665-4251-B708-044969CE8429}"
+      DTS:ObjectName="P_nameBaseCRMEmail">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">BD_CRMFUENTE</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{DE5F1B82-4654-403F-8C45-827B1DC5878C}"
+      DTS:ObjectName="P_nameTableReporteInfDetalle_Email">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">dbo.new_metaventainf</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{D63B8456-0DFE-43AB-B6FB-0EF12C8E34D5}"
+      DTS:ObjectName="P_rutaArchivo">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">D:\BCB_LOGS\Paquetes\CRM\CARGA_ARCHIVOS_REPORTE_INF_DETALLE\ARCHIVOS\REPORTE_INF_DETALLE.txt</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{C4C41139-CC51-4759-B99A-71572C0290DD}"
+      DTS:ObjectName="P_rutaArchivoDestino">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">D:\BCB_LOGS\Paquetes\CRM\CARGA_ARCHIVOS_REPORTE_INF_DETALLE\BACKUP\</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{8580900B-A1FB-461B-A74D-976CE7C4DE98}"
+      DTS:ObjectName="P_rutalog">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">D:\BCB_LOGS\Paquetes\CRM\CARGA_ARCHIVOS_REPORTE_INF_DETALLE\LOGS\</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{586D987D-322E-48A3-AA53-6E5228DFA421}"
+      DTS:ObjectName="P_ServSMTP">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">btbexc00.bancred.com.bo</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{47654C3F-1552-436C-9A25-91104629DB53}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="GETDATE()"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_date">
+      <DTS:VariableValue
+        DTS:DataType="7">9/5/2024 2:24:15 PM</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{4591DA8F-A730-43DA-B04D-7BA8080E6E78}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_Depuracion_Logs]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_Depuracion_Logs">
+      <DTS:VariableValue
+        DTS:DataType="3">8</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{E68A6C5E-E87B-4EBD-8E35-5D9E990683FF}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_Error">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{B6AEAE52-A307-42BA-9B92-788D7A7D183B}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="SUBSTRING(((REPLACE((REPLACE((REPLACE( (DT_WSTR, 50) (DT_DBTIMESTAMP) GETDATE(),&quot;-&quot;,&quot;&quot;)),&quot; &quot;,&quot;_&quot;)),&quot;:&quot;,&quot;&quot;))),1,13)+&quot;.log&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_logname">
+      <DTS:VariableValue
+        DTS:DataType="8">20240905_1424.log</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{CCA94114-FD58-4EB2-AADA-067EF7809263}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_mailError]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_mailError">
+      <DTS:VariableValue
+        DTS:DataType="8">dtoro@bcp.com.bo</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{27DDCC38-1486-409A-9751-0A4E1D84D0BE}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_mailExito]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_mailExito">
+      <DTS:VariableValue
+        DTS:DataType="8">dtoro@bcp.com.bo</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{4894A0E4-2A90-4270-8907-B5FF2DA3A3D6}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_mailRemitente]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_mailRemitente">
+      <DTS:VariableValue
+        DTS:DataType="8">jllanos@bcp.com.bo</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{2059F6EB-CDFC-410A-9A53-3FD093FE7987}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_nameBaseCRMEmail]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_nameBaseCRMEmail">
+      <DTS:VariableValue
+        DTS:DataType="8">BD_CRMFUENTE</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{6E38220A-93E6-43A2-A1CA-B977FDE42FEA}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_nameTableReporteInfDetalle_Email]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_nameTableReporteInfDetalle_Email">
+      <DTS:VariableValue
+        DTS:DataType="8">dbo.new_metaventainf</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{C598524C-8568-4774-AD1E-0B2058347DE2}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_PackageName">
+      <DTS:VariableValue
+        DTS:DataType="8">CARGA_ARCHIVOS_REPORTE_INF_DETALLE</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{BD884436-E73C-4B57-9E99-C306B20A4AB4}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_rutaArchivo]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_rutaArchivo">
+      <DTS:VariableValue
+        DTS:DataType="8">D:\BCB_LOGS\Paquetes\CRM\CARGA_ARCHIVOS_REPORTE_INF_DETALLE\ARCHIVOS\REPORTE_INF_DETALLE.txt</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{38D037C5-6999-4D05-99A3-12823B76EAA9}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_rutaArchivoDestino]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_rutaArchivoDestino">
+      <DTS:VariableValue
+        DTS:DataType="8">D:\BCB_LOGS\Paquetes\CRM\CARGA_ARCHIVOS_REPORTE_INF_DETALLE\BACKUP\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A0749A0D-F878-4A47-9C02-1440836E02BC}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_rutalog]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_rutalog">
+      <DTS:VariableValue
+        DTS:DataType="8">D:\BCB_LOGS\Paquetes\CRM\CARGA_ARCHIVOS_REPORTE_INF_DETALLE\LOGS\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{0F020C6E-5F64-4DB4-8719-372E3EAB4F8E}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_ServSMTP]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_ServSMTP">
+      <DTS:VariableValue
+        DTS:DataType="8">btbexc00.bancred.com.bo</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{07B32665-9DA4-4FC9-9CDF-3596036B41B8}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_total_Reporte_Inf_Detalle">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:LoggingOptions
+    DTS:FilterKind="0"
+    DTS:LoggingMode="1">
+    <DTS:Property
+      DTS:DataType="8"
+      DTS:Name="EventFilter">3,7,OnError,10,OnProgress,12,OnTaskFailed</DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnError"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnProgress"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnTaskFailed"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:SelectedLogProviders>
+      <DTS:SelectedLogProvider
+        DTS:InstanceID="{E0925D63-28B0-4A6D-8458-5889FA31B0BF}" />
+    </DTS:SelectedLogProviders>
+  </DTS:LoggingOptions>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Correo de Error de Carga Data REPORTE_INF_DETALLE"
+      DTS:CreationName="Microsoft.SendMailTask"
+      DTS:Description="Se envia cuando ocurre algun error en algun proceso del paquete"
+      DTS:DTSID="{AF305780-3BEF-41A2-9D78-ED0FE1EFD4D4}"
+      DTS:ExecutableType="Microsoft.SendMailTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Correo de Error de Carga Data REPORTE_INF_DETALLE"
+      DTS:TaskContact="Send Mail Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="2">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:PropertyExpression
+        DTS:Name="FromLine">@[User::v_mailRemitente]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="MessageSource">"Señores,\n\nha ocurrido un error en la ejecución del paquete: "+ @[User::v_PackageName]  + " del Servidor " + @[System::MachineName] + ".\n\n\tFecha y hora de ejecución:\t\t "+(DT_WSTR, 50) (DT_DATE) @[System::StartTime] +"\n\nError en el proceso de carga de datos del archivo " + @[User::v_rutaArchivo] +"\n\nPara mayor detalle revise el archivo LOG [" +@[User::v_rutalog] +"\\"+ @[User::v_logname]  +"]\n\nSaludos.\n\nPRODUCCION DE SISTEMAS\nBanco de Credito de Bolivia S.A."</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="Subject">"Error carga de archivo a base de datos del Paquete " +    @[User::v_PackageName] + " para CRM"</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="ToLine">@[User::v_mailError]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <SendMailTask:SendMailTaskData
+          SendMailTask:SMTPServer="{4E1BF81E-F61B-41F7-9847-ECE05252C596}"
+          SendMailTask:From="jllanos@bcp.com.bo"
+          SendMailTask:To="dtoro@bcp.com.bo"
+          SendMailTask:Subject="Error carga de archivo a base de datos del Paquete CARGA_ARCHIVOS_REPORTE_INF_DETALLE para CRM"
+          SendMailTask:Priority="High"
+          SendMailTask:MessageSource="Señores,&#xA;&#xA;ha ocurrido un error en la ejecución del paquete: CARGA_ARCHIVOS_REPORTE_INF_DETALLE del Servidor WPS6658701.&#xA;&#xA;&#x9;Fecha y hora de ejecución:&#x9;&#x9; 5/9/2024 14:23:57&#xA;&#xA;Error en el proceso de carga de datos del archivo D:\BCB_LOGS\Paquetes\CRM\CARGA_ARCHIVOS_REPORTE_INF_DETALLE\ARCHIVOS\REPORTE_INF_DETALLE.txt&#xA;&#xA;Para mayor detalle revise el archivo LOG [D:\BCB_LOGS\Paquetes\CRM\CARGA_ARCHIVOS_REPORTE_INF_DETALLE\LOGS\\20240905_1424.log]&#xA;&#xA;Saludos.&#xA;&#xA;PRODUCCION DE SISTEMAS&#xA;Banco de Credito de Bolivia S.A." xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Correo de Error de Limpieza de Logs"
+      DTS:CreationName="Microsoft.SendMailTask"
+      DTS:DelayValidation="True"
+      DTS:Description="Se envia cuando ocurre algun error en algun proceso del paquete"
+      DTS:DTSID="{C9C9309E-4F5B-4FD3-8D66-AEF089C0C5FB}"
+      DTS:ExecutableType="Microsoft.SendMailTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Correo de Error de Limpieza de Logs"
+      DTS:TaskContact="Send Mail Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:PropertyExpression
+        DTS:Name="FromLine">@[User::v_mailRemitente]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="MessageSource">"Señores,\n\nha ocurrido un error en la ejecución del paquete: "+ @[User::v_PackageName]  + " del Servidor " + @[System::MachineName] + ".\n\n\tFecha y hora de ejecución:\t\t "+(DT_WSTR, 50) (DT_DATE) @[System::StartTime] +"\n\nPara mayor detalle revise el archivo LOG [" +@[User::v_rutalog] +"\\"+ @[User::v_logname]  +"]\n\nSaludos.\n\nPRODUCCION DE SISTEMAS\nBanco de Credito de Bolivia S.A."</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="Subject">"Error en depuracion de Logs del Paquete " +    @[User::v_PackageName] + " para CRM"</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="ToLine">@[User::v_mailError]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <SendMailTask:SendMailTaskData
+          SendMailTask:SMTPServer="{4E1BF81E-F61B-41F7-9847-ECE05252C596}"
+          SendMailTask:From="jllanos@bcp.com.bo"
+          SendMailTask:To="dtoro@bcp.com.bo"
+          SendMailTask:Subject="Error en depuracion de Logs del Paquete CARGA_ARCHIVOS_REPORTE_INF_DETALLE para CRM"
+          SendMailTask:Priority="High"
+          SendMailTask:MessageSource="Señores,&#xA;&#xA;ha ocurrido un error en la ejecución del paquete: CARGA_ARCHIVOS_REPORTE_INF_DETALLE del Servidor WPS6658701.&#xA;&#xA;&#x9;Fecha y hora de ejecución:&#x9;&#x9; 5/9/2024 14:23:57&#xA;&#xA;Para mayor detalle revise el archivo LOG [D:\BCB_LOGS\Paquetes\CRM\CARGA_ARCHIVOS_REPORTE_INF_DETALLE\LOGS\\20240905_1424.log]&#xA;&#xA;Saludos.&#xA;&#xA;PRODUCCION DE SISTEMAS&#xA;Banco de Credito de Bolivia S.A." xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Correo de Error de Validacion de archivo"
+      DTS:CreationName="Microsoft.SendMailTask"
+      DTS:Description="Se envia cuando ocurre algun error en algun proceso del paquete"
+      DTS:DTSID="{35FC60DC-0F1E-4150-96C1-CA6DDC1326C4}"
+      DTS:ExecutableType="Microsoft.SendMailTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Correo de Error de Validacion de archivo"
+      DTS:TaskContact="Send Mail Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:PropertyExpression
+        DTS:Name="FromLine">@[User::v_mailRemitente]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="MessageSource">"Señores,\n\nha ocurrido un error en la ejecución del paquete: "+ @[User::v_PackageName]  + " del Servidor " + @[System::MachineName] + ".\n\n\tFecha y hora de ejecución:\t\t "+(DT_WSTR, 50) (DT_DATE) @[System::StartTime] +"\n\nError en el proceso de validar la existencia del Archivo" + @[User::v_rutaArchivo]  + "\n\nPara mayor detalle revise el archivo LOG [" +@[User::v_rutalog] +"\\"+ @[User::v_logname]  +"]\n\nSaludos.\n\nPRODUCCION DE SISTEMAS\nBanco de Credito de Bolivia S.A."</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="Subject">"Error en el proceso de validar la existencia del archivo del Paquete " +    @[User::v_PackageName] + " para CRM"</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="ToLine">@[User::v_mailError]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <SendMailTask:SendMailTaskData
+          SendMailTask:SMTPServer="{4E1BF81E-F61B-41F7-9847-ECE05252C596}"
+          SendMailTask:From="jllanos@bcp.com.bo"
+          SendMailTask:To="dtoro@bcp.com.bo"
+          SendMailTask:Subject="Error en el proceso de validar la existencia del archivo del Paquete CARGA_ARCHIVOS_REPORTE_INF_DETALLE para CRM"
+          SendMailTask:Priority="High"
+          SendMailTask:MessageSource="Señores,&#xA;&#xA;ha ocurrido un error en la ejecución del paquete: CARGA_ARCHIVOS_REPORTE_INF_DETALLE del Servidor WPS6658701.&#xA;&#xA;&#x9;Fecha y hora de ejecución:&#x9;&#x9; 5/9/2024 14:23:57&#xA;&#xA;Error en el proceso de validar la existencia del ArchivoD:\BCB_LOGS\Paquetes\CRM\CARGA_ARCHIVOS_REPORTE_INF_DETALLE\ARCHIVOS\REPORTE_INF_DETALLE.txt&#xA;&#xA;Para mayor detalle revise el archivo LOG [D:\BCB_LOGS\Paquetes\CRM\CARGA_ARCHIVOS_REPORTE_INF_DETALLE\LOGS\\20240905_1424.log]&#xA;&#xA;Saludos.&#xA;&#xA;PRODUCCION DE SISTEMAS&#xA;Banco de Credito de Bolivia S.A." xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Correo de Finalización Satisfactoria"
+      DTS:CreationName="Microsoft.SendMailTask"
+      DTS:Description="Se envia cuando ocurre algun error en algun proceso del paquete"
+      DTS:DTSID="{FE86C38A-E599-4108-9820-BF71BB303CBB}"
+      DTS:ExecutableType="Microsoft.SendMailTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Correo de Finalización Satisfactoria"
+      DTS:TaskContact="Send Mail Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="3">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:PropertyExpression
+        DTS:Name="FromLine">@[User::v_mailRemitente]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="MessageSource">"NOTIFICACION DE EJECUCION 
+
+La ejecucion del paquete "+ @[User::v_PackageName]  + " fue satisfactoria
+
+"+"Fecha Inicio Ejecucion: "+ (DT_WSTR, 50) (DT_DATE) @[System::StartTime] +
+"
+
+Fecha Fin Ejecucion: "+ (DT_WSTR, 50) (DT_DATE) GETDATE()+
+" 
+Cantidad de registros insertados " + (DT_WSTR, 250) @[User::v_total_Reporte_Inf_Detalle] + " en la tabla: " + @[User::v_nameTableReporteInfDetalle_Email]   +  
+"
+
+Se proceso la Carga Automaticamente desde el siguiente Servidor:
+
+" + @[System::MachineName]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="Subject">"Ejecución Satisfactoria del paquete " +   @[User::v_PackageName] + " para CRM"</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="ToLine">@[User::v_mailError]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <SendMailTask:SendMailTaskData
+          SendMailTask:SMTPServer="{4E1BF81E-F61B-41F7-9847-ECE05252C596}"
+          SendMailTask:From="jllanos@bcp.com.bo"
+          SendMailTask:To="dtoro@bcp.com.bo"
+          SendMailTask:Subject="Ejecución Satisfactoria del paquete CARGA_ARCHIVOS_REPORTE_INF_DETALLE para CRM"
+          SendMailTask:MessageSource="NOTIFICACION DE EJECUCION &#xA;&#xA;La ejecucion del paquete CARGA_ARCHIVOS_REPORTE_INF_DETALLE fue satisfactoria&#xA;&#xA;Fecha Inicio Ejecucion: 5/9/2024 14:23:57&#xA;&#xA;Fecha Fin Ejecucion: 5/9/2024 14:24:15 &#xA;Cantidad de registros insertados 0 en la tabla: dbo.new_metaventainf&#xA;&#xA;Se proceso la Carga Automaticamente desde el siguiente Servidor:&#xA;&#xA;WPS6658701" xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Depura Logs"
+      DTS:CreationName="Microsoft.ScriptTask"
+      DTS:Description="Script Task"
+      DTS:DTSID="{F6E20AC9-F9F0-4607-A6D3-0648E7CFB4DF}"
+      DTS:ExecutableType="Microsoft.ScriptTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Depura Logs"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:ObjectData>
+        <ScriptProject
+          Name="ST_92a188a4a68b4f4c9b1330a53b0c2a41"
+          VSTAMajorVersion="14"
+          VSTAMinorVersion="0"
+          Language="CSharp"
+          ReadOnlyVariables="$Package::P_Depuracion_Logs,$Package::P_rutalog">
+          <ProjectItem
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Resources.resx"
+            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></ProjectItem>
+          <ProjectItem
+            Name="ST_92a188a4a68b4f4c9b1330a53b0c2a41.csproj"
+            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FEB511B2-FA60-442C-9295-BB29DB73678F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ST_92a188a4a68b4f4c9b1330a53b0c2a41</RootNamespace>
+    <AssemblyName>ST_92a188a4a68b4f4c9b1330a53b0c2a41</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=13.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=13.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ScriptMain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="VSTAHostName" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" />
+        <Host Name="ScriptTask" />
+        <ProjectClient>
+          <HostIdentifier>SSIS_ST130</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></ProjectItem>
+          <ProjectItem
+            Name="ScriptMain.cs"
+            Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
+/* The Script Task allows you to perform virtually any operation that can be accomplished in
+ * a .Net application within the context of an Integration Services control flow. 
+ * 
+ * Expand the other regions which have "Help" prefixes for examples of specific ways to use
+ * Integration Services features within this script task. */
+#endregion
+
+
+#region Namespaces
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Runtime;
+using System.Windows.Forms;
+using System.IO;
+using System.Linq;
+#endregion
+
+namespace ST_92a188a4a68b4f4c9b1330a53b0c2a41
+{
+    /// <summary>
+    /// ScriptMain is the entry point class of the script.  Do not change the name, attributes,
+    /// or parent of this class.
+    /// </summary>
+	[Microsoft.SqlServer.Dts.Tasks.ScriptTask.SSISScriptTaskEntryPointAttribute]
+	public partial class ScriptMain : Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTARTScriptObjectModelBase
+	{
+        #region Help:  Using Integration Services variables and parameters in a script
+        /* To use a variable in this script, first ensure that the variable has been added to 
+         * either the list contained in the ReadOnlyVariables property or the list contained in 
+         * the ReadWriteVariables property of this script task, according to whether or not your
+         * code needs to write to the variable.  To add the variable, save this script, close this instance of
+         * Visual Studio, and update the ReadOnlyVariables and 
+         * ReadWriteVariables properties in the Script Transformation Editor window.
+         * To use a parameter in this script, follow the same steps. Parameters are always read-only.
+         * 
+         * Example of reading from a variable:
+         *  DateTime startTime = (DateTime) Dts.Variables["System::StartTime"].Value;
+         * 
+         * Example of writing to a variable:
+         *  Dts.Variables["User::myStringVariable"].Value = "new value";
+         * 
+         * Example of reading from a package parameter:
+         *  int batchId = (int) Dts.Variables["$Package::batchId"].Value;
+         *  
+         * Example of reading from a project parameter:
+         *  int batchId = (int) Dts.Variables["$Project::batchId"].Value;
+         * 
+         * Example of reading from a sensitive project parameter:
+         *  int batchId = (int) Dts.Variables["$Project::batchId"].GetSensitiveValue();
+         * */
+
+        #endregion
+
+        #region Help:  Firing Integration Services events from a script
+        /* This script task can fire events for logging purposes.
+         * 
+         * Example of firing an error event:
+         *  Dts.Events.FireError(18, "Process Values", "Bad value", "", 0);
+         * 
+         * Example of firing an information event:
+         *  Dts.Events.FireInformation(3, "Process Values", "Processing has started", "", 0, ref fireAgain)
+         * 
+         * Example of firing a warning event:
+         *  Dts.Events.FireWarning(14, "Process Values", "No values received for input", "", 0);
+         * */
+        #endregion
+
+        #region Help:  Using Integration Services connection managers in a script
+        /* Some types of connection managers can be used in this script task.  See the topic 
+         * "Working with Connection Managers Programatically" for details.
+         * 
+         * Example of using an ADO.Net connection manager:
+         *  object rawConnection = Dts.Connections["Sales DB"].AcquireConnection(Dts.Transaction);
+         *  SqlConnection myADONETConnection = (SqlConnection)rawConnection;
+         *  //Use the connection in some code here, then release the connection
+         *  Dts.Connections["Sales DB"].ReleaseConnection(rawConnection);
+         *
+         * Example of using a File connection manager
+         *  object rawConnection = Dts.Connections["Prices.zip"].AcquireConnection(Dts.Transaction);
+         *  string filePath = (string)rawConnection;
+         *  //Use the connection in some code here, then release the connection
+         *  Dts.Connections["Prices.zip"].ReleaseConnection(rawConnection);
+         * */
+        #endregion
+
+
+		/// <summary>
+        /// This method is called when this script task executes in the control flow.
+        /// Before returning from this method, set the value of Dts.TaskResult to indicate success or failure.
+        /// To open Help, press F1.
+        /// </summary>
+		public void Main()
+		{
+            // TODO: Add your code here           
+            var directory = new DirectoryInfo(Dts.Variables["$Package::P_rutalog"].Value.ToString());
+            var query = directory.GetFiles("*.log", SearchOption.AllDirectories);
+            int Dep_Logs = Convert.ToInt16(Dts.Variables["$Package::P_Depuracion_Logs"].Value.ToString());
+            var filesToDelete = query.OrderByDescending(file => file.CreationTime).Skip(Dep_Logs).ToList();
+            foreach (var file in filesToDelete)
+            {
+                file.Delete();
+            }
+            Dts.TaskResult = (int)ScriptResults.Success;
+        }
+
+        #region ScriptResults declaration
+        /// <summary>
+        /// This enum provides a convenient shorthand within the scope of this class for setting the
+        /// result of the script.
+        /// 
+        /// This code was generated automatically.
+        /// </summary>
+        enum ScriptResults
+        {
+            Success = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Success,
+            Failure = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Failure
+        };
+        #endregion
+
+	}
+}]]></ProjectItem>
+          <ProjectItem
+            Name="Project"
+            Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="3.0" schemaVersion="1.0">
+	<msb:PropertyGroup>
+		<msb:CodeName>ST_92a188a4a68b4f4c9b1330a53b0c2a41</msb:CodeName>
+		<msb:Language>msBuild</msb:Language>
+		<msb:DisplayName>ST_92a188a4a68b4f4c9b1330a53b0c2a41</msb:DisplayName>
+		<msb:ProjectId>{4B1C4C3D-01C1-4289-A1CC-A60C7A5DBC50}</msb:ProjectId>
+	</msb:PropertyGroup>
+	<msb:ItemGroup>
+		<msb:Project Include="ST_92a188a4a68b4f4c9b1330a53b0c2a41.csproj"/>
+		<msb:File Include="Properties\AssemblyInfo.cs"/>
+		<msb:File Include="Properties\Settings.settings"/>
+		<msb:File Include="Properties\Resources.resx"/>
+		<msb:File Include="Properties\Resources.Designer.cs"/>
+		<msb:File Include="Properties\Settings.Designer.cs"/>
+		<msb:File Include="ScriptMain.cs"/>
+	</msb:ItemGroup>
+</c:Project>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_92a188a4a68b4f4c9b1330a53b0c2a41.Properties.Settings.get_Default():ST_92a188a4a68b4f4c9b1330a53b0c2a41.Properties.Sett" +
+    "ings")]
+
+namespace ST_92a188a4a68b4f4c9b1330a53b0c2a41.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_92a188a4a68b4f4c9b1330a53b0c2a41")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_92a188a4a68b4f4c9b1330a53b0c2a41")]
+[assembly: AssemblyCopyright("Copyright @  2024")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Resources.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_92a188a4a68b4f4c9b1330a53b0c2a41.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_92a188a4a68b4f4c9b1330a53b0c2a41.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_92a188a4a68b4f4c9b1330a53b0c2a41.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace ST_92a188a4a68b4f4c9b1330a53b0c2a41.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ST_92a188a4a68b4f4c9b1330a53b0c2a41.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}]]></ProjectItem>
+          <BinaryItem
+            Name="ST_92a188a4a68b4f4c9b1330a53b0c2a41.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDABitw2YAAAAAAAAAAOAAIiALATAAABIAAAAIAAAAAAAAtjEA
+AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAGQxAABPAAAAAEAAAHgEAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAvBEAAAAgAAAAEgAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAHgEAAAAQAAAAAYAAAAUAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAGgAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAACY
+MQAAAAAAAEgAAAACAAUAqCEAAAQPAAABAAAAAAAAAKwwAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAABswAwC9AAAAAQAAEQIoEAAACm8RAAAKcgEAAHBvEgAACm8T
+AAAKbxQAAApzFQAACnIpAABwF28WAAAKAigQAAAKbxEAAApyNQAAcG8SAAAKbxMAAApvFAAACigX
+AAAKCn4IAAAEJS0XJn4HAAAE/gYMAAAGcxgAAAolgAgAAAQoAQAAKwYoAgAAKygDAAArbxwAAAoL
+KwwSASgdAAAKbx4AAAoSASgfAAAKLeveDhIB/hYDAAAbbyAAAArcAigQAAAKFm8hAAAKKgAAAAEQ
+AAACAIkAGaIADgAAAAAeAigiAAAKKh4CKCMAAAoqrn4BAAAELR5ybQAAcNADAAACKCQAAApvJQAA
+CnMmAAAKgAEAAAR+AQAABCoafgIAAAQqHgKAAgAABCoafgMAAAQqHgIoJwAACioucwgAAAaAAwAA
+BCoucwsAAAaABwAABCoeA28oAAAKKgAAQlNKQgEAAQAAAAAADAAAAHY0LjAuMzAzMTkAAAAABQBs
+AAAA3AQAACN+AABIBQAAvAYAACNTdHJpbmdzAAAAAAQMAADgAAAAI1VTAOQMAAAQAAAAI0dVSUQA
+AAD0DAAAEAIAACNCbG9iAAAAAAAAAAIAAAFXHaIJCQsAAAD6ATMAFgAAAQAAACoAAAAGAAAACAAA
+AAwAAAACAAAAKAAAAAIAAAARAAAAAQAAAAIAAAADAAAABAAAAAMAAAABAAAABQAAAAEAAAACAAAA
+AwAAAAAAVAQBAAAAAAAGAPICdgUGAIEDdgUGAD4CYwUPAOoFAAAGAGsC0gQGANUC0gQGALYC0gQG
+AGgD0gQGABID0gQGACsD0gQGAIIC0gQGAJ0CwQMKAEYDAwQKAK4BAwQGAF4AvwA/AEsFAAAGAPEE
+gQAGAIwEhQQGAAYCdgUGAGYGhQQGAGUAhQQGADMBhQQGACECYwUGADgFlgUGAPoEvQQOAOoBPgQO
+AFICPgQOAMoBqAQKACwEAwQSACwGTQESAOoATQEGABUFgQAGAOQEgQAGAJQGhQQWAPMAKAUWAEkA
+KAUGADsAvwAGAAYFgQAGAP4AhQQGAG0BhQQGAAoBhQQGALAG0gQAAAAAeAAAAAAAAQABAAEAEACd
+BBcAOQABAAEAAAAQAJ0F+QVRAAEAAwAAARAAPwb5BXEAAwAHAAMBAABYBgAASQAEAAoAAyEQALsA
+AABRAAcACgARAJEE/QARAJ4BAQERANoABQEGBqoACQFWgEgGDAFWgH4BDAE2AHQAEAEWAAEAFAFQ
+IAAAAACGAKMEBgABACwhAAAAAIYYVgUGAAEANCEAAAAAgxhWBQYAAQA8IQAAAACTCDQFHgEBAGgh
+AAAAAJMIhgEjAQEAbyEAAAAAkwiSASgBAQB3IQAAAACWCG0GLgECAH4hAAAAAIYYVgUGAAIAhiEA
+AAAAkRhcBTMBAgCSIQAAAACRGFwFMwECADQhAAAAAIYYVgUGAAIAniEAAAAAgwAKADcBAgAAAAEA
+qQMAAAEALgEJAFYFAQARAFYFBgAZAFYFCgApAFYFEAAxAFYFEAA5AFYFEABBAFYFEABJAFYFEABR
+AFYFEABZAFYFEABhAFYFEABpAFYFBgCZAFYFBgC5AFYFBgDZAFYFFQBxAFAGJQDpACgGKgDxAHwE
+LwD5AJ8DNQChANsDOQABAVYFEAABATYGPQARAWwARwAMAFYFVQAZAa8DWwAZASMFfAAZAZwGlAAU
+AEgFrAAcAIgGvAAxAf8BBgAcAKMGwQA5AeIBBgDpAHkGAQBxAFYFBgChAFYFBgBBARwBxQBBAawG
+zgDBAFYF1ADhAFYFBgAxATwB3AAIABQA8wAIABgA+AApAHsAdQEuAAsATQEuABMAVgEuABsAdQEu
+ACMAfgEuACsApwEuADMApwEuADsApwEuAEMAfgEuAEsArQEuAFMApwEuAFsAxAFDAGMA+ABJAHsA
+dQFhAGsA+ABjAHMA+ADDAGsA+AAbAAMAAQAEAAMAAAA4BT4BAACmAUMBAABxBkgBAgAEAAMAAgAF
+AAUAAQAGAAUAAgAHAAcATAClALUABIAAAAEAAAAlI+x0AAAAAAAAFwAAAAQAAAAAAAAAAAAAAOEA
+sgAAAAAADQAAAAAAAAAAAAAA6gDkAwAAAAAEAAAAAAAAAAAAAADhAIUEAAAAAA0AAAAAAAAAAAAA
+AOoAiwAAAAAABAAAAAAAAAAAAAAA4QByAQAAAAAAAAAAAQAAAKcFAAAFAAIABgACADMAdQA1AI8A
+NwCPAAAAAAAAPD45X18wXzAAPE1haW4+Yl9fMF8wAFNUXzkyYTE4OGE0YTY4YjRmNGM5YjEzMzBh
+NTNiMGMyYTQxAElFbnVtZXJhYmxlYDEASU9yZGVyZWRFbnVtZXJhYmxlYDEATGlzdGAxAEZ1bmNg
+MgBUb0ludDE2ADw+OQA8TW9kdWxlPgBTeXN0ZW0uSU8ATWljcm9zb2Z0LlNxbFNlcnZlci5NYW5h
+Z2VkRFRTAHZhbHVlX18AbXNjb3JsaWIAPD5jAFN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljAGRl
+ZmF1bHRJbnN0YW5jZQBWYXJpYWJsZQBFbnVtZXJhYmxlAElEaXNwb3NhYmxlAFJ1bnRpbWVUeXBl
+SGFuZGxlAEdldFR5cGVGcm9tSGFuZGxlAGZpbGUARGF0ZVRpbWUAZ2V0X0NyZWF0aW9uVGltZQBN
+aWNyb3NvZnQuU3FsU2VydmVyLkR0cy5SdW50aW1lAFR5cGUAU3lzdGVtLkNvcmUARmFpbHVyZQBn
+ZXRfQ3VsdHVyZQBzZXRfQ3VsdHVyZQByZXNvdXJjZUN1bHR1cmUAVlNUQVJUU2NyaXB0T2JqZWN0
+TW9kZWxCYXNlAEFwcGxpY2F0aW9uU2V0dGluZ3NCYXNlAERpc3Bvc2UARWRpdG9yQnJvd3NhYmxl
+U3RhdGUARGVsZXRlAENvbXBpbGVyR2VuZXJhdGVkQXR0cmlidXRlAERlYnVnZ2VyTm9uVXNlckNv
+ZGVBdHRyaWJ1dGUARGVidWdnYWJsZUF0dHJpYnV0ZQBFZGl0b3JCcm93c2FibGVBdHRyaWJ1dGUA
+QXNzZW1ibHlUaXRsZUF0dHJpYnV0ZQBBc3NlbWJseVRyYWRlbWFya0F0dHJpYnV0ZQBUYXJnZXRG
+cmFtZXdvcmtBdHRyaWJ1dGUAQXNzZW1ibHlDb25maWd1cmF0aW9uQXR0cmlidXRlAEFzc2VtYmx5
+RGVzY3JpcHRpb25BdHRyaWJ1dGUAQ29tcGlsYXRpb25SZWxheGF0aW9uc0F0dHJpYnV0ZQBBc3Nl
+bWJseVByb2R1Y3RBdHRyaWJ1dGUAQXNzZW1ibHlDb3B5cmlnaHRBdHRyaWJ1dGUAU1NJU1Njcmlw
+dFRhc2tFbnRyeVBvaW50QXR0cmlidXRlAEFzc2VtYmx5Q29tcGFueUF0dHJpYnV0ZQBSdW50aW1l
+Q29tcGF0aWJpbGl0eUF0dHJpYnV0ZQBnZXRfVmFsdWUAdmFsdWUAT3JkZXJCeURlc2NlbmRpbmcA
+U3lzdGVtLlJ1bnRpbWUuVmVyc2lvbmluZwBUb1N0cmluZwBNaWNyb3NvZnQuU3FsU2VydmVyLlNj
+cmlwdFRhc2sATWljcm9zb2Z0LlNxbFNlcnZlci5EdHMuVGFza3MuU2NyaXB0VGFzawBTY3JpcHRP
+YmplY3RNb2RlbABTeXN0ZW0uQ29tcG9uZW50TW9kZWwAU1RfOTJhMTg4YTRhNjhiNGY0YzliMTMz
+MGE1M2IwYzJhNDEuZGxsAGdldF9JdGVtAFN5c3RlbQBFbnVtAHJlc291cmNlTWFuAFNjcmlwdE1h
+aW4AU3lzdGVtLkNvbmZpZ3VyYXRpb24AU3lzdGVtLkdsb2JhbGl6YXRpb24AU3lzdGVtLlJlZmxl
+Y3Rpb24AU2VhcmNoT3B0aW9uAEZpbGVJbmZvAEN1bHR1cmVJbmZvAEZpbGVTeXN0ZW1JbmZvAERp
+cmVjdG9yeUluZm8AU2tpcABTeXN0ZW0uTGlucQBnZXRfUmVzb3VyY2VNYW5hZ2VyAEdldEVudW1l
+cmF0b3IALmN0b3IALmNjdG9yAFN5c3RlbS5EaWFnbm9zdGljcwBTeXN0ZW0uUnVudGltZS5Db21w
+aWxlclNlcnZpY2VzAFN5c3RlbS5SZXNvdXJjZXMAU1RfOTJhMTg4YTRhNjhiNGY0YzliMTMzMGE1
+M2IwYzJhNDEuUHJvcGVydGllcy5SZXNvdXJjZXMucmVzb3VyY2VzAERlYnVnZ2luZ01vZGVzAFNU
+XzkyYTE4OGE0YTY4YjRmNGM5YjEzMzBhNTNiMGMyYTQxLlByb3BlcnRpZXMAZ2V0X1ZhcmlhYmxl
+cwBHZXRGaWxlcwBTZXR0aW5ncwBTdWNjZXNzAGdldF9EdHMAU2NyaXB0UmVzdWx0cwBPYmplY3QA
+Z2V0X0RlZmF1bHQAc2V0X1Rhc2tSZXN1bHQAZ2V0X0N1cnJlbnQAQ29udmVydABUb0xpc3QATW92
+ZU5leHQAZ2V0X0Fzc2VtYmx5AAAAAAAnJABQAGEAYwBrAGEAZwBlADoAOgBQAF8AcgB1AHQAYQBs
+AG8AZwAACyoALgBsAG8AZwAANyQAUABhAGMAawBhAGcAZQA6ADoAUABfAEQAZQBwAHUAcgBhAGMA
+aQBvAG4AXwBMAG8AZwBzAABxUwBUAF8AOQAyAGEAMQA4ADgAYQA0AGEANgA4AGIANABmADQAYwA5
+AGIAMQAzADMAMABhADUAMwBiADAAYwAyAGEANAAxAC4AUAByAG8AcABlAHIAdABpAGUAcwAuAFIA
+ZQBzAG8AdQByAGMAZQBzAAAAJJ86Nb0qu0ypantx7ud92AAEIAEBCAMgAAEFIAEBEREEIAEBDgUg
+AQERaQkHAggVEUEBEkUEIAASdQQgABJ5BSABEn0cAyAAHAMgAA4JIAIdEkUOEYCFBAABBg4IFRJV
+AhJFEVkFIAIBHBgZEAICFRKAkQEeABUSgJUBHgAVElUCHgAeAQYKAhJFEVkSEAECFRKAlQEeABUS
+gJUBHgAIBAoBEkUQEAEBFRI9AR4AFRKAlQEeAAYVEj0BEkUIIAAVEUEBEwAGFRFBARJFBCAAEwAD
+IAACCAABEoChEYClBSAAEoCpByACAQ4SgKkEIAARWQi3elxWGTTgiQiJhF3NgIDMkQQAAAAABAEA
+AAADBhJhAwYSZQMGEhACBggDBhEUAwYSGAkGFRJVAhJFEVkEAAASYQQAABJlBQABARJlBAAAEhAD
+AAABBiABEVkSRQQIABJhBAgAEmUECAASEAgBAAgAAAAAAB4BAAEAVAIWV3JhcE5vbkV4Y2VwdGlv
+blRocm93cwEIAQACAAAAAAAoAQAjU1RfOTJhMTg4YTRhNjhiNGY0YzliMTMzMGE1M2IwYzJhNDEA
+AAUBAAAAABYBABFDb3B5cmlnaHQgQCAgMjAyNAAASQEAGi5ORVRGcmFtZXdvcmssVmVyc2lvbj12
+NC43AQBUDhRGcmFtZXdvcmtEaXNwbGF5TmFtZRIuTkVUIEZyYW1ld29yayA0LjcAALQAAADOyu++
+AQAAAJEAAABsU3lzdGVtLlJlc291cmNlcy5SZXNvdXJjZVJlYWRlciwgbXNjb3JsaWIsIFZlcnNp
+b249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRl
+MDg5I1N5c3RlbS5SZXNvdXJjZXMuUnVudGltZVJlc291cmNlU2V0AgAAAAAAAAAAAAAAUEFEUEFE
+ULQAAACMMQAAAAAAAAAAAACmMQAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmDEAAAAAAAAAAAAA
+AABfQ29yRGxsTWFpbgBtc2NvcmVlLmRsbAAAAAAA/yUAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAEAEAAAABgAAIAAAAAAAAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAA
+AEgAAABYQAAAGgQAAAAAAAAAAAAAGgQ0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8A
+AAAAAL0E7/4AAAEAAAABAOx0JSMAAAEA7HQlIz8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABE
+AAAAAQBWAGEAcgBGAGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8A
+bgAAAAAAAACwBHoDAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAAFYDAAABADAAMAAw
+ADAAMAA0AGIAMAAAABoAAQABAEMAbwBtAG0AZQBuAHQAcwAAAAAAAAAiAAEAAQBDAG8AbQBwAGEA
+bgB5AE4AYQBtAGUAAAAAAAAAAABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAA
+AAAAUwBUAF8AOQAyAGEAMQA4ADgAYQA0AGEANgA4AGIANABmADQAYwA5AGIAMQAzADMAMABhADUA
+MwBiADAAYwAyAGEANAAxAAAAPgAPAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAu
+ADgAOQA5ADcALgAyADkAOQAzADIAAAAAAHAAKAABAEkAbgB0AGUAcgBuAGEAbABOAGEAbQBlAAAA
+UwBUAF8AOQAyAGEAMQA4ADgAYQA0AGEANgA4AGIANABmADQAYwA5AGIAMQAzADMAMABhADUAMwBi
+ADAAYwAyAGEANAAxAC4AZABsAGwAAABIABIAAQBMAGUAZwBhAGwAQwBvAHAAeQByAGkAZwBoAHQA
+AABDAG8AcAB5AHIAaQBnAGgAdAAgAEAAIAAgADIAMAAyADQAAAAqAAEAAQBMAGUAZwBhAGwAVABy
+AGEAZABlAG0AYQByAGsAcwAAAAAAAAAAAHgAKAABAE8AcgBpAGcAaQBuAGEAbABGAGkAbABlAG4A
+YQBtAGUAAABTAFQAXwA5ADIAYQAxADgAOABhADQAYQA2ADgAYgA0AGYANABjADkAYgAxADMAMwAw
+AGEANQAzAGIAMABjADIAYQA0ADEALgBkAGwAbAAAAGgAJAABAFAAcgBvAGQAdQBjAHQATgBhAG0A
+ZQAAAAAAUwBUAF8AOQAyAGEAMQA4ADgAYQA0AGEANgA4AGIANABmADQAYwA5AGIAMQAzADMAMABh
+ADUAMwBiADAAYwAyAGEANAAxAAAAQgAPAAEAUAByAG8AZAB1AGMAdABWAGUAcgBzAGkAbwBuAAAA
+MQAuADAALgA4ADkAOQA3AC4AMgA5ADkAMwAyAAAAAABGAA8AAQBBAHMAcwBlAG0AYgBsAHkAIABW
+AGUAcgBzAGkAbwBuAAAAMQAuADAALgA4ADkAOQA3AC4AMgA5ADkAMwAyAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAADAAAALgxAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
+        </ScriptProject>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Sequence Container Carga data"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{8240A814-3F40-4A4D-A511-C430DABB885F}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Sequence Container Carga data">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container Carga data\Cargar Data"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{04064752-4E1A-43C7-BBD5-4855729D471D}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Cargar Data"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0" />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="16394"
+                  name="File Source REPORTE_INF_DETALLE"
+                  usesDispositions="true"
+                  validateExternalMetadata="False"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[ConexionArchivoREPORTE_INF_DETALLE]"
+                      connectionManagerRefId="Package.ConnectionManagers[ConexionArchivoREPORTE_INF_DETALLE]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].Columns[CIC]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].ExternalColumns[CIC]"
+                          length="12"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].Columns[CIC]"
+                          name="CIC"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].Columns[MATRICULA]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].ExternalColumns[MATRICULA]"
+                          length="8"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].Columns[MATRICULA]"
+                          name="MATRICULA"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].Columns[NOMBRE_COMPLETO]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].ExternalColumns[NOMBRE_COMPLETO]"
+                          length="77"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].Columns[NOMBRE_COMPLETO]"
+                          name="NOMBRE_COMPLETO"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].Columns[FECHA_REGISTRO]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].ExternalColumns[FECHA_REGISTRO]"
+                          length="50"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].Columns[FECHA_REGISTRO]"
+                          name="FECHA_REGISTRO"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].Columns[FECHA_INICIO]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].ExternalColumns[FECHA_INICIO]"
+                          length="8"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].Columns[FECHA_INICIO]"
+                          name="FECHA_INICIO"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].Columns[PRODUCTO]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].ExternalColumns[PRODUCTO]"
+                          length="77"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].Columns[PRODUCTO]"
+                          name="PRODUCTO"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].Columns[ESTADO_SEGURO]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].ExternalColumns[ESTADO_SEGURO]"
+                          length="12"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].Columns[ESTADO_SEGURO]"
+                          name="ESTADO_SEGURO"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].Columns[MARCA]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].ExternalColumns[MARCA]"
+                          length="11"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].Columns[MARCA]"
+                          name="MARCA"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].Columns[INF_GENERADO]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].ExternalColumns[INF_GENERADO]"
+                          length="100"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].Columns[INF_GENERADO]"
+                          name="INF_GENERADO"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].Columns[PONDERACION]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].ExternalColumns[PONDERACION]"
+                          length="12"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].Columns[PONDERACION]"
+                          name="PONDERACION"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].ExternalColumns[CIC]"
+                          codePage="65001"
+                          dataType="str"
+                          length="12"
+                          name="CIC" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].ExternalColumns[MATRICULA]"
+                          codePage="65001"
+                          dataType="str"
+                          length="6"
+                          name="MATRICULA" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].ExternalColumns[NOMBRE_COMPLETO]"
+                          codePage="65001"
+                          dataType="str"
+                          length="77"
+                          name="NOMBRE_COMPLETO" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].ExternalColumns[FECHA_REGISTRO]"
+                          codePage="65001"
+                          dataType="str"
+                          length="30"
+                          name="FECHA_REGISTRO" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].ExternalColumns[FECHA_INICIO]"
+                          codePage="65001"
+                          dataType="str"
+                          length="8"
+                          name="FECHA_INICIO" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].ExternalColumns[PRODUCTO]"
+                          codePage="65001"
+                          dataType="str"
+                          length="77"
+                          name="PRODUCTO" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].ExternalColumns[ESTADO_SEGURO]"
+                          codePage="65001"
+                          dataType="str"
+                          length="12"
+                          name="ESTADO_SEGURO" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].ExternalColumns[MARCA]"
+                          codePage="65001"
+                          dataType="str"
+                          length="11"
+                          name="MARCA" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].ExternalColumns[INF_GENERADO]"
+                          codePage="65001"
+                          dataType="str"
+                          length="100"
+                          name="INF_GENERADO" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].ExternalColumns[PONDERACION]"
+                          codePage="65001"
+                          dataType="str"
+                          length="12"
+                          name="PONDERACION" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  validateExternalMetadata="False"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[new_metaventainf]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">INSERT INTO new_pipeline
+                         (NOM_CLIENTE, IDC, IDC_CONS, PRODUCTO, FLAG_NUEVO, MONTO, ESTADO_FFNN, COMENTARIO, MAT_FFNN, MAT_VEND, MES, SEM_TASAAPRO, SEM_TASATARI, SEM_TARIFARIO, ESTADO, [DATE], DATE_FFNN, GESTION, 
+                         CIC, created_at, updated_at, CA_NROCUENTA)
+VALUES        (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">65001</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">true</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="{969B7C30-074F-4883-804F-2BF3AC6E1FB3}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[BD_CRMFUENTE.UsrMicredito]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[INF_GENERADO]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="INF_GENERADO"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[INF_GENERADO_DC]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].Columns[INF_GENERADO]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ESTADO_SEGURO]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="12"
+                          cachedName="ESTADO_SEGURO"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ESTADO_SEGURO_VC]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].Columns[ESTADO_SEGURO]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PRODUCTO]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="77"
+                          cachedName="PRODUCTO"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PRODUCTO_VC]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].Columns[PRODUCTO]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CIC]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="12"
+                          cachedName="CIC"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CIC_CH]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].Columns[CIC]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FECHA_INICIO]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="8"
+                          cachedName="FECHA_INICIO"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_INICIO_VC]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].Columns[FECHA_INICIO]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NOMBRE_COMPLETO]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="77"
+                          cachedName="NOMBRE_COMPLETO"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NOMBRE_CLIENTE_VC]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].Columns[NOMBRE_COMPLETO]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MATRICULA]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="8"
+                          cachedName="MATRICULA"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MATRICULA_VC]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output].Columns[MATRICULA]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Id]"
+                          dataType="i8"
+                          name="Id" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Carga]"
+                          dataType="bool"
+                          name="Carga" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FechaCarga]"
+                          dataType="dbTimeStamp"
+                          name="FechaCarga" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DescripcionError]"
+                          codePage="65001"
+                          dataType="str"
+                          length="100"
+                          name="DescripcionError" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_INICIO_VC]"
+                          codePage="65001"
+                          dataType="str"
+                          length="8"
+                          name="FECHA_INICIO_VC" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MATRICULA_VC]"
+                          codePage="65001"
+                          dataType="str"
+                          length="8"
+                          name="MATRICULA_VC" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CIC_CH]"
+                          codePage="65001"
+                          dataType="str"
+                          length="12"
+                          name="CIC_CH" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NOMBRE_CLIENTE_VC]"
+                          codePage="65001"
+                          dataType="str"
+                          length="77"
+                          name="NOMBRE_CLIENTE_VC" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PRODUCTO_VC]"
+                          codePage="65001"
+                          dataType="str"
+                          length="77"
+                          name="PRODUCTO_VC" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ESTADO_SEGURO_VC]"
+                          codePage="65001"
+                          dataType="str"
+                          length="12"
+                          name="ESTADO_SEGURO_VC" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[INF_GENERADO_DC]"
+                          codePage="65001"
+                          dataType="str"
+                          length="100"
+                          name="INF_GENERADO_DC" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MATRICULA_REGISTRO_VC]"
+                          codePage="65001"
+                          dataType="str"
+                          length="6"
+                          name="MATRICULA_REGISTRO_VC" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container Carga data\Cargar Data\Row Count"
+                  componentClassID="Microsoft.RowCount"
+                  contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+                  name="Row Count">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable to hold the row count."
+                      name="VariableName">User::v_total_Reporte_Inf_Detalle</property>
+                  </properties>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container Carga data\Cargar Data\Row Count.Inputs[Row Count Input 1]"
+                      hasSideEffects="true"
+                      name="Row Count Input 1">
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container Carga data\Cargar Data\Row Count.Outputs[Row Count Output 1]"
+                      name="Row Count Output 1"
+                      synchronousInputId="Package\Sequence Container Carga data\Cargar Data\Row Count.Inputs[Row Count Input 1]">
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Sequence Container Carga data\Cargar Data.Paths[Flat File Source Output]"
+                  endId="Package\Sequence Container Carga data\Cargar Data\Row Count.Inputs[Row Count Input 1]"
+                  name="Flat File Source Output"
+                  startId="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE.Outputs[Flat File Source Output]" />
+                <path
+                  refId="Package\Sequence Container Carga data\Cargar Data.Paths[Row Count Output 1]"
+                  endId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="Row Count Output 1"
+                  startId="Package\Sequence Container Carga data\Cargar Data\Row Count.Outputs[Row Count Output 1]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container Carga data\Copy File Origen a Destino"
+          DTS:CreationName="Microsoft.FileSystemTask"
+          DTS:Description="File System Task"
+          DTS:DTSID="{6887B00F-0566-41EE-81F4-ADBA137E6B46}"
+          DTS:ExecutableType="Microsoft.FileSystemTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Copy File Origen a Destino"
+          DTS:ThreadHint="2">
+          <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0" />
+          <DTS:ObjectData>
+            <FileSystemData
+              TaskOverwriteDestFile="True"
+              TaskSourcePath="User::v_rutaArchivo"
+              TaskIsSourceVariable="True"
+              TaskDestinationPath="User::v_rutaArchivoDestino"
+              TaskIsDestinationVariable="True" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container Carga data\Delete File Origen"
+          DTS:CreationName="Microsoft.FileSystemTask"
+          DTS:Description="File System Task"
+          DTS:DTSID="{CA429874-1237-47B8-8DA6-93D957980213}"
+          DTS:ExecutableType="Microsoft.FileSystemTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Delete File Origen"
+          DTS:ThreadHint="2">
+          <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0" />
+          <DTS:ObjectData>
+            <FileSystemData
+              TaskOperationType="DeleteFile"
+              TaskSourcePath="User::v_rutaArchivo"
+              TaskIsSourceVariable="True" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container Carga data\Truncate new_metaventainf"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{5D858F1E-0B0F-4BF2-BD50-17185FC3FA06}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Truncate new_metaventainf"
+          DTS:ThreadHint="2">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{969B7C30-074F-4883-804F-2BF3AC6E1FB3}"
+              SQLTask:SqlStatementSource="TRUNCATE TABLE dbo.new_metaventainf" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container Carga data.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{01A3D150-2BED-4412-88DD-0E20C9A5DE1B}"
+          DTS:From="Package\Sequence Container Carga data\Copy File Origen a Destino"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Sequence Container Carga data\Delete File Origen" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container Carga data.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{0747EBBC-F9E2-4EFD-99DA-37195B237C19}"
+          DTS:From="Package\Sequence Container Carga data\Cargar Data"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\Sequence Container Carga data\Copy File Origen a Destino" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container Carga data.PrecedenceConstraints[Constraint 2]"
+          DTS:CreationName=""
+          DTS:DTSID="{639F4C44-C7A4-400E-81C3-1E9ADFBF15CF}"
+          DTS:From="Package\Sequence Container Carga data\Truncate new_metaventainf"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 2"
+          DTS:To="Package\Sequence Container Carga data\Cargar Data" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Valida existencia archivo"
+      DTS:CreationName="Microsoft.ScriptTask"
+      DTS:Description="Script Task"
+      DTS:DTSID="{16B883D2-97B4-4F30-8573-7D1EC399DE56}"
+      DTS:ExecutableType="Microsoft.ScriptTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Valida existencia archivo"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:ObjectData>
+        <ScriptProject
+          Name="ST_c8a857a27b7c43228d581d925883e882"
+          VSTAMajorVersion="14"
+          VSTAMinorVersion="0"
+          Language="CSharp"
+          ReadOnlyVariables="User::v_rutaArchivo"
+          ReadWriteVariables="User::v_Error">
+          <ProjectItem
+            Name="Properties\Resources.resx"
+            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_c8a857a27b7c43228d581d925883e882.Properties.Settings.get_Default():ST_c8a857a27b7c43228d581d925883e882.Properties.Sett" +
+    "ings")]
+
+namespace ST_c8a857a27b7c43228d581d925883e882.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+          <ProjectItem
+            Name="ST_c8a857a27b7c43228d581d925883e882.csproj"
+            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1613A08C-873B-453A-9EA2-456F829E46CA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ST_c8a857a27b7c43228d581d925883e882</RootNamespace>
+    <AssemblyName>ST_c8a857a27b7c43228d581d925883e882</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=13.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=13.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ScriptMain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="VSTAHostName" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" />
+        <Host Name="ScriptTask" />
+        <ProjectClient>
+          <HostIdentifier>SSIS_ST130</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></ProjectItem>
+          <ProjectItem
+            Name="ScriptMain.cs"
+            Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
+/* The Script Task allows you to perform virtually any operation that can be accomplished in
+ * a .Net application within the context of an Integration Services control flow. 
+ * 
+ * Expand the other regions which have "Help" prefixes for examples of specific ways to use
+ * Integration Services features within this script task. */
+#endregion
+
+
+#region Namespaces
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Runtime;
+using System.Windows.Forms;
+#endregion
+
+namespace ST_c8a857a27b7c43228d581d925883e882
+{
+    /// <summary>
+    /// ScriptMain is the entry point class of the script.  Do not change the name, attributes,
+    /// or parent of this class.
+    /// </summary>
+	[Microsoft.SqlServer.Dts.Tasks.ScriptTask.SSISScriptTaskEntryPointAttribute]
+	public partial class ScriptMain : Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTARTScriptObjectModelBase
+	{
+        #region Help:  Using Integration Services variables and parameters in a script
+        /* To use a variable in this script, first ensure that the variable has been added to 
+         * either the list contained in the ReadOnlyVariables property or the list contained in 
+         * the ReadWriteVariables property of this script task, according to whether or not your
+         * code needs to write to the variable.  To add the variable, save this script, close this instance of
+         * Visual Studio, and update the ReadOnlyVariables and 
+         * ReadWriteVariables properties in the Script Transformation Editor window.
+         * To use a parameter in this script, follow the same steps. Parameters are always read-only.
+         * 
+         * Example of reading from a variable:
+         *  DateTime startTime = (DateTime) Dts.Variables["System::StartTime"].Value;
+         * 
+         * Example of writing to a variable:
+         *  Dts.Variables["User::myStringVariable"].Value = "new value";
+         * 
+         * Example of reading from a package parameter:
+         *  int batchId = (int) Dts.Variables["$Package::batchId"].Value;
+         *  
+         * Example of reading from a project parameter:
+         *  int batchId = (int) Dts.Variables["$Project::batchId"].Value;
+         * 
+         * Example of reading from a sensitive project parameter:
+         *  int batchId = (int) Dts.Variables["$Project::batchId"].GetSensitiveValue();
+         * */
+
+        #endregion
+
+        #region Help:  Firing Integration Services events from a script
+        /* This script task can fire events for logging purposes.
+         * 
+         * Example of firing an error event:
+         *  Dts.Events.FireError(18, "Process Values", "Bad value", "", 0);
+         * 
+         * Example of firing an information event:
+         *  Dts.Events.FireInformation(3, "Process Values", "Processing has started", "", 0, ref fireAgain)
+         * 
+         * Example of firing a warning event:
+         *  Dts.Events.FireWarning(14, "Process Values", "No values received for input", "", 0);
+         * */
+        #endregion
+
+        #region Help:  Using Integration Services connection managers in a script
+        /* Some types of connection managers can be used in this script task.  See the topic 
+         * "Working with Connection Managers Programatically" for details.
+         * 
+         * Example of using an ADO.Net connection manager:
+         *  object rawConnection = Dts.Connections["Sales DB"].AcquireConnection(Dts.Transaction);
+         *  SqlConnection myADONETConnection = (SqlConnection)rawConnection;
+         *  //Use the connection in some code here, then release the connection
+         *  Dts.Connections["Sales DB"].ReleaseConnection(rawConnection);
+         *
+         * Example of using a File connection manager
+         *  object rawConnection = Dts.Connections["Prices.zip"].AcquireConnection(Dts.Transaction);
+         *  string filePath = (string)rawConnection;
+         *  //Use the connection in some code here, then release the connection
+         *  Dts.Connections["Prices.zip"].ReleaseConnection(rawConnection);
+         * */
+        #endregion
+
+
+		/// <summary>
+        /// This method is called when this script task executes in the control flow.
+        /// Before returning from this method, set the value of Dts.TaskResult to indicate success or failure.
+        /// To open Help, press F1.
+        /// </summary>
+		public void Main()
+		{
+            // TODO: Add your code here
+            Dts.Variables["v_Error"].Value = "";
+            string strErrorValidacion = "";
+            string strArchivo = Dts.Variables["v_rutaArchivo"].Value.ToString();
+
+            if (System.IO.File.Exists(strArchivo) == false)
+            {
+                strErrorValidacion = "El archivo " + strArchivo.ToString() + " no existe o no se tiene permisos para acceder";
+            }
+
+            Dts.Variables["v_Error"].Value = strErrorValidacion;
+            Dts.TaskResult = (int)ScriptResults.Success;
+        }
+
+        #region ScriptResults declaration
+        /// <summary>
+        /// This enum provides a convenient shorthand within the scope of this class for setting the
+        /// result of the script.
+        /// 
+        /// This code was generated automatically.
+        /// </summary>
+        enum ScriptResults
+        {
+            Success = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Success,
+            Failure = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Failure
+        };
+        #endregion
+
+	}
+}]]></ProjectItem>
+          <ProjectItem
+            Name="Project"
+            Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="3.0" schemaVersion="1.0">
+	<msb:PropertyGroup>
+		<msb:Language>msBuild</msb:Language>
+		<msb:CodeName>ST_c8a857a27b7c43228d581d925883e882</msb:CodeName>
+		<msb:DisplayName>ST_c8a857a27b7c43228d581d925883e882</msb:DisplayName>
+		<msb:ProjectId>{10CA2A87-CF11-4C11-B928-4717F177656B}</msb:ProjectId>
+	</msb:PropertyGroup>
+	<msb:ItemGroup>
+		<msb:Project Include="ST_c8a857a27b7c43228d581d925883e882.csproj"/>
+		<msb:File Include="Properties\Settings.settings"/>
+		<msb:File Include="Properties\AssemblyInfo.cs"/>
+		<msb:File Include="Properties\Resources.resx"/>
+		<msb:File Include="Properties\Resources.Designer.cs"/>
+		<msb:File Include="Properties\Settings.Designer.cs"/>
+		<msb:File Include="ScriptMain.cs"/>
+	</msb:ItemGroup>
+</c:Project>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_c8a857a27b7c43228d581d925883e882")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_c8a857a27b7c43228d581d925883e882")]
+[assembly: AssemblyCopyright("Copyright @  2024")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Resources.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_c8a857a27b7c43228d581d925883e882.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_c8a857a27b7c43228d581d925883e882.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_c8a857a27b7c43228d581d925883e882.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace ST_c8a857a27b7c43228d581d925883e882.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ST_c8a857a27b7c43228d581d925883e882.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}]]></ProjectItem>
+          <BinaryItem
+            Name="ST_c8a857a27b7c43228d581d925883e882.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAJM+umYAAAAAAAAAAOAAIiALATAAABAAAAAIAAAAAAAAwi4A
+AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAHAuAABPAAAAAEAAAHgEAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAyA4AAAAgAAAAEAAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAHgEAAAAQAAAAAYAAAASAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAGAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAACk
+LgAAAAAAAEgAAAACAAUAUCEAAGgMAAABAAAAAAAAALgtAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAABMwAwCLAAAAAQAAEQIoEAAACm8RAAAKcgEAAHBvEgAACnIR
+AABwbxMAAApyEQAAcAoCKBAAAApvEQAACnITAABwbxIAAApvFAAACm8VAAAKCwcoFgAACi0Wci8A
+AHAHbxUAAApyRwAAcCgXAAAKCgIoEAAACm8RAAAKcgEAAHBvEgAACgZvEwAACgIoEAAAChZvGAAA
+CioeAigZAAAKKh4CKBoAAAoqrn4BAAAELR5ypQAAcNADAAACKBsAAApvHAAACnMdAAAKgAEAAAR+
+AQAABCoafgIAAAQqHgKAAgAABCoafgMAAAQqHgIoHgAACioucwgAAAaAAwAABCoAAABCU0pCAQAB
+AAAAAAAMAAAAdjQuMC4zMDMxOQAAAAAFAGwAAADcAwAAI34AAEgEAACEBQAAI1N0cmluZ3MAAAAA
+zAkAABgBAAAjVVMA5AoAABAAAAAjR1VJRAAAAPQKAAB0AQAAI0Jsb2IAAAAAAAAAAgAAAVcdogEJ
+AwAAAPoBMwAWAAABAAAAHwAAAAUAAAAGAAAACQAAAAEAAAAeAAAAAgAAABAAAAABAAAAAgAAAAMA
+AAAEAAAAAQAAAAQAAAABAAAAAQAAAAAAjgMBAAAAAAAGADQCXgQGAMMCXgQGAIABSwQPANIEAAAG
+AK0BDAQGABcCDAQGAPgBDAQGAKoCDAQGAFQCDAQGAG0CDAQGAMQBDAQGAN8B+wIKAIgCPQMKAP8A
+PQMGAMYDvwMGAGMBSwQGAFMFvwMGAC4EfgQGAB4E9wMOADMBeAMOAJQBeAMOABsB4gMGAEgBXgQK
+AGYDPQMSABQFqgASAHgAqgAGAKUALgAGABcDvwMGAMoAvwMGAIEAvwMGAHkFDAQAAAAAJQAAAAAA
+AQABAAEAEADXAwEAOQABAAEAAAAQAIUE4QRFAAEAAwAAARAAHgXhBFkAAwAHAAMBAAA3BQAAPQAE
+AAoAEQDLA3gAEQDvAHwAEQBoAIAABgZXAIQAVoAnBYcAVoDPAIcAUCAAAAAAhgDdAwYAAQDnIAAA
+AACGGD4EBgABAO8gAAAAAIMYPgQGAAEA9yAAAAAAkwgqBIsAAQAjIQAAAACTCNcAkAABACohAAAA
+AJMI4wCVAAEAMiEAAAAAlghaBZsAAgA5IQAAAACGGD4EBgACAEEhAAAAAJEYRASgAAIAAAABAPUC
+CQA+BAEAEQA+BAYAGQA+BAoAKQA+BBAAMQA+BBAAOQA+BBAAQQA+BBAASQA+BBAAUQA+BBAAWQA+
+BBAAYQA+BBAAaQA+BAYAgQA+BAYAqQA+BBUAuQA+BAYAcQAvBSAAwQAQBSUAyQC2AyoA0QDrAjAA
+0QDhAjUAiQAVAzkA2QBFBT0A4QBMBUIAwQBmBQEAcQA+BAYAiQA+BAYA6QCTAEkA6QB1BVAAkQA+
+BFUAsQA+BAYACAAUAG4ACAAYAHMAKQBzANsALgALALMALgATALwALgAbANsALgAjAOQALgArAA0B
+LgAzAA0BLgA7AA0BLgBDAOQALgBLABMBLgBTAA0BLgBbACoBQwBjAHMASQBzANsAYQB7AHMAYwBr
+AHMAGwADAAEABAADAAAALgSkAAAA9wCpAAAAXgWuAAIABAADAAIABQAFAAEABgAFAAIABwAHAASA
+AAABAAAAHiPpWgAAAAAAAAEAAAAEAAAAAAAAAAAAAABcAF8AAAAAAA0AAAAAAAAAAAAAAGUAHgMA
+AAAABAAAAAAAAAAAAAAAXAC/AwAAAAANAAAAAAAAAAAAAABlADgAAAAAAAAAAAABAAAAjwQAAAUA
+AgAAAAAAAFNUX2M4YTg1N2EyN2I3YzQzMjI4ZDU4MWQ5MjU4ODNlODgyADxNb2R1bGU+AFN5c3Rl
+bS5JTwBNaWNyb3NvZnQuU3FsU2VydmVyLk1hbmFnZWREVFMAdmFsdWVfXwBtc2NvcmxpYgBkZWZh
+dWx0SW5zdGFuY2UAVmFyaWFibGUAUnVudGltZVR5cGVIYW5kbGUAR2V0VHlwZUZyb21IYW5kbGUA
+RmlsZQBNaWNyb3NvZnQuU3FsU2VydmVyLkR0cy5SdW50aW1lAFR5cGUARmFpbHVyZQBnZXRfQ3Vs
+dHVyZQBzZXRfQ3VsdHVyZQByZXNvdXJjZUN1bHR1cmUAVlNUQVJUU2NyaXB0T2JqZWN0TW9kZWxC
+YXNlAEFwcGxpY2F0aW9uU2V0dGluZ3NCYXNlAEVkaXRvckJyb3dzYWJsZVN0YXRlAENvbXBpbGVy
+R2VuZXJhdGVkQXR0cmlidXRlAERlYnVnZ2VyTm9uVXNlckNvZGVBdHRyaWJ1dGUARGVidWdnYWJs
+ZUF0dHJpYnV0ZQBFZGl0b3JCcm93c2FibGVBdHRyaWJ1dGUAQXNzZW1ibHlUaXRsZUF0dHJpYnV0
+ZQBBc3NlbWJseVRyYWRlbWFya0F0dHJpYnV0ZQBUYXJnZXRGcmFtZXdvcmtBdHRyaWJ1dGUAQXNz
+ZW1ibHlDb25maWd1cmF0aW9uQXR0cmlidXRlAEFzc2VtYmx5RGVzY3JpcHRpb25BdHRyaWJ1dGUA
+Q29tcGlsYXRpb25SZWxheGF0aW9uc0F0dHJpYnV0ZQBBc3NlbWJseVByb2R1Y3RBdHRyaWJ1dGUA
+QXNzZW1ibHlDb3B5cmlnaHRBdHRyaWJ1dGUAU1NJU1NjcmlwdFRhc2tFbnRyeVBvaW50QXR0cmli
+dXRlAEFzc2VtYmx5Q29tcGFueUF0dHJpYnV0ZQBSdW50aW1lQ29tcGF0aWJpbGl0eUF0dHJpYnV0
+ZQBnZXRfVmFsdWUAc2V0X1ZhbHVlAHZhbHVlAFN5c3RlbS5SdW50aW1lLlZlcnNpb25pbmcAVG9T
+dHJpbmcATWljcm9zb2Z0LlNxbFNlcnZlci5TY3JpcHRUYXNrAE1pY3Jvc29mdC5TcWxTZXJ2ZXIu
+RHRzLlRhc2tzLlNjcmlwdFRhc2sAU2NyaXB0T2JqZWN0TW9kZWwAU3lzdGVtLkNvbXBvbmVudE1v
+ZGVsAFNUX2M4YTg1N2EyN2I3YzQzMjI4ZDU4MWQ5MjU4ODNlODgyLmRsbABnZXRfSXRlbQBTeXN0
+ZW0ARW51bQByZXNvdXJjZU1hbgBTY3JpcHRNYWluAFN5c3RlbS5Db25maWd1cmF0aW9uAFN5c3Rl
+bS5HbG9iYWxpemF0aW9uAFN5c3RlbS5SZWZsZWN0aW9uAEN1bHR1cmVJbmZvAGdldF9SZXNvdXJj
+ZU1hbmFnZXIALmN0b3IALmNjdG9yAFN5c3RlbS5EaWFnbm9zdGljcwBTeXN0ZW0uUnVudGltZS5D
+b21waWxlclNlcnZpY2VzAFN5c3RlbS5SZXNvdXJjZXMAU1RfYzhhODU3YTI3YjdjNDMyMjhkNTgx
+ZDkyNTg4M2U4ODIuUHJvcGVydGllcy5SZXNvdXJjZXMucmVzb3VyY2VzAERlYnVnZ2luZ01vZGVz
+AFNUX2M4YTg1N2EyN2I3YzQzMjI4ZDU4MWQ5MjU4ODNlODgyLlByb3BlcnRpZXMAZ2V0X1Zhcmlh
+YmxlcwBTZXR0aW5ncwBTdWNjZXNzAGdldF9EdHMAU2NyaXB0UmVzdWx0cwBFeGlzdHMAQ29uY2F0
+AE9iamVjdABnZXRfRGVmYXVsdABzZXRfVGFza1Jlc3VsdABnZXRfQXNzZW1ibHkAAAAAD3YAXwBF
+AHIAcgBvAHIAAAEAG3YAXwByAHUAdABhAEEAcgBjAGgAaQB2AG8AABdFAGwAIABhAHIAYwBoAGkA
+dgBvACAAAF0gAG4AbwAgAGUAeABpAHMAdABlACAAbwAgAG4AbwAgAHMAZQAgAHQAaQBlAG4AZQAg
+AHAAZQByAG0AaQBzAG8AcwAgAHAAYQByAGEAIABhAGMAYwBlAGQAZQByAABxUwBUAF8AYwA4AGEA
+OAA1ADcAYQAyADcAYgA3AGMANAAzADIAMgA4AGQANQA4ADEAZAA5ADIANQA4ADgAMwBlADgAOAAy
+AC4AUAByAG8AcABlAHIAdABpAGUAcwAuAFIAZQBzAG8AdQByAGMAZQBzAAAA0D018+HdoEii97l1
+WkOLUgAEIAEBCAMgAAEFIAEBEREEIAEBDgUgAQERUQQHAg4OBCAAEmEEIAASZQUgARJpHAQgAQEc
+AyAAHAMgAA4EAAECDgYAAw4ODg4GAAESdRF5BCAAEn0GIAIBDhJ9CLd6XFYZNOCJCImEXc2AgMyR
+BAAAAAAEAQAAAAMGEkkDBhJNAwYSEAIGCAMGERQEAAASSQQAABJNBQABARJNBAAAEhADAAABBAgA
+EkkECAASTQQIABIQCAEACAAAAAAAHgEAAQBUAhZXcmFwTm9uRXhjZXB0aW9uVGhyb3dzAQgBAAIA
+AAAAACgBACNTVF9jOGE4NTdhMjdiN2M0MzIyOGQ1ODFkOTI1ODgzZTg4MgAABQEAAAAAFgEAEUNv
+cHlyaWdodCBAICAyMDI0AABJAQAaLk5FVEZyYW1ld29yayxWZXJzaW9uPXY0LjcBAFQOFEZyYW1l
+d29ya0Rpc3BsYXlOYW1lEi5ORVQgRnJhbWV3b3JrIDQuN7QAAADOyu++AQAAAJEAAABsU3lzdGVt
+LlJlc291cmNlcy5SZXNvdXJjZVJlYWRlciwgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3Vs
+dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5I1N5c3RlbS5SZXNv
+dXJjZXMuUnVudGltZVJlc291cmNlU2V0AgAAAAAAAAAAAAAAUEFEUEFEULQAAACYLgAAAAAAAAAA
+AACyLgAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAApC4AAAAAAAAAAAAAAABfQ29yRGxsTWFpbgBt
+c2NvcmVlLmRsbAAAAAAA/yUAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAABABAAAAAYAACAAAAAAAAAAAAAAAAAAAABAAEAAAAwAACAAAAAAAAAAAAAAAAAAAABAAAA
+AABIAAAAWEAAABoEAAAAAAAAAAAAABoENAAAAFYAUwBfAFYARQBSAFMASQBPAE4AXwBJAE4ARgBP
+AAAAAAC9BO/+AAABAAAAAQDpWh4jAAABAOlaHiM/AAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAA
+RAAAAAEAVgBhAHIARgBpAGwAZQBJAG4AZgBvAAAAAAAkAAQAAABUAHIAYQBuAHMAbABhAHQAaQBv
+AG4AAAAAAAAAsAR6AwAAAQBTAHQAcgBpAG4AZwBGAGkAbABlAEkAbgBmAG8AAABWAwAAAQAwADAA
+MAAwADAANABiADAAAAAaAAEAAQBDAG8AbQBtAGUAbgB0AHMAAAAAAAAAIgABAAEAQwBvAG0AcABh
+AG4AeQBOAGEAbQBlAAAAAAAAAAAAcAAkAAEARgBpAGwAZQBEAGUAcwBjAHIAaQBwAHQAaQBvAG4A
+AAAAAFMAVABfAGMAOABhADgANQA3AGEAMgA3AGIANwBjADQAMwAyADIAOABkADUAOAAxAGQAOQAy
+ADUAOAA4ADMAZQA4ADgAMgAAAD4ADwABAEYAaQBsAGUAVgBlAHIAcwBpAG8AbgAAAAAAMQAuADAA
+LgA4ADkAOQAwAC4AMgAzADIANwAzAAAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAA
+AFMAVABfAGMAOABhADgANQA3AGEAMgA3AGIANwBjADQAMwAyADIAOABkADUAOAAxAGQAOQAyADUA
+OAA4ADMAZQA4ADgAMgAuAGQAbABsAAAASAASAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0
+AAAAQwBvAHAAeQByAGkAZwBoAHQAIABAACAAIAAyADAAMgA0AAAAKgABAAEATABlAGcAYQBsAFQA
+cgBhAGQAZQBtAGEAcgBrAHMAAAAAAAAAAAB4ACgAAQBPAHIAaQBnAGkAbgBhAGwARgBpAGwAZQBu
+AGEAbQBlAAAAUwBUAF8AYwA4AGEAOAA1ADcAYQAyADcAYgA3AGMANAAzADIAMgA4AGQANQA4ADEA
+ZAA5ADIANQA4ADgAMwBlADgAOAAyAC4AZABsAGwAAABoACQAAQBQAHIAbwBkAHUAYwB0AE4AYQBt
+AGUAAAAAAFMAVABfAGMAOABhADgANQA3AGEAMgA3AGIANwBjADQAMwAyADIAOABkADUAOAAxAGQA
+OQAyADUAOAA4ADMAZQA4ADgAMgAAAEIADwABAFAAcgBvAGQAdQBjAHQAVgBlAHIAcwBpAG8AbgAA
+ADEALgAwAC4AOAA5ADkAMAAuADIAMwAyADcAMwAAAAAARgAPAAEAQQBzAHMAZQBtAGIAbAB5ACAA
+VgBlAHIAcwBpAG8AbgAAADEALgAwAC4AOAA5ADkAMAAuADIAMwAyADcAMwAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAwAAADEPgAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
+        </ScriptProject>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{65CF505D-9505-4CFA-8B25-2A88362D9CCF}"
+      DTS:From="Package\Depura Logs"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Valida existencia archivo" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{264BEC5A-7A69-4FB5-8B48-CFAAFE621531}"
+      DTS:From="Package\Depura Logs"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Correo de Error de Limpieza de Logs"
+      DTS:Value="1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{AAF5DDD6-90FF-4FF8-9336-5F040E02B673}"
+      DTS:From="Package\Valida existencia archivo"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Correo de Error de Validacion de archivo"
+      DTS:Value="1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{608802ED-B774-44D6-BEFF-0DDE57E779A9}"
+      DTS:EvalOp="1"
+      DTS:Expression="@v_Error==&quot;&quot;"
+      DTS:From="Package\Valida existencia archivo"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Sequence Container Carga data" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{16894E48-45FA-44DA-959F-FE97AF0B826A}"
+      DTS:From="Package\Sequence Container Carga data"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\Correo de Finalización Satisfactoria" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{AB67F77A-7D0E-49DB-B027-FA4B2B22497D}"
+      DTS:From="Package\Sequence Container Carga data"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 6"
+      DTS:To="Package\Correo de Error de Carga Data REPORTE_INF_DETALLE"
+      DTS:Value="1" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="270,42"
+          Id="Package\Correo de Error de Carga Data REPORTE_INF_DETALLE"
+          TopLeft="695,854" />
+        <NodeLayout
+          Size="259,42"
+          Id="Package\Correo de Error de Limpieza de Logs"
+          TopLeft="698,468" />
+        <NodeLayout
+          Size="268,42"
+          Id="Package\Correo de Error de Validacion de archivo"
+          TopLeft="696,557" />
+        <NodeLayout
+          Size="253,42"
+          Id="Package\Correo de Finalización Satisfactoria"
+          TopLeft="351,1136" />
+        <NodeLayout
+          Size="134,42"
+          Id="Package\Depura Logs"
+          TopLeft="409,463" />
+        <NodeLayout
+          Size="139,42"
+          Id="Package\Sequence Container Carga data\Cargar Data"
+          TopLeft="64,121" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Sequence Container Carga data\Copy File Origen a Destino"
+          TopLeft="53,190" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Sequence Container Carga data\Delete File Origen"
+          TopLeft="53,274" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Sequence Container Carga data\Truncate new_metaventainf"
+          TopLeft="47,35" />
+        <EdgeLayout
+          Id="Package\Sequence Container Carga data.PrecedenceConstraints[Constraint]"
+          TopLeft="134.5,232">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42"
+              Start="0,0"
+              End="0,34.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container Carga data.PrecedenceConstraints[Constraint 1]"
+          TopLeft="134,163">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,27"
+              Start="0,0"
+              End="0,19.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container Carga data.PrecedenceConstraints[Constraint 2]"
+          TopLeft="134.25,77">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,44"
+              Start="0,0"
+              End="0,36.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="276,371"
+          Size="276,414"
+          Id="Package\Sequence Container Carga data"
+          TopLeft="342,673" />
+        <NodeLayout
+          Size="200,42"
+          Id="Package\Valida existencia archivo"
+          TopLeft="381,558" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="478.5,505">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,53"
+              Start="0,0"
+              End="0,45.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,45.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="543,486.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="155,0"
+              Start="0,0"
+              End="147.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="147.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="58.50865234375,5,30.4826953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="581,578.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="115,0"
+              Start="0,0"
+              End="107.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="107.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="38.50865234375,5,30.4826953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="480.5,600">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,73"
+              Start="0,0"
+              End="0,65.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,65.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-8,24.75,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="478.75,1087">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,49"
+              Start="0,0"
+              End="0,41.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="618,877.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="77,0"
+              Start="0,0"
+              End="69.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="69.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="19.50865234375,5,30.4826953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <AnnotationLayout
+          Text="Paquete para la carga de REPORTE INF DETALLE para CRM &#xA;------------ CRM&#xA;-----------------&#xA;Descripción:&#xA;Paquete que carga los registros del archivo REPORTE_INF_DETALLE.txt&#xA;Fuente:&#xA;&#xA;Base fuente:&#xA;BD_CRMFUENTE&#xA;Tabla fuente:&#xA;[dbo].[new_metaventainf]&#xA;Fecha de creación :&#xA;14/06/2024&#xA;Autor:&#xA;Douglas Toro Salas - T25208 - Canales Presenciales&#xA;Modificado por:&#xA;&#xA;(Q000....)"
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="397,311"
+          Id="b06984b1-8ef9-468b-ac41-c87dd83b11a9"
+          TopLeft="151,60" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Sequence Container Carga data\Cargar Data">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="133,42"
+          Id="Package\Sequence Container Carga data\Cargar Data\Row Count"
+          TopLeft="230,170" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination"
+          TopLeft="209,266" />
+        <NodeLayout
+          Size="269,42"
+          Id="Package\Sequence Container Carga data\Cargar Data\File Source REPORTE_INF_DETALLE"
+          TopLeft="186,77" />
+        <EdgeLayout
+          Id="Package\Sequence Container Carga data\Cargar Data.Paths[Row Count Output 1]"
+          TopLeft="297,212">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,54"
+              Start="0,0"
+              End="0,46.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container Carga data\Cargar Data.Paths[Flat File Source Output]"
+          TopLeft="298.75,119">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,51"
+              Start="0,0"
+              End="0,43.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

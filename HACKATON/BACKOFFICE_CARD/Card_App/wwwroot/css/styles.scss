@@ -1,0 +1,37 @@
+$primary: #096AC0;
+$secondary: #F36E29;
+$success: #2FB590;
+$info: #25C0FF;
+$warning: #FFE972;
+$danger: #EC5568;
+$light: #E0E2EF;
+$dark: #000000;
+
+
+
+@import "../lib/bootstrap/scss/functions";
+@import "../lib/bootstrap/scss/variables";
+@import "../lib/bootstrap/scss/mixins";
+@import "Reportes.scss";
+
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+
+$custom-colors:(
+  "bodydark": #212121,
+  "bgcontent-dark": #333333,
+  "secondary-light": #F5A379
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors );
+
+@import "../lib/bootstrap/scss/bootstrap.scss";

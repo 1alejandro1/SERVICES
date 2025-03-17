@@ -1,0 +1,27 @@
+﻿@model ErrorViewModel
+@{
+    ViewData["Title"] = "Error";
+    Layout = "~/Views/Shared/_Login.cshtml";
+}
+
+
+
+<div class="container mt-5">
+    <div class="row justify-content-sm-center text-center">
+        <div class="img__error mb-4"></div>
+        <h2 class="text-danger">Error.</h2>
+        <p class="text-light display-6">Ha ocurrido un error mientras se procesaba su petición.</p>
+        <h3 class="text-light">Contactese con el administrador.</h3>
+        <a class="link-primary" href="@Url.Action("Index", "Home")">Volver a inicio</a>
+        <p class="text-light">
+            <strong>Correlation ID:</strong> <code>@Model.CorrelationId</code>
+        </p>
+
+        @if (Model?.ShowRequestId ?? false)
+        {
+            <p>
+                <strong>Request ID:</strong> <code>@Model?.RequestId</code>
+            </p>
+        }
+    </div>
+</div>

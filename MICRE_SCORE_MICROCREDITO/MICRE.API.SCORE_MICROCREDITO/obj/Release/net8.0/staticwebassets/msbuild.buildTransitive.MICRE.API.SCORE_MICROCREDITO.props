@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\MICRE.API.SCORE_MICROCREDITO.props" />
+</Project>

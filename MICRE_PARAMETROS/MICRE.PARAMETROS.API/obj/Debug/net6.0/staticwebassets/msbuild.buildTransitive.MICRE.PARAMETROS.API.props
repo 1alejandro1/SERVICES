@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\MICRE.PARAMETROS.API.props" />
+</Project>

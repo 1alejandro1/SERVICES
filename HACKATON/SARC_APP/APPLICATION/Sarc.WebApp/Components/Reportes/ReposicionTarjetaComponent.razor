@@ -1,0 +1,63 @@
+﻿@using BCP.CROSS.MODELS.Reportes
+<div class="row align-content-center">
+    <div class="col-12">
+        <h4><strong>REPORTE REPOSICION TARJETA DE CREDITO</strong></h4>
+    </div>
+    <div class="col-10" style="overflow-y:auto">
+        <table class="table table-hover table-borderless">
+            <thead>
+                <tr class="text-uppercase">
+                    <th class="table-tomato">NRO. CASO</th>
+                    <th class="table-tomato">IDC</th>
+                    <th class="table-tomato">IDCTIPO</th>
+                    <th class="table-tomato">IDCEXT</th>
+                    <th class="table-tomato">NRO.TARJETA</th>
+                    <th class="table-tomato">CLIENTE</th>
+                    <th class="table-tomato">DIRCLI</th>
+                    <th class="table-tomato">DIRENVIO</th>
+                    <th class="table-tomato">DIREXTRA</th>
+                    <th class="table-tomato">DIRSYNE</th>
+                    <th class="table-tomato">TELEFONO</th>
+                    <th class="table-tomato">CELULAR</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (ReposicionTarjetaModel item in Data)
+                {
+                    <tr>
+                        <th scope="row" class="table-light">@item.Carta</th>
+                        <td class="table-light">@item.IDC</td>
+                        <td class="table-light">@item.IDCTipo</td>
+                        <td class="table-light">@item.IDCExt</td>
+                        <td class="table-light">@item.Tarjeta</td>
+                        <td class="table-light">@item.Cliente</td>
+                        <td class="table-light">@item.DirCli</td>
+                        <td class="table-light">@item.DirEnvio</td>
+                        <td class="table-light">@item.DirExtra</td>
+                        <td class="table-light">@item.DirSyne</td>
+                        <td class="table-light">@item.Telefono</td>
+                        <td class="table-light">@item.Celular</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public List<ReposicionTarjetaModel> Data { get; set; }
+}
+<style lang="css">
+    .table-tomato {
+        background-color: tomato !important;
+        color: white !important;
+        vertical-align: middle;
+    }
+
+    .table-midnightblue {
+        background-color: midnightblue !important;
+        color: white !important;
+        vertical-align: middle;
+    }
+</style>

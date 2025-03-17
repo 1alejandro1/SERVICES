@@ -1,0 +1,69 @@
+﻿@using BCP.CROSS.MODELS.Reportes
+<div class="row align-content-center">
+    <div class="col-12">
+        <h4><strong>REPORTE DEVOLUCIONES ATM - POS</strong></h4>
+    </div>
+    <div class="col-10">
+        <table class="table table-hover table-borderless">
+            <thead>
+                <tr class="text-uppercase">
+                    <th class="table-tomato">NRO</th>
+                    <th class="table-tomato">FECHA</th>
+                    <th class="table-tomato">TELEFONO</th>
+                    <th class="table-tomato">MONEDA</th>
+                    <th class="table-tomato">MONTO</th>
+                    <th class="table-tomato">NRO CASO</th>
+                    <th class="table-tomato">NRO CUENTA</th>
+                    <th class="table-tomato">CLIENTE</th>
+                    <th class="table-tomato">SERVICIO</th>
+                    <th class="table-tomato">OBSERVACIONES</th>
+                    <th class="table-tomato">LLAMADA 1</th>
+                    <th class="table-tomato">HORA 1</th>
+                    <th class="table-tomato">LLAMADA 2</th>
+                    <th class="table-tomato">HORA 2</th>
+                    <th class="table-tomato">DETALLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (DevolucionesATMPOSModel item in Data)
+                {
+                    <tr>
+                        <th scope="row" class="table-midnightblue">@item.Nro</th>
+                        <td class="table-light">@item.Fecha</td>
+                        <td class="table-light">@item.Telefono</td>
+                        <td class="table-light">@item.Moneda</td>
+                        <td class="table-light">@item.Monto</td>
+                        <td class="table-light">@item.NroCaso</td>
+                        <td class="table-light">@item.NroTarjeta</td>
+                        <td class="table-light">@item.Cliente</td>
+                        <td class="table-light">@item.Servicio</td>
+                        <td class="table-light">@item.Observaciones</td>
+                        <td class="table-light">@item.Llamada1</td>
+                        <td class="table-light">@item.Hora1</td>
+                        <td class="table-light">@item.Llamada2</td>
+                        <td class="table-light">@item.Hora2</td>
+                        <td class="table-light">@item.Detalle</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public List<DevolucionesATMPOSModel> Data { get; set; }
+}
+<style lang="css">
+    .table-tomato {
+        background-color: tomato !important;
+        color: white !important;
+        vertical-align: middle;
+    }
+
+    .table-midnightblue {
+        background-color: midnightblue !important;
+        color: white !important;
+        vertical-align: middle;
+    }
+</style>

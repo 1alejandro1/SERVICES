@@ -1,0 +1,54 @@
+[
+  {
+    "ContainingType": "MICRE_SCORE_PYME.Controllers.ScorePymeController",
+    "Method": "GetCalculo",
+    "RelativePath": "api/ScorePyme/CalculadoraScorePyme",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.ENTITY.Request.CaluladoraResponseDirecto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.COMMON.Model.Response\u00601[[MICRE.ENTITY.Response.CalculadoraResponse, MICRE.ENTITY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE_SCORE_PYME.Controllers.ScorePymeController",
+    "Method": "GetCosultaScorePyme",
+    "RelativePath": "api/ScorePyme/ConsultaScorePyme",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.ENTITY.Request.ScorePymeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.COMMON.Model.Response\u00601[[MICRE.ENTITY.Response.ScorePymeResponse, MICRE.ENTITY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

@@ -1,0 +1,34 @@
+﻿body {
+}
+.table-primary-bcp {
+    --bs-table-color: white;
+    --bs-table-bg: #001F5A;
+    --bs-table-border-color: #a6b5cc;
+    --bs-table-striped-bg: #c5d7f2;
+    --bs-table-striped-color: #000;
+    --bs-table-active-bg: #bacbe6;
+    --bs-table-active-color: #000;
+    --bs-table-hover-bg: #bfd1ec;
+    --bs-table-hover-color: #000;
+    color: var(--bs-table-color);
+    border-color: var(--bs-table-border-color);
+    vertical-align: middle;
+    text-align: center; 
+}
+
+.badge-success-bcp {
+    color: #fff;
+    background-color: #28a745;
+}
+.badge-primary-bcp {
+    color: #fff;
+    background-color: #007bff;
+}
+.badge-danger-bcp {
+    color: #fff;
+    background-color: #dc3545;
+}
+
+.bold-label-bcp {
+    font-weight: 600;
+}

@@ -1,0 +1,12 @@
+D:\T25208\MICREDITO\MICRE_DIGITACION_PYME\BCP.Framework.Logs\bin\Debug\net6.0\BCP.Framework.Logs.deps.json
+D:\T25208\MICREDITO\MICRE_DIGITACION_PYME\BCP.Framework.Logs\bin\Debug\net6.0\BCP.Framework.Logs.dll
+D:\T25208\MICREDITO\MICRE_DIGITACION_PYME\BCP.Framework.Logs\bin\Debug\net6.0\BCP.Framework.Logs.pdb
+D:\T25208\MICREDITO\MICRE_DIGITACION_PYME\BCP.Framework.Logs\obj\Debug\net6.0\BCP.Framework.Logs.csproj.AssemblyReference.cache
+D:\T25208\MICREDITO\MICRE_DIGITACION_PYME\BCP.Framework.Logs\obj\Debug\net6.0\BCP.Framework.Logs.GeneratedMSBuildEditorConfig.editorconfig
+D:\T25208\MICREDITO\MICRE_DIGITACION_PYME\BCP.Framework.Logs\obj\Debug\net6.0\BCP.Framework.Logs.AssemblyInfoInputs.cache
+D:\T25208\MICREDITO\MICRE_DIGITACION_PYME\BCP.Framework.Logs\obj\Debug\net6.0\BCP.Framework.Logs.AssemblyInfo.cs
+D:\T25208\MICREDITO\MICRE_DIGITACION_PYME\BCP.Framework.Logs\obj\Debug\net6.0\BCP.Framework.Logs.csproj.CoreCompileInputs.cache
+D:\T25208\MICREDITO\MICRE_DIGITACION_PYME\BCP.Framework.Logs\obj\Debug\net6.0\BCP.Framework.Logs.dll
+D:\T25208\MICREDITO\MICRE_DIGITACION_PYME\BCP.Framework.Logs\obj\Debug\net6.0\refint\BCP.Framework.Logs.dll
+D:\T25208\MICREDITO\MICRE_DIGITACION_PYME\BCP.Framework.Logs\obj\Debug\net6.0\BCP.Framework.Logs.pdb
+D:\T25208\MICREDITO\MICRE_DIGITACION_PYME\BCP.Framework.Logs\obj\Debug\net6.0\ref\BCP.Framework.Logs.dll

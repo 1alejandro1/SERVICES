@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ihYA6NOg8jVQrCcFuPNxju8QwvZ+rB3Jpus9WstH4Zc9/VeFpC9AFqM8cJ06odMqExPMdMVVpUoLns8KgVQ6OA==",
+  "success": true,
+  "projectFilePath": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Framework.Common\\BCP.Framework.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\T25208\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

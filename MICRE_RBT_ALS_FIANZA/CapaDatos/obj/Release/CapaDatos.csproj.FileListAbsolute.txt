@@ -1,0 +1,5 @@
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_FIANZA\CapaDatos\bin\Release\CapaDatos.dll
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_FIANZA\CapaDatos\bin\Release\CapaDatos.pdb
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_FIANZA\CapaDatos\obj\Release\CapaDatos.csproj.CoreCompileInputs.cache
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_FIANZA\CapaDatos\obj\Release\CapaDatos.dll
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_FIANZA\CapaDatos\obj\Release\CapaDatos.pdb

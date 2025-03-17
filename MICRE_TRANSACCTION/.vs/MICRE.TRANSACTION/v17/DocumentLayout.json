@@ -1,0 +1,520 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6DBE6B8E-057A-474E-ADBC-F3226BC556A0}|MICRE.TRANSACTION.BIZTALK\\MICRE.TRANSACTION.BIZTALK.csproj|d:\\t25208\\micredito\\micre_transacction\\micre.transaction.biztalk\\managerbiztalk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DBE6B8E-057A-474E-ADBC-F3226BC556A0}|MICRE.TRANSACTION.BIZTALK\\MICRE.TRANSACTION.BIZTALK.csproj|solutionrelative:micre.transaction.biztalk\\managerbiztalk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|d:\\t25208\\micredito\\micre_transacction\\micre.transaction.api\\services\\segurocesantiaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|solutionrelative:micre.transaction.api\\services\\segurocesantiaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|d:\\t25208\\micredito\\micre_transacction\\micre.transaction.api\\repositories\\segurorepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|solutionrelative:micre.transaction.api\\repositories\\segurorepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|d:\\t25208\\micredito\\micre_transacction\\micre.transaction.api\\services\\biztalkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|solutionrelative:micre.transaction.api\\services\\biztalkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|d:\\t25208\\micredito\\micre_transacction\\micre.transaction.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|solutionrelative:micre.transaction.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|d:\\t25208\\micredito\\micre_transacction\\micre.transaction.api\\services\\activoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|solutionrelative:micre.transaction.api\\services\\activoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|d:\\t25208\\micredito\\micre_transacction\\micre.transaction.api\\controllers\\alscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|solutionrelative:micre.transaction.api\\controllers\\alscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|d:\\t25208\\micredito\\micre_transacction\\micre.transaction.api\\controllers\\biztalkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|solutionrelative:micre.transaction.api\\controllers\\biztalkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DBE6B8E-057A-474E-ADBC-F3226BC556A0}|MICRE.TRANSACTION.BIZTALK\\MICRE.TRANSACTION.BIZTALK.csproj|d:\\t25208\\micredito\\micre_transacction\\micre.transaction.biztalk\\repository\\bdmicreditorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DBE6B8E-057A-474E-ADBC-F3226BC556A0}|MICRE.TRANSACTION.BIZTALK\\MICRE.TRANSACTION.BIZTALK.csproj|solutionrelative:micre.transaction.biztalk\\repository\\bdmicreditorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8F99D98-5808-41D4-B8C3-CB6128F3B570}|MICRE.TRANSACTION.ENTITIES\\MICRE.TRANSACTION.ENTITIES.csproj|d:\\t25208\\micredito\\micre_transacction\\micre.transaction.entities\\response\\balancemovementsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8F99D98-5808-41D4-B8C3-CB6128F3B570}|MICRE.TRANSACTION.ENTITIES\\MICRE.TRANSACTION.ENTITIES.csproj|solutionrelative:micre.transaction.entities\\response\\balancemovementsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8F99D98-5808-41D4-B8C3-CB6128F3B570}|MICRE.TRANSACTION.ENTITIES\\MICRE.TRANSACTION.ENTITIES.csproj|d:\\t25208\\micredito\\micre_transacction\\micre.transaction.entities\\response\\biztalk\\responsestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8F99D98-5808-41D4-B8C3-CB6128F3B570}|MICRE.TRANSACTION.ENTITIES\\MICRE.TRANSACTION.ENTITIES.csproj|solutionrelative:micre.transaction.entities\\response\\biztalk\\responsestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|d:\\t25208\\micredito\\micre_transacction\\micre.transaction.api\\helpers\\basicauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|solutionrelative:micre.transaction.api\\helpers\\basicauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|d:\\t25208\\micredito\\micre_transacction\\micre.transaction.api\\controllers\\segurocesantiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|solutionrelative:micre.transaction.api\\controllers\\segurocesantiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|d:\\t25208\\micredito\\micre_transacction\\micre.transaction.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|solutionrelative:micre.transaction.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|d:\\t25208\\micredito\\micre_transacction\\micre.transaction.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|solutionrelative:micre.transaction.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|d:\\t25208\\micredito\\micre_transacction\\micre.transaction.api\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|solutionrelative:micre.transaction.api\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|d:\\t25208\\micredito\\micre_transacction\\micre.transaction.api\\helpers\\customheaderswaggerattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|solutionrelative:micre.transaction.api\\helpers\\customheaderswaggerattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DBE6B8E-057A-474E-ADBC-F3226BC556A0}|MICRE.TRANSACTION.BIZTALK\\MICRE.TRANSACTION.BIZTALK.csproj|d:\\t25208\\micredito\\micre_transacction\\micre.transaction.biztalk\\common\\serviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DBE6B8E-057A-474E-ADBC-F3226BC556A0}|MICRE.TRANSACTION.BIZTALK\\MICRE.TRANSACTION.BIZTALK.csproj|solutionrelative:micre.transaction.biztalk\\common\\serviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|d:\\t25208\\micredito\\micre_transacction\\micre.transaction.api\\micre.transaction.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|solutionrelative:micre.transaction.api\\micre.transaction.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Framework.Security\\BCP.Framework.Security.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|d:\\t25208\\micredito\\micre_transacction\\micre.transaction.api\\services\\iactivoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C58AB2-2776-4ABF-A063-50E39CCB68FB}|MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj|solutionrelative:micre.transaction.api\\services\\iactivoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DBE6B8E-057A-474E-ADBC-F3226BC556A0}|MICRE.TRANSACTION.BIZTALK\\MICRE.TRANSACTION.BIZTALK.csproj|d:\\t25208\\micredito\\micre_transacction\\micre.transaction.biztalk\\repositoryservice\\biztalkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DBE6B8E-057A-474E-ADBC-F3226BC556A0}|MICRE.TRANSACTION.BIZTALK\\MICRE.TRANSACTION.BIZTALK.csproj|solutionrelative:micre.transaction.biztalk\\repositoryservice\\biztalkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\T25208\\MICREDITO\\MICRE_SERVICE\\MICRE.SERVICE.API\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\.config\\dotnet-tools.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MICRE.TRANSACTION.API\\.config\\dotnet-tools.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E597F2B5-A670-4D07-86B7-19017D52C332}|BCP.CROSS.SECRYPT\\BCP.CROSS.SECRYPT.csproj|d:\\t25208\\micredito\\micre_transacction\\bcp.cross.secrypt\\secryptoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E597F2B5-A670-4D07-86B7-19017D52C332}|BCP.CROSS.SECRYPT\\BCP.CROSS.SECRYPT.csproj|solutionrelative:bcp.cross.secrypt\\secryptoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DBE6B8E-057A-474E-ADBC-F3226BC556A0}|MICRE.TRANSACTION.BIZTALK\\MICRE.TRANSACTION.BIZTALK.csproj|d:\\t25208\\micredito\\micre_transacction\\micre.transaction.biztalk\\repositoryservice\\apiservicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DBE6B8E-057A-474E-ADBC-F3226BC556A0}|MICRE.TRANSACTION.BIZTALK\\MICRE.TRANSACTION.BIZTALK.csproj|solutionrelative:micre.transaction.biztalk\\repositoryservice\\apiservicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\appsettings.json",
+              "RelativeDocumentMoniker": "MICRE.TRANSACTION.API\\appsettings.json",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\appsettings.json",
+              "RelativeToolTip": "MICRE.TRANSACTION.API\\appsettings.json",
+              "ViewState": "AQIAAJAAAAAAAAAAAAAAALEAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2023-11-14T15:48:17.043Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BiztalkController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\Controllers\\BiztalkController.cs",
+              "RelativeDocumentMoniker": "MICRE.TRANSACTION.API\\Controllers\\BiztalkController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\Controllers\\BiztalkController.cs",
+              "RelativeToolTip": "MICRE.TRANSACTION.API\\Controllers\\BiztalkController.cs",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAAAFgAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-08T14:03:54.572Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ManagerBiztalk.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.BIZTALK\\ManagerBiztalk.cs",
+              "RelativeDocumentMoniker": "MICRE.TRANSACTION.BIZTALK\\ManagerBiztalk.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.BIZTALK\\ManagerBiztalk.cs",
+              "RelativeToolTip": "MICRE.TRANSACTION.BIZTALK\\ManagerBiztalk.cs",
+              "ViewState": "AQIAADwGAAAAAAAAAAAYwD8GAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-20T16:50:26.711Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ActivoServices.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\Services\\ActivoServices.cs",
+              "RelativeDocumentMoniker": "MICRE.TRANSACTION.API\\Services\\ActivoServices.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\Services\\ActivoServices.cs",
+              "RelativeToolTip": "MICRE.TRANSACTION.API\\Services\\ActivoServices.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAuwD8AAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-05T19:41:30.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BiztalkService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\Services\\BiztalkService.cs",
+              "RelativeDocumentMoniker": "MICRE.TRANSACTION.API\\Services\\BiztalkService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\Services\\BiztalkService.cs",
+              "RelativeToolTip": "MICRE.TRANSACTION.API\\Services\\BiztalkService.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAawEYAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-05T14:37:15.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SeguroCesantiaServices.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\Services\\SeguroCesantiaServices.cs",
+              "RelativeDocumentMoniker": "MICRE.TRANSACTION.API\\Services\\SeguroCesantiaServices.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\Services\\SeguroCesantiaServices.cs",
+              "RelativeToolTip": "MICRE.TRANSACTION.API\\Services\\SeguroCesantiaServices.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAtwDIAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-06T00:23:30.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SeguroRepositories.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\Repositories\\SeguroRepositories.cs",
+              "RelativeDocumentMoniker": "MICRE.TRANSACTION.API\\Repositories\\SeguroRepositories.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\Repositories\\SeguroRepositories.cs",
+              "RelativeToolTip": "MICRE.TRANSACTION.API\\Repositories\\SeguroRepositories.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAYwHoAAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-19T23:06:12.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BalanceMovementsResponse.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.ENTITIES\\Response\\BalanceMovementsResponse.cs",
+              "RelativeDocumentMoniker": "MICRE.TRANSACTION.ENTITIES\\Response\\BalanceMovementsResponse.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.ENTITIES\\Response\\BalanceMovementsResponse.cs",
+              "RelativeToolTip": "MICRE.TRANSACTION.ENTITIES\\Response\\BalanceMovementsResponse.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-16T21:30:35.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AlsController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\Controllers\\AlsController.cs",
+              "RelativeDocumentMoniker": "MICRE.TRANSACTION.API\\Controllers\\AlsController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\Controllers\\AlsController.cs",
+              "RelativeToolTip": "MICRE.TRANSACTION.API\\Controllers\\AlsController.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAAADsAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T00:35:09.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BDMicreditoRepository.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.BIZTALK\\Repository\\BDMicreditoRepository.cs",
+              "RelativeDocumentMoniker": "MICRE.TRANSACTION.BIZTALK\\Repository\\BDMicreditoRepository.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.BIZTALK\\Repository\\BDMicreditoRepository.cs",
+              "RelativeToolTip": "MICRE.TRANSACTION.BIZTALK\\Repository\\BDMicreditoRepository.cs",
+              "ViewState": "AQIAAAABAAAAAAAAAAAYwBIBAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-29T19:36:25.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ResponseState.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.ENTITIES\\Response\\Biztalk\\ResponseState.cs",
+              "RelativeDocumentMoniker": "MICRE.TRANSACTION.ENTITIES\\Response\\Biztalk\\ResponseState.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.ENTITIES\\Response\\Biztalk\\ResponseState.cs",
+              "RelativeToolTip": "MICRE.TRANSACTION.ENTITIES\\Response\\Biztalk\\ResponseState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T23:46:19.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BasicAuthenticationHandler.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\Helpers\\BasicAuthenticationHandler.cs",
+              "RelativeDocumentMoniker": "MICRE.TRANSACTION.API\\Helpers\\BasicAuthenticationHandler.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\Helpers\\BasicAuthenticationHandler.cs",
+              "RelativeToolTip": "MICRE.TRANSACTION.API\\Helpers\\BasicAuthenticationHandler.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAawE0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T01:17:29.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SeguroCesantiaController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\Controllers\\SeguroCesantiaController.cs",
+              "RelativeDocumentMoniker": "MICRE.TRANSACTION.API\\Controllers\\SeguroCesantiaController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\Controllers\\SeguroCesantiaController.cs",
+              "RelativeToolTip": "MICRE.TRANSACTION.API\\Controllers\\SeguroCesantiaController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T00:35:09.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\Startup.cs",
+              "RelativeDocumentMoniker": "MICRE.TRANSACTION.API\\Startup.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\Startup.cs",
+              "RelativeToolTip": "MICRE.TRANSACTION.API\\Startup.cs",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAwwGoAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T22:21:14.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\Services\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "MICRE.TRANSACTION.API\\Services\\AuthenticationService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\Services\\AuthenticationService.cs",
+              "RelativeToolTip": "MICRE.TRANSACTION.API\\Services\\AuthenticationService.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAA9wCsAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T22:24:13.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\Program.cs",
+              "RelativeDocumentMoniker": "MICRE.TRANSACTION.API\\Program.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\Program.cs",
+              "RelativeToolTip": "MICRE.TRANSACTION.API\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T22:27:27.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CustomHeaderSwaggerAttribute.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\Helpers\\CustomHeaderSwaggerAttribute.cs",
+              "RelativeDocumentMoniker": "MICRE.TRANSACTION.API\\Helpers\\CustomHeaderSwaggerAttribute.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\Helpers\\CustomHeaderSwaggerAttribute.cs",
+              "RelativeToolTip": "MICRE.TRANSACTION.API\\Helpers\\CustomHeaderSwaggerAttribute.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T00:27:32.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ServiceClient.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.BIZTALK\\Common\\ServiceClient.cs",
+              "RelativeDocumentMoniker": "MICRE.TRANSACTION.BIZTALK\\Common\\ServiceClient.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.BIZTALK\\Common\\ServiceClient.cs",
+              "RelativeToolTip": "MICRE.TRANSACTION.BIZTALK\\Common\\ServiceClient.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAQwHkAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-14T16:41:58.506Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MICRE.TRANSACTION.API",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj",
+              "RelativeDocumentMoniker": "MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj",
+              "RelativeToolTip": "MICRE.TRANSACTION.API\\MICRE.TRANSACTION.API.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-16T19:45:30.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BCP.Framework.Security.csproj",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Framework.Security\\BCP.Framework.Security.csproj",
+              "RelativeDocumentMoniker": "..\\MICRE_DIGITACION_PYME\\BCP.Framework.Security\\BCP.Framework.Security.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Framework.Security\\BCP.Framework.Security.csproj",
+              "RelativeToolTip": "..\\MICRE_DIGITACION_PYME\\BCP.Framework.Security\\BCP.Framework.Security.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-15T14:53:33.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IActivoServices.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\Services\\IActivoServices.cs",
+              "RelativeDocumentMoniker": "MICRE.TRANSACTION.API\\Services\\IActivoServices.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\Services\\IActivoServices.cs",
+              "RelativeToolTip": "MICRE.TRANSACTION.API\\Services\\IActivoServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-23T22:48:47.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BiztalkRepository.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.BIZTALK\\RepositoryService\\BiztalkRepository.cs",
+              "RelativeDocumentMoniker": "MICRE.TRANSACTION.BIZTALK\\RepositoryService\\BiztalkRepository.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.BIZTALK\\RepositoryService\\BiztalkRepository.cs",
+              "RelativeToolTip": "MICRE.TRANSACTION.BIZTALK\\RepositoryService\\BiztalkRepository.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAADwv3QAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-13T23:53:47.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SERVICE\\MICRE.SERVICE.API\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\MICRE_SERVICE\\MICRE.SERVICE.API\\appsettings.json",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SERVICE\\MICRE.SERVICE.API\\appsettings.json",
+              "RelativeToolTip": "..\\MICRE_SERVICE\\MICRE.SERVICE.API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-02-14T15:17:35.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "dotnet-tools.json",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\.config\\dotnet-tools.json",
+              "RelativeDocumentMoniker": "MICRE.TRANSACTION.API\\.config\\dotnet-tools.json",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.API\\.config\\dotnet-tools.json",
+              "RelativeToolTip": "MICRE.TRANSACTION.API\\.config\\dotnet-tools.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-01-16T23:17:01.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ApiServiceRepository.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.BIZTALK\\RepositoryService\\ApiServiceRepository.cs",
+              "RelativeDocumentMoniker": "MICRE.TRANSACTION.BIZTALK\\RepositoryService\\ApiServiceRepository.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\MICRE.TRANSACTION.BIZTALK\\RepositoryService\\ApiServiceRepository.cs",
+              "RelativeToolTip": "MICRE.TRANSACTION.BIZTALK\\RepositoryService\\ApiServiceRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-08T19:03:44.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "SecryptOptions.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\BCP.CROSS.SECRYPT\\SecryptOptions.cs",
+              "RelativeDocumentMoniker": "BCP.CROSS.SECRYPT\\SecryptOptions.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_TRANSACCTION\\BCP.CROSS.SECRYPT\\SecryptOptions.cs",
+              "RelativeToolTip": "BCP.CROSS.SECRYPT\\SecryptOptions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-14T17:29:59.297Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

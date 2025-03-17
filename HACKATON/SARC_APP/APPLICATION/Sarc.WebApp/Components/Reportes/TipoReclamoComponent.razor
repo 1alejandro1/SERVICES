@@ -1,0 +1,130 @@
+﻿@using BCP.CROSS.MODELS.Reportes
+@using Sarc.WebApp.Models.Reportes
+<div class="row align-content-center">
+    <div class="col-12">
+        <h4><strong>REPORTE RECLAMO POR SERVICIO</strong></h4>
+    </div>
+    <div class="col-10" style="overflow-y:auto">
+        <table class="table table-hover table-borderless">
+            <thead>
+                <tr class="text-uppercase">
+                    <th class="table-tomato">TIPO CASO / CASO</th>
+                    <th class="table-tomato">PENDIENTES</th>
+                    <th class="table-tomato">PENDIENTES VENCIDOS</th>
+                    <th class="table-tomato">SOLUCIONADOS A TIEMPO</th>
+                    <th class="table-tomato">SOLUCIONADOS VENCIDOS</th>
+                    <th class="table-tomato">TOTAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (TipoReclamoTableViewModel item in _dataTable)
+                {
+                    <tr>
+                        <th scope="row" class="table-light">@item.TipoCaso</th>
+                        <td class="table-light">@item.Pendientes</td>
+                        <td class="table-light">@item.PendientesVencidos</td>
+                        <td class="table-light">@item.SolucionadosTiempo</td>
+                        <td class="table-light">@item.SolucionadosVencidos</td>
+                        <td class="table-light">@item.Total</td>
+                    </tr>
+                }
+            </tbody>
+        </table>        
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public List<TipoReclamoModel> Data { get; set; }
+    public List<TipoReclamoTableViewModel> _dataTable = new List<TipoReclamoTableViewModel>();
+    protected override void OnInitialized()
+    {
+        CreateDataTable();
+        PopulateData();
+    }
+    public void CreateDataTable()
+    {
+        foreach (TipoReclamoModel item in Data)
+        {
+            if (_dataTable.Count < 0)
+            {
+                _dataTable.Add(
+                    new TipoReclamoTableViewModel(
+                        tipoCaso: item.Nombre,
+                        pendientes: 0,
+                        pendientesVencidos: 0,
+                        solucionadosTiempo: 0,
+                        solucionadosVencidos: 0,
+                        total: 0
+                    )
+                );
+            }
+            else
+            {
+                bool flag = true;
+                foreach (TipoReclamoTableViewModel item2 in _dataTable)
+                {
+                    if (item2.TipoCaso == item.Nombre) flag = false;
+                }
+                if (flag)
+                {
+                    _dataTable.Add(
+                    new TipoReclamoTableViewModel(
+                        tipoCaso: item.Nombre,
+                        pendientes: 0,
+                        pendientesVencidos: 0,
+                        solucionadosTiempo: 0,
+                        solucionadosVencidos: 0,
+                        total: 0
+                    )
+                );
+                }
+            }
+        }
+    }
+    public void PopulateData()
+    {
+        foreach (TipoReclamoModel item in Data)
+        {
+            foreach (TipoReclamoTableViewModel item2 in _dataTable)
+            {
+                if (item.Nombre == item2.TipoCaso)
+                {
+                    switch (item.Tipo)
+                    {
+                        case "PENDIENTES":
+                            item2.Pendientes = item.Cantidad;
+                            break;
+                        case "PENDIENTES VENCIDOS":
+                            item2.PendientesVencidos = item.Cantidad;
+                            break;
+                        case "SOLUCIONADOS A TIEMPO":
+                            item2.SolucionadosTiempo = item.Cantidad;
+                            break;
+                        case "SOLUCIONADOS VENCIDOS":
+                            item2.SolucionadosVencidos = item.Cantidad;
+                            break;
+                        case "TOTAL":
+                            item2.Total = item.Cantidad;
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+        }
+    }
+}
+<style lang="css">
+    .table-tomato {
+        background-color: tomato !important;
+        color: white !important;
+        vertical-align: middle;
+    }
+
+    .table-midnightblue {
+        background-color: midnightblue !important;
+        color: white !important;
+        vertical-align: middle;
+    }
+</style>

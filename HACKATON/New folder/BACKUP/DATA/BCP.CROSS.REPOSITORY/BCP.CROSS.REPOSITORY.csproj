@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\CORE\BCP.CROSS.INFOCLIENTE\BCP.CROSS.INFOCLIENTE.csproj" />
+    <ProjectReference Include="..\..\CORE\BCP.CROSS.SEGURINET\BCP.CROSS.SEGURINET.csproj" />
+    <ProjectReference Include="..\BCP.CROSS.DATAACCESS\BCP.CROSS.DATAACCESS.csproj" />
+    <ProjectReference Include="..\BCP.CROSS.MODELS\BCP.CROSS.MODELS.csproj" />
+  </ItemGroup>
+
+</Project>

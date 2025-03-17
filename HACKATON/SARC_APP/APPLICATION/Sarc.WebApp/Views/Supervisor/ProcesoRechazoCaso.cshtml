@@ -1,0 +1,59 @@
+﻿@using Sarc.WebApp.Models.Supervisor
+@model ProccessRechazoCasoViewModel
+
+
+@{
+    ViewData["Title"] = "Supervisor/Rechazar Caso";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-sm-center">
+        <div class="col-sm-6 align-self-center">
+            <article class="card bg-bgcontent-dark rounded shadow mb-3" style="min-width: 320px;">
+                <div class="card-header">
+                    <span class="d-inline">@Model?.NroCaso</span>
+                </div>
+                <div class="card-body">
+                    @if (Model != null)
+                    {
+                        <div class="box__content-message  mb-3">
+                            <div class="">
+                                <svg viewBox="0 0 50 50" width="50" height="50">
+                                    @if (Model?.CasoRechazado?.Meta.StatusCode == 200)
+                                    {
+                                        <circle class="circle-success" cx="20" cy="20" r="18" />
+                                    }
+                                    else
+                                    {
+                                        <circle class="circle-nosuccess" cx="20" cy="20" r="18" />
+                                    }
+                                </svg>
+                            </div>
+                            <div class="box__message">
+                                <h6>Rechazar caso</h6>
+                                @if (Model?.CasoRechazado?.Meta.StatusCode == 200)
+                                {
+                                    <p class="card-text message_proccess">Caso rechazado correctamente.</p>
+                                }
+                                else
+                                {
+
+                                    <p class="card-text message_proccess">@Model.CasoRechazado.Meta.Msj</p>
+                                }
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <p class="card-text">Rechazo de caso no procesado</p>
+                    }
+
+                        <a href="@Url.Action("BandejadeEntrada")"
+                           class="btn btn-bodydark text-light btn-sm shadow float-end">Ir a la Bandeja</a>
+                </div>
+
+            </article>
+        </div>
+    </div>
+</div>
+

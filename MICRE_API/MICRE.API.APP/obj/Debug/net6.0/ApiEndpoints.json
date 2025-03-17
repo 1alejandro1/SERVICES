@@ -1,0 +1,151 @@
+[
+  {
+    "ContainingType": "MICRE.API.APP.Controllers.CreditoController",
+    "Method": "UpdateCreditoConsumo",
+    "RelativePath": "api/Credito/Consumo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.API.APP.DTOs.CreditoConsumoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MICRE.API.APP.Controllers.CreditoController",
+    "Method": "GuardarDTTarjetaCreditoV1",
+    "RelativePath": "api/Credito/GuardarDTTarjetaCredito",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "lngCodCalificacion",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "wsTarjetas",
+        "Type": "MICRE.API.MODEL.Request.DatosTarjetaCredito",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MICRE.API.APP.Controllers.CreditoController",
+    "Method": "UpdateTarjetaCredito",
+    "RelativePath": "api/Credito/Tarjeta",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.API.APP.DTOs.TarjetaCreditoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MICRE.API.APP.Controllers.SolicitudController",
+    "Method": "CambioEstado",
+    "RelativePath": "api/Solicitud/CambioEstado",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.API.APP.DTOs.CambioEstadoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MICRE.API.APP.Controllers.SolicitudController",
+    "Method": "CambioEstadoCLI",
+    "RelativePath": "api/Solicitud/CambioEstadoCLI",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.API.APP.DTOs.CambioEstadoRequestCLI",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MICRE.API.APP.Controllers.SolicitudController",
+    "Method": "Generacion",
+    "RelativePath": "api/Solicitud/Generacion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.API.APP.DTOs.SolicitudRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MICRE.API.APP.Controllers.SolicitudController",
+    "Method": "GuardarAccionistaPersona",
+    "RelativePath": "api/Solicitud/GuardarAccionistaPersona",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.API.APP.DTOs.AccioMayDatosPersonalesPymeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MICRE.API.APP.Controllers.SolicitudController",
+    "Method": "IngresosPersona",
+    "RelativePath": "api/Solicitud/IngresosPersona",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.API.APP.DTOs.PersonaIngresosRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MICRE.API.APP.Controllers.SolicitudController",
+    "Method": "Score",
+    "RelativePath": "api/Solicitud/Score",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.API.APP.DTOs.ScoreRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

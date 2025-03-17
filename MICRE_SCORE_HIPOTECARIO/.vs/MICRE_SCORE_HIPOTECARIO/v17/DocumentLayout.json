@@ -1,0 +1,957 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{06C4345B-4181-421D-B07C-882081D03B1C}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.business\\managerdatabase\\managerbdmicredito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06C4345B-4181-421D-B07C-882081D03B1C}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|solutionrelative:micre.business\\managerdatabase\\managerbdmicredito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06C4345B-4181-421D-B07C-882081D03B1C}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.business\\manager\\managerscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06C4345B-4181-421D-B07C-882081D03B1C}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|solutionrelative:micre.business\\manager\\managerscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06C4345B-4181-421D-B07C-882081D03B1C}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.business\\manager\\managerexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06C4345B-4181-421D-B07C-882081D03B1C}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|solutionrelative:micre.business\\manager\\managerexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06C4345B-4181-421D-B07C-882081D03B1C}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.business\\services\\servicescorehipotecario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06C4345B-4181-421D-B07C-882081D03B1C}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|solutionrelative:micre.business\\services\\servicescorehipotecario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5A4E660-1BAF-4205-8340-A18076FE3AA8}|MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre_score_hipotecario\\controllers\\scorehipotecariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5A4E660-1BAF-4205-8340-A18076FE3AA8}|MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO.csproj|solutionrelative:micre_score_hipotecario\\controllers\\scorehipotecariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5A4E660-1BAF-4205-8340-A18076FE3AA8}|MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre_score_hipotecario\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A5A4E660-1BAF-4205-8340-A18076FE3AA8}|MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO.csproj|solutionrelative:micre_score_hipotecario\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06C4345B-4181-421D-B07C-882081D03B1C}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.business\\managerdatabase\\managerbdbdiapl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06C4345B-4181-421D-B07C-882081D03B1C}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|solutionrelative:micre.business\\managerdatabase\\managerbdbdiapl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.entity\\request\\calculadorarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|solutionrelative:micre.entity\\request\\calculadorarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.entity\\setting\\toolssettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|solutionrelative:micre.entity\\setting\\toolssettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5A4E660-1BAF-4205-8340-A18076FE3AA8}|MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre_score_hipotecario\\helpers\\swaggerdefaultvalues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5A4E660-1BAF-4205-8340-A18076FE3AA8}|MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO.csproj|solutionrelative:micre_score_hipotecario\\helpers\\swaggerdefaultvalues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81FC0541-1DB4-4CB3-AE5E-C3FABB2BE0AD}|MICRE_sCORE_HIPOTECARIO_TEST\\MICRE_sCORE_HIPOTECARIO_TEST.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre_score_hipotecario_test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81FC0541-1DB4-4CB3-AE5E-C3FABB2BE0AD}|MICRE_sCORE_HIPOTECARIO_TEST\\MICRE_sCORE_HIPOTECARIO_TEST.csproj|solutionrelative:micre_score_hipotecario_test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5A4E660-1BAF-4205-8340-A18076FE3AA8}|MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre_score_hipotecario\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5A4E660-1BAF-4205-8340-A18076FE3AA8}|MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO.csproj|solutionrelative:micre_score_hipotecario\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06C4345B-4181-421D-B07C-882081D03B1C}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.business\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06C4345B-4181-421D-B07C-882081D03B1C}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|solutionrelative:micre.business\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B37EFF-9D7B-4396-8E14-AEC97DA8ADE8}|MICRE.COMMON\\MICRE.COMMON.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.common\\service\\serviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B37EFF-9D7B-4396-8E14-AEC97DA8ADE8}|MICRE.COMMON\\MICRE.COMMON.csproj|solutionrelative:micre.common\\service\\serviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7D4ADD7-A10D-480E-AFB3-B3095D5E18F8}|MICRE.DATA_ACCESS\\MICRE.DATA_ACCESS.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.data_access\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7D4ADD7-A10D-480E-AFB3-B3095D5E18F8}|MICRE.DATA_ACCESS\\MICRE.DATA_ACCESS.csproj|solutionrelative:micre.data_access\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5A4E660-1BAF-4205-8340-A18076FE3AA8}|MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre_score_hipotecario\\controllers\\segcryptcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5A4E660-1BAF-4205-8340-A18076FE3AA8}|MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO.csproj|solutionrelative:micre_score_hipotecario\\controllers\\segcryptcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81FC0541-1DB4-4CB3-AE5E-C3FABB2BE0AD}|MICRE_sCORE_HIPOTECARIO_TEST\\MICRE_sCORE_HIPOTECARIO_TEST.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre_score_hipotecario_test\\usings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81FC0541-1DB4-4CB3-AE5E-C3FABB2BE0AD}|MICRE_sCORE_HIPOTECARIO_TEST\\MICRE_sCORE_HIPOTECARIO_TEST.csproj|solutionrelative:micre_score_hipotecario_test\\usings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06C4345B-4181-421D-B07C-882081D03B1C}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.business\\manager\\managerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06C4345B-4181-421D-B07C-882081D03B1C}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|solutionrelative:micre.business\\manager\\managerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B37EFF-9D7B-4396-8E14-AEC97DA8ADE8}|MICRE.COMMON\\MICRE.COMMON.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.common\\model\\serviceresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B37EFF-9D7B-4396-8E14-AEC97DA8ADE8}|MICRE.COMMON\\MICRE.COMMON.csproj|solutionrelative:micre.common\\model\\serviceresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06C4345B-4181-421D-B07C-882081D03B1C}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.business\\services\\servicesegcrypt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06C4345B-4181-421D-B07C-882081D03B1C}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|solutionrelative:micre.business\\services\\servicesegcrypt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5A4E660-1BAF-4205-8340-A18076FE3AA8}|MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre_score_hipotecario\\helpers\\basicauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5A4E660-1BAF-4205-8340-A18076FE3AA8}|MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO.csproj|solutionrelative:micre_score_hipotecario\\helpers\\basicauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07235DB5-51D7-4C05-86B6-1A61009DF3FB}|MICRE.SECURITY\\MICRE.SECURITY.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.security\\segcrypt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07235DB5-51D7-4C05-86B6-1A61009DF3FB}|MICRE.SECURITY\\MICRE.SECURITY.csproj|solutionrelative:micre.security\\segcrypt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07235DB5-51D7-4C05-86B6-1A61009DF3FB}|MICRE.SECURITY\\MICRE.SECURITY.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.security\\managersecrypt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07235DB5-51D7-4C05-86B6-1A61009DF3FB}|MICRE.SECURITY\\MICRE.SECURITY.csproj|solutionrelative:micre.security\\managersecrypt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07235DB5-51D7-4C05-86B6-1A61009DF3FB}|MICRE.SECURITY\\MICRE.SECURITY.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.security\\secryptoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07235DB5-51D7-4C05-86B6-1A61009DF3FB}|MICRE.SECURITY\\MICRE.SECURITY.csproj|solutionrelative:micre.security\\secryptoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07235DB5-51D7-4C05-86B6-1A61009DF3FB}|MICRE.SECURITY\\MICRE.SECURITY.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.security\\extension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07235DB5-51D7-4C05-86B6-1A61009DF3FB}|MICRE.SECURITY\\MICRE.SECURITY.csproj|solutionrelative:micre.security\\extension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D315F30-ACA7-4B84-B3CF-B4DD758CA771}|MICRE.LOGGER\\MICRE.LOGGER.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.logger\\threadidenricher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D315F30-ACA7-4B84-B3CF-B4DD758CA771}|MICRE.LOGGER\\MICRE.LOGGER.csproj|solutionrelative:micre.logger\\threadidenricher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D315F30-ACA7-4B84-B3CF-B4DD758CA771}|MICRE.LOGGER\\MICRE.LOGGER.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.logger\\loggeroptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D315F30-ACA7-4B84-B3CF-B4DD758CA771}|MICRE.LOGGER\\MICRE.LOGGER.csproj|solutionrelative:micre.logger\\loggeroptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D315F30-ACA7-4B84-B3CF-B4DD758CA771}|MICRE.LOGGER\\MICRE.LOGGER.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.logger\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D315F30-ACA7-4B84-B3CF-B4DD758CA771}|MICRE.LOGGER\\MICRE.LOGGER.csproj|solutionrelative:micre.logger\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D315F30-ACA7-4B84-B3CF-B4DD758CA771}|MICRE.LOGGER\\MICRE.LOGGER.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.logger\\extension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D315F30-ACA7-4B84-B3CF-B4DD758CA771}|MICRE.LOGGER\\MICRE.LOGGER.csproj|solutionrelative:micre.logger\\extension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.entity\\setting\\servicessettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|solutionrelative:micre.entity\\setting\\servicessettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.entity\\setting\\databasesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|solutionrelative:micre.entity\\setting\\databasesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.entity\\setting\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|solutionrelative:micre.entity\\setting\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.entity\\response\\scorehipotecarioresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|solutionrelative:micre.entity\\response\\scorehipotecarioresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.entity\\response\\calculadoraresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|solutionrelative:micre.entity\\response\\calculadoraresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.entity\\request\\scorehipotecariorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|solutionrelative:micre.entity\\request\\scorehipotecariorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.entity\\request\\reportescorehipotecariorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|solutionrelative:micre.entity\\request\\reportescorehipotecariorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.entity\\model\\tipocambio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|solutionrelative:micre.entity\\model\\tipocambio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.entity\\model\\segcrypt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|solutionrelative:micre.entity\\model\\segcrypt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.entity\\model\\scorehipotecario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|solutionrelative:micre.entity\\model\\scorehipotecario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.entity\\model\\scorecortes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|solutionrelative:micre.entity\\model\\scorecortes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.entity\\model\\reportescorehipotecario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|solutionrelative:micre.entity\\model\\reportescorehipotecario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.entity\\model\\pasivas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|solutionrelative:micre.entity\\model\\pasivas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.entity\\model\\exceloptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|solutionrelative:micre.entity\\model\\exceloptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.entity\\model\\dwhscorehipotecario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|solutionrelative:micre.entity\\model\\dwhscorehipotecario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.entity\\model\\datossolicitud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|solutionrelative:micre.entity\\model\\datossolicitud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\T25208\\.nuget\\packages\\epplus\\7.6.0\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5A4E660-1BAF-4205-8340-A18076FE3AA8}|MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre_score_hipotecario\\micre_score_hipotecario.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{A5A4E660-1BAF-4205-8340-A18076FE3AA8}|MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO.csproj|solutionrelative:micre_score_hipotecario\\micre_score_hipotecario.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07235DB5-51D7-4C05-86B6-1A61009DF3FB}|MICRE.SECURITY\\MICRE.SECURITY.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.security\\micre.security.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{07235DB5-51D7-4C05-86B6-1A61009DF3FB}|MICRE.SECURITY\\MICRE.SECURITY.csproj|solutionrelative:micre.security\\micre.security.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D315F30-ACA7-4B84-B3CF-B4DD758CA771}|MICRE.LOGGER\\MICRE.LOGGER.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.logger\\micre.logger.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{9D315F30-ACA7-4B84-B3CF-B4DD758CA771}|MICRE.LOGGER\\MICRE.LOGGER.csproj|solutionrelative:micre.logger\\micre.logger.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.entity\\micre.entity.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{40229C48-E290-4CC2-AD59-9CF288E50B0D}|MICRE.ENTITY\\MICRE.ENTITY.csproj|solutionrelative:micre.entity\\micre.entity.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7D4ADD7-A10D-480E-AFB3-B3095D5E18F8}|MICRE.DATA_ACCESS\\MICRE.DATA_ACCESS.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.data_access\\micre.data_access.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{F7D4ADD7-A10D-480E-AFB3-B3095D5E18F8}|MICRE.DATA_ACCESS\\MICRE.DATA_ACCESS.csproj|solutionrelative:micre.data_access\\micre.data_access.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B37EFF-9D7B-4396-8E14-AEC97DA8ADE8}|MICRE.COMMON\\MICRE.COMMON.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.common\\micre.common.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{25B37EFF-9D7B-4396-8E14-AEC97DA8ADE8}|MICRE.COMMON\\MICRE.COMMON.csproj|solutionrelative:micre.common\\micre.common.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06C4345B-4181-421D-B07C-882081D03B1C}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre.business\\micre.business.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{06C4345B-4181-421D-B07C-882081D03B1C}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|solutionrelative:micre.business\\micre.business.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5A4E660-1BAF-4205-8340-A18076FE3AA8}|MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO.csproj|d:\\t25208\\micredito\\micre_score_hipotecario\\micre_score_hipotecario\\helpers\\customheaderswaggerattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5A4E660-1BAF-4205-8340-A18076FE3AA8}|MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO.csproj|solutionrelative:micre_score_hipotecario\\helpers\\customheaderswaggerattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 24,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ManagerScore.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.BUSINESS\\Manager\\ManagerScore.cs",
+              "RelativeDocumentMoniker": "MICRE.BUSINESS\\Manager\\ManagerScore.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.BUSINESS\\Manager\\ManagerScore.cs",
+              "RelativeToolTip": "MICRE.BUSINESS\\Manager\\ManagerScore.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAtwD8AAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:11:03.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ScoreHipotecarioController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO\\Controllers\\ScoreHipotecarioController.cs",
+              "RelativeDocumentMoniker": "MICRE_SCORE_HIPOTECARIO\\Controllers\\ScoreHipotecarioController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO\\Controllers\\ScoreHipotecarioController.cs",
+              "RelativeToolTip": "MICRE_SCORE_HIPOTECARIO\\Controllers\\ScoreHipotecarioController.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAAB8AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-10-02T22:53:29.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ServiceScoreHipotecario.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.BUSINESS\\Services\\ServiceScoreHipotecario.cs",
+              "RelativeDocumentMoniker": "MICRE.BUSINESS\\Services\\ServiceScoreHipotecario.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.BUSINESS\\Services\\ServiceScoreHipotecario.cs",
+              "RelativeToolTip": "MICRE.BUSINESS\\Services\\ServiceScoreHipotecario.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAA9wCgAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-03-27T15:37:06.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO\\appsettings.json",
+              "RelativeDocumentMoniker": "MICRE_SCORE_HIPOTECARIO\\appsettings.json",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO\\appsettings.json",
+              "RelativeToolTip": "MICRE_SCORE_HIPOTECARIO\\appsettings.json",
+              "ViewState": "AQIAACAAAAAAAAAAAAAqwDAAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-17T16:37:42.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ManagerBdMicredito.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.BUSINESS\\ManagerDataBase\\ManagerBdMicredito.cs",
+              "RelativeDocumentMoniker": "MICRE.BUSINESS\\ManagerDataBase\\ManagerBdMicredito.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.BUSINESS\\ManagerDataBase\\ManagerBdMicredito.cs",
+              "RelativeToolTip": "MICRE.BUSINESS\\ManagerDataBase\\ManagerBdMicredito.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwBgAAACVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-03-27T16:17:33.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ManagerExcel.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.BUSINESS\\Manager\\ManagerExcel.cs",
+              "RelativeDocumentMoniker": "MICRE.BUSINESS\\Manager\\ManagerExcel.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.BUSINESS\\Manager\\ManagerExcel.cs",
+              "RelativeToolTip": "MICRE.BUSINESS\\Manager\\ManagerExcel.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAswBUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-03-28T20:06:25.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ManagerBdBdiapl.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.BUSINESS\\ManagerDataBase\\ManagerBdBdiapl.cs",
+              "RelativeDocumentMoniker": "MICRE.BUSINESS\\ManagerDataBase\\ManagerBdBdiapl.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.BUSINESS\\ManagerDataBase\\ManagerBdBdiapl.cs",
+              "RelativeToolTip": "MICRE.BUSINESS\\ManagerDataBase\\ManagerBdBdiapl.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:14:52.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CalculadoraRequest.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Request\\CalculadoraRequest.cs",
+              "RelativeDocumentMoniker": "MICRE.ENTITY\\Request\\CalculadoraRequest.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Request\\CalculadoraRequest.cs",
+              "RelativeToolTip": "MICRE.ENTITY\\Request\\CalculadoraRequest.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAqwA4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:09:52.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ToolsSettings.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Setting\\ToolsSettings.cs",
+              "RelativeDocumentMoniker": "MICRE.ENTITY\\Setting\\ToolsSettings.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Setting\\ToolsSettings.cs",
+              "RelativeToolTip": "MICRE.ENTITY\\Setting\\ToolsSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:10:05.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE_sCORE_HIPOTECARIO_TEST\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "MICRE_sCORE_HIPOTECARIO_TEST\\UnitTest1.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE_sCORE_HIPOTECARIO_TEST\\UnitTest1.cs",
+              "RelativeToolTip": "MICRE_sCORE_HIPOTECARIO_TEST\\UnitTest1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T20:05:13.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SwaggerDefaultValues.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO\\Helpers\\SwaggerDefaultValues.cs",
+              "RelativeDocumentMoniker": "MICRE_SCORE_HIPOTECARIO\\Helpers\\SwaggerDefaultValues.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO\\Helpers\\SwaggerDefaultValues.cs",
+              "RelativeToolTip": "MICRE_SCORE_HIPOTECARIO\\Helpers\\SwaggerDefaultValues.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T21:21:27.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO\\Program.cs",
+              "RelativeDocumentMoniker": "MICRE_SCORE_HIPOTECARIO\\Program.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO\\Program.cs",
+              "RelativeToolTip": "MICRE_SCORE_HIPOTECARIO\\Program.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T20:05:15.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.BUSINESS\\Services\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "MICRE.BUSINESS\\Services\\AuthenticationService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.BUSINESS\\Services\\AuthenticationService.cs",
+              "RelativeToolTip": "MICRE.BUSINESS\\Services\\AuthenticationService.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADsAAACJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-03-27T15:37:31.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DataAccess.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.DATA_ACCESS\\DataAccess.cs",
+              "RelativeDocumentMoniker": "MICRE.DATA_ACCESS\\DataAccess.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.DATA_ACCESS\\DataAccess.cs",
+              "RelativeToolTip": "MICRE.DATA_ACCESS\\DataAccess.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAtwGgAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T19:45:50.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ServiceClient.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.COMMON\\Service\\ServiceClient.cs",
+              "RelativeDocumentMoniker": "MICRE.COMMON\\Service\\ServiceClient.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.COMMON\\Service\\ServiceClient.cs",
+              "RelativeToolTip": "MICRE.COMMON\\Service\\ServiceClient.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAAAKMAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T20:01:35.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SegCryptController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO\\Controllers\\SegCryptController.cs",
+              "RelativeDocumentMoniker": "MICRE_SCORE_HIPOTECARIO\\Controllers\\SegCryptController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO\\Controllers\\SegCryptController.cs",
+              "RelativeToolTip": "MICRE_SCORE_HIPOTECARIO\\Controllers\\SegCryptController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:11:36.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Usings.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE_sCORE_HIPOTECARIO_TEST\\Usings.cs",
+              "RelativeDocumentMoniker": "MICRE_sCORE_HIPOTECARIO_TEST\\Usings.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE_sCORE_HIPOTECARIO_TEST\\Usings.cs",
+              "RelativeToolTip": "MICRE_sCORE_HIPOTECARIO_TEST\\Usings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T20:05:14.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ManagerServices.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.BUSINESS\\Manager\\ManagerServices.cs",
+              "RelativeDocumentMoniker": "MICRE.BUSINESS\\Manager\\ManagerServices.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.BUSINESS\\Manager\\ManagerServices.cs",
+              "RelativeToolTip": "MICRE.BUSINESS\\Manager\\ManagerServices.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAEwBUAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T20:00:37.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ServiceResponse.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.COMMON\\Model\\ServiceResponse.cs",
+              "RelativeDocumentMoniker": "MICRE.COMMON\\Model\\ServiceResponse.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.COMMON\\Model\\ServiceResponse.cs",
+              "RelativeToolTip": "MICRE.COMMON\\Model\\ServiceResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T20:01:30.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ServiceSegCrypt.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.BUSINESS\\Services\\ServiceSegCrypt.cs",
+              "RelativeDocumentMoniker": "MICRE.BUSINESS\\Services\\ServiceSegCrypt.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.BUSINESS\\Services\\ServiceSegCrypt.cs",
+              "RelativeToolTip": "MICRE.BUSINESS\\Services\\ServiceSegCrypt.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T20:01:16.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SegCrypt.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.SECURITY\\SegCrypt.cs",
+              "RelativeDocumentMoniker": "MICRE.SECURITY\\SegCrypt.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.SECURITY\\SegCrypt.cs",
+              "RelativeToolTip": "MICRE.SECURITY\\SegCrypt.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAawFoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:10:38.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BasicAuthenticationHandler.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO\\Helpers\\BasicAuthenticationHandler.cs",
+              "RelativeDocumentMoniker": "MICRE_SCORE_HIPOTECARIO\\Helpers\\BasicAuthenticationHandler.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO\\Helpers\\BasicAuthenticationHandler.cs",
+              "RelativeToolTip": "MICRE_SCORE_HIPOTECARIO\\Helpers\\BasicAuthenticationHandler.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAawBcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T16:26:01.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ManagerSecrypt.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.SECURITY\\ManagerSecrypt.cs",
+              "RelativeDocumentMoniker": "MICRE.SECURITY\\ManagerSecrypt.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.SECURITY\\ManagerSecrypt.cs",
+              "RelativeToolTip": "MICRE.SECURITY\\ManagerSecrypt.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAlwCwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:10:32.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "SecryptOptions.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.SECURITY\\SecryptOptions.cs",
+              "RelativeDocumentMoniker": "MICRE.SECURITY\\SecryptOptions.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.SECURITY\\SecryptOptions.cs",
+              "RelativeToolTip": "MICRE.SECURITY\\SecryptOptions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:10:36.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Extension.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.SECURITY\\Extension.cs",
+              "RelativeDocumentMoniker": "MICRE.SECURITY\\Extension.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.SECURITY\\Extension.cs",
+              "RelativeToolTip": "MICRE.SECURITY\\Extension.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:10:29.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ThreadIdEnricher.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.LOGGER\\ThreadIdEnricher.cs",
+              "RelativeDocumentMoniker": "MICRE.LOGGER\\ThreadIdEnricher.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.LOGGER\\ThreadIdEnricher.cs",
+              "RelativeToolTip": "MICRE.LOGGER\\ThreadIdEnricher.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:10:25.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "LoggerOptions.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.LOGGER\\LoggerOptions.cs",
+              "RelativeDocumentMoniker": "MICRE.LOGGER\\LoggerOptions.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.LOGGER\\LoggerOptions.cs",
+              "RelativeToolTip": "MICRE.LOGGER\\LoggerOptions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:10:23.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Logger.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.LOGGER\\Logger.cs",
+              "RelativeDocumentMoniker": "MICRE.LOGGER\\Logger.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.LOGGER\\Logger.cs",
+              "RelativeToolTip": "MICRE.LOGGER\\Logger.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:10:16.506Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Extension.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.LOGGER\\Extension.cs",
+              "RelativeDocumentMoniker": "MICRE.LOGGER\\Extension.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.LOGGER\\Extension.cs",
+              "RelativeToolTip": "MICRE.LOGGER\\Extension.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:10:09.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ServicesSettings.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Setting\\ServicesSettings.cs",
+              "RelativeDocumentMoniker": "MICRE.ENTITY\\Setting\\ServicesSettings.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Setting\\ServicesSettings.cs",
+              "RelativeToolTip": "MICRE.ENTITY\\Setting\\ServicesSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:10:04.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "DataBaseSettings.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Setting\\DataBaseSettings.cs",
+              "RelativeDocumentMoniker": "MICRE.ENTITY\\Setting\\DataBaseSettings.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Setting\\DataBaseSettings.cs",
+              "RelativeToolTip": "MICRE.ENTITY\\Setting\\DataBaseSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:10:03.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Setting\\Configuration.cs",
+              "RelativeDocumentMoniker": "MICRE.ENTITY\\Setting\\Configuration.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Setting\\Configuration.cs",
+              "RelativeToolTip": "MICRE.ENTITY\\Setting\\Configuration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:10:02.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ScoreHipotecarioResponse.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Response\\ScoreHipotecarioResponse.cs",
+              "RelativeDocumentMoniker": "MICRE.ENTITY\\Response\\ScoreHipotecarioResponse.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Response\\ScoreHipotecarioResponse.cs",
+              "RelativeToolTip": "MICRE.ENTITY\\Response\\ScoreHipotecarioResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:09:59.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ScoreHipotecarioRequest.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Request\\ScoreHipotecarioRequest.cs",
+              "RelativeDocumentMoniker": "MICRE.ENTITY\\Request\\ScoreHipotecarioRequest.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Request\\ScoreHipotecarioRequest.cs",
+              "RelativeToolTip": "MICRE.ENTITY\\Request\\ScoreHipotecarioRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:09:54.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ReporteScoreHipotecarioRequest.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Request\\ReporteScoreHipotecarioRequest.cs",
+              "RelativeDocumentMoniker": "MICRE.ENTITY\\Request\\ReporteScoreHipotecarioRequest.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Request\\ReporteScoreHipotecarioRequest.cs",
+              "RelativeToolTip": "MICRE.ENTITY\\Request\\ReporteScoreHipotecarioRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:09:53.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "TipoCambio.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Model\\TipoCambio.cs",
+              "RelativeDocumentMoniker": "MICRE.ENTITY\\Model\\TipoCambio.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Model\\TipoCambio.cs",
+              "RelativeToolTip": "MICRE.ENTITY\\Model\\TipoCambio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:09:47.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "SegCrypt.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Model\\SegCrypt.cs",
+              "RelativeDocumentMoniker": "MICRE.ENTITY\\Model\\SegCrypt.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Model\\SegCrypt.cs",
+              "RelativeToolTip": "MICRE.ENTITY\\Model\\SegCrypt.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:09:45.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ScoreHipotecario.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Model\\ScoreHipotecario.cs",
+              "RelativeDocumentMoniker": "MICRE.ENTITY\\Model\\ScoreHipotecario.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Model\\ScoreHipotecario.cs",
+              "RelativeToolTip": "MICRE.ENTITY\\Model\\ScoreHipotecario.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAswAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:09:41.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CalculadoraResponse.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Response\\CalculadoraResponse.cs",
+              "RelativeDocumentMoniker": "MICRE.ENTITY\\Response\\CalculadoraResponse.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Response\\CalculadoraResponse.cs",
+              "RelativeToolTip": "MICRE.ENTITY\\Response\\CalculadoraResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-03-30T15:01:28.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ScoreCortes.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Model\\ScoreCortes.cs",
+              "RelativeDocumentMoniker": "MICRE.ENTITY\\Model\\ScoreCortes.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Model\\ScoreCortes.cs",
+              "RelativeToolTip": "MICRE.ENTITY\\Model\\ScoreCortes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:09:40.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ReporteScoreHipotecario.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Model\\ReporteScoreHipotecario.cs",
+              "RelativeDocumentMoniker": "MICRE.ENTITY\\Model\\ReporteScoreHipotecario.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Model\\ReporteScoreHipotecario.cs",
+              "RelativeToolTip": "MICRE.ENTITY\\Model\\ReporteScoreHipotecario.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAA7wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:09:37.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Pasivas.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Model\\Pasivas.cs",
+              "RelativeDocumentMoniker": "MICRE.ENTITY\\Model\\Pasivas.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Model\\Pasivas.cs",
+              "RelativeToolTip": "MICRE.ENTITY\\Model\\Pasivas.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:09:33.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ExcelOptions.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Model\\ExcelOptions.cs",
+              "RelativeDocumentMoniker": "MICRE.ENTITY\\Model\\ExcelOptions.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Model\\ExcelOptions.cs",
+              "RelativeToolTip": "MICRE.ENTITY\\Model\\ExcelOptions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:09:31.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "DwhScoreHipotecario.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Model\\DwhScoreHipotecario.cs",
+              "RelativeDocumentMoniker": "MICRE.ENTITY\\Model\\DwhScoreHipotecario.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Model\\DwhScoreHipotecario.cs",
+              "RelativeToolTip": "MICRE.ENTITY\\Model\\DwhScoreHipotecario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:09:26.826Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "DatosSolicitud.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Model\\DatosSolicitud.cs",
+              "RelativeDocumentMoniker": "MICRE.ENTITY\\Model\\DatosSolicitud.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\Model\\DatosSolicitud.cs",
+              "RelativeToolTip": "MICRE.ENTITY\\Model\\DatosSolicitud.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:09:17.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "MICRE.SECURITY",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.SECURITY\\MICRE.SECURITY.csproj",
+              "RelativeDocumentMoniker": "MICRE.SECURITY\\MICRE.SECURITY.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.SECURITY\\MICRE.SECURITY.csproj",
+              "RelativeToolTip": "MICRE.SECURITY\\MICRE.SECURITY.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-10T22:45:12.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "MICRE_SCORE_HIPOTECARIO",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO.csproj",
+              "RelativeDocumentMoniker": "MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO.csproj",
+              "RelativeToolTip": "MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-10T22:45:17.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "MICRE.LOGGER",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.LOGGER\\MICRE.LOGGER.csproj",
+              "RelativeDocumentMoniker": "MICRE.LOGGER\\MICRE.LOGGER.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.LOGGER\\MICRE.LOGGER.csproj",
+              "RelativeToolTip": "MICRE.LOGGER\\MICRE.LOGGER.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-10T22:45:06.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "MICRE.ENTITY",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\MICRE.ENTITY.csproj",
+              "RelativeDocumentMoniker": "MICRE.ENTITY\\MICRE.ENTITY.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.ENTITY\\MICRE.ENTITY.csproj",
+              "RelativeToolTip": "MICRE.ENTITY\\MICRE.ENTITY.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-10T22:44:59.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "readme.txt",
+              "DocumentMoniker": "C:\\Users\\T25208\\.nuget\\packages\\epplus\\7.6.0\\readme.txt",
+              "ToolTip": "C:\\Users\\T25208\\.nuget\\packages\\epplus\\7.6.0\\readme.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-02-10T23:45:39.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "MICRE.DATA_ACCESS",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.DATA_ACCESS\\MICRE.DATA_ACCESS.csproj",
+              "RelativeDocumentMoniker": "MICRE.DATA_ACCESS\\MICRE.DATA_ACCESS.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.DATA_ACCESS\\MICRE.DATA_ACCESS.csproj",
+              "RelativeToolTip": "MICRE.DATA_ACCESS\\MICRE.DATA_ACCESS.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-10T22:44:54.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "MICRE.COMMON",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.COMMON\\MICRE.COMMON.csproj",
+              "RelativeDocumentMoniker": "MICRE.COMMON\\MICRE.COMMON.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.COMMON\\MICRE.COMMON.csproj",
+              "RelativeToolTip": "MICRE.COMMON\\MICRE.COMMON.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-10T22:44:48.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "MICRE.BUSINESS",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.BUSINESS\\MICRE.BUSINESS.csproj",
+              "RelativeDocumentMoniker": "MICRE.BUSINESS\\MICRE.BUSINESS.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE.BUSINESS\\MICRE.BUSINESS.csproj",
+              "RelativeToolTip": "MICRE.BUSINESS\\MICRE.BUSINESS.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-10T21:24:42.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "CustomHeaderSwaggerAttribute.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO\\Helpers\\CustomHeaderSwaggerAttribute.cs",
+              "RelativeDocumentMoniker": "MICRE_SCORE_HIPOTECARIO\\Helpers\\CustomHeaderSwaggerAttribute.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_HIPOTECARIO\\MICRE_SCORE_HIPOTECARIO\\Helpers\\CustomHeaderSwaggerAttribute.cs",
+              "RelativeToolTip": "MICRE_SCORE_HIPOTECARIO\\Helpers\\CustomHeaderSwaggerAttribute.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T20:31:56.941Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

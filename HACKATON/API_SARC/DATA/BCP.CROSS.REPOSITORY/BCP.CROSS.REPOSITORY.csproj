@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\CORE\BCP.CROSS.INFOCLIENTEJURIDICO\BCP.CROSS.INFOCLIENTEJURIDICO.csproj" />
+    <ProjectReference Include="..\..\CORE\BCP.CROSS.INFOCLIENTE\BCP.CROSS.INFOCLIENTE.csproj" />
+    <ProjectReference Include="..\..\CORE\BCP.CROSS.REPORTES\BCP.CROSS.REPORTES.csproj" />
+    <ProjectReference Include="..\..\CORE\BCP.CROSS.SEGURINET\BCP.CROSS.SEGURINET.csproj" />
+    <ProjectReference Include="..\..\CORE\BCP.CROSS.SHAREPOINT\BCP.CROSS.SHAREPOINT.csproj" />
+    <ProjectReference Include="..\..\CORE\BCP.CROSS.SMARTLINK\BCP.CROSS.SMARTLINK.csproj" />
+    <ProjectReference Include="..\..\CORE\BCP.CROSS.SWAMP\BCP.CROSS.SWAMP.csproj" />
+    <ProjectReference Include="..\..\CORE\BCP.CROSS.WCFSWAMP\BCP.CROSS.WCFSWAMP.csproj" />
+    <ProjectReference Include="..\BCP.CROSS.DATAACCESS\BCP.CROSS.DATAACCESS.csproj" />
+    <ProjectReference Include="..\BCP.CROSS.MODELS\BCP.CROSS.MODELS.csproj" />
+  </ItemGroup>
+
+</Project>

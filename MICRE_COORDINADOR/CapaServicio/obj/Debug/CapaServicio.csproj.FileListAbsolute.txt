@@ -1,0 +1,9 @@
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaServicio\bin\Debug\CapaServicio.dll
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaServicio\bin\Debug\CapaServicio.pdb
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaServicio\bin\Debug\Newtonsoft.Json.dll
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaServicio\bin\Debug\Newtonsoft.Json.xml
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaServicio\obj\Debug\CapaServicio.csproj.AssemblyReference.cache
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaServicio\obj\Debug\CapaServicio.csproj.CoreCompileInputs.cache
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaServicio\obj\Debug\CapaServicio.csproj.CopyComplete
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaServicio\obj\Debug\CapaServicio.dll
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaServicio\obj\Debug\CapaServicio.pdb

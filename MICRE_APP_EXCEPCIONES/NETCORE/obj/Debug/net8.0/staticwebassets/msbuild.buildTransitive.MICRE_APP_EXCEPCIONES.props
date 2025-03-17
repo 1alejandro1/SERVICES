@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\MICRE_APP_EXCEPCIONES.props" />
+</Project>

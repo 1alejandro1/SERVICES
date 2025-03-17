@@ -1,0 +1,17 @@
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_FIANZA\CapaNegocios\bin\Debug\CapaNegocios.dll.config
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_FIANZA\CapaNegocios\bin\Debug\CapaNegocios.dll
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_FIANZA\CapaNegocios\bin\Debug\CapaNegocios.pdb
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_FIANZA\CapaNegocios\bin\Debug\CapaDatos.dll
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_FIANZA\CapaNegocios\bin\Debug\Clases.dll
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_FIANZA\CapaNegocios\bin\Debug\log4net.dll
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_FIANZA\CapaNegocios\bin\Debug\WinFX3270Library.dll
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_FIANZA\CapaNegocios\bin\Debug\CapaDatos.pdb
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_FIANZA\CapaNegocios\bin\Debug\Clases.pdb
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_FIANZA\CapaNegocios\bin\Debug\WinFX3270Library.pdb
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_FIANZA\CapaNegocios\bin\Debug\log4net.pdb
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_FIANZA\CapaNegocios\bin\Debug\log4net.xml
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_FIANZA\CapaNegocios\obj\Debug\CapaNegocios.csproj.AssemblyReference.cache
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_FIANZA\CapaNegocios\obj\Debug\CapaNegocios.csproj.CoreCompileInputs.cache
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_FIANZA\CapaNegocios\obj\Debug\CapaNego.1D246B3C.Up2Date
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_FIANZA\CapaNegocios\obj\Debug\CapaNegocios.dll
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_FIANZA\CapaNegocios\obj\Debug\CapaNegocios.pdb

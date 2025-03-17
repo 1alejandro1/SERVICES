@@ -1,0 +1,115 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MICRE_APP_EXCEPCIONES
+build_property.RootNamespace = MICRE_APP_EXCEPCIONES
+build_property.ProjectDir = D:\T25208\MICREDITO\MICRE_APP_EXCEPCIONES\NETCORE\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = D:\T25208\MICREDITO\MICRE_APP_EXCEPCIONES\NETCORE
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/T25208/MICREDITO/MICRE_APP_EXCEPCIONES/NETCORE/Views/Home/CargarResplado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXJnYXJSZXNwbGFkby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_APP_EXCEPCIONES/NETCORE/Views/Home/Components/_BusquedaCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb21wb25lbnRzXF9CdXNxdWVkYUNsaWVudGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_APP_EXCEPCIONES/NETCORE/Views/Home/Components/_ExceptopnRow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb21wb25lbnRzXF9FeGNlcHRvcG5Sb3cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_APP_EXCEPCIONES/NETCORE/Views/Home/Components/_ProductoRow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb21wb25lbnRzXF9Qcm9kdWN0b1Jvdy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_APP_EXCEPCIONES/NETCORE/Views/Home/Components/_TitularForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb21wb25lbnRzXF9UaXR1bGFyRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_APP_EXCEPCIONES/NETCORE/Views/Home/ExceptRegister.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFeGNlcHRSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_APP_EXCEPCIONES/NETCORE/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_APP_EXCEPCIONES/NETCORE/Views/Home/IndexExcepcion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleEV4Y2VwY2lvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_APP_EXCEPCIONES/NETCORE/Views/Home/InmuebleFormTitular.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbm11ZWJsZUZvcm1UaXR1bGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_APP_EXCEPCIONES/NETCORE/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_APP_EXCEPCIONES/NETCORE/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_APP_EXCEPCIONES/NETCORE/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_APP_EXCEPCIONES/NETCORE/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_APP_EXCEPCIONES/NETCORE/Views/Solicitud/Components/_CreditoRow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29saWNpdHVkXENvbXBvbmVudHNcX0NyZWRpdG9Sb3cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_APP_EXCEPCIONES/NETCORE/Views/Solicitud/Components/_ExceptionRow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29saWNpdHVkXENvbXBvbmVudHNcX0V4Y2VwdGlvblJvdy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_APP_EXCEPCIONES/NETCORE/Views/Solicitud/Components/_RespaldoRow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29saWNpdHVkXENvbXBvbmVudHNcX1Jlc3BhbGRvUm93LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_APP_EXCEPCIONES/NETCORE/Views/Solicitud/Components/_Row.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29saWNpdHVkXENvbXBvbmVudHNcX1Jvdy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_APP_EXCEPCIONES/NETCORE/Views/Solicitud/ResumenCaso.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29saWNpdHVkXFJlc3VtZW5DYXNvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_APP_EXCEPCIONES/NETCORE/Views/Solicitud/SolicitudTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29saWNpdHVkXFNvbGljaXR1ZFRhYmxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_APP_EXCEPCIONES/NETCORE/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_APP_EXCEPCIONES/NETCORE/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_APP_EXCEPCIONES/NETCORE/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-z0pvr4snei

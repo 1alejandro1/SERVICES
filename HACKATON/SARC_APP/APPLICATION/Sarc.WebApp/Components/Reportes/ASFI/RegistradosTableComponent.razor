@@ -1,0 +1,65 @@
+﻿@using BCP.CROSS.MODELS.Reportes.ASFI
+<div class="row align-content-center">
+    <div class="col-12">
+        <h4><strong>Reporte AFI Registrados</strong></h4>
+    </div>
+    <div class="col-10">        
+        <table class="table table-hover table-borderless">
+            <thead>
+                <tr class="text-uppercase">
+                    <th class="table-tomato">CtipoEntidad</th>
+                    <th class="table-tomato">CCorrelativoEntidad</th>
+                    <th class="table-tomato">CReclamo</th>
+                    <th class="table-tomato">TGestion</th>
+                    <th class="table-tomato">FechaReclamo</th>
+                    <th class="table-tomato">CTipoIdentificacion</th>
+                    <th class="table-tomato">CIDReclamante</th>
+                    <th class="table-tomato">TNombre</th>
+                    <th class="table-tomato">TApellido</th>
+                    <th class="table-tomato">CTipoOficina</th>
+                    <th class="table-tomato">CLocalidadOficina</th>
+                    <th class="table-tomato">CTipologia</th>
+                    <th class="table-tomato">CSubTipologia</th>
+                    <th class="table-tomato">TGlosa</th>
+                    <th class="table-tomato">NMontoComprometido</th>
+                    <th class="table-tomato">CMoneda</th>
+                    <th class="table-tomato">CMonedaExtranjera</th>
+                    <th class="table-tomato">NPlazoEstimadoSolucion</th>
+                    <th class="table-tomato">TPersonaDeContacto</th>
+                    <th class="table-tomato">DFechaReporte</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (RegistradosModel item in Data)
+                {
+                    <tr>
+                        <th scope="row" class="table-light">@item.CTipoEntidad</th>
+                        <td class="table-light">@item.CCorrelativoEntidad</td>
+                        <td class="table-light">@item.CReclamo</td>
+                        <td class="table-light">@item.TGestion</td>
+                        <td class="table-light">@item.FechaReclamo</td>
+                        <td class="table-light">@item.CTipoIdentificacion</td>
+                        <td class="table-light">@item.CIDReclamante</td>
+                        <td class="table-light">@item.TNombre</td>
+                        <td class="table-light">@item.TApellido</td>
+                        <td class="table-light">@item.CTipoOficina</td>
+                        <td class="table-light">@item.CLocalidadOficina</td>
+                        <td class="table-light">@item.CTipologia</td>
+                        <td class="table-light">@item.CSubTipologia</td>
+                        <td class="table-light">@item.TGlosa</td>
+                        <td class="table-light">@item.NMontoComprometido</td>
+                        <td class="table-light">@item.CMoneda</td>
+                        <td class="table-light">@item.CMonedaExtranjera</td>
+                        <td class="table-light">@item.NPlazoEstimado</td>
+                        <td class="table-light">@item.TPersonaDeContacto</td>
+                        <td class="table-light">@item.DFechaReporte</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+@code {
+    [Parameter]
+    public List<RegistradosModel> Data { get; set; }
+}

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "VhXu1zSnIwrWcY1/fcpa8+FbFT4Ps8VpsngdvsUuHLc=",
+  "Source": "MICRE.TRANSACTION.API",
+  "BasePath": "_content/MICRE.TRANSACTION.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

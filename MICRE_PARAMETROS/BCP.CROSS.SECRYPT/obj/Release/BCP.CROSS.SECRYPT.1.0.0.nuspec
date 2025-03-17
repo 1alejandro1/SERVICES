@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>BCP.CROSS.SECRYPT</id>
+    <version>1.0.0</version>
+    <authors>S60546 - Developer</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <description>Package Description</description>
+    <copyright>2020</copyright>
+    <repository type="git" commit="158bb3ca32f5af95afa1e0135de28cf07673bf99" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Microsoft.Extensions.Configuration" version="9.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Binder" version="9.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.DependencyInjection" version="9.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Options" version="9.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\T25208\MICREDITO\MICRE_PARAMETROS\BCP.CROSS.SECRYPT\bin\Release\net8.0\BCP.CROSS.SECRYPT.dll" target="lib\net8.0\BCP.CROSS.SECRYPT.dll" />
+  </files>
+</package>

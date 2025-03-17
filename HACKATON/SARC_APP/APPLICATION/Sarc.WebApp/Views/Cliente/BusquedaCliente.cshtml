@@ -1,0 +1,179 @@
+﻿@using Sarc.WebApp.Models.Clients
+@using Microsoft.AspNetCore.Authorization
+@inject IAuthorizationService AuthorizationService
+
+@model ClientViewModel
+@{
+    ViewData["Title"] = "Busqueda Cliente";
+}
+
+<link rel="stylesheet" type="text/css" href="~/css/datatables.min.css" />
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card bg-bgcontent-dark rounded shadow-sm mb-3">
+                <div class="card-header fw-bold">Busqueda por idc</div>
+                <div class="card-body">
+                    <form class="row" asp-action="BusquedaCliente" id="frmIdc">
+                        <div class="mb-3">
+                            <label asp-for="ByIdcRequest.Idc" class="form-label"></label>
+                            <input type="text" asp-for="ByIdcRequest.Idc" class="form-control form-control-sm" >
+                            <span asp-validation-for="ByIdcRequest.Idc" class="validation-text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="TipoIdc" class="form-label">Tipo</label>
+                            <select asp-for="ByIdcRequest.TipoIdc" asp-items="@Model?.TiposIdcDropDown" class="form-select form-select-sm" >
+                                <option class="text-dark" selected disabled value="">Elegir...</option>
+                            </select>
+                            <span asp-validation-for="ByIdcRequest.TipoIdc" class="validation-text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Extension" class="form-label">Extension</label>
+                            <input type="text" asp-for="ByIdcRequest.Extension" class="form-control form-control-sm" >
+                            <span asp-validation-for="ByIdcRequest.Extension" class="validation-text-danger"></span>
+                        </div>
+                         <div class="col-sm-6">
+                            <button class="btn btn-primary mt-3 w-100" type="submit" onclick="buscarByIdc()">Buscar</button>
+                        </div>
+                        <div class="col-sm-6">
+                            <button class="btn btn-secondary-light mt-3 w-100" type="button" onclick="location.href='@Url.Action("BusquedaCliente")'">Nueva Busqueda</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card bg-bgcontent-dark rounded shadow-sm mb-3">
+                <div class="card-header fw-bold">Busqueda dbc</div>
+                <div class="card-body">
+                    <form class="row g3" asp-action="BusquedaCliente" id="frmDbc">
+                        <div class="mb-3">
+                            <label for="Extension" class="form-label">Apellido Paterno / Razón Social</label>
+                            <input type="text" asp-for="ByDbcRequest.PaternoRazonSocial" class="form-control form-control-sm">
+                            <span asp-validation-for="ByDbcRequest.PaternoRazonSocial" class="validation-text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="validationCustom03" class="form-label">Apellido Materno</label>
+                            <input type="text" asp-for="ByDbcRequest.Materno" class="form-control form-control-sm">
+                            <span asp-validation-for="ByDbcRequest.Materno" class="validation-text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="validationCustom05" class="form-label">Nombres</label>
+                            <input type="text" asp-for="ByDbcRequest.Nombres" class="form-control form-control-sm">
+                            <span asp-validation-for="ByDbcRequest.Nombres" class="validation-text-danger"></span>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <button class="btn btn-primary mt-3 w-100" type="submit" onclick="buscarByDbc()">Buscar</button>
+                        </div>
+                         <div class="col-sm-6">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @if (Model != null && Model.ClientResponse != null && Model.ClientResponse.Meta.StatusCode == 200)
+    {
+        <div class="row">
+            <div class="col-12">
+                <table id="tblBusquedaCliente"
+                       class="table bg-bgcontent-dark table-sm text-light p-4  shadow-sm mb-3 rounded">
+                    <thead>
+                        <tr class=text-opacity-75>
+                            @if (AuthorizationService.AuthorizeAsync(User, "SARC_MOD_REG_EXP").Result.Succeeded)
+                            {
+                                <th scope="col">Form. Express</th>
+                            }
+                            <th scope="col">Registro</th>
+                            <th scope="col">Historico</th>
+                            <th scope="col">Idc</th>
+                            <th scope="col">Paterno</th>
+                            <th scope="col">Materno</th>
+                            <th scope="col">Nombres</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in @Model.ClientResponse.Data)
+                        {
+                            <tr>
+                                @if (AuthorizationService.AuthorizeAsync(User, "SARC_MOD_REG_EXP").Result.Succeeded)
+                                {
+                                   <td>
+                                        <a href="@Url.ActionLink("RegistroCasoExpress", "Casos", @item)">  <i class="fas fa-edit text-primary"></i></a>
+                                   </td>
+                                }
+                                
+                                <td>
+                                    <a href="@Url.ActionLink("RegistroCaso", "Casos", @item)">  <i class="fas fa-edit text-success"></i></a>
+                                </td>
+                                <td><i class="fas fa-history text-warning"></i></td>
+                                <td>@item.Idc</td>
+                                <td>@item.PaternoRazonSocial</td>
+                                <td>@item.Materno</td>
+                                <td>@item.Nombres</td>
+                            </tr>
+                        }
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    }else if(Model != null && Model.ClientResponse != null)
+    {
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-danger">@Model.ClientResponse.Meta.Msj</div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-success">Aún no realizó ninguna busqueda</div>
+            </div>
+        </div>
+    }
+
+</div>
+<partial name="_Loading" />
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/datatables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#tblBusquedaCliente').dataTable({
+                "info": false,
+                "lengthMenu": [5, 25, 50],
+                "language": {
+                    "search": "Filtrar:",
+                    "lengthMenu": "Mostar _MENU_",
+                    "paginate": {
+                        "first": "Primero",
+                        "last": "Último",
+                        "next": "Siguiente",
+                        "previous": "Atras"
+                    }
+                }
+            });
+        });
+
+        function buscarByIdc(){
+            if ($("#frmIdc").valid()) {
+                document.getElementById("_loading").hidden = false;
+            };
+        }
+
+        function buscarByDbc(){
+            if ($("#frmDbc").valid()) {
+                document.getElementById("_loading").hidden = false;
+            };
+        }
+    </script>
+}

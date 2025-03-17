@@ -1,0 +1,27 @@
+﻿@model InmuebleForm
+@{
+    ViewData["Title"] = "InmuebleForm";
+}
+
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            @await Html.PartialAsync("Components/_TitularForm")
+        </div>
+    </div>
+</div>
+
+<script>
+    // document.onkeydown = function (e) {
+    //     if (e.key === "ArrowRight") {
+            
+    //         e.preventDefault();
+    //     }
+    // };
+    document.addEventListener('keydown', function (e) {
+        if (e.key === "ArrowRight") {
+            // console.log("Right arrow key pressed");
+            e.preventDefault();
+        }
+    });
+</script>

@@ -1,0 +1,95 @@
+[
+  {
+    "ContainingType": "API_DigitacionPYME.Controllers.CalificacionesController",
+    "Method": "GetPDH",
+    "RelativePath": "api/Calificaciones/PDH",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BCP.API_DigitacionPYME.Models.DTO.ReqCalificaciones",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BCP.Connector.DatosRespuestaEntity",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_DigitacionPYME.Controllers.EvaluacionController",
+    "Method": "Importar",
+    "RelativePath": "api/Evaluacion/Importar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BCP.API_DigitacionPYME.Models.DTO.ReqEvaluacion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BCP.API_DigitacionPYME.Models.Responses.Evaluacion",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "BCP.API_DigitacionPYME.Models.Error",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_DigitacionPYME.Controllers.SeguridadController",
+    "Method": "Encriptar",
+    "RelativePath": "api/Seguridad/encriptar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BCP.API_DigitacionPYME.Models.DTO.ReqPassword",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_DigitacionPYME.Controllers.SolicitudController",
+    "Method": "NuevaSolicitud",
+    "RelativePath": "api/Solicitud/crear",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BCP.API_DigitacionPYME.Models.DTO.ReqCreaSolicitud",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

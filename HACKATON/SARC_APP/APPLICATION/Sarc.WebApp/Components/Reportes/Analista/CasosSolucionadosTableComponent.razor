@@ -1,0 +1,44 @@
+﻿@using BCP.CROSS.MODELS.Reportes.Analista
+@using Sarc.WebApp.Models.Reportes.Analista
+<div class="row align-content-center">
+    <div class="col">
+        <h4><strong>REPORTE NUMERO DE CASOS SOLUCIONADOS</strong></h4>
+    </div>
+    <div class="col-10">
+        <table class="table table-hover table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col" class="table-tomato">NOMBRE</th>
+                    <th scope="col" class="table-midnightblue">CANTIDAD</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (CasosSolucionadosModel item in Data)
+                {
+                    <tr>
+                        <th scope="row" class="table-midnightblue">@item.Nombre</th>
+                        <td class="table-light">@item.Cantidad</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+@code {
+    [Parameter]
+    public List<CasosSolucionadosModel> Data { get; set; }
+
+}
+<style lang="css">
+    .table-tomato {
+        background-color: tomato !important;
+        color: white !important;
+        vertical-align: middle;
+    }
+
+    .table-midnightblue {
+        background-color: midnightblue !important;
+        color: white !important;
+        vertical-align: middle;
+    }
+</style>

@@ -1,0 +1,870 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\API_SCORE_CONSUMO_TEST\\API_SCORE_CONSUMO_TEST.csproj": {}
+  },
+  "projects": {
+    "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\API_SCORE_CONSUMO_TEST\\API_SCORE_CONSUMO_TEST.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\API_SCORE_CONSUMO_TEST\\API_SCORE_CONSUMO_TEST.csproj",
+        "projectName": "API_SCORE_CONSUMO_TEST",
+        "projectPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\API_SCORE_CONSUMO_TEST\\API_SCORE_CONSUMO_TEST.csproj",
+        "packagesPath": "C:\\Users\\T25208\\.nuget\\packages\\",
+        "outputPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\API_SCORE_CONSUMO_TEST\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\T25208\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_BUSINESS\\MICRE_BUSINESS.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_BUSINESS\\MICRE_BUSINESS.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.9.4, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_BUSINESS\\MICRE_BUSINESS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_BUSINESS\\MICRE_BUSINESS.csproj",
+        "projectName": "MICRE_BUSINESS",
+        "projectPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_BUSINESS\\MICRE_BUSINESS.csproj",
+        "packagesPath": "C:\\Users\\T25208\\.nuget\\packages\\",
+        "outputPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_BUSINESS\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\T25208\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_COMMON\\MICRE_COMMON.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_COMMON\\MICRE_COMMON.csproj"
+              },
+              "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_DATA_ACCESS\\MICRE_DATA_ACCESS.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_DATA_ACCESS\\MICRE_DATA_ACCESS.csproj"
+              },
+              "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_SEGURINET\\MICRE_SEGURINET.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_SEGURINET\\MICRE_SEGURINET.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "System.Data.Odbc": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_COMMON\\MICRE_COMMON.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_COMMON\\MICRE_COMMON.csproj",
+        "projectName": "MICRE_COMMON",
+        "projectPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_COMMON\\MICRE_COMMON.csproj",
+        "packagesPath": "C:\\Users\\T25208\\.nuget\\packages\\",
+        "outputPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_COMMON\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\T25208\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_ENTITY\\MICRE_ENTITY.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_ENTITY\\MICRE_ENTITY.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.15.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_DATA_ACCESS\\MICRE_DATA_ACCESS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_DATA_ACCESS\\MICRE_DATA_ACCESS.csproj",
+        "projectName": "MICRE_DATA_ACCESS",
+        "projectPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_DATA_ACCESS\\MICRE_DATA_ACCESS.csproj",
+        "packagesPath": "C:\\Users\\T25208\\.nuget\\packages\\",
+        "outputPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_DATA_ACCESS\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\T25208\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_ENTITY\\MICRE_ENTITY.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_ENTITY\\MICRE_ENTITY.csproj"
+              },
+              "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_SECURITY\\MICRE_SECURITY.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_SECURITY\\MICRE_SECURITY.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_ENTITY\\MICRE_ENTITY.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_ENTITY\\MICRE_ENTITY.csproj",
+        "projectName": "MICRE_ENTITY",
+        "projectPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_ENTITY\\MICRE_ENTITY.csproj",
+        "packagesPath": "C:\\Users\\T25208\\.nuget\\packages\\",
+        "outputPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_ENTITY\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\T25208\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_FRAMEWORK_COMMON\\MICRE_FRAMEWORK_COMMON.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_FRAMEWORK_COMMON\\MICRE_FRAMEWORK_COMMON.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_FRAMEWORK_COMMON\\MICRE_FRAMEWORK_COMMON.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_FRAMEWORK_COMMON\\MICRE_FRAMEWORK_COMMON.csproj",
+        "projectName": "MICRE_FRAMEWORK_COMMON",
+        "projectPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_FRAMEWORK_COMMON\\MICRE_FRAMEWORK_COMMON.csproj",
+        "packagesPath": "C:\\Users\\T25208\\.nuget\\packages\\",
+        "outputPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_FRAMEWORK_COMMON\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\T25208\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_LOGGER\\MICRE_LOGGER.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_LOGGER\\MICRE_LOGGER.csproj",
+        "projectName": "MICRE_LOGGER",
+        "projectPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_LOGGER\\MICRE_LOGGER.csproj",
+        "packagesPath": "C:\\Users\\T25208\\.nuget\\packages\\",
+        "outputPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_LOGGER\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\T25208\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.10.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_SECURITY\\MICRE_SECURITY.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_SECURITY\\MICRE_SECURITY.csproj",
+        "projectName": "MICRE_SECURITY",
+        "projectPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_SECURITY\\MICRE_SECURITY.csproj",
+        "packagesPath": "C:\\Users\\T25208\\.nuget\\packages\\",
+        "outputPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_SECURITY\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\T25208\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_SEGURINET\\MICRE_SEGURINET.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_SEGURINET\\MICRE_SEGURINET.csproj",
+        "projectName": "MICRE_SEGURINET",
+        "projectPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_SEGURINET\\MICRE_SEGURINET.csproj",
+        "packagesPath": "C:\\Users\\T25208\\.nuget\\packages\\",
+        "outputPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_SEGURINET\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\T25208\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_ENTITY\\MICRE_ENTITY.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_ENTITY\\MICRE_ENTITY.csproj"
+              },
+              "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_LOGGER\\MICRE_LOGGER.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_LOGGER\\MICRE_LOGGER.csproj"
+              },
+              "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_SECURITY\\MICRE_SECURITY.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_CONSUMO\\MICRE_SECURITY\\MICRE_SECURITY.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "System.ServiceModel.Duplex": {
+              "target": "Package",
+              "version": "[4.8.*, )"
+            },
+            "System.ServiceModel.Http": {
+              "target": "Package",
+              "version": "[4.8.*, )"
+            },
+            "System.ServiceModel.NetTcp": {
+              "target": "Package",
+              "version": "[4.8.*, )"
+            },
+            "System.ServiceModel.Security": {
+              "target": "Package",
+              "version": "[4.8.*, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.31, 6.0.31]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

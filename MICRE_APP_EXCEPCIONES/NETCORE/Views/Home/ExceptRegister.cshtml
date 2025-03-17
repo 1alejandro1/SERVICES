@@ -1,0 +1,268 @@
+﻿@model NETCORE.Models.ExceptionViewModel
+@{
+    ViewData["Title"] = "ExceptRegister";
+}
+
+<div class="card mb-3">
+    <div class="card-body">
+        <form asp-action="ExceptRegisterE" asp-controller="Home" method="post" class="needs-validation" novalidate>
+            <div class="pb-3">
+                <div class="custom-border px-2" style="display: flex; align-items: center;">
+                    <h6>Registro de excepciones</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="px-3">
+                        <div class="alert-border border-warning pt-1">
+                            <h6>Ingresar el motivo y la justificación</h6>
+                        </div>
+                        <div class="input-group pt-3 pb-3">
+                            <div class="form-floating">
+                                <select asp-for="exception.detalleBuscar" class="form-control" id="motivo" required>
+                                    <option value="" disabled selected>Seleccione una opción</option>
+                                    @foreach (var item in Model.excepcionApi)
+                                    {
+                                        <option value="@item.Descripcion">@item.Descripcion</option>
+                                    }
+                                </select>
+                                <label class="fst-italic" for="motivo">Motivo</label>
+                            </div>
+
+                            <span class="input-group-text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="form-floating pb-3">
+                            <textarea asp-for="exception.Justificacion" type="text" maxlength="10000" id="justificacion" class="form-control" placeholder="Justificación" required style="height: 250px; font-size: 12px;"></textarea>
+                            <label class="fst-italic" for="justificacion">Justificación</label>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="alert-border border-warning pt-1">
+                        <h6>¿Qué Producto(s) se aplicará a la excepción?</h6>
+                    </div>
+                    <div class="card mt-3 mb-3">
+                        <div class="card-body">
+                            <div class="input-group mb-3 mt-3">
+                                @for (int i = 0; i < Model.ProductosChecks.Count; i++)
+                                {
+                                    var producto = Model.ProductosChecks[i];
+                                    var idPar = producto.IdExcepcionProducto.ToString();
+
+                                    <div class="form-check mx-1">
+                                        <input asp-for="exception.idProductos[i]" class="form-check-input check-prod" type="checkbox" value="@idPar" id="@producto.IdProducto" data-name="@producto.Descripcion">
+                                        <label class="form-check-label" for="@producto.IdProducto">@producto.Descripcion</label>
+                                    </div>
+                                }
+                            </div>
+
+                            <button id="toggle-checks" onclick="updateCheckboxes(); updateSubmitButton();" class="btn btn-warning" type="button">
+                                Seleccionar todo
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button type="submit" class="next btn btn-success send mb-3" id="submitButton" disabled>Guardar excepción</button>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+
+        <div>
+            @if (Model.exceptionList != null && Model.exceptionList.Any())
+            {
+                foreach (var exception in Model.exceptionList)
+                {
+                    <div class="alert alert-warning exception" role="alert">
+                        <div class="row">
+                            <div class="col-3">
+                                <strong>Excepción</strong>
+                                <p>@exception.DescripcionExcepcion</p>
+                            </div>
+                            <div class="col-4">
+                                <strong>Detalle de la justificación</strong>
+                                <p style="font-size: 12px;">@exception.Justificacion</p>
+                            </div>
+                            <div class="col-3">
+                                <strong>Producto</strong>
+                                <p>@exception.DescripcionProducto</p>
+                            </div>
+                            <div class="d-flex justify-content-end col-2">
+                                <button type="button" class="btn btn-warning pt-1 pb-1 px-1 mx-2" data-bs-toggle="modal" data-bs-target="#exampleModalObservar-@exception.IdProductoExcepcion" style="width: 38px; height: 38px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                        <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z" />
+                                    </svg>
+                                </button>
+                                <button type="button" class="btn btn-danger pt-1 pb-1 px-1" data-bs-toggle="modal" data-bs-target="#exampleModal-@exception.IdProductoExcepcion" style="width: 38px; height: 38px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                        <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal Actualizar -->
+                    <div class="modal fade" id="exampleModalObservar-@exception.IdProductoExcepcion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog alert alert-warning">
+                            <form asp-action="Actualizar" asp-controller="Home" method="post" class="needs-validation" novalidate>
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Actualizar excepción</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-floating">
+                                            <input asp-for="exception.detalleBuscar" class="form-control" list="datalistOptions" value="@exception.DescripcionExcepcion" id="motivo" placeholder="Type to search..." required>
+
+                                            <label class="fst-italic" for="motivo">Motivo</label>
+                                        </div>
+                                        <div class="form-floating pb-3 pt-3 d-none">
+                                            <input asp-for="exception.idProductoExcepcion" value="@exception.IdProductoExcepcion" id="id" class="form-control" required>
+                                            <label class="fst-italic" for="justificacion">Justificación</label>
+                                        </div>
+                                        <div class="form-floating pb-3 pt-3">
+                                            
+                                            @* <input asp-for="exception.Justificacion" id="justificacion" maxlength="1500" style="height: 250px; font-size: 12px;" class="form-control" placeholder="Leave a comment here" value="@exception.Justificacion" required>
+                                            <label class="fst-italic" for="justificacion">Justificación</label> *@
+                                            <textarea asp-for="@exception.Justificacion" id="justificacion" maxlength="10000" style="height: 250px; font-size: 12px;" class="form-control" required>@exception.Justificacion</textarea>
+                                            <label class="fst-italic" for="justificacion">Justificación</label>
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="submit" class="btn btn-warning send">Guardar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Modal Borrar -->
+                    <div class="modal fade" id="exampleModal-@exception.IdProductoExcepcion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog alert alert-danger">
+                            <form asp-action="BorrarExcepcion" asp-controller="Home" method="post" class="needs-validation" novalidate>
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Borrar Excepción</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ¿Está seguro que quiere borrar la excepción?
+                                        <input type="hidden" name="id" value="@exception.IdProductoExcepcion" />
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="submit" class="btn btn-danger send">Borrar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+
+        <form asp-action="CargarResplado" asp-controller="Home" method="post" class="needs-validation" novalidate>
+            <div class="d-flex justify-content-end pb-3">
+                @if (ViewBag.ExistAll == false)
+                {
+                    <button type="submit" class="next btn btn-primary send" disabled>Siguiente</button>
+                }
+                else
+                {
+                    <button type="submit" class="next btn btn-primary send">Siguiente</button>
+                }
+
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const checkboxes = document.querySelectorAll('.check-prod');
+        const allButton = document.getElementById('toggle-checks');
+        const submitButton = document.getElementById('submitButton');
+        const maxExceptions = 7; // Máximo número de excepciones permitidas
+
+
+
+        // Función para contar las excepciones actuales
+        function countCurrentExceptions() {
+            return document.querySelectorAll('.exception').length + Array.from(checkboxes).filter(checkbox => checkbox.checked).length;
+        }
+
+        // Función para actualizar el botón de submit
+        function updateSubmitButton() {
+            submitButton.disabled = !Array.from(checkboxes).some(checkbox => checkbox.checked);
+        }
+
+        // Función para actualizar el botón de "Seleccionar todo" y los checkboxes
+        function updateAllButtonAndCheckboxes() {
+            const currentExceptions = countCurrentExceptions();
+            const selectableCheckboxes = checkboxes.length;
+            const spaceAvailable = maxExceptions - currentExceptions;
+
+            allButton.disabled = (selectableCheckboxes > spaceAvailable);
+
+            checkboxes.forEach(checkbox => {
+                checkbox.disabled = !checkbox.checked && (currentExceptions >= maxExceptions);
+            });
+        }
+
+        // Evento del botón "Seleccionar todo"
+        allButton.addEventListener('click', function () {
+            let allChecked = Array.from(checkboxes).every(checkbox => checkbox.checked);
+
+            // Marcar o desmarcar todos los checkboxes
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = !allChecked;
+            });
+
+            // Llamar a la función para actualizar el botón de submit y los checkboxes después de cambiar el estado
+            updateSubmitButton();
+            updateAllButtonAndCheckboxes();
+        });
+
+        // Asignar el evento 'change' a todos los checkboxes
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', function () {
+                updateSubmitButton();
+                updateAllButtonAndCheckboxes();
+            });
+        });
+
+        // Inicializar el estado del botón de submit y "Seleccionar todo" al cargar la página
+        updateSubmitButton();
+        updateAllButtonAndCheckboxes();
+    });
+
+
+    document.getElementById('motivo').addEventListener('input', function () {
+        var input = this.value;
+        var list = document.getElementById('datalistOptions');
+        var options = list.children;
+        for (var i = 0; i < options.length; i++) {
+            if (options[i].value === input) {
+                document.getElementById('exceptionId').value = options[i].getAttribute('data-id');
+                document.getElementById('exception').value = options[i].getAttribute('data-id');
+                break;
+            }
+        }
+    });
+
+
+
+</script>
+<script src="~/js/handler-register.js"></script>

@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BackOffice</title>
+    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
+    @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> *@
+    <link rel="stylesheet" href="~/css/layout.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <script src="~/js/xlsx.full.min.js"></script>
+    <script src="~/js/FileSaver.min.js"></script>
+    <link rel="stylesheet" href="~/lib/fontawesome/all.css" asp-append-version="true">
+</head>
+<body class="bg-bodydark text-light">
+    <div class="sidebar bg-dark shadow">
+        <div class="logo-details">
+            @*<i class="fab fa-product-hunt fs-1"></i>*@
+            <span class="logo_pr text-primary">B</span>
+            <a class="text-decoration-none" asp-controller="Home" asp-action="Index"><span class="logo_name">B</span></a>
+        </div>
+        <ul class="nav-links">
+            
+            <li>
+                <div class="iocn-link">
+                    <a>
+                        <i class='fas fa-plus-circle fs-4 text-primary'></i>
+                        <span class="link_name">Registro</span>
+                    </a>
+                    <i class="fas fa-angle-down arrow"></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a asp-area="" asp-controller="CargaGenerated" asp-action="CargaGenerated">Cargar Tarjetas</a></li>
+                     <li><a asp-controller="Generated" asp-action="Generated">Tarjetas</a></li>
+                     <li><a asp-controller="Enroll" asp-action="Enroll">Enrolar Servicio</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="iocn-link">
+                    <a>
+                        <i class="fas fa-list-ol fs-4 text-primary"></i>
+                        <span class="link_name">Consultas</span>
+                    </a>
+                    <i class="fas fa-angle-down arrow"></i>
+                </div>
+               <ul class="sub-menu">                    
+                    <li><a asp-controller="Category" asp-action="Category">Categorías</a></li>
+                    <li><a asp-controller="Commerce" asp-action="Commerce">Comercios</a></li>
+                    <li><a asp-controller="Service" asp-action="Service">Servicios</a></li>
+                </ul>
+            </li>
+
+            @*<li>
+                <div class="iocn-link">
+                    <a>
+                        <i class="fas fa-chart-bar fs-4 text-primary"></i>
+                        <span class="link_name">Reportes</span>
+                    </a>
+                    <i class="fas fa-angle-down arrow"></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a href="@Url.Action("ASFI", "Reportes")">ASFI</a></li>
+                </ul>
+                <ul class="sub-menu">
+                    <li><a href="@Url.Action("Analista", "Reportes")">Analista</a></li>
+                </ul>
+                <ul class="sub-menu">
+                    <li><a href="@Url.Action("ReporteBase", "Reportes")">Base</a></li>
+                </ul>
+                <ul class="sub-menu">
+                    <li><a href="@Url.Action("CapacidadEspecialidad", "Reportes")">Capacidad Especialidad</a></li>
+                </ul>
+                <ul class="sub-menu">
+                    <li><a href="@Url.Action("CNR", "Reportes")">CNR</a></li>
+                </ul>
+                <ul class="sub-menu">
+                    <li><a href="@Url.Action("CobrosDevoluciones", "Reportes")">Cobros y Devoluciones</a></li>
+                </ul>
+                <ul class="sub-menu">
+                    <li><a href="@Url.Action("DevolucionATMPOS", "Reportes")">Devoluciones ATM-POS</a></li>
+                </ul>
+                <ul class="sub-menu">
+                    <li><a href="@Url.Action("Expedicion", "Reportes")">Expedicion</a></li>
+                </ul>
+                <ul class="sub-menu">
+                    <li><a href="@Url.Action("ReposicionTarjeta", "Reportes")">Reposicion Tarjeta de Credito</a></li>
+                </ul>
+                <ul class="sub-menu">
+                    <li><a href="@Url.Action("TipoReclamo", "Reportes")">Tipo de Reclamo</a></li>
+                </ul>
+            </li>*@
+
+
+            <li>
+                <div class="profile-details shadow">
+                    <div class="profile-content">
+                        <img src="~/images/bcp.svg" alt="profileImg">
+                    </div>
+                    <br>
+                    <div class="name-job">
+                        <div class="job">Banco de Crédito <br> de Bolivia</div>
+                    </div>
+                    <i class='bx bx-log-out'></i>
+                </div>
+                
+            </li>
+        </ul>
+    </div>
+    <header class="d-flex justify-content-between align-items-center header-section bg-primary">
+        <div class="header-content">
+            <p class="pointer"><i class="fas fa-bars fs-4"></i></p>
+            <span class="fs-4">@ViewData["Title"]</span>
+        </div>
+        <div class="d-flex  align-items-center">
+            @*<div class="position-relative">
+                <i class="far fa-bell fs-4 bell-alert"></i>
+                <span class="position-abosolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
+                    99+
+                    <span class="visually-hidden">unread</span>
+                </span>
+            </div>*@
+            <div class="">
+                <img src="~/images/bcp.svg" class="img__user">
+            </div>
+            <div>
+                @{
+                    if (User.Identity.IsAuthenticated)
+                    {
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        @User.Claims.FirstOrDefault(x => x.Type == "Nombre").Value
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li><a class="dropdown-item" asp-controller="Auth" asp-action="Logout">Logout</a></li>
+                        </ul>
+                    </div>
+                    }
+                }
+            </div>
+        </div>
+    </header>
+    <main class="main-content bg-bodydark d-flex flex-column justify-content-between">
+        <div class="m-4">
+
+            @RenderBody()
+        </div>
+        <div>
+            <footer class="border-top footer text-muted pb-4 pt-4">
+                <div class="container">
+                    &copy; @DateTime.Now.Year - Card BackOffice
+                </div>
+            </footer>
+        </div>
+    </main>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/jquery-ui/jquery-ui.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/layout.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

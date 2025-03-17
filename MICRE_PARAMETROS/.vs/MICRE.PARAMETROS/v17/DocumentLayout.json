@@ -1,0 +1,926 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\services\\efectivonegociotablaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\services\\efectivonegociotablaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\controllers\\combosdigitacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\controllers\\combosdigitacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\common\\keycache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\common\\keycache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\services\\nacionalidadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\services\\nacionalidadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\common\\apirest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\common\\apirest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{463E0AE5-F99C-4725-A2D1-3D7D0A5F6154}|BCP.CROSS.SECRYPT\\BCP.CROSS.SECRYPT.csproj|d:\\t25208\\micredito\\micre_parametros\\bcp.cross.secrypt\\segcrypt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{463E0AE5-F99C-4725-A2D1-3D7D0A5F6154}|BCP.CROSS.SECRYPT\\BCP.CROSS.SECRYPT.csproj|solutionrelative:bcp.cross.secrypt\\segcrypt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D53102F2-8423-4A04-BFC0-22B1A111F8B7}|BCP.CROSS.COMMON\\BCP.CROSS.COMMON.csproj|d:\\t25208\\micredito\\micre_parametros\\bcp.cross.common\\service\\serviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D53102F2-8423-4A04-BFC0-22B1A111F8B7}|BCP.CROSS.COMMON\\BCP.CROSS.COMMON.csproj|solutionrelative:bcp.cross.common\\service\\serviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\repositories\\estadorepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\repositories\\estadorepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\micre.parametros.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\micre.parametros.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\repositories\\justificacionrepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\repositories\\justificacionrepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\services\\justificacionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\services\\justificacionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\controllers\\justificacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\controllers\\justificacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\repositories\\infoclienterepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\repositories\\infoclienterepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\repositories\\tipodocumentorepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\repositories\\tipodocumentorepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\repositories\\datosnegociorepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\repositories\\datosnegociorepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\services\\infoclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\services\\infoclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\repositories\\finalidadrepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\repositories\\finalidadrepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\repositories\\ciudadrepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\repositories\\ciudadrepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\repositories\\tipogarantiarepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\repositories\\tipogarantiarepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\repositories\\tiporentarepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\repositories\\tiporentarepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\repositories\\nacionalidadrepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\repositories\\nacionalidadrepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\repositories\\micreditorepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\repositories\\micreditorepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\repositories\\monedarepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\repositories\\monedarepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\repositories\\segurodesgravamenrepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\repositories\\segurodesgravamenrepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\repositories\\sucursalrepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\repositories\\sucursalrepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\repositories\\tipooperacionrepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\repositories\\tipooperacionrepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\repositories\\tipoviviendarepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\repositories\\tipoviviendarepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\repositories\\ciiurepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\repositories\\ciiurepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\repositories\\campanarepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\repositories\\campanarepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\repositories\\agenciarepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\repositories\\agenciarepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E34E82A-1851-491C-86BA-3E47AE2F2075}|BCP.CROSS.DATAACCESS\\BCP.CROSS.DATAACCESS.csproj|d:\\t25208\\micredito\\micre_parametros\\bcp.cross.dataaccess\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E34E82A-1851-491C-86BA-3E47AE2F2075}|BCP.CROSS.DATAACCESS\\BCP.CROSS.DATAACCESS.csproj|solutionrelative:bcp.cross.dataaccess\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\services\\campanaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\services\\campanaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\services\\tipodocumentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\services\\tipodocumentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{463E0AE5-F99C-4725-A2D1-3D7D0A5F6154}|BCP.CROSS.SECRYPT\\BCP.CROSS.SECRYPT.csproj|d:\\t25208\\micredito\\micre_parametros\\bcp.cross.secrypt\\managersecrypt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{463E0AE5-F99C-4725-A2D1-3D7D0A5F6154}|BCP.CROSS.SECRYPT\\BCP.CROSS.SECRYPT.csproj|solutionrelative:bcp.cross.secrypt\\managersecrypt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BA1202D-D2E6-40EA-9796-E32ED2DC4218}|BCP.CROSS.LOGGER\\BCP.CROSS.LOGGER.csproj|d:\\t25208\\micredito\\micre_parametros\\bcp.cross.logger\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BA1202D-D2E6-40EA-9796-E32ED2DC4218}|BCP.CROSS.LOGGER\\BCP.CROSS.LOGGER.csproj|solutionrelative:bcp.cross.logger\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\services\\segurodesgravamenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\services\\segurodesgravamenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\services\\ciudadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\services\\ciudadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\healthcheks\\apihealthcheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\healthcheks\\apihealthcheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\repositories\\datosclienterepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\repositories\\datosclienterepositorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\services\\agenciaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\services\\agenciaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\services\\datosnegocioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\services\\datosnegocioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\services\\tipoviviendaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\services\\tipoviviendaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\controllers\\infoclientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\controllers\\infoclientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\controllers\\datosclientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\controllers\\datosclientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\controllers\\tiposolicitudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\controllers\\tiposolicitudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\controllers\\indicetrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\controllers\\indicetrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|d:\\t25208\\micredito\\micre_parametros\\micre.parametros.api\\controllers\\segurodesgravamencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00217CA5-F996-4488-A3DC-8571409952C8}|MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj|solutionrelative:micre.parametros.api\\controllers\\segurodesgravamencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 25,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\appsettings.json",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\appsettings.json",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\appsettings.json",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\appsettings.json",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-29T22:21:34.548Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApiRest.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Common\\ApiRest.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Common\\ApiRest.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Common\\ApiRest.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Common\\ApiRest.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAtwDoAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T20:25:03.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NacionalidadService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Services\\NacionalidadService.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Services\\NacionalidadService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Services\\NacionalidadService.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Services\\NacionalidadService.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAlwDkAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T21:06:18.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "KeyCache.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Common\\KeyCache.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Common\\KeyCache.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Common\\KeyCache.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Common\\KeyCache.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T20:27:45.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CombosDigitacionController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Controllers\\CombosDigitacionController.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Controllers\\CombosDigitacionController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Controllers\\CombosDigitacionController.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Controllers\\CombosDigitacionController.cs",
+              "ViewState": "AQIAAJAAAAAAAAAAAAAqwKcAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T20:59:58.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EfectivoNegocioTablaService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Services\\EfectivoNegocioTablaService.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Services\\EfectivoNegocioTablaService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Services\\EfectivoNegocioTablaService.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Services\\EfectivoNegocioTablaService.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAwB0AAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T14:30:50.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ServiceClient.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\BCP.CROSS.COMMON\\Service\\ServiceClient.cs",
+              "RelativeDocumentMoniker": "BCP.CROSS.COMMON\\Service\\ServiceClient.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\BCP.CROSS.COMMON\\Service\\ServiceClient.cs",
+              "RelativeToolTip": "BCP.CROSS.COMMON\\Service\\ServiceClient.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAtwC0AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T21:55:52.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EstadoRepositorie.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\EstadoRepositorie.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Repositories\\EstadoRepositorie.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\EstadoRepositorie.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Repositories\\EstadoRepositorie.cs",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAlwGgAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T20:58:23.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MICRE.PARAMETROS.API.csproj",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\MICRE.PARAMETROS.API.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-10T19:54:27.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Program.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Program.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Program.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T22:52:08.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Startup.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Startup.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Startup.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Startup.cs",
+              "ViewState": "AQIAAKgAAAAAAAAAAAAAALsAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T22:00:50.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SegCrypt.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\BCP.CROSS.SECRYPT\\SegCrypt.cs",
+              "RelativeDocumentMoniker": "BCP.CROSS.SECRYPT\\SegCrypt.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\BCP.CROSS.SECRYPT\\SegCrypt.cs",
+              "RelativeToolTip": "BCP.CROSS.SECRYPT\\SegCrypt.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAEwCAAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T19:59:48.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "JustificacionRepositorie.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\JustificacionRepositorie.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Repositories\\JustificacionRepositorie.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\JustificacionRepositorie.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Repositories\\JustificacionRepositorie.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAQwEMAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T20:58:10.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TipoDocumentoRepositorie.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\TipoDocumentoRepositorie.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Repositories\\TipoDocumentoRepositorie.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\TipoDocumentoRepositorie.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Repositories\\TipoDocumentoRepositorie.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAEBVwDkAAACFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T20:57:45.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "JustificacionService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Services\\JustificacionService.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Services\\JustificacionService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Services\\JustificacionService.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Services\\JustificacionService.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAtwDcAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T21:01:06.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "JustificacionController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Controllers\\JustificacionController.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Controllers\\JustificacionController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Controllers\\JustificacionController.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Controllers\\JustificacionController.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAlwCkAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T21:00:15.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "InfoclienteRepositorie.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\InfoclienteRepositorie.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Repositories\\InfoclienteRepositorie.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\InfoclienteRepositorie.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Repositories\\InfoclienteRepositorie.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAxwCYAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T22:21:01.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "InfoclienteService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Services\\InfoclienteService.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Services\\InfoclienteService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Services\\InfoclienteService.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Services\\InfoclienteService.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAlwGMAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T20:45:46.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-17T21:09:28.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DatosNegocioRepositorie.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\DatosNegocioRepositorie.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Repositories\\DatosNegocioRepositorie.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\DatosNegocioRepositorie.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Repositories\\DatosNegocioRepositorie.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T17:30:59.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FinalidadRepositorie.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\FinalidadRepositorie.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Repositories\\FinalidadRepositorie.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\FinalidadRepositorie.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Repositories\\FinalidadRepositorie.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAgwEAAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T20:58:21.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CiudadRepositorie.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\CiudadRepositorie.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Repositories\\CiudadRepositorie.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\CiudadRepositorie.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Repositories\\CiudadRepositorie.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwDoAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T20:59:13.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "TipoGarantiaRepositorie.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\TipoGarantiaRepositorie.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Repositories\\TipoGarantiaRepositorie.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\TipoGarantiaRepositorie.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Repositories\\TipoGarantiaRepositorie.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAuwB8AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T20:58:34.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "TipoRentaRepositorie.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\TipoRentaRepositorie.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Repositories\\TipoRentaRepositorie.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\TipoRentaRepositorie.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Repositories\\TipoRentaRepositorie.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T21:00:57.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "NacionalidadRepositorie.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\NacionalidadRepositorie.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Repositories\\NacionalidadRepositorie.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\NacionalidadRepositorie.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Repositories\\NacionalidadRepositorie.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T20:58:13.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "MicreditoRepositorie.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\MicreditoRepositorie.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Repositories\\MicreditoRepositorie.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\MicreditoRepositorie.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Repositories\\MicreditoRepositorie.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T20:58:06.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "MonedaRepositorie.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\MonedaRepositorie.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Repositories\\MonedaRepositorie.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\MonedaRepositorie.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Repositories\\MonedaRepositorie.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwAUAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T20:58:01.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "SeguroDesgravamenRepositorie.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\SeguroDesgravamenRepositorie.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Repositories\\SeguroDesgravamenRepositorie.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\SeguroDesgravamenRepositorie.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Repositories\\SeguroDesgravamenRepositorie.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T22:02:58.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "SucursalRepositorie.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\SucursalRepositorie.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Repositories\\SucursalRepositorie.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\SucursalRepositorie.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Repositories\\SucursalRepositorie.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T21:00:52.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "TipoOperacionRepositorie.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\TipoOperacionRepositorie.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Repositories\\TipoOperacionRepositorie.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\TipoOperacionRepositorie.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Repositories\\TipoOperacionRepositorie.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T20:58:29.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "TipoViviendaRepositorie.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\TipoViviendaRepositorie.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Repositories\\TipoViviendaRepositorie.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\TipoViviendaRepositorie.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Repositories\\TipoViviendaRepositorie.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAwCUAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T18:55:32.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CiiuRepositorie.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\CiiuRepositorie.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Repositories\\CiiuRepositorie.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\CiiuRepositorie.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Repositories\\CiiuRepositorie.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T20:59:23.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CampanaRepositorie.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\CampanaRepositorie.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Repositories\\CampanaRepositorie.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\CampanaRepositorie.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Repositories\\CampanaRepositorie.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T20:59:32.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "AgenciaRepositorie.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\AgenciaRepositorie.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Repositories\\AgenciaRepositorie.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\AgenciaRepositorie.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Repositories\\AgenciaRepositorie.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T20:59:40.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "DataAccess.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\BCP.CROSS.DATAACCESS\\DataAccess.cs",
+              "RelativeDocumentMoniker": "BCP.CROSS.DATAACCESS\\DataAccess.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\BCP.CROSS.DATAACCESS\\DataAccess.cs",
+              "RelativeToolTip": "BCP.CROSS.DATAACCESS\\DataAccess.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBZwAQAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T20:59:53.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "TipoDocumentoService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Services\\TipoDocumentoService.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Services\\TipoDocumentoService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Services\\TipoDocumentoService.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Services\\TipoDocumentoService.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAkwCwAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T14:35:59.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "CampanaService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Services\\CampanaService.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Services\\CampanaService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Services\\CampanaService.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Services\\CampanaService.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAkwCsAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T14:36:02.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ManagerSecrypt.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\BCP.CROSS.SECRYPT\\ManagerSecrypt.cs",
+              "RelativeDocumentMoniker": "BCP.CROSS.SECRYPT\\ManagerSecrypt.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\BCP.CROSS.SECRYPT\\ManagerSecrypt.cs",
+              "RelativeToolTip": "BCP.CROSS.SECRYPT\\ManagerSecrypt.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAYwCMAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T20:49:34.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Logger.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\BCP.CROSS.LOGGER\\Logger.cs",
+              "RelativeDocumentMoniker": "BCP.CROSS.LOGGER\\Logger.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\BCP.CROSS.LOGGER\\Logger.cs",
+              "RelativeToolTip": "BCP.CROSS.LOGGER\\Logger.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAqwBQAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T21:09:08.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "SeguroDesgravamenService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Services\\SeguroDesgravamenService.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Services\\SeguroDesgravamenService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Services\\SeguroDesgravamenService.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Services\\SeguroDesgravamenService.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAowEUAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T22:02:58.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "CiudadService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Services\\CiudadService.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Services\\CiudadService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Services\\CiudadService.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Services\\CiudadService.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowC4AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T21:01:02.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ApiHealthCheck.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Healthcheks\\ApiHealthCheck.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Healthcheks\\ApiHealthCheck.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Healthcheks\\ApiHealthCheck.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Healthcheks\\ApiHealthCheck.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T20:26:31.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "DatosClienteRepositorie.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\DatosClienteRepositorie.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Repositories\\DatosClienteRepositorie.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Repositories\\DatosClienteRepositorie.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Repositories\\DatosClienteRepositorie.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAswBcAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T20:59:00.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "AgenciaService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Services\\AgenciaService.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Services\\AgenciaService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Services\\AgenciaService.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Services\\AgenciaService.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAowCsAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T20:57:39.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "DatosNegocioService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Services\\DatosNegocioService.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Services\\DatosNegocioService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Services\\DatosNegocioService.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Services\\DatosNegocioService.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAiwD4AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T20:57:18.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "TipoViviendaService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Services\\TipoViviendaService.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Services\\TipoViviendaService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Services\\TipoViviendaService.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Services\\TipoViviendaService.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwCUAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T20:53:06.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "InfoclienteController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Controllers\\InfoclienteController.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Controllers\\InfoclienteController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Controllers\\InfoclienteController.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Controllers\\InfoclienteController.cs",
+              "ViewState": "AQIAAIgAAAAAAAAAAAD4v5kAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T22:02:14.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "DatosClienteController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Controllers\\DatosClienteController.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Controllers\\DatosClienteController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Controllers\\DatosClienteController.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Controllers\\DatosClienteController.cs",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAmwI0AAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T19:41:14.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "SeguroDesgravamenController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Controllers\\SeguroDesgravamenController.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Controllers\\SeguroDesgravamenController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Controllers\\SeguroDesgravamenController.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Controllers\\SeguroDesgravamenController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T22:02:58.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "IndiceTreController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Controllers\\IndiceTreController.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Controllers\\IndiceTreController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Controllers\\IndiceTreController.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Controllers\\IndiceTreController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAUwCkAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T17:30:47.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "TipoSolicitudController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Controllers\\TipoSolicitudController.cs",
+              "RelativeDocumentMoniker": "MICRE.PARAMETROS.API\\Controllers\\TipoSolicitudController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_PARAMETROS\\MICRE.PARAMETROS.API\\Controllers\\TipoSolicitudController.cs",
+              "RelativeToolTip": "MICRE.PARAMETROS.API\\Controllers\\TipoSolicitudController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T18:55:13.083Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

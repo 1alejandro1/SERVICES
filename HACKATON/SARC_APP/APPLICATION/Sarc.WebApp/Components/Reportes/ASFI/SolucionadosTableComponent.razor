@@ -1,0 +1,43 @@
+﻿@using BCP.CROSS.MODELS.Reportes.ASFI
+<div class="row align-content-center">
+    <div class="col-12">
+        <h4><strong>Reporte AFI Registrados</strong></h4>
+    </div>
+    <div class="col-10">        
+        <table class="table table-hover table-borderless">
+            <thead>
+                <tr class="text-uppercase">
+                    <th class="table-tomato">ENTIDAD</th>
+                    <th class="table-tomato">CORREENTIDAD</th>
+                    <th class="table-tomato">RECLAMO</th>
+                    <th class="table-tomato">AÑO</th>
+                    <th class="table-tomato">FECSOL</th>
+                    <th class="table-tomato">CITE RESPUESTA</th>
+                    <th class="table-tomato">DESC SOL</th>
+                    <th class="table-tomato">TRESULTADO</th>
+                    <th class="table-tomato">FECREP</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (SolucionadosModel item in Data)
+                {
+                    <tr>
+                        <th scope="row" class="table-light">@item.Entidad</th>
+                        <td class="table-light">@item.Correentidad</td>
+                        <td class="table-light">@item.Reclamo</td>
+                        <td class="table-light">@item.Anio</td>
+                        <td class="table-light">@item.Fecsol</td>
+                        <td class="table-light">@item.Cite_Respuesta</td>
+                        <td class="table-light">@item.Des_Sol</td>
+                        <td class="table-light">@item.Tresultado</td>
+                        <td class="table-light">@item.Fecrep</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+@code {
+    [Parameter]
+    public List<SolucionadosModel> Data { get; set; }
+}

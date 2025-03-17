@@ -1,0 +1,54 @@
+trigger:
+  branches:
+    include:
+    - '*'
+  paths:
+    exclude:
+    - readme.md
+
+variables:
+  solution: '**/*.sln'
+  project: 'CRM_CARGADATOSPERSONASOLD_SSI.dtproj'
+  buildConfiguration: 'Release'
+  GroupAgent: Agentes_Compilacion
+  Publish: 'CRM_CARGADATOSPERSONASOLD_SSI'
+  PublishArtifact: '$(build.artifactstagingdirectory)'
+
+pool:
+  name: $(GroupAgent)
+  
+steps:
+- task: CmdLine@2
+  displayName: 'Configuration Build'
+  inputs:
+    script:  |
+      echo ----------------------------------------------------------------------------
+      echo ----------------------------------------------------------------------------
+      echo COMPUTER NAME:           $(COMPUTERNAME)
+      echo ----------------------------------------------------------------------------
+      echo ----------------------------------------------------------------------------
+      echo DIRECTORIO ARTIFACT:     $(PublishArtifact)
+      echo DEFINITION NAME:         $(Build.DefinitionName)
+      echo PUBLISH:                 $(Publish)
+      echo ----------------------------------------------------------------------------
+      echo ----------------------------------------------------------------------------
+      echo AGENT NAME:              $(Agent)
+      echo SOLUTION:                $(solution)
+      echo BUILD CONFIGURATION      $(buildConfiguration)
+      echo SOURCE BRANCH NAME:      $(Build.SourceBranchName)
+      echo BUILD NUMBER:            $(Build.BuildNumber)
+      echo DIRECTORY:               $(System.DefaultWorkingDirectory)
+      echo TEMP:                    $(Agent.TempDirectory)
+      echo ----------------------------------------------------------------------------
+      echo ----------------------------------------------------------------------------
+
+- task: SSISBuild@0
+  inputs:
+    projectPath: '$(project)'
+    outputPath: '$(PublishArtifact)'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: SSIS'
+  inputs:
+    PathtoPublish: '$(PublishArtifact)'
+    ArtifactName: '$(Publish)'

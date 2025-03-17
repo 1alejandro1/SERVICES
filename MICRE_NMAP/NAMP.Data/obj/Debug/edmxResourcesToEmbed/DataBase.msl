@@ -1,0 +1,1204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BD_MICREDITOModelStoreContainer" CdmEntityContainer="BD_MICREDITOEntities">
+    <FunctionImportMapping FunctionImportName="usp_MapSelAceptacionEspecialDe" FunctionName="BD_MICREDITOModel.Store.usp_MapSelAceptacionEspecialDe">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelAceptacionEspecialDe_Result">
+          <ScalarProperty Name="RangoAniosPlazoMenor" ColumnName="RangoAniosPlazoMenor" />
+          <ScalarProperty Name="RangoAniosPlazoMayor" ColumnName="RangoAniosPlazoMayor" />
+          <ScalarProperty Name="IndicadorGarantia" ColumnName="IndicadorGarantia" />
+          <ScalarProperty Name="MontoLimiteAprobacion" ColumnName="MontoLimiteAprobacion" />
+          <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+          <ScalarProperty Name="ApellidoMaterno" ColumnName="ApellidoMaterno" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+          <ScalarProperty Name="Dominio" ColumnName="Dominio" />
+          <ScalarProperty Name="CodCargo" ColumnName="CodCargo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelAceptacionEspecialLi" FunctionName="BD_MICREDITOModel.Store.usp_MapSelAceptacionEspecialLi">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelAceptacionEspecialLi_Result">
+          <ScalarProperty Name="CodUsuarioSAPE" ColumnName="CodUsuarioSAPE" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="Dominio" ColumnName="Dominio" />
+          <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+          <ScalarProperty Name="ApellidoMaterno" ColumnName="ApellidoMaterno" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelAsignacionBonus" FunctionName="BD_MICREDITOModel.Store.usp_MapSelAsignacionBonus">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelAsignacionBonus_Result">
+          <ScalarProperty Name="CodCreditoCampanna" ColumnName="CodCreditoCampanna" />
+          <ScalarProperty Name="PuntosBonus" ColumnName="PuntosBonus" />
+          <ScalarProperty Name="Beneficiario" ColumnName="Beneficiario" />
+          <ScalarProperty Name="Activo_Desactivo" ColumnName="Activo_Desactivo" />
+          <ScalarProperty Name="Fecha_Inicio" ColumnName="Fecha_Inicio" />
+          <ScalarProperty Name="Fecha_Fin" ColumnName="Fecha_Fin" />
+          <ScalarProperty Name="Usr_Create" ColumnName="Usr_Create" />
+          <ScalarProperty Name="Date_Create" ColumnName="Date_Create" />
+          <ScalarProperty Name="Usr_Update" ColumnName="Usr_Update" />
+          <ScalarProperty Name="Date_Update" ColumnName="Date_Update" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelBanca" FunctionName="BD_MICREDITOModel.Store.usp_MapSelBanca">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelBanca_Result">
+          <ScalarProperty Name="CodBanca" ColumnName="CodBanca" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Sistema" ColumnName="Sistema" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelBuscaReglas" FunctionName="BD_MICREDITOModel.Store.usp_MapSelBuscaReglas" />
+    <FunctionImportMapping FunctionImportName="usp_MapSelBuscaReglas2" FunctionName="BD_MICREDITOModel.Store.usp_MapSelBuscaReglas2" />
+    <FunctionImportMapping FunctionImportName="usp_MapSelCEM" FunctionName="BD_MICREDITOModel.Store.usp_MapSelCEM">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelCEM_Result">
+          <ScalarProperty Name="CodReglaCondicionDetalle" ColumnName="CodReglaCondicionDetalle" />
+          <ScalarProperty Name="ValorCondicion" ColumnName="ValorCondicion" />
+          <ScalarProperty Name="CodReglaCondicionDecision" ColumnName="CodReglaCondicionDecision" />
+          <ScalarProperty Name="ValorDecision" ColumnName="ValorDecision" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelCampana" FunctionName="BD_MICREDITOModel.Store.usp_MapSelCampana">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelCampana_Result">
+          <ScalarProperty Name="pcCodCampana" ColumnName="pcCodCampana" />
+          <ScalarProperty Name="fcCodProducto" ColumnName="fcCodProducto" />
+          <ScalarProperty Name="dcCodCampanaHost" ColumnName="dcCodCampanaHost" />
+          <ScalarProperty Name="dcDescripcion" ColumnName="dcDescripcion" />
+          <ScalarProperty Name="dcIndicadorDesactivada" ColumnName="dcIndicadorDesactivada" />
+          <ScalarProperty Name="ddFechaIngreso" ColumnName="ddFechaIngreso" />
+          <ScalarProperty Name="ddFechaModificacion" ColumnName="ddFechaModificacion" />
+          <ScalarProperty Name="dcIndicadorRegistroActivo" ColumnName="dcIndicadorRegistroActivo" />
+          <ScalarProperty Name="CodTipoDiferencia" ColumnName="CodTipoDiferencia" />
+          <ScalarProperty Name="ddFechaInicio" ColumnName="ddFechaInicio" />
+          <ScalarProperty Name="ddFechaFin" ColumnName="ddFechaFin" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelCampos" FunctionName="BD_MICREDITOModel.Store.usp_MapSelCampos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelCampos_Result">
+          <ScalarProperty Name="CodCampo" ColumnName="CodCampo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="ObjNombre" ColumnName="ObjNombre" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="CodTipoDato" ColumnName="CodTipoDato" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelCanal" FunctionName="BD_MICREDITOModel.Store.usp_MapSelCanal">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelCanal_Result">
+          <ScalarProperty Name="pnCodCanal" ColumnName="pnCodCanal" />
+          <ScalarProperty Name="dcDescCanal" ColumnName="dcDescCanal" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelCardHolder" FunctionName="BD_MICREDITOModel.Store.usp_MapSelCardHolder" />
+    <FunctionImportMapping FunctionImportName="usp_MapSelCodRelObjInves" FunctionName="BD_MICREDITOModel.Store.usp_MapSelCodRelObjInves" />
+    <FunctionImportMapping FunctionImportName="usp_MapSelComportamiento" FunctionName="BD_MICREDITOModel.Store.usp_MapSelComportamiento">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelComportamiento_Result">
+          <ScalarProperty Name="CodReglaCondicionDecision" ColumnName="CodReglaCondicionDecision" />
+          <ScalarProperty Name="CodCampo" ColumnName="CodCampo" />
+          <ScalarProperty Name="CodOperador" ColumnName="CodOperador" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelCondicion" FunctionName="BD_MICREDITOModel.Store.usp_MapSelCondicion">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelCondicion_Result">
+          <ScalarProperty Name="pcCodCondicion" ColumnName="pcCodCondicion" />
+          <ScalarProperty Name="dcDescripcion" ColumnName="dcDescripcion" />
+          <ScalarProperty Name="dcIndicadorRegistroActivo" ColumnName="dcIndicadorRegistroActivo" />
+          <ScalarProperty Name="dcDescripcionConsulta" ColumnName="dcDescripcionConsulta" />
+          <ScalarProperty Name="dcIndPermisoParaConsulta" ColumnName="dcIndPermisoParaConsulta" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelCondicionVP" FunctionName="BD_MICREDITOModel.Store.usp_MapSelCondicionVP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelCondicionVP_Result">
+          <ScalarProperty Name="CodTipoCredito" ColumnName="CodTipoCredito" />
+          <ScalarProperty Name="CodVPSegmento" ColumnName="CodVPSegmento" />
+          <ScalarProperty Name="Afiliacion" ColumnName="Afiliacion" />
+          <ScalarProperty Name="PCT_ID" ColumnName="PCT_ID" />
+          <ScalarProperty Name="Pricing_Ctrl" ColumnName="Pricing_Ctrl" />
+          <ScalarProperty Name="dmLineaCredito" ColumnName="dmLineaCredito" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelUltRegla" FunctionName="BD_MICREDITOModel.Store.usp_MapSelUltRegla" />
+    <FunctionImportMapping FunctionImportName="usp_MapSelUltReglaCondicion" FunctionName="BD_MICREDITOModel.Store.usp_MapSelUltReglaCondicion" />
+    <FunctionImportMapping FunctionImportName="usp_MapSelUserCode6" FunctionName="BD_MICREDITOModel.Store.usp_MapSelUserCode6">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelUserCode6_Result1">
+          <ScalarProperty Name="ClienteConRuc" ColumnName="ClienteConRuc" />
+          <ScalarProperty Name="SeguroCrediticio" ColumnName="SeguroCrediticio" />
+          <ScalarProperty Name="ClienteConGarantias" ColumnName="ClienteConGarantias" />
+          <ScalarProperty Name="IndicadorBloqueoLinea" ColumnName="IndicadorBloqueoLinea" />
+          <ScalarProperty Name="UserCode6" ColumnName="UserCode6" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelUsuarioCredito" FunctionName="BD_MICREDITOModel.Store.usp_MapSelUsuarioCredito">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelUsuarioCredito_Result1">
+          <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+          <ScalarProperty Name="NombreCompleto" ColumnName="NombreCompleto" />
+          <ScalarProperty Name="NivelUsuario" ColumnName="NivelUsuario" />
+          <ScalarProperty Name="CodInfocorpVerif" ColumnName="CodInfocorpVerif" />
+          <ScalarProperty Name="IndicadorRegistroActivo" ColumnName="IndicadorRegistroActivo" />
+          <ScalarProperty Name="IndLogin" ColumnName="IndLogin" />
+          <ScalarProperty Name="CodNivelUsuario" ColumnName="CodNivelUsuario" />
+          <ScalarProperty Name="EXISTE" ColumnName="EXISTE" />
+          <ScalarProperty Name="Perfil" ColumnName="Perfil" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelUsuarioSamNUC" FunctionName="BD_MICREDITOModel.Store.usp_MapSelUsuarioSamNUC">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelUsuarioSamNUC_Result1">
+          <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+          <ScalarProperty Name="NombreCompleto" ColumnName="NombreCompleto" />
+          <ScalarProperty Name="Perfil" ColumnName="Perfil" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelValidaCodCampanaHost" FunctionName="BD_MICREDITOModel.Store.usp_MapSelValidaCodCampanaHost" />
+    <FunctionImportMapping FunctionImportName="usp_MapSelValorALS" FunctionName="BD_MICREDITOModel.Store.usp_MapSelValorALS" />
+    <FunctionImportMapping FunctionImportName="usp_MapSelVerifEntObjInves" FunctionName="BD_MICREDITOModel.Store.usp_MapSelVerifEntObjInves" />
+    <FunctionImportMapping FunctionImportName="usp_MapSelVerificaRelCampana" FunctionName="BD_MICREDITOModel.Store.usp_MapSelVerificaRelCampana" />
+    <FunctionImportMapping FunctionImportName="usp_MapSelVersionTablasMant" FunctionName="BD_MICREDITOModel.Store.usp_MapSelVersionTablasMant">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelVersionTablasMant_Result1">
+          <ScalarProperty Name="pnCodTabla" ColumnName="pnCodTabla" />
+          <ScalarProperty Name="dcNombre" ColumnName="dcNombre" />
+          <ScalarProperty Name="ddVersion" ColumnName="ddVersion" />
+          <ScalarProperty Name="dcStoredProcedure" ColumnName="dcStoredProcedure" />
+          <ScalarProperty Name="dbParametros" ColumnName="dbParametros" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelRelObjInvAutonomiaRe" FunctionName="BD_MICREDITOModel.Store.usp_MapSelRelObjInvAutonomiaRe">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelRelObjInvAutonomiaRe_Result">
+          <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+          <ScalarProperty Name="NombreCompleto" ColumnName="NombreCompleto" />
+          <ScalarProperty Name="Perfil" ColumnName="Perfil" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelRutaMdbLocal" FunctionName="BD_MICREDITOModel.Store.usp_MapSelRutaMdbLocal" />
+    <FunctionImportMapping FunctionImportName="usp_MapSelSegDes" FunctionName="BD_MICREDITOModel.Store.usp_MapSelSegDes">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelSegDes_Result">
+          <ScalarProperty Name="Producto" ColumnName="Producto" />
+          <ScalarProperty Name="dcDescripcion" ColumnName="dcDescripcion" />
+          <ScalarProperty Name="Seguro" ColumnName="Seguro" />
+          <ScalarProperty Name="dcCodMoneda" ColumnName="dcCodMoneda" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelSegmentacion" FunctionName="BD_MICREDITOModel.Store.usp_MapSelSegmentacion">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelSegmentacion_Result">
+          <ScalarProperty Name="CodVPSegmento" ColumnName="CodVPSegmento" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="dcHabilitado" ColumnName="dcHabilitado" />
+          <ScalarProperty Name="dcAfiliacion" ColumnName="dcAfiliacion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelTarjetaEntidad" FunctionName="BD_MICREDITOModel.Store.usp_MapSelTarjetaEntidad">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelTarjetaEntidad_Result">
+          <ScalarProperty Name="pnCodEntidad" ColumnName="pnCodEntidad" />
+          <ScalarProperty Name="pnCodTarjetaEnt" ColumnName="pnCodTarjetaEnt" />
+          <ScalarProperty Name="dcDescTarjeta" ColumnName="dcDescTarjeta" />
+          <ScalarProperty Name="dcEstado" ColumnName="dcEstado" />
+          <ScalarProperty Name="pnCodProducto" ColumnName="pnCodProducto" />
+          <ScalarProperty Name="dcDescProducto" ColumnName="dcDescProducto" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelTipoCambio" FunctionName="BD_MICREDITOModel.Store.usp_MapSelTipoCambio">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelTipoCambio_Result">
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Monto" ColumnName="Monto" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelTipoSeguroBien" FunctionName="BD_MICREDITOModel.Store.usp_MapSelTipoSeguroBien">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelTipoSeguroBien_Result">
+          <ScalarProperty Name="dcDescripcion" ColumnName="dcDescripcion" />
+          <ScalarProperty Name="dnTasaSeguro" ColumnName="dnTasaSeguro" />
+          <ScalarProperty Name="pcCodTipoSeguro" ColumnName="pcCodTipoSeguro" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelTipoSolicitud" FunctionName="BD_MICREDITOModel.Store.usp_MapSelTipoSolicitud">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelTipoSolicitud_Result">
+          <ScalarProperty Name="pcCodTipoSolicitud" ColumnName="pcCodTipoSolicitud" />
+          <ScalarProperty Name="dcDescripcion" ColumnName="dcDescripcion" />
+          <ScalarProperty Name="ddFechaIngreso" ColumnName="ddFechaIngreso" />
+          <ScalarProperty Name="ddFechaModificacion" ColumnName="ddFechaModificacion" />
+          <ScalarProperty Name="dcIndicadorRegistroActivo" ColumnName="dcIndicadorRegistroActivo" />
+          <ScalarProperty Name="CodBanca" ColumnName="CodBanca" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelTipoSolixCampana" FunctionName="BD_MICREDITOModel.Store.usp_MapSelTipoSolixCampana" />
+    <FunctionImportMapping FunctionImportName="usp_MapSelTipoTasa" FunctionName="BD_MICREDITOModel.Store.usp_MapSelTipoTasa">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelTipoTasa_Result">
+          <ScalarProperty Name="dcDescripcion" ColumnName="dcDescripcion" />
+          <ScalarProperty Name="pcCodTipoTasaEn" ColumnName="pcCodTipoTasaEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelPeriodoGracia" FunctionName="BD_MICREDITOModel.Store.usp_MapSelPeriodoGracia" />
+    <FunctionImportMapping FunctionImportName="usp_MapSelPortesSeguroPorProducto" FunctionName="BD_MICREDITOModel.Store.usp_MapSelPortesSeguroPorProducto">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelPortesSeguroPorProducto_Result1">
+          <ScalarProperty Name="CodRelObjInves" ColumnName="CodRelObjInves" />
+          <ScalarProperty Name="CodMoneda" ColumnName="CodMoneda" />
+          <ScalarProperty Name="Portes" ColumnName="Portes" />
+          <ScalarProperty Name="Seguro" ColumnName="Seguro" />
+          <ScalarProperty Name="GastosNotariales" ColumnName="GastosNotariales" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelProducto" FunctionName="BD_MICREDITOModel.Store.usp_MapSelProducto">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelProducto_Result1">
+          <ScalarProperty Name="pcCodProducto" ColumnName="pcCodProducto" />
+          <ScalarProperty Name="fcCodTipoSolicitud" ColumnName="fcCodTipoSolicitud" />
+          <ScalarProperty Name="dcDescripcion" ColumnName="dcDescripcion" />
+          <ScalarProperty Name="ddFechaIngreso" ColumnName="ddFechaIngreso" />
+          <ScalarProperty Name="ddFechaModificacion" ColumnName="ddFechaModificacion" />
+          <ScalarProperty Name="dcIndicadorRegistroActivo" ColumnName="dcIndicadorRegistroActivo" />
+          <ScalarProperty Name="dcTipoCreditoNegocio" ColumnName="dcTipoCreditoNegocio" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelProductoCanal" FunctionName="BD_MICREDITOModel.Store.usp_MapSelProductoCanal">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelProductoCanal_Result1">
+          <ScalarProperty Name="pcCodProducto" ColumnName="pcCodProducto" />
+          <ScalarProperty Name="dcDescripcion" ColumnName="dcDescripcion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelReglaCondicionDet" FunctionName="BD_MICREDITOModel.Store.usp_MapSelReglaCondicionDet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelReglaCondicionDet_Result1">
+          <ScalarProperty Name="CodReglaCondicion" ColumnName="CodReglaCondicion" />
+          <ScalarProperty Name="CodReglaCondicionDetalle" ColumnName="CodReglaCondicionDetalle" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="CodOperador" ColumnName="CodOperador" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="CodOperadorLogico" ColumnName="CodOperadorLogico" />
+          <ScalarProperty Name="CodCampo" ColumnName="CodCampo" />
+          <ScalarProperty Name="CodTipoDato" ColumnName="CodTipoDato" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelReglasCondicion" FunctionName="BD_MICREDITOModel.Store.usp_MapSelReglasCondicion" />
+    <FunctionImportMapping FunctionImportName="usp_MapSelReglasCondicion2" FunctionName="BD_MICREDITOModel.Store.usp_MapSelReglasCondicion2" />
+    <FunctionImportMapping FunctionImportName="usp_MapSelReglasxPolRel" FunctionName="BD_MICREDITOModel.Store.usp_MapSelReglasxPolRel">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelReglasxPolRel_Result1">
+          <ScalarProperty Name="CodRegla" ColumnName="CodRegla" />
+          <ScalarProperty Name="CodRelObjInves" ColumnName="CodRelObjInves" />
+          <ScalarProperty Name="NombreRegla" ColumnName="NombreRegla" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelRelObjInvAutonomia" FunctionName="BD_MICREDITOModel.Store.usp_MapSelRelObjInvAutonomia">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelRelObjInvAutonomia_Result">
+          <ScalarProperty Name="CodRelObjInvesAutonomia" ColumnName="CodRelObjInvesAutonomia" />
+          <ScalarProperty Name="RangoAniosPlazoMenor" ColumnName="RangoAniosPlazoMenor" />
+          <ScalarProperty Name="RangoAniosPlazoMayor" ColumnName="RangoAniosPlazoMayor" />
+          <ScalarProperty Name="IndicadorGarantia" ColumnName="IndicadorGarantia" />
+          <ScalarProperty Name="MontoLimiteAprobacion" ColumnName="MontoLimiteAprobacion" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="NombreUsuarioSuperior" ColumnName="NombreUsuarioSuperior" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelRelObjInvAutonomiaRN" FunctionName="BD_MICREDITOModel.Store.usp_MapSelRelObjInvAutonomiaRN">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelRelObjInvAutonomiaRN_Result">
+          <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+          <ScalarProperty Name="NombreCompleto" ColumnName="NombreCompleto" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelEntidadIntObjInves" FunctionName="BD_MICREDITOModel.Store.usp_MapSelEntidadIntObjInves" />
+    <FunctionImportMapping FunctionImportName="usp_MapSelEntidadObjInves" FunctionName="BD_MICREDITOModel.Store.usp_MapSelEntidadObjInves">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelEntidadObjInves_Result">
+          <ScalarProperty Name="CodObjInves" ColumnName="CodObjInves" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelEstadoSolicitud" FunctionName="BD_MICREDITOModel.Store.usp_MapSelEstadoSolicitud">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelEstadoSolicitud_Result">
+          <ScalarProperty Name="pcCodEstadoSolicitud" ColumnName="pcCodEstadoSolicitud" />
+          <ScalarProperty Name="dcDescripcion" ColumnName="dcDescripcion" />
+          <ScalarProperty Name="dcIndicadorRegistroActivo" ColumnName="dcIndicadorRegistroActivo" />
+          <ScalarProperty Name="dcAsignadoPorSistema" ColumnName="dcAsignadoPorSistema" />
+          <ScalarProperty Name="dcDescripcionConsulta" ColumnName="dcDescripcionConsulta" />
+          <ScalarProperty Name="dcCodEstadoConsulta" ColumnName="dcCodEstadoConsulta" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelEstadoSolicitudJusti" FunctionName="BD_MICREDITOModel.Store.usp_MapSelEstadoSolicitudJusti">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelEstadoSolicitudJusti_Result">
+          <ScalarProperty Name="pcCodJustificacion" ColumnName="pcCodJustificacion" />
+          <ScalarProperty Name="dcDescripcion" ColumnName="dcDescripcion" />
+          <ScalarProperty Name="dcIndicadorRegistroActivo" ColumnName="dcIndicadorRegistroActivo" />
+          <ScalarProperty Name="pcCodEstadoSolicitud" ColumnName="pcCodEstadoSolicitud" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelFinalidad" FunctionName="BD_MICREDITOModel.Store.usp_MapSelFinalidad">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelFinalidad_Result">
+          <ScalarProperty Name="pcCodHipotecarioFinalidad" ColumnName="pcCodHipotecarioFinalidad" />
+          <ScalarProperty Name="dcDescripcion" ColumnName="dcDescripcion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelFinalidadCC" FunctionName="BD_MICREDITOModel.Store.usp_MapSelFinalidadCC">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelFinalidadCC_Result">
+          <ScalarProperty Name="pcCodFinalidad" ColumnName="pcCodFinalidad" />
+          <ScalarProperty Name="dcDescripcion" ColumnName="dcDescripcion" />
+          <ScalarProperty Name="fcCodProducto" ColumnName="fcCodProducto" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelFraudePorCod" FunctionName="BD_MICREDITOModel.Store.usp_MapSelFraudePorCod">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelFraudePorCod_Result">
+          <ScalarProperty Name="CodFraude" ColumnName="CodFraude" />
+          <ScalarProperty Name="Empleador" ColumnName="Empleador" />
+          <ScalarProperty Name="TipoIDC" ColumnName="TipoIDC" />
+          <ScalarProperty Name="NumIDC" ColumnName="NumIDC" />
+          <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+          <ScalarProperty Name="ApellidoMaterno" ColumnName="ApellidoMaterno" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="CodLocalidad" ColumnName="CodLocalidad" />
+          <ScalarProperty Name="DesLocalidad" ColumnName="DesLocalidad" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Observacion" ColumnName="Observacion" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelFraudePorIdc" FunctionName="BD_MICREDITOModel.Store.usp_MapSelFraudePorIdc" />
+    <FunctionImportMapping FunctionImportName="usp_MapSelFraudes" FunctionName="BD_MICREDITOModel.Store.usp_MapSelFraudes">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelFraudes_Result">
+          <ScalarProperty Name="CodFraude" ColumnName="CodFraude" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Empleador" ColumnName="Empleador" />
+          <ScalarProperty Name="Observacion" ColumnName="Observacion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelParamLineaCreditoDet" FunctionName="BD_MICREDITOModel.Store.usp_MapSelParamLineaCreditoDet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelParamLineaCreditoDet_Result">
+          <ScalarProperty Name="PuntajeInicial" ColumnName="PuntajeInicial" />
+          <ScalarProperty Name="PuntajeFinal" ColumnName="PuntajeFinal" />
+          <ScalarProperty Name="IngresoBrutoInicial" ColumnName="IngresoBrutoInicial" />
+          <ScalarProperty Name="IngresoBrutoFinal" ColumnName="IngresoBrutoFinal" />
+          <ScalarProperty Name="MontoLineaCredito" ColumnName="MontoLineaCredito" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelParamLineaCreditoOP" FunctionName="BD_MICREDITOModel.Store.usp_MapSelParamLineaCreditoOP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelParamLineaCreditoOP_Result">
+          <ScalarProperty Name="CodRelObjInves" ColumnName="CodRelObjInves" />
+          <ScalarProperty Name="CodOpcionPago" ColumnName="CodOpcionPago" />
+          <ScalarProperty Name="CodLineaCredito" ColumnName="CodLineaCredito" />
+          <ScalarProperty Name="IndicadorMasivo" ColumnName="IndicadorMasivo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelParamPlazo" FunctionName="BD_MICREDITOModel.Store.usp_MapSelParamPlazo" />
+    <FunctionImportMapping FunctionImportName="usp_MapSelParamProductoHost" FunctionName="BD_MICREDITOModel.Store.usp_MapSelParamProductoHost">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelParamProductoHost_Result">
+          <ScalarProperty Name="Plazo" ColumnName="Plazo" />
+          <ScalarProperty Name="ProductoHost" ColumnName="ProductoHost" />
+          <ScalarProperty Name="CodALSProductoHost" ColumnName="CodALSProductoHost" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelParamTasas" FunctionName="BD_MICREDITOModel.Store.usp_MapSelParamTasas">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelParamTasas_Result">
+          <ScalarProperty Name="IndicadorBancaExclusiva" ColumnName="IndicadorBancaExclusiva" />
+          <ScalarProperty Name="PuntajeInicial" ColumnName="PuntajeInicial" />
+          <ScalarProperty Name="PuntajeFinal" ColumnName="PuntajeFinal" />
+          <ScalarProperty Name="Tasa" ColumnName="Tasa" />
+          <ScalarProperty Name="CodIndiceTasa" ColumnName="CodIndiceTasa" />
+          <ScalarProperty Name="IndPorDefecto" ColumnName="IndPorDefecto" />
+          <ScalarProperty Name="CodMoneda" ColumnName="CodMoneda" />
+          <ScalarProperty Name="Opcion" ColumnName="Opcion" />
+          <ScalarProperty Name="PCT_ID" ColumnName="PCT_ID" />
+          <ScalarProperty Name="Pricing_Ctrl" ColumnName="Pricing_Ctrl" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelParamTransmision" FunctionName="BD_MICREDITOModel.Store.usp_MapSelParamTransmision">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelParamTransmision_Result">
+          <ScalarProperty Name="pcCodCampana" ColumnName="pcCodCampana" />
+          <ScalarProperty Name="dcRequiereTransmision" ColumnName="dcRequiereTransmision" />
+          <ScalarProperty Name="dcRequiereActConsist" ColumnName="dcRequiereActConsist" />
+          <ScalarProperty Name="dcDiasEnvioCartasDenegacion" ColumnName="dcDiasEnvioCartasDenegacion" />
+          <ScalarProperty Name="ddFechaIngreso" ColumnName="ddFechaIngreso" />
+          <ScalarProperty Name="ddFechaModificacion" ColumnName="ddFechaModificacion" />
+          <ScalarProperty Name="dcRequiereEnvioCarta" ColumnName="dcRequiereEnvioCarta" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelParametros" FunctionName="BD_MICREDITOModel.Store.usp_MapSelParametros">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelParametros_Result">
+          <ScalarProperty Name="CodReglaParametro" ColumnName="CodReglaParametro" />
+          <ScalarProperty Name="CodCampo" ColumnName="CodCampo" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="CodRegla" ColumnName="CodRegla" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelParametrosValores" FunctionName="BD_MICREDITOModel.Store.usp_MapSelParametrosValores">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelParametrosValores_Result">
+          <ScalarProperty Name="dcNombre" ColumnName="dcNombre" />
+          <ScalarProperty Name="dcCodigo" ColumnName="dcCodigo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelPerfilCliente" FunctionName="BD_MICREDITOModel.Store.usp_MapSelPerfilCliente">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelPerfilCliente_Result1">
+          <ScalarProperty Name="CodReglaCondicionDetalle" ColumnName="CodReglaCondicionDetalle" />
+          <ScalarProperty Name="CodCampo" ColumnName="CodCampo" />
+          <ScalarProperty Name="CodOperador" ColumnName="CodOperador" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelPerfilInfocorp" FunctionName="BD_MICREDITOModel.Store.usp_MapSelPerfilInfocorp">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelPerfilInfocorp_Result1">
+          <ScalarProperty Name="pcIdPerfil" ColumnName="pcIdPerfil" />
+          <ScalarProperty Name="dcDescripcion" ColumnName="dcDescripcion" />
+          <ScalarProperty Name="dcIndicadorActivo" ColumnName="dcIndicadorActivo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelNombreEntidad" FunctionName="BD_MICREDITOModel.Store.usp_MapSelNombreEntidad" />
+    <FunctionImportMapping FunctionImportName="usp_MapSelObjInvesCampo" FunctionName="BD_MICREDITOModel.Store.usp_MapSelObjInvesCampo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelObjInvesCampo_Result">
+          <ScalarProperty Name="CodCampo" ColumnName="CodCampo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelObjInvesHijos" FunctionName="BD_MICREDITOModel.Store.usp_MapSelObjInvesHijos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelObjInvesHijos_Result">
+          <ScalarProperty Name="CodObjInves" ColumnName="CodObjInves" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelObjInvesOperacion" FunctionName="BD_MICREDITOModel.Store.usp_MapSelObjInvesOperacion" />
+    <FunctionImportMapping FunctionImportName="usp_MapSelOperador" FunctionName="BD_MICREDITOModel.Store.usp_MapSelOperador" />
+    <FunctionImportMapping FunctionImportName="usp_MapSelPI_Estudio" FunctionName="BD_MICREDITOModel.Store.usp_MapSelPI_Estudio">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelPI_Estudio_Result">
+          <ScalarProperty Name="dnNumEstudio" ColumnName="dnNumEstudio" />
+          <ScalarProperty Name="dcDesEstudio" ColumnName="dcDesEstudio" />
+          <ScalarProperty Name="dcDirEstudio" ColumnName="dcDirEstudio" />
+          <ScalarProperty Name="dcTelEstudio" ColumnName="dcTelEstudio" />
+          <ScalarProperty Name="dcDesPersonaContacto" ColumnName="dcDesPersonaContacto" />
+          <ScalarProperty Name="dcDirCorreoEstudio" ColumnName="dcDirCorreoEstudio" />
+          <ScalarProperty Name="dcIndicadorActivo" ColumnName="dcIndicadorActivo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelPI_Notaria" FunctionName="BD_MICREDITOModel.Store.usp_MapSelPI_Notaria">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelPI_Notaria_Result">
+          <ScalarProperty Name="dnNumNotaria" ColumnName="dnNumNotaria" />
+          <ScalarProperty Name="dcDesNotaria" ColumnName="dcDesNotaria" />
+          <ScalarProperty Name="dcDirNotaria" ColumnName="dcDirNotaria" />
+          <ScalarProperty Name="dcTelNotaria" ColumnName="dcTelNotaria" />
+          <ScalarProperty Name="dcDesPersonaContacto" ColumnName="dcDesPersonaContacto" />
+          <ScalarProperty Name="dcCodNotariaConsist" ColumnName="dcCodNotariaConsist" />
+          <ScalarProperty Name="dcIndicadorActivo" ColumnName="dcIndicadorActivo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelPI_Tasador" FunctionName="BD_MICREDITOModel.Store.usp_MapSelPI_Tasador">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelPI_Tasador_Result">
+          <ScalarProperty Name="dnNumTasador" ColumnName="dnNumTasador" />
+          <ScalarProperty Name="dcDesTasador" ColumnName="dcDesTasador" />
+          <ScalarProperty Name="dcDirTasador" ColumnName="dcDirTasador" />
+          <ScalarProperty Name="dcTelTasador" ColumnName="dcTelTasador" />
+          <ScalarProperty Name="dcDirCorreoTasador" ColumnName="dcDirCorreoTasador" />
+          <ScalarProperty Name="dcIndicadorActivo" ColumnName="dcIndicadorActivo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelParamHipotecario" FunctionName="BD_MICREDITOModel.Store.usp_MapSelParamHipotecario">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelParamHipotecario_Result">
+          <ScalarProperty Name="dcCodProducto" ColumnName="dcCodProducto" />
+          <ScalarProperty Name="dcCodMoneda" ColumnName="dcCodMoneda" />
+          <ScalarProperty Name="dnNumPlazoMedio" ColumnName="dnNumPlazoMedio" />
+          <ScalarProperty Name="dnNumPlazoMaximo" ColumnName="dnNumPlazoMaximo" />
+          <ScalarProperty Name="dnTasaSeguroVivienda" ColumnName="dnTasaSeguroVivienda" />
+          <ScalarProperty Name="dnTasaEfectiva" ColumnName="dnTasaEfectiva" />
+          <ScalarProperty Name="dmMonPortesMensual" ColumnName="dmMonPortesMensual" />
+          <ScalarProperty Name="dmMonMaximo" ColumnName="dmMonMaximo" />
+          <ScalarProperty Name="dmMonMinimo" ColumnName="dmMonMinimo" />
+          <ScalarProperty Name="ddFecAuditoria" ColumnName="ddFecAuditoria" />
+          <ScalarProperty Name="dcCodUsuarioAuditoria" ColumnName="dcCodUsuarioAuditoria" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelParamLineaCredito" FunctionName="BD_MICREDITOModel.Store.usp_MapSelParamLineaCredito">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelParamLineaCredito_Result">
+          <ScalarProperty Name="CodLineaCredito" ColumnName="CodLineaCredito" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="IndRegistroActivo" ColumnName="IndRegistroActivo" />
+          <ScalarProperty Name="TipoCruce" ColumnName="TipoCruce" />
+          <ScalarProperty Name="IndicadorMasivo" ColumnName="IndicadorMasivo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelDocumento" FunctionName="BD_MICREDITOModel.Store.usp_MapSelDocumento">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelDocumento_Result">
+          <ScalarProperty Name="pcCodDatosDocumento" ColumnName="pcCodDatosDocumento" />
+          <ScalarProperty Name="dcDescripcion" ColumnName="dcDescripcion" />
+          <ScalarProperty Name="dcCodTipoPersona" ColumnName="dcCodTipoPersona" />
+          <ScalarProperty Name="dcCodTipoCampoCorreccion" ColumnName="dcCodTipoCampoCorreccion" />
+          <ScalarProperty Name="dcCodSituacionCorreccion" ColumnName="dcCodSituacionCorreccion" />
+          <ScalarProperty Name="dcCodTipoDatoDocumento" ColumnName="dcCodTipoDatoDocumento" />
+          <ScalarProperty Name="dcMensajeAdicionalInternet" ColumnName="dcMensajeAdicionalInternet" />
+          <ScalarProperty Name="dcNuevaDescripcion" ColumnName="dcNuevaDescripcion" />
+          <ScalarProperty Name="dcCodigoPadre" ColumnName="dcCodigoPadre" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelEmpresaPermitida" FunctionName="BD_MICREDITOModel.Store.usp_MapSelEmpresaPermitida">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelEmpresaPermitida_Result">
+          <ScalarProperty Name="dcRUC" ColumnName="dcRUC" />
+          <ScalarProperty Name="dcIndicadorValidez" ColumnName="dcIndicadorValidez" />
+          <ScalarProperty Name="dcIndicadorActivo" ColumnName="dcIndicadorActivo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelEntidadFinanciera" FunctionName="BD_MICREDITOModel.Store.usp_MapSelEntidadFinanciera">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelEntidadFinanciera_Result">
+          <ScalarProperty Name="pnCodEntidad" ColumnName="pnCodEntidad" />
+          <ScalarProperty Name="dcDescEntidad" ColumnName="dcDescEntidad" />
+          <ScalarProperty Name="dcEstado" ColumnName="dcEstado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelGastosNotariales" FunctionName="BD_MICREDITOModel.Store.usp_MapSelGastosNotariales">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelGastosNotariales_Result">
+          <ScalarProperty Name="dcDescripcion" ColumnName="dcDescripcion" />
+          <ScalarProperty Name="GastosNotariales" ColumnName="GastosNotariales" />
+          <ScalarProperty Name="CodMoneda" ColumnName="CodMoneda" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelJustificacion" FunctionName="BD_MICREDITOModel.Store.usp_MapSelJustificacion">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelJustificacion_Result">
+          <ScalarProperty Name="pcCodJustificacion" ColumnName="pcCodJustificacion" />
+          <ScalarProperty Name="dcDescripcion" ColumnName="dcDescripcion" />
+          <ScalarProperty Name="dcIndicadorRegistroActivo" ColumnName="dcIndicadorRegistroActivo" />
+          <ScalarProperty Name="dcDescripcionConsulta" ColumnName="dcDescripcionConsulta" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelMoneda" FunctionName="BD_MICREDITOModel.Store.usp_MapSelMoneda">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelMoneda_Result">
+          <ScalarProperty Name="pcCodMoneda" ColumnName="pcCodMoneda" />
+          <ScalarProperty Name="dcDescripcion" ColumnName="dcDescripcion" />
+          <ScalarProperty Name="dcSimbolo" ColumnName="dcSimbolo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelMontoMaximo" FunctionName="BD_MICREDITOModel.Store.usp_MapSelMontoMaximo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelMontoMaximo_Result">
+          <ScalarProperty Name="CodMoneda" ColumnName="CodMoneda" />
+          <ScalarProperty Name="Plazo" ColumnName="Plazo" />
+          <ScalarProperty Name="MontoMaximo" ColumnName="MontoMaximo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelMontoMinimo" FunctionName="BD_MICREDITOModel.Store.usp_MapSelMontoMinimo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelMontoMinimo_Result">
+          <ScalarProperty Name="CodMoneda" ColumnName="CodMoneda" />
+          <ScalarProperty Name="Plazo" ColumnName="Plazo" />
+          <ScalarProperty Name="MontoMinimo" ColumnName="MontoMinimo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelNivelUsuario" FunctionName="BD_MICREDITOModel.Store.usp_MapSelNivelUsuario">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelNivelUsuario_Result">
+          <ScalarProperty Name="CodNivelUsuario" ColumnName="CodNivelUsuario" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="FechaIngreso" ColumnName="FechaIngreso" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="IndicadorRegistroActivo" ColumnName="IndicadorRegistroActivo" />
+          <ScalarProperty Name="DescripcionConsulta" ColumnName="DescripcionConsulta" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelNombreCampana" FunctionName="BD_MICREDITOModel.Store.usp_MapSelNombreCampana" />
+    <FunctionImportMapping FunctionImportName="usp_MapSelCondicionVPxCampana" FunctionName="BD_MICREDITOModel.Store.usp_MapSelCondicionVPxCampana">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelCondicionVPxCampana_Result">
+          <ScalarProperty Name="fcCodProducto" ColumnName="fcCodProducto" />
+          <ScalarProperty Name="pcCodCampana" ColumnName="pcCodCampana" />
+          <ScalarProperty Name="CodTipoCredito" ColumnName="CodTipoCredito" />
+          <ScalarProperty Name="CodVPSegmento" ColumnName="CodVPSegmento" />
+          <ScalarProperty Name="Afiliacion" ColumnName="Afiliacion" />
+          <ScalarProperty Name="PCT_ID" ColumnName="PCT_ID" />
+          <ScalarProperty Name="Pricing_Ctrl" ColumnName="Pricing_Ctrl" />
+          <ScalarProperty Name="dmLineaCredito" ColumnName="dmLineaCredito" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelCondicionVPxProducto" FunctionName="BD_MICREDITOModel.Store.usp_MapSelCondicionVPxProducto">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelCondicionVPxProducto_Result">
+          <ScalarProperty Name="fcCodProducto" ColumnName="fcCodProducto" />
+          <ScalarProperty Name="CodTipoCredito" ColumnName="CodTipoCredito" />
+          <ScalarProperty Name="CodVPSegmento" ColumnName="CodVPSegmento" />
+          <ScalarProperty Name="Afiliacion" ColumnName="Afiliacion" />
+          <ScalarProperty Name="PCT_ID" ColumnName="PCT_ID" />
+          <ScalarProperty Name="Pricing_Ctrl" ColumnName="Pricing_Ctrl" />
+          <ScalarProperty Name="dmLineaCredito" ColumnName="dmLineaCredito" />
+          <ScalarProperty Name="Habilitado" ColumnName="Habilitado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelCondiciones" FunctionName="BD_MICREDITOModel.Store.usp_MapSelCondiciones">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelCondiciones_Result">
+          <ScalarProperty Name="CodReglaCondicion" ColumnName="CodReglaCondicion" />
+          <ScalarProperty Name="CodReglaCondicionDetalle" ColumnName="CodReglaCondicionDetalle" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="CodOperador" ColumnName="CodOperador" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="CodOperadorLogico" ColumnName="CodOperadorLogico" />
+          <ScalarProperty Name="CodCampo" ColumnName="CodCampo" />
+          <ScalarProperty Name="CodTipoDato" ColumnName="CodTipoDato" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelDatosDocNoAsigCam" FunctionName="BD_MICREDITOModel.Store.usp_MapSelDatosDocNoAsigCam">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelDatosDocNoAsigCam_Result">
+          <ScalarProperty Name="pcCodDatosDocumento" ColumnName="pcCodDatosDocumento" />
+          <ScalarProperty Name="dcDescripcion" ColumnName="dcDescripcion" />
+          <ScalarProperty Name="dcCodTipoPersona" ColumnName="dcCodTipoPersona" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelDatosDocumentoPorCam" FunctionName="BD_MICREDITOModel.Store.usp_MapSelDatosDocumentoPorCam">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelDatosDocumentoPorCam_Result">
+          <ScalarProperty Name="pcCodDatosDocumento" ColumnName="pcCodDatosDocumento" />
+          <ScalarProperty Name="dcDescripcion" ColumnName="dcDescripcion" />
+          <ScalarProperty Name="dcDestinoEnvio" ColumnName="dcDestinoEnvio" />
+          <ScalarProperty Name="dcCodSituacion" ColumnName="dcCodSituacion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelDecisiones" FunctionName="BD_MICREDITOModel.Store.usp_MapSelDecisiones">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelDecisiones_Result">
+          <ScalarProperty Name="CodReglaCondicionDecision" ColumnName="CodReglaCondicionDecision" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="CodOperador" ColumnName="CodOperador" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="CodReglaCondicion" ColumnName="CodReglaCondicion" />
+          <ScalarProperty Name="CodCampo" ColumnName="CodCampo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelDiasPago" FunctionName="BD_MICREDITOModel.Store.usp_MapSelDiasPago" />
+    <FunctionImportMapping FunctionImportName="usp_MapEliCampana" FunctionName="BD_MICREDITOModel.Store.usp_MapEliCampana" />
+    <FunctionImportMapping FunctionImportName="usp_MapModEstadoCampana" FunctionName="BD_MICREDITOModel.Store.usp_MapModEstadoCampana" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsAceptacionEspecial" FunctionName="BD_MICREDITOModel.Store.usp_MapInsAceptacionEspecial" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelAceptacionEspecial" FunctionName="BD_MICREDITOModel.Store.usp_MapDelAceptacionEspecial" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsDatosDocumentoPorCam" FunctionName="BD_MICREDITOModel.Store.usp_MapInsDatosDocumentoPorCam" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelDatosDocumentoPorCam" FunctionName="BD_MICREDITOModel.Store.usp_MapDelDatosDocumentoPorCam" />
+    <FunctionImportMapping FunctionImportName="usp_MapModDatosDocumentoPorCam" FunctionName="BD_MICREDITOModel.Store.usp_MapModDatosDocumentoPorCam" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelDatosDocumentoCam" FunctionName="BD_MICREDITOModel.Store.usp_MapDelDatosDocumentoCam" />
+    <FunctionImportMapping FunctionImportName="usp_MapEliAsignacionBonus" FunctionName="BD_MICREDITOModel.Store.usp_MapEliAsignacionBonus" />
+    <FunctionImportMapping FunctionImportName="usp_MapIngAsignacionBonus" FunctionName="BD_MICREDITOModel.Store.usp_MapIngAsignacionBonus" />
+    <FunctionImportMapping FunctionImportName="usp_MapModAsignacionBonus" FunctionName="BD_MICREDITOModel.Store.usp_MapModAsignacionBonus" />
+    <FunctionImportMapping FunctionImportName="usp_MapIngCampana" FunctionName="BD_MICREDITOModel.Store.usp_MapIngCampana" />
+    <FunctionImportMapping FunctionImportName="usp_MapModCampana" FunctionName="BD_MICREDITOModel.Store.usp_MapModCampana" />
+    <FunctionImportMapping FunctionImportName="usp_MapIngCopiaEntidades" FunctionName="BD_MICREDITOModel.Store.usp_MapIngCopiaEntidades" />
+    <FunctionImportMapping FunctionImportName="usp_MapProCopiaReglas" FunctionName="BD_MICREDITOModel.Store.usp_MapProCopiaReglas" />
+    <FunctionImportMapping FunctionImportName="usp_MapCopLineaCredito" FunctionName="BD_MICREDITOModel.Store.usp_MapCopLineaCredito" />
+    <FunctionImportMapping FunctionImportName="usp_MapCopMontosMaximos" FunctionName="BD_MICREDITOModel.Store.usp_MapCopMontosMaximos" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsRelacionObjInves" FunctionName="BD_MICREDITOModel.Store.usp_MapInsRelacionObjInves" />
+    <FunctionImportMapping FunctionImportName="usp_MapCopMontosMinimos" FunctionName="BD_MICREDITOModel.Store.usp_MapCopMontosMinimos" />
+    <FunctionImportMapping FunctionImportName="usp_MapCopAsignacionBonus" FunctionName="BD_MICREDITOModel.Store.usp_MapCopAsignacionBonus" />
+    <FunctionImportMapping FunctionImportName="usp_MapCopDatosDocumento" FunctionName="BD_MICREDITOModel.Store.usp_MapCopDatosDocumento" />
+    <FunctionImportMapping FunctionImportName="usp_MapCopSegmentacion" FunctionName="BD_MICREDITOModel.Store.usp_MapCopSegmentacion" />
+    <FunctionImportMapping FunctionImportName="usp_MapCopTasas" FunctionName="BD_MICREDITOModel.Store.usp_MapCopTasas" />
+    <FunctionImportMapping FunctionImportName="usp_MapModEstadoSolicitud" FunctionName="BD_MICREDITOModel.Store.usp_MapModEstadoSolicitud" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsEstadoSolicitud" FunctionName="BD_MICREDITOModel.Store.usp_MapInsEstadoSolicitud" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsEstadoSolicitudCondi" FunctionName="BD_MICREDITOModel.Store.usp_MapInsEstadoSolicitudCondi" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsEstadoSolicitudJusti" FunctionName="BD_MICREDITOModel.Store.usp_MapInsEstadoSolicitudJusti" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelEstadoSolicitud" FunctionName="BD_MICREDITOModel.Store.usp_MapDelEstadoSolicitud" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelEstadoSolicitudCondi" FunctionName="BD_MICREDITOModel.Store.usp_MapDelEstadoSolicitudCondi" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelEstadoSolicitudJusti" FunctionName="BD_MICREDITOModel.Store.usp_MapDelEstadoSolicitudJusti" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsCondicion" FunctionName="BD_MICREDITOModel.Store.usp_MapInsCondicion" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelCondicion" FunctionName="BD_MICREDITOModel.Store.usp_MapDelCondicion" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelJustificacion" FunctionName="BD_MICREDITOModel.Store.usp_MapDelJustificacion" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsJustificacion" FunctionName="BD_MICREDITOModel.Store.usp_MapInsJustificacion" />
+    <FunctionImportMapping FunctionImportName="usp_MapModCondicion" FunctionName="BD_MICREDITOModel.Store.usp_MapModCondicion" />
+    <FunctionImportMapping FunctionImportName="usp_MapModEstadoSolicitudCondi" FunctionName="BD_MICREDITOModel.Store.usp_MapModEstadoSolicitudCondi" />
+    <FunctionImportMapping FunctionImportName="usp_MapModEstadoSolicitudJusti" FunctionName="BD_MICREDITOModel.Store.usp_MapModEstadoSolicitudJusti" />
+    <FunctionImportMapping FunctionImportName="usp_MapModFraudes" FunctionName="BD_MICREDITOModel.Store.usp_MapModFraudes" />
+    <FunctionImportMapping FunctionImportName="usp_MapModJustificacion" FunctionName="BD_MICREDITOModel.Store.usp_MapModJustificacion" />
+    <FunctionImportMapping FunctionImportName="usp_MapModPI_Estudio" FunctionName="BD_MICREDITOModel.Store.usp_MapModPI_Estudio" />
+    <FunctionImportMapping FunctionImportName="usp_MapModPI_Notaria" FunctionName="BD_MICREDITOModel.Store.usp_MapModPI_Notaria" />
+    <FunctionImportMapping FunctionImportName="usp_MapModPI_Tasador" FunctionName="BD_MICREDITOModel.Store.usp_MapModPI_Tasador" />
+    <FunctionImportMapping FunctionImportName="usp_MapModParamHipotecario" FunctionName="BD_MICREDITOModel.Store.usp_MapModParamHipotecario" />
+    <FunctionImportMapping FunctionImportName="usp_MapModParamLineaCredito" FunctionName="BD_MICREDITOModel.Store.usp_MapModParamLineaCredito" />
+    <FunctionImportMapping FunctionImportName="usp_MapModCamposPoliticas" FunctionName="BD_MICREDITOModel.Store.usp_MapModCamposPoliticas" />
+    <FunctionImportMapping FunctionImportName="usp_MapModCamposPoliticas2" FunctionName="BD_MICREDITOModel.Store.usp_MapModCamposPoliticas2" />
+    <FunctionImportMapping FunctionImportName="usp_MapModComportamiento" FunctionName="BD_MICREDITOModel.Store.usp_MapModComportamiento" />
+    <FunctionImportMapping FunctionImportName="usp_MapModCondicionDetalle" FunctionName="BD_MICREDITOModel.Store.usp_MapModCondicionDetalle" />
+    <FunctionImportMapping FunctionImportName="usp_MapModCondicionVP" FunctionName="BD_MICREDITOModel.Store.usp_MapModCondicionVP" />
+    <FunctionImportMapping FunctionImportName="usp_MapModControlOperativo" FunctionName="BD_MICREDITOModel.Store.usp_MapModControlOperativo" />
+    <FunctionImportMapping FunctionImportName="usp_MapModDecision" FunctionName="BD_MICREDITOModel.Store.usp_MapModDecision" />
+    <FunctionImportMapping FunctionImportName="usp_MapModDocumento" FunctionName="BD_MICREDITOModel.Store.usp_MapModDocumento" />
+    <FunctionImportMapping FunctionImportName="usp_MapModEmpresaPermitida" FunctionName="BD_MICREDITOModel.Store.usp_MapModEmpresaPermitida" />
+    <FunctionImportMapping FunctionImportName="usp_MapModEntidadFinanciera" FunctionName="BD_MICREDITOModel.Store.usp_MapModEntidadFinanciera" />
+    <FunctionImportMapping FunctionImportName="usp_MapModCEM" FunctionName="BD_MICREDITOModel.Store.usp_MapModCEM" />
+    <FunctionImportMapping FunctionImportName="usp_MapModParamTransmision" FunctionName="BD_MICREDITOModel.Store.usp_MapModParamTransmision" />
+    <FunctionImportMapping FunctionImportName="usp_MapModParametros" FunctionName="BD_MICREDITOModel.Store.usp_MapModParametros" />
+    <FunctionImportMapping FunctionImportName="usp_MapModPerfilCliente" FunctionName="BD_MICREDITOModel.Store.usp_MapModPerfilCliente" />
+    <FunctionImportMapping FunctionImportName="usp_MapModPerfilInfocorp" FunctionName="BD_MICREDITOModel.Store.usp_MapModPerfilInfocorp" />
+    <FunctionImportMapping FunctionImportName="usp_MapModPortesSeguroPorProducto" FunctionName="BD_MICREDITOModel.Store.usp_MapModPortesSeguroPorProducto" />
+    <FunctionImportMapping FunctionImportName="usp_MapModReglaCondicionDet" FunctionName="BD_MICREDITOModel.Store.usp_MapModReglaCondicionDet" />
+    <FunctionImportMapping FunctionImportName="usp_MapModRelObjInvAutonomia" FunctionName="BD_MICREDITOModel.Store.usp_MapModRelObjInvAutonomia" />
+    <FunctionImportMapping FunctionImportName="usp_MapModRelObjInvAutonomiaUS" FunctionName="BD_MICREDITOModel.Store.usp_MapModRelObjInvAutonomiaUS" />
+    <FunctionImportMapping FunctionImportName="usp_MapModSegmentacion" FunctionName="BD_MICREDITOModel.Store.usp_MapModSegmentacion" />
+    <FunctionImportMapping FunctionImportName="usp_MapAsignaEntidadObjInves" FunctionName="BD_MICREDITOModel.Store.usp_MapAsignaEntidadObjInves" />
+    <FunctionImportMapping FunctionImportName="usp_MapBNModCalPrestamo" FunctionName="BD_MICREDITOModel.Store.usp_MapBNModCalPrestamo" />
+    <FunctionImportMapping FunctionImportName="usp_MapBNModRatiosFinancieros" FunctionName="BD_MICREDITOModel.Store.usp_MapBNModRatiosFinancieros" />
+    <FunctionImportMapping FunctionImportName="usp_MapBNModRestricciones" FunctionName="BD_MICREDITOModel.Store.usp_MapBNModRestricciones" />
+    <FunctionImportMapping FunctionImportName="usp_MapBNSelCalPrestamo" FunctionName="BD_MICREDITOModel.Store.usp_MapBNSelCalPrestamo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapBNSelCalPrestamo_Result">
+          <ScalarProperty Name="Esquema_Id" ColumnName="Esquema_Id" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapBNSelGruposCIIU" FunctionName="BD_MICREDITOModel.Store.usp_MapBNSelGruposCIIU">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapBNSelGruposCIIU_Result">
+          <ScalarProperty Name="CodigoGrupo" ColumnName="CodigoGrupo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapBNSelRatiosFinancieros" FunctionName="BD_MICREDITOModel.Store.usp_MapBNSelRatiosFinancieros">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapBNSelRatiosFinancieros_Result">
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Ratio" ColumnName="Ratio" />
+          <ScalarProperty Name="CodigoGrupo" ColumnName="CodigoGrupo" />
+          <ScalarProperty Name="Esquema_Id" ColumnName="Esquema_Id" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapBNSelRestricciones" FunctionName="BD_MICREDITOModel.Store.usp_MapBNSelRestricciones">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapBNSelRestricciones_Result">
+          <ScalarProperty Name="Esquema_Id" ColumnName="Esquema_Id" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Operador" ColumnName="Operador" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapCambioMatricula" FunctionName="BD_MICREDITOModel.Store.usp_MapCambioMatricula" />
+    <FunctionImportMapping FunctionImportName="usp_MapCambioMatriculaUC" FunctionName="BD_MICREDITOModel.Store.usp_MapCambioMatriculaUC" />
+    <FunctionImportMapping FunctionImportName="usp_MapCheckStoredProc" FunctionName="BD_MICREDITOModel.Store.usp_MapCheckStoredProc">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapCheckStoredProc_Result">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="user" ColumnName="user" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapCopCutoffNegocio" FunctionName="BD_MICREDITOModel.Store.usp_MapCopCutoffNegocio" />
+    <FunctionImportMapping FunctionImportName="usp_MapCopParamProdHost" FunctionName="BD_MICREDITOModel.Store.usp_MapCopParamProdHost" />
+    <FunctionImportMapping FunctionImportName="usp_MapCopParamTransmision" FunctionName="BD_MICREDITOModel.Store.usp_MapCopParamTransmision" />
+    <FunctionImportMapping FunctionImportName="usp_MapCopSegmentacionCondicion" FunctionName="BD_MICREDITOModel.Store.usp_MapCopSegmentacionCondicion" />
+    <FunctionImportMapping FunctionImportName="usp_MapCopTasaPonderada" FunctionName="BD_MICREDITOModel.Store.usp_MapCopTasaPonderada" />
+    <FunctionImportMapping FunctionImportName="usp_MapCrearProductoCC" FunctionName="BD_MICREDITOModel.Store.usp_MapCrearProductoCC" />
+    <FunctionImportMapping FunctionImportName="usp_MapCrearProductoCH" FunctionName="BD_MICREDITOModel.Store.usp_MapCrearProductoCH" />
+    <FunctionImportMapping FunctionImportName="usp_MapCrearProductoCN" FunctionName="BD_MICREDITOModel.Store.usp_MapCrearProductoCN" />
+    <FunctionImportMapping FunctionImportName="usp_MapCrearProductoTC" FunctionName="BD_MICREDITOModel.Store.usp_MapCrearProductoTC" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelPI_Notaria" FunctionName="BD_MICREDITOModel.Store.usp_MapDelPI_Notaria" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelPI_Tasador" FunctionName="BD_MICREDITOModel.Store.usp_MapDelPI_Tasador" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelParamHipotecario" FunctionName="BD_MICREDITOModel.Store.usp_MapDelParamHipotecario" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelParamLineaCredito" FunctionName="BD_MICREDITOModel.Store.usp_MapDelParamLineaCredito" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelParamLineaCreditoDe" FunctionName="BD_MICREDITOModel.Store.usp_MapDelParamLineaCreditoDe" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelParamLineaCreditoOP" FunctionName="BD_MICREDITOModel.Store.usp_MapDelParamLineaCreditoOP" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelParamMontoMaximo" FunctionName="BD_MICREDITOModel.Store.usp_MapDelParamMontoMaximo" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelParamMontoMinimo" FunctionName="BD_MICREDITOModel.Store.usp_MapDelParamMontoMinimo" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelParamPlazo" FunctionName="BD_MICREDITOModel.Store.usp_MapDelParamPlazo" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelParamProductoHost" FunctionName="BD_MICREDITOModel.Store.usp_MapDelParamProductoHost" />
+    <FunctionImportMapping FunctionImportName="usp_MapIngCampanaViaBCP" FunctionName="BD_MICREDITOModel.Store.usp_MapIngCampanaViaBCP" />
+    <FunctionImportMapping FunctionImportName="usp_MapIngComportamiento1" FunctionName="BD_MICREDITOModel.Store.usp_MapIngComportamiento1" />
+    <FunctionImportMapping FunctionImportName="usp_MapIngComportamiento2" FunctionName="BD_MICREDITOModel.Store.usp_MapIngComportamiento2" />
+    <FunctionImportMapping FunctionImportName="usp_MapIngCond" FunctionName="BD_MICREDITOModel.Store.usp_MapIngCond" />
+    <FunctionImportMapping FunctionImportName="usp_MapIngCondicionDetalle" FunctionName="BD_MICREDITOModel.Store.usp_MapIngCondicionDetalle" />
+    <FunctionImportMapping FunctionImportName="usp_MapIngControlOperativo" FunctionName="BD_MICREDITOModel.Store.usp_MapIngControlOperativo" />
+    <FunctionImportMapping FunctionImportName="usp_MapIngDecision" FunctionName="BD_MICREDITOModel.Store.usp_MapIngDecision" />
+    <FunctionImportMapping FunctionImportName="usp_MapIngParametros" FunctionName="BD_MICREDITOModel.Store.usp_MapIngParametros" />
+    <FunctionImportMapping FunctionImportName="usp_MapIngRegla" FunctionName="BD_MICREDITOModel.Store.usp_MapIngRegla" />
+    <FunctionImportMapping FunctionImportName="usp_MapIngReglaCondicionDet" FunctionName="BD_MICREDITOModel.Store.usp_MapIngReglaCondicionDet" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsPI_Estudio" FunctionName="BD_MICREDITOModel.Store.usp_MapInsPI_Estudio" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsPI_Notaria" FunctionName="BD_MICREDITOModel.Store.usp_MapInsPI_Notaria" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsPI_Tasador" FunctionName="BD_MICREDITOModel.Store.usp_MapInsPI_Tasador" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsParamHipotecario" FunctionName="BD_MICREDITOModel.Store.usp_MapInsParamHipotecario" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsParamLineaCredito" FunctionName="BD_MICREDITOModel.Store.usp_MapInsParamLineaCredito" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsParamLineaCreditoDe" FunctionName="BD_MICREDITOModel.Store.usp_MapInsParamLineaCreditoDe" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsParamLineaCreditoOP" FunctionName="BD_MICREDITOModel.Store.usp_MapInsParamLineaCreditoOP" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsParamMontoMaximo" FunctionName="BD_MICREDITOModel.Store.usp_MapInsParamMontoMaximo" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsParamMontoMinimo" FunctionName="BD_MICREDITOModel.Store.usp_MapInsParamMontoMinimo" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsParamPlazo" FunctionName="BD_MICREDITOModel.Store.usp_MapInsParamPlazo" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelCondicionVP" FunctionName="BD_MICREDITOModel.Store.usp_MapDelCondicionVP" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelDiasPago" FunctionName="BD_MICREDITOModel.Store.usp_MapDelDiasPago" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelDocumento" FunctionName="BD_MICREDITOModel.Store.usp_MapDelDocumento" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelEmpresaPermitida" FunctionName="BD_MICREDITOModel.Store.usp_MapDelEmpresaPermitida" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelEntidadFinanciera" FunctionName="BD_MICREDITOModel.Store.usp_MapDelEntidadFinanciera" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelFraudes" FunctionName="BD_MICREDITOModel.Store.usp_MapDelFraudes" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelPI_Estudio" FunctionName="BD_MICREDITOModel.Store.usp_MapDelPI_Estudio" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelParamTasa" FunctionName="BD_MICREDITOModel.Store.usp_MapDelParamTasa" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelPerfilInfocorp" FunctionName="BD_MICREDITOModel.Store.usp_MapDelPerfilInfocorp" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelPeriodoGracia" FunctionName="BD_MICREDITOModel.Store.usp_MapDelPeriodoGracia" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsVersionTablasMant" FunctionName="BD_MICREDITOModel.Store.usp_MapInsVersionTablasMant" />
+    <FunctionImportMapping FunctionImportName="usp_MapModTarjetaEntidad" FunctionName="BD_MICREDITOModel.Store.usp_MapModTarjetaEntidad" />
+    <FunctionImportMapping FunctionImportName="usp_MapModUserCode6" FunctionName="BD_MICREDITOModel.Store.usp_MapModUserCode6" />
+    <FunctionImportMapping FunctionImportName="usp_MapModUsuarioCredito" FunctionName="BD_MICREDITOModel.Store.usp_MapModUsuarioCredito" />
+    <FunctionImportMapping FunctionImportName="usp_MapModVersionTablasMant" FunctionName="BD_MICREDITOModel.Store.usp_MapModVersionTablasMant" />
+    <FunctionImportMapping FunctionImportName="usp_MapModificarCutoff" FunctionName="BD_MICREDITOModel.Store.usp_MapModificarCutoff" />
+    <FunctionImportMapping FunctionImportName="usp_MapModificarProducto" FunctionName="BD_MICREDITOModel.Store.usp_MapModificarProducto" />
+    <FunctionImportMapping FunctionImportName="usp_MapObtenerCutoff" FunctionName="BD_MICREDITOModel.Store.usp_MapObtenerCutoff">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapObtenerCutoff_Result">
+          <ScalarProperty Name="pcCodCampana" ColumnName="pcCodCampana" />
+          <ScalarProperty Name="dnCutOff" ColumnName="dnCutOff" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapReglasCampanaConyuge" FunctionName="BD_MICREDITOModel.Store.usp_MapReglasCampanaConyuge" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsEntidadFinanciera" FunctionName="BD_MICREDITOModel.Store.usp_MapInsEntidadFinanciera" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsFraudes" FunctionName="BD_MICREDITOModel.Store.usp_MapInsFraudes" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsParamProductoHost" FunctionName="BD_MICREDITOModel.Store.usp_MapInsParamProductoHost" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsParamTasa" FunctionName="BD_MICREDITOModel.Store.usp_MapInsParamTasa" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsPerfilInfocorp" FunctionName="BD_MICREDITOModel.Store.usp_MapInsPerfilInfocorp" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsPeriodoGracia" FunctionName="BD_MICREDITOModel.Store.usp_MapInsPeriodoGracia" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsRelObjInvAutonomia" FunctionName="BD_MICREDITOModel.Store.usp_MapInsRelObjInvAutonomia" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsTarjetaEntidad" FunctionName="BD_MICREDITOModel.Store.usp_MapInsTarjetaEntidad" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsTipoCambio" FunctionName="BD_MICREDITOModel.Store.usp_MapInsTipoCambio" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsUsuarioCredito" FunctionName="BD_MICREDITOModel.Store.usp_MapInsUsuarioCredito" />
+    <FunctionImportMapping FunctionImportName="usp_MapExisteProducto" FunctionName="BD_MICREDITOModel.Store.usp_MapExisteProducto" />
+    <FunctionImportMapping FunctionImportName="usp_MapFijaMontosMaximos" FunctionName="BD_MICREDITOModel.Store.usp_MapFijaMontosMaximos" />
+    <FunctionImportMapping FunctionImportName="usp_MapFijaMontosMinimos" FunctionName="BD_MICREDITOModel.Store.usp_MapFijaMontosMinimos" />
+    <FunctionImportMapping FunctionImportName="usp_MapIngCampanaPorDefecto" FunctionName="BD_MICREDITOModel.Store.usp_MapIngCampanaPorDefecto" />
+    <FunctionImportMapping FunctionImportName="usp_MapIngRelObjInvesRegla" FunctionName="BD_MICREDITOModel.Store.usp_MapIngRelObjInvesRegla" />
+    <FunctionImportMapping FunctionImportName="usp_MapIngRelacionObjInves" FunctionName="BD_MICREDITOModel.Store.usp_MapIngRelacionObjInves" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsCondicionVP" FunctionName="BD_MICREDITOModel.Store.usp_MapInsCondicionVP" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsDiasPago" FunctionName="BD_MICREDITOModel.Store.usp_MapInsDiasPago" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsDocumento" FunctionName="BD_MICREDITOModel.Store.usp_MapInsDocumento" />
+    <FunctionImportMapping FunctionImportName="usp_MapInsEmpresaPermitida" FunctionName="BD_MICREDITOModel.Store.usp_MapInsEmpresaPermitida" />
+    <FunctionImportMapping FunctionImportName="usp_MapCrearProductoTN" FunctionName="BD_MICREDITOModel.Store.usp_MapCrearProductoTN" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelRegla" FunctionName="BD_MICREDITOModel.Store.usp_MapDelRegla" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelReglaCondicion" FunctionName="BD_MICREDITOModel.Store.usp_MapDelReglaCondicion" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelReglaCondicionDet" FunctionName="BD_MICREDITOModel.Store.usp_MapDelReglaCondicionDet" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelRelObjInvAutonomia" FunctionName="BD_MICREDITOModel.Store.usp_MapDelRelObjInvAutonomia" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelTarjetaEntidad" FunctionName="BD_MICREDITOModel.Store.usp_MapDelTarjetaEntidad" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelUsuarioCredito" FunctionName="BD_MICREDITOModel.Store.usp_MapDelUsuarioCredito" />
+    <FunctionImportMapping FunctionImportName="usp_MapDelVersionTablasMant" FunctionName="BD_MICREDITOModel.Store.usp_MapDelVersionTablasMant" />
+    <FunctionImportMapping FunctionImportName="usp_MapEliDecision" FunctionName="BD_MICREDITOModel.Store.usp_MapEliDecision" />
+    <FunctionImportMapping FunctionImportName="usp_MapEliParametros" FunctionName="BD_MICREDITOModel.Store.usp_MapEliParametros" />
+    <FunctionImportMapping FunctionImportName="usp_MapEliminaProducto" FunctionName="BD_MICREDITOModel.Store.usp_MapEliminaProducto" />
+    <FunctionImportMapping FunctionImportName="usp_MapUpdGastosNotariales" FunctionName="BD_MICREDITOModel.Store.usp_MapUpdGastosNotariales" />
+    <FunctionImportMapping FunctionImportName="usp_MapUpdSegDes" FunctionName="BD_MICREDITOModel.Store.usp_MapUpdSegDes" />
+    <FunctionImportMapping FunctionImportName="usp_MapUpdTipoSeguroBien" FunctionName="BD_MICREDITOModel.Store.usp_MapUpdTipoSeguroBien" />
+    <FunctionImportMapping FunctionImportName="sp_AdmPar_Sel_VPSEGMENTO" FunctionName="BD_MICREDITOModel.Store.sp_AdmPar_Sel_VPSEGMENTO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.sp_AdmPar_Sel_VPSEGMENTO_Result">
+          <ScalarProperty Name="CodVPSegmento" ColumnName="CodVPSegmento" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="FechaIngreso" ColumnName="FechaIngreso" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="IndRegistroActivo" ColumnName="IndRegistroActivo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MAPSelJerarquiaEmpleado" FunctionName="BD_MICREDITOModel.Store.usp_MAPSelJerarquiaEmpleado">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MAPSelJerarquiaEmpleado_Result">
+          <ScalarProperty Name="TEAM_ID" ColumnName="TEAM_ID" />
+          <ScalarProperty Name="TEAM_NAME" ColumnName="TEAM_NAME" />
+          <ScalarProperty Name="PARENT_TEAM_ID" ColumnName="PARENT_TEAM_ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_SelEmpleadosDisponibles" FunctionName="BD_MICREDITOModel.Store.usp_SelEmpleadosDisponibles">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_SelEmpleadosDisponibles_Result">
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_InsEmpleadoEquipo" FunctionName="BD_MICREDITOModel.Store.usp_InsEmpleadoEquipo" />
+    <FunctionImportMapping FunctionImportName="usp_SelEmpleados" FunctionName="BD_MICREDITOModel.Store.usp_SelEmpleados">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_SelEmpleados_Result">
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="NombreEmpleado" ColumnName="NombreEmpleado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_SelEmpleadosEquipo" FunctionName="BD_MICREDITOModel.Store.usp_SelEmpleadosEquipo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_SelEmpleadosEquipo_Result">
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+          <ScalarProperty Name="TEAM_LEDR" ColumnName="TEAM_LEDR" />
+          <ScalarProperty Name="ACTIVE_FLAG" ColumnName="ACTIVE_FLAG" />
+          <ScalarProperty Name="TEAM_ID" ColumnName="TEAM_ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_SelDetalleEquipo" FunctionName="BD_MICREDITOModel.Store.usp_SelDetalleEquipo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_SelDetalleEquipo_Result">
+          <ScalarProperty Name="TEAM_ID" ColumnName="TEAM_ID" />
+          <ScalarProperty Name="TEAM_NAME" ColumnName="TEAM_NAME" />
+          <ScalarProperty Name="PARENT_TEAM_ID" ColumnName="PARENT_TEAM_ID" />
+          <ScalarProperty Name="PARENT_TEAM_NAME" ColumnName="PARENT_TEAM_NAME" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_SelDettalleEmpleado" FunctionName="BD_MICREDITOModel.Store.usp_SelDettalleEmpleado">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_SelDettalleEmpleado_Result">
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="FIRST_NAME" ColumnName="FIRST_NAME" />
+          <ScalarProperty Name="MIDL_NAME" ColumnName="MIDL_NAME" />
+          <ScalarProperty Name="LAST_NAME" ColumnName="LAST_NAME" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_InsEmpleado" FunctionName="BD_MICREDITOModel.Store.usp_InsEmpleado" />
+    <FunctionImportMapping FunctionImportName="usp_InsEquipo" FunctionName="BD_MICREDITOModel.Store.usp_InsEquipo" />
+    <FunctionImportMapping FunctionImportName="spMapObtenerTipoIngreso" FunctionName="BD_MICREDITOModel.Store.spMapObtenerTipoIngreso" />
+    <FunctionImportMapping FunctionImportName="spMapActualizarTipoIngreso" FunctionName="BD_MICREDITOModel.Store.spMapActualizarTipoIngreso" />
+    <FunctionImportMapping FunctionImportName="usp_MapSelEstadoSolicitudCondi" FunctionName="BD_MICREDITOModel.Store.usp_MapSelEstadoSolicitudCondi">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelEstadoSolicitudCondi_Result1">
+          <ScalarProperty Name="pcCodCondicion" ColumnName="pcCodCondicion" />
+          <ScalarProperty Name="dcDescripcion" ColumnName="dcDescripcion" />
+          <ScalarProperty Name="dcTipoCondicion" ColumnName="dcTipoCondicion" />
+          <ScalarProperty Name="dcIndicadorRegistroActivo" ColumnName="dcIndicadorRegistroActivo" />
+          <ScalarProperty Name="pcCodEstadoSolicitud" ColumnName="pcCodEstadoSolicitud" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapObtenerProducto" FunctionName="BD_MICREDITOModel.Store.usp_MapObtenerProducto">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapObtenerProducto_Result">
+          <ScalarProperty Name="fcCodTipoSolicitud" ColumnName="fcCodTipoSolicitud" />
+          <ScalarProperty Name="dcNombreProducto" ColumnName="dcNombreProducto" />
+          <ScalarProperty Name="pcDiasPago" ColumnName="pcDiasPago" />
+          <ScalarProperty Name="pcMoneda" ColumnName="pcMoneda" />
+          <ScalarProperty Name="pcMonedaDefault" ColumnName="pcMonedaDefault" />
+          <ScalarProperty Name="pcValorALS" ColumnName="pcValorALS" />
+          <ScalarProperty Name="pcValidaCta" ColumnName="pcValidaCta" />
+          <ScalarProperty Name="pcValidaPlazo" ColumnName="pcValidaPlazo" />
+          <ScalarProperty Name="pcValidaPago" ColumnName="pcValidaPago" />
+          <ScalarProperty Name="pcValidaDesem" ColumnName="pcValidaDesem" />
+          <ScalarProperty Name="pnCanal" ColumnName="pnCanal" />
+          <ScalarProperty Name="pcDescEnvio" ColumnName="pcDescEnvio" />
+          <ScalarProperty Name="pcTipoCuenta" ColumnName="pcTipoCuenta" />
+          <ScalarProperty Name="pcNroCuenta" ColumnName="pcNroCuenta" />
+          <ScalarProperty Name="pcFlagMiVivienda" ColumnName="pcFlagMiVivienda" />
+          <ScalarProperty Name="pcFlagValorConstr" ColumnName="pcFlagValorConstr" />
+          <ScalarProperty Name="pcFlagAmpliacion" ColumnName="pcFlagAmpliacion" />
+          <ScalarProperty Name="pcModalidad" ColumnName="pcModalidad" />
+          <ScalarProperty Name="dcCardholder" ColumnName="dcCardholder" />
+          <ScalarProperty Name="dcEsquema" ColumnName="dcEsquema" />
+          <ScalarProperty Name="dcTipoCreditoNegocio" ColumnName="dcTipoCreditoNegocio" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_SEL_CARGO" FunctionName="BD_MICREDITOModel.Store.SP_SEL_CARGO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.SP_SEL_CARGO_Result">
+          <ScalarProperty Name="pcCodCargo" ColumnName="pcCodCargo" />
+          <ScalarProperty Name="dcDescripcion" ColumnName="dcDescripcion" />
+          <ScalarProperty Name="ddFechaIngreso" ColumnName="ddFechaIngreso" />
+          <ScalarProperty Name="ddFechaModificacion" ColumnName="ddFechaModificacion" />
+          <ScalarProperty Name="dcIndicadorRegistroActivo" ColumnName="dcIndicadorRegistroActivo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_SEL_LOCALIDAD" FunctionName="BD_MICREDITOModel.Store.SP_SEL_LOCALIDAD">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.SP_SEL_LOCALIDAD_Result">
+          <ScalarProperty Name="pcCodLocalidad" ColumnName="pcCodLocalidad" />
+          <ScalarProperty Name="dcDescripcion" ColumnName="dcDescripcion" />
+          <ScalarProperty Name="dcCodPostal" ColumnName="dcCodPostal" />
+          <ScalarProperty Name="dcPrefijoTelefonico" ColumnName="dcPrefijoTelefonico" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapSelProductos" FunctionName="BD_MICREDITOModel.Store.usp_MapSelProductos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelProductos_Result">
+          <ScalarProperty Name="pcCodProducto" ColumnName="pcCodProducto" />
+          <ScalarProperty Name="fcCodTipoSolicitud" ColumnName="fcCodTipoSolicitud" />
+          <ScalarProperty Name="dcDescripcion" ColumnName="dcDescripcion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapGetParametros" FunctionName="BD_MICREDITOModel.Store.usp_MapGetParametros">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapGetParametros_Result">
+          <ScalarProperty Name="CodParametro" ColumnName="CodParametro" />
+          <ScalarProperty Name="CodProducto" ColumnName="CodProducto" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="TipoParametro" ColumnName="TipoParametro" />
+          <ScalarProperty Name="TipoValor" ColumnName="TipoValor" />
+          <ScalarProperty Name="ValorMinimo" ColumnName="ValorMinimo" />
+          <ScalarProperty Name="ValorMaximo" ColumnName="ValorMaximo" />
+          <ScalarProperty Name="CodTipoParametro" ColumnName="CodTipoParametro" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapGetTipoParametro" FunctionName="BD_MICREDITOModel.Store.usp_MapGetTipoParametro">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapGetTipoParametro_Result">
+          <ScalarProperty Name="CodTipoParametro" ColumnName="CodTipoParametro" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_MapUpdParametro" FunctionName="BD_MICREDITOModel.Store.usp_MapUpdParametro" />
+    <FunctionImportMapping FunctionImportName="usp_MapSelPerfil" FunctionName="BD_MICREDITOModel.Store.usp_MapSelPerfil">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.usp_MapSelPerfil_Result">
+          <ScalarProperty Name="CodPerfil" ColumnName="CodPerfil" />
+          <ScalarProperty Name="Perfil" ColumnName="Perfil" />
+          <ScalarProperty Name="Nemonico" ColumnName="Nemonico" />
+          <ScalarProperty Name="FechaIngreso" ColumnName="FechaIngreso" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="TasaSolicitud_G" FunctionName="BD_MICREDITOModel.Store.TasaSolicitud_G">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.TasaSolicitud_G_Result">
+          <ScalarProperty Name="pcCodTipoSeguro" ColumnName="pcCodTipoSeguro" />
+          <ScalarProperty Name="dcDescripcion" ColumnName="dcDescripcion" />
+          <ScalarProperty Name="dcCodALS" ColumnName="dcCodALS" />
+          <ScalarProperty Name="dnTasaSeguro" ColumnName="dnTasaSeguro" />
+          <ScalarProperty Name="dcIndicadorTasaRequerida" ColumnName="dcIndicadorTasaRequerida" />
+          <ScalarProperty Name="dnTna" ColumnName="dnTna" />
+          <ScalarProperty Name="dcIndActivo" ColumnName="dcIndActivo" />
+          <ScalarProperty Name="CodTipoCredito" ColumnName="CodTipoCredito" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="TasaSolicitud_U" FunctionName="BD_MICREDITOModel.Store.TasaSolicitud_U" />
+    <FunctionImportMapping FunctionImportName="INDICETRE_Add" FunctionName="BD_MICREDITOModel.Store.INDICETRE_Add" />
+    <FunctionImportMapping FunctionImportName="INDICETRE_Delete" FunctionName="BD_MICREDITOModel.Store.INDICETRE_Delete" />
+    <FunctionImportMapping FunctionImportName="INDICETRE_List" FunctionName="BD_MICREDITOModel.Store.INDICETRE_List">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BD_MICREDITOModel.INDICETRE_List_Result">
+          <ScalarProperty Name="pcIndice" ColumnName="pcIndice" />
+          <ScalarProperty Name="dcIndicadorDesactivada" ColumnName="dcIndicadorDesactivada" />
+          <ScalarProperty Name="ddfFechaCreacion" ColumnName="ddfFechaCreacion" />
+          <ScalarProperty Name="spreadTREE" ColumnName="spreadTREE" />
+          <ScalarProperty Name="tasa" ColumnName="tasa" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="INDICETRE_Update" FunctionName="BD_MICREDITOModel.Store.INDICETRE_Update" />
+  </EntityContainerMapping>
+</Mapping>

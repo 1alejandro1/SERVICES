@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\MICRE_API_TODO_RIESGO.props" />
+</Project>

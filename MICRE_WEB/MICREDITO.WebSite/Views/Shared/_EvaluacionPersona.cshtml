@@ -1,0 +1,470 @@
+﻿@model MICREDITO.Model.EvaluacionCuantitativaPersona
+
+
+<div class="layout-card">
+    <div class="row">
+        <div class="form-group label-content col_2">
+            <label>CLIENTE</label><br />
+            @Model.cabecera.cliente
+        </div>
+        <div class="form-group label-content col_2">
+            <label>ACTIVIDAD DESTINO</label><br />
+            @Model.cabecera.actividadPrincipal
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group label-content col_3">
+            <label>SECTOR</label><br />
+            @Model.cabecera.sector
+        </div>
+        <div class="form-group label-content col_3">
+            <label>TIPO DE SOLICITUD</label><br />
+            @Model.cabecera.tipoSolicitud
+        </div>
+        <div class="form-group label-content col_3">
+            <label>PRODUCTO</label><br />
+            @Model.cabecera.producto
+        </div>
+        @if (!string.IsNullOrEmpty(Model.score))
+        {
+        <div class="form-group label-content col_3">
+            <label>SCORE</label><br />
+            @Model.score
+        </div>
+        }
+    </div>
+</div>
+<div class="layout-card">
+    <div class="row">
+        <div class="col-sm">
+            <div>
+                <label class="bold-label-bcp">@Model.balance.fechaBalance</label>
+                <div>
+                    <table class="table table-bordered">
+                        <tbody>
+                            @foreach (var item in Model.balance.items)
+                            {
+                            <tr>
+                                <td>@item.nombre</td>
+                                <td>@item.valor1.ToString("#,#0.00")</td>
+                                <td>@item.valor2.ToString("#,#0.00")</td>
+                                <td>@item.analisisHorizontal %</td>
+                            </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <label class="bold-label-bcp">ESTADO DE RESULTADOS</label>
+                <div>
+                    <table class="table table-bordered">
+                        <tbody>
+                            @foreach (var item in Model.estadoResultado.items)
+                            {
+                            <tr>
+                                <td>@item.nombre</td>
+                                <td>@item.valor1.ToString("#,#0.00")</td>
+                                <td>@item.analisisHorizontal.ToString("#,#0.00") %</td>
+                            </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <label class="bold-label-bcp">DATOS DEL PRESTAMO</label>
+                <div>
+                    <table class="table table-bordered">
+                        <tbody>
+                            @foreach (var item in Model.prestamo.items)
+                            {
+                                if (item.orden == 1 || item.orden == 6)
+                                {
+                            <tr>
+                                <td>@item.nombre</td>
+                                <td>@item.valor1.ToString("#,#0")</td>
+                            </tr>
+                                }
+                                else
+                                {
+                                    if (item.orden == 3)
+                                    {
+                            <tr>
+                                <td>@item.nombre</td>
+                                <td>@item.valor1.ToString("#,#0.00") %</td>
+                            </tr>
+                                    }
+                                    else
+                                    {
+                            <tr>
+                                <td>@item.nombre</td>
+                                <td>@item.valor1.ToString("#,#0.00")</td>
+                            </tr>
+                                    }
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            @if (Model.tipo == "T")
+            {
+            <div>
+                <label class="bold-label-bcp">INDICADORES FINANCIEROS</label>
+                <div>
+                    <table class="table table-bordered">
+                        <tbody>
+                            @foreach (var item in Model.indicadorFinanciero.items)
+                                {
+                            <tr>
+                                <td>@item.indicadores</td>
+                                @if (item.orden == 1 || item.orden == 5)
+                                        {
+                                            if (item.orden == 1)
+                                            {
+                                <td>@((item.indice * 100).ToString("#,#0.00")) %</td>
+                                            }
+                                            else
+                                            {
+                                <td>@(item.indice.ToString("#,#0.00")) %</td>
+                                            }
+                                        }
+                                        else
+                                        {
+                                <td>@item.indice.ToString("#,#0.00")</td>
+                                        }
+                                <td>@item.puntaje.ToString("#,#0.00")</td>
+                            </tr>
+                                }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            }
+        </div>
+
+        <div class="col-sm">
+            <div>
+                <label class="bold-label-bcp">CALCULO DE MARGEN OPERATIVO UNIDAD FAMILIAR</label>
+                <div>
+                    <table class="table table-bordered">
+                        <thead class="table-primary-bcp">
+                            <tr>
+                                <td rowspan="3">ACTIVIDAD</td>
+                                <td>PRINCIPAL</td>
+                                <td>SEGUNDA</td>
+                                <td>TERCERA</td>
+                                <td>DEPENDIENTE</td>
+                            </tr>
+                            <tr>
+                                <td>@Model.calculoMargenOperativoUnidad.descripcionPrincipal</td>
+                                <td>@Model.calculoMargenOperativoUnidad.descripcionSegunda</td>
+                                <td>@Model.calculoMargenOperativoUnidad.descripcionTercera</td>
+                                <td>@Model.calculoMargenOperativoUnidad.descripcionDependiente</td>
+                            </tr>
+                            <tr>
+                                <td>@Model.calculoMargenOperativoUnidad.tipoCantidadPrincipal</td>
+                                <td>@Model.calculoMargenOperativoUnidad.tipoCantidadSegunda</td>
+                                <td>@Model.calculoMargenOperativoUnidad.tipoCantidadTercera</td>
+                                <td>@Model.calculoMargenOperativoUnidad.tipoCantidadDependiente</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.calculoMargenOperativoUnidad.items)
+                            {
+                                if (item.orden == 6 || item.orden == 7 || item.orden == 8)
+                                {
+                            <tr>
+                                <td>@item.Actividad</td>
+                                <td>@item.principal.ToString("#,#0.00") %</td>
+                                <td>@item.segunda.ToString("#,#0.00") %</td>
+                                <td>@item.tercera.ToString("#,#0.00") %</td>
+                                <td>@item.dependiente.ToString("#,#0.00") %</td>
+                            </tr>
+                                }
+                                else
+                                {
+                            <tr>
+                                <td>@item.Actividad</td>
+                                <td>@item.principal.ToString("#,#0.00")</td>
+                                <td>@item.segunda.ToString("#,#0.00")</td>
+                                <td>@item.tercera.ToString("#,#0.00")</td>
+                                <td>@item.dependiente.ToString("#,#0.00")</td>
+                            </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <label class="bold-label-bcp">VENTAS TOTALES</label>
+                    <div>
+                        <table class="table table-bordered">
+                            <tbody>
+                                @foreach (var item in Model.ventaTotales.items)
+                                {
+                                    if (item.orden == 4)
+                                    {
+                                <tr>
+                                    <td>@item.nombre</td>
+                                    <td>@item.valor.ToString("#,#0.00") %</td>
+                                </tr>
+                                    }
+                                    else
+                                    {
+                                <tr>
+                                    <td>@item.nombre</td>
+                                    <td>@item.valor.ToString("#,#0.00")</td>
+                                </tr>
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <label class="bold-label-bcp">GARANTIAS</label>
+                    <div>
+                        <table class="table table-bordered">
+                            <tbody>
+                                @foreach (var item in Model.garantia.items)
+                                {
+                                <tr>
+                                    <td>@item.nombre</td>
+                                    <td>@item.valor1.ToString("#,#0.00")</td>
+                                    <td>@item.valor2</td>
+                                </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label class="bold-label-bcp">GASTOS DEL NEGOCIO</label>
+                <div>
+                    <table class="table table-bordered">
+                        <thead class="table-primary-bcp">
+                            <tr>
+                                <th>RUBROS</th>
+                                <th>PRINCIPAL</th>
+                                <th>SEGUNDA</th>
+                                <th>TERCERA</th>
+                                <th>DEPENDIENTE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.gastoNegocio.items)
+                            {
+                            <tr>
+                                <td>@item.rubros</td>
+                                <td>@item.principal.ToString("#,#0.00")</td>
+                                <td>@item.segunda.ToString("#,#0.00")</td>
+                                <td>@item.tercera.ToString("#,#0.00")</td>
+                                <td>@item.dependiente.ToString("#,#0.00")</td>
+                            </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div>
+                        <label class="bold-label-bcp">GASTOS DE LA FAMILIA</label>
+                        <div>
+                            <div>
+                                <table class="table table-bordered">
+                                    <thead class="table-primary-bcp">
+                                        <tr>
+                                            <th>RUBROS</th>
+                                            <th>MENSUAL</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model.gastoFamilia.items)
+                                        {
+                                        <tr>
+                                            <td>@item.rubros</td>
+                                            <td>@item.mensual.ToString("#,#0.00")</td>
+                                        </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="bold-label-bcp">DESTINO DEL PRESTAMO</label>
+                        <div>
+                            <div>
+                                <table class="table table-bordered">
+                                    <tbody>
+                                        @foreach (var item in Model.destinoPrestamo.items)
+                                        {
+                                        <tr>
+                                            <td>@item.nombre</td>
+                                            @if (!item.nombre.ToUpper().Contains("TOTAL"))
+                                                {
+                                            <td>@((item.valor1 * 100).ToString("#,#0.00")) %</td>
+                                                }
+                                                else
+                                                {
+                                            <td></td>
+                                                }
+                                            <td>@item.valor2.ToString("#,#0.00")</td>
+                                        </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    @if (Model.tipo == "T")
+                    {
+                    <label class="bold-label-bcp">TAMAÑO DE EMPRESA</label>
+                    <div>
+                        <div>
+                            <table class="table table-bordered">
+                                <tbody>
+                                    @foreach (var item in Model.tamanoEmpresa.items)
+                                        {
+                                            if (item.orden == 4)
+                                            {
+                                    <tr>
+                                        <td>@item.nombre</td>
+                                        <td>@decimal.Parse(item.valor).ToString("#,#0")</td>
+                                    </tr>
+                                            }
+                                            else
+                                            {
+                                    <tr>
+                                        <td>@item.nombre</td>
+                                        <td>@item.valor</td>
+                                    </tr>
+                                            }
+                                        }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+            <div>
+                <label class="bold-label-bcp">CRITERIOS DE APROBACION</label>
+                <div>
+                    <div>
+                        <table class="table table-bordered">
+                            <thead class="table-primary-bcp">
+                                <tr>
+                                    <th>CRITERIOS</th>
+                                    <th>RESULTADO</th>
+                                    <th>LIMITE</th>
+                                    <th>SEMAFORO</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.criterioAprobacion.items)
+                                {
+                                <tr>
+                                    <td>@item.criterio</td>
+                                    @if (item.criterio.Contains("CAPACIDAD DE PAGO") || item.criterio.Contains("GARANTIAS"))
+                                        {
+                                    <td>@item.resultado %</td>
+                                    <td>@(MICREDITO.Common.Util.toDecimal(item.limite) * 100)</td>
+                                        }
+                                        else
+                                        {
+                                            if (item.criterio.Contains("PUNTAJES") || item.criterio.Contains("ENDEUDAMIENTO"))
+                                            {
+                                    <td>@item.resultado %</td>
+                                    <td>@(MICREDITO.Common.Util.toDecimal(item.limite))</td>
+                                            }
+                                            else
+                                            {
+                                    <td>@item.resultado</td>
+                                    <td>@item.limite</td>
+                                            }
+                                        }
+                                    @if (@item.semaforo == "VERDE")
+                                        {
+                                    <td class="semaforo-green">@item.semaforo</td>
+                                        }
+                                    @if (@item.semaforo == "ROJO")
+                                        {
+                                    <td class="semaforo-red">@item.semaforo</td>
+                                        }
+                                </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@if (Model.visitaCampo2 != null)
+{
+<div class="layout-card">
+    <div class="row">
+        <div>
+            <label class="bold-label-bcp">DEUDAS EN EL SISTEMA FINANCIERO</label>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead class="table-primary-bcp">
+                    <tr>
+                        <th>ACREEDOR</th>
+                        <th width="1px">TIPO CREDITO</th>
+                        <th width="1px">MONTO ORIGINAL</th>
+                        <th>TASA</th>
+                        <th width="1px">SALDO PENDIENTE</th>
+                        <th width="1px">PLAZO PENDIENTE</th>
+                        <th>GARANTIA</th>
+                        <th width="1px">CUOTA MENSUAL</th>
+                        <th>DESTINO / COMPRA</th>
+                        <th width="1px">CORTO PLAZO</th>
+                        <th width="1px">LARGO PLAZO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.visitaCampo2.deudaSistemaFinancieros.Count > 0)
+                        {
+                            foreach (var item in Model.visitaCampo2.deudaSistemaFinancieros)
+                            {
+                    <tr>
+                        <td>@item.acreedor</td>
+                        <td align="center">@item.tipoCredito</td>
+                        <td align="right">@item.montoOriginal.ToString("#,#0.00")</td>
+                        <td align="right">@item.tasa %</td>
+                        <td align="right">@item.saldoPendiente.ToString("#,#0.00")</td>
+                        <td align="center">@item.plazoPendiente</td>
+                        <td align="center">@item.garantia</td>
+                        <td align="right">@item.cuotaMensual.ToString("#,#0.00")</td>
+                        <td align="center">@item.destinoCompra</td>
+                        <td align="right">@item.cortoPlazo.ToString("#,#0.00")</td>
+                        <td align="right">@item.largoPlazo.ToString("#,#0.00")</td>
+                    </tr>
+                            }
+                        }
+                        else
+                        {
+                    <tr>
+                        <td colspan="11">
+                            EL CLIENTE NO TIENE DEUDAS.
+                        </td>
+                    </tr>
+                        }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+}

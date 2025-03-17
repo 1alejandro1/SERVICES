@@ -1,0 +1,247 @@
+﻿@using BCP.CROSS.MODELS.Reportes.Analista
+@using Microsoft.AspNetCore.Html
+@using Newtonsoft.Json
+@using Sarc.WebApp.Components.Reportes.Analista
+@using Sarc.WebApp.Models.Reportes
+@using BCP.CROSS.MODELS
+@using Analista = BCP.CROSS.MODELS.Reportes.Analista;
+@model ReportesFormViewModel
+@using Sarc.WebApp.Components
+@using System.Data
+@using Sarc.WebApp.Models.Reportes.Analista
+@{
+    ViewData["Title"] = "Reporte Analista";
+    bool responseExist = false;
+    Meta meta = new Meta();
+    List<Analista.CantidadCasosModel> listCantidadCasos = new List<Analista.CantidadCasosModel>();
+    List<Analista.CasosSolucionadosModel> listCasosSolucionados = new List<Analista.CasosSolucionadosModel>();
+    List<Analista.EspecialidadModel> listEspecialidad = new List<Analista.EspecialidadModel>();
+    var tipo = ViewBag.tipo;
+    var data = "[{}]";
+    var dataJson = Json.Serialize(data);
+    var excelTitle = "Reporte_Analista_" + DateTime.Now.ToString("yyyyMMdd") + ".xlsx";
+
+    if (ViewBag.response != null)
+    {
+        meta = ViewBag.response.Meta;
+        responseExist = true;
+        switch (tipo)
+        {
+            case "CantidadCaso":
+                listCantidadCasos = ViewBag.response.Data;
+                break;
+            case "CasosSolucionados":
+                listCasosSolucionados = ViewBag.response.Data;
+                break;
+            case "Especialidad":
+                listEspecialidad = ViewBag.response.Data;
+                break;
+            default:
+                break;
+        }
+    }
+
+}
+<div class="container">
+    <div class="card bg-dark">
+        <div class="card-body">
+            <form asp-action="Analista" asp-controller="Reportes" method="post" class="row">
+                <div class="col-12">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" asp-for="AnalistaTipo" id="Tipo" checked value="CantidadCaso">
+                        <label class="form-check-label" for="Tipo">
+                            Cantidad de Casos
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" asp-for="AnalistaTipo" id="Tipo" value="CasosSolucionados">
+                        <label class="form-check-label" for="Tipo2">
+                            Cantidad de Casos Solucionados
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" asp-for="AnalistaTipo" id="Tipo" value="Especialidad">
+                        <label class="form-check-label" for="Tipo2">
+                            Especialidad
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 my-2">
+                    <label for="FechaIni" class="form-label">Fecha de inicio</label>
+                    <input type="date" class="form-control" asp-for="FechaIni" id="FechaIni" placeholder="name@example.com">
+                </div>
+                <div class="col-12 col-md-4  my-2">
+                    <label for="FechaFin" class="form-label">Fecha Final</label>
+                    <input type="date" class="form-control" asp-for="FechaFin" id="FechaFin" placeholder="name@example.com">
+                </div>
+                <div class="col-12 mt-2">
+                    <button type="submit" class="btn btn-primary mb-3">Generar Reporte</button>
+                </div>
+            </form>
+            @if (responseExist)
+            {
+                @if (ViewBag.response.Data != null)
+                {
+                    switch (tipo)
+                    {
+                        case "CantidadCaso":
+                            dataJson = CreateCantidadCasoTable(listCantidadCasos);
+                            <component type="typeof(CantidadCasosTableComponent)" render-mode="ServerPrerendered" param-Data='listCantidadCasos' />
+                            break;
+                        case "CasosSolucionados":
+                            dataJson = CreateCasosSolucionadosTable(listCasosSolucionados);
+                            <component type="typeof(CasosSolucionadosTableComponent)" render-mode="ServerPrerendered" param-Data='listCasosSolucionados' />
+                            break;
+                        case "Especialidad":
+                            dataJson = CreateEspecialidadTable(listEspecialidad);
+                            <component type="typeof(EspecialidadTableComponent)" render-mode="ServerPrerendered" param-Data='listEspecialidad' />
+
+                            break;
+                        default:
+                            break;
+                    }
+                    <button type="button" id="downloadexcel" class="btn btn-primary">Descargar Excel</button>
+                }
+                else
+                {
+                    <div class="alert alert-warning" role="alert">
+                        @meta.Msj
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+@{
+    IHtmlContent CreateCantidadCasoTable(List<CantidadCasosModel> data)
+    {
+        List<CantidadCasosViewModel> _dataTable = new List<CantidadCasosViewModel>();
+        foreach (CantidadCasosModel item in data)
+        {
+            if (_dataTable.Count < 0)
+            {
+                _dataTable.Add(
+                    new CantidadCasosViewModel(
+                        nombre: item.Nombre,
+                        pendientes: 0,
+                        pendientesvencidos: 0,
+                        solucionados: 0,
+                        total: 0
+                    )
+                );
+            }
+            else
+            {
+                bool flag = true;
+                foreach (CantidadCasosViewModel item2 in _dataTable)
+                {
+                    if (item2.Nombre == item.Nombre) flag = false;
+                }
+                if (flag)
+                {
+                    _dataTable.Add(
+                    new CantidadCasosViewModel(
+                        nombre: item.Nombre,
+                        pendientes: 0,
+                        pendientesvencidos: 0,
+                        solucionados: 0,
+                        total: 0
+                    )
+                );
+                }
+            }
+        }
+        foreach (CantidadCasosModel item in data)
+        {
+            foreach (CantidadCasosViewModel item2 in _dataTable)
+            {
+                if (item.Nombre == item2.Nombre)
+                {
+                    switch (item.Tipo)
+                    {
+                        case "PENDIENTES":
+                            item2.Pendientes = item.Cantidad;
+                            break;
+                        case "PENDIENTES VENCIDOS":
+                            item2.PendientesVencidos = item.Cantidad;
+                            break;
+                        case "SOLUCIONADOS A TIEMPO":
+                            item2.Solucionados = item.Cantidad;
+                            break;
+                        case "TOTAL":
+                            item2.Total = item.Cantidad;
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+        }
+        CantidadCasosViewModel[] dt=_dataTable.ToArray();
+        return Json.Serialize(dt);
+    }
+    IHtmlContent CreateEspecialidadTable(List<EspecialidadModel> Data)
+    {
+        List<EspecialidadViewModel> _dataTable = new List<EspecialidadViewModel>();
+        foreach (EspecialidadModel item in Data)
+        {
+            bool flag = true;
+            foreach (EspecialidadViewModel item2 in _dataTable)
+            {
+                if (item2.Nombre == item.Nombre) flag = false;
+            }
+            if (flag)
+            {
+                _dataTable.Add(
+                new EspecialidadViewModel(
+                    nombre: item.Nombre
+                )
+            );
+            }
+        }
+        foreach (EspecialidadModel item in Data)
+        {
+            foreach (EspecialidadViewModel item2 in _dataTable)
+            {
+                if (item.Nombre == item2.Nombre)
+                {
+                    switch (item.Especialidad)
+                    {
+                        case "ATM DINERO NO DISPENSADO":
+                            item2.ATM = item.Cantidad;
+                            break;
+                        case "CERTIFICACIONES":
+                            item2.Certificaciones = item.Cantidad;
+                            break;
+                        case "COMPLEJO":
+                            item2.Complejo = item.Cantidad;
+                            break;
+                        case "OTRAS SOL":
+                            item2.OtrasSol = item.Cantidad;
+                            break;
+                        case "RECLAMOS/CONSULTAS - Generales":
+                            item2.Reclamos = item.Cantidad;
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+        }
+        return Json.Serialize(_dataTable.ToArray());
+    }
+    IHtmlContent CreateCasosSolucionadosTable(List<CasosSolucionadosModel> data)
+    {
+        return Json.Serialize(data.ToArray());
+    }
+}
+
+@section scripts{
+<script type="text/javascript">
+    var data=@dataJson;
+    var title="@excelTitle";
+        $("#downloadexcel").click(function(){
+                GenerarExcel(data,title);
+        });
+</script>
+}

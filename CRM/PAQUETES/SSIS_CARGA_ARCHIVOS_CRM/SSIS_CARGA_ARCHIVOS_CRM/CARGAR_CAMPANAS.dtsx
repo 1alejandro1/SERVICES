@@ -1,0 +1,2044 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/11/2024 5:37:19 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="W204SISF35030"
+  DTS:CreatorName="BTBNET\T25208"
+  DTS:DTSID="{8B61071C-1672-41C4-B001-FEAC599DE50B}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5556.0"
+  DTS:LocaleID="16394"
+  DTS:ObjectName="CARGAR_CAMPANAS"
+  DTS:PackageType="5"
+  DTS:VersionBuild="277"
+  DTS:VersionGUID="{8632AE35-1068-492E-8EE7-BD11CFABEC58}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[20240611_1724.log]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{7B01B8CA-30FC-4B74-8150-D1E30641867A}"
+      DTS:ObjectName="20240611_1724.log">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::v_rutalog] +  @[User::v_logname]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="1"
+          DTS:ConnectionString="D:\BCB_Logs\Paquetes\CRM\CARGAR_CAMPANAS\LOGS\20240626_1206.log" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ConexionArchivoCampanias]"
+      DTS:CreationName="FLATFILE"
+      DTS:Description="Archivos CAMPANIAS de CRM"
+      DTS:DTSID="{EC00F688-838D-45BF-9467-348C5DEDB12C}"
+      DTS:ObjectName="ConexionArchivoCampanias">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="RaggedRight"
+          DTS:LocaleID="16394"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter="_x000D__x000A_"
+          DTS:DataRowsToSkip="1"
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="D:\BCB_Logs\Paquetes\CRM\CARGAR_CAMPANAS\ARCHIVOS\CAMPANAS.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="81"
+              DTS:MaximumWidth="80"
+              DTS:DataType="130"
+              DTS:ObjectName="COD_CAMPANA"
+              DTS:DTSID="{057FC85E-A923-415E-A74E-2340780E3850}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="21"
+              DTS:MaximumWidth="21"
+              DTS:DataType="130"
+              DTS:ObjectName="TIPO"
+              DTS:DTSID="{77616E8C-38A3-4413-9A90-50D4C26AD1D2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="181"
+              DTS:MaximumWidth="181"
+              DTS:DataType="130"
+              DTS:ObjectName="PRODUCTO"
+              DTS:DTSID="{2889709A-9E67-4797-AEBA-867EB1FBD0C7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="24"
+              DTS:MaximumWidth="24"
+              DTS:DataType="129"
+              DTS:ObjectName="FECHA_INICIO"
+              DTS:DTSID="{99372408-15D3-4662-8B31-3A486C44FE8A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="24"
+              DTS:MaximumWidth="24"
+              DTS:DataType="129"
+              DTS:ObjectName="FECHA_FIN"
+              DTS:DTSID="{D2979015-2E71-42A5-912B-202890548BB5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="257"
+              DTS:MaximumWidth="257"
+              DTS:DataType="130"
+              DTS:ObjectName="DESCRIPCION"
+              DTS:DTSID="{98B3F256-8F40-4A86-A341-BA7E751B8A70}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="7"
+              DTS:MaximumWidth="7"
+              DTS:DataType="129"
+              DTS:ObjectName="ESTADO"
+              DTS:DTSID="{F3F236A3-4C57-41F0-927A-07574F8FA649}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA_CREACION"
+              DTS:DTSID="{F227DDD0-B002-444D-AD04-AF4B140351CD}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:LogProviders>
+    <DTS:LogProvider
+      DTS:ConfigString="20240611_1724.log"
+      DTS:CreationName="Microsoft.LogProviderTextFile"
+      DTS:Description="Writes log entries for events to a CSV file"
+      DTS:DTSID="{309A47D6-CFF5-482C-9F17-6AC27431BB52}"
+      DTS:ObjectName="SSIS log provider for Text files">
+      <DTS:ObjectData>
+        <InnerObject />
+      </DTS:ObjectData>
+    </DTS:LogProvider>
+  </DTS:LogProviders>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="3"
+      DTS:DTSID="{43BBF5E6-DFF1-4FA7-9EA8-3510BB5598A1}"
+      DTS:ObjectName="P_Depuracion_Logs">
+      <DTS:Property
+        DTS:DataType="3"
+        DTS:Name="ParameterValue">8</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{88831914-3C00-45FC-AEA9-3CECC2811653}"
+      DTS:ObjectName="P_mailError">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">jllanos@bcp.com.bo</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{A840D5D9-0F16-4EF0-A48E-5BD3AF3B11F2}"
+      DTS:ObjectName="P_mailExito">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">jllanos@bcp.com.bo</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{62126DB5-081D-4484-9FCE-AAC4BB2CE655}"
+      DTS:ObjectName="P_mailRemitente">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">dtoro@bcp.com.bo</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{EB851DAA-A7DC-4549-B489-9EFBF097E03A}"
+      DTS:ObjectName="P_nameBaseCRMEmail">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">BD_CRMFUENTE</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{53065C51-2161-4809-854E-DB939940EDF2}"
+      DTS:ObjectName="P_nameTable_Email">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">dbo.CAMPANIA</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{2FCA7603-8293-4A18-B468-CB5E9D2048EA}"
+      DTS:ObjectName="P_rutaArchivo">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">D:\BCB_Logs\Paquetes\CRM\CARGAR_CAMPANAS\ARCHIVOS\CAMPANAS.txt</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{0378EB02-238E-4FCE-85E3-72D79F496078}"
+      DTS:ObjectName="P_rutaArchivoDestino">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">D:\BCB_Logs\Paquetes\CRM\CARGAR_CAMPANAS\BACKUP\</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{CB3831F5-978A-494F-9FA2-A81ADEDC8D8B}"
+      DTS:ObjectName="P_rutalog">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">D:\BCB_Logs\Paquetes\CRM\CARGAR_CAMPANAS\LOGS\</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{3663ED39-6833-4DA3-A444-899406B9ED26}"
+      DTS:ObjectName="P_ServSMTP">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">btbexc00.bancred.com.bo</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{9AEEED53-8142-4EC5-BA91-A8255E72F565}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="GETDATE()"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_date">
+      <DTS:VariableValue
+        DTS:DataType="7">6/26/2024 12:06:28 PM</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{10BECA71-3BF8-4F90-A8C2-CAEAEC36350D}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_Depuracion_Logs]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_Depuracion_Logs">
+      <DTS:VariableValue
+        DTS:DataType="3">8</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{66F6A623-E9CA-4727-8771-86ED7025887C}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_Error">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{1898928C-EB4E-450D-966C-9FE8173C3393}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="SUBSTRING(((REPLACE((REPLACE((REPLACE( (DT_WSTR, 50) (DT_DBTIMESTAMP) GETDATE(),&quot;-&quot;,&quot;&quot;)),&quot; &quot;,&quot;_&quot;)),&quot;:&quot;,&quot;&quot;))),1,13)+&quot;.log&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_logname">
+      <DTS:VariableValue
+        DTS:DataType="8">20240626_1206.log</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{AB55AE12-30EB-48AF-A1D5-6F7C178260EA}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_mailError]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_mailError">
+      <DTS:VariableValue
+        DTS:DataType="8">jllanos@bcp.com.bo</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{93C3FE46-7A89-4431-8F36-8159C805A6DF}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_mailExito]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_mailExito">
+      <DTS:VariableValue
+        DTS:DataType="8">jllanos@bcp.com.bo</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{B0923314-68F8-4BA9-953D-A2E337D7CE89}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_mailRemitente]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_mailRemitente">
+      <DTS:VariableValue
+        DTS:DataType="8">dtoro@bcp.com.bo</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{58045FBF-EBBF-45F2-BF06-8E9359FB6050}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_NameBaseCRMEmail]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_nameBaseCRMEmail">
+      <DTS:VariableValue
+        DTS:DataType="8">BD_CRMFUENTE</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{420A74B7-5241-4AB5-B0A3-B9A1DDFF8C92}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_nameTable_Email]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_nameTable_Email">
+      <DTS:VariableValue
+        DTS:DataType="8">dbo.CAMPANIA</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{30DDA6AD-450B-448D-844E-7C3E9B6CD89E}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_PackageName">
+      <DTS:VariableValue
+        DTS:DataType="8">CARGAR_CAMPANIAS</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{8370ECA0-5BAD-4FD1-B9C7-42C414EB478C}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_rutaArchivo]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_rutaArchivo">
+      <DTS:VariableValue
+        DTS:DataType="8">D:\BCB_Logs\Paquetes\CRM\CARGAR_CAMPANAS\ARCHIVOS\CAMPANAS.txt</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{FCE7EBA2-598E-49E0-A3C9-0B71D139CB4A}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_rutaArchivoDestino]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_rutaArchivoDestino">
+      <DTS:VariableValue
+        DTS:DataType="8">D:\BCB_Logs\Paquetes\CRM\CARGAR_CAMPANAS\BACKUP\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{9F599CA4-3238-489B-A6D3-2A6F48771604}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_rutalog]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_rutalog">
+      <DTS:VariableValue
+        DTS:DataType="8">D:\BCB_Logs\Paquetes\CRM\CARGAR_CAMPANAS\LOGS\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{97AA7A81-25A2-413F-871D-9C418C654191}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_ServSMTP]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_ServSMTP">
+      <DTS:VariableValue
+        DTS:DataType="8">btbexc00.bancred.com.bo</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{0507DD81-763C-4088-958A-A39E123400E3}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_total">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:LoggingOptions
+    DTS:FilterKind="0"
+    DTS:LoggingMode="1">
+    <DTS:Property
+      DTS:DataType="8"
+      DTS:Name="EventFilter">3,7,OnError,10,OnProgress,12,OnTaskFailed</DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnError"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnProgress"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnTaskFailed"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:SelectedLogProviders>
+      <DTS:SelectedLogProvider
+        DTS:InstanceID="{309A47D6-CFF5-482C-9F17-6AC27431BB52}" />
+    </DTS:SelectedLogProviders>
+  </DTS:LoggingOptions>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Correo de Error de Carga"
+      DTS:CreationName="Microsoft.SendMailTask"
+      DTS:Description="Se envia cuando ocurre algun error en algun proceso del paquete"
+      DTS:DTSID="{1FA6B586-01CE-4367-AF6C-59AE6097637D}"
+      DTS:ExecutableType="Microsoft.SendMailTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Correo de Error de Carga"
+      DTS:TaskContact="Send Mail Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:PropertyExpression
+        DTS:Name="FromLine">@[User::v_mailRemitente]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="MessageSource">"Señores,\n\nha ocurrido un error en la ejecución del paquete: "+ @[User::v_PackageName]  + " del Servidor " + @[System::MachineName] + ".\n\n\tFecha y hora de ejecución:\t\t "+(DT_WSTR, 50) (DT_DATE) @[System::StartTime] +"\n\nError en el proceso de carga de datos del archivo " + @[User::v_rutaArchivo] +"\n\nPara mayor detalle revise el archivo LOG [" +@[User::v_rutalog] +"\\"+ @[User::v_logname]  +"]\n\nSaludos.\n\nPRODUCCION DE SISTEMAS\nBanco de Credito de Bolivia S.A."</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="Subject">"Error carga de archivo a base de datos del Paquete " +    @[User::v_PackageName]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="ToLine">@[User::v_mailError]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <SendMailTask:SendMailTaskData
+          SendMailTask:SMTPServer="{4E1BF81E-F61B-41F7-9847-ECE05252C596}"
+          SendMailTask:From="dtoro@bcp.com.bo"
+          SendMailTask:To="jllanos@bcp.com.bo"
+          SendMailTask:Subject="Error carga de archivo a base de datos del Paquete CARGAR_CAMPANIAS"
+          SendMailTask:Priority="High"
+          SendMailTask:MessageSource="Señores,&#xA;&#xA;ha ocurrido un error en la ejecución del paquete: CARGAR_CAMPANIAS del Servidor W204SISF35002.&#xA;&#xA;&#x9;Fecha y hora de ejecución:&#x9;&#x9; 26/06/2024 11:56:47 a.m.&#xA;&#xA;Error en el proceso de carga de datos del archivo D:\BCB_Logs\Paquetes\CRM\CARGAR_CAMPANAS\ARCHIVOS\CAMPANAS.txt&#xA;&#xA;Para mayor detalle revise el archivo LOG [D:\BCB_Logs\Paquetes\CRM\CARGAR_CAMPANAS\LOGS\\20240626_1206.log]&#xA;&#xA;Saludos.&#xA;&#xA;PRODUCCION DE SISTEMAS&#xA;Banco de Credito de Bolivia S.A." xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Correo de Error de Limpieza de Logs"
+      DTS:CreationName="Microsoft.SendMailTask"
+      DTS:DelayValidation="True"
+      DTS:Description="Se envia cuando ocurre algun error en algun proceso del paquete"
+      DTS:DTSID="{5F045F8F-C8DD-4FDA-A3FB-55C61AD1910C}"
+      DTS:ExecutableType="Microsoft.SendMailTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Correo de Error de Limpieza de Logs"
+      DTS:TaskContact="Send Mail Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="2">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:PropertyExpression
+        DTS:Name="FromLine">@[User::v_mailRemitente]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="MessageSource">"Señores,\n\nha ocurrido un error en la ejecución del paquete: "+ @[User::v_PackageName]  + " del Servidor " + @[System::MachineName] + ".\n\n\tFecha y hora de ejecución:\t\t "+(DT_WSTR, 50) (DT_DATE) @[System::StartTime] +"\n\nPara mayor detalle revise el archivo LOG [" +@[User::v_rutalog] +"\\"+ @[User::v_logname]  +"]\n\nSaludos.\n\nPRODUCCION DE SISTEMAS\nBanco de Credito de Bolivia S.A."</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="Subject">"Error en depuracion de Logs del Paquete " +    @[User::v_PackageName]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="ToLine">@[User::v_mailError]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <SendMailTask:SendMailTaskData
+          SendMailTask:SMTPServer="{4E1BF81E-F61B-41F7-9847-ECE05252C596}"
+          SendMailTask:From="dtoro@bcp.com.bo"
+          SendMailTask:To="jllanos@bcp.com.bo"
+          SendMailTask:Subject="Error en depuracion de Logs del Paquete CARGAR_CAMPANIAS"
+          SendMailTask:Priority="High"
+          SendMailTask:MessageSource="Señores,&#xA;&#xA;ha ocurrido un error en la ejecución del paquete: CARGAR_CAMPANIAS del Servidor W204SISF35002.&#xA;&#xA;&#x9;Fecha y hora de ejecución:&#x9;&#x9; 26/06/2024 11:56:47 a.m.&#xA;&#xA;Para mayor detalle revise el archivo LOG [D:\BCB_Logs\Paquetes\CRM\CARGAR_CAMPANAS\LOGS\\20240626_1206.log]&#xA;&#xA;Saludos.&#xA;&#xA;PRODUCCION DE SISTEMAS&#xA;Banco de Credito de Bolivia S.A." xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Correo de Error de Validacion de archivo"
+      DTS:CreationName="Microsoft.SendMailTask"
+      DTS:Description="Se envia cuando ocurre algun error en algun proceso del paquete"
+      DTS:DTSID="{C05FD805-5565-42F8-8D0D-B0D284DA4942}"
+      DTS:ExecutableType="Microsoft.SendMailTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Correo de Error de Validacion de archivo"
+      DTS:TaskContact="Send Mail Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="3">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:PropertyExpression
+        DTS:Name="FromLine">@[User::v_mailRemitente]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="MessageSource">"Señores,\n\nha ocurrido un error en la ejecución del paquete: "+ @[User::v_PackageName]  + " del Servidor " + @[System::MachineName] + ".\n\n\tFecha y hora de ejecución:\t\t "+(DT_WSTR, 50) (DT_DATE) @[System::StartTime] +"\n\nError en el proceso de validar la existencia del Archivo" + @[User::v_rutaArchivo]  + "\n\nPara mayor detalle revise el archivo LOG [" +@[User::v_rutalog] +"\\"+ @[User::v_logname]  +"]\n\nSaludos.\n\nPRODUCCION DE SISTEMAS\nBanco de Credito de Bolivia S.A."</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="Subject">"Error en el proceso de validar la existencia del archivo del Paquete " +    @[User::v_PackageName]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="ToLine">@[User::v_mailError]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <SendMailTask:SendMailTaskData
+          SendMailTask:SMTPServer="{4E1BF81E-F61B-41F7-9847-ECE05252C596}"
+          SendMailTask:From="dtoro@bcp.com.bo"
+          SendMailTask:To="jllanos@bcp.com.bo"
+          SendMailTask:Subject="Error en el proceso de validar la existencia del archivo del Paquete CARGAR_CAMPANIAS"
+          SendMailTask:Priority="High"
+          SendMailTask:MessageSource="Señores,&#xA;&#xA;ha ocurrido un error en la ejecución del paquete: CARGAR_CAMPANIAS del Servidor W204SISF35002.&#xA;&#xA;&#x9;Fecha y hora de ejecución:&#x9;&#x9; 26/06/2024 11:56:47 a.m.&#xA;&#xA;Error en el proceso de validar la existencia del ArchivoD:\BCB_Logs\Paquetes\CRM\CARGAR_CAMPANAS\ARCHIVOS\CAMPANAS.txt&#xA;&#xA;Para mayor detalle revise el archivo LOG [D:\BCB_Logs\Paquetes\CRM\CARGAR_CAMPANAS\LOGS\\20240626_1206.log]&#xA;&#xA;Saludos.&#xA;&#xA;PRODUCCION DE SISTEMAS&#xA;Banco de Credito de Bolivia S.A." xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Correo de Finalización Satisfactoria"
+      DTS:CreationName="Microsoft.SendMailTask"
+      DTS:Description="Se envia cuando ocurre algun error en algun proceso del paquete"
+      DTS:DTSID="{51DC5E87-8E66-4F4A-A889-EB48FEEF2913}"
+      DTS:ExecutableType="Microsoft.SendMailTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Correo de Finalización Satisfactoria"
+      DTS:TaskContact="Send Mail Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="4">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:PropertyExpression
+        DTS:Name="FromLine">@[User::v_mailRemitente]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="MessageSource">"NOTIFICACION DE EJECUCION 
+
+La ejecucion del paquete "+ @[User::v_PackageName]  + " fue satisfactoria
+
+"+"Fecha Inicio Ejecucion: "+ (DT_WSTR, 50) (DT_DATE) @[System::StartTime] +
+"
+
+Fecha Fin Ejecucion: "+ (DT_WSTR, 50) (DT_DATE) GETDATE()+
+" 
+Cantidad de registros insertados " + (DT_WSTR, 250) @[User::v_total] + " en la tabla: " + @[User::v_nameTable_Email]   +  
+"
+
+Se proceso la Carga Automaticamente desde el siguiente Servidor:
+
+" + @[System::MachineName]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="Subject">"Ejecución Satisfactoria del paquete " +   @[User::v_PackageName]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="ToLine">@[User::v_mailError]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <SendMailTask:SendMailTaskData
+          SendMailTask:SMTPServer="{4E1BF81E-F61B-41F7-9847-ECE05252C596}"
+          SendMailTask:From="dtoro@bcp.com.bo"
+          SendMailTask:To="jllanos@bcp.com.bo"
+          SendMailTask:Subject="Ejecución Satisfactoria del paquete CARGAR_CAMPANIAS"
+          SendMailTask:Priority="High"
+          SendMailTask:MessageSource="NOTIFICACION DE EJECUCION &#xA;&#xA;La ejecucion del paquete CARGAR_CAMPANIAS fue satisfactoria&#xA;&#xA;Fecha Inicio Ejecucion: 26/06/2024 11:56:47 a.m.&#xA;&#xA;Fecha Fin Ejecucion: 26/06/2024 12:06:28 p.m. &#xA;Cantidad de registros insertados 0 en la tabla: dbo.CAMPANIA&#xA;&#xA;Se proceso la Carga Automaticamente desde el siguiente Servidor:&#xA;&#xA;W204SISF35002" xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Correo de Inexistencia de Archivo"
+      DTS:CreationName="Microsoft.SendMailTask"
+      DTS:Description="Se envia cuando ocurre algun error en algun proceso del paquete"
+      DTS:DTSID="{D46959A5-BDEF-40A2-B6B2-FB8B5D7D6710}"
+      DTS:ExecutableType="Microsoft.SendMailTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Correo de Inexistencia de Archivo"
+      DTS:TaskContact="Send Mail Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:PropertyExpression
+        DTS:Name="FromLine">@[User::v_mailRemitente]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="MessageSource">"Señores,\n\nha ocurrido un error al validar la existencia del archivo " + @[User::v_rutaArchivo]  + " del paquete: "+ @[User::v_PackageName]  + " del Servidor " + @[System::MachineName] + ".\n\n\tFecha y hora de ejecución:\t\t "+(DT_WSTR, 50) (DT_DATE) @[System::StartTime] +"\n\nValidar que el archivo se encuentre en la ruta especificada o que se tenga permisos de accesos."+"\n\nPara mayor detalle revise el archivo LOG [" +@[User::v_rutalog] +"\\"+ @[User::v_logname]  +"]\n\nSaludos.\n\nPRODUCCION DE SISTEMAS\nBanco de Credito de Bolivia S.A."</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="Subject">"Error al validar la existencia del archivo del Paquete " +    @[User::v_PackageName]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="ToLine">@[User::v_mailError]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <SendMailTask:SendMailTaskData
+          SendMailTask:SMTPServer="{4E1BF81E-F61B-41F7-9847-ECE05252C596}"
+          SendMailTask:From="dtoro@bcp.com.bo"
+          SendMailTask:To="jllanos@bcp.com.bo"
+          SendMailTask:Subject="Error al validar la existencia del archivo del Paquete CARGAR_CAMPANIAS"
+          SendMailTask:Priority="High"
+          SendMailTask:MessageSource="Señores,&#xA;&#xA;ha ocurrido un error al validar la existencia del archivo D:\BCB_Logs\Paquetes\CRM\CARGAR_CAMPANAS\ARCHIVOS\CAMPANAS.txt del paquete: CARGAR_CAMPANIAS del Servidor W204SISF35002.&#xA;&#xA;&#x9;Fecha y hora de ejecución:&#x9;&#x9; 26/06/2024 11:56:47 a.m.&#xA;&#xA;Validar que el archivo se encuentre en la ruta especificada o que se tenga permisos de accesos.&#xA;&#xA;Para mayor detalle revise el archivo LOG [D:\BCB_Logs\Paquetes\CRM\CARGAR_CAMPANAS\LOGS\\20240626_1206.log]&#xA;&#xA;Saludos.&#xA;&#xA;PRODUCCION DE SISTEMAS&#xA;Banco de Credito de Bolivia S.A." xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Depura Logs"
+      DTS:CreationName="Microsoft.ScriptTask"
+      DTS:Description="Script Task"
+      DTS:DTSID="{4F1B68B1-81AF-4F83-90F7-6C597D8AE848}"
+      DTS:ExecutableType="Microsoft.ScriptTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Depura Logs"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:ObjectData>
+        <ScriptProject
+          Name="ST_80945a2013684e1da223ec3432a32372"
+          VSTAMajorVersion="14"
+          VSTAMinorVersion="0"
+          Language="VisualBasic" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Sequence Container Carga data"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{F27DA860-9C43-4A90-807B-D91F497435FF}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Sequence Container Carga data">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container Carga data\Cargar Data"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{6BE9F4C5-E46C-45F1-9C1E-12C2781F0270}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Cargar Data"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Sequence Container Carga data\Cargar Data\Data Conversion"
+                  componentClassID="Microsoft.DataConvert"
+                  contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Data Conversion"
+                  name="Data Conversion"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container Carga data\Cargar Data\Data Conversion.Inputs[Data Conversion Input]"
+                      name="Data Conversion Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\Data Conversion.Inputs[Data Conversion Input].Columns[DESCRIPCION]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="DESCRIPCION"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[DESCRIPCION]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\Data Conversion.Inputs[Data Conversion Input].Columns[COD_CAMPANA]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="COD_CAMPANA"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[COD_CAMPANA]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\Data Conversion.Inputs[Data Conversion Input].Columns[TIPO]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="TIPO"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[TIPO]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\Data Conversion.Inputs[Data Conversion Input].Columns[PRODUCTO]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="PRODUCTO"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[PRODUCTO]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container Carga data\Cargar Data\Data Conversion.Outputs[Data Conversion Output]"
+                      exclusionGroup="1"
+                      name="Data Conversion Output"
+                      synchronousInputId="Package\Sequence Container Carga data\Cargar Data\Data Conversion.Inputs[Data Conversion Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DESCRIPCION]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DESCRIPCION]"
+                          name="Copy of DESCRIPCION"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[DESCRIPCION]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_CAMPANA]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_CAMPANA]"
+                          name="Copy of COD_CAMPANA"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[COD_CAMPANA]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of TIPO]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="21"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of TIPO]"
+                          name="Copy of TIPO"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[TIPO]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PRODUCTO]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="181"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PRODUCTO]"
+                          name="Copy of PRODUCTO"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[PRODUCTO]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Sequence Container Carga data\Cargar Data\Data Conversion.Outputs[Data Conversion Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Data Conversion Error Output"
+                      synchronousInputId="Package\Sequence Container Carga data\Cargar Data\Data Conversion.Inputs[Data Conversion Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="16394"
+                  name="File Source CAMPANAS"
+                  usesDispositions="true"
+                  validateExternalMetadata="False"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[ConexionArchivoCampanias]"
+                      connectionManagerRefId="Package.ConnectionManagers[ConexionArchivoCampanias]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[FECHA_CREACION]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].ExternalColumns[FECHA_CREACION]"
+                          length="50"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[FECHA_CREACION]"
+                          name="FECHA_CREACION"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[COD_CAMPANA]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].ExternalColumns[COD_CAMPANA]"
+                          length="50"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[COD_CAMPANA]"
+                          name="COD_CAMPANA"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[TIPO]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].ExternalColumns[TIPO]"
+                          length="50"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[TIPO]"
+                          name="TIPO"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[PRODUCTO]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].ExternalColumns[PRODUCTO]"
+                          length="50"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[PRODUCTO]"
+                          name="PRODUCTO"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[FECHA_INICIO]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].ExternalColumns[FECHA_INICIO]"
+                          length="24"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[FECHA_INICIO]"
+                          name="FECHA_INICIO"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[FECHA_FIN]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].ExternalColumns[FECHA_FIN]"
+                          length="24"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[FECHA_FIN]"
+                          name="FECHA_FIN"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[DESCRIPCION]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].ExternalColumns[DESCRIPCION]"
+                          length="50"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[DESCRIPCION]"
+                          name="DESCRIPCION"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[ESTADO]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].ExternalColumns[ESTADO]"
+                          length="7"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[ESTADO]"
+                          name="ESTADO"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].ExternalColumns[FECHA_CREACION]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="FECHA_CREACION" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].ExternalColumns[COD_CAMPANA]"
+                          dataType="wstr"
+                          length="80"
+                          name="COD_CAMPANA" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].ExternalColumns[TIPO]"
+                          dataType="wstr"
+                          length="21"
+                          name="TIPO" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].ExternalColumns[PRODUCTO]"
+                          dataType="wstr"
+                          length="181"
+                          name="PRODUCTO" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].ExternalColumns[FECHA_INICIO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="24"
+                          name="FECHA_INICIO" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].ExternalColumns[FECHA_FIN]"
+                          codePage="1252"
+                          dataType="str"
+                          length="24"
+                          name="FECHA_FIN" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].ExternalColumns[DESCRIPCION]"
+                          dataType="wstr"
+                          length="257"
+                          name="DESCRIPCION" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].ExternalColumns[ESTADO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="7"
+                          name="ESTADO" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Command"
+                  componentClassID="Microsoft.OLEDBCommand"
+                  contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+                  description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
+                  name="OLE DB Command"
+                  usesDispositions="true"
+                  version="2">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      expressionType="Notify"
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">EXEC sp_DeleteCampania ?</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Command.Connections[OleDbConnection]"
+                      connectionManagerID="{969B7C30-074F-4883-804F-2BF3AC6E1FB3}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[BD_CRMFUENTE.UsrMicredito]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Command.Inputs[OLE DB Command Input]"
+                      errorOrTruncationOperation="Command Execution"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Command Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Command.Inputs[OLE DB Command Input].Columns[COD_CAMPANA]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="COD_CAMPANA"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[@IdCamp]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[COD_CAMPANA]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[@IdCamp]"
+                          codePage="1252"
+                          dataType="str"
+                          length="80"
+                          name="@IdCamp">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">65</property>
+                          </properties>
+                        </externalMetadataColumn>
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Command.Outputs[OLE DB Command Output]"
+                      exclusionGroup="1"
+                      name="OLE DB Command Output"
+                      synchronousInputId="Package\Sequence Container Carga data\Cargar Data\OLE DB Command.Inputs[OLE DB Command Input]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Command.Outputs[OLE DB Command Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Command Error Output"
+                      synchronousInputId="Package\Sequence Container Carga data\Cargar Data\OLE DB Command.Inputs[OLE DB Command Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[CAMPANIA]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="{969B7C30-074F-4883-804F-2BF3AC6E1FB3}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[BD_CRMFUENTE.UsrMicredito]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TIPO]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="TIPO"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Tipo]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[TIPO]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PRODUCTO]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="PRODUCTO"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Producto]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[PRODUCTO]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DESCRIPCION]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="DESCRIPCION"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Descripcion]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[DESCRIPCION]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ESTADO]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="7"
+                          cachedName="ESTADO"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Estado]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[ESTADO]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[COD_CAMPANA]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="COD_CAMPANA"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdCamp]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[COD_CAMPANA]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FECHA_INICIO]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="24"
+                          cachedName="FECHA_INICIO"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FechaInicio]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[FECHA_INICIO]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FECHA_FIN]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="24"
+                          cachedName="FECHA_FIN"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FechaFin]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output].Columns[FECHA_FIN]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Id]"
+                          dataType="i4"
+                          name="Id" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdCamp]"
+                          codePage="1252"
+                          dataType="str"
+                          length="80"
+                          name="IdCamp" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Tipo]"
+                          dataType="wstr"
+                          length="50"
+                          name="Tipo" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Producto]"
+                          dataType="wstr"
+                          length="180"
+                          name="Producto" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FechaInicio]"
+                          dataType="dbTimeStamp"
+                          name="FechaInicio" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FechaFin]"
+                          dataType="dbTimeStamp"
+                          name="FechaFin" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Descripcion]"
+                          dataType="wstr"
+                          length="400"
+                          name="Descripcion" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Estado]"
+                          codePage="1252"
+                          dataType="str"
+                          length="1"
+                          name="Estado" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UsuarioCreacion]"
+                          codePage="1252"
+                          dataType="str"
+                          length="10"
+                          name="UsuarioCreacion" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ListaCRM]"
+                          dataType="bool"
+                          name="ListaCRM" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PropietariosCRM]"
+                          dataType="bool"
+                          name="PropietariosCRM" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CampaniaCRM]"
+                          dataType="bool"
+                          name="CampaniaCRM" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ActualizacionActividades]"
+                          dataType="bool"
+                          name="ActualizacionActividades" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Habilitado]"
+                          dataType="bool"
+                          name="Habilitado" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FechaCreacion]"
+                          dataType="dbTimeStamp"
+                          name="FechaCreacion" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container Carga data\Cargar Data\Row Count"
+                  componentClassID="Microsoft.RowCount"
+                  contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+                  name="Row Count">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable to hold the row count."
+                      name="VariableName">User::v_total</property>
+                  </properties>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container Carga data\Cargar Data\Row Count.Inputs[Row Count Input 1]"
+                      hasSideEffects="true"
+                      name="Row Count Input 1">
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container Carga data\Cargar Data\Row Count.Outputs[Row Count Output 1]"
+                      name="Row Count Output 1"
+                      synchronousInputId="Package\Sequence Container Carga data\Cargar Data\Row Count.Inputs[Row Count Input 1]">
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Sequence Container Carga data\Cargar Data.Paths[Data Conversion Output]"
+                  endId="Package\Sequence Container Carga data\Cargar Data\Row Count.Inputs[Row Count Input 1]"
+                  name="Data Conversion Output"
+                  startId="Package\Sequence Container Carga data\Cargar Data\Data Conversion.Outputs[Data Conversion Output]" />
+                <path
+                  refId="Package\Sequence Container Carga data\Cargar Data.Paths[Flat File Source Output]"
+                  endId="Package\Sequence Container Carga data\Cargar Data\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Flat File Source Output"
+                  startId="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS.Outputs[Flat File Source Output]" />
+                <path
+                  refId="Package\Sequence Container Carga data\Cargar Data.Paths[OLE DB Command Output]"
+                  endId="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="OLE DB Command Output"
+                  startId="Package\Sequence Container Carga data\Cargar Data\OLE DB Command.Outputs[OLE DB Command Output]" />
+                <path
+                  refId="Package\Sequence Container Carga data\Cargar Data.Paths[Row Count Output 1]"
+                  endId="Package\Sequence Container Carga data\Cargar Data\OLE DB Command.Inputs[OLE DB Command Input]"
+                  name="Row Count Output 1"
+                  startId="Package\Sequence Container Carga data\Cargar Data\Row Count.Outputs[Row Count Output 1]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container Carga data\Copy File Origen a Destino"
+          DTS:CreationName="Microsoft.FileSystemTask"
+          DTS:Description="File System Task"
+          DTS:DTSID="{9A55B2B3-98E6-4F0C-8986-0F025ABC553F}"
+          DTS:ExecutableType="Microsoft.FileSystemTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Copy File Origen a Destino"
+          DTS:ThreadHint="1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <FileSystemData
+              TaskOverwriteDestFile="True"
+              TaskSourcePath="User::v_rutaArchivo"
+              TaskIsSourceVariable="True"
+              TaskDestinationPath="User::v_rutaArchivoDestino"
+              TaskIsDestinationVariable="True" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container Carga data\Delete File Origen"
+          DTS:CreationName="Microsoft.FileSystemTask"
+          DTS:Description="File System Task"
+          DTS:DTSID="{53C4ABD2-E953-444A-AB6E-C69BFB5B6980}"
+          DTS:ExecutableType="Microsoft.FileSystemTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Delete File Origen"
+          DTS:ThreadHint="1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <FileSystemData
+              TaskOperationType="DeleteFile"
+              TaskSourcePath="User::v_rutaArchivo"
+              TaskIsSourceVariable="True" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container Carga data.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{480F0855-1FBF-4000-B6C4-4E7BBF88AEA7}"
+          DTS:From="Package\Sequence Container Carga data\Copy File Origen a Destino"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Sequence Container Carga data\Delete File Origen" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container Carga data.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{26F08255-643D-4E00-8B22-12E393B08987}"
+          DTS:From="Package\Sequence Container Carga data\Cargar Data"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\Sequence Container Carga data\Copy File Origen a Destino" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Valida existencia archivo"
+      DTS:CreationName="Microsoft.ScriptTask"
+      DTS:Description="Script Task"
+      DTS:DTSID="{9B3DF303-4B36-450E-8448-20619CE08262}"
+      DTS:ExecutableType="Microsoft.ScriptTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Valida existencia archivo"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ScriptProject
+          Name="ST_c177d498c32449758a2992e3b19b3ae2"
+          VSTAMajorVersion="14"
+          VSTAMinorVersion="0"
+          Language="VisualBasic" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{FB8AEAEF-FD27-4E10-ADEA-69C7A0E9BDCA}"
+      DTS:From="Package\Depura Logs"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Valida existencia archivo" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{31850B6B-63F4-4BA1-8B78-6F96818B5D01}"
+      DTS:From="Package\Depura Logs"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Correo de Error de Limpieza de Logs"
+      DTS:Value="1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{27CCF49C-282B-47D3-B46F-E7D2B85B52E1}"
+      DTS:EvalOp="3"
+      DTS:Expression="@v_Error!=&quot;&quot;"
+      DTS:From="Package\Valida existencia archivo"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Correo de Inexistencia de Archivo"
+      DTS:Value="2" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{EA137CAB-1C4E-4F2C-A718-D8A6E2FF8CEB}"
+      DTS:From="Package\Valida existencia archivo"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Correo de Error de Validacion de archivo"
+      DTS:Value="1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{BEF1C038-4C70-4B07-BB8A-CC53E8E30389}"
+      DTS:From="Package\Valida existencia archivo"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Sequence Container Carga data" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{3FC65108-1BF8-4F04-8399-576C395900BF}"
+      DTS:From="Package\Sequence Container Carga data"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\Correo de Finalización Satisfactoria" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{66A37836-E951-462C-BE51-35CF676924BD}"
+      DTS:From="Package\Sequence Container Carga data"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 6"
+      DTS:To="Package\Correo de Error de Carga"
+      DTS:Value="1" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="203,42"
+          Id="Package\Correo de Error de Carga"
+          TopLeft="695,890" />
+        <NodeLayout
+          Size="259,42"
+          Id="Package\Correo de Error de Limpieza de Logs"
+          TopLeft="698,504" />
+        <NodeLayout
+          Size="278,42"
+          Id="Package\Correo de Error de Validacion de archivo"
+          TopLeft="696,593" />
+        <NodeLayout
+          Size="277,42"
+          Id="Package\Correo de Finalización Satisfactoria"
+          TopLeft="334,1172" />
+        <NodeLayout
+          Size="220,42"
+          Id="Package\Correo de Inexistencia de Archivo"
+          TopLeft="60,599" />
+        <NodeLayout
+          Size="134,42"
+          Id="Package\Depura Logs"
+          TopLeft="409,499" />
+        <NodeLayout
+          Size="139,42"
+          Id="Package\Sequence Container Carga data\Cargar Data"
+          TopLeft="67,62" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Sequence Container Carga data\Copy File Origen a Destino"
+          TopLeft="53,151" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Sequence Container Carga data\Delete File Origen"
+          TopLeft="53,253" />
+        <EdgeLayout
+          Id="Package\Sequence Container Carga data.PrecedenceConstraints[Constraint]"
+          TopLeft="134.5,193">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container Carga data.PrecedenceConstraints[Constraint 1]"
+          TopLeft="135.5,104">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,47"
+              Start="0,0"
+              End="0,39.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="276,354"
+          Size="276,397"
+          Id="Package\Sequence Container Carga data"
+          TopLeft="342,709" />
+        <NodeLayout
+          Size="200,42"
+          Id="Package\Valida existencia archivo"
+          TopLeft="381,594" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="478.5,541">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,53"
+              Start="0,0"
+              End="0,45.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,45.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="543,522.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="155,0"
+              Start="0,0"
+              End="147.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="147.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="58.50865234375,5,30.4826953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="381,617.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-101,0"
+              Start="0,0"
+              End="-93.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-93.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-80.7155859375,5,67.931171875,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="581,614.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="115,0"
+              Start="0,0"
+              End="107.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="107.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="38.5086523437499,5,30.4826953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="480.5,636">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,73"
+              Start="0,0"
+              End="0,65.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,65.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="476.25,1106">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,66"
+              Start="0,0"
+              End="0,58.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,58.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="618,909.25">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="77,0"
+              Start="0,0"
+              End="69.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="69.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="19.50865234375,5,30.4826953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <AnnotationLayout
+          Text="Paquete para la carga de REPORTE CAMPANAS para CRM &#xA;------------ CRM -----------------&#xA;Descripción: Paquete que carga los registros del archivo CAMPANAS.txt&#xA;Fuente:&#xA;Base fuente: BD_CRMFUENTE&#xA;Tabla fuente: [dbo].[dbo.CAMPANIA]&#xA;Fecha de creación : 13/06/2024&#xA;Autor: Jorge Llanos - BC2856 - Canales Presenciales&#xA;Modificado por:"
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="406,168"
+          Id="bc4527d7-5247-48a5-840b-8521497451b3"
+          TopLeft="308,187" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Sequence Container Carga data\Cargar Data">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="133,42"
+          Id="Package\Sequence Container Carga data\Cargar Data\Row Count"
+          TopLeft="164,124" />
+        <NodeLayout
+          Size="173,42"
+          Id="Package\Sequence Container Carga data\Cargar Data\OLE DB Command"
+          TopLeft="144.555555555556,191.222222222222" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination"
+          TopLeft="145,269" />
+        <NodeLayout
+          Size="199,42"
+          Id="Package\Sequence Container Carga data\Cargar Data\File Source CAMPANAS"
+          TopLeft="129,58" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Sequence Container Carga data\Cargar Data\Data Conversion"
+          TopLeft="391,62" />
+        <EdgeLayout
+          Id="Package\Sequence Container Carga data\Cargar Data.Paths[Row Count Output 1]"
+          TopLeft="230.777777777778,166">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,25.222222222222"
+              Start="0,0"
+              End="0,17.722222222222">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.722222222222" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container Carga data\Cargar Data.Paths[OLE DB Command Output]"
+          TopLeft="232.277777777778,233.222222222222">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,35.777777777778"
+              Start="0,0"
+              End="0,28.277777777778">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.277777777778" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container Carga data\Cargar Data.Paths[Flat File Source Output]"
+          TopLeft="328,78.1666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="63,0"
+              Start="0,0"
+              End="55.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="55.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container Carga data\Cargar Data.Paths[Data Conversion Output]"
+          TopLeft="391,88.6666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-94,56.3333333333333"
+              Start="0,0"
+              End="-86.5,56.3333333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-35.6697247706422,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-35.6697247706422,0"
+                    Point2="-39.6697247706422,0"
+                    Point3="-39.6697247706422,4" />
+                  <mssgle:LineSegment
+                    End="-39.6697247706422,52.3333333333333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-39.6697247706422,52.3333333333333"
+                    Point2="-39.6697247706422,56.3333333333333"
+                    Point3="-43.6697247706422,56.3333333333333" />
+                  <mssgle:LineSegment
+                    End="-86.5,56.3333333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container Carga data\Cargar Data\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

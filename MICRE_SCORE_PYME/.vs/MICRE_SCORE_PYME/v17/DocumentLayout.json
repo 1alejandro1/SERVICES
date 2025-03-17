@@ -1,0 +1,166 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_PYME\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F432FB2F-0859-4228-890F-C62CE143E5F5}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|d:\\t25208\\micredito\\micre_score_pyme\\micre.business\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F432FB2F-0859-4228-890F-C62CE143E5F5}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|solutionrelative:micre.business\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F432FB2F-0859-4228-890F-C62CE143E5F5}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|d:\\t25208\\micredito\\micre_score_pyme\\micre.business\\manager\\managerscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F432FB2F-0859-4228-890F-C62CE143E5F5}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|solutionrelative:micre.business\\manager\\managerscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29628821-E8CA-4AE0-A133-CE8734915DDB}|MICRE_SCORE_PYME\\MICRE_SCORE_PYME.csproj|d:\\t25208\\micredito\\micre_score_pyme\\micre_score_pyme\\controllers\\scorepymecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29628821-E8CA-4AE0-A133-CE8734915DDB}|MICRE_SCORE_PYME\\MICRE_SCORE_PYME.csproj|solutionrelative:micre_score_pyme\\controllers\\scorepymecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAB716D8-6905-4547-A05F-CC1639429268}|MICRE.COMMON\\MICRE.COMMON.csproj|d:\\t25208\\micredito\\micre_score_pyme\\micre.common\\model\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAB716D8-6905-4547-A05F-CC1639429268}|MICRE.COMMON\\MICRE.COMMON.csproj|solutionrelative:micre.common\\model\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAB716D8-6905-4547-A05F-CC1639429268}|MICRE.COMMON\\MICRE.COMMON.csproj|d:\\t25208\\micredito\\micre_score_pyme\\micre.common\\model\\credencialesbasicrest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAB716D8-6905-4547-A05F-CC1639429268}|MICRE.COMMON\\MICRE.COMMON.csproj|solutionrelative:micre.common\\model\\credencialesbasicrest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29628821-E8CA-4AE0-A133-CE8734915DDB}|MICRE_SCORE_PYME\\MICRE_SCORE_PYME.csproj|d:\\t25208\\micredito\\micre_score_pyme\\micre_score_pyme\\helpers\\basicauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29628821-E8CA-4AE0-A133-CE8734915DDB}|MICRE_SCORE_PYME\\MICRE_SCORE_PYME.csproj|solutionrelative:micre_score_pyme\\helpers\\basicauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAB716D8-6905-4547-A05F-CC1639429268}|MICRE.COMMON\\MICRE.COMMON.csproj|d:\\t25208\\micredito\\micre_score_pyme\\micre.common\\util.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAB716D8-6905-4547-A05F-CC1639429268}|MICRE.COMMON\\MICRE.COMMON.csproj|solutionrelative:micre.common\\util.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29628821-E8CA-4AE0-A133-CE8734915DDB}|MICRE_SCORE_PYME\\MICRE_SCORE_PYME.csproj|d:\\t25208\\micredito\\micre_score_pyme\\micre_score_pyme\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{29628821-E8CA-4AE0-A133-CE8734915DDB}|MICRE_SCORE_PYME\\MICRE_SCORE_PYME.csproj|solutionrelative:micre_score_pyme\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Util.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_PYME\\MICRE.COMMON\\Util.cs",
+              "RelativeDocumentMoniker": "MICRE.COMMON\\Util.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_PYME\\MICRE.COMMON\\Util.cs",
+              "RelativeToolTip": "MICRE.COMMON\\Util.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T22:06:24.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Response.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_PYME\\MICRE.COMMON\\Model\\Response.cs",
+              "RelativeDocumentMoniker": "MICRE.COMMON\\Model\\Response.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_PYME\\MICRE.COMMON\\Model\\Response.cs",
+              "RelativeToolTip": "MICRE.COMMON\\Model\\Response.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T22:06:21.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CredencialesBasicRest.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_PYME\\MICRE.COMMON\\Model\\CredencialesBasicRest.cs",
+              "RelativeDocumentMoniker": "MICRE.COMMON\\Model\\CredencialesBasicRest.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_PYME\\MICRE.COMMON\\Model\\CredencialesBasicRest.cs",
+              "RelativeToolTip": "MICRE.COMMON\\Model\\CredencialesBasicRest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T22:06:19.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_PYME\\MICRE.BUSINESS\\Services\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "MICRE.BUSINESS\\Services\\AuthenticationService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_PYME\\MICRE.BUSINESS\\Services\\AuthenticationService.cs",
+              "RelativeToolTip": "MICRE.BUSINESS\\Services\\AuthenticationService.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAuwFoAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T16:19:37.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BasicAuthenticationHandler.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_PYME\\MICRE_SCORE_PYME\\Helpers\\BasicAuthenticationHandler.cs",
+              "RelativeDocumentMoniker": "MICRE_SCORE_PYME\\Helpers\\BasicAuthenticationHandler.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_PYME\\MICRE_SCORE_PYME\\Helpers\\BasicAuthenticationHandler.cs",
+              "RelativeToolTip": "MICRE_SCORE_PYME\\Helpers\\BasicAuthenticationHandler.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAnwDQAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T16:24:07.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ManagerScore.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_PYME\\MICRE.BUSINESS\\Manager\\ManagerScore.cs",
+              "RelativeDocumentMoniker": "MICRE.BUSINESS\\Manager\\ManagerScore.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_PYME\\MICRE.BUSINESS\\Manager\\ManagerScore.cs",
+              "RelativeToolTip": "MICRE.BUSINESS\\Manager\\ManagerScore.cs",
+              "ViewState": "AQIAAIAAAAAAAAAAAAAmwIwAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-10-12T13:56:54.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_PYME\\MICRE_SCORE_PYME\\appsettings.json",
+              "RelativeDocumentMoniker": "MICRE_SCORE_PYME\\appsettings.json",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_PYME\\MICRE_SCORE_PYME\\appsettings.json",
+              "RelativeToolTip": "MICRE_SCORE_PYME\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2023-10-11T21:41:54.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ScorePymeController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_PYME\\MICRE_SCORE_PYME\\Controllers\\ScorePymeController.cs",
+              "RelativeDocumentMoniker": "MICRE_SCORE_PYME\\Controllers\\ScorePymeController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_PYME\\MICRE_SCORE_PYME\\Controllers\\ScorePymeController.cs",
+              "RelativeToolTip": "MICRE_SCORE_PYME\\Controllers\\ScorePymeController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAApwCIAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-10-11T21:38:13.144Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

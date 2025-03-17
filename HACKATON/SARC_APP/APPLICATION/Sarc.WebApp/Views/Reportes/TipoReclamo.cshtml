@@ -1,0 +1,143 @@
+﻿@using BCP.CROSS.MODELS
+@using BCP.CROSS.MODELS.Reportes
+@using Microsoft.AspNetCore.Html
+@using Newtonsoft.Json
+@using Sarc.WebApp.Components.Reportes
+@using Sarc.WebApp.Contracts
+@using Sarc.WebApp.Controllers
+@using Sarc.WebApp.Models.Reportes
+@using System.Data
+@model ReportesFormViewModel
+@{
+    ViewData["Title"] = "Reporte Reclamo por Servicio ";
+    bool responseExist = false;
+    Meta meta = new Meta();
+    var tipo = ViewBag.tipo;
+    var data = "[{}]";
+    var dataJson = Json.Serialize(data);
+    List<TipoReclamoModel> list = new();
+    var excelTitle = "Reporte_TR_" + DateTime.Now.ToString("yyyyMMdd") + ".xlsx";
+    if (ViewBag.response != null)
+    {
+        meta = ViewBag.response.Meta;
+        responseExist = true;
+    }
+}
+<div class="container">
+    <div class="card bg-dark">
+        <div class="card-body">
+            <form asp-action="TipoReclamo" asp-controller="Reportes" method="post" class="row">
+                <div class="col-12 col-md-4 my-2">
+                    <label for="FechaIni" class="form-label">Fecha de inicio</label>
+                    <input type="date" class="form-control" asp-for="FechaIni" id="FechaIni">
+                </div>
+                <div class="col-12 col-md-4  my-2">
+                    <label for="FechaFin" class="form-label">Fecha Final</label>
+                    <input type="date" class="form-control" asp-for="FechaFin" id="FechaFin">
+                </div>
+                <div class="col-12 mt-2">
+                    <button type="submit" class="btn btn-primary mb-3">Generar Reporte</button>
+                </div>
+            </form>
+            @if (responseExist)
+            {
+                @if (ViewBag.response.Data != null)
+                {
+                    list = ViewBag.response.Data;
+                    dataJson = CreateDataTable(list);
+                    <component type="typeof(TipoReclamoComponent)" render-mode="ServerPrerendered" param-Data='ViewBag.response.Data' />
+                    <button type="button" id="downloadexcel" class="btn btn-primary">Descargar Excel</button>
+                }
+                else
+                {
+                    <div class="alert alert-warning" role="alert">
+                        @meta.Msj
+                    </div>
+                }
+            }
+
+        </div>
+    </div>
+</div>
+@{
+    IHtmlContent CreateDataTable(List<TipoReclamoModel> data)
+    {
+        List<TipoReclamoTableViewModel> _dataTable = new List<TipoReclamoTableViewModel>();
+        foreach (TipoReclamoModel item in data)
+        {
+            if (_dataTable.Count < 0)
+            {
+                _dataTable.Add(
+                    new TipoReclamoTableViewModel(
+                        tipoCaso: item.Nombre,
+                        pendientes: 0,
+                        pendientesVencidos: 0,
+                        solucionadosTiempo: 0,
+                        solucionadosVencidos: 0,
+                        total: 0
+                    )
+                );
+            }
+            else
+            {
+                bool flag = true;
+                foreach (TipoReclamoTableViewModel item2 in _dataTable)
+                {
+                    if (item2.TipoCaso == item.Nombre) flag = false;
+                }
+                if (flag)
+                {
+                    _dataTable.Add(
+                    new TipoReclamoTableViewModel(
+                        tipoCaso: item.Nombre,
+                        pendientes: 0,
+                        pendientesVencidos: 0,
+                        solucionadosTiempo: 0,
+                        solucionadosVencidos: 0,
+                        total: 0
+                    )
+                );
+                }
+            }
+        }
+        foreach (TipoReclamoModel item in data)
+        {
+            foreach (TipoReclamoTableViewModel item2 in _dataTable)
+            {
+                if (item.Nombre == item2.TipoCaso)
+                {
+                    switch (item.Tipo)
+                    {
+                        case "PENDIENTES":
+                            item2.Pendientes = item.Cantidad;
+                            break;
+                        case "PENDIENTES VENCIDOS":
+                            item2.PendientesVencidos = item.Cantidad;
+                            break;
+                        case "SOLUCIONADOS A TIEMPO":
+                            item2.SolucionadosTiempo = item.Cantidad;
+                            break;
+                        case "SOLUCIONADOS VENCIDOS":
+                            item2.SolucionadosVencidos = item.Cantidad;
+                            break;
+                        case "TOTAL":
+                            item2.Total = item.Cantidad;
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+        }
+        return Json.Serialize(_dataTable.ToArray());
+    }
+}
+@section scripts{
+<script type="text/javascript">
+    var data=@dataJson;
+    var title="@excelTitle";
+        $("#downloadexcel").click(function(){
+                GenerarExcel(data,title);
+        });
+</script>
+}

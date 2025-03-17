@@ -1,0 +1,98 @@
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+  GroupAgent: Agentes_Compilacion
+  Publish: 'MicreditoWeb'
+  PublishArtifact: '$(build.artifactstagingdirectory)/$(Publish)'
+
+pool:
+  name: $(GroupAgent)
+
+steps:
+- task: CmdLine@2
+  displayName: 'Configuration Build'
+  inputs:
+    script:  |
+      echo ----------------------------------------------------------------------------
+      echo ----------------------------------------------------------------------------
+      echo COMPUTER NAME:           $(COMPUTERNAME)
+      echo ----------------------------------------------------------------------------
+      echo ----------------------------------------------------------------------------
+      echo DIRECTORIO ARTIFACT:     $(PublishArtifact)
+      echo DEFINITION NAME:         $(Build.DefinitionName)
+      echo PUBLISH:                 $(Publish)
+      echo ----------------------------------------------------------------------------
+      echo ----------------------------------------------------------------------------
+      echo AGENT NAME:              $(Agent)
+      echo SOLUTION:                $(solution)
+      echo BUILD CONFIGURATION      $(buildConfiguration)
+      echo SOURCE BRANCH NAME:      $(Build.SourceBranchName)
+      echo BUILD NUMBER:            $(Build.BuildNumber)
+      echo ----------------------------------------------------------------------------
+      echo ----------------------------------------------------------------------------
+
+- task: sonarsource.sonarqube.15B84CA1-B62F-4A2A-A403-89B77A063157.SonarQubePrepare@5
+  displayName: 'Prepare analysis on SonarQube'
+  inputs:
+    SonarQube: 'MICREDITO_WEB'
+    projectKey: T9HLJ104GokixK8rtLHmhnxir
+    projectName: 'MICREDITO_WEB'
+  continueOnError: true
+
+
+- powershell: |
+   $params = "$env:SONARQUBE_SCANNER_PARAMS" -replace '"sonar.branch.name":"[\w/,-.]*"\,?'
+   Write-Host "##vso[task.setvariable variable=SONARQUBE_SCANNER_PARAMS]$params"
+   
+  displayName: 'Script de PowerShell'
+- task: NuGetToolInstaller@1
+  inputs:
+    versionSpec: 
+    checkLatest: false
+
+
+- task: NuGetCommand@2
+  inputs:
+    restoreSolution: '$(solution)'
+
+- task: VSBuild@1
+  inputs:
+    solution: '$(solution)'
+    msbuildArgs: '/p:DeployOnBuild=true 
+                  /p:WebPublishMethod=Package 
+                  /p:PackageAsSingleFile=true 
+                  /p:SkipInvalidConfigurations=true 
+                  /p:PackageLocation="$(PublishArtifact)"
+                  /p:AllowUnsafeBlocks=true'
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
+- task: sonarsource.sonarqube.6D01813A-9589-4B15-8491-8164AEB38055.SonarQubeAnalyze@5
+  displayName: 'Run Code Analysis'
+  continueOnError: true
+
+- task: sonarsource.sonarqube.291ed61f-1ee4-45d3-b1b0-bf822d9095ef.SonarQubePublish@5
+  displayName: 'Publish Quality Gate Result'
+  continueOnError: true
+- task: DotNetCoreCLI@2
+  displayName: 'Publish .NET Project'
+  inputs:
+    command: 'publish'
+    publishWebProjects: false
+    projects: '$(solution)'
+    arguments: '--configuration $(buildConfiguration) --output $(PublishArtifact)'
+
+- task: PublishSymbols@2
+  displayName: 'Publish symbols path'
+  inputs:
+    SearchPattern: '**\bin\**\*.pdb'
+    PublishSymbols: false
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact'
+  inputs:
+    PathtoPublish: '$(PublishArtifact)'
+    ArtifactName: '$(Publish)'
+
+- task: sonarsource.sonarqube.291ed61f-1ee4-45d3-b1b0-bf822d9095ef.SonarQubePublish@5
+  displayName: 'Publish Quality Gate Result'

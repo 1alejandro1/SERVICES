@@ -1,0 +1,213 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6A363816-FF81-4C65-84CF-B373E21ACD03}|BCP.API_DigitacionPYME.Business\\BCP.API_DigitacionPYME.Business.csproj|d:\\t25208\\micredito\\micre_digitacion_pyme\\bcp.api_digitacionpyme.business\\managerdigitacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A363816-FF81-4C65-84CF-B373E21ACD03}|BCP.API_DigitacionPYME.Business\\BCP.API_DigitacionPYME.Business.csproj|solutionrelative:bcp.api_digitacionpyme.business\\managerdigitacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D454A0F2-0923-49C2-80A4-D508FDB9BA24}|API_DigitacionPYME\\API_DigitacionPYME.csproj|d:\\t25208\\micredito\\micre_digitacion_pyme\\api_digitacionpyme\\controllers\\solicitudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D454A0F2-0923-49C2-80A4-D508FDB9BA24}|API_DigitacionPYME\\API_DigitacionPYME.csproj|solutionrelative:api_digitacionpyme\\controllers\\solicitudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{500E4E77-C880-475F-881D-0007C65E8C4A}|BCP.Connector.SmartLink\\BCP.Connector.csproj|d:\\t25208\\micredito\\micre_digitacion_pyme\\bcp.connector.smartlink\\parametrosmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{500E4E77-C880-475F-881D-0007C65E8C4A}|BCP.Connector.SmartLink\\BCP.Connector.csproj|solutionrelative:bcp.connector.smartlink\\parametrosmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A363816-FF81-4C65-84CF-B373E21ACD03}|BCP.API_DigitacionPYME.Business\\BCP.API_DigitacionPYME.Business.csproj|d:\\t25208\\micredito\\micre_digitacion_pyme\\bcp.api_digitacionpyme.business\\managercalificaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A363816-FF81-4C65-84CF-B373E21ACD03}|BCP.API_DigitacionPYME.Business\\BCP.API_DigitacionPYME.Business.csproj|solutionrelative:bcp.api_digitacionpyme.business\\managercalificaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D454A0F2-0923-49C2-80A4-D508FDB9BA24}|API_DigitacionPYME\\API_DigitacionPYME.csproj|d:\\t25208\\micredito\\micre_digitacion_pyme\\api_digitacionpyme\\controllers\\seguridadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D454A0F2-0923-49C2-80A4-D508FDB9BA24}|API_DigitacionPYME\\API_DigitacionPYME.csproj|solutionrelative:api_digitacionpyme\\controllers\\seguridadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D454A0F2-0923-49C2-80A4-D508FDB9BA24}|API_DigitacionPYME\\API_DigitacionPYME.csproj|d:\\t25208\\micredito\\micre_digitacion_pyme\\api_digitacionpyme\\controllers\\calificacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D454A0F2-0923-49C2-80A4-D508FDB9BA24}|API_DigitacionPYME\\API_DigitacionPYME.csproj|solutionrelative:api_digitacionpyme\\controllers\\calificacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D454A0F2-0923-49C2-80A4-D508FDB9BA24}|API_DigitacionPYME\\API_DigitacionPYME.csproj|d:\\t25208\\micredito\\micre_digitacion_pyme\\api_digitacionpyme\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D454A0F2-0923-49C2-80A4-D508FDB9BA24}|API_DigitacionPYME\\API_DigitacionPYME.csproj|solutionrelative:api_digitacionpyme\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D454A0F2-0923-49C2-80A4-D508FDB9BA24}|API_DigitacionPYME\\API_DigitacionPYME.csproj|d:\\t25208\\micredito\\micre_digitacion_pyme\\api_digitacionpyme\\controllers\\evaluacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D454A0F2-0923-49C2-80A4-D508FDB9BA24}|API_DigitacionPYME\\API_DigitacionPYME.csproj|solutionrelative:api_digitacionpyme\\controllers\\evaluacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D614CE-2D45-42D3-B4D8-9E825A9E3E1A}|BCP.BancaSeguro.Models\\BCP.API_DigitacionPYME.Models.csproj|d:\\t25208\\micredito\\micre_digitacion_pyme\\bcp.bancaseguro.models\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24D614CE-2D45-42D3-B4D8-9E825A9E3E1A}|BCP.BancaSeguro.Models\\BCP.API_DigitacionPYME.Models.csproj|solutionrelative:bcp.bancaseguro.models\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{500E4E77-C880-475F-881D-0007C65E8C4A}|BCP.Connector.SmartLink\\BCP.Connector.csproj|d:\\t25208\\micredito\\micre_digitacion_pyme\\bcp.connector.smartlink\\filtrosiimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{500E4E77-C880-475F-881D-0007C65E8C4A}|BCP.Connector.SmartLink\\BCP.Connector.csproj|solutionrelative:bcp.connector.smartlink\\filtrosiimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2650386-14A3-48A0-B2DB-AE29EA766A1C}|BCP.API_DigitacionPYME.Test\\BCP.API_DigitacionPYME.Test.csproj|d:\\t25208\\micredito\\micre_digitacion_pyme\\bcp.api_digitacionpyme.test\\unittestcal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2650386-14A3-48A0-B2DB-AE29EA766A1C}|BCP.API_DigitacionPYME.Test\\BCP.API_DigitacionPYME.Test.csproj|solutionrelative:bcp.api_digitacionpyme.test\\unittestcal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ParametrosManager.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Connector.SmartLink\\ParametrosManager.cs",
+              "RelativeDocumentMoniker": "BCP.Connector.SmartLink\\ParametrosManager.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Connector.SmartLink\\ParametrosManager.cs",
+              "RelativeToolTip": "BCP.Connector.SmartLink\\ParametrosManager.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAvwCEAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T22:07:42.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ManagerCalificaciones.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.API_DigitacionPYME.Business\\ManagerCalificaciones.cs",
+              "RelativeDocumentMoniker": "BCP.API_DigitacionPYME.Business\\ManagerCalificaciones.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.API_DigitacionPYME.Business\\ManagerCalificaciones.cs",
+              "RelativeToolTip": "BCP.API_DigitacionPYME.Business\\ManagerCalificaciones.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwBoAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T17:15:14.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ManagerDigitacion.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.API_DigitacionPYME.Business\\ManagerDigitacion.cs",
+              "RelativeDocumentMoniker": "BCP.API_DigitacionPYME.Business\\ManagerDigitacion.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.API_DigitacionPYME.Business\\ManagerDigitacion.cs",
+              "RelativeToolTip": "BCP.API_DigitacionPYME.Business\\ManagerDigitacion.cs",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAIwGoAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-15T16:58:45.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SolicitudController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\API_DigitacionPYME\\Controllers\\SolicitudController.cs",
+              "RelativeDocumentMoniker": "API_DigitacionPYME\\Controllers\\SolicitudController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\API_DigitacionPYME\\Controllers\\SolicitudController.cs",
+              "RelativeToolTip": "API_DigitacionPYME\\Controllers\\SolicitudController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAEwCQAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-15T17:04:51.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SeguridadController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\API_DigitacionPYME\\Controllers\\SeguridadController.cs",
+              "RelativeDocumentMoniker": "API_DigitacionPYME\\Controllers\\SeguridadController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\API_DigitacionPYME\\Controllers\\SeguridadController.cs",
+              "RelativeToolTip": "API_DigitacionPYME\\Controllers\\SeguridadController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T21:51:17.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EvaluacionController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\API_DigitacionPYME\\Controllers\\EvaluacionController.cs",
+              "RelativeDocumentMoniker": "API_DigitacionPYME\\Controllers\\EvaluacionController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\API_DigitacionPYME\\Controllers\\EvaluacionController.cs",
+              "RelativeToolTip": "API_DigitacionPYME\\Controllers\\EvaluacionController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwCAAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T21:49:53.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CalificacionesController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\API_DigitacionPYME\\Controllers\\CalificacionesController.cs",
+              "RelativeDocumentMoniker": "API_DigitacionPYME\\Controllers\\CalificacionesController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\API_DigitacionPYME\\Controllers\\CalificacionesController.cs",
+              "RelativeToolTip": "API_DigitacionPYME\\Controllers\\CalificacionesController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T21:58:54.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\API_DigitacionPYME\\appsettings.json",
+              "RelativeDocumentMoniker": "API_DigitacionPYME\\appsettings.json",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\API_DigitacionPYME\\appsettings.json",
+              "RelativeToolTip": "API_DigitacionPYME\\appsettings.json",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACUAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2023-12-15T16:38:04.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FiltrosIIManager.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Connector.SmartLink\\FiltrosIIManager.cs",
+              "RelativeDocumentMoniker": "BCP.Connector.SmartLink\\FiltrosIIManager.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Connector.SmartLink\\FiltrosIIManager.cs",
+              "RelativeToolTip": "BCP.Connector.SmartLink\\FiltrosIIManager.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAkwDsAAABrAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-15T16:39:39.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Configuracion.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.BancaSeguro.Models\\Configuracion.cs",
+              "RelativeDocumentMoniker": "BCP.BancaSeguro.Models\\Configuracion.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.BancaSeguro.Models\\Configuracion.cs",
+              "RelativeToolTip": "BCP.BancaSeguro.Models\\Configuracion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-15T16:38:44.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UnitTestCal.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.API_DigitacionPYME.Test\\UnitTestCal.cs",
+              "RelativeDocumentMoniker": "BCP.API_DigitacionPYME.Test\\UnitTestCal.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.API_DigitacionPYME.Test\\UnitTestCal.cs",
+              "RelativeToolTip": "BCP.API_DigitacionPYME.Test\\UnitTestCal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-15T17:06:25.849Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+﻿@model MICREDITO.Model.Common.SolicitudModel
+
+@{
+    var FLAG_SCORE = System.Configuration.ConfigurationManager.AppSettings["FLAG_SCORE_MICROCREDITO"];
+}
+
+@Html.HiddenFor(m => m.nroSolicitud)
+@Html.HiddenFor(m => m.codSolicitud)
+
+<form id="FormDatosSolicitud" action="/" method="post">
+    <input type="hidden" id="flagRecalcular" value="false" />
+    <div>
+        <div class="layout-card">
+            <div class="row">
+                <div class="form-group label-content col-sm-3">
+                    <label>NRO SOLICITUD</label><br />
+                    @Model.nroSolicitud
+                </div>
+                <div class="form-group label-content col-sm-3">
+                    <label>TIPO SOLICITUD</label><br />
+                    @Model.tipoSolicitud
+                </div>
+                <div class="form-group label-content col-sm-3">
+                    <label>PRODUCTO</label><br />
+                    @Model.producto
+                </div>
+                <div class="form-group label-content col-sm-3">
+                    <label>OFICINA</label><br />
+                    @Model.oficina
+                </div>
+            </div>
+        </div>
+        <div class="layout-card">
+            <div class="row">
+                <div class="form-group label-content col-sm-4">
+                    <label data-label="tipoCredito">TIPO CREDITO</label><br />
+                    @Html.DropDownListFor(model => model.codTipoCredito, ViewBag.lstProductos as List<SelectListItem>, new { @class = "form-control" })
+                </div>
+                <div class="form-group label-content col-sm-4">
+                    <label data-label="tipoDestinoCredito">DESTINO CREDITO</label><br />
+                    @Html.DropDownListFor(model => model.destinoCredito, ViewBag.lstCIIU as List<SelectListItem>, new { @class = "form-control" })
+                </div>
+                <div class="form-group label-content col-sm-4">
+                    <label>FINALIDAD</label><br />
+                    @Html.DropDownListFor(model => model.finalidadCredito, ViewBag.lstFinalidad as List<SelectListItem>, new { @class = "form-control" })
+                </div>
+            </div>
+        </div>
+        <div class="layout-card">
+            <div class="row">
+                <div class="form-group label-content col-sm-4">
+                    <label data-label="tipoCredito">TIPO DESGRAVAMEN</label><br />
+                    @Html.DropDownListFor(m => m.getDesgravamen.nemonico, new SelectList(new[] {
+                        new { Value = "NORMAL", Text = "NORMAL" },
+                        new { Value = "CONSTANTE", Text = "CONSTANTE" }
+                    }, "Value", "Text", Model.getDesgravamen.nemonico), new { @class = "form-control", @name = "getDesgravamen.nemonico" })
+                </div>
+                <div class="form-group label-content col-sm-4">
+
+                </div>
+                <div class="form-group label-content col-sm-4">
+
+                </div>
+            </div>
+        </div>
+        <label>DATOS CREDITO</label><br />
+        <div class="layout-card">
+            <div class="row">
+                <div class="form-group label-content col-sm-4">
+                    <label>MONTO</label><br />
+                    @Html.TextBoxFor(m => m.monto, "{0:n2}", new { @class = "form-control", data_val = true })
+                    @Html.ValidationMessageFor(x => x.monto, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group label-content col-sm-4">
+                    <label>PLAZO</label><br />
+                    @Html.TextBoxFor(m => m.plazo, new { @class = "form-control", data_val = true })
+                    @Html.ValidationMessageFor(x => x.plazo, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group label-content col-sm-4">
+                    <label>TASA</label><br />
+                    @Html.TextBoxFor(m => m.tasa, "{0:n2}", new { @disabled = "disabled" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group label-content col-sm-4">
+                    <label>DIA PAGO</label><br />
+                    @Html.TextBoxFor(m => m.diaPago, new { @class = "form-control", data_val = true })
+                    @Html.ValidationMessageFor(x => x.diaPago, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group label-content col-sm-4">
+                    <label>PRIMERA CUOTA</label><br />
+                    @Html.TextBoxFor(m => m.primeraCuota, "{0:n2}", new { @disabled = "disabled" })
+                </div>
+                <div class="form-group label-content col-sm-4">
+                    <label>CUOTA</label><br />
+                    @Html.TextBoxFor(m => m.cuota, "{0:n2}", new { @disabled = "disabled" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group label-content col-sm-4">
+                    <label>FECHA PRIMER PAGO</label><br />
+                    @Html.TextBoxFor(model => model.fechaPrimerPago, "{0:dd/MM/yyyy}", new { @disabled = "disabled" })
+                </div>
+                <div class="form-group label-content col-sm-4">
+                    <label>CPOP</label><br />
+                    @Html.HiddenFor(model => model.cpop)
+                    @Html.DropDownListFor(model => model.codCpop, ViewBag.lstCpop as List<SelectListItem>, new { @class = "form-control" })
+                </div>
+                <div class="form-group label-content col-sm-4">
+                    <label>INDICE EMPRESA</label><br />
+                    @Html.TextBoxFor(model => model.indiceEmpresa, "{0:n6}", new { @disabled = "disabled" })
+                </div>
+                @if (FLAG_SCORE == "S")
+                {
+                    <div class="form-group label-content col-sm-4">
+                        <label>SCORE</label><br />
+                        @Html.TextBoxFor(model => model.descripcionScore, "{0:n6}", new { @disabled = "disabled" })
+                    </div>
+                }
+
+            </div>
+            <div class="row">
+                <div class="form-group label-content col-sm-12" style="text-align: center;">
+                    <button id="btnRecalcular" class="btn btn-primary">RECALCULAR</button>
+                </div>
+            </div>
+            <div class="row" id="contentOfertas"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label>GARANTIAS</label><br />
+                <div class="layout-card">
+                    <div class="row">
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead class="table-primary-bcp">
+                                    <tr>
+                                        <th>NRO GARANTIA</th>
+                                        <th>TIPO GARANTIA</th>
+                                        <th>MONTO</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model.lstGarantias)
+                                    {
+                                        <tr>
+                                            <td class="label-content">
+                                                @item.nroGarantia
+                                            </td>
+                                            <td class="label-content">
+                                                @item.descripcion
+                                            </td>
+                                            <td class="label-content">
+                                                @item.monto.ToString("#,#0.00")
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label>TIPO OPERACION</label>
+                <div class="layout-card">
+                    <div class="row" style=" margin-bottom: 13px; ">
+                        <label>COMPRA/REFINANCIAMIENTO:</label>
+                        <input type="checkbox" id="cbCompraRef" class="custom-checkbox" style="margin-left:10px" />
+                    </div>
+                    <div id="dvCompraRefinanciamiento" class="row">
+                        <div class="form-group label-content col-sm-6">
+                            <label>OPERACION</label>
+                            @Html.DropDownListFor(model => model.tipoOperacion, ViewBag.lstTipoOperacion as List<SelectListItem>, new { @class = "form-control" })
+                        </div>
+                        <div class="form-group label-content col-sm-6">
+                            <label>MONTO</label>
+                            @Html.TextBoxFor(m => m.compreDeuda.monto, "{0:n2}", new { @class = "form-control", data_val = true, oninput = "validateDecimal(this)", id = "compreDeuda_monto" })
+                            @Html.ValidationMessageFor(x => x.compreDeuda.monto, "", new { @class = "text-danger" })
+                            <span id="error-messageCompra" style="color: red; display: none;">Por favor ingrese un valor válido.</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="refinanciamiento"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

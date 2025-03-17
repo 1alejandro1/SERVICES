@@ -1,0 +1,2164 @@
+﻿@using MICRE.ABSTRACTION.ENTITIES.Response
+@model GetExceptionByIdcResponse
+@{
+    ViewData["Title"] = "ResumenCaso";
+}
+@{
+    var isActive = string.IsNullOrEmpty(ViewBag.Message) ? "show active" : "";
+    var exceptionsActive = !string.IsNullOrEmpty(ViewBag.Message) ? "show active" : "";
+}
+
+<head>
+    <link rel="stylesheet" href="~/dropzone/dist/min/dropzone.min.css" />
+</head>
+<style>
+    .preview {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+   .preview img {
+       max-width: 200px;
+       margin-top: 10px;
+   }
+
+   .preview button {
+       margin-top: 10px;
+   }
+</style>
+<body>
+    @section Scripts {
+        <script src="~/dropzone/dist/min/dropzone.min.js"></script>
+        <script>
+
+
+            document.addEventListener('DOMContentLoaded', function () {
+                var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+                var toastList = toastElList.map(function (toastEl) {
+                    return new bootstrap.Toast(toastEl)
+                })
+                toastList.forEach(toast => toast.show())
+
+
+
+            });
+
+            Dropzone.options.myDropzone = {
+                paramName: "file", // El nombre que se usará para el archivo en el servidor
+                maxFilesize: 5, // Tamaño máximo del archivo en MB
+                acceptedFiles: ".jpeg,.jpg,.png,.gif,.pdf",
+                dictDefaultMessage: "Arrastra el documento en esta sección o presiona aquí",
+                dictFileTooBig: "El archivo es demasiado grande ({{filesize}}MB). Tamaño máximo: {{maxFilesize}}MB.",
+                maxFiles: 1, // Permitir solo un archivo
+                addRemoveLinks: true, // Agregar enlaces de eliminación
+                dictRemoveFile: "Eliminar archivo",
+                autoProcessQueue: false, // Desactivar la subida automática
+                init: function () {
+                    var myDropzone = this;
+
+                    document.getElementById("confirmUploadButton").addEventListener("click", function () {
+                        myDropzone.processQueue(); // Subir el archivo cuando se confirme
+                        $('#confirmUploadModalExcep').modal('hide'); // Cerrar el modal
+                    });
+
+                    this.on("addedfile", function (file) {
+                        $('#confirmUploadModalExcep').modal('show'); // Mostrar el modal cuando se añade un archivo
+                    });
+
+                    this.on("success", function (file, response) {
+                        location.reload();
+                        console.log("Archivo subido con éxito:", response);
+                    });
+
+                    this.on("error", function (file, response) {
+                        console.log("Error al subir el archivo:", response);
+                    });
+
+                    this.on("maxfilesexceeded", function (file) {
+                        this.removeAllFiles(); // Eliminar archivos anteriores
+                        this.addFile(file); // Agregar el nuevo archivo
+                    });
+
+                    this.on("removedfile", function (file) {
+                        if (file.serverId) {
+                            // Realiza una solicitud para eliminar el archivo en el servidor
+                            fetch('@Url.Action("DeleteFile", "Home")' + `/${file.serverId}`, {
+                                method: 'DELETE'
+                            }).then(response => {
+                                if (response.ok) {
+                                    console.log("Archivo eliminado con éxito");
+                                } else {
+                                    console.log("Error al eliminar el archivo");
+                                }
+                            });
+                        }
+                    });
+                }
+            };
+        </script>
+    }
+    <div class="container">
+        <div class="row">
+            <div class="col-10">
+                <div class="tab-content" id="nav-tabContent">
+
+                    <div class="tab-pane fade @isActive" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                        <label id="idClienteCasoVer" style="display:none;">@ViewBag.IdClienteCaso</label>
+                        <div class="card mb-3">
+                            <div class="card-body row">
+                                <div class="col">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <div class="col">
+                                                <strong>Titular</strong>
+                                            </div>
+                                            <div class="col">
+                                                <small>@Model.InformacionPersonal.Nombres @Model.InformacionPersonal.Paterno @Model.InformacionPersonal.Materno</small>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="col">
+                                                <strong>Cédula de identidad</strong>
+                                            </div>
+                                            <div class="col">
+                                                <small>@Model.InformacionPersonal.Ci @Model.InformacionPersonal.Extension @Model.InformacionPersonal.Complemento</small>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <div class="col">
+                                                <strong>Tipo de cliente</strong>
+                                            </div>
+                                            <div class="col">
+                                                <small>@Model.TipoCliente</small>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="col">
+                                                <strong>SCORE</strong>
+                                            </div>
+                                            <div class="col">
+                                                <small>@Model.Score</small>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <div class="col">
+                                                <strong>Cliente PDH</strong>
+                                            </div>
+                                            <div class="col">
+                                                @if (Model.InformacionLaboral.PagoHaberes)
+                                                {
+                                                    <small class="text-success"><b><i class="fa-solid fa-check"></i> Corresponde</b></small>
+                                                }
+                                                else
+                                                {
+                                                    <small class="text-danger"><b><i class="fa-solid fa-ban"></i> No Corresponde</b></small>
+                                                }
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="col">
+                                                <strong>Estado civil</strong>
+                                            </div>
+                                            <div class="col">
+                                                <small>@Model.InformacionPersonal.EstadoCivil</small>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            @switch (Model.InformacionLaboral.IdSituacionLaboral)
+                            {
+                                case 23:
+                                    <div class="card-body row">
+                                        <div class="pb-1"><div class="custom-border" style="display: flex; align-items: center;"><h6>Información laboral</h6> </div></div>
+                                        <div class="col">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="col">
+                                                        <strong>Tipo de ingreso</strong>
+                                                    </div>
+                                                    <div class="col">
+                                                        <small>@Model.InformacionLaboral.SituacionLaboral</small>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="col">
+                                                        <strong>Empresa</strong>
+                                                    </div>
+                                                    <div class="col">
+                                                        <small>@Model.InformacionLaboral.NombreEmpresa</small>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="col">
+                                                        <strong>Ingreso líquido mensual</strong>
+                                                    </div>
+                                                    <div class="col d-flex flex-column">
+                                                        <small class="liquidoBS">@ViewBag.IngresoLiquidoBOL</small>
+                                                        <small class="tiny-label liquidoUSD">@ViewBag.IngresoLiquidoUSD</small>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="col">
+                                                        <strong>Antiguedad laboral</strong>
+                                                    </div>
+                                                    <div class="col">
+                                                        <small>@Model.InformacionLaboral.AntiguedadLaboral</small>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    break;
+                                case 25:
+                                    <div class="card-body row">
+                                        <div class="pb-1"><div class="custom-border" style="display: flex; align-items: center;"><h6>Información laboral</h6> </div></div>
+                                        <div class="col">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="col">
+                                                        <strong>Tipo de ingreso</strong>
+                                                    </div>
+                                                    <div class="col">
+                                                        <small>@Model.InformacionLaboral.SituacionLaboral</small>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="col">
+                                                        <strong>Ingreso líquido mensual</strong>
+                                                    </div>
+                                                    <div class="col d-flex flex-column">
+                                                        <small class="liquidoBS">@ViewBag.IngresoLiquidoBOL</small>
+                                                        <small class="tiny-label liquidoUSD">@ViewBag.IngresoLiquidoUSD</small>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="col">
+                                                        <strong>Profesión</strong>
+                                                    </div>
+                                                    <div class="col">
+                                                        <small>@Model.InformacionLaboral.Profesion</small>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    break;
+                                case 27:
+                                    <div class="card-body row">
+                                        <div class="pb-1"><div class="custom-border" style="display: flex; align-items: center;"><h6>Información laboral</h6> </div></div>
+                                        <div class="col">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="col">
+                                                        <strong>Tipo de ingreso</strong>
+                                                    </div>
+                                                    <div class="col">
+                                                        <small>@Model.InformacionLaboral.SituacionLaboral</small>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="col">
+                                                        <strong>Ingreso líquido mensual</strong>
+                                                    </div>
+                                                    <div class="col d-flex flex-column">
+                                                        <small class="liquidoBS">@ViewBag.IngresoLiquidoBOL</small>
+                                                        <small class="tiny-label liquidoUSD">@ViewBag.IngresoLiquidoUSD</small>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="col">
+                                                        <strong>Actividad económica</strong>
+                                                    </div>
+                                                    <div class="col">
+                                                        <small>@Model.InformacionLaboral.ActividadEconomica</small>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    break;
+                                case 26:
+                                    <div class="card-body row">
+                                        <div class="pb-1"><div class="custom-border" style="display: flex; align-items: center;"><h6>Información laboral</h6> </div></div>
+                                        <div class="col-4">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="col">
+                                                        <strong>Tipo de ingreso</strong>
+                                                    </div>
+                                                    <div class="col">
+                                                        <small>@Model.InformacionLaboral.SituacionLaboral</small>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-4">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="col">
+                                                        <strong>Ingreso líquido mensual</strong>
+                                                    </div>
+                                                    <div class="col d-flex flex-column">
+                                                        <small class="liquidoBS">@ViewBag.IngresoLiquidoBOL</small>
+                                                        <small class="tiny-label liquidoUSD">@ViewBag.IngresoLiquidoUSD</small>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    break;
+                                case 353:
+                                    <div class="card-body row">
+                                        <div class="pb-1"><div class="custom-border" style="display: flex; align-items: center;"><h6>Información laboral</h6> </div></div>
+                                        <div class="col">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="col">
+                                                        <strong>Tipo de ingreso</strong>
+                                                    </div>
+                                                    <div class="col">
+                                                        <small>@Model.InformacionLaboral.SituacionLaboral</small>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="col">
+                                                        <strong>Actividad económica 1</strong>
+                                                    </div>
+                                                    <div class="col d-flex flex-column">
+                                                        <small>@Model.InformacionLaboral.ActividadEconomica</small>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="col">
+                                                        <strong>Actividad económica 2</strong>
+                                                    </div>
+                                                    <div class="col d-flex flex-column">
+                                                        <small>@Model.InformacionLaboral.ActividadEconomica2</small>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="col">
+                                                        <strong>Ingreso líquido mensual 1</strong>
+                                                    </div>
+                                                    <div class="col d-flex flex-column">
+                                                        <small class="liquidoBS">@ViewBag.IngresoLiquidoBOL</small>
+                                                        <small class="tiny-label liquidoUSD">@ViewBag.IngresoLiquidoUSD</small>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="col">
+                                                        <strong>Ingreso líquido mensual 2</strong>
+                                                    </div>
+                                                    <div class="col d-flex flex-column">
+                                                        <small class="liquidoBS">@ViewBag.IngresoLiquidoBOL2</small>
+                                                        <small class="tiny-label liquidoUSD">@ViewBag.IngresoLiquidoUSD2</small>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    break;
+                                default:
+                                    <div class="card-body row">
+                                        <div class="pb-1"><div class="custom-border" style="display: flex; align-items: center;"><h6>Información laboral</h6> </div></div>
+                                        <div class="col-4">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="col">
+                                                        <strong>Tipo de ingreso</strong>
+                                                    </div>
+                                                    <div class="col">
+                                                        <small>@Model.InformacionLaboral.SituacionLaboral</small>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-4">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="col">
+                                                        <strong>Ingreso líquido mensual</strong>
+                                                    </div>
+                                                    <div class="col d-flex flex-column">
+                                                        <small class="liquidoBS">@ViewBag.IngresoLiquidoBOL</small>
+                                                        <small class="tiny-label liquidoUSD">@ViewBag.IngresoLiquidoUSD</small>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    break;
+                            }
+                        </div>
+                        <div class="card">
+                            <div class="card-body row">
+                                <div class="pb-1"><div class="custom-border" style="display: flex; align-items: center;"><h6>Deudas e inmuebles del titular</h6> </div></div>
+                                <div class="col">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <div class="col">
+                                                <strong>Deuda total del BCP</strong>
+                                            </div>
+                                            <div class="col d-flex flex-column">
+                                                <small>@ViewBag.DeudaBCPBOL</small>
+                                                <small class="tiny-label liquidoUSD">@ViewBag.DeudaBCPUSD</small>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="col">
+                                                <strong>Inmuebles hipotecados en el BCP</strong>
+                                            </div>
+                                            <div class="col d-flex flex-column">
+                                                <small>@Model.DeudaInmueble.InmuebleHipotecado</small>
+                                                <small class="tiny-label liquidoUSD">@ViewBag.DeudaValorInmuebleUSD</small>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <div class="col">
+                                                <strong>Deuda total SFN sin BCP</strong>
+                                            </div>
+                                            <div class="col d-flex flex-column">
+                                                <small class="liquidoBS">@ViewBag.DeudaSFNBOL</small>
+                                                <small class="tiny-label liquidoUSD">@ViewBag.DeudaSFNUSD</small>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="col">
+                                                <strong>Inmueble libre de deudas</strong>
+                                            </div>
+                                            <div class="col d-flex flex-column">
+                                                <small>@Model.DeudaInmueble.InmuebleLibreDeuda</small>
+                                                <small class="tiny-label liquidoUSD">@ViewBag.DeudaValorInmuebleLibreDeudaUSD</small>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <div class="col">
+                                                @if (Model.Productos.Any(item => item.FinalidadDescripcion.Contains("REUTILIZACION")))
+                                                {
+                                                    <strong>Total de Crédito solicitado</strong>
+                                                }
+                                                else
+                                                {
+                                                 <strong>Deuda BCP + Total de Crédito solicitado</strong>   
+                                                }                                                
+                                            </div>
+                                            <div class="col">
+                                                <small class="liquidoUSD">@ViewBag.DeudaYTotal</small>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="col">
+                                                <strong>Total de garantías</strong>
+                                            </div>
+                                            <div class="col">
+                                                <small>@ViewBag.DeudaInmuebleTotal</small>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        @* DATOS DE CONYUGUE *@
+                        @if (Model.InformacionPersonalConyugue != null && Model.InformacionLaboralConyugue != null && Model.DeudaPersonalConyugue != null)
+                        {
+                            <div class="card mt-3 bg-secondary-subtle">
+                                <div class="card-body row">
+                                    <div class="col">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item bg-secondary-subtle">
+                                                <div class="col">
+                                                    <strong>Cónyuge</strong>
+                                                </div>
+                                                <div class="col">
+                                                    <small>@Model.InformacionPersonalConyugue.Nombres @Model.InformacionPersonalConyugue.Paterno @Model.InformacionPersonalConyugue.Materno</small>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item bg-secondary-subtle">
+                                                <div class="col">
+                                                    <strong>Cédula de identidad</strong>
+                                                </div>
+                                                <div class="col">
+                                                    <small>@Model.InformacionPersonalConyugue.Ci @Model.InformacionPersonalConyugue.Extension @Model.InformacionPersonalConyugue.Complemento</small>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item bg-secondary-subtle">
+                                                <div class="col">
+                                                    <strong>Estado civil</strong>
+                                                </div>
+                                                <div class="col">
+                                                    <small>@Model.InformacionPersonalConyugue.EstadoCivil</small>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-3 bg-secondary-subtle">
+                                @switch (Model.InformacionLaboralConyugue.IdSituacionLaboral)
+                                {
+                                    case 23:
+                                        <div class="card-body row">
+                                            <div class="pb-1"><div class="custom-border" style="display: flex; align-items: center;"><h6>Información laboral cónyuge</h6> </div></div>
+                                            <div class="col">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item" style="background: transparent;">
+                                                        <div class="col">
+                                                            <strong>Tipo de ingreso</strong>
+                                                        </div>
+                                                        <div class="col">
+                                                            <small>@Model.InformacionLaboralConyugue.SituacionLaboral</small>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item" style="background: transparent;">
+                                                        <div class="col">
+                                                            <strong>Empresa</strong>
+                                                        </div>
+                                                        <div class="col">
+                                                            <small>@Model.InformacionLaboralConyugue.NombreEmpresa</small>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item" style="background: transparent;">
+                                                        <div class="col">
+                                                            <strong>Ingreso líquido mensual</strong>
+                                                        </div>
+                                                        <div class="col d-flex flex-column">
+                                                            <small class="liquidoBS">@ViewBag.IngresoLiquidoBOLCon</small>
+                                                            <small class="tiny-label liquidoUSD">@ViewBag.IngresoLiquidoUSDCon</small>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item bg-secondary-subtle">
+                                                        <div class="col">
+                                                            <strong>Antigüedad laboral</strong>
+                                                        </div>
+                                                        <div class="col">
+                                                            <small>@Model.InformacionLaboralConyugue.AntiguedadLaboral</small>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        break;
+                                    case 25:
+                                        <div class="card-body row">
+                                            <div class="pb-1"><div class="custom-border" style="display: flex; align-items: center;"><h6>Información laboral cónyuge</h6> </div></div>
+                                            <div class="col">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item bg-secondary-subtle">
+                                                        <div class="col">
+                                                            <strong>Tipo de ingreso</strong>
+                                                        </div>
+                                                        <div class="col">
+                                                            <small>@Model.InformacionLaboralConyugue.SituacionLaboral</small>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item bg-secondary-subtle">
+                                                        <div class="col">
+                                                            <strong>Ingreso líquido mensual</strong>
+                                                        </div>
+                                                        <div class="col d-flex flex-column">
+                                                            <small class="liquidoBS">@ViewBag.IngresoLiquidoBOLCon</small>
+                                                            <small class="tiny-label liquidoUSD">@ViewBag.IngresoLiquidoUSDCon</small>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item bg-secondary-subtle">
+                                                        <div class="col">
+                                                            <strong>Profesión</strong>
+                                                        </div>
+                                                        <div class="col">
+                                                            <small>@Model.InformacionLaboralConyugue.Profesion</small>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        break;
+                                    case 27:
+                                        <div class="card-body row">
+                                            <div class="pb-1"><div class="custom-border" style="display: flex; align-items: center;"><h6>Información laboral cónyuge</h6> </div></div>
+                                            <div class="col">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item bg-secondary-subtle">
+                                                        <div class="col">
+                                                            <strong>Tipo de ingreso</strong>
+                                                        </div>
+                                                        <div class="col">
+                                                            <small>@Model.InformacionLaboralConyugue.SituacionLaboral</small>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item bg-secondary-subtle">
+                                                        <div class="col">
+                                                            <strong>Ingreso líquido mensual</strong>
+                                                        </div>
+                                                        <div class="col d-flex flex-column">
+                                                            <small class="liquidoBS">@ViewBag.IngresoLiquidoBOLCon</small>
+                                                            <small class="tiny-label liquidoUSD">@ViewBag.IngresoLiquidoUSDCon</small>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item">
+                                                        <div class="col">
+                                                            <strong>Actividad económica</strong>
+                                                        </div>
+                                                        <div class="col">
+                                                            <small>@Model.InformacionLaboralConyugue.ActividadEconomica</small>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        break;
+                                    case 26:
+                                        <div class="card-body row">
+                                            <div class="pb-1"><div class="custom-border" style="display: flex; align-items: center;"><h6>Información laboral cónyuge</h6> </div></div>
+                                            <div class="col-4">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item bg-secondary-subtle">
+                                                        <div class="col">
+                                                            <strong>Tipo de ingreso</strong>
+                                                        </div>
+                                                        <div class="col">
+                                                            <small>@Model.InformacionLaboralConyugue.SituacionLaboral</small>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-4">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item bg-secondary-subtle">
+                                                        <div class="col">
+                                                            <strong>Ingreso líquido mensual</strong>
+                                                        </div>
+                                                        <div class="col d-flex flex-column">
+                                                            <small class="liquidoBS">@ViewBag.IngresoLiquidoBOLCon</small>
+                                                            <small class="tiny-label liquidoUSD">@ViewBag.IngresoLiquidoUSDCon</small>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        break;
+                                    case 353:
+                                        <div class="card-body row">
+                                            <div class="pb-1"><div class="custom-border" style="display: flex; align-items: center;"><h6>Información laboral cónyuge</h6> </div></div>
+                                            <div class="col">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item">
+                                                        <div class="col">
+                                                            <strong>Tipo de ingreso</strong>
+                                                        </div>
+                                                        <div class="col">
+                                                            <small>@Model.InformacionLaboralConyugue.SituacionLaboral</small>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item">
+                                                        <div class="col">
+                                                            <strong>Actividad económica 1</strong>
+                                                        </div>
+                                                        <div class="col d-flex flex-column">
+                                                            <small>@Model.InformacionLaboralConyugue.ActividadEconomica</small>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="col">
+                                                            <strong>Actividad económica 2</strong>
+                                                        </div>
+                                                        <div class="col d-flex flex-column">
+                                                            <small>@Model.InformacionLaboralConyugue.ActividadEconomica2</small>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item">
+                                                        <div class="col">
+                                                            <strong>Ingreso líquido mensual 1</strong>
+                                                        </div>
+                                                        <div class="col d-flex flex-column">
+                                                            <small class="liquidoBS">@ViewBag.IngresoLiquidoBOLCon</small>
+                                                            <small class="tiny-label liquidoUSD">@ViewBag.IngresoLiquidoUSDCon</small>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="col">
+                                                            <strong>Ingreso líquido mensual 2</strong>
+                                                        </div>
+                                                        <div class="col d-flex flex-column">
+                                                            <small class="liquidoBS">@ViewBag.IngresoLiquidoBOL2Con</small>
+                                                            <small class="tiny-label liquidoUSD">@ViewBag.IngresoLiquidoUSD2Con</small>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        break;
+                                    default:
+                                        <div class="card-body row">
+                                            <div class="pb-1"><div class="custom-border" style="display: flex; align-items: center;"><h6>Información laboral cónyuge</h6> </div></div>
+                                            <div class="col-4">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item">
+                                                        <div class="col">
+                                                            <strong>Tipo de ingreso</strong>
+                                                        </div>
+                                                        <div class="col">
+                                                            <small>@Model.InformacionLaboralConyugue.SituacionLaboral</small>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-4">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item">
+                                                        <div class="col">
+                                                            <strong>Ingreso líquido mensual</strong>
+                                                        </div>
+                                                        <div class="col d-flex flex-column">
+                                                            <small class="liquidoBS">@ViewBag.IngresoLiquidoBOLCon</small>
+                                                            <small class="tiny-label liquidoUSD">@ViewBag.IngresoLiquidoUSDCon</small>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        break;
+                                }
+                            </div>
+                            <div class="card mt-3 bg-secondary-subtle">
+                                <div class="card-body row">
+                                    <div class="pb-1"><div class="custom-border" style="display: flex; align-items: center;"><h6>Deudas e inmuebles cónyuge</h6> </div></div>
+                                    <div class="col-4">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item bg-secondary-subtle">
+                                                <div class="col">
+                                                    <strong>Deuda total del BCP</strong>
+                                                </div>
+                                                <div class="col d-flex flex-column">
+                                                    <small class="liquidoBS">@ViewBag.DeudaBCPBOLCon</small>
+                                                    <small class="tiny-label liquidoUSD">@ViewBag.DeudaBCPUSDCon</small>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item bg-secondary-subtle">
+                                                <div class="col">
+                                                    <strong>Deuda total SFN sin BCP</strong>
+                                                </div>
+                                                <div class="col d-flex flex-column">
+                                                    <small class="liquidoBS">@ViewBag.DeudaSFNBOLCon</small>
+                                                    <small class="tiny-label liquidoUSD">@ViewBag.DeudaSFNUSDCon</small>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="pb-3"><div class="custom-border" style="display: flex; align-items: center;"><h6>El cliente a solicitado los siguientes productos</h6> </div></div>
+                                <tbody>
+                                    @foreach (var item in Model.Productos)
+                                    {
+                                        @await Html.PartialAsync("Components/_CreditoRow", item)
+                                    }
+                                </tbody>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade @exceptionsActive" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                        <div class="card">
+                            <div class="card-body" id="excepcionesContainer">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                        <div class="card">
+                            <div class="card-body row">
+                                <div class="pb-3"><div class="custom-border" style="display: flex; align-items: center;"><h6>Documentos respaldos</h6> </div></div>
+                                <div id="respaldosExcepcion">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div id="infocred" class="alert alert-light d-flex align-items-center" role="alert">
+                                                <div>
+                                                    <i class="fa-solid fa-file fa-2xl"></i>
+                                                </div>
+                                                <div class="ms-4" style="text-align: left;">
+                                                    <div><strong>InfoCred (obligatorio)</strong></div>
+                                                    <div><small>INFOCRED.pdf</small></div>
+                                                </div>
+                                            </div>
+                                            <div id="asfi" class="alert alert-light d-flex align-items-center" role="alert">
+                                                <div>
+                                                    <i class="fa-solid fa-file fa-2xl"></i>
+                                                </div>
+                                                <div class="ms-4" style="text-align: left;">
+                                                    <div><strong>CIC Asfi (obligatorio)</strong></div>
+                                                    <div><small>ASFI.pdf</small></div>
+                                                </div>
+                                            </div>
+                                            <div id="amai-nazir" class="alert alert-light d-flex align-items-center" role="alert">
+                                                <div>
+                                                    <i class="fa-solid fa-file fa-2xl"></i>
+                                                </div>
+
+                                                @if (ViewBag.HadCard == true)
+                                                {
+                                                    <div class="ms-4" style="text-align: left;">
+                                                        <div><strong>Pantalla AMAI/NAZIR (Opcional)</strong></div>
+                                                        <div><small>AMAI_NAZIR.pdf</small></div>
+                                                    </div>
+                                                }
+                                                else
+                                                {
+                                                    <div class="ms-4" style="text-align: left;">
+                                                        <div><strong>Pantalla AMAI/NAZIR (Opcional)</strong></div>
+                                                        <div><small>AMAI_NAZIR.pdf</small></div>
+                                                    </div>
+                                                }
+                                            </div>
+                                        </div>
+                                        <div class="col-6" id="documentosRespaldos">
+                                        </div>
+                                    </div>
+                                </div>
+                                @if (Model.IdClienteConyugue != 0)
+                                {
+                                    <div class="pb-3"><div class="custom-border" style="display: flex; align-items: center;"><h6>Documentos respaldos Cónyuge</h6> </div></div>
+                                    <div id="respaldosExcepcionConyugue">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div id="infocredConyugue" class="alert alert-light d-flex align-items-center" role="alert">
+                                                    <div>
+                                                        <i class="fa-solid fa-file fa-2xl"></i>
+                                                    </div>
+                                                    <div class="ms-4" style="text-align: left;">
+                                                        <div><strong>InfoCred (obligatorio)</strong></div>
+                                                        <div><small>INFOCRED.pdf</small></div>
+                                                    </div>
+                                                </div>
+                                                <div id="asfiConyugue" class="alert alert-light d-flex align-items-center" role="alert">
+                                                    <div>
+                                                        <i class="fa-solid fa-file fa-2xl"></i>
+                                                    </div>
+                                                    <div class="ms-4" style="text-align: left;">
+                                                        <div><strong>CIC Asfi (obligatorio)</strong></div>
+                                                        <div><small>ASFI.pdf</small></div>
+                                                    </div>
+                                                </div>
+                                                <div id="amai-nazirConyugue" class="alert alert-light d-flex align-items-center" role="alert">
+                                                    <div>
+                                                        <i class="fa-solid fa-file fa-2xl"></i>
+                                                    </div>
+                                                    @if (ViewBag.HadCard == true)
+                                                    {
+                                                        <div class="ms-4" style="text-align: left;">
+                                                            <div><strong>Pantalla AMAI/NAZIR (Opcional)</strong></div>
+                                                            <div><small>AMAI_NAZIR.pdf</small></div>
+                                                        </div>
+                                                    }
+                                                    else
+                                                    {
+                                                        <div class="ms-4" style="text-align: left;">
+                                                            <div><strong>Pantalla AMAI/NAZIR (Opcional)</strong></div>
+                                                            <div><small>AMAI_NAZIR.pdf</small></div>
+                                                        </div>
+                                                    }
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="list-group" id="list-tab" role="tablist">
+                    @if (!string.IsNullOrEmpty(ViewBag.Message))
+                    {
+                        <a class="list-group-item list-group-item-action" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Antecedentes</a>
+                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Crédito solicitado</a>
+                        <a class="list-group-item list-group-item-action active" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Excepciones</a>
+                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Respaldos</a>
+                    }
+                    else
+                    {
+                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Antecedentes</a>
+                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Crédito solicitado</a>
+                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Excepciones</a>
+                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Respaldos</a>
+                    }
+
+                </div>
+                <div class="d-grid gap-2 pt-3">
+                    <button class="btn btn-primary" type="button" onclick="location.href='@Url.Action("SolicitudTable", "Solicitud")'">Atrás </button>
+                </div>
+            </div>
+            <!-- Modal Responder -->
+            <div class="modal fade" id="responderSolicitud" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog alert alert-primary modal-lg">
+                    <form class="needs-validation" novalidate id="formResponderExcepcion">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Responder Excepción</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p id="observacion-title" style="width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: normal; word-wrap: break-word;"></p>
+                                <div class="form-floating">
+                                    <textarea type="text" id="respuestaObservacion" maxlength="10000" aria-label="Observar" placeholder="Indique los motivos" class="form-control" required></textarea>
+                                    <label class="fst-italic" for="floatingSelectGrid">Respuesta a la observación.</label>
+                                    <div class="invalid-feedback">
+                                        Este campo es necesario.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary send" onclick="responderObservacion()">Responder</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Modal Aceptar -->
+            <div class="modal fade aprobarSolicitud" id="aprobarSolicitud" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog alert alert-success">
+                    <form class="needs-validation" novalidate id="formAprobarExcepcion">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Aceptar Excepción</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                            </div>
+                            <div class="modal-body">
+
+                                <div class="form-floating">
+                                    <textarea id="motivoAprobacion" type="text" maxlength="10000" aria-label="Observar" placeholder="Indique los motivos" class="form-control" required></textarea>
+                                    <label class="fst-italic" for="floatingSelectGrid">Indique los motivos</label>
+                                    <div class="invalid-feedback">
+                                        Este campo es necesario.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" onclick="aprobarExcepcion()" class="btn btn-success send">Aprobar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Modal Observar -->
+            <div class="modal fade" id="observarSolicitud" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog alert alert-warning">
+                    <form class="needs-validation" novalidate id="formObservarExcepcion">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Observar Excepción</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-floating">
+                                    <textarea style="height: 110px;" type="text" id="motivoObservacion" maxlength="10000" aria-label="Observar" placeholder="Indique los motivos" class="form-control" required></textarea>
+                                    <label class="fst-italic" for="floatingSelectGrid">Indique los motivos</label>
+                                    <div class="invalid-feedback">
+                                        Este campo es necesario.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" onclick="observarExcepcion()" class="btn btn-warning send">Observar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Modal Rechazar -->
+            <div class="modal fade" id="rechazarSolicitud" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog alert alert-danger">
+                    <form class="needs-validation" novalidate id="formRechazarExcepcion">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Rechazar Excepción</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-floating">
+                                    <input type="text" aria-label="Rechazar" maxlength="10000" id="motivoRechazo" placeholder="Indique los motivos" class="form-control" required>
+                                    <label class="fst-italic" for="floatingSelectGrid">Indique los motivos</label>
+                                    <div class="invalid-feedback">
+                                        Este campo es necesario.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" onclick="rechazarExcepcion()" class="btn btn-danger send">Rechazar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Modal Rechazar -->
+            <div id="modalPreviewFile" class="modal fade">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="eliminarExcepcion" tabindex="-1" role="dialog">
+    </div>
+
+    <div class="modal fade" id="editarExcepcion" tabindex="-1" role="dialog">
+    </div>
+
+    <div class="modal fade" id="agregarExcepcion" tabindex="-1" role="dialog">
+    </div>
+
+
+    <div class="modal fade" id="confirmUploadModalExcep" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog alert alert-danger">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="confirmUploadModal">Subir Archivo</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <h6><strong>¿Estás seguro de que deseas subir este archivo?</strong></h6>
+                    <p>una vez subido no se podra borrar</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger" id="confirmUploadButton">Subir Archivo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script>
+        const responderExcepcionUrl = '@Url.Action("ResponderExcepcionCliente", "Solicitud")';
+        const aprobarExcepcionUrl = '@Url.Action("AdministrarExcepcion", "Solicitud")';
+        const obtenerExcepcionesClienteUrl = '@Url.Action("ObtenerExcepcionesCliente", "Solicitud")';
+        const obtenerRespaldosExcepcionesUrl = '@Url.Action("ObtenerRespaldoExcepcion", "Solicitud")';
+        const obtenerTipoExcepcionesUrl = '@Url.Action("ObtenerTipoExcepciones", "Solicitud")';
+        const agregarExcepcionesUrl = '@Url.Action("AgregarExcepcion", "Solicitud")';
+        const subirArchivoExcepcion = '@Url.Action("UploadFileExcepcion", "Solicitud")';
+
+        let fileExcepcion = null;
+
+        const eliminarExcepcionUrl = '@Url.Action("EliminarExcepcion", "Solicitud")';
+        const actualizarExcepcionUrl = '@Url.Action("ActualizarExcepcion", "Solicitud")';
+        let idProductoExcepcion;
+        let idObservacion;
+        let tipoExcepciones = [];
+        const seBorroExc = false;
+        let excepcionesClienteData = null;
+        const idCliente = '@Model.IdCliente';
+        const idClienteConyugue = '@Model.IdClienteConyugue';
+        const documentoImpreso = '@Model.DocumentoImpreso';
+        const productos = @Html.Raw(Json.Serialize(Model.Productos));
+
+
+        $('#agregarExcepcion').on('hidden.bs.modal', function () {
+            $('#formAgregarExcepcion')[0].reset();
+        });
+        $('#aprobarSolicitud').on('hidden.bs.modal', function () {
+            $('#formAprobarExcepcion')[0].reset();
+        });
+        $('#responderSolicitud').on('hidden.bs.modal', function () {
+            $('#formResponderExcepcion')[0].reset();
+        });
+        $('#rechazarSolicitud').on('hidden.bs.modal', function () {
+            $('#formRechazarExcepcion')[0].reset();
+        });
+        $('#observarSolicitud').on('hidden.bs.modal', function () {
+            $('#formObservarExcepcion')[0].reset();
+        });
+
+
+        $("#aprobarSolicitud").on("hidden.bs.modal", function () { 
+            document.getElementById("formAprobarExcepcion").reset();
+            document.getElementById("formAprobarExcepcion").classList.remove("was-validated");
+        });
+
+        $("#observarSolicitud").on("hidden.bs.modal", function () {
+            document.getElementById("formObservarExcepcion").reset();
+            document.getElementById("formObservarExcepcion").classList.remove("was-validated");
+        });
+
+        $("#rechazarSolicitud").on("hidden.bs.modal", function () {
+            document.getElementById("formRechazarExcepcion").reset();
+            document.getElementById("formRechazarExcepcion").classList.remove("was-validated");
+        });
+
+        $(document).ready(function () {
+            cargarExcepcionesCliente();
+            obtenerRespaldoExcepcion();
+
+            if (idClienteConyugue != 0) {
+                obtenerRespaldoExcepcionConyugue();
+            }
+            obtenerTipoExcepciones();
+
+        });
+
+        function GetDataException(id) {
+            var idProducto = $("div[data-id=" + id + "] ._idproducto").val();
+            var descripcionproducto = $("div[data-id=" + id + "] ._descripcionproducto").val();
+            var idexcepcion = $("div[data-id=" + id + "] ._idexcepcion").val();
+            var descripcionexcepcion = $("div[data-id=" + id + "] ._descripcionexcepcion").val();
+            var justificacion = $("div[data-id=" + id + "] ._justificacion").html();
+            abrirModalEditarExcepcion(id, idexcepcion, descripcionexcepcion, justificacion, descripcionproducto);
+        }
+
+        function obtenerTipoExcepciones() {
+            $.ajax({
+                url: obtenerTipoExcepcionesUrl,
+                type: 'GET',
+                success: function (response) {
+                    tipoExcepciones = response;
+                    renderModalAgregar();
+                    postRenderModalAgregarExcepcion();
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error:', error);
+                }
+            });
+        }
+
+        function abrirModal(id, type) {
+            $(type).modal("show");
+            idProductoExcepcion = id;
+        }
+
+
+        function abrirModalResponder(id, observacion) {
+            $('#responderSolicitud').modal("show");
+            idObservacion = id;
+            $('#observacion-title').html(observacion);
+            console.log('observacion ' + observacion)
+        }
+
+        function rechazarExcepcion() {
+            var form = $('#formRechazarExcepcion')[0];
+            if (form.checkValidity() === false) {
+                $(form).addClass('was-validated');
+                return;
+            }
+
+            const motivo = $('#motivoRechazo').val();
+
+            $.ajax({
+                url: aprobarExcepcionUrl,
+                type: 'POST',
+                data: { idProductoExcepcion, motivo: motivo, estado: "e2" },
+                success: function (response) {
+                    $("#rechazarSolicitud").modal("hide");
+                    $('#motivoRechazo').val('');
+                    cargarExcepcionesCliente();
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error:', error);
+                }
+            });
+        }
+
+        function aprobarExcepcion() {
+            var form = $('#formAprobarExcepcion')[0];
+            if (form.checkValidity() === false) {
+                $(form).addClass('was-validated');
+                return;
+            }
+            const motivo = $('#motivoAprobacion').val();
+            $.ajax({
+                url: aprobarExcepcionUrl,
+                type: 'POST',
+                data: { idProductoExcepcion, motivo: motivo, estado: "e1" },
+                success: function (response) {
+                    $("#aprobarSolicitud").modal("hide");
+                    $('#motivoAprobacion').val('');
+                    cargarExcepcionesCliente();
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error:', error);
+                }
+            });
+        }
+
+        function observarExcepcion() {
+            var form = $('#formObservarExcepcion')[0];
+            if (form.checkValidity() === false) {
+                $(form).addClass('was-validated');
+                return;
+            }
+
+            const motivo = $('#motivoObservacion').val();
+            $.ajax({
+                url: aprobarExcepcionUrl,
+                type: 'POST',
+                data: { idProductoExcepcion, motivo, estado: "e3" },
+                success: function (response) {
+                    $("#observarSolicitud").modal("hide");
+                    $('#motivoObservacion').val('');
+                    cargarExcepcionesCliente();
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error:', error);
+                }
+            });
+        }
+
+        function cargarExcepcionesCliente() {
+            $.ajax({
+                url: obtenerExcepcionesClienteUrl + "?idClienteExcepcion=" + idCliente,
+                type: 'POST',
+                data: {},
+                success: function (response) {
+                    renderExcepcionesCliente(response);
+                    excepcionesClienteData = response;
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error:', error);
+                }
+            });
+        }
+
+
+        function renderExcepcionesCliente(excepciones) {
+            const order = ["APROBADO", "RECHAZADO", "OBSERVADO", "PENDIENTE DE REVISIÓN"];
+            const cantidadExcepciones = excepciones.length;
+            
+            excepciones.sort((a, b) => {
+                const indexA = order.indexOf(a.estado);
+                const indexB = order.indexOf(b.estado);
+
+                return indexA - indexB;
+            });
+
+            console.log('Se tiene la siguiente cantidad de excepciones: ' + cantidadExcepciones);
+
+            let botonAgregarExcepcion = '';
+            if (documentoImpreso === 'False') {
+                botonAgregarExcepcion = `<button type="button" class="btn btn-primary btn-sm" onclick="abrirModalAgregarExcepcion()"><i class="fa-solid fa-plus"></i> Agregar Excepción</button>`;
+            }
+
+            $('#excepcionesContainer').empty();
+            $('#excepcionesContainer').append(`<div class="pb-3">
+                                                    <div class="custom-border d-flex justify-content-between align-items-center" >
+                                                                        <h6>El cliente tiene las siguientes excepciones:</h6>
+                                                        ${botonAgregarExcepcion}
+                                                    </div>
+                                                </div>`);
+            let colorCard = 'error';
+            let acciones = ``;
+            let accionesEditDelete = '';
+            for (const item of excepciones) {
+                let motivo = '';
+                let flgBotonesPermiso = item.autonomiaPermiso;
+                switch (item.codigoEstado) {
+                    case 'e1':
+                        colorCard = 'success';
+                        motivo = `
+                                            <li class="list-group-item">
+                                            <div class="col">
+                                                <strong>Motivo aprobación</strong>
+                                            </div>
+                                            <div class="col">
+                                                    <small>${item.motivoAprobacion}</small>
+                                            </div>
+                                        </li>
+                                `;
+                        break;
+                    case 'e2':
+                        colorCard = 'danger';
+                        motivo = `
+                                            <li class="list-group-item">
+                                            <div class="col">
+                                                <strong>Motivo rechazo</strong>
+                                            </div>
+                                            <div class="col">
+                                                        <small>${item.motivoRechazo}</small>
+                                            </div>
+                                        </li>
+                                `;
+                        break;
+                    case 'e3':
+                        colorCard = 'warning';
+
+                        let observaciones = "";                        
+                        let respuestas = "";
+                        let hayRespuesta = true;
+                        for (const obs of item.observaciones) {
+                            observaciones += `<p>${obs.observacion}</p>`;
+                            if (obs.respuesta === '') {
+                                respuestas += `<button class="btn btn-primary btn-sm mb-2" onclick="abrirModalResponder('${obs.idObservacion}', '${obs.observacion}')">
+                                                                                                                    <i class="fa-solid fa-pen fa-xs"></i>
+                                                                                                                Responder
+                                                                                                                </button>`;
+                                hayRespuesta = false;
+                                accionesEditDelete = "";
+
+                            } else {
+                                respuestas += `<p>${obs.respuesta}</p>`;
+
+                                accionesEditDelete = `  <div class="d-flex justify-content-center">
+                                                                <button type="button" class="btn btn-danger btn-sm me-2" onclick="eliminarExcepcion('${item.idProductoExcepcion}', '${item.descripcionProducto}', '${item.descripcionExcepcion}')"><i class="fa-solid fa-trash"></i></button>
+                                                                <button type="button" class="btn btn-warning btn-sm" onclick="abrirModalEditarExcepcion('${item.idProductoExcepcion}','${item.idExcepcion}', '${item.descripcionExcepcion}', '${item.justificacion}', '${item.descripcionProducto}')"><i class="fa-solid fa-pen"></i></button>
+                                                            </div>`;
+                            }
+                        }
+
+                        acciones = `<button ${flgBotonesPermiso ? 'hidden' : ''}  type="button" class="btn btn-success" ${!hayRespuesta || item.autonomia ? 'disabled' : ''} onclick="abrirModal('${item.idProductoExcepcion}', '#aprobarSolicitud')" >
+                                                <i class="fa-solid fa-check"></i>
+                                                Aprobar
+                                            </button>
+                                                                                    <button ${flgBotonesPermiso ? 'hidden' : ''}  type="button" class="btn btn-warning mx-2" ${!hayRespuesta || item.autonomia ? 'disabled' : ''} onclick="abrirModal('${item.idProductoExcepcion}', '#observarSolicitud')" data-bs-toggle="modal">
+                                                <i class="fa-solid fa-triangle-exclamation"></i>
+                                                Observar
+                                            </button>
+                                                                                    <button  ${flgBotonesPermiso ? 'hidden' : ''}  type="button" class="btn btn-danger" ${!hayRespuesta || item.autonomia ? 'disabled' : ''} onclick="abrirModal('${item.idProductoExcepcion}', '#rechazarSolicitud')" data-bs-toggle="modal">
+                                                <i class="fa-solid fa-trash"></i>
+                                                Rechazar
+                                            </button>`;
+
+                        motivo = `<li class="list-group-item">
+                                                        <div class="row">
+                                                        <div class="col-8">
+                                                            <strong class="mb-2">Observaciones</strong>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <strong class="mb-2">Respuestas</strong>
+                                                        </div>
+                                                    </div>
+                                                        <div class="row">
+                                                            <div class="col-8">
+                                                                ${observaciones}
+                                                            </div>
+                                                                    <div class="col-4 d-flex flex-column">
+                                                                ${respuestas}
+                                                            </div>
+                                                        </div>
+                                                </li>`;
+                        break;
+                    default:
+                        colorCard = 'error';
+                        accionesEditDelete = `
+                                        <div class="d-flex justify-content-center">
+                                            <button type="button" class="btn btn-danger btn-sm me-2" onclick="eliminarExcepcion('${item.idProductoExcepcion}', '${item.descripcionProducto}', '${item.descripcionExcepcion}')"><i class="fa-solid fa-trash"></i></button>
+                                            <button type="button" class="btn btn-warning btn-sm btnEditException" onclick="GetDataException('${item.idProductoExcepcion}')"><i class="fa-solid fa-pen"></i></button>
+                                        </div>
+                                    `;
+                        acciones = `<button type="button" ${flgBotonesPermiso ? 'hidden' : ''} class="btn btn-success" ${item.autonomia ? 'disabled' : ''} onclick="abrirModal('${item.idProductoExcepcion}', '#aprobarSolicitud')" >
+                                                                <i class="fa-solid fa-check"></i>
+                                                                Aprobar
+                                                            </button>
+                                                                    <button type="button" ${flgBotonesPermiso ? 'hidden' : ''} class="btn btn-warning ${item.autonomia ? 'disabled' : ''} mx-2" onclick="abrirModal('${item.idProductoExcepcion}', '#observarSolicitud')" data-bs-toggle="modal">
+                                                                <i class="fa-solid fa-triangle-exclamation"></i>
+                                                                Observar
+                                                            </button>
+                                                                    <button type="button" ${flgBotonesPermiso ? 'hidden' : ''} class="btn btn-danger" ${item.autonomia ? 'disabled' : ''} onclick="abrirModal('${item.idProductoExcepcion}', '#rechazarSolicitud')" data-bs-toggle="modal">
+                                                                <i class="fa-solid fa-trash"></i>
+                                                                Rechazar
+                                                            </button>`;
+                        break;
+                }
+
+                const excepcion = ` <div class="alert alert-${colorCard}" role="alert" data-id="${item.idProductoExcepcion}" style="display: ${item.autonomia ? 'none !important' : ''}">
+                                            <input class="_idproducto" type="hidden" value="${item.idProducto}"/>
+                                            <input class="_descripcionproducto" type="hidden" value="${item.descripcionProducto}"/>
+                                            <input class="_idexcepcion" type="hidden" value="${item.idExcepcion}"/>
+                                            <input class="_descripcionexcepcion" type="hidden" value="${item.descripcionExcepcion}"/>
+                                            <div class="row">
+                                                <div class="cold d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#collapseExample${item.idProductoExcepcion}" id="collapseEx${item.idProductoExcepcion}" role="button" aria-expanded="false" aria-controls="collapseExample" data-idproductoexcepcion="${item.idProductoExcepcion}">
+                                                    <div class="pe-2">
+                                                        <div><strong>Excepción ${item.descripcionExcepcion}</strong></div>
+                                                        <div><small>${item.descripcionProducto}</small></div>
+                                                    </div>
+                                                    <div>
+                                                        <p><b>${item.estado}</b></p>${accionesEditDelete}
+                                                    </div>
+                                                </div>
+                                                <div class="collapse" id="collapseExample${item.idProductoExcepcion}">
+                                                    <div class="card card-body mt-2">
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item">
+                                                                <div class="col">
+                                                                    <strong>Instancia correspondiente</strong>
+                                                                </div>
+                                                                                        <div class="col"> <small>${item.aprobador}</small></div>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <div class="col">
+                                                                    <strong>Detalle de la justificación</strong>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <small class="_justificacion">${item.justificacion}</small>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <div class="col">
+                                                                    <strong>Producto relacionado a la excepción</strong>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <small>${item.descripcionProducto}</small>
+                                                                </div>
+                                                            </li>
+                                                            ${motivo}
+                                                        </ul>
+                                                        <div class="d-flex justify-content-end col mt-3">
+                                                            ${acciones}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>`;
+                $('#excepcionesContainer').append(excepcion);
+            }
+        }
+
+
+        function responderObservacion() {
+            var form = $('#formResponderExcepcion')[0];
+            if (form.checkValidity() === false) {
+                $(form).addClass('was-validated');
+                return;
+            }
+
+            const respuesta = $('#respuestaObservacion').val();
+            $.ajax({
+                url: responderExcepcionUrl,
+                type: 'POST',
+                data: { idObservacion, respuesta },
+                success: function (response) {
+                    $("#responderSolicitud").modal("hide");
+                    $('#respuestaObservacion').val('');
+                    cargarExcepcionesCliente();
+                    location.reload();
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error:', error);
+                }
+            });
+        }
+
+        function obtenerRespaldoExcepcion() {
+            $.ajax({
+                url: obtenerRespaldosExcepcionesUrl + "?_idCliente=" + idCliente,
+                type: 'POST',
+                data: {},
+                success: function (response) {
+                    const respaldosList = response.filter(t => t.tipoRespaldo === "RESPALDO");
+                    const infoCred = response.filter(t => t.tipoRespaldo === "INFOCRED");
+                    const cicAsfi = response.filter(t => t.tipoRespaldo === "ASFI");
+                    const amaiNazir = response.filter(t => t.tipoRespaldo === "AMAI_NAZIR");
+                    let respaldos = '';
+                    let count = 0;
+                    if (respaldosList.length > 0) {
+                        for (const item of respaldosList) {
+                            count = count + 1;
+                            respaldos += `<div class="alert btn btn-primary alert-primary d-flex align-items-center" role="alert" onclick="previewFile('${item.url}', '${item.nombreArchivo}')">
+                                                                                                <div>
+                                                                                                    <i class="fa-solid fa-file fa-2xl"></i>
+                                                                                                </div>
+                                                                                                        <div class="ms-4" style="text-align: left;">
+                                                                                                    <div><strong>${item.respaldoDescripcion} ${count}</strong></div>
+                                                                                                    <div><small>${item.nombreArchivo}</small></div>
+                                                                                                </div>
+                                                                                            </div>`;
+                        }                        
+                    }
+                    else
+                    {
+                       
+                    }
+                    $("#documentosRespaldos").append(respaldos);
+                    if (infoCred.length > 0) {
+                        $('#infocred').empty();
+                        const dataInfoCred = infoCred[0];
+                        $('#infocred').html(`
+                                                                                    <div>
+                                                                                        <i class="fa-solid fa-file fa-2xl"></i>
+                                                                                    </div>
+                                                                                            <div class="ms-4" style="text-align: left;">
+                                                                                        <div><strong>${dataInfoCred.respaldoDescripcion}</strong></div>
+                                                                                        <div><small>${dataInfoCred.nombreArchivo}</small></div>
+                                                                                    </div>`);
+                        $('#infocred').on('click', function () {
+                            previewFile(dataInfoCred.url, dataInfoCred.nombreArchivo);
+                        });
+                        $('#infocred').addClass('alert-success');
+                        $('#infocred').removeClass('alert-light');
+                        $('#infocred').addClass('btn btn-success');
+                    }
+                    if (cicAsfi.length > 0) {
+                        $('#asfi').empty();
+                        const datacicAsfi = cicAsfi[0];
+                        $('#asfi').html(`
+
+                                        <div>
+                                            <i class="fa-solid fa-file fa-2xl"></i>
+                                        </div>
+                                                <div class="ms-4" style="text-align: left;">
+
+                                             <div><strong>${datacicAsfi.respaldoDescripcion}</strong></div>
+                                            <div><small>${datacicAsfi.nombreArchivo}</small></div>
+                                        </div>`);
+                        $('#asfi').on('click', function () {
+                            previewFile(datacicAsfi.url, datacicAsfi.nombreArchivo);
+                        });
+                        $('#asfi').addClass('alert-success');
+                        $('#asfi').removeClass('alert-light');
+                        $('#asfi').addClass('btn btn-success');
+                    }
+                    if (amaiNazir.length > 0) {
+                        $('#amai-nazir').empty();
+                        const dataamaiNazir = amaiNazir[0];
+                        $('#amai-nazir').html(`
+
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa-solid fa-file fa-2xl"></i>
+                                                        <div class="ms-4" style="text-align: left;">
+                                                        <div><strong>${dataamaiNazir.respaldoDescripcion}</strong></div>
+                                                        <div><small>${dataamaiNazir.nombreArchivo}</small></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            `);
+                        $('#amai-nazir').on('click', function () {
+                            previewFile(dataamaiNazir.url, dataamaiNazir.nombreArchivo);
+                        });
+                        $('#amai-nazir').addClass('alert-success');
+                        $('#amai-nazir').removeClass('alert-light');
+                        $('#amai-nazir').addClass('btn btn-success');
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error:', error);
+                }
+            });
+        }
+
+        function obtenerRespaldoExcepcionConyugue() {
+            $.ajax({
+                url: obtenerRespaldosExcepcionesUrl + "?_idCliente=" + idClienteConyugue,
+                type: 'POST',
+                data: {},
+                success: function (response) {
+                    const infoCred = response.filter(t => t.tipoRespaldo === "INFOCRED");
+                    const cicAsfi = response.filter(t => t.tipoRespaldo === "ASFI");
+                    const amaiNazir = response.filter(t => t.tipoRespaldo === "AMAI_NAZIR");
+
+                    if (infoCred.length > 0) {
+                        $('#infocredConyugue').empty();
+                        const dataInfoCred = infoCred[0];
+                        $('#infocredConyugue').html(`
+
+                                <div class="">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fa-solid fa-file fa-2xl"></i>
+                                                            <div class="ms-4" style="text-align: left;">
+                                                                <div><strong>${dataInfoCred.respaldoDescripcion}</strong></div>
+                                                                    <div><small>${dataInfoCred.nombreArchivo}</small></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            `);
+                        $('#infocredConyugue').on('click', function () {
+                            previewFile(dataInfoCred.url, dataInfoCred.nombreArchivo);
+                        });
+                        $('#infocredConyugue').addClass('alert-success');
+                        $('#infocredConyugue').removeClass('alert-light');
+                        $('#infocredConyugue').addClass('btn btn-success');
+                    }
+                    if (cicAsfi.length > 0) {
+                        $('#asfiConyugue').empty();
+                        const datacicAsfi = cicAsfi[0];
+                        $('#asfiConyugue').html(`
+                                                                                            <div>
+                                                                                                <i class="fa-solid fa-file fa-2xl"></i>
+                                                                                            </div>
+                                                                                                    <div class="ms-4" style="text-align: left;">
+                                                                                                    <div><strong>${datacicAsfi.respaldoDescripcion}</strong></div>
+                                                                                                    <div><small>${datacicAsfi.nombreArchivo}</small></div>
+                                                                                            </div>`);
+                        $('#asfiConyugue').on('click', function () {
+                            previewFile(datacicAsfi.url, datacicAsfi.nombreArchivo);
+                        });
+                        $('#asfiConyugue').addClass('alert-success');
+                        $('#asfiConyugue').removeClass('alert-light');
+                        $('#asfiConyugue').addClass('btn btn-success');
+                    }
+                    if (amaiNazir.length > 0) {
+                        $('#amai-nazirConyugue').empty();
+                        const dataamaiNazir = amaiNazir[0];
+                        $('#amai-nazirConyugue').html(`<div>
+                                                                                                <i class="fa-solid fa-file fa-2xl"></i>
+                                                                                            </div>
+                                                                                                    <div class="ms-4" style="text-align: left;">
+                                                                                                    <div><strong>${dataamaiNazir.respaldoDescripcion}</strong></div>
+                                                                                                        <div><small>${dataamaiNazir.nombreArchivo}</small></div>
+                                                                                            </div>`);
+                        $('#amai-nazirConyugue').on('click', function () {
+                            previewFile(dataamaiNazir.url, dataamaiNazir.nombreArchivo);
+                        });
+                        $('#amai-nazirConyugue').addClass('alert-success');
+                        $('#amai-nazirConyugue').removeClass('alert-light');
+                        $('#amai-nazirConyugue').addClass('btn btn-success');
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error:', error);
+                }
+            });
+        }
+
+        function previewFile(url, nombreArchivo) {
+            let content;
+            if (nombreArchivo.toLowerCase().endsWith('.pdf')) {
+                content = `<embed src="${url}" type="application/pdf" width="100%" height="500px"/>`;
+            } else {
+                content = `<img src="${url}" width="100%" class="img-fluid"/>`;
+            }
+
+            $("#modalPreviewFile").html(`
+                                                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title">${nombreArchivo}</h5>
+                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    ${content}
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    `);
+            $("#modalPreviewFile").modal("show");
+        }
+
+        function eliminarExcepcion(idProductoExcepcion, descripcionProducto, descripcionEx) {
+            $('#collapseEx' + idProductoExcepcion).collapse('hide');
+            $('#eliminarExcepcion').html(`
+
+                                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                                            <div class="alert alert-danger" role="alert">
+                                                            <div class="modal-content">
+                                                              <div class="modal-header">
+                                                                <h5 class="modal-title text-danger" id="exampleModalLongTitle">Eliminar Excepción ${descripcionEx}</h5>
+                                                              </div>
+                                                              <div id="contentDesestimarCaso" class="modal-body">
+                                                                  <h6>¿Esta seguro de eliminar la excepción con el siguiente producto relacionado <span class="text-danger">${descripcionProducto}</span>?</h6>
+                                                              </div>
+                                                              <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary" onclick="cerrarModal('eliminarExcepcion')">Cerrar</button>
+                                                                        <button type="button" class="btn btn-danger" onclick="eliminarExcepcionPost('${idProductoExcepcion}')">Aceptar</button>
+                                                              </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                `);
+            $('#eliminarExcepcion').modal("show");
+        }
+
+        function cerrarModal(id) {
+            $(`#${id}`).modal("hide");
+        }
+
+        function cambiarPestaña() {
+            seBorroExc = false;
+        }
+
+        function eliminarExcepcionPost(idProductoExcepcion) {
+            $.ajax({
+                url: eliminarExcepcionUrl + "?idProductoExcepcion=" + idProductoExcepcion,
+                type: 'POST',
+                data: {},
+                success: function (response) {
+                    $('#eliminarExcepcion').modal("hide");
+                    cargarExcepcionesCliente();
+                    location.reload();
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error:', error);
+                }
+            });
+        }
+
+        function renderSelectTipoExcepcion() {
+            let content = ` <div class="form-floating mb-3">
+                                    <select class="form-select" id="selectExcepcion" aria-label="Seleccionar una excepcion" id="validationCustom04" required>
+                                    <option selected disabled value="">Seleccionar una opción</option>`;
+            for (const item of tipoExcepciones) {
+                content += `<option value="${item.idDetalle}">${item.descripcion}</option>`;
+            }
+            content += `    </select><label for="selectExcepcion">Tipo Excepción</label>
+                                <div class="invalid-feedback">Debe seleccionar una opción valida.</div>
+                            </div>`;
+            return content;
+        }
+
+        const maxProductos = 7;
+
+        function renderProducto() {
+            let seleccionados = excepcionesClienteData ? excepcionesClienteData.length : 0;
+
+            let content = `<div class="form-check">`;
+            for (const item of productos) {
+                content += `
+                        <div>
+                            <input class="form-check-input producto-checkbox" type="checkbox" value="" id="flexCheck-${item.idProductoFinalidad}" onchange="handleCheckboxChange()">
+                            <label class="form-check-label" for="flexCheck-${item.idProductoFinalidad}">
+                                ${item.productoDescripcion}
+                            </label>
+                        </div>
+                    `;
+            }
+            content += `
+                    <div>
+                        <input class="form-check-input" type="checkbox" value="" id="selectAll" onchange="handleSelectAllChange()">
+                        <label class="form-check-label" for="selectAll">
+                            Todos
+                        </label>
+                        <div class="invalid-feedback">
+                            Debe seleccionar al menos un producto.
+                        </div>
+                    </div>
+                </div>`;
+            return content;
+        }
+
+        function handleCheckboxChange() {
+            const checkboxes = document.querySelectorAll('.producto-checkbox');
+            const selectAll = document.getElementById('selectAll');
+            let seleccionados = excepcionesClienteData ? excepcionesClienteData.length : 0;
+
+
+            checkboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    seleccionados++;
+                }
+            });
+
+            if (checkboxes.length >= 7 - seleccionados) {
+                selectAll.disabled = true;
+            } else {
+                selectAll.disabled = false;
+            }
+
+            if (seleccionados >= maxProductos) {
+                checkboxes.forEach(checkbox => {
+                    if (!checkbox.checked) {
+                        checkbox.disabled = true;
+                    }
+                });
+            } else {
+                checkboxes.forEach(checkbox => {
+                    checkbox.disabled = false;
+                });
+            }
+        }
+
+        function handleSelectAllChange() {
+            const selectAll = document.getElementById('selectAll');
+            const checkboxes = document.querySelectorAll('.producto-checkbox');
+
+            if (selectAll.checked) {
+                let seleccionados = excepcionesClienteData ? excepcionesClienteData.length : 0;
+                checkboxes.forEach(checkbox => {
+                    if (!checkbox.disabled && seleccionados < maxProductos) {
+                        checkbox.checked = true;
+                        seleccionados++;
+                    }
+                });
+            } else {
+                checkboxes.forEach(checkbox => {
+                    checkbox.checked = false;
+                });
+            }
+
+            handleCheckboxChange();
+        }
+
+
+
+        function abrirModalEditarExcepcion(idProductoExcepcion, idExcepcion, excepcionDescripcion, justificacion, producto) {
+
+            let formularioEditar = `${renderSelectTipoExcepcion()}`;
+
+            $('#editarExcepcion').html(`
+                                                     <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+                                                          <div class="modal-header">
+                                                            <h5 class="modal-title text-primary-emphasis" id="exampleModalLongTitle">Excepción ${excepcionDescripcion}</h5>
+                                                          </div>
+                                                          <div class="modal-body">
+                                                              <div class="mb-3"> Producto <b class="text-success-emphasis">${producto}</b></div>
+                                                                <div class="invalid-feedback">
+                                                                    Por favor selecciona un producto
+                                                                </div>
+                                                                ${formularioEditar}
+                                                                <div class="invalid-feedback ">Por favor selecciona una excepción</div>
+                                                                <div>
+                                                                    <div class="form-floating">
+                                                                        <textarea id="justificacionEditar" class="form-control" placeholder="Leave a comment here" maxlength="10000" style="height: 250px; font-size: 12px;" required></textarea>
+                                                                        <label for="justificacionEditar">Justificación</label>
+                                                                        <div class="invalid-feedback">El campo de justificación es requerido.</div>
+                                                                    </div>
+                                                                </div>
+                                                          </div>
+                                                          <div class="modal-footer">
+                                                              <button type="button" class="btn btn-secondary" onclick="cerrarModal('editarExcepcion')">Cerrar</button>
+                                                              <button type="button" class="btn btn-primary" onclick="editarExcepcionPost('${idProductoExcepcion}')">Aceptar</button>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    `);
+            $('#justificacionEditar').val(justificacion);
+            $('#selectExcepcion').val(idExcepcion);
+            $('#editarExcepcion').modal("show");
+        }
+
+        function editarExcepcionPost(idProductoExcepcion) {
+            const justificacion = $('#justificacionEditar').val();
+            const idExcepcion = $('#selectExcepcion').val();
+            $.ajax({
+                url: actualizarExcepcionUrl,
+                type: 'POST',
+                data: { idExcepcion, idProductoExcepcion, justificacion },
+                success: function (response) {
+                    $('#editarExcepcion').modal("hide");
+                    cargarExcepcionesCliente();
+                    location.reload();
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error:', error);
+                }
+            });
+        }
+
+        function renderModalAgregar() {
+            let formularioEditar = `${renderSelectTipoExcepcion()}`;
+            let productosCheckBox = `${renderProducto()}`;
+
+            $('#agregarExcepcion').html(`<div class="modal-dialog modal-lg" role="document">
+                                                <div class="modal-content ">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title text-primary-emphasis" id="exampleModalLongTitle">Agregar Excepción</h5>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form id="formAgregarExcepcion" class="needs-validation" novalidate>
+                                                            <div class="text-primary-emphasis mb-1"><b>Productos</b></div>
+                                                            <div class="mb-3">${productosCheckBox}</div>
+                                                            <div class="invalid-feedback mb-2" id="checkboxFeedback" style="display: none;">Debe seleccionar al menos un producto.</div>
+                                                            ${formularioEditar}
+                                                            <div>
+                                                                <div class="form-floating mb-3">
+                                                                    <textarea id="justificacionAgregar" class="form-control" placeholder="Leave a comment here" maxlength="10000" style="height: 250px; font-size: 12px;" required></textarea>
+                                                                    <label for="justificacionAgregar">Justificación</label>
+                                                                    <div class="invalid-feedback">El campo de justificación es requerido.</div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+
+                        <div class="alert alert-primary" role="alert" style="cursor: pointer;" id="idChangeUploadFile">
+                                <div onclick="document.getElementById('idUploadFileExcepcion').click();">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                            </svg><strong > Respaldo (opcional)</strong>
+                                            <input type="file" id="idUploadFileExcepcion" name="idUploadFileExcepcionName" value="RESPALDO_EXCEPCION"  accept=".pdf, .jpeg, .jpg, .png, .gif" style="display: none;"/>
+                        </div>
+                                            <div class="preview" id="filePreview" style="display: none;">
+                        <div id="fileName" style="margin-top: 10px;"></div>
+                                    <button  type="button" id="removeButton"  class="btn btn-danger">Quitar Archivo</button>
+            </div>
+        </div>
+
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" onclick="cerrarModal('agregarExcepcion')">Cerrar</button>
+                                                        <button type="button" class="btn btn-primary" onclick="agregarExcepcionPost()">Guardar</button>
+                                                    </div>
+                                                </div>
+                                            </div>`);
+
+            $('#selectAll').change(function () {
+                $('.producto-checkbox').prop('checked', this.checked);
+                validateCheckboxes();
+            });
+
+            $(document).on('change', '.producto-checkbox', function () {
+                if (!this.checked) {
+                    $('#selectAll').prop('checked', false);
+                } else if ($('.producto-checkbox:checked').length === $('.producto-checkbox').length) {
+                    $('#selectAll').prop('checked', true);
+                }
+                validateCheckboxes();
+            });
+        }
+
+        function validateCheckboxes() {
+            const checkboxes = $('.producto-checkbox');
+            const isChecked = checkboxes.is(':checked');
+            const selectAll = $('#selectAll')[0];
+            selectAll.setCustomValidity(isChecked ? '' : 'Debe seleccionar al menos un producto.');
+            checkboxes.each(function () {
+                this.setCustomValidity(isChecked ? '' : 'Debe seleccionar al menos un producto.');
+            });
+        }
+
+        function abrirModalAgregarExcepcion() {
+            handleCheckboxChange();
+            $("#agregarExcepcion").modal("show");
+        }
+
+        function resetForm() {
+            var form = document.getElementById('formAgregarExcepcion');
+            form.reset();
+            form.classList.remove('was-validated');
+
+            const selectAll = document.getElementById('selectAll');
+            selectAll.setCustomValidity('');
+        }
+
+        function agregarExcepcionPost() {
+            var form = document.getElementById('formAgregarExcepcion');
+
+            const checkboxes = $('.producto-checkbox');
+            const isChecked = checkboxes.is(':checked');
+            const selectAll = $('#selectAll')[0];
+            selectAll.setCustomValidity(isChecked ? '' : 'Debe seleccionar al menos un producto.');
+
+            checkboxes.each(function () {
+                this.setCustomValidity(isChecked ? '' : 'Debe seleccionar al menos un producto.');
+            });
+
+            if (form.checkValidity() === false) {
+                form.classList.add('was-validated');
+                return;
+            }
+
+            let idProductos = [];
+            $('.producto-checkbox:checked').each(function () {
+                idProductos.push(this.id.split("-")[1]);
+            });
+
+            const justificacion = $('#justificacionAgregar').val();
+            const idExcepcion = $('#selectExcepcion').val();
+
+            // Validaciones
+            if (!justificacion) {
+                alert("La justificación no puede estar vacía.");
+                return;
+            }
+
+            if (!idExcepcion || idExcepcion === "") {
+                alert("Debe seleccionar una excepción.");
+                return;
+            }
+
+            if (idProductos.length === 0) {
+                alert("Debe seleccionar al menos un producto.");
+                return;
+            }
+
+            $.ajax({
+                url: agregarExcepcionesUrl,
+                type: 'POST',
+                data: { idProductoExcepcion: idExcepcion, idProductos, justificacion },
+                success: function (response) {
+                    console.log('respuesta agregacion excepcion: ' + JSON.stringify(response));
+                    if(response.status){
+                        uploadFileExceppcion(fileExcepcion, response.data[0]);
+                        // validateAndUploadFile(fileExcepcion, response.data[0]);
+                    }
+                    $('#agregarExcepcion').modal("hide");
+                    cargarExcepcionesCliente();
+                    resetForm();
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error:', error);
+                }
+            });
+        }
+
+        function postRenderModalAgregarExcepcion(){
+            document.getElementById('idUploadFileExcepcion').addEventListener('change', function (event) {
+                var maxSizeFile = @ViewBag.maxSizeFile;
+                // console.log('VALOR MAXIMO PARA LA SUBIDA DE ARCHIVOS: ' + maxSizeFile);
+                // console.log('hubo un cambio dentro del evento file');
+                const file = event.target.files[0];
+                const maxSize = maxSizeFile * 1024 * 1024;
+                const preview = document.getElementById('filePreview');
+                const previewImage = document.getElementById('previewImage');
+                const removeButton = document.getElementById('removeButton');
+                if (file) {
+                    if (file.size > maxSize) {
+                        document.getElementById('idUploadFileExcepcion').value = '';
+                        alert(`El archivo excede el tamaño máximo permitido de ${maxSizeFile}MB.`);
+                        return;
+                    }
+                    fileExcepcion = file;
+                    // console.log('datos del archivo: ' + file.name);
+                    // console.log('datos del archivo: ' + fileExcepcion.name);
+                    const fileNameDiv = document.getElementById('fileName');
+                    fileNameDiv.textContent = `Archivo seleccionado: ${file.name}`;
+                    preview.style.display = 'flex';
+                }
+
+                removeButton.addEventListener('click', function () {
+                    document.getElementById('idUploadFileExcepcion').value = '';
+                    preview.style.display = 'none';
+                    fileExcepcion = null;
+                }, { once: true }); 
+            });
+        }
+
+
+        function uploadFileExceppcion(file, idExcepcionAgregada) {
+            if (file) {
+                const formData = new FormData();
+                var idClienteCaso = document.getElementById('idClienteCasoVer').innerText || document.getElementById('idClienteCasoVer').textContent;
+
+                formData.append('file', file);
+                formData.append('IdCliente', idClienteCaso);
+                formData.append('IdExcepcionAgregada', idExcepcionAgregada);
+
+                fetch(subirArchivoExcepcion, {
+                    method: 'POST',
+                    body: formData
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log('File uploaded successfully:', data);
+                        obtenerRespaldoExcepcion();
+                        $("#documentosRespaldos").empty();
+                    })
+                    .catch(error => {
+                        console.error('Error uploading file:', error);
+                        
+                    });
+            }
+        }
+
+        $("#agregarExcepcion").on("hidden.bs.modal", function () {
+            const preview = document.getElementById('filePreview');
+            document.getElementById('idUploadFileExcepcion').value = '';
+            preview.style.display = 'none';
+        });
+    </script>
+
+
+</body>

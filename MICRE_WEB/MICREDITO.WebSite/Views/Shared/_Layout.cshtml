@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MICREDITO</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="loading hide">
+        <img src="~/Content/Image/loading.gif" />
+    </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <img src="~/Content/Image/logo-bcp.png" class="d-inline-block align-top" loading="lazy" />
+        <h1>MICREDITO</h1>
+        @if (!string.IsNullOrEmpty(User.Identity.Name))
+        {
+            @Html.Partial("_menu")
+        }
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer>
+        <p>&copy; @DateTime.Now.Year - Modulo Integrado de Creditos</p>
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/datatables")
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+
+
+<script>
+    $(document).ready(function () {
+        $('.loading').hide();
+    });
+
+    $('form').submit(function () {
+        var result = $(this).valid();
+        if (result)
+            $('.loading').show();
+    })
+</script>

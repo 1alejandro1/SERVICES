@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MICRE_SCORE_PYME.props" />
+</Project>

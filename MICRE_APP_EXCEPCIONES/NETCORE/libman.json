@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "libraries": [
+    {
+      "provider": "cdnjs",
+      "library": "bootstrap@5.3.3",
+      "destination": "wwwroot/lib/bootstrap/"
+    },
+    {
+      "provider": "unpkg",
+      "library": "dropzone@5.9.3",
+      "destination": "wwwroot/dropzone/"
+    }
+  ]
+}

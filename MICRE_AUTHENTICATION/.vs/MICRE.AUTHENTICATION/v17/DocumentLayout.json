@@ -1,0 +1,244 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\T25208\\MICREDITO\\MICRE_AUTHENTICATION\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{14F7E523-B9B1-43A6-B3CC-E3BE28497471}|MICRE.AUTHENTICATION.API\\MICRE.AUTHENTICATION.API.csproj|d:\\t25208\\micredito\\micre_authentication\\micre.authentication.api\\services\\servicesegurinet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14F7E523-B9B1-43A6-B3CC-E3BE28497471}|MICRE.AUTHENTICATION.API\\MICRE.AUTHENTICATION.API.csproj|solutionrelative:micre.authentication.api\\services\\servicesegurinet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14F7E523-B9B1-43A6-B3CC-E3BE28497471}|MICRE.AUTHENTICATION.API\\MICRE.AUTHENTICATION.API.csproj|d:\\t25208\\micredito\\micre_authentication\\micre.authentication.api\\controllers\\segurinetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14F7E523-B9B1-43A6-B3CC-E3BE28497471}|MICRE.AUTHENTICATION.API\\MICRE.AUTHENTICATION.API.csproj|solutionrelative:micre.authentication.api\\controllers\\segurinetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14F7E523-B9B1-43A6-B3CC-E3BE28497471}|MICRE.AUTHENTICATION.API\\MICRE.AUTHENTICATION.API.csproj|d:\\t25208\\micredito\\micre_authentication\\micre.authentication.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{14F7E523-B9B1-43A6-B3CC-E3BE28497471}|MICRE.AUTHENTICATION.API\\MICRE.AUTHENTICATION.API.csproj|solutionrelative:micre.authentication.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238746E4-D282-4CBB-BC7F-BEF63452554F}|MICRE.AUTHENTICATION.AD\\MICRE.AUTHENTICATION.AD.csproj|d:\\t25208\\micredito\\micre_authentication\\micre.authentication.ad\\managerad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{238746E4-D282-4CBB-BC7F-BEF63452554F}|MICRE.AUTHENTICATION.AD\\MICRE.AUTHENTICATION.AD.csproj|solutionrelative:micre.authentication.ad\\managerad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14F7E523-B9B1-43A6-B3CC-E3BE28497471}|MICRE.AUTHENTICATION.API\\MICRE.AUTHENTICATION.API.csproj|d:\\t25208\\micredito\\micre_authentication\\micre.authentication.api\\controllers\\activedirectorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14F7E523-B9B1-43A6-B3CC-E3BE28497471}|MICRE.AUTHENTICATION.API\\MICRE.AUTHENTICATION.API.csproj|solutionrelative:micre.authentication.api\\controllers\\activedirectorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C510BAAD-4D07-4BFF-A94A-C12D197AF899}|MICRE.AUTHENTICATION.SEGURINET\\MICRE.AUTHENTICATION.SEGURINET.csproj|d:\\t25208\\micredito\\micre_authentication\\micre.authentication.segurinet\\managersegurinet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C510BAAD-4D07-4BFF-A94A-C12D197AF899}|MICRE.AUTHENTICATION.SEGURINET\\MICRE.AUTHENTICATION.SEGURINET.csproj|solutionrelative:micre.authentication.segurinet\\managersegurinet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C510BAAD-4D07-4BFF-A94A-C12D197AF899}|MICRE.AUTHENTICATION.SEGURINET\\MICRE.AUTHENTICATION.SEGURINET.csproj|d:\\t25208\\micredito\\micre_authentication\\micre.authentication.segurinet\\micre.authentication.segurinet.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{C510BAAD-4D07-4BFF-A94A-C12D197AF899}|MICRE.AUTHENTICATION.SEGURINET\\MICRE.AUTHENTICATION.SEGURINET.csproj|solutionrelative:micre.authentication.segurinet\\micre.authentication.segurinet.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{238746E4-D282-4CBB-BC7F-BEF63452554F}|MICRE.AUTHENTICATION.AD\\MICRE.AUTHENTICATION.AD.csproj|d:\\t25208\\micredito\\micre_authentication\\micre.authentication.ad\\micre.authentication.ad.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{238746E4-D282-4CBB-BC7F-BEF63452554F}|MICRE.AUTHENTICATION.AD\\MICRE.AUTHENTICATION.AD.csproj|solutionrelative:micre.authentication.ad\\micre.authentication.ad.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E429578-976E-422D-B218-CDDBE6262A0D}|MICRE.AUTHENTICATION.SMARTLINK\\MICRE.AUTHENTICATION.SMARTLINK.csproj|d:\\t25208\\micredito\\micre_authentication\\micre.authentication.smartlink\\micre.authentication.smartlink.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{1E429578-976E-422D-B218-CDDBE6262A0D}|MICRE.AUTHENTICATION.SMARTLINK\\MICRE.AUTHENTICATION.SMARTLINK.csproj|solutionrelative:micre.authentication.smartlink\\micre.authentication.smartlink.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 26,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_AUTHENTICATION\\MICRE.AUTHENTICATION.API\\appsettings.json",
+              "RelativeDocumentMoniker": "MICRE.AUTHENTICATION.API\\appsettings.json",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_AUTHENTICATION\\MICRE.AUTHENTICATION.API\\appsettings.json",
+              "RelativeToolTip": "MICRE.AUTHENTICATION.API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-02T18:49:42.475Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SegurinetController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_AUTHENTICATION\\MICRE.AUTHENTICATION.API\\Controllers\\SegurinetController.cs",
+              "RelativeDocumentMoniker": "MICRE.AUTHENTICATION.API\\Controllers\\SegurinetController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_AUTHENTICATION\\MICRE.AUTHENTICATION.API\\Controllers\\SegurinetController.cs",
+              "RelativeToolTip": "MICRE.AUTHENTICATION.API\\Controllers\\SegurinetController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwB8AAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-13T21:58:06Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ManagerSegurinet.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_AUTHENTICATION\\MICRE.AUTHENTICATION.SEGURINET\\ManagerSegurinet.cs",
+              "RelativeDocumentMoniker": "MICRE.AUTHENTICATION.SEGURINET\\ManagerSegurinet.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_AUTHENTICATION\\MICRE.AUTHENTICATION.SEGURINET\\ManagerSegurinet.cs",
+              "RelativeToolTip": "MICRE.AUTHENTICATION.SEGURINET\\ManagerSegurinet.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAwCUAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T18:50:01.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ActiveDirectoryController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_AUTHENTICATION\\MICRE.AUTHENTICATION.API\\Controllers\\ActiveDirectoryController.cs",
+              "RelativeDocumentMoniker": "MICRE.AUTHENTICATION.API\\Controllers\\ActiveDirectoryController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_AUTHENTICATION\\MICRE.AUTHENTICATION.API\\Controllers\\ActiveDirectoryController.cs",
+              "RelativeToolTip": "MICRE.AUTHENTICATION.API\\Controllers\\ActiveDirectoryController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAawB4AAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-13T21:55:00.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ManagerAD.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_AUTHENTICATION\\MICRE.AUTHENTICATION.AD\\ManagerAD.cs",
+              "RelativeDocumentMoniker": "MICRE.AUTHENTICATION.AD\\ManagerAD.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_AUTHENTICATION\\MICRE.AUTHENTICATION.AD\\ManagerAD.cs",
+              "RelativeToolTip": "MICRE.AUTHENTICATION.AD\\ManagerAD.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAA0wBwAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-13T21:55:11.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MICRE.AUTHENTICATION.SEGURINET",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_AUTHENTICATION\\MICRE.AUTHENTICATION.SEGURINET\\MICRE.AUTHENTICATION.SEGURINET.csproj",
+              "RelativeDocumentMoniker": "MICRE.AUTHENTICATION.SEGURINET\\MICRE.AUTHENTICATION.SEGURINET.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_AUTHENTICATION\\MICRE.AUTHENTICATION.SEGURINET\\MICRE.AUTHENTICATION.SEGURINET.csproj",
+              "RelativeToolTip": "MICRE.AUTHENTICATION.SEGURINET\\MICRE.AUTHENTICATION.SEGURINET.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2023-12-14T22:51:23.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServiceSegurinet.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_AUTHENTICATION\\MICRE.AUTHENTICATION.API\\Services\\ServiceSegurinet.cs",
+              "RelativeDocumentMoniker": "MICRE.AUTHENTICATION.API\\Services\\ServiceSegurinet.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_AUTHENTICATION\\MICRE.AUTHENTICATION.API\\Services\\ServiceSegurinet.cs",
+              "RelativeToolTip": "MICRE.AUTHENTICATION.API\\Services\\ServiceSegurinet.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAA7wDoAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T21:55:48.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MICRE.AUTHENTICATION.AD",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_AUTHENTICATION\\MICRE.AUTHENTICATION.AD\\MICRE.AUTHENTICATION.AD.csproj",
+              "RelativeDocumentMoniker": "MICRE.AUTHENTICATION.AD\\MICRE.AUTHENTICATION.AD.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_AUTHENTICATION\\MICRE.AUTHENTICATION.AD\\MICRE.AUTHENTICATION.AD.csproj",
+              "RelativeToolTip": "MICRE.AUTHENTICATION.AD\\MICRE.AUTHENTICATION.AD.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2023-12-14T22:50:59.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MICRE.AUTHENTICATION.SMARTLINK",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_AUTHENTICATION\\MICRE.AUTHENTICATION.SMARTLINK\\MICRE.AUTHENTICATION.SMARTLINK.csproj",
+              "RelativeDocumentMoniker": "MICRE.AUTHENTICATION.SMARTLINK\\MICRE.AUTHENTICATION.SMARTLINK.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_AUTHENTICATION\\MICRE.AUTHENTICATION.SMARTLINK\\MICRE.AUTHENTICATION.SMARTLINK.csproj",
+              "RelativeToolTip": "MICRE.AUTHENTICATION.SMARTLINK\\MICRE.AUTHENTICATION.SMARTLINK.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2023-12-14T22:51:27.065Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

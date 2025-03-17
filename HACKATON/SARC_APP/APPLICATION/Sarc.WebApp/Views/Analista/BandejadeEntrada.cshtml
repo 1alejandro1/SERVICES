@@ -1,0 +1,100 @@
+﻿@using BCP.CROSS.MODELS
+@using BCP.CROSS.MODELS.Caso
+@model ServiceResponse<List<CasoAnalista>>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    ViewData["Title"] = "Analista/Bandeja de Entrada";
+}
+
+<div style="min-width:720px;">
+   
+    @if (Model?.Meta?.StatusCode == 200 && Model?.Data?.Count > 0)
+    {
+        <div class="row">
+            <div class="col-12">
+                <div class="card bg-bgcontent-dark rounded shadow mt-3 p-3">
+                    <table id="tblBandejaAnalista"
+                       class="table table-sm text-light mb-2 mt-3 rounded">
+                        <thead>
+                            <tr class=text-opacity-75>
+                                <th scope="col">Ver Caso</th>
+                                <th scope="col">Nro Caso</th>
+                                <th scope="col">Cliente</th>
+                                <th scope="col">Producto</th>
+                                <th scope="col">Servicio</th>
+                                <th scope="col">Estado</th>
+                                <th scope="col">Descripción</th>
+                                <th scope="col">Dias Atención</th>
+                                <th scope="col">Dias Retraso</th>
+                                <th scope="col">Registrado por</th>
+                                <th scope="col">Sucursal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Data)
+                            {
+                                <tr>
+                                    <td>
+                                        <a href="@Url.Action("Detalle", "Casos", new{nroCaso = @item.NroCaso})">  <i class="fas fa-edit text-success"></i></a>
+                                    </td>
+                                    <td>@item.NroCaso</td>
+                                    <td>@item.NombreEmpresa</td>
+                                    <td>@item.Producto</td>
+                                    <td>@item.Servicio</td>
+                                    <td>@item.EstadoDescripcion</td>
+                                    <td>@item.InformacionAdicional</td>
+                                    <td>@item.DiasAtencion</td>
+                                    <td>@item.DiasDiferencia</td>
+                                    <td>@item.FuncionarioRegistro</td>
+                                    <td>@item.Sucursal</td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    }
+    else if (@Model != null && @Model?.Meta?.StatusCode != 200)
+    {
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-danger">@Model?.Meta?.Msj</div>
+            </div>
+        </div>
+    }
+    else{
+         <div class="row">
+            <div class="col">
+                <div class="alert alert-info">No hay datos que mostrar</div>
+            </div>
+        </div>
+    }
+</div>
+
+
+@section Scripts {
+<script src="~/js/datatables.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#tblBandejaAnalista').dataTable({
+            "info": false,
+            "lengthMenu": [10, 25, 50],
+            "language": {
+                "search": "Filtrar:",
+                "lengthMenu": "Mostar _MENU_",
+                "paginate": {
+                    "first": "Primero",
+                    "last": "Último",
+                    "next": "Siguiente",
+                    "previous": "Atras"
+                }
+            }
+        });
+    });
+</script>
+}

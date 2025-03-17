@@ -1,0 +1,100 @@
+trigger:
+  branches:
+    include:
+      - "develop"
+      - "DESARROLLO"
+      - "master"
+      - "main"
+  paths:
+    exclude:
+      - readme.md
+
+variables:
+  solution: '**/*.sln'
+  project: '**/MICRE.API.APP.csproj'
+  testXUnit: '**/*Test*.csproj'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+  GroupAgent: Agentes_Compilacion
+  Publish: 'MICREDITO_API'
+  PublishArtifact: '$(build.artifactstagingdirectory)'
+
+pool:
+  name: $(GroupAgent)  
+
+steps:
+  - task: CmdLine@2
+    displayName: 'Configuration Build'
+    inputs:
+      script:  |
+        echo ----------------------------------------------------------------------------
+        echo ----------------------------------------------------------------------------
+        echo COMPUTER NAME:           $(COMPUTERNAME)
+        echo ----------------------------------------------------------------------------
+        echo ----------------------------------------------------------------------------
+        echo DIRECTORIO ARTIFACT:     $(PublishArtifact)
+        echo DEFINITION NAME:         $(Build.DefinitionName)
+        echo PUBLISH:                 $(Publish)
+        echo ----------------------------------------------------------------------------
+        echo ----------------------------------------------------------------------------
+        echo AGENT NAME:              $(Agent)
+        echo SOLUTION:                $(solution)
+        echo BUILD CONFIGURATION      $(buildConfiguration)
+        echo SOURCE BRANCH NAME:      $(Build.SourceBranchName)
+        echo BUILD NUMBER:            $(Build.BuildNumber)
+        echo DIRECTORY:               $(System.DefaultWorkingDirectory)
+        echo TEMP:                    $(Agent.TempDirectory)
+        echo ----------------------------------------------------------------------------
+        echo ----------------------------------------------------------------------------
+
+  - task: DotNetCoreCLI@2
+    inputs:
+      command: 'restore'
+      projects: '$(project)'
+    displayName: 'Restore dependencies'
+  - task: sonarsource.sonarqube.15B84CA1-B62F-4A2A-A403-89B77A063157.SonarQubePrepare@5
+    displayName: 'Prepare analysis on SonarQube'
+    inputs:
+      SonarQube: 'MICREDITO_API'
+      projectKey: QOZADjn7LBrgsaVJL1UurEW5cQMYJ
+      projectName: 'MICREDITO_API'
+    continueOnError: true
+
+  - task: DotNetCoreCLI@2
+    inputs:
+      command: "build"
+      projects: "$(project)"
+      arguments: "--configuration $(buildConfiguration)"
+
+  - task: DotNetCoreCLI@2
+    displayName: "Generate Publish"
+    inputs:
+      command: "publish"
+      publishWebProjects: true
+      arguments: "--configuration $(BuildConfiguration) --output $(PublishArtifact)"
+      zipAfterPublish: True
+
+  - powershell: |
+     $params = "$env:SONARQUBE_SCANNER_PARAMS" -replace '"sonar.branch.name":"[\w/,-.]*"\,?'
+     Write-Host "##vso[task.setvariable variable=SONARQUBE_SCANNER_PARAMS]$params"
+   
+    displayName: 'Script de PowerShell'
+
+  - task: sonarsource.sonarqube.291ed61f-1ee4-45d3-b1b0-bf822d9095ef.SonarQubePublish@5
+    displayName: 'Publish Quality Gate Result'
+    continueOnError: true
+
+  - task: sonarsource.sonarqube.6D01813A-9589-4B15-8491-8164AEB38055.SonarQubeAnalyze@5
+    displayName: 'Run Code Analysis'
+    continueOnError: true
+  - task: PublishBuildArtifacts@1
+    displayName: "Publish Artifact: $(Publish)"
+    inputs:
+      PathtoPublish: "$(PublishArtifact)"
+      ArtifactName: "$(Publish)"
+      publishLocation: "Container"
+  - task: SimondeLang.sonar-buildbreaker.sonar-buildbreaker.sonar-buildbreaker@8
+    displayName: 'Break build on quality gate failure'
+    inputs:
+      SonarQube: 'MICREDITO_API'
+    continueOnError: true

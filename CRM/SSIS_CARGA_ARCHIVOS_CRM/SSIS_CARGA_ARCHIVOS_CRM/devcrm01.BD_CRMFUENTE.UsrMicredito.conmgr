@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="BD_CRMFUENTE.UsrMicredito"
+  DTS:DTSID="{969B7C30-074F-4883-804F-2BF3AC6E1FB3}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=devcrm01;User ID=UsrMicredito;Initial Catalog=BD_CRMFUENTE;Provider=SQLOLEDB.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-SSIS_CARGA_ARCHIVO_METAS_CRM-{969B7C30-074F-4883-804F-2BF3AC6E1FB3}devcrm01.BD_CRMFUENTE.UsrMicredito;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1"></DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

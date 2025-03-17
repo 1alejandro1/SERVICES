@@ -1,0 +1,1096 @@
+[
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.AgenciaController",
+    "Method": "GetAgencia",
+    "RelativePath": "api/Agencia/ListbySucursal",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.PARAMETROS.API.DTOs.AgenciaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.AgenciaEntitie, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.CampanaController",
+    "Method": "GetCampana",
+    "RelativePath": "api/Campana/ListCampana",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.PARAMETROS.API.DTOs.CampanaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.CampanaEntitie, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.CombosDigitacionController",
+    "Method": "GetMoneda",
+    "RelativePath": "api/CombosDigitacion/AllMoneda",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.PARAMETROS.ENTITIE.Settings.Response\u00601[[System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.MonedaEntitie, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.CombosDigitacionController",
+    "Method": "GetCiiuByCod",
+    "RelativePath": "api/CombosDigitacion/AllProducto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tipoSolicitud",
+        "Type": "MICRE.PARAMETROS.API.DTOs.ParametrosRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.PARAMETROS.ENTITIE.Settings.Response\u00601[[System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.DatosCliente.CodDescripcion, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.CombosDigitacionController",
+    "Method": "GetCiiuByCodV2",
+    "RelativePath": "api/CombosDigitacion/AllProductoV2",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tipoSolicitud",
+        "Type": "MICRE.PARAMETROS.API.DTOs.ParametrosRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.PARAMETROS.ENTITIE.Settings.Response\u00601[[System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.DatosCliente.CodDescripcionv2, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.CombosDigitacionController",
+    "Method": "GetTipoOperacion",
+    "RelativePath": "api/CombosDigitacion/AllTipoOperacion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.PARAMETROS.ENTITIE.Settings.Response\u00601[[System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.DatosCliente.CodDescripcion, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.CombosDigitacionController",
+    "Method": "GetTipoRenta",
+    "RelativePath": "api/CombosDigitacion/AllTipoRenta",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.PARAMETROS.ENTITIE.Settings.Response\u00601[[System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.DatosCliente.CodDescripcion, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.CombosDigitacionController",
+    "Method": "GetTipoVivienda",
+    "RelativePath": "api/CombosDigitacion/AllTipoVivienda",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.PARAMETROS.ENTITIE.Settings.Response\u00601[[System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.DatosCliente.CodDescripcion, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.DatosClienteController",
+    "Method": "GetCiiu",
+    "RelativePath": "api/DatosCliente/AllCiiu",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.CiiuEntitie, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.DatosClienteController",
+    "Method": "GetCiudad",
+    "RelativePath": "api/DatosCliente/AllCiudad",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.TipoDocumentoEntitie, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.DatosClienteController",
+    "Method": "GetCargoCod",
+    "RelativePath": "api/DatosCliente/CargoCod",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.PARAMETROS.API.DTOs.ParametrosRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.PARAMETROS.ENTITIE.Settings.Response\u00601[[MICRE.PARAMETROS.ENTITIE.DatosCliente.CodDescripcion, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.DatosClienteController",
+    "Method": "GetCiiuByCod",
+    "RelativePath": "api/DatosCliente/CiiuByCod",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.PARAMETROS.API.DTOs.CiiuRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.PARAMETROS.ENTITIE.Settings.Response\u00601[[System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.CiiuEntitie, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.DatosClienteController",
+    "Method": "GetCiiuByCodV2",
+    "RelativePath": "api/DatosCliente/CiiuByCodV2",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.PARAMETROS.API.DTOs.CiiuRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.PARAMETROS.ENTITIE.Settings.Response\u00601[[MICRE.PARAMETROS.ENTITIE.CiiuEntitie, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.DatosClienteController",
+    "Method": "GetCiudad",
+    "RelativePath": "api/DatosCliente/CiudadCod",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.PARAMETROS.API.DTOs.CiudadRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.PARAMETROS.ENTITIE.Settings.Response\u00601[[MICRE.PARAMETROS.ENTITIE.CiudadResponse, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.DatosClienteController",
+    "Method": "GetEstadoCivil",
+    "RelativePath": "api/DatosCliente/EstadoCivilCod",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.PARAMETROS.API.DTOs.ParametrosRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.PARAMETROS.ENTITIE.Settings.Response\u00601[[MICRE.PARAMETROS.ENTITIE.DatosCliente.CodDescripcion, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.DatosClienteController",
+    "Method": "GetInstruccionCod",
+    "RelativePath": "api/DatosCliente/InstruccionCod",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.PARAMETROS.API.DTOs.ParametrosRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.PARAMETROS.ENTITIE.Settings.Response\u00601[[MICRE.PARAMETROS.ENTITIE.DatosCliente.CodDescripcion, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.DatosClienteController",
+    "Method": "GetLocalidadCod",
+    "RelativePath": "api/DatosCliente/LocalidadCod",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.PARAMETROS.API.DTOs.ParametrosRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.PARAMETROS.ENTITIE.Settings.Response\u00601[[MICRE.PARAMETROS.ENTITIE.DatosCliente.CodDescripcion, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.DatosClienteController",
+    "Method": "GetNacionalidad",
+    "RelativePath": "api/DatosCliente/Nacionalidad",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.NacionalidadEntitie, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.DatosClienteController",
+    "Method": "GetNacionalidad",
+    "RelativePath": "api/DatosCliente/NacionalidadCod",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.PARAMETROS.API.DTOs.ParametrosRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.PARAMETROS.ENTITIE.Settings.Response\u00601[[MICRE.PARAMETROS.ENTITIE.DatosCliente.CodDescripcion, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.DatosClienteController",
+    "Method": "GetProfesionCod",
+    "RelativePath": "api/DatosCliente/ProfesionCod",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.PARAMETROS.API.DTOs.ParametrosRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.PARAMETROS.ENTITIE.Settings.Response\u00601[[MICRE.PARAMETROS.ENTITIE.DatosCliente.CodDescripcion, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.DatosClienteController",
+    "Method": "GetSituacionLaboral",
+    "RelativePath": "api/DatosCliente/SituacionLaboralCod",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.PARAMETROS.API.DTOs.ParametrosRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.PARAMETROS.ENTITIE.Settings.Response\u00601[[MICRE.PARAMETROS.ENTITIE.DatosCliente.CodDescripcion, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.DatosClienteController",
+    "Method": "GetTipoDocumento",
+    "RelativePath": "api/DatosCliente/TipoDocumento",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.TipoDocumentoResponse, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.DatosClienteController",
+    "Method": "GetTipoDocumento",
+    "RelativePath": "api/DatosCliente/TipoDocumentoCod",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.PARAMETROS.API.DTOs.TipoDocumentoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.PARAMETROS.ENTITIE.Settings.Response\u00601[[MICRE.PARAMETROS.ENTITIE.TipoDocumentoResponse, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.EstadoController",
+    "Method": "GetAccionSeguir",
+    "RelativePath": "api/Estado/AccionSeguir",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.PARAMETROS.API.DTOs.EstadoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.EstadosResponse, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.EstadoController",
+    "Method": "GetAccionSeguirPyme",
+    "RelativePath": "api/Estado/AccionSeguirPyme",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.PARAMETROS.API.DTOs.EstadoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.EstadosResponse, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.EstadoController",
+    "Method": "GetEstado",
+    "RelativePath": "api/Estado/Estados",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.EstadoEntitie, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.EstadoController",
+    "Method": "GetEstadoSolicitudCod",
+    "RelativePath": "api/Estado/EstadoSolicitudCod",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.PARAMETROS.API.DTOs.EstadoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.PARAMETROS.ENTITIE.EstadosResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.FinalidadController",
+    "Method": "GetFinalidadHipotecario",
+    "RelativePath": "api/Finalidad/FinalidadHipotecario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.PARAMETROS.API.DTOs.FinalidadRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.PARAMETROS.ENTITIE.Settings.Response\u00601[[System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.FinalidadEntitie, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.FinalidadController",
+    "Method": "GetFinalidadHipotecarioBayCod",
+    "RelativePath": "api/Finalidad/FinalidadHipotecarioByCodFinalidad",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.PARAMETROS.API.DTOs.FinalidadByCodRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.PARAMETROS.ENTITIE.Settings.Response\u00601[[System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.FinalidadByCodEntitie, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.IndiceTreController",
+    "Method": "GetMesesPeriodoTasa",
+    "RelativePath": "api/IndiceTre/GetMesesPeriodoTasa",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.DatosNegocio.PeriodoTasasEntitie, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.IndiceTreController",
+    "Method": "GetIndiceTre",
+    "RelativePath": "api/IndiceTre/IndiceTre",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.DatosNegocio.IndiceTreeEntitie, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.InfoclienteController",
+    "Method": "getActividad",
+    "RelativePath": "api/Infocliente/Actividad",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.InfoclienteEntitie, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.InfoclienteController",
+    "Method": "getCargo",
+    "RelativePath": "api/Infocliente/Cargo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.InfoclienteEntitie, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.InfoclienteController",
+    "Method": "GetCiiu",
+    "RelativePath": "api/Infocliente/Ciiu",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.InfoclienteEntitie, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.InfoclienteController",
+    "Method": "GetEstadoCivil",
+    "RelativePath": "api/Infocliente/EstadoCivil",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.InfoclienteEntitie, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.InfoclienteController",
+    "Method": "GetLocalidad",
+    "RelativePath": "api/Infocliente/Localidad",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.InfoclienteEntitie, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.InfoclienteController",
+    "Method": "GetMoneda",
+    "RelativePath": "api/Infocliente/Moneda",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.InfoclienteEntitie, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.InfoclienteController",
+    "Method": "GetNacionalidad",
+    "RelativePath": "api/Infocliente/Nacionalidad",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.InfoclienteEntitie, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.InfoclienteController",
+    "Method": "GetParameter",
+    "RelativePath": "api/Infocliente/Parameter",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.PARAMETROS.API.DTOs.ParameterInfoclienteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.InfoclienteController",
+    "Method": "GetProfesion",
+    "RelativePath": "api/Infocliente/Profesion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.InfoclienteEntitie, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.InfoclienteController",
+    "Method": "GetSituacionLaboral",
+    "RelativePath": "api/Infocliente/SituacionLaboral",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.InfoclienteEntitie, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.InfoclienteController",
+    "Method": "GetTipoCalle",
+    "RelativePath": "api/Infocliente/TipoCalle",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.InfoclienteEntitie, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.JustificacionController",
+    "Method": "GetJustificacion",
+    "RelativePath": "api/Justificacion/All",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.JustificacionEntitie, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.JustificacionController",
+    "Method": "GetJustificacionEstado",
+    "RelativePath": "api/Justificacion/Estado",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "estado",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.JustificacionEntitie, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.SeguroDesgravamenController",
+    "Method": "GetNuevoSeguroDesgravamen",
+    "RelativePath": "api/SeguroDesgravamen/NuevoSeguroDesgravamen",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tipoSolicitud",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "tipoCredito",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.NuevoSeguroDesgravamenEntitie, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.SeguroDesgravamenController",
+    "Method": "GetSeguroDesgravamen",
+    "RelativePath": "api/SeguroDesgravamen/SeguroDesgravamen",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tipoSolicitud",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "tipoCredito",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.SeguroDesgravamenEntitie, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.SucursalController",
+    "Method": "GetSucursal",
+    "RelativePath": "api/Sucursal/All",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICRE.PARAMETROS.ENTITIE.SucursalEntitie, MICRE.PARAMETROS.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.PARAMETROS.API.Controllers.TipoSolicitudController",
+    "Method": "Get",
+    "RelativePath": "api/TipoSolicitud/All",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

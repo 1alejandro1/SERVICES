@@ -1,0 +1,79 @@
+﻿@using BCP.CROSS.MODELS.Reportes
+<div class="row align-content-center">
+    <div class="col-12">
+        <h4><strong>COBROS Y DEVOLUCIONES</strong></h4>
+    </div>
+    <div class="col-10">
+        <table class="table table-hover table-borderless" id="tblReportes">
+            <thead>
+                <tr class="text-uppercase">
+                    <th class="table-tomato">FECHA  </th>
+                    <th class="table-tomato">IDC</th>
+                    <th class="table-tomato">NOMBRE</th>
+                    <th class="table-tomato">TIPO</th>
+                    <th class="table-tomato">DESC_TIPO</th>
+                    <th class="table-tomato">CUENTA</th>
+                    <th class="table-tomato">IMPORTE</th>
+                    <th class="table-tomato">MONEDA</th>
+                    <th class="table-tomato">DESC_MONEDA</th>
+                    <th class="table-tomato">ID_CANAL</th>
+                    <th class="table-tomato">DESC_CANAL</th>
+                    <th class="table-tomato">FUNCIONARIO</th>
+                    <th class="table-tomato">SUPERVISOR</th>
+                    <th class="table-tomato">NRO_CASO</th>
+                    <th class="table-tomato">COMPLETADO</th>
+                    <th class="table-tomato">DESC_COMPLETADO</th>
+                    <th class="table-tomato">AGENCIA</th>
+                    <th class="table-tomato">NRO_AGENCIA</th>
+                    <th class="table-tomato">NOMBRE_AGENCIA</th>
+                    <th class="table-tomato">SUCURSAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (CobrosDevolucionesModel item in Data)
+                {
+                    <tr>
+                        <th scope="row" class="table-light">@item.Fecha</th>
+                        <td class="table-light">@item.IDC</td>
+                        <td class="table-light">@item.Nombre</td>
+                        <td class="table-light">@item.Tipo</td>
+                        <td class="table-light">@item.DescTipo</td>
+                        <td class="table-light">@item.Cuenta</td>
+                        <td class="table-light">@item.Importe</td>
+                        <td class="table-light">@item.Moneda</td>
+                        <td class="table-light">@item.Descmoneda</td>
+                        <td class="table-light">@item.IdCanal</td>
+                        <td class="table-light">@item.DescCanal</td>
+                        <td class="table-light">@item.Funcionario</td>
+                        <td class="table-light">@item.Supervisor</td>
+                        <td class="table-light">@item.NroCaso</td>
+                        <td class="table-light">@item.Completado</td>
+                        <td class="table-light">@item.DescCompletado</td>
+                        <td class="table-light">@item.Agencia</td>
+                        <td class="table-light">@item.NroAgencia</td>
+                        <td class="table-light">@item.NombreAgencia</td>
+                        <td class="table-light">@item.Sucursal</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public List<CobrosDevolucionesModel> Data { get; set; }
+}
+<style lang="css">
+    .table-tomato {
+        background-color: tomato !important;
+        color: white !important;
+        vertical-align: middle;
+    }
+
+    .table-midnightblue {
+        background-color: midnightblue !important;
+        color: white !important;
+        vertical-align: middle;
+    }
+</style>

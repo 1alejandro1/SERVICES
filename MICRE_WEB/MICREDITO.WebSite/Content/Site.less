@@ -1,0 +1,606 @@
+﻿@colorPrimaryBlack: #002A8D;
+@colorPrimary: #001F5A;
+@colorSecondary: #FF7800;
+@background: #F5F8FF;
+@gray: #FFFFFF;
+
+@fontSize: 14px;
+
+body {
+    background-color: @background;
+}
+
+body::-webkit-scrollbar {
+    width: 0.7rem;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: @gray;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: @colorPrimaryBlack;
+
+    &:active {
+        background: @colorPrimary;
+    }
+}
+
+h1,
+h2,
+h3 {
+    color: @colorPrimary !important;
+}
+
+.col {
+    padding: 0px !important;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+input[type=text] {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+input[type=text],
+input[type=number],
+input[type=password],
+select,
+.bootstrap-select .btn-light {
+    width: 100%;
+    height: 35px !important;
+    padding: 6px 12px !important;
+    box-shadow: 0px 0px 0px 1px #868F9E !important;
+    border-radius: 3px !important;
+    border: unset !important;
+    background-color: white !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px !important;
+    line-height: 24px !important;
+    transition: box-shadow .2s linear, color .2s linear;
+    outline: unset;
+}
+
+.form-control:focus {
+    box-shadow: 0px 0px 0px 1px #868F9E !important;
+}
+
+.bootstrap-select {
+    & .dropdown-menu.show {
+        background-color: white !important;
+    }
+
+    & li {
+        list-style-type: none;
+        font-size: 12px;
+        line-height: 20px;
+        padding: 6px 0px !important;
+        cursor: pointer;
+        transition: all .2s linear;
+
+        &.active,
+        &:hover {
+            background-color: @colorSecondary;
+        }
+    }
+
+    & li:hover {
+        background-color: #F5F8FF !important;
+    }
+
+    .dropdown-item:hover,
+    .dropdown-item:focus {
+        background-color: transparent !important;
+    }
+
+    .dropdown-item.active,
+    .dropdown-item:active {
+        background-color: transparent !important;
+    }
+}
+
+.form-group {
+
+    label {
+        margin-bottom: 0px;
+        font-size: @fontSize;
+        font-weight: 600;
+    }
+
+    label.error {
+        color: red !important;
+    }
+
+    input[type=text],
+    input[type=password] {
+        font-size: @fontSize;
+    }
+
+    .form-control[readonly] {
+        background-color: white !important;
+    }
+
+    select {
+        border: 1px solid @colorPrimary;
+        border-radius: 0px;
+        height: 22px;
+        font-size: @fontSize;
+        padding: 0px;
+    }
+}
+
+.btn-primary,
+a {
+    border-color: @colorSecondary !important;
+    box-shadow: none !important;
+}
+
+.pagina_no_existe img {
+    width: 70px !important;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.pagina_no_existe h3 {
+    font-size: 40px;
+    color: @colorPrimary;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pagina_no_existe p {
+    font-size: 18px;
+    color: @gray;
+    text-align: center;
+}
+
+.pagina_no_existe a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.pagina_no_existe .alert p {
+    color: red !important;
+    text-align: left !important;
+    font-size: 13px !important;
+}
+
+.card {
+    & .card-body {
+        margin: 0px 15px;
+    }
+}
+
+footer {
+    background-color: @background;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    margin-left: 25px;
+    vertical-align: central;
+}
+
+.container {
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar {
+    min-height: 64px;
+    width: 100%;
+    background-color: @colorPrimaryBlack !important;
+    display: flex;
+    align-items: center;
+    padding: 0px 153px;
+
+    & img {
+        width: 95px;
+        height: auto;
+    }
+
+    & h1 {
+        font-size: 16px;
+        color: white !important;
+        letter-spacing: .9px;
+        margin: 0px 50px 0px 10px;
+    }
+
+    & .dropdown-item {
+        color: white;
+    }
+}
+
+.navbar-toggler {
+    margin: 10px;
+}
+
+.nav-second {
+    top: 56px;
+    background-color: @colorPrimary !important;
+}
+
+label {
+    color: @colorPrimary !important;
+    margin-bottom: 0px !important;
+}
+
+.btn-primary {
+    background-color: @colorSecondary !important;
+    border: @colorSecondary !important;
+    border-radius: 0px !important;
+}
+
+.login {
+    text-align: center;
+
+    & form {
+        padding: 30px 50px;
+        height: 100%;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+
+        & div {
+            text-align: left;
+        }
+    }
+}
+
+table {
+    thead {
+        font-size: 12px;
+        font-weight: bold;
+        color: white;
+        background-color: @colorPrimary;
+
+        th {
+            padding: 10px !important;
+        }
+    }
+
+    tbody {
+        font-size: 12px;
+        background-color: white;
+    }
+
+    td {
+        padding: 0.3rem 0.5rem !important;
+    }
+}
+
+.card {
+    margin-bottom: 10px;
+}
+
+.card-header {
+    padding: 5px 25px !important;
+    background-color: @colorPrimary !important;
+    color: white !important;
+}
+
+.card,
+.layout-card {
+
+    .form-group.col_4 {
+        width: 24% !important;
+    }
+
+    .form-group.col_4_colspan_2 {
+        width: 48% !important;
+    }
+
+    .form-group.col_3 {
+        width: 32% !important;
+    }
+
+    .form-group.col_2 {
+        width: 48% !important;
+    }
+
+    .form-group.col_1 {
+        width: 98% !important;
+    }
+}
+
+.layout-card {
+    background-color: white;
+    padding: 20px 30px 10px 30px;
+    box-shadow: 0 1px 1px 0 rgba(82,112,148,.14), 0 2px 1px -1px rgba(82,112,148,.12), 0 1px 3px 0 rgba(82,112,148,.2) !important;
+    margin-bottom: 10px;
+}
+
+.card {
+    box-shadow: 0 1px 1px 0 rgba(82,112,148,.14), 0 2px 1px -1px rgba(82,112,148,.12), 0 1px 3px 0 rgba(82,112,148,.2) !important;
+}
+
+.btn-card {
+    margin: 5px 5px 10px 5px;
+    text-align: center;
+    box-shadow: 0 1px 1px 0 rgba(82,112,148,.14), 0 2px 1px -1px rgba(82,112,148,.12), 0 1px 3px 0 rgba(82,112,148,.2) !important;
+    padding: 5px;
+
+    img {
+        width: 50px;
+        text-align: center;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .card-body {
+        padding: 10px;
+        margin: 0px;
+
+        a {
+            font-size: 10px;
+            font-weight: bold;
+        }
+    }
+
+    .btn-card:focus,
+    .btn-card:hover {
+        color: @colorSecondary !important;
+    }
+}
+
+/*----- Tabs -----*/
+.tabs {
+    width: 100%;
+    display: inline-block;
+
+    ul {
+        padding: 0px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        border-bottom: 2px solid #EFF2F9;
+    }
+}
+
+/*----- Tab Links -----*/
+/* Clearfix */
+.tab-links:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.tab-links li {
+    float: left;
+    list-style: none;
+}
+
+.tab-links a {
+    padding: 9px 15px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    color: @colorPrimary;
+    transition: all linear 0.15s;
+    text-decoration: none !important;
+}
+
+.tab-links a:hover {
+    text-decoration: none !important;
+}
+
+li.tabActive a, li.tabActive a:hover {
+    border-bottom: 3px solid @colorSecondary;
+    color: @colorPrimary;
+}
+
+/*----- Content of Tabs -----*/
+.tab-content {
+    padding: 0px 15px 0px 15px;
+}
+
+.tab {
+    display: none;
+}
+
+.tab.tabActive {
+    display: block;
+}
+
+.dropdown-menu {
+    background-color: @colorPrimaryBlack !important;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: @colorSecondary !important;
+}
+
+td.semaforo-green {
+    background-color: green;
+    color: white !important;
+    text-align: center;
+}
+
+td.semaforo-red {
+    background-color: red;
+    color: white !important;
+    text-align: center;
+}
+
+.label-content {
+    font-size: 12px !important;
+}
+
+.cardTabs {
+
+    & li {
+        padding: 5px 10px;
+        font-size: 12px;
+        margin: 0px 10px 0px 10px;
+
+        & a {
+            text-decoration: none;
+            color: @colorPrimary;
+        }
+    }
+
+    & li.active {
+        background: @colorPrimary;
+
+        & a {
+            color: white;
+        }
+    }
+}
+
+
+.cardRefinanciamiento {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid @gray;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.cardRefinanciamiento .border-card {
+    width: 15px;
+    height: 60px;
+    background-color: gray;
+
+    &.active {
+        background-color: @colorSecondary;
+    }
+}
+
+.cardRefinanciamiento .group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cardRefinanciamiento .content-operacion {
+    font-weight: 400;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.cardRefinanciamiento .content-group {
+    font-weight: 400;
+    text-align: center;
+    line-height: normal;
+    margin: 0px;
+}
+
+.btn-float {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    float: right;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .col.backgroud {
+        display: none !important
+    }
+
+    .navbar {
+        padding: 0px 50px;
+
+        & img {
+            width: 95px;
+            height: auto;
+        }
+
+        & h1 {
+            display: none;
+        }
+    }
+}
+
+.Mensaje {
+    position: fixed;
+    z-index: 32000;
+    bottom: 10px;
+    right: 10px;
+    padding: 15px;
+    min-width: 300px;
+    margin-left: -255px;
+    text-align: left;
+    border: transparent 0px solid;
+    border-radius: 5px;
+    background: #5BC3A2;
+    color: white;
+    opacity: 0;
+    font-size: 12px;
+}
+
+.Mensaje.error {
+    background: #D84A49;
+}
+
+.Mensaje.warning {
+    background: #ECBF58;
+}
+
+.slider {
+    background-color: white;
+}
+
+.btn-toolbar .fa {
+    color: white !important;
+    margin-top: 5px;
+}
+
+input[type=file] {
+    display: none;
+}
+
+.ControlFiles label {
+    background-color: @colorPrimary;
+    color: white !important;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.ControlFiles #file-chosen {
+    margin-left: 0.3rem;
+    font-family: sans-serif;
+}
+
+.loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 2000;
+    top: 0px;
+    background-color: #00000080 !important;
+
+    & img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+}
+
+.btn-login{
+}

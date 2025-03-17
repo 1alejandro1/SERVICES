@@ -1,0 +1,264 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DB4680B8-ACC9-42A7-8166-B1FF9E315BFA}|Rbt.DataAcess\\Rbt.DataAccess.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\rbt.dataacess\\dataaccessmicredito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB4680B8-ACC9-42A7-8166-B1FF9E315BFA}|Rbt.DataAcess\\Rbt.DataAccess.csproj|solutionrelative:rbt.dataacess\\dataaccessmicredito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10709D42-A26E-41CB-95C1-A0FD0887E93C}|Rbt.Business\\Rbt.Business.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\rbt.business\\procesorobot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10709D42-A26E-41CB-95C1-A0FD0887E93C}|Rbt.Business\\Rbt.Business.csproj|solutionrelative:rbt.business\\procesorobot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA505858-92AD-4754-AA1C-5EE13FA9E376}|RbtRelacionConyuge\\RbtRelacionConyuge.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\rbtrelacionconyuge\\rbtrelacionconyuge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA505858-92AD-4754-AA1C-5EE13FA9E376}|RbtRelacionConyuge\\RbtRelacionConyuge.csproj|solutionrelative:rbtrelacionconyuge\\rbtrelacionconyuge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA505858-92AD-4754-AA1C-5EE13FA9E376}|RbtRelacionConyuge\\RbtRelacionConyuge.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\rbtrelacionconyuge\\rbtrelacionconyuge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EA505858-92AD-4754-AA1C-5EE13FA9E376}|RbtRelacionConyuge\\RbtRelacionConyuge.csproj|solutionrelative:rbtrelacionconyuge\\rbtrelacionconyuge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA505858-92AD-4754-AA1C-5EE13FA9E376}|RbtRelacionConyuge\\RbtRelacionConyuge.csproj|d:\\t25208\\micredito\\robots y ws\\micre_rbt_relacionador_rco\\rbtrelacionconyuge\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EA505858-92AD-4754-AA1C-5EE13FA9E376}|RbtRelacionConyuge\\RbtRelacionConyuge.csproj|solutionrelative:rbtrelacionconyuge\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA505858-92AD-4754-AA1C-5EE13FA9E376}|RbtRelacionConyuge\\RbtRelacionConyuge.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\rbtrelacionconyuge\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA505858-92AD-4754-AA1C-5EE13FA9E376}|RbtRelacionConyuge\\RbtRelacionConyuge.csproj|solutionrelative:rbtrelacionconyuge\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10709D42-A26E-41CB-95C1-A0FD0887E93C}|Rbt.Business\\Rbt.Business.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\rbt.business\\extra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10709D42-A26E-41CB-95C1-A0FD0887E93C}|Rbt.Business\\Rbt.Business.csproj|solutionrelative:rbt.business\\extra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA505858-92AD-4754-AA1C-5EE13FA9E376}|RbtRelacionConyuge\\RbtRelacionConyuge.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\rbtrelacionconyuge\\instaladorrelacionesconyugue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EA505858-92AD-4754-AA1C-5EE13FA9E376}|RbtRelacionConyuge\\RbtRelacionConyuge.csproj|solutionrelative:rbtrelacionconyuge\\instaladorrelacionesconyugue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA505858-92AD-4754-AA1C-5EE13FA9E376}|RbtRelacionConyuge\\RbtRelacionConyuge.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\rbtrelacionconyuge\\instaladorrelacionesconyugue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA505858-92AD-4754-AA1C-5EE13FA9E376}|RbtRelacionConyuge\\RbtRelacionConyuge.csproj|solutionrelative:rbtrelacionconyuge\\instaladorrelacionesconyugue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19E51CEE-E666-4939-A9D0-2FD610C9BBBB}|Rbt.Security\\Rbt.Security.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\rbt.security\\encryptador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19E51CEE-E666-4939-A9D0-2FD610C9BBBB}|Rbt.Security\\Rbt.Security.csproj|solutionrelative:rbt.security\\encryptador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataAccessMiCredito.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\Rbt.DataAcess\\DataAccessMiCredito.cs",
+              "RelativeDocumentMoniker": "Rbt.DataAcess\\DataAccessMiCredito.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\Rbt.DataAcess\\DataAccessMiCredito.cs",
+              "RelativeToolTip": "Rbt.DataAcess\\DataAccessMiCredito.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAqwBgAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T22:52:58.581Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InstaladorRelacionesConyugue.cs [Design]",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\RbtRelacionConyuge\\InstaladorRelacionesConyugue.cs",
+              "RelativeDocumentMoniker": "RbtRelacionConyuge\\InstaladorRelacionesConyugue.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\RbtRelacionConyuge\\InstaladorRelacionesConyugue.cs [Design]",
+              "RelativeToolTip": "RbtRelacionConyuge\\InstaladorRelacionesConyugue.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T16:34:35.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\RbtRelacionConyuge\\App.config",
+              "RelativeDocumentMoniker": "RbtRelacionConyuge\\App.config",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\RbtRelacionConyuge\\App.config",
+              "RelativeToolTip": "RbtRelacionConyuge\\App.config",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAACUAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-01-17T22:21:02.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProcesoRobot.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\Rbt.Business\\ProcesoRobot.cs",
+              "RelativeDocumentMoniker": "Rbt.Business\\ProcesoRobot.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\Rbt.Business\\ProcesoRobot.cs",
+              "RelativeToolTip": "Rbt.Business\\ProcesoRobot.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAEMAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T18:56:55.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\RbtRelacionConyuge\\Program.cs",
+              "RelativeDocumentMoniker": "RbtRelacionConyuge\\Program.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\RbtRelacionConyuge\\Program.cs",
+              "RelativeToolTip": "RbtRelacionConyuge\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T17:17:15.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Extra.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\Rbt.Business\\Extra.cs",
+              "RelativeDocumentMoniker": "Rbt.Business\\Extra.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\Rbt.Business\\Extra.cs",
+              "RelativeToolTip": "Rbt.Business\\Extra.cs",
+              "ViewState": "AQIAAJECAAAAAAAAAAAAAJUCAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-18T14:35:54.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RbtRelacionConyuge.cs [Design]",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\RbtRelacionConyuge\\RbtRelacionConyuge.cs",
+              "RelativeDocumentMoniker": "RbtRelacionConyuge\\RbtRelacionConyuge.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\RbtRelacionConyuge\\RbtRelacionConyuge.cs [Design]",
+              "RelativeToolTip": "RbtRelacionConyuge\\RbtRelacionConyuge.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-18T14:35:16.066Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RbtRelacionConyuge.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\RbtRelacionConyuge\\RbtRelacionConyuge.cs",
+              "RelativeDocumentMoniker": "RbtRelacionConyuge\\RbtRelacionConyuge.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\RbtRelacionConyuge\\RbtRelacionConyuge.cs",
+              "RelativeToolTip": "RbtRelacionConyuge\\RbtRelacionConyuge.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAADwv0EAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-18T14:35:17.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InstaladorRelacionesConyugue.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\RbtRelacionConyuge\\InstaladorRelacionesConyugue.cs",
+              "RelativeDocumentMoniker": "RbtRelacionConyuge\\InstaladorRelacionesConyugue.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\RbtRelacionConyuge\\InstaladorRelacionesConyugue.cs",
+              "RelativeToolTip": "RbtRelacionConyuge\\InstaladorRelacionesConyugue.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T16:48:31.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Encryptador.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\Rbt.Security\\Encryptador.cs",
+              "RelativeDocumentMoniker": "Rbt.Security\\Encryptador.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_RELACIONADOR_RCO\\Rbt.Security\\Encryptador.cs",
+              "RelativeToolTip": "Rbt.Security\\Encryptador.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAgwCwAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T19:03:11.846Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

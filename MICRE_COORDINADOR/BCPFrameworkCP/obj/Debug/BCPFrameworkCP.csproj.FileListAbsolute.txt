@@ -1,0 +1,9 @@
+D:\T25208\MICREDITO\MICRE_COORDINADOR\BCPFrameworkCP\bin\Debug\BCPFrameworkCP.dll
+D:\T25208\MICREDITO\MICRE_COORDINADOR\BCPFrameworkCP\bin\Debug\BCPFrameworkCP.pdb
+D:\T25208\MICREDITO\MICRE_COORDINADOR\BCPFrameworkCP\bin\Debug\Newtonsoft.Json.dll
+D:\T25208\MICREDITO\MICRE_COORDINADOR\BCPFrameworkCP\bin\Debug\Newtonsoft.Json.xml
+D:\T25208\MICREDITO\MICRE_COORDINADOR\BCPFrameworkCP\obj\Debug\BCPFrameworkCP.csproj.AssemblyReference.cache
+D:\T25208\MICREDITO\MICRE_COORDINADOR\BCPFrameworkCP\obj\Debug\BCPFrameworkCP.csproj.CoreCompileInputs.cache
+D:\T25208\MICREDITO\MICRE_COORDINADOR\BCPFrameworkCP\obj\Debug\BCPFrameworkCP.csproj.CopyComplete
+D:\T25208\MICREDITO\MICRE_COORDINADOR\BCPFrameworkCP\obj\Debug\BCPFrameworkCP.dll
+D:\T25208\MICREDITO\MICRE_COORDINADOR\BCPFrameworkCP\obj\Debug\BCPFrameworkCP.pdb

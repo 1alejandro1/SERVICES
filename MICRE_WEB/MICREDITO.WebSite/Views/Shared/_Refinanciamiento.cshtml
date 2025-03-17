@@ -1,0 +1,43 @@
+﻿@model MICREDITO.Model.Service.RefinanciamientoCompraModel.RefinanciamientoResponse
+
+@{
+
+}
+
+@if (string.IsNullOrEmpty(ViewBag.Error))
+{
+    <div class="list-group" style="margin-top: 10px;">
+        @foreach (var item in Model.refinanciamientoTitular)
+        {
+            <div class="cardRefinanciamiento">
+                <div class="border-card" data-operacion="@item.NumeroOperacion"></div>
+                <p class="content-operacion">@item.NumeroOperacion</p>
+                <div class="group">
+                    <p class="content-group">@item.Monto</p>
+                    @if (item.Moneda == "BOL")
+                    {
+                        <p class="content-group">Bolivianos</p>
+                    }
+                    else
+                    {
+                        <p class="content-group">Dolares</p>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @ViewBag.Error
+    </div>
+}
+
+<script>
+    $('div.cardRefinanciamiento').on('click', function (e) {
+        $(this).children('div.border-card').toggleClass('active');
+        var cards = $(this).parent().children('div.cardRefinanciamiento div.border-card.active');
+        var valida = $(this).children('div.border-card').hasClass('active');
+    });
+</script>

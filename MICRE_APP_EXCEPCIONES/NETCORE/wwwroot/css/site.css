@@ -1,0 +1,74 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.full-height {
+    height: 80vh;
+}
+
+.card-full-height {
+    height: 100%;
+}
+
+.invert-image {
+    filter: invert(100%);
+}
+
+.custom-border {
+    border: 6px solid #F26E29;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    padding-left: 10px;
+}
+.orange {
+    color:white;
+    background-color: #F26E29;
+}
+    .orange:hover {
+        color: white;
+        background-color: #F45828;
+    }
+.custom-dark {
+    background-color: #1b2631;
+}
+
+.custom-light {
+    background-color: #f2f3f4;
+}
+
+.alert-border {
+    padding-left: 5px;
+    padding-right: 5px;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-left: 8px solid;
+}
+.custom-btn {
+    background-color: transparent;
+    border: none;
+}
+.fondo {
+    background: linear-gradient(rgba(0, 0, 150, 0.5), rgba(0, 0, 150, 7)), url('../images/tarjetaCredito.jpg') no-repeat center center;
+    background-size: cover;
+}

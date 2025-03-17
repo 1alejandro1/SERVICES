@@ -1,0 +1,130 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_PLAN_PAGOS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4F79D348-CA22-41D7-AEA5-BBC7A39D7DB5}|RBT_Business\\RBT.Business.csproj|d:\\t25208\\micredito\\robots y ws\\micre_rbt_plan_pagos\\rbt_business\\procesorobot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F79D348-CA22-41D7-AEA5-BBC7A39D7DB5}|RBT_Business\\RBT.Business.csproj|solutionrelative:rbt_business\\procesorobot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F79D348-CA22-41D7-AEA5-BBC7A39D7DB5}|RBT_Business\\RBT.Business.csproj|d:\\t25208\\micredito\\robots y ws\\micre_rbt_plan_pagos\\rbt_business\\managerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F79D348-CA22-41D7-AEA5-BBC7A39D7DB5}|RBT_Business\\RBT.Business.csproj|solutionrelative:rbt_business\\managerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3480EBC2-1F9C-48AB-92B2-617B9FAB7952}|RBT_PLAN_PAGOS\\RBT_PLAN_PAGOS.csproj|d:\\t25208\\micredito\\robots y ws\\micre_rbt_plan_pagos\\rbt_plan_pagos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3480EBC2-1F9C-48AB-92B2-617B9FAB7952}|RBT_PLAN_PAGOS\\RBT_PLAN_PAGOS.csproj|solutionrelative:rbt_plan_pagos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3480EBC2-1F9C-48AB-92B2-617B9FAB7952}|RBT_PLAN_PAGOS\\RBT_PLAN_PAGOS.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_PLAN_PAGOS\\rbt_plan_pagos\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{3480EBC2-1F9C-48AB-92B2-617B9FAB7952}|RBT_PLAN_PAGOS\\RBT_PLAN_PAGOS.csproj|solutionrelative:rbt_plan_pagos\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3480EBC2-1F9C-48AB-92B2-617B9FAB7952}|RBT_PLAN_PAGOS\\RBT_PLAN_PAGOS.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_PLAN_PAGOS\\rbt_plan_pagos\\rbt_plan_pagos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3480EBC2-1F9C-48AB-92B2-617B9FAB7952}|RBT_PLAN_PAGOS\\RBT_PLAN_PAGOS.csproj|solutionrelative:rbt_plan_pagos\\rbt_plan_pagos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3480EBC2-1F9C-48AB-92B2-617B9FAB7952}|RBT_PLAN_PAGOS\\RBT_PLAN_PAGOS.csproj|D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_PLAN_PAGOS\\rbt_plan_pagos\\rbt_plan_pagos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3480EBC2-1F9C-48AB-92B2-617B9FAB7952}|RBT_PLAN_PAGOS\\RBT_PLAN_PAGOS.csproj|solutionrelative:rbt_plan_pagos\\rbt_plan_pagos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProcesoRobot.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_PLAN_PAGOS\\RBT_Business\\ProcesoRobot.cs",
+              "RelativeDocumentMoniker": "RBT_Business\\ProcesoRobot.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_PLAN_PAGOS\\RBT_Business\\ProcesoRobot.cs",
+              "RelativeToolTip": "RBT_Business\\ProcesoRobot.cs",
+              "ViewState": "AQIAAHcAAAAAAAAAAAArwJQAAABqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T18:54:33.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ManagerData.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_PLAN_PAGOS\\RBT_Business\\ManagerData.cs",
+              "RelativeDocumentMoniker": "RBT_Business\\ManagerData.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_PLAN_PAGOS\\RBT_Business\\ManagerData.cs",
+              "RelativeToolTip": "RBT_Business\\ManagerData.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAUwBkAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T18:54:21.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RBT_PLAN_PAGOS.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_PLAN_PAGOS\\RBT_PLAN_PAGOS\\RBT_PLAN_PAGOS.cs",
+              "RelativeDocumentMoniker": "RBT_PLAN_PAGOS\\RBT_PLAN_PAGOS.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_PLAN_PAGOS\\RBT_PLAN_PAGOS\\RBT_PLAN_PAGOS.cs",
+              "RelativeToolTip": "RBT_PLAN_PAGOS\\RBT_PLAN_PAGOS.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwDEAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000587|",
+              "WhenOpened": "2024-01-18T16:18:18.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RBT_PLAN_PAGOS.cs [Design]",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_PLAN_PAGOS\\RBT_PLAN_PAGOS\\RBT_PLAN_PAGOS.cs",
+              "RelativeDocumentMoniker": "RBT_PLAN_PAGOS\\RBT_PLAN_PAGOS.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_PLAN_PAGOS\\RBT_PLAN_PAGOS\\RBT_PLAN_PAGOS.cs [Design]",
+              "RelativeToolTip": "RBT_PLAN_PAGOS\\RBT_PLAN_PAGOS.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000587|",
+              "WhenOpened": "2024-01-18T16:18:16.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_PLAN_PAGOS\\RBT_PLAN_PAGOS\\Program.cs",
+              "RelativeDocumentMoniker": "RBT_PLAN_PAGOS\\Program.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_PLAN_PAGOS\\RBT_PLAN_PAGOS\\Program.cs",
+              "RelativeToolTip": "RBT_PLAN_PAGOS\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-09T17:59:06.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_PLAN_PAGOS\\RBT_PLAN_PAGOS\\App.config",
+              "RelativeDocumentMoniker": "RBT_PLAN_PAGOS\\App.config",
+              "ToolTip": "D:\\T25208\\MICREDITO\\ROBOTS Y WS\\MICRE_RBT_PLAN_PAGOS\\RBT_PLAN_PAGOS\\App.config",
+              "RelativeToolTip": "RBT_PLAN_PAGOS\\App.config",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACAAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-01-08T19:54:47.853Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

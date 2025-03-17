@@ -1,0 +1,206 @@
+﻿@model MICREDITO.Model.Inventario.DatosDesembolso
+
+<!--SECCION 1-->
+<label>SEGUROS MICROCREDITO</label>
+<br />
+<div class="layout-card">
+    @using (Html.BeginForm("GuardarSeguros", "Evaluacion", FormMethod.Post))
+    {
+        @Html.HiddenFor(m => m.codSolicitud)
+        @Html.HiddenFor(m => m.matricula)
+        @Html.HiddenFor(m => m.numSolicitud)
+        <div class="row">
+            <div class="form-group label-content col-sm-4">
+                <label>MICRO SEGURO DE VIDA</label><br />
+                <div class="form-check">
+                    @Html.CheckBoxFor(m => m.ConsultaSegurosResponse.IsMicroSeguroDevida, new { @class = "form-check-input large", data_val = true })
+                    <label class="form-check-label" for="IsMicroSeguroDevida"></label>
+                </div>
+            </div>
+            <div class="form-group label-content col-sm-4">
+                <label>DOCUMENTOS EN CUSTODIA</label><br />
+                <div class="form-check">
+                    @Html.CheckBoxFor(m => m.ConsultaSegurosResponse.IsDocumentoCustodia, new { @class = "form-check-input large", data_val = true })
+                    <label class="form-check-label" for="IsDocumentoCustodia"></label>
+                </div>
+            </div>
+            <div class="form-group label-content col-sm-4">
+                <label>FOGAGRE</label><br />
+                <div class="form-check">
+                    @if (Model.FlagFogagre==true)
+                    {
+                        @Html.CheckBoxFor(m => m.ConsultaSegurosResponse.IsFogagre, new { @class = "form-check-input large", data_val = true })
+                        <label class="form-check-label" for="IsFogagre"></label>
+                    }
+                    else
+                    {
+                         @Html.CheckBoxFor(m => m.ConsultaSegurosResponse.IsFogagre, new { @class = "form-check-input large", data_val = true, @disabled = "disabled" })
+                         <label class="form-check-label" for="IsFogagre"></label>
+                    }
+              
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group label-content col-sm-4">
+                <label></label><br />
+                <button class="btn btn-primary" id="BtnSubmitSeguros" type="submit">GUARDAR</button>
+            </div>
+            <div class="form-group label-content col-sm-4">
+                <label></label><br />
+                <div class="form-check">
+                </div>
+            </div>
+            <div class="form-group label-content col-sm-4">
+                <label></label><br />
+                <div class="form-check">
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+<!--SECCION 2-->
+<label>DATOS CREDITO</label>
+<br />
+<div class="layout-card">
+
+    @using (Html.BeginForm("ConsultaCuenta", "Evaluacion", FormMethod.Post))
+    {
+        @Html.HiddenFor(m => m.matricula)
+        @Html.HiddenFor(m => m.numSolicitud)
+        <div class="row">
+            <div class="form-group label-content col-sm-4">
+                <label>CONSULTA NUMERO DE CUENTA</label><br />
+                @if (Model.codSolicitud != "0")
+                {
+
+                    @*@Html.DropDownListFor(m => m.cuentaSelecionada, Model.cuenta.Select(x => new SelectListItem { Text = x.NroCuenta, Value = x.NroCuenta }), new { @class = "form-control" })*@
+                    @*@Html.DropDownListFor(m => m.cuentaSelecionada, Model.cuenta.Select(x => new SelectListItem { Text = x.NroCuenta, Value = x.NroCuenta }), new { @class = "form-control", id = "dropdownCuentaSeleccionada" })*@
+                    @Html.DropDownListFor(
+                        m => m.cuentaSelecionada,
+                        new SelectList(Model.cuenta.Select(x => new SelectListItem { Text = x.NroCuenta, Value = x.NroCuenta }), "Value", "Text", Model.cuentaSelecionada)
+                            .Prepend(new SelectListItem { Text = "--SELECCIONAR--", Value = String.Empty }),
+                        new { @class = "form-control", id = "dropdownCuentaSeleccionada" }
+                    )
+                }
+            </div>
+            <div class="form-group label-content col-sm-4">
+                <label></label><br />
+            </div>
+            <div class="form-group label-content col-sm-4">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group label-content col-sm-4">
+                <label></label><br />
+                @*<button class="btn btn-primary" id="BtnSubmitConsultaCuenta" type="submit">CONSULTA CUENTA</button>*@
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#consultaCuentaModal">
+                    CONSULTA CUENTA
+                </button>
+            </div>
+            <div class="form-group label-content col-sm-4">
+
+            </div>
+            <div class="form-group label-content col-sm-4">
+            </div>
+        </div>
+    }
+</div>
+<label>DATOS CONTRATO/CRONOGRAMA</label>
+<br />
+<div class="layout-card">
+    <div class="row">
+        <div class="form-group label-content col-sm-4">
+            <label>FINALIDAD</label><br />
+            @Html.TextBoxFor(m => m.contratoCronograma.finalidad, new { @class = "form-control", data_val = true, id = "idFinalidad", @readonly = "readonly", style = "cursor: not-allowed;" })
+        </div>
+        <div class="form-group label-content col-sm-4">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group label-content col-sm-4">
+            <label></label><br />
+            @using (Html.BeginForm("GenerarContrato", "Evaluacion", FormMethod.Post))
+            {
+                @Html.HiddenFor(m => m.cuentaSelecionada)
+                @Html.HiddenFor(m => m.contratoCronograma.finalidad, new { @class = "form-control", data_val = true, id = "idFinalidad", @readonly = "readonly" })
+                @Html.HiddenFor(m => m.numSolicitud)
+                @Html.HiddenFor(m => m.codSolicitud)
+                @Html.HiddenFor(m => m.matricula)
+                <button id="BtnSubmitContrato" class="btn btn-primary">IMPRIMIR CONTRATO</button>
+            }
+        </div>
+        <div class="form-group label-content col-sm-4">
+
+        </div>
+        <div class="form-group label-content col-sm-4">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group label-content col-sm-4">
+            @using (Html.BeginForm("GenerarCronograma", "Evaluacion", FormMethod.Post))
+            {
+                @Html.HiddenFor(m => m.cuentaSelecionada)
+                @Html.HiddenFor(m => m.contratoCronograma.finalidad, new { @class = "form-control", data_val = true, id = "idFinalidad", @readonly = "readonly" })
+                @Html.HiddenFor(m => m.numSolicitud)
+                @Html.HiddenFor(m => m.codSolicitud)
+                @Html.HiddenFor(m => m.matricula)
+                <button id="BtnSubmitCronograma" class="btn btn-primary" @(TempData["ContractGenerated"] == null ? "disabled" : "")>IMPRIMIR CRONOGRAMA</button>
+            }
+        </div>
+        <div class="form-group label-content col-sm-4">
+
+        </div>
+        <div class="form-group label-content col-sm-4">
+
+        </div>
+    </div>
+
+
+</div>
+
+<!--SECCION 3-->
+<label>DATOS PARA EL DESEMBOLSO</label>
+<div class="layout-card">
+    @using (Html.BeginForm("RealizarDesembolso", "Evaluacion", FormMethod.Post))
+    {
+        @Html.HiddenFor(m => m.numSolicitud)
+        @Html.HiddenFor(m => m.codSolicitud)
+        @Html.HiddenFor(m => m.matricula)
+        @Html.HiddenFor(m => m.cuentaSelecionada)
+        <div class="row">
+            <div class="form-group label-content col-sm-4">
+                <label></label><br />
+                <button id="BtnSubmitDesembolso" class="btn btn-primary" @(TempData["ContractGenerated"] == null ? "disabled" : "")>DESEMBOLSAR</button>
+            </div>
+            <div class="form-group label-content col-sm-4">
+
+            </div>
+            <div class="form-group label-content col-sm-4">
+
+            </div>
+        </div>
+    }
+</div>
+
+
+
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+

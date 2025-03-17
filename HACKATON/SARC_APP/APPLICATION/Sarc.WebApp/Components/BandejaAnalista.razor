@@ -1,0 +1,87 @@
+﻿@using Sarc.WebApp.Contracts
+@using BCP.CROSS.MODELS.Caso
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+
+@inject IAuthService auth
+@inject ICaseService caseService
+
+@if (Casos == null)
+{
+    <text>Cargando...</text>
+}
+else if (Casos?.Count == 0)
+{
+    <text>No tiene casos asignados</text>
+}
+else if(!string.IsNullOrEmpty(Messagge)){
+    <text>@Messagge</text>
+    
+}
+else{
+        <div class="row">
+            <div class="col-12">
+            <div class="card bg-bgcontent-dark rounded shadow mt-3 p-3">
+                <table id="tblBandejaAnalista"
+                       class="table table-sm text-light mb-2 mt-3 rounded">
+                    <thead>
+                        <tr class=text-opacity-75>
+                            <th scope="col">Ver Caso</th>
+                            <th scope="col">Nro Caso</th>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Servicio</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col">Dias Atención</th>
+                            <th scope="col">Dias Retraso</th>
+                            <th scope="col">Registrado por</th>
+                            <th scope="col">Sucursal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Casos)
+                        {
+                            <tr>
+                                <td>
+                                    <a href="/Casos/Detalle?nroCaso=@item.NroCaso">  <i class="fas fa-edit text-success"></i></a>
+                                </td>
+                                <td>@item.NroCaso</td>
+                                <td>@item.Producto</td>
+                                <td>@item.Servicio</td>
+                                <td>@item.EstadoDescripcion</td>
+                                <td>@item.InformacionAdicional</td>
+                                <td>@item.DiasAtencion</td>
+                                <td>@item.DiasDiferencia</td>
+                                <td>@item.FuncionarioRegistro</td>
+                                <td>@item.Sucursal</td>
+                            </tr>
+                        }
+                        
+                    </tbody>
+                </table>
+            </div>
+            </div>
+        </div>
+    }
+
+
+
+@code {
+    [Parameter]
+    public string Estado { get; set; }
+    public List<CasoAnalista> Casos { get; set; }
+    public string Messagge { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Casos = new List<CasoAnalista>();
+        var user = await auth.GetToken();
+        var casos = await caseService.GetCasosByAnalistaAsync(user.Matricula, Estado);
+        if(casos?.Data != null)
+        {
+            Casos = casos.Data.ToList();
+        }
+        Messagge = casos?.Meta?.StatusCode != 200 ? casos?.Meta?.Msj : "";
+    }
+}
+
+

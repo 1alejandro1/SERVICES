@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.15.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.12" />
+    <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="5.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+    <PackageReference Include="Syncfusion.DocIO.Net.Core" Version="19.4.0.41" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\CORE\BCP.CROSS.COMMON\BCP.CROSS.COMMON.csproj" />
+    <ProjectReference Include="..\..\CORE\BCP.CROSS.SECRYPT\BCP.CROSS.SECRYPT.csproj" />
+    <ProjectReference Include="..\..\CORE\BCP.Framework.Logs\BCP.Framework.Logs.csproj" />
+    <ProjectReference Include="..\..\DATA\BCP.CROSS.MODELS\BCP.CROSS.MODELS.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,369 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA82123-30D4-4DF1-9A11-F0C488CED049}|MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES.csproj|d:\\t25208\\micredito\\micre_api_excepciones\\micre_api_excepciones\\controllers\\excepcionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFA82123-30D4-4DF1-9A11-F0C488CED049}|MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES.csproj|solutionrelative:micre_api_excepciones\\controllers\\excepcionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA82123-30D4-4DF1-9A11-F0C488CED049}|MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES.csproj|d:\\t25208\\micredito\\micre_api_excepciones\\micre_api_excepciones\\controllers\\commoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFA82123-30D4-4DF1-9A11-F0C488CED049}|MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES.csproj|solutionrelative:micre_api_excepciones\\controllers\\commoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68D1CF4D-2019-4B5B-9011-95210EECB1F7}|MICRE.APPLICATION.CONNECTIONS.DATABASE\\MICRE.APPLICATION.CONNECTIONS.DATABASE.csproj|d:\\t25208\\micredito\\micre_api_excepciones\\micre.application.connections.database\\excepcionesconnectionsdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68D1CF4D-2019-4B5B-9011-95210EECB1F7}|MICRE.APPLICATION.CONNECTIONS.DATABASE\\MICRE.APPLICATION.CONNECTIONS.DATABASE.csproj|solutionrelative:micre.application.connections.database\\excepcionesconnectionsdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC29938A-F0D2-4A08-B59C-4733AFB40EFC}|MICRE.APPLICATION.BUSSINESS\\MICRE.APPLICATION.BUSSINESS.csproj|d:\\t25208\\micredito\\micre_api_excepciones\\micre.application.bussiness\\excepcionesbussiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC29938A-F0D2-4A08-B59C-4733AFB40EFC}|MICRE.APPLICATION.BUSSINESS\\MICRE.APPLICATION.BUSSINESS.csproj|solutionrelative:micre.application.bussiness\\excepcionesbussiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA82123-30D4-4DF1-9A11-F0C488CED049}|MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES.csproj|d:\\t25208\\micredito\\micre_api_excepciones\\micre_api_excepciones\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BFA82123-30D4-4DF1-9A11-F0C488CED049}|MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES.csproj|solutionrelative:micre_api_excepciones\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA82123-30D4-4DF1-9A11-F0C488CED049}|MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES.csproj|d:\\t25208\\micredito\\micre_api_excepciones\\micre_api_excepciones\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFA82123-30D4-4DF1-9A11-F0C488CED049}|MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES.csproj|solutionrelative:micre_api_excepciones\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68D1CF4D-2019-4B5B-9011-95210EECB1F7}|MICRE.APPLICATION.CONNECTIONS.DATABASE\\MICRE.APPLICATION.CONNECTIONS.DATABASE.csproj|d:\\t25208\\micredito\\micre_api_excepciones\\micre.application.connections.database\\micreditorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68D1CF4D-2019-4B5B-9011-95210EECB1F7}|MICRE.APPLICATION.CONNECTIONS.DATABASE\\MICRE.APPLICATION.CONNECTIONS.DATABASE.csproj|solutionrelative:micre.application.connections.database\\micreditorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA82123-30D4-4DF1-9A11-F0C488CED049}|MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES.csproj|d:\\t25208\\micredito\\micre_api_excepciones\\micre_api_excepciones\\controllers\\micreditoexcepcionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFA82123-30D4-4DF1-9A11-F0C488CED049}|MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES.csproj|solutionrelative:micre_api_excepciones\\controllers\\micreditoexcepcionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D502B6C4-6139-4BC0-8DFB-F83AD3716EBB}|MICRE.ABSTRACTION.AUTHORIZATION\\MICRE.ABSTRACTION.AUTHORIZATION.csproj|d:\\t25208\\micredito\\micre_api_excepciones\\micre.abstraction.authorization\\basicauthorizationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D502B6C4-6139-4BC0-8DFB-F83AD3716EBB}|MICRE.ABSTRACTION.AUTHORIZATION\\MICRE.ABSTRACTION.AUTHORIZATION.csproj|solutionrelative:micre.abstraction.authorization\\basicauthorizationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D53019A-3D3F-4C25-ADDB-B46A179007C8}|MICRE.ABSTRACTION.LOGGER\\MICRE.ABSTRACTION.LOGGER.csproj|d:\\t25208\\micredito\\micre_api_excepciones\\micre.abstraction.logger\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D53019A-3D3F-4C25-ADDB-B46A179007C8}|MICRE.ABSTRACTION.LOGGER\\MICRE.ABSTRACTION.LOGGER.csproj|solutionrelative:micre.abstraction.logger\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8178C9C2-F646-452B-A60E-EC8479B9C087}|MICRE.ABSTRACTION.ENTITIES\\MICRE.ABSTRACTION.ENTITIES.csproj|d:\\t25208\\micredito\\micre_api_excepciones\\micre.abstraction.entities\\request\\validationadrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8178C9C2-F646-452B-A60E-EC8479B9C087}|MICRE.ABSTRACTION.ENTITIES\\MICRE.ABSTRACTION.ENTITIES.csproj|solutionrelative:micre.abstraction.entities\\request\\validationadrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC29938A-F0D2-4A08-B59C-4733AFB40EFC}|MICRE.APPLICATION.BUSSINESS\\MICRE.APPLICATION.BUSSINESS.csproj|d:\\t25208\\micredito\\micre_api_excepciones\\micre.application.bussiness\\excepcionesreportbussiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC29938A-F0D2-4A08-B59C-4733AFB40EFC}|MICRE.APPLICATION.BUSSINESS\\MICRE.APPLICATION.BUSSINESS.csproj|solutionrelative:micre.application.bussiness\\excepcionesreportbussiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA82123-30D4-4DF1-9A11-F0C488CED049}|MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES.csproj|d:\\t25208\\micredito\\micre_api_excepciones\\micre_api_excepciones\\controllers\\respaldoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFA82123-30D4-4DF1-9A11-F0C488CED049}|MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES.csproj|solutionrelative:micre_api_excepciones\\controllers\\respaldoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA82123-30D4-4DF1-9A11-F0C488CED049}|MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES.csproj|d:\\t25208\\micredito\\micre_api_excepciones\\micre_api_excepciones\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFA82123-30D4-4DF1-9A11-F0C488CED049}|MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES.csproj|solutionrelative:micre_api_excepciones\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8178C9C2-F646-452B-A60E-EC8479B9C087}|MICRE.ABSTRACTION.ENTITIES\\MICRE.ABSTRACTION.ENTITIES.csproj|d:\\t25208\\micredito\\micre_api_excepciones\\micre.abstraction.entities\\response\\excepcioncliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8178C9C2-F646-452B-A60E-EC8479B9C087}|MICRE.ABSTRACTION.ENTITIES\\MICRE.ABSTRACTION.ENTITIES.csproj|solutionrelative:micre.abstraction.entities\\response\\excepcioncliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\T25208\\AppData\\Local\\Temp\\.vsdbgsrc\\25d13f84cbabb6f7972374fb3b89bff862f37428ff87b7a4ad804ca01aca2b5b\\ExcepcionesController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 20,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExcepcionesController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES\\Controllers\\ExcepcionesController.cs",
+              "RelativeDocumentMoniker": "MICRE_API_EXCEPCIONES\\Controllers\\ExcepcionesController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES\\Controllers\\ExcepcionesController.cs",
+              "RelativeToolTip": "MICRE_API_EXCEPCIONES\\Controllers\\ExcepcionesController.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAEwHgAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T22:39:35.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ExcepcionesBussiness.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.BUSSINESS\\ExcepcionesBussiness.cs",
+              "RelativeDocumentMoniker": "MICRE.APPLICATION.BUSSINESS\\ExcepcionesBussiness.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.BUSSINESS\\ExcepcionesBussiness.cs",
+              "RelativeToolTip": "MICRE.APPLICATION.BUSSINESS\\ExcepcionesBussiness.cs",
+              "ViewState": "AQIAAHYBAAAAAAAAAAAawIcBAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T20:26:10.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ExcepcionesConnectionsDatabase.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.CONNECTIONS.DATABASE\\ExcepcionesConnectionsDatabase.cs",
+              "RelativeDocumentMoniker": "MICRE.APPLICATION.CONNECTIONS.DATABASE\\ExcepcionesConnectionsDatabase.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.CONNECTIONS.DATABASE\\ExcepcionesConnectionsDatabase.cs",
+              "RelativeToolTip": "MICRE.APPLICATION.CONNECTIONS.DATABASE\\ExcepcionesConnectionsDatabase.cs",
+              "ViewState": "AQIAAMADAAAAAAAAAAAlwNIDAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T02:12:59.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES\\appsettings.json",
+              "RelativeDocumentMoniker": "MICRE_API_EXCEPCIONES\\appsettings.json",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES\\appsettings.json",
+              "RelativeToolTip": "MICRE_API_EXCEPCIONES\\appsettings.json",
+              "ViewState": "AQIAADsAAAAAAAAAAAAAAE8AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-08T21:20:39.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CommonController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES\\Controllers\\CommonController.cs",
+              "RelativeDocumentMoniker": "MICRE_API_EXCEPCIONES\\Controllers\\CommonController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES\\Controllers\\CommonController.cs",
+              "RelativeToolTip": "MICRE_API_EXCEPCIONES\\Controllers\\CommonController.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAuwDsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T13:37:41.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES\\Program.cs",
+              "RelativeDocumentMoniker": "MICRE_API_EXCEPCIONES\\Program.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES\\Program.cs",
+              "RelativeToolTip": "MICRE_API_EXCEPCIONES\\Program.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAD0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T15:32:02.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MiCreditoRepository.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.CONNECTIONS.DATABASE\\MiCreditoRepository.cs",
+              "RelativeDocumentMoniker": "MICRE.APPLICATION.CONNECTIONS.DATABASE\\MiCreditoRepository.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.CONNECTIONS.DATABASE\\MiCreditoRepository.cs",
+              "RelativeToolTip": "MICRE.APPLICATION.CONNECTIONS.DATABASE\\MiCreditoRepository.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAawGwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T01:05:14.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MicreditoExcepcionesController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES\\Controllers\\MicreditoExcepcionesController.cs",
+              "RelativeDocumentMoniker": "MICRE_API_EXCEPCIONES\\Controllers\\MicreditoExcepcionesController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES\\Controllers\\MicreditoExcepcionesController.cs",
+              "RelativeToolTip": "MICRE_API_EXCEPCIONES\\Controllers\\MicreditoExcepcionesController.cs",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAAAGwAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T21:40:13.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RespaldosController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES\\Controllers\\RespaldosController.cs",
+              "RelativeDocumentMoniker": "MICRE_API_EXCEPCIONES\\Controllers\\RespaldosController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES\\Controllers\\RespaldosController.cs",
+              "RelativeToolTip": "MICRE_API_EXCEPCIONES\\Controllers\\RespaldosController.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAqwEMAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T15:18:06.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ExcepcionesReportBussiness.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.BUSSINESS\\ExcepcionesReportBussiness.cs",
+              "RelativeDocumentMoniker": "MICRE.APPLICATION.BUSSINESS\\ExcepcionesReportBussiness.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.BUSSINESS\\ExcepcionesReportBussiness.cs",
+              "RelativeToolTip": "MICRE.APPLICATION.BUSSINESS\\ExcepcionesReportBussiness.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAmwB8AAACKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T15:19:37.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ValidationADRequest.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.ENTITIES\\Request\\ValidationADRequest.cs",
+              "RelativeDocumentMoniker": "MICRE.ABSTRACTION.ENTITIES\\Request\\ValidationADRequest.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.ENTITIES\\Request\\ValidationADRequest.cs",
+              "RelativeToolTip": "MICRE.ABSTRACTION.ENTITIES\\Request\\ValidationADRequest.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAApwA4AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T15:30:19.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Logger.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.LOGGER\\Logger.cs",
+              "RelativeDocumentMoniker": "MICRE.ABSTRACTION.LOGGER\\Logger.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.LOGGER\\Logger.cs",
+              "RelativeToolTip": "MICRE.ABSTRACTION.LOGGER\\Logger.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAlwGAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T15:30:35.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BasicAuthorizationHandler.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.AUTHORIZATION\\BasicAuthorizationHandler.cs",
+              "RelativeDocumentMoniker": "MICRE.ABSTRACTION.AUTHORIZATION\\BasicAuthorizationHandler.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.AUTHORIZATION\\BasicAuthorizationHandler.cs",
+              "RelativeToolTip": "MICRE.ABSTRACTION.AUTHORIZATION\\BasicAuthorizationHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA4AAADJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T15:30:43.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "MICRE_API_EXCEPCIONES\\Controllers\\ClienteController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "MICRE_API_EXCEPCIONES\\Controllers\\ClienteController.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAACQAAABsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T22:39:48.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ExcepcionCliente.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.ENTITIES\\Response\\ExcepcionCliente.cs",
+              "RelativeDocumentMoniker": "MICRE.ABSTRACTION.ENTITIES\\Response\\ExcepcionCliente.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.ENTITIES\\Response\\ExcepcionCliente.cs",
+              "RelativeToolTip": "MICRE.ABSTRACTION.ENTITIES\\Response\\ExcepcionCliente.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAA4wBYAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T02:26:53.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ExcepcionesController.cs",
+              "DocumentMoniker": "C:\\Users\\T25208\\AppData\\Local\\Temp\\.vsdbgsrc\\25d13f84cbabb6f7972374fb3b89bff862f37428ff87b7a4ad804ca01aca2b5b\\ExcepcionesController.cs",
+              "ToolTip": "C:\\Users\\T25208\\AppData\\Local\\Temp\\.vsdbgsrc\\25d13f84cbabb6f7972374fb3b89bff862f37428ff87b7a4ad804ca01aca2b5b\\ExcepcionesController.cs [Read Only]",
+              "ViewState": "AQIAAKgAAAAAAAAAAAAAALMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T16:27:46.569Z",
+              "EditorCaption": " [Read Only]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

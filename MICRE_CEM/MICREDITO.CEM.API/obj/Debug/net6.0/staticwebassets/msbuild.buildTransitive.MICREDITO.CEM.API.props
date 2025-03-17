@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\MICREDITO.CEM.API.props" />
+</Project>

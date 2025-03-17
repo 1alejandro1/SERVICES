@@ -1,0 +1,719 @@
+﻿@using Sarc.WebApp.Models.Supervisor
+@model SolucionCasoSupervisorViewModel
+@{
+    ViewData["Title"] = "Supervisor / Solución Caso";
+}
+
+<div class="container-fluid">
+    <div class="row gx-4 mb-5">
+        <div class="col-sm-12">
+            <form id="frmRegistro" enctype="multipart/form-data" asp-action="SolucionCaso">
+                <div class="card-header fw-bold">
+                    <input hidden id="Caso_ProductoId" value="@Model?.Caso?.ProductoId" class="form-control form-control-sm">
+                    <input hidden id="Caso_ServicioId" value="@Model?.Caso?.ServicioId" class="form-control form-control-sm">
+                    <input type="hidden" value="@Model?.Caso?.TipoServicio" asp-for="Caso.TipoServicio" class="form-control form-control-sm">
+                    <input type="hidden" asp-for="UpdateCaso.SucursalSolucion" value="@Model?.Caso?.Sucursal" class="form-control form-control-sm">
+                    <input type="hidden" asp-for="CerrarCaso.NroCarta" value="@Model?.Caso?.NroCaso" class="form-control form-control-sm">
+                    <input type="hidden" asp-for="CerrarCaso.Producto" value="@Model?.Caso?.ProductoId" class="form-control form-control-sm">
+                    <input type="hidden" asp-for="CerrarCaso.Servicio" value="@Model?.Caso?.ServicioId" class="form-control form-control-sm">
+                    <input type="hidden" asp-for="Caso.ClienteIdc" value="@Model?.Caso?.ClienteIdc" class="form-control form-control-sm">
+                    <input type="hidden" asp-for="Caso.ClienteExtension" value="@Model?.Caso?.ClienteExtension" class="form-control form-control-sm">
+                    <input type="hidden" asp-for="Caso.ClienteTipo" value="@Model?.Caso?.ClienteTipo" class="form-control form-control-sm">
+                    <input type="hidden" asp-for="Caso.ApellidoPaterno" value="@Model?.Caso?.ApellidoPaterno" class="form-control form-control-sm">
+                    <input type="hidden" asp-for="Caso.Empresa" value="@Model?.Caso?.Empresa" class="form-control form-control-sm">
+                    <input type="hidden" asp-for="Caso.FuncionarioAtencion" value="@Model?.Caso?.FuncionarioAtencion" class="form-control form-control-sm">
+                    <input type="hidden" asp-for="UpdateRespuesta.NroCarta" value="@Model?.Caso?.NroCaso">
+
+                    @switch (@Model?.Caso?.TipoServicio)
+                    {
+                        case "S":
+                            <span>SOLICITUD</span>
+                            break;
+                        case "R":
+                            <span>RECLAMO</span>
+                            break;
+                        case "C":
+                            <span>CONSULTA</span>
+                            break;
+                        default:
+                            <span> </span>
+                            break;
+                    }
+                </div>
+                <div class="card bg-bgcontent-dark rounded shadow-sm mb-3">
+                    <div class="card-body">
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <label asp-for="UpdateCaso.NroCarta" class="form-label"></label>
+                                <input asp-for="UpdateCaso.NroCarta" class="form-control form-control-sm" readonly
+                                       value="@Model.Caso.NroCaso">
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label asp-for="Caso.FuncionarioAtencion" class="form-label"></label>
+                                <input type="text" class="form-control form-control-sm" readonly
+                                       value="@Model.FuncionarioAtencion">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-bgcontent-dark rounded shadow-sm mb-3">
+                    <div class="card-header fw-bold">Datos Cliente</div>
+                    <div class="card-body">
+                        <div class="row g-3">
+                            <div class="col-sm-4">
+                                <label asp-for="Caso.ClienteIdc" class="form-label"></label>
+                                <input type="text" class="form-control form-control-sm" readonly
+                                       value="@Model.Caso.ClienteIdc">
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label asp-for="Caso.ClienteTipo" class="form-label"></label>
+                                <input type="text" class="form-control form-control-sm" readonly
+                                       value="@Model.Caso.ClienteTipo">
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label asp-for="Caso.ClienteExtension" class="form-label"></label>
+                                <input type="text" class="form-control form-control-sm" readonly
+                                       value="@Model.Caso.ClienteExtension">
+                            </div>
+                            <div class="col-sm-12">
+                                <label asp-for="Caso.ApellidoPaterno" class="form-label"></label>
+                                <input type="text" class="form-control form-control-sm" readonly
+                                       value="@Model.Caso.ApellidoPaterno">
+                            </div>
+                            <div class="col-sm-6">
+                                <label asp-for="Caso.ApellidoMaterno" class="form-label"></label>
+                                <input type="text" class="form-control form-control-sm" readonly
+                                       value="@Model.Caso.ApellidoMaterno">
+                            </div>
+                            <div class="col-sm-6">
+                                <label asp-for="Caso.Nombres" class="form-label"></label>
+                                <input type="text" class="form-control form-control-sm" readonly
+                                       value="@Model.Caso.Nombres">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-bgcontent-dark rounded shadow-sm mb-3">
+                    <div class="card-header fw-bold">Detalle Caso</div>
+                    <div class="card-body">
+                        <div class="row g-3">
+
+                            <div class="col-sm-12">
+                                <label asp-for="Caso.Producto" class="form-label"></label>
+                                <input type="text" class="form-control form-control-sm" readonly
+                                       value="@Model.Caso.Producto">
+                            </div>
+
+                            <div class="col-sm-12">
+                                <label asp-for="Caso.Servicio" class="form-label"></label>
+                                <input type="text" class="form-control form-control-sm" id="servicio" readonly
+                                       value="@Model.Caso.Servicio">
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label asp-for="DevCob.NroCuentaPR" class="form-label"></label>
+                                <input type="text" asp-for="DevCob.NroCuentaPR" class="form-control form-control-sm" readonly
+                                       value="@Model.Caso.Cuenta">
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label asp-for="Caso.Tarjeta" class="form-label"></label>
+                                <input type="text" class="form-control form-control-sm" readonly
+                                       value="@Model.Caso.Tarjeta">
+                            </div>
+
+                            <div class="col-sm-2">
+                                <label asp-for="Caso.Monto" class="form-label"></label>
+                                <input type="text" class="form-control form-control-sm" readonly
+                                       value="@Model.Caso.Monto">
+                            </div>
+                            <div class="col-sm-2">
+                                <label asp-for="Caso.Moneda" class="form-label"></label>
+                                <input type="text" class="form-control form-control-sm" readonly
+                                       value="@Model.Caso.Moneda">
+                            </div>
+
+
+                            <div class="col-sm-12">
+                                <label asp-for="Caso.DocumentacionAdjuntaEntrada" class="form-label"></label>
+                                <textarea class="form-control form-control-sm" asp-for="Caso.DocumentacionAdjuntaEntrada"
+                                          style="height: 70px" readonly>
+                                </textarea>
+                            </div>
+                            <div class="col-sm-4 form-check">
+                                <input asp-for="CerrarCaso.ErrorReg" type="checkbox" value="S">
+                                <label asp-for="CerrarCaso.ErrorReg" class="form-label"></label>
+                            </div>
+                            <div class="col-sm-4">
+                                <div id="tipoErrorDropdown" hidden>
+                                    <label asp-for="CerrarCaso.IdErrorReg" class="form-label"></label>
+                                    <select asp-for="CerrarCaso.IdErrorReg" asp-items="Model.TipoErrorDropDown"
+                                            class="form-select form-select-sm">
+                                        <option selected disabled value="">Elegir...</option>
+                                    </select>
+                                    <span asp-validation-for="CerrarCaso.IdErrorReg" class="validation-text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div id="descripcionError" hidden>
+                                    <label asp-for="CerrarCaso.DescripcionError" class="form-label"></label>
+                                    <textarea class="form-control form-control-sm" asp-for="CerrarCaso.DescripcionError"
+                                              style="height: 50px"></textarea>
+                                    <span asp-validation-for="CerrarCaso.DescripcionError" class="validation-text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-bgcontent-dark rounded shadow-sm mb-3">
+                    <div class="card-header fw-bold">Origen Caso</div>
+                    <div class="card-body">
+                        <div class="row g-3">
+
+                            <div class="col-sm-6">
+                                <label asp-for="OrigenCaso.Area" class="form-label"></label>
+                                <select asp-for="OrigenCaso.Area" asp-items="Model.AreaDropDown"
+                                        class="form-select form-select-sm">
+                                    <option selected disabled value="">Elegir...</option>
+                                </select>
+                                <span asp-validation-for="OrigenCaso.Area" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label asp-for="OrigenCaso.Matricula" class="form-label"></label>
+                                <input asp-for="OrigenCaso.Matricula" class="form-control form-control-sm"
+                                       value="@Model.Caso.UsuarioOrigen">
+                                <span asp-validation-for="OrigenCaso.Matricula" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label asp-for="OrigenCaso.Paterno" class="form-label"></label>
+                                <input asp-for="OrigenCaso.Paterno" class="form-control form-control-sm"
+                                       value="@Model.Caso.PaternoOrigen">
+                                <span asp-validation-for="OrigenCaso.Paterno" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label asp-for="OrigenCaso.Materno" class="form-label"></label>
+                                <input asp-for="OrigenCaso.Materno" class="form-control form-control-sm"
+                                       value="@Model.Caso.MaternoOrigen">
+                                <span asp-validation-for="OrigenCaso.Materno" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label asp-for="OrigenCaso.Nombre" class="form-label"></label>
+                                <input asp-for="OrigenCaso.Nombre" class="form-control form-control-sm"
+                                       value="@Model.Caso.NombresOrigen">
+                                <span asp-validation-for="OrigenCaso.Nombre" class="validation-text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-bgcontent-dark rounded shadow-sm mb-3">
+                    <div class="card-header fw-bold">Datos Solución</div>
+                    <div class="card-body">
+                        <div class="row g-3">
+                            <div class="col-sm-12">
+                                <div class="d-block">
+                                    <label class="form-label" asp-for="UpdateRespuesta.ViaEnvio"></label>
+                                </div>
+
+                                @foreach (var item in Model.ViaRespuestaBtns)
+                                {
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio"
+                                           asp-for="UpdateRespuesta.ViaEnvio"
+                                           value="@item.Value" checked="@item.Selected"
+                                           id="rbt-@item.Value">
+                                        <label class="form-check-label" for="rbt-@item.Value">@item.Text</label>
+                                    </div>
+                                }
+
+                                <div class="d-block">
+                                    <span asp-validation-for="UpdateRespuesta.ViaEnvio"
+                                          class="validation-text-danger"></span>
+                                </div>
+
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label asp-for="UpdateRespuesta.SMS" class="form-label"></label>
+                                <input type="text" class="form-control form-control-sm" asp-for="UpdateRespuesta.SMS"
+                                       value="@Model?.Caso?.SMSRespuesta">
+                                <span asp-validation-for="UpdateRespuesta.SMS" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label asp-for="UpdateRespuesta.Telefono" class="form-label"></label>
+                                <input type="text" class="form-control form-control-sm" asp-for="UpdateRespuesta.Telefono"
+                                       value="@Model?.Caso?.TelefonoRespuesta">
+                                <span asp-validation-for="UpdateRespuesta.Telefono" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label asp-for="UpdateRespuesta.Email" class="form-label"></label>
+                                <input type="text" class="form-control form-control-sm" asp-for="UpdateRespuesta.Email"
+                                       value="@Model?.Caso?.EmailRespuesta">
+                                <span asp-validation-for="UpdateRespuesta.Email" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <label asp-for="UpdateRespuesta.Direccion" class="form-label"></label>
+                                <input type="text" class="form-control form-control-sm" asp-for="UpdateRespuesta.Direccion"
+                                       value="@Model?.Caso?.DireccionRespuesta">
+                                <span asp-validation-for="UpdateRespuesta.Direccion" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label asp-for="UpdateCaso.TipoCarta" class="form-label"></label>
+                                <div class="input-group">
+                                    <select class="form-select form-select-sm" asp-for="UpdateCaso.TipoCarta"
+                                            asp-items="@Model.CartaDropDown"></select>
+
+                                    <button type="button" onclick="DescargarCarta()" class="btn btn-outline-success btn-sm"><i class="fas fa-file-download"></i></button>
+                                </div>
+                                <span asp-validation-for="UpdateCaso.TipoCarta" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <label asp-for="CerrarCaso.CartasEnviadas" class="form-label"></label>
+                                <input type="number" class="form-control form-control-sm" asp-for="CerrarCaso.CartasEnviadas"
+                                       value="@Model?.Caso?.NumeroCartasEnviadas">
+                                <span asp-validation-for="CerrarCaso.CartasEnviadas" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-5">
+                                <label class="form-label">Documentación Caso</label>
+                                <input type="hidden" asp-for="Caso.RutaSharepoint" />
+                                <p><a href="@Model?.Caso?.RutaSharepoint" target="_blank">@Model?.Caso?.RutaSharepoint</a></p>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <label asp-for="Files" class="form-label"></label>
+                                <input class="form-control form-control-sm" type="file" asp-for="Files" multiple onchange="ShowListFiles()">
+                                <span asp-validation-for="Files" class="validation-text-danger"></span>
+                                <div id="fileList"></div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label asp-for="InfoAdicional.Riesgo" class="form-label"></label>
+                                <select class="form-select form-select-sm" asp-for="InfoAdicional.Riesgo"
+                                        asp-items="@Model.RiesgoDropDown">
+                                    <option value="" selected>Elegir...</option>
+                                </select>
+                                <span asp-validation-for="InfoAdicional.Riesgo" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label asp-for="InfoAdicional.Tiempo" class="form-label"></label>
+                                <select class="form-select form-select-sm" asp-for="InfoAdicional.Tiempo"
+                                        asp-items="@Model.TiempoDropDown">
+                                    <option value="" selected>Elegir...</option>
+                                </select>
+                                <span asp-validation-for="InfoAdicional.Tiempo" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label asp-for="InfoAdicional.Proceso" class="form-label"></label>
+                                <select class="form-select form-select-sm" asp-for="InfoAdicional.Proceso"
+                                        asp-items="@Model.ProcesoDropDown">
+                                    <option value="" selected>Elegir...</option>
+                                </select>
+                                <span asp-validation-for="InfoAdicional.Proceso" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label asp-for="UpdateCaso.TipoSolucion" class="form-label"></label>
+                                <select class="form-select form-select-sm" asp-for="UpdateCaso.TipoSolucion"
+                                        asp-items="@Model.TipoSolucionDropDown">
+                                    <option value="" selected disabled>Elegir...</option>
+                                </select>
+                                <span asp-validation-for="UpdateCaso.TipoSolucion" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-6 mt-3">
+                                <div class="d-block">
+                                    <label class="form-label">Accion</label>
+                                </div>
+                                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check" asp-for="Accion" id="btnradioSinAccion" value="SA" disabled checked="@Model.Accion.Equals("SA")">
+                                    <label class="btn btn-outline-primary" for="btnradioSinAccion">Sin Acción</label>
+
+                                    <input type="radio" class="btn-check" asp-for="Accion" id="btnradioDevolucion" value="D" disabled checked="@Model.Accion.Equals("D")">
+                                    <label class="btn btn-outline-primary" for="btnradioDevolucion">Devolución</label>
+
+                                    <input type="radio" class="btn-check" asp-for="Accion" id="btnradioCobro" value="C" disabled checked="@Model.Accion.Equals("C")">
+                                    <label class="btn btn-outline-primary" for="btnradioCobro">Cobro</label>
+                                </div>
+                                <input type="hidden" asp-for="Accion" value="@Model.Accion" />
+                            </div>
+
+                            <div class="col-sm-12">
+                                <label asp-for="UpdateCaso.DescripcionSolucion" for="validationCustom03"
+                                       class="form-label"></label>
+                                <textarea class="form-control form-control-sm" style="height: 50px" asp-for="UpdateCaso.DescripcionSolucion">
+                                </textarea>
+                                <span asp-validation-for="UpdateCaso.DescripcionSolucion" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <label asp-for="UpdateCaso.DocumentoAdjuntoOut" for="validationCustom03"
+                                       class="form-label"></label>
+                                <textarea class="form-control form-control-sm" style="height: 50px" asp-for="UpdateCaso.DocumentoAdjuntoOut" readonly>
+                                </textarea>
+                                <span asp-validation-for="UpdateCaso.DocumentoAdjuntoOut" class="validation-text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @*################ INICIO: DETALLE DEVOLUCION ##########################################################*@
+                @if (Model.Accion.Equals("D"))
+                {
+                    <div class="card bg-bgcontent-dark rounded shadow-sm mb-3" id="devolucion">
+                        <div class="card-header fw-bold">Detalle de la Devolución</div>
+                        <div class="card-body">
+                            <div class="row g-3">
+                                <div class="col-sm-12">
+                                    <label asp-for="Devolucion.DescripcionServicio" class="form-label"></label>
+                                    <input type="text" class="form-control form-control-sm"
+                                       asp-for="Devolucion.DescripcionServicio" readonly>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label asp-for="Devolucion.Monto" class="form-label"></label>
+                                    <input type="text" class="form-control form-control-sm" asp-for="Devolucion.Monto" readonly>
+                                    <span asp-validation-for="Devolucion.Monto" class="validation-text-danger"></span>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="d-block">
+                                        <label class="form-label" asp-for="Devolucion.Moneda"></label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" asp-for="Devolucion.Moneda" type="radio" value="BS" disabled>
+                                        <label class="form-check-label">BS</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" asp-for="Devolucion.Moneda" type="radio" value="SUS" disabled>
+                                        <label class="form-check-label">SUS</label>
+                                    </div>
+                                    <span asp-validation-for="Devolucion.Moneda" class="validation-text-danger"></span>
+                                    <input type="hidden" asp-for="Devolucion.Moneda" value="@Model.Devolucion.Moneda" />
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <label asp-for="Devolucion.CuentaDevolucion" class="form-label"></label>
+                                    <input type="text" class="form-control form-control-sm"
+                                       asp-for="Devolucion.CuentaDevolucion" readonly>
+                                    <span asp-validation-for="Devolucion.CuentaDevolucion"
+                                      class="validation-text-danger"></span>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <label asp-for="Devolucion.ServiciosCanalesId" class="form-label"></label>
+                                    <select class="form-select form-select-sm" asp-for="Devolucion.ServiciosCanalesId"
+                                        asp-items="@Model.CuentaContableDropDown" disabled>
+                                    </select>
+                                    <span asp-validation-for="Devolucion.ServiciosCanalesId" class="validation-text-danger"></span>
+                                    <input type="hidden" asp-for="Devolucion.ServiciosCanalesId" value="@Model.Devolucion.ServiciosCanalesId" />
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <label asp-for="Devolucion.ParametroCentro" class="form-label"></label>
+                                    <select class="form-select form-select-sm" asp-for="Devolucion.ParametroCentro"
+                                        asp-items="@Model.CentroDeCostoDropDown" disabled>
+                                        <option selected disabled value="">Elegir...</option>
+                                    </select>
+                                    <span asp-validation-for="Devolucion.ParametroCentro" class="validation-text-danger"></span>
+                                    <input type="hidden" asp-for="Devolucion.ParametroCentro" value="@Model.Devolucion.ParametroCentro" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @*################ FIN: DETAALE DEVOLUCION ##########################################################################*@
+                }
+
+                @if (Model.Accion.Equals("C"))
+                {
+                    @*############### INICIO: DETAALE COBRO ###########################################################################*@
+                    <div class="card bg-bgcontent-dark rounded shadow-sm mb-3" id="cobro">
+                        <div class="card-header fw-bold">Detalle del Cobro</div>
+                        <div class="card-body">
+                            <div class="row g-3">
+                                <div class="col-sm-12">
+                                    <label asp-for="Cobro.DescripcionServicio" class="form-label"></label>
+                                    <input type="text" class="form-control form-control-sm"
+                                       asp-for="Cobro.DescripcionServicio" readonly>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label asp-for="Cobro.Monto" class="form-label"></label>
+                                    <input type="text" class="form-control form-control-sm" asp-for="Cobro.Monto" readonly>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="d-block">
+                                        <label class="form-label" asp-for="Cobro.Moneda"></label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" asp-for="Cobro.Moneda"
+                                           type="radio" value="BS" checked='@Model.Cobro.Moneda.Equals("BS")' disabled>
+                                        <label class="form-check-label">BS</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" asp-for="Cobro.Moneda"
+                                           type="radio" value="SUS" checked='@Model.Cobro.Equals("SUS")' disabled>
+                                        <label class="form-check-label">SUS</label>
+                                    </div>
+                                    <input type="hidden" asp-for="Cobro.Moneda" value="@Model.Cobro.Moneda" />
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <label asp-for="Cobro.CuentaCobro" class="form-label"></label>
+                                    <input type="text" class="form-control form-control-sm" asp-for="Cobro.CuentaCobro" readonly>
+                                    <span asp-validation-for="Cobro.CuentaCobro" class="validation-text-danger"></span>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <label asp-for="Cobro.ServiciosCanalesId" class="form-label"></label>
+                                    <select class="form-select form-select-sm" asp-for="Cobro.ServiciosCanalesId"
+                                        asp-items="@Model.CuentaContableDropDown" disabled>
+                                        <option selected disabled value="">Elegir...</option>
+                                    </select>
+                                    <input type="hidden" asp-for="Cobro.ServiciosCanalesId" value="@Model.Cobro.ServiciosCanalesId" />
+                                    <span asp-validation-for="Cobro.ServiciosCanalesId" class="validation-text-danger"></span>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <label asp-for="Cobro.TipoFacturacion" class="form-label"></label>
+                                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                        <input type="radio" class="btn-check" asp-for="Cobro.TipoFacturacion" value="B" checked='@Model.Cobro.TipoFacturacion.Equals("B")' disabled>
+                                        <label class="btn btn-outline-primary">Facturacion Batch</label>
+
+                                        <input type="radio" class="btn-check" asp-for="Cobro.TipoFacturacion" value="O" checked='@Model.Cobro.TipoFacturacion.Equals("O")' disabled>
+                                        <label class="btn btn-outline-primary">Facturacion Onnline</label>
+
+                                        <input type="hidden" asp-for="Cobro.TipoFacturacion" value="@Model.Cobro.TipoFacturacion" />
+                                    </div>
+                                    <span asp-validation-for="Cobro.TipoFacturacion" class="validation-text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @*################ FIN: DETAALE COBRO ##############################################################################*@
+                }
+
+                <div class="card bg-bgcontent-dark rounded shadow-sm mb-0">
+                    <div class="card-header fw-bold">
+                        <div class="form-check ml-0 pl-0">
+                            <input id="RechazarCaso_flag" type="checkbox" value="S">
+                            <label for="RechazarCaso_flag" class="form-label">Rechazar</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="rowBtnSolucionCaso" class="row justify-content-md-center mt-5">
+                    <div class="col-sm-4">
+                        <button id="btnCerrarCaso" class="btn btn-success text-light shadow w-100" type="submit"
+                                onclick="DefineAccion()">
+                            @if (Model.Accion.Equals("D"))
+                            {
+                                <span>Devolucion/Cierre Caso</span>
+                            }
+                            else if (Model.Accion.Equals("C"))
+                            {
+                                <span>Cobro/Cierre Caso</span>
+                            }
+                            else
+                            {
+                                <span>Cerrar Caso</span>
+                            }
+                        </button>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <a href="@Url.Action("BandejaEntrada")"
+                           class="btn btn-primary text-light shadow w-100">Cancelar</a>
+                    </div>
+                </div>
+
+            </form>
+            <div id="cardRechazoCaso" class="card bg-bgcontent-dark rounded shadow-sm mt-0" hidden>
+                <form asp-action="ProcesoRechazoCaso" id="frmRechazo">
+                    <div class="card-body">
+                        <div class="row g-3">
+                            <input type="hidden" asp-for="RechazarCaso.NroCaso" value="@Model.Caso.NroCaso" />
+                            <div class="col-sm-6">
+                                <label asp-for="RechazarCaso.TipoError" class="form-label"></label>
+                                <select asp-for="RechazarCaso.TipoError" class="form-select form-select-sm">
+                                    <option selected disabled value="">Elegir...</option>
+                                </select>
+                                <span asp-validation-for="RechazarCaso.TipoError" class="validation-text-danger"></span>
+                            </div>
+                            <div id="fechaProrroga" class="col-sm-6" hidden>
+                                <label asp-for="RechazarCaso.Fecha" class="form-label"></label>
+                                <input class="form-control form-control-sm" asp-for="RechazarCaso.Fecha" />
+                                <span asp-validation-for="RechazarCaso.Fecha" class="validation-text-danger"></span>
+                            </div>
+                            <div class="col-auto-sm">
+                                <label asp-for="RechazarCaso.Descripcion" class="form-label"></label>
+                                <textarea class="form-control form-control-sm" asp-for="RechazarCaso.Descripcion"
+                                          style="height: 50px"></textarea>
+                                <span asp-validation-for="RechazarCaso.Descripcion" class="validation-text-danger"></span>
+                            </div>
+
+                        </div>
+                        <div class="row justify-content-md-center mt-5">
+                            <div class="col-sm-4">
+                                <button id="btnRechazar" type="submit" onclick="showLoading()"
+                                        class="btn btn-danger text-light shadow w-100" disabled>
+                                    Rechazar
+                                </button>
+                            </div>
+                            <div class="col-sm-4">
+                                <a href="@Url.Action("BandejadeEntrada")"
+                                   class="btn btn-info text-light shadow w-100">Cancelar</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<partial name="_Loading" />
+
+@section Scripts {
+
+<partial name="_ValidationScriptsPartial" />
+<script>
+    window.onload = function () {
+        var defaultRangeValidator = $.validator.methods.range;
+        $.validator.methods.range = function (value, element, param) {
+            if (element.type === 'checkbox') {
+                // if it's a checkbox return true if it is checked
+                return element.checked;
+            } else {
+                // otherwise run the default validation function
+                return defaultRangeValidator.call(this, value, element, param);
+            }
+        };
+
+        ShowErrorCaso();
+        ShowErrorCasoRechazo();
+        ShowFechaProrroga();
+    };
+    const UrlGetErroresRechazo = '@Url.Action("GetErroresRechazo")';
+    const urlGetCartaFile= '@Url.Action("GetCartaFile","Supervisor")';
+
+    function DescargarCarta(){
+        let tipo=document.getElementById("UpdateCaso_TipoCarta").value;
+        let caso=document.getElementById("UpdateCaso_NroCarta").value;
+        window.open(`${urlGetCartaFile}?tipo=${tipo}&nroCaso=${caso}`,"_blank");
+    }
+
+    function ShowErrorCaso() {
+        $("#CerrarCaso_ErrorReg").change(
+            async function () {
+                const tipoErrorDropdown = document.getElementById("tipoErrorDropdown");
+                const descripcionError = document.getElementById("descripcionError");
+                const errorRegistro = document.getElementById("CerrarCaso_ErrorReg");
+
+                if (errorRegistro.checked === true) {
+                    tipoErrorDropdown.hidden = false;
+                    descripcionError.hidden = false;
+                    tipoErrorDropdown.required = false;
+                    descripcionError.required = false;
+                } else {
+                    tipoErrorDropdown.hidden = true;
+                    descripcionError.hidden = true;
+                    tipoErrorDropdown.required = true;
+                    descripcionError.required = true;
+                }
+            })
+    }
+
+    function ShowErrorCasoRechazo() {
+        $("#RechazarCaso_flag").change(
+            async function () {
+                const rechazarCaso = document.getElementById("RechazarCaso_flag");
+                const cardRechazoCaso = document.getElementById("cardRechazoCaso");
+                const rowBtnSolucionCaso = document.getElementById("rowBtnSolucionCaso");
+
+                if (rechazarCaso.checked === true) {
+                    cardRechazoCaso.hidden = false;
+                    btnCerrarCaso.disabled = true;
+                    btnRechazar.disabled = false;
+                    rowBtnSolucionCaso.hidden = true;
+                } else {
+                    cardRechazoCaso.hidden = true;
+                    btnCerrarCaso.disabled = false;
+                    btnRechazar.disabled = true;
+                    rowBtnSolucionCaso.hidden = false;
+                }
+
+                const getErrorRechazo = await fetch(UrlGetErroresRechazo, {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+                let errorRechazo = await getErrorRechazo.json();
+                let options = `<option value="" selected>Elegir...</option>`;
+                options += errorRechazo.map(r => `<option value=${r.value}>${r.text}</option>`);
+                $("#RechazarCaso_TipoError").html(options);
+            }
+        )
+    }
+
+    function ShowFechaProrroga() {
+        $("#RechazarCaso_TipoError").change(
+            function () {
+                const fechaProrroga = document.getElementById("fechaProrroga");
+                let tipoError = $("#RechazarCaso_TipoError").val();
+                console.log(tipoError)
+                fechaProrroga.hidden = tipoError != 'PRORROGA';
+            }
+        );
+    }
+
+    function ShowListFiles() {
+        var input = document.getElementById('Files');
+        var output = document.getElementById('fileList');
+
+        output.innerHTML = '<ul>';
+        for (var i = 0; i < input.files.length; ++i) {
+            output.innerHTML += '<li>' + input.files.item(i).name + '</li>';
+        }
+        output.innerHTML += '</ul>';
+    }
+
+    function DefineAccion() {
+        let accion = document.getElementsByName("Accion");
+
+        accion.forEach(acc => {
+            if (acc.checked && acc?.value == 'SA') {
+                let devolucion = document.getElementById("devolucion");
+                devolucion.InerHTML = "";
+                let cobro = document.getElementById("cobro");
+                cobro.InerHTML = "";
+            }
+        });
+
+        if ($("#frmRegistro").valid()) {
+            document.getElementById("_loading").hidden = false;
+        };
+    }
+
+    function showLoading() {
+        if ($("#frmRechazo").valid()) {
+            document.getElementById("_loading").hidden = false;
+        };
+    }
+</script>
+        }

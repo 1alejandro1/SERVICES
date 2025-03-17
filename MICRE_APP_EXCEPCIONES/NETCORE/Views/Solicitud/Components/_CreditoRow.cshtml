@@ -1,0 +1,56 @@
+﻿@using MICRE.ABSTRACTION.ENTITIES.Response
+@model ProductoDetalle
+@* Views/Solicitud/Components/_CreditoRow.cshtml *@
+
+<div class="alert alert-primary" role="alert">
+    <div class="row">
+        <div class="col">
+            <div><strong>Producto</strong></div>
+            <div><small>@Model.ProductoDescripcion</small></div>
+        </div>
+        <div class="col">
+            <div>
+                <strong>Finalidad del Crédito</strong>
+            </div>
+            <div>
+                <small>@Model.FinalidadDescripcion</small>
+            </div>
+        </div>
+        <div class="col">
+            <div>
+                <strong>Monto Solicitado</strong>
+            </div>
+            <div class="col d-flex flex-column">
+                <small class="liquidoBS">@Model.MontoSolicitadoBOLFormatted</small>
+                <small class="tiny-label liquidoUSD">@Model.MontoSolicitadoUSDFormatted</small>
+            </div>
+        </div>
+    </div>
+    @if (Model.Garantia)
+    {
+        <div class="row">
+            <div class="col-4">
+                <div><strong>Garantía del cliente (inmueble)</strong></div>
+                <div><small>@Model.DescripcionInmueble</small></div>
+            </div>
+            <div class="col-4">
+                <div>
+                    <strong>Valor del inmueble</strong>
+                </div>
+                <div class="col d-flex flex-column">
+                    <small class="liquidoBS">@Model.ValorInmuebleBOLFormatted</small>
+                    <small class="tiny-label liquidoUSD">@Model.ValorInmuebleUSDFormatted</small>
+                </div>
+            </div>
+            <div class="col-4">
+                <div>
+                    <strong>LTV</strong>
+                </div>
+                <div class="col d-flex flex-column">
+                    <small>@Model.LtvFormatted</small>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+

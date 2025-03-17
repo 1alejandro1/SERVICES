@@ -1,0 +1,35 @@
+﻿@using MICRE.ABSTRACTION.ENTITIES.Response
+@model ExcepcionesCliente
+
+<tr>
+    <th style="font-weight: normal !important">@Model.IdcNumero @Model.IdcExtension</th>
+    <th style="font-weight: normal !important">@Model.Nombres @Model.Paterno @Model.Materno</th>
+    <th style="font-weight: normal !important">
+        @foreach (var producto in Model.Productos)
+        {
+            <p>@producto.ProductoDescripcion</p>
+        }
+    </th>
+    <th style="font-weight: normal !important">@Model.Estado</th>
+    <th style="font-weight: normal !important">@Model.FechaRegistro</th>
+    <th>
+        <div class="dropdown text-center">
+            <button class="dropdown-toggle custom-dropdown-toggle w-50" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="background: none; border: none; padding: 0;">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                <li>
+                    <a class="dropdown-item" href="@Url.Action("ResumenCaso", "Solicitud", new { idCliente = Model.IdCliente })">
+                        <i class="fa-solid fa-eye me-2"></i> Ver caso
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item text-danger " href="#">
+                        <i class="fa-solid fa-trash"></i> <span class="font-weight-bold">Desestimar caso</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </th>
+</tr>
+

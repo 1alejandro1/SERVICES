@@ -1,0 +1,97 @@
+﻿@using Newtonsoft.Json
+@model MICREDITO.Model.Response.ExcepcionResponseByIdc
+
+<!--SECCION 1-->
+<label><strong>VINCULAR EXCEPCION</strong></label>
+<br />
+@{
+    List<MICREDITO.Model.Response.Data> filteredData = new List<MICREDITO.Model.Response.Data>();
+
+    if (Model.Status)
+    {
+        filteredData = Model.Data.Where(data => data.InformacionPersonal.documentoImpreso == true && data.Excepciones.Any(ex => ex.TipoProducto == "05")).ToList();
+    }
+    int counter = 1;
+}
+
+@using (Html.BeginForm("VincularException", "Evaluacion", FormMethod.Post, new { id = "VincularForm" }))
+{
+
+
+    if (!Model.Status)
+    {
+        <label>No existen excepciones registradas para este caso</label>
+    }
+    else
+    {
+        <div style="max-height: 300px; overflow-y: auto;">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nro</th>
+                        <th>Documento</th>
+                        <th>Tipo</th>
+                        <th>Extensión</th>
+                        <th>Nombres</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var data in filteredData)
+                    {
+                        <tr class="clickable-row" data-ci="@data.InformacionPersonal.Ci" data-nombres="@data.InformacionPersonal.Nombres" data-excepciones='@Html.Raw(JsonConvert.SerializeObject(data.Excepciones))' data-codsolicitud="@Model.codigoSolicitud" data-matricula="@Model.matricula">
+                            <td>
+                                <label>@counter</label>
+                            </td>
+                            <td>
+                                <label>@data.InformacionPersonal.Ci</label>
+                            </td>
+                            <td>
+                                <label>@data.InformacionPersonal.Tipo</label>
+                            </td>
+                            <td>
+                                <label>@data.InformacionPersonal.Extension</label>
+                            </td>
+                            <td>
+                                <label>@data.InformacionPersonal.Nombres @data.InformacionPersonal.Paterno @data.InformacionPersonal.Materno</label>
+                            </td>
+                        </tr>
+                        counter++;
+                    }
+
+                    @if (!filteredData.Any())
+                    {
+                        <tr>
+                            <td>
+                                <label>@counter</label>
+                            </td>
+                            <td colspan="4">
+                                <label>No Cuenta con el Documento Impreso</label>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <div id="details-container" style="display:none;">
+            <h3>Detalles</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Matrícula</th>
+                        <th>Fecha</th>
+                        <th>Código</th>
+                        <th>Excepción</th>
+                        <th>Justificación</th>
+                        <th>Producto</th>
+                        <th>Monto</th>
+                        <th>Estado</th>
+                        <th>Estado Asociacion</th>
+                    </tr>
+                </thead>
+                <tbody id="details-body"></tbody>
+            </table>
+        </div>
+        <button id="BtnSubmitVincularExcepcion" type="button" class="btn btn-primary" disabled>Vincular/Desvincular</button>
+    }
+}

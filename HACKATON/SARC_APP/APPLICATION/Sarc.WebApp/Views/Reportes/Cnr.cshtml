@@ -1,0 +1,109 @@
+﻿@using BCP.CROSS.MODELS
+@using BCP.CROSS.MODELS.Reportes.CNR
+@using Newtonsoft.Json
+@using Sarc.WebApp.Components.Reportes.CNR
+@using Sarc.WebApp.Models.Reportes
+@using System.Data
+@model ReportesFormViewModel
+@{
+    ViewData["Title"] = "Reporte CRN";
+    bool responseExist = false;
+    Meta meta = new Meta();
+    var tipo = ViewBag.tipo;
+    List<DetalleModel> detalleList = new();
+    List<TotalModel> totalList = new();
+    var data = "[{}]";
+    var dataJson = Json.Serialize(data);
+    var excelTitle = "Reporte_CNR_" + DateTime.Now.ToString("yyyyMMdd") + ".xlsx";
+    if (ViewBag.response != null)
+    {
+        meta = ViewBag.response.Meta;
+        responseExist = true;
+    }
+}
+<div class="container">
+    <div class="card bg-dark">
+        <div class="card-body">
+            <form asp-action="CNR" asp-controller="Reportes" method="post" class="row">
+                <div class="col-12 col-md-4 my-2">
+                    <label for="FechaIni" class="form-label">Fecha de inicio</label>
+                    <input type="date" class="form-control" asp-for="FechaIni" id="FechaIni">
+                </div>
+                <div class="col-12 col-md-4  my-2">
+                    <label for="FechaFin" class="form-label">Fecha Final</label>
+                    <input type="date" class="form-control" asp-for="FechaFin" id="FechaFin">
+                </div>
+                <div class="col-12">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" asp-for="CNRTipo" id="Tipo" checked value="Total">
+                        <label class="form-check-label" for="Tipo">
+                            Total
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" asp-for="CNRTipo" id="Tipo" value="ST">
+                        <label class="form-check-label" for="Tipo2">
+                            Solucionados a Tiempo
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" asp-for="CNRTipo" id="Tipo" value="SV">
+                        <label class="form-check-label" for="Tipo2">
+                            Solucionados Vencidos
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" asp-for="CNRTipo" id="Tipo" value="PE">
+                        <label class="form-check-label" for="Tipo2">
+                            Pendientes
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" asp-for="CNRTipo" id="Tipo" value="PV">
+                        <label class="form-check-label" for="Tipo2">
+                            Pendientes Vencidos
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-12 mt-2">
+                    <button type="submit" class="btn btn-primary mb-3">Generar Reporte</button>
+                </div>
+            </form>
+            @if (responseExist)
+            {
+                @if (ViewBag.response.Data != null)
+                {
+                    if (tipo == "Total")
+                    {
+                        totalList = ViewBag.response.Data;
+                        dataJson = Json.Serialize(totalList.ToArray());
+                        <component type="typeof(TotalTableComponent)" render-mode="ServerPrerendered" param-Data='ViewBag.response.Data' />
+                    }
+                    else
+                    {
+                        detalleList = ViewBag.response.Data;
+                        dataJson = Json.Serialize(detalleList.ToArray());
+                        <component type="typeof(DetalleTableComponent)" render-mode="ServerPrerendered" param-Data='ViewBag.response.Data' />
+                    }
+                    <button type="button" id="downloadexcel" class="btn btn-primary">Descargar Excel</button>
+                }
+                else
+                {
+                    <div class="alert alert-warning" role="alert">
+                        @meta.Msj
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+@section scripts{
+<script type="text/javascript">
+    var data=@dataJson;
+    var title="@excelTitle";
+        $("#downloadexcel").click(function(){
+                GenerarExcel(data,title);
+        });
+</script>
+}

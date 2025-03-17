@@ -1,0 +1,30 @@
+﻿@{
+    var user = (MICREDITO.Authentication.UserMain)User;
+    var identity = (MICREDITO.Authentication.UserIdentity)user.Identity;
+    var name = @ViewContext.RouteData.Values["controller"].ToString();
+}
+
+@if (identity.Data.servicio == "MICOFC" || identity.Data.servicio == "MICJFC" || identity.Data.servicio == "MICASC")
+{
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <div class="navbar-nav">
+            @Html.ActionLink("BANDEJA", "Index", "Home", new { area = "" }, new { @class = "nav-item nav-link active" })
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">NUEVO</a>
+                <div class="dropdown-menu">
+                    @Html.ActionLink("Evaluación", "Index", "Evaluacion", new { area = "" }, new { @class = "dropdown-item" })
+                </div>
+            </div>
+        </div>
+        <div class="navbar-nav">
+            @if (name == "Home")
+            {
+                <button id='trigger' class="btn btn-toolbar"><span class="fa fa-search" aria-hidden="true"></span></button>
+            }
+            @Html.ActionLink("Cerrar Sesión", "Logout", "Login", new { area = "" }, new { @class = "nav-item nav-link" })
+        </div>
+    </div>
+}

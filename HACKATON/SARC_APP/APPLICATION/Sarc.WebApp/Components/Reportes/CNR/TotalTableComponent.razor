@@ -1,0 +1,48 @@
+﻿@using BCP.CROSS.MODELS.Reportes.CNR
+<div class="row align-content-center">
+    <div class="col-12">
+        <h4><strong>REPORTE CNR TARJETAS DE CREDITO</strong></h4>
+    </div>
+    <div class="col-10">
+        <table class="table table-hover table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col" class="table-tomato">SOLUCIONADOS A TIEMPO</th>
+                    <th scope="col" class="table-tomato">PENDIENTES</th>
+                    <th scope="col" class="table-tomato">SOLUCIONADOS VENCIDOS</th>
+                    <th scope="col" class="table-tomato">PENDIENTES VENCIDOS</th>
+                    <th scope="col" class="table-tomato">TOTAL CASOS</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (TotalModel item in Data)
+                {
+                    <tr>
+                        <th scope="row" class="table-light">@item.SolucionadosTiempo</th>
+                        <td class="table-light">@item.PendientesTiempo</td>
+                        <td class="table-light">@item.SolucionadosVencidos</td>
+                        <td class="table-light">@item.PendientesVencidos</td>
+                        <td class="table-light">@item.TotalCasos</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+@code {
+    [Parameter]
+    public List<TotalModel> Data { get; set; }
+}
+<style>
+    .table-tomato {
+        background-color: tomato !important;
+        color: white !important;
+        vertical-align: middle;
+    }
+
+    .table-midnightblue {
+        background-color: midnightblue !important;
+        color: white !important;
+        vertical-align: middle;
+    }
+</style>

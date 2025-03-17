@@ -1,0 +1,54 @@
+﻿@using BCP.CROSS.MODELS.Reportes.CNR
+<div class="row align-content-center">
+    <div class="col-12">
+        <h4><strong>REPORTE CNR PRODUCTO / SERVICIO (DETALLADO)</strong></h4>
+    </div>
+    <div class="col-10"> 
+        <table class="table table-hover table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col" class="table-tomato">CODIGO SARC</th>
+                    <th scope="col" class="table-tomato">NOMBRE</th>
+                    <th scope="col" class="table-tomato">DESCRIPCION</th>
+                    <th scope="col" class="table-tomato">TIPO CASO</th>
+                    <th scope="col" class="table-tomato">TIEMPO ATENCION SARC</th>
+                    <th scope="col" class="table-tomato">TIEMPO AREA</th>
+                    <th scope="col" class="table-tomato">TIEMPO TOTAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (DetalleModel item in Data)
+                {
+                    <tr>
+                        <th scope="row" class="table-light">@item.Carta</th>
+                        <td class="table-light">@item.Nombre</td>
+                        <td class="table-light">@item.Descripcion</td>
+                        <td class="table-light">@item.Tipo</td>
+                        <td class="table-light">@item.TSARC</td>
+                        <td class="table-light">@item.Complejidad</td>  
+                        <td class="table-light">@item.Tarea</td>
+                                   
+                        
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+@code {
+    [Parameter]
+    public List<DetalleModel> Data { get; set; }
+}
+<style>
+    .table-tomato {
+        background-color: tomato !important;
+        color: white !important;
+        vertical-align: middle;
+    }
+
+    .table-midnightblue {
+        background-color: midnightblue !important;
+        color: white !important;
+        vertical-align: middle;
+    }
+</style>

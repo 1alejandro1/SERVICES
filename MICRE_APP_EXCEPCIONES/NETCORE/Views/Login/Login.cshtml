@@ -1,0 +1,99 @@
+﻿@model User
+@{
+    ViewData["Title"] = "Login";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Excepciones de crédito</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <link rel="icon" href="~/images/logobcp.svg" type="image/x-icon" />
+    
+</head>
+<body class="fondo">
+    @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+    {
+        <div class="toast-container position-fixed bottom-0 end-0 p-3" id="toast-button">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <img src="~/images/logobcp.svg" style="width: 50px; height: 50px;" class="rounded me-2" alt="BCP logo">
+                    <strong class="me-auto">Mensaje</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    @ViewBag.ErrorMessage
+                </div>
+            </div>
+        </div>
+    }
+    <div class="row w-100" style="height: 80vh; display: flex; align-items: center;">
+        <div class="col">
+        </div>
+        <div class="col">
+            
+
+            <div class="card" style="width: 18rem;">
+                <form asp-action="Login" asp-controller="Login" method="Post" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; background-color: white;" class="needs-validation" novalidate>
+                    <img src="~/images/logobcp.svg" class="rounded mx-auto d-block card-img-top img-fluid w-50" alt="BCP logo">
+                    <label for="validationCustom01" class="form-label">Ingrese utilizando sus credenciales de <strong>Segurinet</strong></label>
+                    <div class="form-floating has-validation pb-3">
+                        <input asp-for="UserName" type="text" class="form-control" maxlength="10" id="floatingInputUser" placeholder="Matricula" required>
+                        <label class="fst-italic" for="floatingInputUser">Matrícula</label>
+                        <div class="invalid-feedback">
+                            Este campo es necesario.
+                        </div>
+                    </div>
+
+                    <div class="form-floating has-validation pb-3">
+                        <input asp-for="Password" type="Password" class="form-control" maxlength="30" id="floatingInputPass" placeholder="Password" required>
+                        <label class="fst-italic" for="floatingInputPass">Password</label>
+                        <div class="invalid-feedback">
+                            Este campo es necesario.
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary btn-login btn-lg">Ingresar</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+            var toastList = toastElList.map(function (toastEl) {
+                return new bootstrap.Toast(toastEl)
+            })
+            toastList.forEach(toast => toast.show())
+        });
+
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+</html>

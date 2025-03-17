@@ -1,0 +1,132 @@
+﻿@using BCP.CROSS.MODELS.Reportes
+<div class="row align-content-center">
+    <div class="col-12">
+        <h4><strong>REPORTE BASE</strong></h4>
+    </div>
+    <div class="col-10" style="overflow-y:auto">
+        <table class="table  table-sm table-hover table-borderless" id="tblBandejaAnalista">
+            <thead>
+                <tr class="text-uppercase">
+                        <th class="table-tomato">Carta</th>
+                        <th class="table-tomato">Estado</th>
+                        <th class="table-tomato">TipoServicio</th>
+                        <th class="table-tomato">DiasServicio</th>
+                        <th class="table-tomato">Servicio</th>
+                        <th class="table-tomato">Producto</th>
+                        <th class="table-tomato">Agencia</th>
+                        <th class="table-tomato">FunReg</th>
+                        <th class="table-tomato">FunAte</th>
+                        <th class="table-tomato">NomFunCate</th>
+                        <th class="table-tomato">Sucsol</th>
+                        <th class="table-tomato">FecReg</th>
+                        <th class="table-tomato">Fecini</th>
+                        <th class="table-tomato">FecFin</th>
+                        <th class="table-tomato">IDC</th>
+                        <th class="table-tomato">IDCTipo</th>
+                        <th class="table-tomato">IDCExt</th>
+                        <th class="table-tomato">NroCuenta</th>
+                        <th class="table-tomato">NroTarjeta</th>
+                        <th class="table-tomato">Paterno</th>
+                        <th class="table-tomato">Materno</th>
+                        <th class="table-tomato">Nombres</th>
+                        <th class="table-tomato">DirCli</th>
+                        <th class="table-tomato">DirEnvio</th>
+                        <th class="table-tomato">DescErrorReg</th>
+                        <th class="table-tomato">.UsrOr</th>
+                        <th class="table-tomato">NomOr</th>
+                        <th class="table-tomato">DesReclamo</th>
+                        <th class="table-tomato">WsDesc</th>
+                        <th class="table-tomato">AreaResp</th>
+                        <th class="table-tomato">AreaDesc</th>
+                        <th class="table-tomato">TipoSol</th>
+                        <th class="table-tomato">DescSol</th>
+                        <th class="table-tomato">ATMSuc</th>
+                        <th class="table-tomato">ATMUbi</th>
+                        <th class="table-tomato">Monto</th>
+                        <th class="table-tomato">Moneda</th>
+                        <th class="table-tomato">FecTXN</th>
+                        <th class="table-tomato">ViaEnvio</th>
+                        <th class="table-tomato">ImporteDev</th>
+                        <th class="table-tomato">MonedaDev</th>
+                        <th class="table-tomato">SwReg</th>
+                        <th class="table-tomato">DescErrorReg</th><!--DESC_ERROR_SOL?-->
+                        <th class="table-tomato">T</th><!--TSARC-->
+                        <th class="table-tomato">Tarea</th>
+                        <th class="table-tomato">Clasificacion</th>
+                        <th class="table-tomato">AreaExt</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (ReporteBaseModel item in Data)
+                {
+                    <tr>
+                        <th scope="row" class="table-light">@item.Carta</th>
+                        <td class="table-light">@item.Estado</td>
+                        <td class="table-light">@item.TipoServicio</td>
+                        <td class="table-light">@item.DiasServicio</td>
+                        <td class="table-light">@item.Servicio</td>
+                        <td class="table-light">@item.Producto</td>
+                        <td class="table-light">@item.Agencia</td>
+                        <td class="table-light">@item.FunReg</td>
+                        <td class="table-light">@item.FunAte</td>
+                        <td class="table-light">@item.NomFunCate</td>
+                        <td class="table-light">@item.Sucsol</td>
+                        <td class="table-light">@item.FecReg</td>
+                        <td class="table-light">@item.FecIni</td>
+                        <td class="table-light">@item.FecFin</td>
+                        <td class="table-light">@item.IDC</td>
+                        <td class="table-light">@item.IDCTipo</td>
+                        <td class="table-light">@item.IDCExt</td>
+                        <td class="table-light">@item.NroCuenta</td>
+                        <td class="table-light">@item.NroTarjeta</td>
+                        <td class="table-light">@item.Paterno</td>
+                        <td class="table-light">@item.Materno</td>
+                        <td class="table-light">@item.Nombres</td>
+                        <td class="table-light">@item.DirCli</td>
+                        <td class="table-light">@item.DirEnvio</td>
+                        <td class="table-light">@item.DescErrorReg</td>
+                        <td class="table-light">@item.UsrOr</td>
+                        <td class="table-light">@item.NomOr</td>
+                        <td class="table-light">@item.DesReclamo</td>
+                        <td class="table-light">@item.WsDesc</td>
+                        <td class="table-light">@item.AreaResp</td>
+                        <td class="table-light">@item.AreaDesc</td>
+                        <td class="table-light">@item.TipoSol</td>
+                        <td class="table-light">@item.DescSol</td>
+                        <td class="table-light">@item.ATMSuc</td>
+                        <td class="table-light">@item.ATMUbi</td>
+                        <td class="table-light">@item.Monto</td>
+                        <td class="table-light">@item.Moneda</td>
+                        <td class="table-light">@item.FecTXN</td>
+                        <td class="table-light">@item.ViaEnvio</td>
+                        <td class="table-light">@item.ImporteDev</td>
+                        <td class="table-light">@item.MonedaDev</td>
+                        <td class="table-light">@item.SwReg</td>
+                        <td class="table-light">@item.DescErrorReg</td><!--DESC_ERROR_SOL?-->
+                        <td class="table-light">@item.T</td><!--TSARC-->
+                        <td class="table-light">@item.Tarea</td>
+                        <td class="table-light">@item.Clasificacion</td>
+                        <td class="table-light">@item.AreaExt</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+@code {
+    [Parameter]
+    public List<ReporteBaseModel> Data { get; set; }
+}
+<style lang="css">
+    .table-tomato {
+        background-color: tomato !important;
+        color: white !important;
+        vertical-align: middle;
+    }
+
+    .table-midnightblue {
+        background-color: midnightblue !important;
+        color: white !important;
+        vertical-align: middle;
+    }
+</style>

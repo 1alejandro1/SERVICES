@@ -1,0 +1,106 @@
+[
+  {
+    "ContainingType": "ApiScoreTarjeta.Controllers.ScoreTarjetaController",
+    "Method": "GetCalculadoraScoreConsumo",
+    "RelativePath": "api/ScoreTarjeta/CalculadoraScoreTarjeta",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.ENTITY.Request.CalculadoraRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.COMMON.Model.Response\u00601[[MICRE.ENTITY.Response.CalculadoraResponse, MICRE.ENTITY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ApiScoreTarjeta.Controllers.ScoreTarjetaController",
+    "Method": "GetCosultaScoreConsumo",
+    "RelativePath": "api/ScoreTarjeta/ConsultaScoreTarjeta",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.ENTITY.Request.ScoreTarjetaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.COMMON.Model.Response\u00601[[MICRE.ENTITY.Response.ScoreTarjetaResponse, MICRE.ENTITY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ApiScoreTarjeta.Controllers.ScoreTarjetaController",
+    "Method": "GetReporte",
+    "RelativePath": "api/ScoreTarjeta/ReporteScoretarjeta",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.ENTITY.Request.ReporteScoreTarjetaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.COMMON.Model.Response\u00601[[System.Collections.Generic.List\u00601[[MICRE.ENTITY.Model.ReporteScoreTarjeta, MICRE.ENTITY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ApiScoreTarjeta.Controllers.SegCryptController",
+    "Method": "getEncriptado",
+    "RelativePath": "api/SegCrypt/Encriptar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.ENTITY.Model.SegCryptRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.ENTITY.Model.SegCryptResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

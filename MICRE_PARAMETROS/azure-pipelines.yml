@@ -1,0 +1,76 @@
+variables:
+  # solution: '**/*.sln'
+  # buildPlatform: 'Any CPU'
+  # buildConfiguration: 'Release'
+  # GroupAgent: Agentes_Desarrollo_Dev
+  # Agent: Agente_S75843
+  # Publish: 'MICRE_PARAMETROS'
+  # PublishArtifact: '$(build.artifactstagingdirectory)'
+  BuildConfiguration: 'Release'
+  BuildPlatform: 'any cpu'
+
+pool:
+  name: Agentes_Compilacion
+
+steps:
+- task: DotNetCoreCLI@2
+  displayName: Restore
+  inputs:
+    command: restore
+    projects: '**/*.csproj'
+
+- task: sonarsource.sonarqube.15B84CA1-B62F-4A2A-A403-89B77A063157.SonarQubePrepare@5
+  displayName: 'Prepare analysis on SonarQube'
+  inputs:
+    SonarQube: 'MICREDITO_PARAMETROS'
+    projectKey: gastlcewufr7crl0repo
+    projectName: 'MICREDITO_PARAMETROS'
+  continueOnError: true
+
+- powershell: |
+   $params = "$env:SONARQUBE_SCANNER_PARAMS" -replace '"sonar.branch.name":"[\w/,-.]*"\,?'
+   Write-Host "##vso[task.setvariable variable=SONARQUBE_SCANNER_PARAMS]$params"
+   
+  displayName: 'Script de PowerShell'
+- task: DotNetCoreCLI@2
+  displayName: Build
+  inputs:
+    projects: '**/*.csproj'
+    arguments: '--configuration $(BuildConfiguration)'
+
+- task: sonarsource.sonarqube.291ed61f-1ee4-45d3-b1b0-bf822d9095ef.SonarQubePublish@5
+  displayName: 'Publish Quality Gate Result'
+  continueOnError: true
+
+- task: sonarsource.sonarqube.6D01813A-9589-4B15-8491-8164AEB38055.SonarQubeAnalyze@5
+  displayName: 'Run Code Analysis'
+  continueOnError: true
+
+- task: DotNetCoreCLI@2
+  displayName: Publish
+  inputs:
+    command: publish
+    publishWebProjects: True
+    arguments: '--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)'
+    zipAfterPublish: True
+
+- task: CopyFiles@2
+  displayName: 'Copiar archivos a: $(Build.ArtifactStagingDirectory)'
+  inputs:
+    SourceFolder: MICRE.PARAMETROS.API
+    Contents: '**\bin\$(BuildConfiguration)\**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact'
+  inputs:
+    PathtoPublish: '$(build.artifactstagingdirectory)'
+    ArtifactName: 'MICRE_PARAMETROS'
+  condition: succeededOrFailed()
+
+
+- task: SimondeLang.sonar-buildbreaker.sonar-buildbreaker.sonar-buildbreaker@8
+  displayName: 'Break build on quality gate failure'
+  inputs:
+    SonarQube: 'MICREDITO_PARAMETROS'
+  continueOnError: true

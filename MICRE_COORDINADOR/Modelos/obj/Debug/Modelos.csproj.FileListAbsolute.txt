@@ -1,0 +1,9 @@
+D:\T25208\MICREDITO\MICRE_COORDINADOR\Modelos\bin\Debug\Modelos.dll
+D:\T25208\MICREDITO\MICRE_COORDINADOR\Modelos\bin\Debug\Modelos.pdb
+D:\T25208\MICREDITO\MICRE_COORDINADOR\Modelos\bin\Debug\Newtonsoft.Json.dll
+D:\T25208\MICREDITO\MICRE_COORDINADOR\Modelos\bin\Debug\Newtonsoft.Json.xml
+D:\T25208\MICREDITO\MICRE_COORDINADOR\Modelos\obj\Debug\Modelos.csproj.AssemblyReference.cache
+D:\T25208\MICREDITO\MICRE_COORDINADOR\Modelos\obj\Debug\Modelos.csproj.CoreCompileInputs.cache
+D:\T25208\MICREDITO\MICRE_COORDINADOR\Modelos\obj\Debug\Modelos.csproj.CopyComplete
+D:\T25208\MICREDITO\MICRE_COORDINADOR\Modelos\obj\Debug\Modelos.dll
+D:\T25208\MICREDITO\MICRE_COORDINADOR\Modelos\obj\Debug\Modelos.pdb

@@ -1,0 +1,81 @@
+body{
+		align-items: center;
+		justify-content: center;
+		display:flex;
+		font-family: Arial;
+	}
+	div{
+		margin:1000px;		
+	}
+	#contenedor{
+		padding: 300px;
+		margin-left: 3.3pt;
+	}
+	#cabecera, #tipoSolucion{
+		border-top-color:black;
+		border-bottom-color:black;
+		border-top-width:2px;
+		border-top-style:solid;
+		border-bottom-width:2px;
+		border-bottom-style:solid;
+	}
+	#DocumentacionAdjunta{
+		border-bottom-color:black;
+		border-bottom-width:2px;
+		border-bottom-style:solid;
+		font-size:90%;
+	}
+	#descripcionSolucion,#descripcionDocumentacionAdjunta{
+		height:40px;
+	}
+	#DatosReclamo{
+		width:100%;		
+	}
+	#cabecera{
+		font-size:90%;	
+	}
+	#tipoSolucion{
+		font-size:90%;	
+	}
+	#datosCliente{
+		font-size:90%;	
+	}
+	#DatosAdicionales{
+		font-size:90%;	
+	}
+	#FirmaCliente{
+		font-size:90%;	
+	}
+	#PsudoFirma{
+		width:73%;
+	}
+	
+	#Firma{
+		height:40px;
+		width:21%;
+		justify-content: right;
+	}
+	#FirmaCliente div{
+		float:left;
+		font-size:90%;
+	}
+	#DatosReclamo div{
+		float:left;
+	}
+	#F1{
+	width:39%;
+	}
+#F2 {
+	width: 58%;
+	font-size: 70%;
+	padding-left: 38%;
+}
+	#PiePagina{
+		font-size:70%;
+	}
+	#RutaSharepoint{
+		height:30px;
+	}
+	#EspacioBlanco{
+		height:100px;
+	}

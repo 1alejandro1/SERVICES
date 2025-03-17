@@ -1,0 +1,757 @@
+﻿@using SARCAPP.APPLICATION.Sarc.WebApp.Models.Caso
+@model CreateCasoExpressViewModel
+@{
+    ViewData["Title"] = "Formulario Express";
+}
+
+<div class="container-fluid">
+    <div class="row gx-4 mb-5">
+        <div class="col-sm-9">
+            <form id="frmRegistro" enctype="multipart/form-data" asp-action="RegistroCasoExpress">
+
+                <div class="card bg-bgcontent-dark rounded shadow-sm mb-3">
+                    <div class="card-header fw-bold">Producto y Servicio</div>
+                    <div class="card-body">
+                        <div class="row g-3">
+                            <input type="hidden" asp-for="Caso.Nombres" value="@Model?.GetClienteResponse?.Nombres">
+                            <input type="hidden" asp-for="Caso.ClienteIdc" value="@Model?.GetClienteResponse?.NroIdc">
+                            <input type="hidden" asp-for="Caso.ClienteIdcTipo" value="@Model?.GetClienteResponse?.IdcTipo">
+                            <input type="hidden" asp-for="Caso.ClienteIdcExtension" value="@Model?.GetClienteResponse?.IdcExtension">
+                            <input type="hidden" asp-for="Caso.Materno" value="@Model?.GetClienteResponse?.Materno">
+                            <input type="hidden" asp-for="Caso.Paterno" value="@Model?.GetClienteResponse?.PaternoRazonSocial">
+                            <input type="hidden" asp-for="Caso.Empresa" value="@Model?.GetClienteResponse?.NombreCompleto">
+
+                            <div class="col-sm-12">
+                                <label asp-for="Caso.ProductoId" class="form-label"></label>
+                                <select asp-for="Caso.ProductoId" asp-items="Model.ProductoDropDown"
+                                    class="form-select form-select-sm">
+                                    <option selected disabled value="">Elegir...</option>
+                                </select>
+                                <span asp-validation-for="Caso.ProductoId" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label asp-for="Caso.NroCuenta" class="form-label"></label>
+                                <textarea type="text" asp-for="Caso.NroCuenta" class="form-control form-control-sm textarea-nrocuenta" rows="1"></textarea>
+                                <span asp-validation-for="Caso.NroCuenta" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label asp-for="Caso.NroTarjeta" class="form-label"></label>
+                                <input type="text" asp-for="Caso.NroTarjeta" class="form-control form-control-sm">
+                                <span asp-validation-for="Caso.NroTarjeta" class="validation-text-danger"></span>
+                            </div>
+
+                             <div class="col-sm-6">
+                                <label asp-for="Caso.TipoRegistro" class="form-label"></label>
+                                <select asp-for="Caso.TipoRegistro"
+                                    class="form-select form-select-sm">
+                                    <option selected disabled value="">Elegir...</option>
+                                    <option value="R">RECLAMO</option>
+                                    <option value="C">CONSULTA</option>
+                                    <option value="S">SOLICITUD</option>
+                                </select>
+                                <span asp-validation-for="Caso.TipoRegistro" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label asp-for="Caso.ViaEnvioCodigo" class="form-label"></label>
+                                <select asp-for="Caso.ViaEnvioCodigo" asp-items="Model.ViaEnvioCodigoDropDown" class="form-select form-select-sm">
+                                    <option selected disabled value="">Elegir...</option>
+                                </select>
+                                <span asp-validation-for="Caso.ViaEnvioCodigo" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <label asp-for="Caso.ServicioId" class="form-label"></label>
+                                <select asp-for="Caso.ServicioId" asp-items="Model.ServicioDropDown" class="form-select form-select-sm">
+                                    <option selected value="">Elegir...</option>
+                                </select>
+                                <span asp-validation-for="Caso.ServicioId" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <label asp-for="Caso.DocumentosAdjuntoIn" class="form-label"></label>
+                                <textarea asp-for="Caso.DocumentosAdjuntoIn" class="form-control form-control-sm"
+                                    style="height: 70px" readonly></textarea>
+                                <span asp-validation-for="Caso.DocumentosAdjuntoIn" class="validation-text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-bgcontent-dark rounded shadow-sm mb-3">
+                    <div class="card-header fw-bold">Detalles del caso</div>
+                    <div class="card-body">
+                        <div class="row g-3">
+                            <div class="col-sm-4">
+                                <label asp-for="Caso.Monto" class="form-label"></label>
+                                <input type="text" asp-for="Caso.Monto" class="form-control form-control-sm">
+                                <span asp-validation-for="Caso.Monto" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="d-block">
+                                    <label class="form-label" asp-for="Caso.Moneda">Moneda</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" asp-for="Caso.Moneda" id="rbtMonedaBol" type="radio" value="BS">
+                                    <label class="form-check-label" for="rbtMonedaBol">BS</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" asp-for="Caso.Moneda" id="rbtMonedaDol" type="radio" value="SUS">
+                                    <label class="form-check-label" for="rbtMonedaDol">SUS</label>
+                                </div>
+                                <div class="d-block">
+                                    <span asp-validation-for="Caso.Moneda" class="validation-text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label asp-for="FechaTxn" class="form-label"></label>
+                                <input asp-for="FechaTxn" class="form-control form-control-sm">
+                                <span asp-validation-for="FechaTxn" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label asp-for="Caso.AtmSucursal" class="form-label"></label>
+                                <select asp-for="Caso.AtmSucursal" asp-items="Model.AtmSucursalDropDown" class="form-select form-select-sm">
+                                    <option selected disabled value="">Elegir...</option>
+                                </select>
+                                <span asp-validation-for="Caso.AtmSucursal" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label asp-for="Caso.AtmUbicacion" class="form-label"></label>
+                                <select asp-for="Caso.AtmUbicacion" asp-items="Model.AtmUbicacionDropDown" class="form-select form-select-sm">
+                                    <option selected disabled value="">Elegir...</option>
+                                </select>
+                                <span asp-validation-for="Caso.AtmUbicacion" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <label asp-for="Caso.InformacionAdicional" class="form-label"></label>
+                                <textarea asp-for=" Caso.InformacionAdicional" class="form-control form-control-sm" style="height: 50px"></textarea>
+                                <span asp-validation-for="Caso.InformacionAdicional" class="validation-text-danger"></span>
+                            </div>
+                            <div class="col-sm-12 mt-3">
+                                <div class="d-block">
+                                    <label class="form-label" asp-for="Caso.ViaEnvioRespuesta"></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" asp-for=" Caso.ViaEnvioRespuesta" value="O">
+                                    <label class="form-check-label" for="ViaEnvioRespuesta">En oficina BCP</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" asp-for=" Caso.ViaEnvioRespuesta" value="E">
+                                    <label class="form-check-label" for="ViaEnvioRespuesta">E-mail</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" asp-for=" Caso.ViaEnvioRespuesta" value="W">
+                                    <label class="form-check-label" for="ViaEnvioRespuesta">WhatsApp</label>
+                                </div>
+                                <div class="d-block">
+                                    <span asp-validation-for="Caso.ViaEnvioRespuesta" class="validation-text-danger"></span>
+                                </div>
+
+                            </div>
+
+                            <div class="col-sm-3">
+                                <label asp-for="Caso.SmsRespuesta" class="form-label"></label>
+                                <input type="text" class="form-control form-control-sm" asp-for="Caso.SmsRespuesta" value="@Model?.GetClienteResponse?.Cleular1">
+                               <span asp-validation-for="Caso.SmsRespuesta" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <label asp-for="Caso.TelefonoRespuesta" class="form-label"></label>
+                                <input type="text" class="form-control form-control-sm" asp-for="Caso.TelefonoRespuesta" value="@Model?.GetClienteResponse?.Telefono1">
+                                <span asp-validation-for="Caso.TelefonoRespuesta" class="validation-text-danger"></span>
+                            </div>
+                            <div class="col-sm-6">
+                                <label asp-for="Caso.EmailRespuesta" class="form-label"></label>
+                                <input type="text" class="form-control form-control-sm" asp-for="Caso.EmailRespuesta" value="@Model?.GetClienteResponse?.Email">
+                                <span asp-validation-for="Caso.EmailRespuesta" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label asp-for="Caso.Departamento" class="form-label"></label>
+                                <select class="form-select form-select-sm" asp-for="Caso.Departamento" asp-items="@Model.DepartamentoDropDown">
+                                    <option selected disabled value="">Elegir...</option>
+                                </select>
+                                <span asp-validation-for="Caso.Departamento" class="validation-text-danger"></span>
+                            </div>
+                            <div class="col-sm-6">
+                                <label asp-for="Caso.Ciudad" class="form-label"></label>
+                                <select class="form-select form-select-sm" asp-for="Caso.Ciudad" asp-items="@Model.CiudadDropDown">
+                                    <option selected disabled value="">Elegir...</option>
+                                </select>
+                                <span asp-validation-for="Caso.Ciudad" class="validation-text-danger"></span>
+                            </div>
+                            <div class="col-sm-12">
+                                <label asp-for="Caso.DireccionRespuesta" class="form-label"></label>
+                                <input type="text" class="form-control form-control-sm" asp-for="Caso.DireccionRespuesta" value="@Model?.GetClienteResponse?.Direccion">
+                                <span asp-validation-for="Caso.DireccionRespuesta" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-8">
+                                <label asp-for="Files" class="form-label"></label>
+                                <input class="form-control form-control-sm" type="file" asp-for="Files" multiple onchange="ShowListFiles()">
+                                <span asp-validation-for="Files" class="validation-text-danger"></span>
+                                <div id="fileList"></div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" asp-for="FirmaVerificada">
+                                    <label class="form-check-label" asp-for="FirmaVerificada"></label>
+                                </div>
+                                <div class="d-block">
+                                    <span asp-validation-for="FirmaVerificada" class="validation-text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-bgcontent-dark rounded shadow-sm mb-3">
+                    <div class="card-header fw-bold">Datos Solucion</div>
+                    <div class="card-body">
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <label asp-for="Caso.TipoSolucion" class="form-label"></label>
+                                <select class="form-select form-select-sm" asp-for="Caso.TipoSolucion" asp-items="@Model.TipoSolucionDropDown">
+                                    <option selected disabled value="">Elegir...</option>
+                                </select>
+                                <span asp-validation-for="Caso.TipoSolucion" class="validation-text-danger"></span>
+                            </div>
+                            <div class="col-sm-6 mt-3">
+                                <div class="d-block">
+                                    <label class="form-label">Accion</label>
+                                </div>
+                                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check" asp-for="Accion" id="btnradioSinAccion"
+                                        onclick="ShowAccion()" autocomplete="off" value="SA" checked>
+                                    <label class="btn btn-outline-primary" for="btnradioSinAccion">Sin Acción</label>
+
+                                    <input type="radio" class="btn-check" asp-for="Accion" id="btnradioDevolucion"
+                                        onclick="ShowAccion()" autocomplete="off" value="D" disabled>
+                                    <label class="btn btn-outline-primary" for="btnradioDevolucion">Devolución</label>
+
+                                    <input type="radio" class="btn-check" asp-for="Accion" disabled id= "btnradioCobro"
+                                        onclick="ShowAccion()" autocomplete="off" value="C">
+                                    <label class="btn btn-outline-primary" for="btnradioCobro">Cobro</label>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <label asp-for="Caso.DescripcionSolucion" for="validationCustom03" class="form-label"></label>
+                                <textarea class="form-control form-control-sm" style="height: 50px" asp-for="Caso.DescripcionSolucion"></textarea>
+                                <span asp-validation-for="Caso.DescripcionSolucion" class="validation-text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    @*################ INICIO: DETAALE DEVOLUCION ##########################################################*@
+                <div class="card bg-bgcontent-dark rounded shadow-sm mb-3" id="devolucion" hidden>
+                    <div class="card-header fw-bold">Detalle de la Devolución</div>
+                    <div class="card-body">
+                        <div class="row g-3">
+                            <div class="col-sm-12">
+                                <label asp-for="Devolucion.DescripcionServicio" class="form-label"></label>
+                                <input type="text" class="form-control form-control-sm" asp-for="Devolucion.DescripcionServicio" readonly>
+                            </div>
+                            <div class="col-sm-6">
+                                <label asp-for="Devolucion.Monto" class="form-label"></label>
+                                <input type="text" class="form-control form-control-sm" asp-for="Devolucion.Monto" readonly>
+                                <span asp-validation-for="Devolucion.Monto" class="validation-text-danger"></span>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-block">
+                                    <label class="form-label" asp-for="Devolucion.Moneda"></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" asp-for="Devolucion.Moneda" id="rbtMonedaDevolucionBol" type="radio" value="BS" disabled>
+                                    <label class="form-check-label" for="rbtMonedaDevolucionBol">BS</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" asp-for="Devolucion.Moneda" id="rbtMonedaDevolucionDol" type="radio" value="SUS" disabled>
+                                    <label class="form-check-label" for="rbtMonedaDevolucionDol">SUS</label>
+                                </div>
+                                <span asp-validation-for="Devolucion.Moneda" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label asp-for="Devolucion.CuentaDevolucion" class="form-label"></label>
+                                <input type="text" class="form-control form-control-sm" asp-for="Devolucion.CuentaDevolucion" readonly>
+                                <span asp-validation-for="Devolucion.CuentaDevolucion" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label asp-for="Devolucion.ServiciosCanalesId" class="form-label"></label>
+                                <select class="form-select form-select-sm" asp-for="Devolucion.ServiciosCanalesId" asp-items="@Model.CuentaContableDropDown">
+                                </select>
+                                <span asp-validation-for="Devolucion.ServiciosCanalesId" class="validation-text-danger"></span>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label asp-for="Devolucion.ParametroCentro" class="form-label"></label>
+                                <select class="form-select form-select-sm" asp-for="Devolucion.ParametroCentro" asp-items="@Model.CentroDeCostoDropDown">
+                                    <option selected disabled value="">Elegir...</option>
+                                </select>
+                                <span asp-validation-for="Devolucion.ParametroCentro" class="validation-text-danger"></span>
+                            </div>
+                            <div class="col-sm-4">
+                                <label class="form-label">Funcionario Atención</label>
+                                <input type="text" class="form-control form-control-sm" asp-for="Analista" readonly>
+                                <span asp-validation-for="Analista" class="validation-text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @*################ FIN: DETAALE DEVOLUCION ##########################################################################*@
+
+                @*############### INICIO: DETAALE COBRO
+                    ###########################################################################*@
+            <div class="card bg-bgcontent-dark rounded shadow-sm mb-3" id="cobro" hidden>
+                <div class="card-header fw-bold">Detalle del Cobro</div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-sm-12">
+                            <label asp-for="Cobro.DescripcionServicio" class="form-label"></label>
+                            <input type="text" class="form-control form-control-sm" asp-for="Cobro.DescripcionServicio" readonly>
+                        </div>
+                        <div class="col-sm-6">
+                            <label asp-for="Cobro.Monto" class="form-label"></label>
+                            <input type="text" class="form-control form-control-sm" asp-for="Cobro.Monto">
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-block">
+                                <label class="form-label" asp-for="Cobro.Moneda"></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" asp-for="Cobro.Moneda" id="rbtMonedaCobroBol" type="radio" value="BS">
+                                <label class="form-check-label" for="rbtMonedaCobroBol">BS</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" asp-for="Cobro.Moneda" id="rbtMonedaCobroDol" type="radio" value="SUS">
+                                <label class="form-check-label" for="rbtMonedaCobroDol">SUS</label>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <label asp-for="Cobro.CuentaCobro" class="form-label"></label>
+                            <input type="text" class="form-control form-control-sm" asp-for="Cobro.CuentaCobro" readonly>
+                            <span asp-validation-for="Cobro.CuentaCobro" class="validation-text-danger"></span>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <label asp-for="Cobro.ServiciosCanalesId" class="form-label"></label>
+                            <select class="form-select form-select-sm" asp-for="Cobro.ServiciosCanalesId" asp-items="@Model.CuentaContableDropDown">
+                                <option selected disabled value="">Elegir...</option>
+                            </select>
+                            <span asp-validation-for="Cobro.ServiciosCanalesId" class="validation-text-danger"></span>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <label asp-for="Cobro.TipoFacturacion" class="form-label"></label>
+                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check" asp-for="Cobro.TipoFacturacion" id="FacBatch" autocomplete="off" value="B">
+                                <label class="btn btn-outline-primary" for="FacBatch">Facturacion Batch</label>
+
+                                <input type="radio" class="btn-check" asp-for="Cobro.TipoFacturacion" id="FactInLinne" autocomplete="off" checked value="O">
+                                <label class="btn btn-outline-primary" for="FactInLinne">Facturacion Onnline</label>
+                            </div>
+                            <span asp-validation-for="Cobro.ParametroCentro" class="validation-text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                @*################ FIN: DETAALE COBRO ##############################################################################*@
+
+                <div class="row mt-5">
+                <div class="col-sm-6">
+                    <button class="btn btn-success shadow w-100" type="submit" onclick="DefineAccion()">Cerrar Caso</button>
+                </div>
+                <div class="col-sm-6">
+                   <a href="@Url.ActionLink("BusquedaCliente", "Cliente")" class="btn btn-secondary shadow w-100">Cancelar</a>
+                </div>
+            </div>
+            </form>
+        </div>
+        <div class="col-sm-3 order-first order-sm-last">
+            <div class="card bg-bgcontent-dark rounded shadow mb-3">
+                <div class="card-header">@Model?.GetClienteResponse?.NombreCompleto</div>
+                <div class="card-body">
+                    <h5 class="card-title">@Model?.GetClienteResponse?.Idc</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<partial name="_Loading" />
+
+@section Scripts {
+   
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        window.onload = function(){
+            var defaultRangeValidator = $.validator.methods.range;
+            $.validator.methods.range = function (value, element, param) {
+                if (element.type === 'checkbox') {
+                    // if it's a checkbox return true if it is checked
+                    return element.checked;
+                } else {
+                    // otherwise run the default validation function
+                    return defaultRangeValidator.call(this, value, element, param);
+                }
+            }
+            //HIddenActions();
+            GetServiciosByProductos();
+            GetServiciosByCaso();
+            GetCiudadByDepartamento();
+            GetAtmBySucursal();
+            GetDocumentacionByServicio();
+            GetDocumentacionByProductos();
+            GetMontoByCuentaCobro();
+        };
+
+        const url = '@Url.Action("GetServicios")';
+        const urlCiudades = '@Url.Action("GetCiudades")';
+        const urlAtmUbicacion = '@Url.Action("GetAtmsBySucrsales")';
+        const urlDocumentacionRequerida = '@Url.Action("GetDocumentacionRequerida")';
+        const GetDevServicioCanalCuentaCon = '@Url.Action("GetDevServicioCanalCuentaCon")';
+        const GetCobServicioCanalCuentaCon = '@Url.Action("GetCobServicioCanalCuentaCon")';
+
+        function GetServiciosByProductos(){
+            $("#Caso_ProductoId").change(
+                async function(){
+                    const caso = $("#Caso_TipoRegistro").val();
+                    const producto = $("#Caso_ProductoId").val();
+
+                    if(caso === null || producto === null){
+                        return;
+                    }
+
+                    const request = {
+                        ProductoId: producto,
+                        TipoServicio: caso
+                    };
+
+                    const respuesta = await fetch(url,{
+                        method: 'POST',
+                        body: JSON.stringify(request),
+                        headers:{
+                            'Content-Type':'application/json'
+                        }
+                    });
+                    const json = await respuesta.json();
+                    const options = json.map(s =>
+                        `<option value=${s.value}>${s.text}</option>`);
+                    $("#Caso_ServicioId").html(options);
+                    const service = document.getElementById("Caso_ServicioId");
+                    service.dispatchEvent(new Event('change'));
+              })
+        }
+
+        function GetServiciosByCaso(){
+            $("#Caso_TipoRegistro").change(
+                async function(){
+                    const caso = $("#Caso_TipoRegistro").val();
+                    const producto = $("#Caso_ProductoId").val();
+
+                     if(caso === null || producto === null){
+                        return;
+                    }
+
+                    const request = {
+                        ProductoId: producto,
+                        TipoServicio: caso
+                    };
+                    const respuesta = await fetch(url,{
+                        method: 'POST',
+                        body: JSON.stringify(request),
+                        headers:{
+                            'Content-Type':'application/json'
+                        }
+                    });
+                    const json = await respuesta.json();
+                    const options = json.map(s =>
+                        `<option value=${s.value}>${s.text}</option>`);
+                    $("#Caso_ServicioId").html(options);
+                    const service = document.getElementById("Caso_ServicioId");
+                    service.dispatchEvent(new Event('change'));
+                    if (json.length <= 0) {
+                        document.getElementById("btnradioCobro").disabled = true;
+                        document.getElementById("cobro").hidden = true;
+                        document.getElementById("btnradioDevolucion").disabled = true;
+                        document.getElementById("devolucion").hidden = true;
+                        document.getElementById("btnradioSinAccion").checked = true;
+                    }
+                  
+              })
+        }
+
+        function GetDocumentacionByProductos(){
+            $("#Caso_ProductoId").change(
+                async function(){
+                   const servicioId = $("#Caso_ServicioId").val();
+                    const productoId = $("#Caso_ProductoId").val();
+
+                    if(productoId === null || servicioId === null){
+                        return;
+                    }
+
+                    const request = {
+                        ProductoId: productoId,
+                        ServicioId: servicioId
+                    };
+                    const respuesta = await fetch(urlDocumentacionRequerida,{
+                        method: 'POST',
+                        body: JSON.stringify(request),
+                        headers:{
+                            'Content-Type':'application/json'
+                        }
+                    });
+
+                    const resp = await respuesta.text();
+                    $("#Caso_DocumentosAdjuntoIn").html(resp);
+              })
+            }
+
+        function GetDocumentacionByServicio(){
+            $("#Caso_ServicioId").change(
+                async function(){
+                     const servicioId = $("#Caso_ServicioId").val();
+                    const productoId = $("#Caso_ProductoId").val();
+
+                    if(productoId === null || servicioId === null){
+                        return;
+                    }
+
+                    const request = {
+                        ProductoId: productoId,
+                        ServicioId: servicioId
+                    };
+
+                    const respuesta = await fetch(urlDocumentacionRequerida,{
+                        method: 'POST',
+                        body: JSON.stringify(request),
+                        headers:{
+                            'Content-Type':'application/json'
+                        }
+                    });
+                    const resp = await respuesta.text();
+                    $("#Caso_DocumentosAdjuntoIn").html(resp);
+
+
+                    const reqServCanalCuenta = {
+                        IdProducto: productoId,
+                        IdServicio: servicioId
+                    };
+                    const getServCanalCuenta = await fetch(GetDevServicioCanalCuentaCon,{
+                        method: 'POST',
+                        body: JSON.stringify(reqServCanalCuenta),
+                        headers:{
+                            'Content-Type':'application/json'
+                        }
+                    });
+
+                    const resServCanalCuenta = await getServCanalCuenta.json();
+                    if (resServCanalCuenta != null && resServCanalCuenta.value != null) {
+                        document.getElementById("btnradioDevolucion").disabled = false;
+                        const options = `<option value=${resServCanalCuenta.value}>${resServCanalCuenta.text}</option>`;
+                        $("#Devolucion_ServiciosCanalesId").html(options);
+                    } else {
+                        document.getElementById("btnradioDevolucion").disabled = true;
+                        document.getElementById("devolucion").hidden = true;
+                        document.getElementById("btnradioSinAccion").checked = true;
+                    }
+
+                    const getServCanalCuentaCobro = await fetch(GetCobServicioCanalCuentaCon, {
+                        method: 'POST',
+                        body: JSON.stringify(reqServCanalCuenta),
+                        headers: {
+                            'Content-Type': 'application/json'
+                        }
+                    });
+                    const resServCanalCuentaCobro = await getServCanalCuentaCobro.json();
+                    if (resServCanalCuentaCobro != null && resServCanalCuentaCobro.length > 0) {
+                        document.getElementById("btnradioCobro").disabled = false;
+                        let options = `<option value="" selected>Elegir...</option>`;
+                        options += resServCanalCuentaCobro.map(r => `<option value=${r.serviciosCanales}>${r.cuentaContable}</option>`);
+                        $("#Cobro_ServiciosCanalesId").html(options);
+                    } else {
+                        document.getElementById("btnradioCobro").disabled = true;
+                        document.getElementById("cobro").hidden = true;
+                        document.getElementById("btnradioSinAccion").checked = true;
+                    }
+
+              })
+        }
+
+        function GetMontoByCuentaCobro() {
+            $("#Cobro_ServiciosCanalesId").change(
+                async function () {
+                const cuenta = $("#Cobro_ServiciosCanalesId").val();
+                const servicioId = $("#Caso_ServicioId").val();
+                const productoId = $("#Caso_ProductoId").val();
+                const reqServCanalCuenta = {
+                    IdProducto: productoId,
+                    IdServicio: servicioId,
+                    CuentaSelected: cuenta
+                };
+
+                  const getServCanalCuentaCobro = await fetch(GetCobServicioCanalCuentaCon, {
+                                                        method: 'POST',
+                                                        body: JSON.stringify(reqServCanalCuenta),
+                                                        headers: {
+                                                            'Content-Type': 'application/json'
+                                                        }
+                                                    });
+
+                const montoCobro = await getServCanalCuentaCobro.json();
+                if (montoCobro != null) {
+                    document.getElementById("Cobro_Monto").value = montoCobro;
+                    document.getElementById("rbtMonedaCobroBol").checked = true;
+                    document.getElementById("rbtMonedaCobroDol").checked = false;
+                } 
+            })
+        }
+        function GetCiudadByDepartamento(){
+            $("#Caso_Departamento").change(
+                async function(){
+                    const departamento = $("#Caso_Departamento").val();
+
+                    const respuesta = await fetch(urlCiudades,{
+                        method: 'POST',
+                        body: JSON.stringify(departamento),
+                        headers:{
+                            'Content-Type':'application/json'
+                        }
+                    });
+
+                    const json = await respuesta.json();
+                    const options = json.map(s =>
+                        `<option value='${s.value}'>${s.text}</option>`);
+                    $("#Caso_Ciudad").html(options);
+              })
+        }
+
+        function GetAtmBySucursal(){
+            $("#Caso_AtmSucursal").change(
+                async function(){
+                    const sucursal = $("#Caso_AtmSucursal").val();
+
+                    const respuesta = await fetch(urlAtmUbicacion,{
+                        method: 'POST',
+                        body: JSON.stringify(sucursal),
+                        headers:{
+                            'Content-Type':'application/json'
+                        }
+                    });
+
+                    const json = await respuesta.json();
+                    const options = json.map(s =>
+                        `<option value=${s.value}>${s.text}</option>`);
+                    $("#Caso_AtmUbicacion").html(options);
+              })
+        }
+
+        function ShowAccion() {
+            let accion = document.getElementsByName("Accion");
+
+            accion.forEach(acc => {
+                if (acc?.checked && acc?.value == 'D') {
+                    document.getElementById("cobro").hidden = true;
+                    let devolucion = document.getElementById("devolucion");
+                    devolucion.hidden = false;
+                    let monto = document.getElementById("Caso_Monto");
+                    let devolucionMonto = document.getElementById("Devolucion_Monto");
+                    let cuenta = document.getElementById("Caso_NroCuenta");
+                    let cuentaDevolucion = document.getElementById("Devolucion_CuentaDevolucion");
+                    let descripcionServicio = document.getElementById("Caso_ServicioId");
+                    let descripcionServicioDevolucion = document.getElementById("Devolucion_DescripcionServicio");
+
+                    let monedaBol = document.getElementById("rbtMonedaBol");
+                    let monedaDol = document.getElementById("rbtMonedaDol");
+
+                    let monedadevolucionBol = document.getElementById("rbtMonedaDevolucionBol");
+                    let monedadevolucionDol = document.getElementById("rbtMonedaDevolucionDol");
+
+                    monedadevolucionBol.checked = monedaBol.checked;
+                    monedadevolucionDol.checked = monedaDol.checked;
+                    devolucionMonto.value = monto.value;
+                    cuentaDevolucion.value = cuenta.value;
+                    descripcionServicioDevolucion.value = descripcionServicio.options[descripcionServicio.selectedIndex].innerHTML;
+
+                    //monedadevolucionBol.disable = true;
+                    //monedadevolucionDol.disable = true;
+
+                }
+                else if (acc?.checked && acc?.value == 'C') {
+                    document.getElementById("devolucion").hidden = true;
+                    let cobro = document.getElementById("cobro");
+                        cobro.hidden = false;
+                    let monto = document.getElementById("Caso_Monto");
+                    let cobroMonto = document.getElementById("Cobro_Monto");
+                    let cuenta = document.getElementById("Caso_NroCuenta");
+                    let cuentaCobro = document.getElementById("Cobro_CuentaCobro");
+                    let descripcionServicio = document.getElementById("Caso_ServicioId");
+                    let descripcionServicioCobro = document.getElementById("Cobro_DescripcionServicio");
+
+                    let monedaBol = document.getElementById("rbtMonedaBol");
+                    let monedaDol = document.getElementById("rbtMonedaDol");
+
+                    let monedacobroBol = document.getElementById("rbtMonedaCobroBol");
+                    let monedacobroDol = document.getElementById("rbtMonedaCobroDol");
+
+                    monedacobroBol.checked = monedaBol.checked;
+                    monedacobroDol.checked = monedaDol.checked;
+                    cobroMonto.value = monto.value;
+                    cuentaCobro.value = cuenta.value;
+                    descripcionServicioCobro.value = descripcionServicio.options[descripcionServicio.selectedIndex].innerHTML;
+
+                    //monedacobroBol.disable = true;
+                    //monedacobroDol.disable = true;
+
+                }
+                else if(acc.checked && acc?.value == 'SA'){
+                    let devolucion = document.getElementById("devolucion");
+                    devolucion.hidden = true;
+                    let cobro = document.getElementById("cobro");
+                    cobro.hidden = true;
+                }
+            });
+        }
+
+        function ShowListFiles(){
+            var input = document.getElementById('Files');
+            var output = document.getElementById('fileList');
+
+            output.innerHTML = '<ul>';
+            for (var i = 0; i < input.files.length; ++i) {
+            output.innerHTML += '<li>' + input.files.item(i).name + '</li>';
+            }
+            output.innerHTML += '</ul>';
+        }
+
+        function HIddenActions() {
+            let devolucion = document.getElementById("devolucion");
+            devolucion.hidden = true;
+        }
+
+        function DefineAccion() {
+            let accion = document.getElementsByName("Accion");
+
+            accion.forEach(acc => {
+                if(acc.checked && acc?.value == 'SA'){
+                    let devolucion = document.getElementById("devolucion");
+                    devolucion.InerHTML = "";
+                    let cobro = document.getElementById("cobro");
+                    cobro.InerHTML = "";
+                }
+            });
+
+            if ($("#frmRegistro").valid()) {
+                document.getElementById("_loading").hidden = false;
+            };
+        }
+    </script>
+}

@@ -1,0 +1,79 @@
+﻿@using BCP.CROSS.MODELS
+@using BCP.CROSS.MODELS.Segurinet
+
+@model ApiSegurinetRequest
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Login.cshtml";
+}
+<div class="row container__login bg-bodydark">
+    <div class="col-12 col-sm-6 content__login shadow">
+        <div class="col-sm-6 img_segurinet">
+            <div class="transbox">
+            </div>
+        </div>        
+        <div class="col-sm-6 p-3 mh-100">
+            <img src="../images/LogoBCP.png" class="img_BCP"/>
+            @*<p class="mt-0 pt-0 mb-0 mt-0 fs-5 fw-bold">SISTEMA DE ADMINISTRACIÓN OFERTAS</p>*@
+            <p class="mt-0 pt-0">Ingrese con sus credenciales de Segurinet</p>
+            <form asp-controller="Login" asp-action="Login" class="needs-validation" autocomplete="off" id="frmLogin">
+                <div class="mb-3 w100 has-validation">
+                    <label asp-for="user" class="form-label"></label>
+                    <input type="text" class="form-control w100" asp-for="user" aria-describedby="emailHelp">
+                    <span asp-validation-for="user" class="validation-text-danger"></span>
+                    <div id="emailHelp" class="form-text">No comparta con nadie sus credenciales de acceso.</div>
+                </div>
+                <div class="mb-3 has-validation">
+                    <label asp-for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" asp-for="password">
+                    <span asp-validation-for="password" class="validation-text-danger"></span>
+                </div>
+
+                @if (!string.IsNullOrEmpty(@Model?.Msj))
+                {
+                    <div class="alert alert-danger mb-3" id="MsjLogin">
+                        @Model?.Msj
+                    </div>
+                }
+
+                <button type="submit" class="btn btn-primary w-100 mt-2" id="btnLogin" onclick="ShowLoading()">Ingresar</button>
+
+
+                <div id="loadingicon" class="w-100" hidden>
+                    <button class="btn btn-primary w-100 mt-2" type="button" disabled>
+                        <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                        Cargando...
+                    </button>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+     <script>
+        function ShowLoading(){
+            let user = document.getElementById("user");
+           let pass = document.getElementById("password");
+           if(user.value == '' || pass.value == ''){
+               return false;
+           }else{
+               
+            let btnLogin= document.getElementById("btnLogin");
+            let msjLogin= document.getElementById("MsjLogin");
+            let loadingicon = document.getElementById("loadingicon");
+
+            if(msjLogin != null){
+                msjLogin.hidden = true;
+            }
+            loadingicon.hidden = false;
+            btnLogin.hidden = true;
+           }
+
+        }
+    </script>
+}
+

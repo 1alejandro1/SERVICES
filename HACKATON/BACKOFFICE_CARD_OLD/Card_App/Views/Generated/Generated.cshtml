@@ -1,0 +1,387 @@
+﻿@using Card_App.Models.Generated
+@using Microsoft.AspNetCore.Authorization
+@using System.Web
+@inject IAuthorizationService AuthorizationService
+
+@model GeneratedViewModel
+@{
+    ViewData["Title"] = "Generación de Tarjeta";
+}
+
+<link rel="stylesheet" type="text/css" href="~/css/datatables.min.css" />
+<div class="container-fluid">
+    @if (Model != null && Model.Registro != null &&  Model.CantRegistro > 0)
+    {
+          <div class="row">
+            <div class="col">
+                <div class="alert alert-success"> @Model.Registro.message: @Model.CantRegistro Tarjetas fueron registradas, con @Model.CantErrorRegistro cargas erróneas. </div>
+            </div>
+        </div>
+    }else if(Model != null && Model.Registro != null && Model.Registro.message == "COMPLETADO")
+    {
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-success"> Tarjeta Cargada satisfactoriamente: @Model.Registro.message</div>
+            </div>
+        </div>
+    }
+    else if(Model != null && Model.Registro != null && Model.CantErrorRegistro > 0)
+    {
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-danger">Error al cargar las tarjetas: @Model.Registro.message</div>
+            </div>
+        </div>
+    }
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card bg-bgcontent-dark rounded shadow-sm mb-3">
+                <div class="col-sm-10"></div>
+                <div class="card-header fw-bold">Registro Individual de Tarjeta</div>
+                <div class="col-sm-10"></div>
+                <div class="card-body">
+                    <form class="row" asp-action="Generated" id="frmGenerated">
+                        
+                        <div class="col-sm-3">
+                            <label asp-for="Generated.documentNumber" class="form-label"></label>
+                            <input id="Idc" type="text" asp-for="Generated.documentNumber" class="form-control form-control-sm">
+                            <span asp-validation-for="Generated.documentNumber" class="validation-text-danger"></span>
+                        </div>
+                        <div class="col-sm-3 my-1">
+                            <label for="TipoIdc" class="form-label">Tipo</label>
+                            <select asp-for="Generated.documentType" asp-items="@Model?.TiposIdcDropDown" class="form-select form-select-sm" >
+                                <option class="text-dark" selected disabled value="">Elegir...</option>
+                            </select>
+                            <span asp-validation-for="Generated.documentType" class="validation-text-danger"></span>
+                        </div>
+                        <div class="col-sm-3 my-1">
+                            <label for="Extension" class="form-label">Extension</label>
+                            <input type="text" asp-for="Generated.documentExtention" class="form-control form-control-sm" >
+                            <span asp-validation-for="Generated.documentExtention" class="validation-text-danger"></span>
+                        </div>
+                        <div class="col-sm-3 my-1">
+                            <label for="Complemento" class="form-label">Complemento</label>
+                            <input type="text" asp-for="Generated.documentComplement" class="form-control form-control-sm" >
+                            <span asp-validation-for="Generated.documentComplement" class="validation-text-danger"></span>
+                        </div>
+                        <div class="col-sm-3 my-1">
+                            <label for="Complemento" class="form-label">CIC</label>
+                            <input type="text" asp-for="Generated.cic" class="form-control form-control-sm" >
+                            <span asp-validation-for="Generated.cic" class="validation-text-danger"></span>
+                        </div>
+                        <div class="col-sm-3 my-1">
+                            <label for="Nombre" class="form-label">Nombre</label>
+                            <input type="text" asp-for="Generated.name" class="form-control form-control-sm">
+                            <span asp-validation-for="Generated.name" class="validation-text-danger"></span>
+                        </div>
+                        <div class="col-sm-3 my-1">
+                            <label for="Paterno" class="form-label">Apellido Paterno</label>
+                            <input type="text" asp-for="Generated.lastName" class="form-control form-control-sm">
+                            <span asp-validation-for="Generated.lastName" class="validation-text-danger"></span>
+                        </div>
+                        <div class="col-sm-3 my-1">
+                            <label for="Materno" class="form-label">Apellido Materno</label>
+                            <input type="text" asp-for="Generated.secondName" class="form-control form-control-sm">
+                            <span asp-validation-for="Generated.secondName" class="validation-text-danger"></span>
+                        </div>
+                        <div class="col-sm-3 my-1">
+                            <label for="NCuentaSoli" class="form-label">Nro. Cuenta Soli</label>
+                            <input type="text" asp-for="Generated.accountNumber" class="form-control form-control-sm">
+                            <span asp-validation-for="Generated.accountNumber" class="validation-text-danger"></span>
+                        </div>                                   
+                        <div class="col-sm-3 my-1">
+                            <label for="CodTarjetaCom" class="form-label">Código Tarjeta Comercio</label>
+                            <input type="text" asp-for="Generated.cardCommerceCode" class="form-control form-control-sm">
+                            <span asp-validation-for="Generated.cardCommerceCode" class="validation-text-danger"></span>
+                        </div>
+                        <div class="col-sm-3 my-1">
+                            <label for="CodTarjetaCom" class="form-label">Id Tarjeta Comercio</label>
+                            <input type="text" asp-for="Generated.cardCommerceId" class="form-control form-control-sm">
+                            <span asp-validation-for="Generated.cardCommerceId" class="validation-text-danger"></span>
+                        </div>
+                        <div class="col-sm-3 my-1">
+                            <label for="CodTarjetaCom" class="form-label">Id Servicio</label>
+                            <input type="text" asp-for="Generated.serviceId" class="form-control form-control-sm">
+                            <span asp-validation-for="Generated.serviceId" class="validation-text-danger"></span>
+                        </div>
+                        <div class="col-sm-3 my-1">
+                            <label for="CodTarjetaCom" class="form-label">Celular</label>
+                            <input type="text" asp-for="Generated.cellPhoneNumber" class="form-control form-control-sm">
+                            <span asp-validation-for="Generated.cellPhoneNumber" class="validation-text-danger"></span>
+                        </div>
+                        <div class="col-sm-3 my-1">
+                            <label for="CodTarjetaCom" class="form-label">Email</label>
+                            <input type="text" asp-for="Generated.email" class="form-control form-control-sm">
+                            <span asp-validation-for="Generated.email" class="validation-text-danger"></span>
+                        </div>
+                       <div class="col-3 col-md-3 my-1">
+                            <label asp-for="Generated.dateBirth" class="form-label"></label>
+                            <input type="date" class="date form-control" asp-for="Generated.dateBirth" id="date" data-date-format="yyyy/mm">
+                        </div>
+                        <div class="col-sm-9 my-1">
+                            <label for="CodTarjetaCom" class="form-label">Dirección</label>
+                            <input type="text" asp-for="Generated.address" class="form-control form-control-sm">
+                            <span asp-validation-for="Generated.address" class="validation-text-danger"></span>
+                        </div>
+                        <div class="col-sm-3 my-1">
+                            <label for="CodTarjetaCom" class="form-label">Género</label>
+                            <input type="text" asp-for="Generated.gender" class="form-control form-control-sm">
+                            <span asp-validation-for="Generated.gender" class="validation-text-danger"></span>
+                        </div>
+                        <div class="col-3 col-md-3 my-1">
+                            <label asp-for="Generated.activationDate" class="form-label"></label>
+                            <input type="date" class="date form-control" asp-for="Generated.activationDate" id="date" data-date-format="yyyy/mm">
+                        </div>
+                        <div class="col-3 col-md-3 my-1">
+                            <label asp-for="Generated.expirationDate" class="form-label"></label>
+                            <input type="date" class="date form-control" asp-for="Generated.expirationDate" id="date" data-date-format="yyyy/mm">
+                        </div>
+                        <div class="col-sm-3 my-1">
+                            <label for="Estado" class="form-label">Estado Tarjeta</label>
+                            <input id="cbEstado" class="form-check" type="checkbox" asp-for="Generated.cardStatus" value="true" checked>
+                            <span asp-validation-for="Generated.cardStatus" class="validation-text-danger"></span>
+                        </div>
+                        <div class="col-sm-3 my-1">
+                            <label for="NombreTarjeta" class="form-label">Nombre Tarjeta Personalizado</label>
+                            <input type="text" asp-for="Generated.cardName" class="form-control form-control-sm">
+                            <span asp-validation-for="Generated.cardName" class="validation-text-danger"></span>
+                        </div>                                            
+                        <div class="col-sm-2">
+                            <button class="btn btn-primary mt-3 w-100" type="submit" id="btnInsertar">Registrar</button>
+                        </div>                        
+                        <div class="col-sm-2">
+                            <input class="btn btn-primary mt-3 w-100" value="Cancelar" type="button" id="btnCancelar" onclick="Limpiar()">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>      
+    </div>
+</div>
+<partial name="_Loading" />
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/datatables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#tblIndiceCobros').dataTable({
+                "info": false,
+                "lengthMenu": [5, 25, 50],
+                "language": {
+                    "search": "Filtrar:",
+                    "lengthMenu": "Mostar _MENU_",
+                    "paginate": {
+                        "first": "Primero",
+                        "last": "Último",
+                        "next": "Siguiente",
+                        "previous": "Atras"
+                    }
+                }
+            });
+
+
+            $("#btnUpload").click(function () {
+                var formData = new FormData();
+                var files = $("#FileUpload_FormFile");
+                console.log("files");
+                console.log(files);
+                console.log(files.length);
+                for (var i = 0; i < files.length; i++) {
+                    if (files[i].value == "" || files[i].value == null) {
+                        console.log("error");
+                        console.log(files[i].value);
+                        console.log(files.length);
+                        return false;
+                    }
+                    else {
+                        formData.append(files[i].name, files[i].files[0]);
+                        console.log("formData");
+                        console.log(formData);
+                        console.log(files[i].value);
+                    }
+                    }
+//var formSerializeArray = $("#frmCarga").serializeArray();
+//for (var i = 0; i < formSerializeArray.length; i++) {
+//  formData.append(formSerializeArray[i].name, formSerializeArray[i].value)
+//}
+   $.ajax({
+       type: 'POST',
+       data: formData,
+       contentType: false,
+       processData: false,
+       cache: false,
+       url: '/Generated/GeneratedCarga',
+       success: function (response) {
+           if (response.Success == true) {
+               console.log("true");
+               return true;
+           }
+           else {
+               console.log("false");
+               return false;
+           }
+       },
+       error: function () {
+           return false;
+       },
+       failure: function () {
+           return false;
+       }
+       });
+       });
+            
+    //        $("#btnUpload").click(function () {
+    //            var selectFile = ($("#FileUpload_FormFile"))[0].files[0];
+    //            console.log("File:");
+    //            console.log(selectFile);
+    //            var dataString = new FormData();
+    //            if (!selectFile) {
+    //                alert("No se ha Cargado El Archivo (html)");
+    //            }
+                
+    //            dataString.append("FileUpload_FormFile", selectFile);
+    //            console.log("DATA: ");
+    //            console.log(dataString);
+    //            $.ajax({
+    //                url: '@Url.Action("GeneratedCarga","Generated")',
+    //                type: "Post",
+    //                data: dataString,
+    //                contentType: false,
+    //                processData: false,
+    //                async:true,
+    //                success: function (data) {
+    //                    if (typeof (data.value) != "undefined") {
+    //                        alert(data.Message);
+    //                    } else {
+    //                        alert("Error No identificado");
+    //                    }
+    //                },
+
+    //        error: function (data) {
+
+    //        }
+
+    //    });
+    //});
+        });
+        function sendRow(id) {
+            let renglonPorEnviar = miArray.find(x => x.id == id);
+            $.ajax({
+                url: "tu/url",
+                data: renglonPorEnviar,
+                type: "POST",
+                dataType: "Json",
+                success: function (data) { }
+            });
+        };
+        $(".btnEdit").on("click", function (e) {
+            e.preventDefault();
+            HabilitarButtons();
+            tr = $(this).closest('tr');
+            console.log(tr.find("td:eq(1)").text());
+            var ProdOld = tr.find("td:eq(1)").text();
+            var valorProdOld = ProdOld.split("-");
+            console.log(valorProdOld[0]);
+            document.getElementById("ProductoOld").value = valorProdOld[0].replace(/ /g, "");
+            document.getElementById("Producto").value = valorProdOld[0].replace(/ /g, "");
+            
+            if (tr.find("td:eq(2)").text() == "BOB") {
+                document.getElementById("rbtMonedaOldBol").checked = true;
+                document.getElementById("rbtMonedaOldDol").checked = false;
+                document.getElementById("rbtMonedaBol").checked = true;
+                document.getElementById("rbtMonedaDol").checked = false;
+            }
+            else {
+                document.getElementById("rbtMonedaOldBol").checked = false;
+                document.getElementById("rbtMonedaOldDol").checked = true;
+                document.getElementById("rbtMonedaBol").checked = false;
+                document.getElementById("rbtMonedaDol").checked = true;
+            }
+            document.getElementById("Minimo").value = tr.find("td:eq(3)").text();
+            document.getElementById("Maximo").value = tr.find("td:eq(4)").text();
+            document.getElementById("Promedio").value = tr.find("td:eq(5)").text();
+            console.log(tr.find("td:eq(6)").text());
+            if (tr.find("td:eq(6)").text() == "true") {
+                document.getElementById("cbEstado").checked = true;
+            }
+            else {
+                document.getElementById("cbEstado").checked = false;
+            }
+
+        });
+        function HabilitarButtons() {
+            $("button#btnModificar").attr('disabled', false);
+            $("button#btnCarga").attr('disabled', false);
+        };
+        function DeshabilitarButtons() {
+            $("button#btnModificar").attr('disabled', true);
+            $("button#btnCarga").attr('disabled', true);
+        };
+        function Limpiar() {
+            DeshabilitarButtons();
+            location.reload();
+        };
+         function Carga() {            
+            $("form#frmCarga").attr("action", "@Url.Action("GeneratedCarga", "Generated")");            
+            $("form#frmCarga").submit();
+            
+        };
+        function DescargarCarta(){
+        let tipo=document.getElementById("UpdateCaso_TipoCarta").value;
+        let caso=document.getElementById("UpdateCaso_NroCarta").value;
+        window.open(`${urlGetCartaFile}?tipo=${tipo}&nroCaso=${caso}`,"_blank");
+};
+
+
+//async function AJAXSubmit (oFormElement) {
+//    var resultElement = oFormElement.elements.namedItem("result");
+//    console.log(oFormElement);
+//    const formData = new FormData(oFormElement);    
+//    console.log(formData);
+//    try {
+//    const response = await fetch(oFormElement.action, {
+//      method: 'POST',
+//      body: formData
+//    });
+//        console.log(response.status);
+//    if (response.ok) {
+//      window.location.href = '/';
+//    }
+
+//    resultElement.value = 'Result: ' + response.status + ' ' + 
+//      response.statusText;
+//      console.log(resultElement.value);
+//    } catch (error) {
+//      console.error('Error:', error);
+//    }
+//  };
+//// "use strict";
+
+  function AJAXSubmit (oFormElement) {
+    var oReq = new XMLHttpRequest();
+      console.log(oReq);
+    oReq.onload = function(e) { 
+    oFormElement.elements.namedItem("result").value = 
+      'Result: ' + this.status + ' ' + this.statusText;
+    };
+    console.log(oReq);
+    var resultElement = oFormElement.elements.namedItem("result").value;
+      console.log(oFormElement.action);
+      console.log(oFormElement);
+    oReq.open("post", oFormElement.action);
+    oReq.send(new FormData(oFormElement));
+};
+function ShowListFiles(){
+            HabilitarButtons();
+            var input = document.getElementById('Files');
+            var output = document.getElementById('fileList');
+
+            output.innerHTML = '<ul>';
+            for (var i = 0; i < input.files.length; ++i) {
+            output.innerHTML += '<li>' + input.files.item(i).name + '</li>';
+            }
+            output.innerHTML += '</ul>';
+};
+    </script>
+}

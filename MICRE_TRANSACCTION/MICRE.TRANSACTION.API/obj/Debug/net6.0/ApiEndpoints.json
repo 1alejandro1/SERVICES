@@ -1,0 +1,496 @@
+[
+  {
+    "ContainingType": "MICRE.TRANSACTION.API.Controllers.AlsController",
+    "Method": "ConsultaAls",
+    "RelativePath": "api/Als/ConsultaAls",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.TRANSACTION.API.DTOs.ConsultaAlsRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICRE.TRANSACTION.ENTITIES.AlsResponse, MICRE.TRANSACTION.ENTITIES, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.TRANSACTION.API.Controllers.AlsController",
+    "Method": "ConsultaAlsByCreditNum",
+    "RelativePath": "api/Als/ConsultaAlsByCreditNum",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.TRANSACTION.API.DTOs.ConsultaAlsByNumRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.TRANSACTION.ENTITIES.AlsResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.TRANSACTION.API.Controllers.AlsController",
+    "Method": "ConsultaAlsResopnse",
+    "RelativePath": "api/Als/ConsultaAlsResponse",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.TRANSACTION.API.DTOs.ConsultaAlsByNumRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.TRANSACTION.ENTITIES.Response.Biztalk.ResponseConsultaALS",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.TRANSACTION.API.Controllers.BiztalkController",
+    "Method": "AbonoExtorno",
+    "RelativePath": "api/Biztalk/AbonoExtorno",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.TRANSACTION.ENTITIES.Request.AbonoExtornoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.TRANSACTION.ENTITIES.Response.Response\u00601[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.TRANSACTION.API.Controllers.BiztalkController",
+    "Method": "ConsultaSaldo",
+    "RelativePath": "api/Biztalk/ConsultaSaldo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.TRANSACTION.API.DTOs.ConsultaSldRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.TRANSACTION.ENTITIES.Response.Response\u00601[[MICRE.TRANSACTION.ENTITIES.BalanceMovements, MICRE.TRANSACTION.ENTITIES, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.TRANSACTION.API.Controllers.BiztalkController",
+    "Method": "cronogramaALS",
+    "RelativePath": "api/Biztalk/CronogramaALS",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.TRANSACTION.API.DTOs.CronogramaAlsRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.TRANSACTION.ENTITIES.Response.Response\u00601[[MICRE.TRANSACTION.ENTITIES.Response.CronogramaALS, MICRE.TRANSACTION.ENTITIES, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.TRANSACTION.API.Controllers.BiztalkController",
+    "Method": "DebitoExtornoResponse",
+    "RelativePath": "api/Biztalk/DebitoExtornoResponse",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.TRANSACTION.BIZTALK.TransactionModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.TRANSACTION.ENTITIES.Response.Biztalk.ResponseState\u00601[[MICRE.TRANSACTION.ENTITIES.Response.DebitoResponse, MICRE.TRANSACTION.ENTITIES, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.TRANSACTION.API.Controllers.BiztalkController",
+    "Method": "DebitoExtronoTransact",
+    "RelativePath": "api/Biztalk/DebitoExtornoTransact",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.TRANSACTION.ENTITIES.Entity.CompraRefinanciamiento",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.TRANSACTION.ENTITIES.Response.Biztalk.ResponseState\u00601[[MICRE.TRANSACTION.ENTITIES.Entity.CompraRefinanciamiento, MICRE.TRANSACTION.ENTITIES, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.TRANSACTION.API.Controllers.BiztalkController",
+    "Method": "DebitoResponse",
+    "RelativePath": "api/Biztalk/DebitoResponse",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.TRANSACTION.ENTITIES.Entity.TransaccionEntitie",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.TRANSACTION.ENTITIES.Response.Biztalk.ResponseState\u00601[[MICRE.TRANSACTION.ENTITIES.Response.DebitoResponse, MICRE.TRANSACTION.ENTITIES, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.TRANSACTION.API.Controllers.BiztalkController",
+    "Method": "DebitoTransact",
+    "RelativePath": "api/Biztalk/DebitoTransact",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.TRANSACTION.ENTITIES.Entity.CompraRefinanciamiento",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.TRANSACTION.ENTITIES.Response.Biztalk.ResponseState\u00601[[MICRE.TRANSACTION.ENTITIES.Entity.CompraRefinanciamiento, MICRE.TRANSACTION.ENTITIES, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.TRANSACTION.API.Controllers.BiztalkController",
+    "Method": "Abono",
+    "RelativePath": "api/Biztalk/DesembolsarCredito",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.TRANSACTION.ENTITIES.Request.AbonoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.TRANSACTION.ENTITIES.Response.Response\u00601[[MICRE.TRANSACTION.ENTITIES.Response.Biztalk.ResultadoDesembolso, MICRE.TRANSACTION.ENTITIES, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.TRANSACTION.API.Controllers.BiztalkController",
+    "Method": "PagoALS",
+    "RelativePath": "api/Biztalk/PagoALS",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.TRANSACTION.ENTITIES.Request.Biztalk.PagoALSRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.TRANSACTION.ENTITIES.Response.Biztalk.ResponseState\u00601[[MICRE.TRANSACTION.ENTITIES.Entity.Reutilizacion, MICRE.TRANSACTION.ENTITIES, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.TRANSACTION.API.Controllers.BiztalkController",
+    "Method": "PagoALSExtorno",
+    "RelativePath": "api/Biztalk/PagoALSExtorno",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.TRANSACTION.ENTITIES.Request.Biztalk.PagoALSExtornoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.TRANSACTION.ENTITIES.Response.Biztalk.ResponseState\u00601[[MICRE.TRANSACTION.ENTITIES.Entity.Reutilizacion, MICRE.TRANSACTION.ENTITIES, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.TRANSACTION.API.Controllers.BiztalkController",
+    "Method": "Transferencia",
+    "RelativePath": "api/Biztalk/Transferencia",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.TRANSACTION.ENTITIES.Request.TransaccionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.TRANSACTION.ENTITIES.Response.Response\u00601[[MICRE.TRANSACTION.ENTITIES.Entity.TransaccionEntitie, MICRE.TRANSACTION.ENTITIES, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.TRANSACTION.API.Controllers.SegCryptController",
+    "Method": "GetEncriptado",
+    "RelativePath": "api/SegCrypt/Encriptar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.TRANSACTION.API.DTOs.SegCryptRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.TRANSACTION.API.DTOs.SegCryptResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.TRANSACTION.API.Controllers.SeguroCesantiaController",
+    "Method": "CalculoMonto",
+    "RelativePath": "api/SeguroCesantia/CalculoMonto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.TRANSACTION.API.DTOs.SeguroCesantiaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Decimal",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.TRANSACTION.API.Controllers.SeguroCesantiaController",
+    "Method": "Cobrar",
+    "RelativePath": "api/SeguroCesantia/Cobrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.TRANSACTION.API.DTOs.SeguroCesantiaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.TRANSACTION.API.Controllers.SeguroCesantiaController",
+    "Method": "Consulta",
+    "RelativePath": "api/SeguroCesantia/Consuta",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codSolicitud",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.TRANSACTION.ENTITIES.DatosAfiliacionSeguroCesantiaEntitie",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.TRANSACTION.API.Controllers.SeguroCesantiaController",
+    "Method": "Extornar",
+    "RelativePath": "api/SeguroCesantia/Extornar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.TRANSACTION.API.DTOs.SeguroCesantiaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

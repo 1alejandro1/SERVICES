@@ -1,0 +1,9 @@
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_AJUSTES\Rbt.Entities\bin\Debug\Rbt.Entities.dll
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_AJUSTES\Rbt.Entities\bin\Debug\Rbt.Entities.pdb
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_AJUSTES\Rbt.Entities\bin\Debug\Rbt.Common.dll
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_AJUSTES\Rbt.Entities\bin\Debug\Rbt.Common.pdb
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_AJUSTES\Rbt.Entities\obj\Debug\Rbt.Entities.csproj.AssemblyReference.cache
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_AJUSTES\Rbt.Entities\obj\Debug\Rbt.Entities.csproj.CoreCompileInputs.cache
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_AJUSTES\Rbt.Entities\obj\Debug\Rbt.Entities.csproj.CopyComplete
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_AJUSTES\Rbt.Entities\obj\Debug\Rbt.Entities.dll
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_AJUSTES\Rbt.Entities\obj\Debug\Rbt.Entities.pdb

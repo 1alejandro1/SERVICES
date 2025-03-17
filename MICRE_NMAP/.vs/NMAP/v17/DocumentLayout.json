@@ -1,0 +1,389 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{319686C2-2C43-4148-85A5-49D970F332D6}|NMAP.Backoffice\\NMAP.Backoffice.csproj|d:\\t25208\\micredito\\micre_nmap\\nmap.backoffice\\controllers\\campanatarjetacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319686C2-2C43-4148-85A5-49D970F332D6}|NMAP.Backoffice\\NMAP.Backoffice.csproj|solutionrelative:nmap.backoffice\\controllers\\campanatarjetacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319686C2-2C43-4148-85A5-49D970F332D6}|NMAP.Backoffice\\NMAP.Backoffice.csproj|D:\\T25208\\MICREDITO\\MICRE_NMAP\\nmap.backoffice\\controllers\\causalescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319686C2-2C43-4148-85A5-49D970F332D6}|NMAP.Backoffice\\NMAP.Backoffice.csproj|solutionrelative:nmap.backoffice\\controllers\\causalescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319686C2-2C43-4148-85A5-49D970F332D6}|NMAP.Backoffice\\NMAP.Backoffice.csproj|D:\\T25208\\MICREDITO\\MICRE_NMAP\\nmap.backoffice\\views\\nuevosegurodesgravament\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{319686C2-2C43-4148-85A5-49D970F332D6}|NMAP.Backoffice\\NMAP.Backoffice.csproj|solutionrelative:nmap.backoffice\\views\\nuevosegurodesgravament\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319686C2-2C43-4148-85A5-49D970F332D6}|NMAP.Backoffice\\NMAP.Backoffice.csproj|D:\\T25208\\MICREDITO\\MICRE_NMAP\\nmap.backoffice\\views\\segurodesgravament\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{319686C2-2C43-4148-85A5-49D970F332D6}|NMAP.Backoffice\\NMAP.Backoffice.csproj|solutionrelative:nmap.backoffice\\views\\segurodesgravament\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319686C2-2C43-4148-85A5-49D970F332D6}|NMAP.Backoffice\\NMAP.Backoffice.csproj|D:\\T25208\\MICREDITO\\MICRE_NMAP\\nmap.backoffice\\views\\calibracionscore\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{319686C2-2C43-4148-85A5-49D970F332D6}|NMAP.Backoffice\\NMAP.Backoffice.csproj|solutionrelative:nmap.backoffice\\views\\calibracionscore\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ED852B6-BABD-4CF1-844C-F3A021CF062A}|NMAP.Constants\\NMAP.Constants.csproj|D:\\T25208\\MICREDITO\\MICRE_NMAP\\nmap.constants\\serviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ED852B6-BABD-4CF1-844C-F3A021CF062A}|NMAP.Constants\\NMAP.Constants.csproj|solutionrelative:nmap.constants\\serviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319686C2-2C43-4148-85A5-49D970F332D6}|NMAP.Backoffice\\NMAP.Backoffice.csproj|D:\\T25208\\MICREDITO\\MICRE_NMAP\\nmap.backoffice\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{319686C2-2C43-4148-85A5-49D970F332D6}|NMAP.Backoffice\\NMAP.Backoffice.csproj|solutionrelative:nmap.backoffice\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319686C2-2C43-4148-85A5-49D970F332D6}|NMAP.Backoffice\\NMAP.Backoffice.csproj|D:\\T25208\\MICREDITO\\MICRE_NMAP\\nmap.backoffice\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319686C2-2C43-4148-85A5-49D970F332D6}|NMAP.Backoffice\\NMAP.Backoffice.csproj|solutionrelative:nmap.backoffice\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319686C2-2C43-4148-85A5-49D970F332D6}|NMAP.Backoffice\\NMAP.Backoffice.csproj|D:\\T25208\\MICREDITO\\MICRE_NMAP\\nmap.backoffice\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319686C2-2C43-4148-85A5-49D970F332D6}|NMAP.Backoffice\\NMAP.Backoffice.csproj|solutionrelative:nmap.backoffice\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D960634-AFD6-4B11-A1E6-AC75EA381BDB}|NMAP.Service\\NMAP.Service.csproj|D:\\T25208\\MICREDITO\\MICRE_NMAP\\nmap.service\\service.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D960634-AFD6-4B11-A1E6-AC75EA381BDB}|NMAP.Service\\NMAP.Service.csproj|solutionrelative:nmap.service\\service.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C994A16-EBB0-450D-8E9E-C9E4B779FEE5}|NMAP.Repository\\NMAP.Repository.csproj|D:\\T25208\\MICREDITO\\MICRE_NMAP\\nmap.repository\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{7C994A16-EBB0-450D-8E9E-C9E4B779FEE5}|NMAP.Repository\\NMAP.Repository.csproj|solutionrelative:nmap.repository\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C994A16-EBB0-450D-8E9E-C9E4B779FEE5}|NMAP.Repository\\NMAP.Repository.csproj|D:\\T25208\\MICREDITO\\MICRE_NMAP\\nmap.repository\\repository\\tarjetacreditorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C994A16-EBB0-450D-8E9E-C9E4B779FEE5}|NMAP.Repository\\NMAP.Repository.csproj|solutionrelative:nmap.repository\\repository\\tarjetacreditorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C994A16-EBB0-450D-8E9E-C9E4B779FEE5}|NMAP.Repository\\NMAP.Repository.csproj|D:\\T25208\\MICREDITO\\MICRE_NMAP\\nmap.repository\\repository\\condicionvp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C994A16-EBB0-450D-8E9E-C9E4B779FEE5}|NMAP.Repository\\NMAP.Repository.csproj|solutionrelative:nmap.repository\\repository\\condicionvp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319686C2-2C43-4148-85A5-49D970F332D6}|NMAP.Backoffice\\NMAP.Backoffice.csproj|D:\\T25208\\MICREDITO\\MICRE_NMAP\\nmap.backoffice\\controllers\\usuariocreditocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319686C2-2C43-4148-85A5-49D970F332D6}|NMAP.Backoffice\\NMAP.Backoffice.csproj|solutionrelative:nmap.backoffice\\controllers\\usuariocreditocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C994A16-EBB0-450D-8E9E-C9E4B779FEE5}|NMAP.Repository\\NMAP.Repository.csproj|D:\\T25208\\MICREDITO\\MICRE_NMAP\\nmap.repository\\repository\\montomaximo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C994A16-EBB0-450D-8E9E-C9E4B779FEE5}|NMAP.Repository\\NMAP.Repository.csproj|solutionrelative:nmap.repository\\repository\\montomaximo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C994A16-EBB0-450D-8E9E-C9E4B779FEE5}|NMAP.Repository\\NMAP.Repository.csproj|D:\\T25208\\MICREDITO\\MICRE_NMAP\\nmap.repository\\repository\\montominimo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C994A16-EBB0-450D-8E9E-C9E4B779FEE5}|NMAP.Repository\\NMAP.Repository.csproj|solutionrelative:nmap.repository\\repository\\montominimo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C994A16-EBB0-450D-8E9E-C9E4B779FEE5}|NMAP.Repository\\NMAP.Repository.csproj|D:\\T25208\\MICREDITO\\MICRE_NMAP\\nmap.repository\\repository\\usuariocredito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C994A16-EBB0-450D-8E9E-C9E4B779FEE5}|NMAP.Repository\\NMAP.Repository.csproj|solutionrelative:nmap.repository\\repository\\usuariocredito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C994A16-EBB0-450D-8E9E-C9E4B779FEE5}|NMAP.Repository\\NMAP.Repository.csproj|D:\\T25208\\MICREDITO\\MICRE_NMAP\\nmap.repository\\repository\\tipocambio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C994A16-EBB0-450D-8E9E-C9E4B779FEE5}|NMAP.Repository\\NMAP.Repository.csproj|solutionrelative:nmap.repository\\repository\\tipocambio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 27,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CausalesController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Backoffice\\Controllers\\CausalesController.cs",
+              "RelativeDocumentMoniker": "NMAP.Backoffice\\Controllers\\CausalesController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Backoffice\\Controllers\\CausalesController.cs",
+              "RelativeToolTip": "NMAP.Backoffice\\Controllers\\CausalesController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAawBMAAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T19:41:58.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Backoffice\\Views\\NuevoSeguroDesgravament\\Index.cshtml",
+              "RelativeDocumentMoniker": "NMAP.Backoffice\\Views\\NuevoSeguroDesgravament\\Index.cshtml",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Backoffice\\Views\\NuevoSeguroDesgravament\\Index.cshtml",
+              "RelativeToolTip": "NMAP.Backoffice\\Views\\NuevoSeguroDesgravament\\Index.cshtml",
+              "ViewState": "AQIAABYAAAAAAAAAAAAEwCQAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T19:38:51.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Backoffice\\Views\\SeguroDesgravament\\Index.cshtml",
+              "RelativeDocumentMoniker": "NMAP.Backoffice\\Views\\SeguroDesgravament\\Index.cshtml",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Backoffice\\Views\\SeguroDesgravament\\Index.cshtml",
+              "RelativeToolTip": "NMAP.Backoffice\\Views\\SeguroDesgravament\\Index.cshtml",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAEwCMAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T19:38:28.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Backoffice\\Views\\CalibracionScore\\Index.cshtml",
+              "RelativeDocumentMoniker": "NMAP.Backoffice\\Views\\CalibracionScore\\Index.cshtml",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Backoffice\\Views\\CalibracionScore\\Index.cshtml",
+              "RelativeToolTip": "NMAP.Backoffice\\Views\\CalibracionScore\\Index.cshtml",
+              "ViewState": "AQIAAHEAAAAAAAAAAAAAAA4AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T19:36:12.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ServiceClient.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Constants\\ServiceClient.cs",
+              "RelativeDocumentMoniker": "NMAP.Constants\\ServiceClient.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Constants\\ServiceClient.cs",
+              "RelativeToolTip": "NMAP.Constants\\ServiceClient.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABoAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T19:34:08.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Backoffice\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "NMAP.Backoffice\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Backoffice\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "NMAP.Backoffice\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T15:38:11.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BundleConfig.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Backoffice\\App_Start\\BundleConfig.cs",
+              "RelativeDocumentMoniker": "NMAP.Backoffice\\App_Start\\BundleConfig.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Backoffice\\App_Start\\BundleConfig.cs",
+              "RelativeToolTip": "NMAP.Backoffice\\App_Start\\BundleConfig.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAawBUAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T15:36:17.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CampanaTarjetaController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Backoffice\\Controllers\\CampanaTarjetaController.cs",
+              "RelativeDocumentMoniker": "NMAP.Backoffice\\Controllers\\CampanaTarjetaController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Backoffice\\Controllers\\CampanaTarjetaController.cs",
+              "RelativeToolTip": "NMAP.Backoffice\\Controllers\\CampanaTarjetaController.cs",
+              "ViewState": "AQIAADEBAAAAAAAAAAAtwD4BAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T01:37:31.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Backoffice\\Global.asax.cs",
+              "RelativeDocumentMoniker": "NMAP.Backoffice\\Global.asax.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Backoffice\\Global.asax.cs",
+              "RelativeToolTip": "NMAP.Backoffice\\Global.asax.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T15:52:40.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "service.svc.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Service\\service.svc.cs",
+              "RelativeDocumentMoniker": "NMAP.Service\\service.svc.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Service\\service.svc.cs",
+              "RelativeToolTip": "NMAP.Service\\service.svc.cs",
+              "ViewState": "AQIAAFYMAAAAAAAAAAAnwG4MAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T02:19:07.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Repository\\App.config",
+              "RelativeDocumentMoniker": "NMAP.Repository\\App.config",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Repository\\App.config",
+              "RelativeToolTip": "NMAP.Repository\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-03-26T01:30:47.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TarjetaCreditoRepository.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Repository\\Repository\\TarjetaCreditoRepository.cs",
+              "RelativeDocumentMoniker": "NMAP.Repository\\Repository\\TarjetaCreditoRepository.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Repository\\Repository\\TarjetaCreditoRepository.cs",
+              "RelativeToolTip": "NMAP.Repository\\Repository\\TarjetaCreditoRepository.cs",
+              "ViewState": "AQIAALIAAAAAAAAAAAAYwLoAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T00:51:16.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CondicionVP.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Repository\\Repository\\CondicionVP.cs",
+              "RelativeDocumentMoniker": "NMAP.Repository\\Repository\\CondicionVP.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Repository\\Repository\\CondicionVP.cs",
+              "RelativeToolTip": "NMAP.Repository\\Repository\\CondicionVP.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwCoAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T00:44:19.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UsuarioCreditoController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Backoffice\\Controllers\\UsuarioCreditoController.cs",
+              "RelativeDocumentMoniker": "NMAP.Backoffice\\Controllers\\UsuarioCreditoController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Backoffice\\Controllers\\UsuarioCreditoController.cs",
+              "RelativeToolTip": "NMAP.Backoffice\\Controllers\\UsuarioCreditoController.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAhwDoAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-22T15:03:40.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MontoMaximo.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Repository\\Repository\\MontoMaximo.cs",
+              "RelativeDocumentMoniker": "NMAP.Repository\\Repository\\MontoMaximo.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Repository\\Repository\\MontoMaximo.cs",
+              "RelativeToolTip": "NMAP.Repository\\Repository\\MontoMaximo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAjwBUAAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-21T16:15:06.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MontoMinimo.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Repository\\Repository\\MontoMinimo.cs",
+              "RelativeDocumentMoniker": "NMAP.Repository\\Repository\\MontoMinimo.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Repository\\Repository\\MontoMinimo.cs",
+              "RelativeToolTip": "NMAP.Repository\\Repository\\MontoMinimo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-21T16:14:55.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UsuarioCredito.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Repository\\Repository\\UsuarioCredito.cs",
+              "RelativeDocumentMoniker": "NMAP.Repository\\Repository\\UsuarioCredito.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Repository\\Repository\\UsuarioCredito.cs",
+              "RelativeToolTip": "NMAP.Repository\\Repository\\UsuarioCredito.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-21T16:14:22.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TipoCambio.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Repository\\Repository\\TipoCambio.cs",
+              "RelativeDocumentMoniker": "NMAP.Repository\\Repository\\TipoCambio.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_NMAP\\NMAP.Repository\\Repository\\TipoCambio.cs",
+              "RelativeToolTip": "NMAP.Repository\\Repository\\TipoCambio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-09-12T20:58:59.218Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

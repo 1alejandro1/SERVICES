@@ -1,0 +1,122 @@
+﻿@using BCP.CROSS.MODELS.Reportes.Analista
+@using Sarc.WebApp.Models.Reportes.Analista
+<div class="row align-content-center">
+    <div class="col-12">
+        <h4><strong>REPORTE ANALISTA / CANTIDAD CASOS</strong></h4>
+    </div>
+    <div class="col-10">
+        <table class="table table-hover table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col" class="table-tomato">ANALISTA / CANTIDAD</th>
+                    <th scope="col" class="table-midnightblue">PENDIENTES</th>
+                    <th scope="col" class="table-midnightblue">PENDIENTES VENCIDOS</th>
+                    <th scope="col" class="table-midnightblue">SOLUCIONADOS A TIEMPO</th>
+                    <th scope="col" class="table-midnightblue">TOTAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (CantidadCasosViewModel item in _dataTable)
+                {
+                    <tr>
+                        <th scope="row" class="table-midnightblue">@item.Nombre</th>
+                        <td class="table-light">@item.Pendientes</td>
+                        <td class="table-light">@item.PendientesVencidos</td>
+                        <td class="table-light">@item.Solucionados</td>
+                        <td class="table-light">@item.Total</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+@code {
+    [Parameter]
+    public List<CantidadCasosModel> Data { get; set; }
+    public List<CantidadCasosViewModel> _dataTable = new List<CantidadCasosViewModel>();
+    protected override void OnInitialized()
+    {
+        CreateDataTable();
+        PopulateData();
+    }
+    public void CreateDataTable()
+    {
+        foreach (CantidadCasosModel item in Data)
+        {
+            if (_dataTable.Count < 0)
+            {
+                _dataTable.Add(
+                    new CantidadCasosViewModel(
+                        nombre: item.Nombre,
+                        pendientes: 0,
+                        pendientesvencidos: 0,
+                        solucionados: 0,
+                        total: 0
+                    )
+                );
+            }
+            else
+            {
+                bool flag = true;
+                foreach (CantidadCasosViewModel item2 in _dataTable)
+                {
+                    if (item2.Nombre == item.Nombre) flag = false;
+                }
+                if (flag)
+                {
+                    _dataTable.Add(
+                    new CantidadCasosViewModel(
+                        nombre: item.Nombre,
+                        pendientes: 0,
+                        pendientesvencidos: 0,
+                        solucionados: 0,
+                        total: 0
+                    )
+                );
+                }
+            }
+        }
+    }
+    public void PopulateData()
+    {
+        foreach (CantidadCasosModel item in Data)
+        {
+            foreach (CantidadCasosViewModel item2 in _dataTable)
+            {
+                if (item.Nombre == item2.Nombre)
+                {
+                    switch (item.Tipo)
+                    {
+                        case "PENDIENTES":
+                            item2.Pendientes = item.Cantidad;
+                            break;
+                        case "PENDIENTES VENCIDOS":
+                            item2.PendientesVencidos = item.Cantidad;
+                            break;
+                        case "SOLUCIONADOS A TIEMPO":
+                            item2.Solucionados = item.Cantidad;
+                            break;
+                        case "TOTAL":
+                            item2.Total = item.Cantidad;
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+        }
+    }
+}
+<style lang="css">
+    .table-tomato {
+        background-color: tomato !important;
+        color: white !important;
+        vertical-align: middle;
+    }
+
+    .table-midnightblue {
+        background-color: midnightblue !important;
+        color: white !important;
+        vertical-align: middle;
+    }
+</style>

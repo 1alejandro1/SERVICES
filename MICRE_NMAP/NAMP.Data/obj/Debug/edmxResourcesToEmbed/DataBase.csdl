@@ -1,0 +1,2128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BD_MICREDITOModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="BD_MICREDITOEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="usp_MapSelAceptacionEspecialDe" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelAceptacionEspecialDe_Result)">
+      <Parameter Name="pcCodUsuarioSAPE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelAceptacionEspecialLi" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelAceptacionEspecialLi_Result)" />
+    <FunctionImport Name="usp_MapSelAsignacionBonus" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelAsignacionBonus_Result)">
+      <Parameter Name="CodCampana" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelBanca" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelBanca_Result)">
+      <Parameter Name="CodBanca" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelBuscaReglas">
+      <Parameter Name="CodCampo" Mode="In" Type="String" />
+      <Parameter Name="CodEntidad" Mode="In" Type="String" />
+      <Parameter Name="CodTipoRelacion" Mode="In" Type="String" />
+      <Parameter Name="CodOperador" Mode="In" Type="String" />
+      <Parameter Name="Valor" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelBuscaReglas2">
+      <Parameter Name="NombreObjInves" Mode="In" Type="String" />
+      <Parameter Name="CodCampo" Mode="In" Type="String" />
+      <Parameter Name="CodEntidad" Mode="In" Type="String" />
+      <Parameter Name="CodTipoRelacion" Mode="In" Type="String" />
+      <Parameter Name="CodRelacion" Mode="In" Type="String" />
+      <Parameter Name="CodOperador" Mode="In" Type="String" />
+      <Parameter Name="Valor" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelCEM" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelCEM_Result)">
+      <Parameter Name="NombreObjInves" Mode="In" Type="String" />
+      <Parameter Name="CodTipoEntidad" Mode="In" Type="String" />
+      <Parameter Name="CodTipoRelacion" Mode="In" Type="String" />
+      <Parameter Name="CodRelacion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelCampana" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelCampana_Result)">
+      <Parameter Name="CodProducto" Mode="In" Type="String" />
+      <Parameter Name="CodCampana" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelCampos" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelCampos_Result)" />
+    <FunctionImport Name="usp_MapSelCanal" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelCanal_Result)" />
+    <FunctionImport Name="usp_MapSelCardHolder" ReturnType="Collection(String)">
+      <Parameter Name="dcCardholder" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelCodRelObjInves" ReturnType="Collection(Int32)">
+      <Parameter Name="CodRelacion" Mode="In" Type="String" />
+      <Parameter Name="CodTipoRelacion" Mode="In" Type="String" />
+      <Parameter Name="CodObjInves" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelComportamiento" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelComportamiento_Result)">
+      <Parameter Name="NombreObjInves" Mode="In" Type="String" />
+      <Parameter Name="CodTipoEntidad" Mode="In" Type="String" />
+      <Parameter Name="CodTipoRelacion" Mode="In" Type="String" />
+      <Parameter Name="CodRelacion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelCondicion" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelCondicion_Result)" />
+    <FunctionImport Name="usp_MapSelCondicionVP" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelCondicionVP_Result)">
+      <Parameter Name="CodTipoCredito" Mode="In" Type="String" />
+      <Parameter Name="CodVPSegmento" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelUltRegla" ReturnType="Collection(Int32)" />
+    <FunctionImport Name="usp_MapSelUltReglaCondicion" ReturnType="Collection(Int32)" />
+    <FunctionImport Name="usp_MapSelUserCode6" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelUserCode6_Result1)" />
+    <FunctionImport Name="usp_MapSelUsuarioCredito" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelUsuarioCredito_Result1)" />
+    <FunctionImport Name="usp_MapSelUsuarioSamNUC" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelUsuarioSamNUC_Result1)">
+      <Parameter Name="perfiles" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelValidaCodCampanaHost" ReturnType="Collection(String)">
+      <Parameter Name="fcCodProducto" Mode="In" Type="String" />
+      <Parameter Name="dcCodCampanaHost" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelValorALS" ReturnType="Collection(String)">
+      <Parameter Name="TipoSolicitud" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelVerifEntObjInves" ReturnType="Collection(Int32)">
+      <Parameter Name="Entidad" Mode="In" Type="String" />
+      <Parameter Name="CodEntidad" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelVerificaRelCampana" ReturnType="Collection(Int32)">
+      <Parameter Name="pcCodCampana" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelVersionTablasMant" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelVersionTablasMant_Result1)" />
+    <FunctionImport Name="usp_MapSelRelObjInvAutonomiaRe" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelRelObjInvAutonomiaRe_Result)">
+      <Parameter Name="NombreUsuarioSuperior" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelRutaMdbLocal" ReturnType="Collection(String)" />
+    <FunctionImport Name="usp_MapSelSegDes" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelSegDes_Result)">
+      <Parameter Name="Producto" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelSegmentacion" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelSegmentacion_Result)">
+      <Parameter Name="fcCodCampana" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelTarjetaEntidad" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelTarjetaEntidad_Result)">
+      <Parameter Name="pnCodEntidad" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelTipoCambio" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelTipoCambio_Result)" />
+    <FunctionImport Name="usp_MapSelTipoSeguroBien" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelTipoSeguroBien_Result)">
+      <Parameter Name="CodProducto" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelTipoSolicitud" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelTipoSolicitud_Result)">
+      <Parameter Name="CodBanca" Mode="In" Type="String" />
+      <Parameter Name="CodTipoSolicitud" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelTipoSolixCampana" ReturnType="Collection(String)">
+      <Parameter Name="pcCodCampana" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelTipoTasa" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelTipoTasa_Result)" />
+    <FunctionImport Name="usp_MapSelPeriodoGracia" ReturnType="Collection(Int32)">
+      <Parameter Name="CodRelObjInves" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelPortesSeguroPorProducto" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelPortesSeguroPorProducto_Result1)">
+      <Parameter Name="pcCodProducto" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelProducto" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelProducto_Result1)">
+      <Parameter Name="CodTipoSolicitud" Mode="In" Type="String" />
+      <Parameter Name="CodProducto" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelProductoCanal" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelProductoCanal_Result1)">
+      <Parameter Name="fcCodTipoSolicitud" Mode="In" Type="String" />
+      <Parameter Name="fnCodCanal" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelReglaCondicionDet" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelReglaCondicionDet_Result1)">
+      <Parameter Name="CodEntidad" Mode="In" Type="String" />
+      <Parameter Name="CodReglaCondicion" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelReglasCondicion">
+      <Parameter Name="NombreObjInves" Mode="In" Type="String" />
+      <Parameter Name="CodEntidad" Mode="In" Type="String" />
+      <Parameter Name="CodTipoRelacion" Mode="In" Type="String" />
+      <Parameter Name="CodRelacion" Mode="In" Type="String" />
+      <Parameter Name="CodReglaP" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelReglasCondicion2">
+      <Parameter Name="NombreObjInves" Mode="In" Type="String" />
+      <Parameter Name="CodEntidad" Mode="In" Type="String" />
+      <Parameter Name="CodTipoRelacion" Mode="In" Type="String" />
+      <Parameter Name="CodRelacion" Mode="In" Type="String" />
+      <Parameter Name="CodReglaP" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelReglasxPolRel" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelReglasxPolRel_Result1)">
+      <Parameter Name="NombreObjInves" Mode="In" Type="String" />
+      <Parameter Name="CodTipoRelacion" Mode="In" Type="String" />
+      <Parameter Name="CodRelacion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelRelObjInvAutonomia" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelRelObjInvAutonomia_Result)">
+      <Parameter Name="NombreUsuario" Mode="In" Type="String" />
+      <Parameter Name="TipoSolicitud" Mode="In" Type="String" />
+      <Parameter Name="CodProducto" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelRelObjInvAutonomiaRN" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelRelObjInvAutonomiaRN_Result)">
+      <Parameter Name="NombreUsuarioSuperior" Mode="In" Type="String" />
+      <Parameter Name="CodNivelUsuario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelEntidadIntObjInves" ReturnType="Collection(String)">
+      <Parameter Name="CodObjInves" Mode="In" Type="Int32" />
+      <Parameter Name="CodTipoSolicitud" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelEntidadObjInves" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelEntidadObjInves_Result)">
+      <Parameter Name="Entidad" Mode="In" Type="String" />
+      <Parameter Name="CodEntidad" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelEstadoSolicitud" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelEstadoSolicitud_Result)" />
+    <FunctionImport Name="usp_MapSelEstadoSolicitudJusti" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelEstadoSolicitudJusti_Result)">
+      <Parameter Name="pcCodEstadoSolicitud" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelFinalidad" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelFinalidad_Result)" />
+    <FunctionImport Name="usp_MapSelFinalidadCC" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelFinalidadCC_Result)" />
+    <FunctionImport Name="usp_MapSelFraudePorCod" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelFraudePorCod_Result)">
+      <Parameter Name="CodFraude" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelFraudePorIdc" ReturnType="Collection(Int32)">
+      <Parameter Name="NumIDC" Mode="In" Type="String" />
+      <Parameter Name="TipoIDC" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelFraudes" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelFraudes_Result)" />
+    <FunctionImport Name="usp_MapSelParamLineaCreditoDet" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelParamLineaCreditoDet_Result)">
+      <Parameter Name="CodLineaCredito" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelParamLineaCreditoOP" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelParamLineaCreditoOP_Result)">
+      <Parameter Name="CodRelObjInves" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelParamPlazo" ReturnType="Collection(Int32)">
+      <Parameter Name="CodRelObjInves" Mode="In" Type="Int32" />
+      <Parameter Name="CodTipoProducto" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelParamProductoHost" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelParamProductoHost_Result)">
+      <Parameter Name="CodRelObjInves" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelParamTasas" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelParamTasas_Result)">
+      <Parameter Name="CodRelObjInves" Mode="In" Type="Int32" />
+      <Parameter Name="CodMoneda" Mode="In" Type="String" />
+      <Parameter Name="Opcion" Mode="In" Type="String" />
+      <Parameter Name="TipoTasa" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelParamTransmision" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelParamTransmision_Result)">
+      <Parameter Name="pcCodCampana" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelParametros" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelParametros_Result)">
+      <Parameter Name="NomObjInves" Mode="In" Type="String" />
+      <Parameter Name="CodTipoEntidad" Mode="In" Type="String" />
+      <Parameter Name="CodEntidad" Mode="In" Type="String" />
+      <Parameter Name="CodTipoPersona" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelParametrosValores" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelParametrosValores_Result)" />
+    <FunctionImport Name="usp_MapSelPerfilCliente" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelPerfilCliente_Result1)">
+      <Parameter Name="CodTipoRelacion" Mode="In" Type="String" />
+      <Parameter Name="CodRelacion" Mode="In" Type="String" />
+      <Parameter Name="CodEntidad" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelPerfilInfocorp" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelPerfilInfocorp_Result1)" />
+    <FunctionImport Name="usp_MapSelNombreEntidad" ReturnType="Collection(String)">
+      <Parameter Name="CodTipoEntidad" Mode="In" Type="String" />
+      <Parameter Name="CodEntidad" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelObjInvesCampo" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelObjInvesCampo_Result)">
+      <Parameter Name="NombreObjInves" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelObjInvesHijos" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelObjInvesHijos_Result)">
+      <Parameter Name="NombreObjInvesPadre" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelObjInvesOperacion" ReturnType="Collection(String)">
+      <Parameter Name="CodObjInves" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelOperador" ReturnType="Collection(String)" />
+    <FunctionImport Name="usp_MapSelPI_Estudio" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelPI_Estudio_Result)" />
+    <FunctionImport Name="usp_MapSelPI_Notaria" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelPI_Notaria_Result)" />
+    <FunctionImport Name="usp_MapSelPI_Tasador" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelPI_Tasador_Result)" />
+    <FunctionImport Name="usp_MapSelParamHipotecario" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelParamHipotecario_Result)">
+      <Parameter Name="dcCodProducto" Mode="In" Type="String" />
+      <Parameter Name="dcCodMoneda" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelParamLineaCredito" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelParamLineaCredito_Result)">
+      <Parameter Name="CodLineaCredito" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelDocumento" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelDocumento_Result)" />
+    <FunctionImport Name="usp_MapSelEmpresaPermitida" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelEmpresaPermitida_Result)">
+      <Parameter Name="dcProceso" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelEntidadFinanciera" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelEntidadFinanciera_Result)" />
+    <FunctionImport Name="usp_MapSelGastosNotariales" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelGastosNotariales_Result)">
+      <Parameter Name="CodRelObjInves" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelJustificacion" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelJustificacion_Result)" />
+    <FunctionImport Name="usp_MapSelMoneda" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelMoneda_Result)" />
+    <FunctionImport Name="usp_MapSelMontoMaximo" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelMontoMaximo_Result)">
+      <Parameter Name="CodRelObjInves" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelMontoMinimo" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelMontoMinimo_Result)">
+      <Parameter Name="CodRelObjInves" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelNivelUsuario" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelNivelUsuario_Result)">
+      <Parameter Name="CODPERFIL" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelNombreCampana" ReturnType="Collection(String)">
+      <Parameter Name="CodProducto" Mode="In" Type="String" />
+      <Parameter Name="NombreCampana" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelCondicionVPxCampana" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelCondicionVPxCampana_Result)">
+      <Parameter Name="pcCodCampana" Mode="In" Type="String" />
+      <Parameter Name="CodVPSegmento" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelCondicionVPxProducto" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelCondicionVPxProducto_Result)">
+      <Parameter Name="fcCodCampana" Mode="In" Type="String" />
+      <Parameter Name="CodVPSegmento" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelCondiciones" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelCondiciones_Result)">
+      <Parameter Name="CodEntidad" Mode="In" Type="String" />
+      <Parameter Name="CodReglaCondicion" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelDatosDocNoAsigCam" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelDatosDocNoAsigCam_Result)">
+      <Parameter Name="pcCodCampana" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelDatosDocumentoPorCam" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelDatosDocumentoPorCam_Result)">
+      <Parameter Name="pcCodCampana" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelDecisiones" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelDecisiones_Result)">
+      <Parameter Name="CodEntidad" Mode="In" Type="String" />
+      <Parameter Name="CodReglaCondicion" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelDiasPago" ReturnType="Collection(Int32)">
+      <Parameter Name="CodRelObjInves" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapEliCampana">
+      <Parameter Name="pcCodCampana" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModEstadoCampana">
+      <Parameter Name="pcCodCampana" Mode="In" Type="String" />
+      <Parameter Name="dcIndicadorDesactivada" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsAceptacionEspecial">
+      <Parameter Name="pcCodUsuarioSAPE" Mode="In" Type="String" />
+      <Parameter Name="pcApellidoPaterno" Mode="In" Type="String" />
+      <Parameter Name="pcApellidoMaterno" Mode="In" Type="String" />
+      <Parameter Name="pcNombres" Mode="In" Type="String" />
+      <Parameter Name="pcCargo" Mode="In" Type="String" />
+      <Parameter Name="pcDominio" Mode="In" Type="String" />
+      <Parameter Name="pcActivo" Mode="In" Type="String" />
+      <Parameter Name="nRangoAniosPlazoMenor" Mode="In" Type="Int32" />
+      <Parameter Name="nRangoAniosPlazoMayor" Mode="In" Type="Int32" />
+      <Parameter Name="cIndicadorGarantia" Mode="In" Type="String" />
+      <Parameter Name="nMontoLimiteAprobacion" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelAceptacionEspecial">
+      <Parameter Name="pcCodUsuarioSAPE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsDatosDocumentoPorCam">
+      <Parameter Name="pcCodCampana" Mode="In" Type="String" />
+      <Parameter Name="pcCodDatosDocumento" Mode="In" Type="String" />
+      <Parameter Name="dcDestinoEnvio" Mode="In" Type="String" />
+      <Parameter Name="dcCodSituacion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelDatosDocumentoPorCam">
+      <Parameter Name="pcCodCampana" Mode="In" Type="String" />
+      <Parameter Name="pcCodDatosDocumento" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModDatosDocumentoPorCam">
+      <Parameter Name="pcCodCampana" Mode="In" Type="String" />
+      <Parameter Name="pcCodDatosDocumento" Mode="In" Type="String" />
+      <Parameter Name="dcDestinoEnvio" Mode="In" Type="String" />
+      <Parameter Name="dcCodSituacion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelDatosDocumentoCam">
+      <Parameter Name="pcCodCampana" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapEliAsignacionBonus">
+      <Parameter Name="CodCreditoCampanna" Mode="In" Type="String" />
+      <Parameter Name="PuntosBonus" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapIngAsignacionBonus">
+      <Parameter Name="CodCreditoCampanna" Mode="In" Type="String" />
+      <Parameter Name="PuntosBonus" Mode="In" Type="Decimal" />
+      <Parameter Name="Beneficiario" Mode="In" Type="String" />
+      <Parameter Name="Activo_Desactivo" Mode="In" Type="String" />
+      <Parameter Name="Fecha_Inicio" Mode="In" Type="DateTime" />
+      <Parameter Name="Fecha_Fin" Mode="In" Type="DateTime" />
+      <Parameter Name="Usr_Create" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModAsignacionBonus">
+      <Parameter Name="CodCreditoCampanna" Mode="In" Type="String" />
+      <Parameter Name="PuntosBonus" Mode="In" Type="Decimal" />
+      <Parameter Name="Beneficiario" Mode="In" Type="String" />
+      <Parameter Name="Activo_Desactivo" Mode="In" Type="String" />
+      <Parameter Name="Fecha_Inicio" Mode="In" Type="DateTime" />
+      <Parameter Name="Fecha_Fin" Mode="In" Type="DateTime" />
+      <Parameter Name="Usr_Update" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapIngCampana">
+      <Parameter Name="fcCodProducto" Mode="In" Type="String" />
+      <Parameter Name="dcCodCampanaHost" Mode="In" Type="String" />
+      <Parameter Name="dcDescripcion" Mode="In" Type="String" />
+      <Parameter Name="dcIndicadorDesactivada" Mode="In" Type="String" />
+      <Parameter Name="dcIndicadorRegistroActivo" Mode="In" Type="String" />
+      <Parameter Name="CodTipoDiferencia" Mode="In" Type="String" />
+      <Parameter Name="ddFechaInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="ddFechaFin" Mode="In" Type="DateTime" />
+      <Parameter Name="CodCampanaHereda" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModCampana">
+      <Parameter Name="pcCodCampana" Mode="In" Type="String" />
+      <Parameter Name="dcCodCampanaHost" Mode="In" Type="String" />
+      <Parameter Name="dcDescripcion" Mode="In" Type="String" />
+      <Parameter Name="dcIndicadorDesactivada" Mode="In" Type="String" />
+      <Parameter Name="dcIndicadorRegistroActivo" Mode="In" Type="String" />
+      <Parameter Name="CodTipoDiferencia" Mode="In" Type="String" />
+      <Parameter Name="ddFechaInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="ddFechaFin" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapIngCopiaEntidades">
+      <Parameter Name="CodTipoEntidad" Mode="In" Type="String" />
+      <Parameter Name="CodEntidad" Mode="In" Type="String" />
+      <Parameter Name="CodEntidadHereda" Mode="In" Type="String" />
+      <Parameter Name="TipoSolicitud" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapProCopiaReglas" ReturnType="Collection(String)">
+      <Parameter Name="CodCampanaOrigen" Mode="In" Type="String" />
+      <Parameter Name="CodCampanaNueva" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapCopLineaCredito">
+      <Parameter Name="CodCreditoCampannaOrigen" Mode="In" Type="String" />
+      <Parameter Name="CodCreditoCampannaDetino" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapCopMontosMaximos">
+      <Parameter Name="CodCreditoCampannaOrigen" Mode="In" Type="String" />
+      <Parameter Name="CodCreditoCampannaDetino" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsRelacionObjInves" ReturnType="Collection(Int32)">
+      <Parameter Name="CodRelacion" Mode="In" Type="String" />
+      <Parameter Name="CodTipoRelacion" Mode="In" Type="String" />
+      <Parameter Name="CodObjInves" Mode="In" Type="Int32" />
+      <Parameter Name="IndNivel" Mode="In" Type="String" />
+      <Parameter Name="IndRegistroActivo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapCopMontosMinimos" ReturnType="Collection(Int32)">
+      <Parameter Name="CodCreditoCampannaOrigen" Mode="In" Type="String" />
+      <Parameter Name="CodCreditoCampannaDetino" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapCopAsignacionBonus">
+      <Parameter Name="CodCreditoCampannaOrigen" Mode="In" Type="String" />
+      <Parameter Name="CodCreditoCampannaDetino" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapCopDatosDocumento">
+      <Parameter Name="CodCreditoCampannaOrigen" Mode="In" Type="String" />
+      <Parameter Name="CodCreditoCampannaDetino" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapCopSegmentacion">
+      <Parameter Name="CodCreditoCampannaOrigen" Mode="In" Type="String" />
+      <Parameter Name="CodCreditoCampannaDetino" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapCopTasas" ReturnType="Collection(Int32)">
+      <Parameter Name="CodCreditoCampannaOrigen" Mode="In" Type="String" />
+      <Parameter Name="CodCreditoCampannaDetino" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModEstadoSolicitud">
+      <Parameter Name="pcCodEstadoSolicitud" Mode="In" Type="String" />
+      <Parameter Name="dcDescripcion" Mode="In" Type="String" />
+      <Parameter Name="dcAsignadoPorSistema" Mode="In" Type="String" />
+      <Parameter Name="dcDescripcionConsulta" Mode="In" Type="String" />
+      <Parameter Name="dcCodEstadoConsulta" Mode="In" Type="String" />
+      <Parameter Name="dcIndicadorRegistroActivo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsEstadoSolicitud" ReturnType="Collection(String)">
+      <Parameter Name="pcCodEstadoSolicitud" Mode="In" Type="String" />
+      <Parameter Name="dcDescripcion" Mode="In" Type="String" />
+      <Parameter Name="dcDescripcionConsulta" Mode="In" Type="String" />
+      <Parameter Name="dcCodEstadoConsulta" Mode="In" Type="String" />
+      <Parameter Name="dcAsignadoPorSistema" Mode="In" Type="String" />
+      <Parameter Name="dcIndicadorRegistroActivo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsEstadoSolicitudCondi" ReturnType="Collection(String)">
+      <Parameter Name="pcCodEstadoSolicitud" Mode="In" Type="String" />
+      <Parameter Name="pcCodCondicion" Mode="In" Type="String" />
+      <Parameter Name="dcTipoCondicion" Mode="In" Type="String" />
+      <Parameter Name="dcIndicadorRegistroActivo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsEstadoSolicitudJusti" ReturnType="Collection(String)">
+      <Parameter Name="pcCodEstadoSolicitud" Mode="In" Type="String" />
+      <Parameter Name="pcCodJustificacion" Mode="In" Type="String" />
+      <Parameter Name="dcIndicadorRegistroActivo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelEstadoSolicitud" ReturnType="Collection(String)">
+      <Parameter Name="pcCodEstadoSolicitud" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelEstadoSolicitudCondi">
+      <Parameter Name="pcCodEstadoSolicitud" Mode="In" Type="String" />
+      <Parameter Name="pcCodCondicion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelEstadoSolicitudJusti">
+      <Parameter Name="pcCodEstadoSolicitud" Mode="In" Type="String" />
+      <Parameter Name="pcCodJustificacion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsCondicion" ReturnType="Collection(String)">
+      <Parameter Name="pcCodCondicion" Mode="In" Type="String" />
+      <Parameter Name="dcDescripcion" Mode="In" Type="String" />
+      <Parameter Name="dcIndicadorRegistroActivo" Mode="In" Type="String" />
+      <Parameter Name="dcDescripcionConsulta" Mode="In" Type="String" />
+      <Parameter Name="dcIndPermisoParaConsulta" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelCondicion">
+      <Parameter Name="pcCodCondicion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelJustificacion">
+      <Parameter Name="pcCodJustificacion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsJustificacion" ReturnType="Collection(String)">
+      <Parameter Name="pcCodJustificacion" Mode="In" Type="String" />
+      <Parameter Name="dcDescripcion" Mode="In" Type="String" />
+      <Parameter Name="dcIndicadorRegistroActivo" Mode="In" Type="String" />
+      <Parameter Name="dcDescripcionConsulta" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModCondicion">
+      <Parameter Name="pcCodCondicion" Mode="In" Type="String" />
+      <Parameter Name="dcDescripcion" Mode="In" Type="String" />
+      <Parameter Name="dcIndicadorRegistroActivo" Mode="In" Type="String" />
+      <Parameter Name="dcDescripcionConsulta" Mode="In" Type="String" />
+      <Parameter Name="dcIndPermisoParaConsulta" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModEstadoSolicitudCondi">
+      <Parameter Name="pcCodEstadoSolicitud" Mode="In" Type="String" />
+      <Parameter Name="pcCodCondicion" Mode="In" Type="String" />
+      <Parameter Name="dcTipoCondicion" Mode="In" Type="String" />
+      <Parameter Name="dcIndicadorRegistroActivo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModEstadoSolicitudJusti">
+      <Parameter Name="pcCodEstadoSolicitud" Mode="In" Type="String" />
+      <Parameter Name="pcCodJustificacion" Mode="In" Type="String" />
+      <Parameter Name="dcIndicadorRegistroActivo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModFraudes">
+      <Parameter Name="CodFraude" Mode="In" Type="Int32" />
+      <Parameter Name="TipoIDC" Mode="In" Type="String" />
+      <Parameter Name="NumIDC" Mode="In" Type="String" />
+      <Parameter Name="ApellidoPaterno" Mode="In" Type="String" />
+      <Parameter Name="ApellidoMaterno" Mode="In" Type="String" />
+      <Parameter Name="Nombres" Mode="In" Type="String" />
+      <Parameter Name="Direccion" Mode="In" Type="String" />
+      <Parameter Name="CodLocalidad" Mode="In" Type="String" />
+      <Parameter Name="Telefono" Mode="In" Type="String" />
+      <Parameter Name="Empleador" Mode="In" Type="String" />
+      <Parameter Name="Observacion" Mode="In" Type="String" />
+      <Parameter Name="Activo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModJustificacion">
+      <Parameter Name="pcCodJustificacion" Mode="In" Type="String" />
+      <Parameter Name="dcDescripcion" Mode="In" Type="String" />
+      <Parameter Name="dcIndicadorRegistroActivo" Mode="In" Type="String" />
+      <Parameter Name="dcDescripcionConsulta" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModPI_Estudio">
+      <Parameter Name="dnNumEstudio" Mode="In" Type="Int32" />
+      <Parameter Name="dcDesEstudio" Mode="In" Type="String" />
+      <Parameter Name="dcDirEstudio" Mode="In" Type="String" />
+      <Parameter Name="dcTelEstudio" Mode="In" Type="String" />
+      <Parameter Name="dcDesPersonaContacto" Mode="In" Type="String" />
+      <Parameter Name="dcDirCorreoEstudio" Mode="In" Type="String" />
+      <Parameter Name="chrUsuario" Mode="In" Type="String" />
+      <Parameter Name="dcIndicadorActivo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModPI_Notaria">
+      <Parameter Name="dnNumNotaria" Mode="In" Type="Int32" />
+      <Parameter Name="dcDesNotaria" Mode="In" Type="String" />
+      <Parameter Name="dcDirNotaria" Mode="In" Type="String" />
+      <Parameter Name="dcTelNotaria" Mode="In" Type="String" />
+      <Parameter Name="dcDesPersonaContacto" Mode="In" Type="String" />
+      <Parameter Name="dcCodNotariaConsist" Mode="In" Type="String" />
+      <Parameter Name="chrUsuario" Mode="In" Type="String" />
+      <Parameter Name="dcIndicadorActivo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModPI_Tasador">
+      <Parameter Name="dnNumTasador" Mode="In" Type="Int32" />
+      <Parameter Name="dcDesTasador" Mode="In" Type="String" />
+      <Parameter Name="dcDirTasador" Mode="In" Type="String" />
+      <Parameter Name="dcTelTasador" Mode="In" Type="String" />
+      <Parameter Name="dcDirCorreoTasador" Mode="In" Type="String" />
+      <Parameter Name="chrUsuario" Mode="In" Type="String" />
+      <Parameter Name="dcIndicadorActivoAS" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModParamHipotecario">
+      <Parameter Name="dcCodProducto" Mode="In" Type="String" />
+      <Parameter Name="dcCodMoneda" Mode="In" Type="String" />
+      <Parameter Name="dnNumPlazoMedio" Mode="In" Type="Int32" />
+      <Parameter Name="dnNumPlazoMaximo" Mode="In" Type="Int32" />
+      <Parameter Name="dnTasaSeguroVivienda" Mode="In" Type="Decimal" />
+      <Parameter Name="dnTasaEfectiva" Mode="In" Type="Decimal" />
+      <Parameter Name="dmMonPortesMensual" Mode="In" Type="Decimal" />
+      <Parameter Name="dmMonMaximo" Mode="In" Type="Decimal" />
+      <Parameter Name="dmMonMinimo" Mode="In" Type="Decimal" />
+      <Parameter Name="dcCodUsuarioAuditoria" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModParamLineaCredito">
+      <Parameter Name="CodLineaCredito" Mode="In" Type="Int32" />
+      <Parameter Name="Descripcion" Mode="In" Type="String" />
+      <Parameter Name="IndRegistroActivo" Mode="In" Type="String" />
+      <Parameter Name="TipoCruce" Mode="In" Type="String" />
+      <Parameter Name="IndicadorMasivo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModCamposPoliticas">
+      <Parameter Name="CodRegla" Mode="In" Type="Int32" />
+      <Parameter Name="CodEntidad" Mode="In" Type="String" />
+      <Parameter Name="CodTipoRelacion" Mode="In" Type="String" />
+      <Parameter Name="CodCampo" Mode="In" Type="String" />
+      <Parameter Name="Valor" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModCamposPoliticas2">
+      <Parameter Name="CodReglaCondicion" Mode="In" Type="Int32" />
+      <Parameter Name="CodEntidad" Mode="In" Type="String" />
+      <Parameter Name="CodCampo" Mode="In" Type="String" />
+      <Parameter Name="Valor" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModComportamiento">
+      <Parameter Name="CodReglaCondicionDecision" Mode="In" Type="Int32" />
+      <Parameter Name="CodOperador" Mode="In" Type="String" />
+      <Parameter Name="Valor" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModCondicionDetalle">
+      <Parameter Name="CodReglaCondicionDetalle" Mode="In" Type="Int32" />
+      <Parameter Name="CodCampo" Mode="In" Type="String" />
+      <Parameter Name="CodOperador" Mode="In" Type="String" />
+      <Parameter Name="Valor" Mode="In" Type="String" />
+      <Parameter Name="CodOperadorLogico" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModCondicionVP">
+      <Parameter Name="CodTipoCredito" Mode="In" Type="String" />
+      <Parameter Name="CodVPSegmento" Mode="In" Type="String" />
+      <Parameter Name="Afiliacion" Mode="In" Type="String" />
+      <Parameter Name="PCT_ID" Mode="In" Type="String" />
+      <Parameter Name="Pricing_Ctrl" Mode="In" Type="String" />
+      <Parameter Name="pmLineaCredito" Mode="In" Type="Decimal" />
+      <Parameter Name="dcHabilitado" Mode="In" Type="String" />
+      <Parameter Name="CodCampana" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModControlOperativo">
+      <Parameter Name="CodReglaParametro" Mode="In" Type="String" />
+      <Parameter Name="Valor" Mode="In" Type="String" />
+      <Parameter Name="CodRelacion" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModDecision">
+      <Parameter Name="CodReglaCondicionDecision" Mode="In" Type="Int32" />
+      <Parameter Name="CodReglaCondicion" Mode="In" Type="Int32" />
+      <Parameter Name="CodEntidad" Mode="In" Type="String" />
+      <Parameter Name="CodCampo" Mode="In" Type="String" />
+      <Parameter Name="CodOperador" Mode="In" Type="String" />
+      <Parameter Name="Valor" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModDocumento">
+      <Parameter Name="pcCodDatosDocumento" Mode="In" Type="String" />
+      <Parameter Name="dcDescripcion" Mode="In" Type="String" />
+      <Parameter Name="dcCodTipoPersona" Mode="In" Type="String" />
+      <Parameter Name="dcCodTipoCampoCorreccion" Mode="In" Type="String" />
+      <Parameter Name="dcCodSituacionCorreccion" Mode="In" Type="String" />
+      <Parameter Name="dcCodTipoDatoDocumento" Mode="In" Type="String" />
+      <Parameter Name="dcMensajeAdicionalInternet" Mode="In" Type="String" />
+      <Parameter Name="dcNuevaDescripcion" Mode="In" Type="String" />
+      <Parameter Name="dcCodigoPadre" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModEmpresaPermitida">
+      <Parameter Name="dcRUC" Mode="In" Type="String" />
+      <Parameter Name="dcRUCOld" Mode="In" Type="String" />
+      <Parameter Name="dcProceso" Mode="In" Type="String" />
+      <Parameter Name="dcIndicadorValidez" Mode="In" Type="String" />
+      <Parameter Name="dcIndicadorActivo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModEntidadFinanciera">
+      <Parameter Name="pnCodEntidad" Mode="In" Type="Int32" />
+      <Parameter Name="dcDescEntidad" Mode="In" Type="String" />
+      <Parameter Name="dcEstado" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModCEM">
+      <Parameter Name="CodReglaCondicionDetalle" Mode="In" Type="Int32" />
+      <Parameter Name="ValorCondicion" Mode="In" Type="String" />
+      <Parameter Name="CodReglaCondicionDecision" Mode="In" Type="Int32" />
+      <Parameter Name="ValorDecision" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModParamTransmision">
+      <Parameter Name="pcCodCampana" Mode="In" Type="String" />
+      <Parameter Name="dcRequiereTransmision" Mode="In" Type="String" />
+      <Parameter Name="dcRequiereActConsist" Mode="In" Type="String" />
+      <Parameter Name="dcRequiereEnvioCarta" Mode="In" Type="String" />
+      <Parameter Name="dcDiasEnvioCartasDenegacion" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModParametros">
+      <Parameter Name="CodReglaParametro" Mode="In" Type="Int32" />
+      <Parameter Name="CodCampo" Mode="In" Type="String" />
+      <Parameter Name="Valor" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModPerfilCliente">
+      <Parameter Name="CodReglaCondicionDetalle" Mode="In" Type="Int32" />
+      <Parameter Name="NuevoValor" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModPerfilInfocorp">
+      <Parameter Name="dcPerfil" Mode="In" Type="String" />
+      <Parameter Name="dcDescripcion" Mode="In" Type="String" />
+      <Parameter Name="dcIndicadorActivo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModPortesSeguroPorProducto">
+      <Parameter Name="pcCodProducto" Mode="In" Type="String" />
+      <Parameter Name="CodMoneda" Mode="In" Type="String" />
+      <Parameter Name="Portes" Mode="In" Type="Decimal" />
+      <Parameter Name="Seguro" Mode="In" Type="Decimal" />
+      <Parameter Name="GastosNotariales" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModReglaCondicionDet">
+      <Parameter Name="CodReglaCondicionDetalle" Mode="In" Type="Int32" />
+      <Parameter Name="CodCampo" Mode="In" Type="String" />
+      <Parameter Name="CodOperador" Mode="In" Type="String" />
+      <Parameter Name="Valor" Mode="In" Type="String" />
+      <Parameter Name="CodOperadorLogico" Mode="In" Type="String" />
+      <Parameter Name="CodTipoDato" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModRelObjInvAutonomia">
+      <Parameter Name="CodRelObjInvesAutonomia" Mode="In" Type="Int32" />
+      <Parameter Name="RangoAniosPlazoMenor" Mode="In" Type="Int32" />
+      <Parameter Name="RangoAniosPlazoMayor" Mode="In" Type="Int32" />
+      <Parameter Name="IndicadorGarantia" Mode="In" Type="String" />
+      <Parameter Name="MontoLimiteAprobacion" Mode="In" Type="Decimal" />
+      <Parameter Name="Activo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModRelObjInvAutonomiaUS">
+      <Parameter Name="NombreUsuario" Mode="In" Type="String" />
+      <Parameter Name="NombreUsuarioSuperior" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModSegmentacion">
+      <Parameter Name="fcCodCampana" Mode="In" Type="String" />
+      <Parameter Name="fcCodVPSegmento" Mode="In" Type="String" />
+      <Parameter Name="dcHabilitado" Mode="In" Type="String" />
+      <Parameter Name="dcAfiliacion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapAsignaEntidadObjInves">
+      <Parameter Name="CodTipoEntidad" Mode="In" Type="String" />
+      <Parameter Name="CodObjInves" Mode="In" Type="Int32" />
+      <Parameter Name="CodTipoSolicitudFiltro" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapBNModCalPrestamo">
+      <Parameter Name="Valor" Mode="In" Type="Decimal" />
+      <Parameter Name="Esquema_Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapBNModRatiosFinancieros">
+      <Parameter Name="ValorRatio" Mode="In" Type="Decimal" />
+      <Parameter Name="CodGrupoCIIU" Mode="In" Type="Int32" />
+      <Parameter Name="Esquema_Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapBNModRestricciones">
+      <Parameter Name="Valor" Mode="In" Type="Decimal" />
+      <Parameter Name="CodOperador" Mode="In" Type="String" />
+      <Parameter Name="Esquema_Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapBNSelCalPrestamo" ReturnType="Collection(BD_MICREDITOModel.usp_MapBNSelCalPrestamo_Result)" />
+    <FunctionImport Name="usp_MapBNSelGruposCIIU" ReturnType="Collection(BD_MICREDITOModel.usp_MapBNSelGruposCIIU_Result)" />
+    <FunctionImport Name="usp_MapBNSelRatiosFinancieros" ReturnType="Collection(BD_MICREDITOModel.usp_MapBNSelRatiosFinancieros_Result)">
+      <Parameter Name="CodGrupoCIIU" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapBNSelRestricciones" ReturnType="Collection(BD_MICREDITOModel.usp_MapBNSelRestricciones_Result)" />
+    <FunctionImport Name="usp_MapCambioMatricula">
+      <Parameter Name="chrMatriculaAnterior" Mode="In" Type="String" />
+      <Parameter Name="chrMatriculaNueva" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapCambioMatriculaUC">
+      <Parameter Name="chrMatriculaAnterior" Mode="In" Type="String" />
+      <Parameter Name="chrMatriculaNueva" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapCheckStoredProc" ReturnType="Collection(BD_MICREDITOModel.usp_MapCheckStoredProc_Result)">
+      <Parameter Name="vchStoredProc" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapCopCutoffNegocio">
+      <Parameter Name="CodCampanaHereda" Mode="In" Type="String" />
+      <Parameter Name="CodCampana" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapCopParamProdHost">
+      <Parameter Name="CodCreditoCampannaOrigen" Mode="In" Type="String" />
+      <Parameter Name="CodCreditoCampannaDetino" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapCopParamTransmision">
+      <Parameter Name="CodCampanaHereda" Mode="In" Type="String" />
+      <Parameter Name="CodCampana" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapCopSegmentacionCondicion">
+      <Parameter Name="CodCreditoCampannaOrigen" Mode="In" Type="String" />
+      <Parameter Name="CodCreditoCampannaDetino" Mode="In" Type="String" />
+      <Parameter Name="CodProducto" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapCopTasaPonderada">
+      <Parameter Name="CodCreditoCampannaOrigen" Mode="In" Type="String" />
+      <Parameter Name="CodCreditoCampannaDetino" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapCrearProductoCC">
+      <Parameter Name="pcCodProductoHost" Mode="In" Type="String" />
+      <Parameter Name="dcNombreProducto" Mode="In" Type="String" />
+      <Parameter Name="pcCodProductoBase" Mode="In" Type="String" />
+      <Parameter Name="pcDiasPago" Mode="In" Type="String" />
+      <Parameter Name="pcMoneda" Mode="In" Type="String" />
+      <Parameter Name="pcMonedaDefault" Mode="In" Type="String" />
+      <Parameter Name="pcValorALS" Mode="In" Type="String" />
+      <Parameter Name="pcValidaCta" Mode="In" Type="String" />
+      <Parameter Name="pcValidaPlazo" Mode="In" Type="String" />
+      <Parameter Name="pcValidaPago" Mode="In" Type="String" />
+      <Parameter Name="pcValidaDesem" Mode="In" Type="String" />
+      <Parameter Name="pnCanal" Mode="In" Type="Int32" />
+      <Parameter Name="pcDescEnvio" Mode="In" Type="String" />
+      <Parameter Name="pcTipoCuenta" Mode="In" Type="String" />
+      <Parameter Name="pcNroCuenta" Mode="In" Type="String" />
+      <Parameter Name="pcFlagAmpliacion" Mode="In" Type="String" />
+      <Parameter Name="pcCodProductoNew" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapCrearProductoCH">
+      <Parameter Name="pcCodProductoHost" Mode="In" Type="String" />
+      <Parameter Name="dcNombreProducto" Mode="In" Type="String" />
+      <Parameter Name="pcCodProductoBase" Mode="In" Type="String" />
+      <Parameter Name="pcDiasPago" Mode="In" Type="String" />
+      <Parameter Name="pcMoneda" Mode="In" Type="String" />
+      <Parameter Name="pcMonedaDefault" Mode="In" Type="String" />
+      <Parameter Name="pcValorALS" Mode="In" Type="String" />
+      <Parameter Name="pcValidaCta" Mode="In" Type="String" />
+      <Parameter Name="pcValidaPlazo" Mode="In" Type="String" />
+      <Parameter Name="pcValidaPago" Mode="In" Type="String" />
+      <Parameter Name="pcValidaDesem" Mode="In" Type="String" />
+      <Parameter Name="pnCanal" Mode="In" Type="Int32" />
+      <Parameter Name="pcDescEnvio" Mode="In" Type="String" />
+      <Parameter Name="pcFlagMiVivienda" Mode="In" Type="String" />
+      <Parameter Name="pcFlagValorConstr" Mode="In" Type="String" />
+      <Parameter Name="pcFlagAmpliacion" Mode="In" Type="String" />
+      <Parameter Name="pcModalidad" Mode="In" Type="String" />
+      <Parameter Name="fcCodProducto" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapCrearProductoCN">
+      <Parameter Name="pcCodProductoHost" Mode="In" Type="String" />
+      <Parameter Name="dcNombreProducto" Mode="In" Type="String" />
+      <Parameter Name="pcCodProductoBase" Mode="In" Type="String" />
+      <Parameter Name="pcDiasPago" Mode="In" Type="String" />
+      <Parameter Name="pcMoneda" Mode="In" Type="String" />
+      <Parameter Name="pcMonedaDefault" Mode="In" Type="String" />
+      <Parameter Name="pcValorALS" Mode="In" Type="String" />
+      <Parameter Name="pcValidaCta" Mode="In" Type="String" />
+      <Parameter Name="pcValidaPago" Mode="In" Type="String" />
+      <Parameter Name="pcValidaDesem" Mode="In" Type="String" />
+      <Parameter Name="pnCanal" Mode="In" Type="Int32" />
+      <Parameter Name="pcDescEnvio" Mode="In" Type="String" />
+      <Parameter Name="fcCodProducto" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapCrearProductoTC">
+      <Parameter Name="pcCodProductoHost" Mode="In" Type="String" />
+      <Parameter Name="dcNombreProducto" Mode="In" Type="String" />
+      <Parameter Name="pcCodProductoBase" Mode="In" Type="String" />
+      <Parameter Name="pcDiasPago" Mode="In" Type="String" />
+      <Parameter Name="pcMoneda" Mode="In" Type="String" />
+      <Parameter Name="pcMonedaDefault" Mode="In" Type="String" />
+      <Parameter Name="pcValidaCta" Mode="In" Type="String" />
+      <Parameter Name="pcValidaPago" Mode="In" Type="String" />
+      <Parameter Name="dcEsquema" Mode="In" Type="String" />
+      <Parameter Name="pnCanal" Mode="In" Type="Int32" />
+      <Parameter Name="pcDescEnvio" Mode="In" Type="String" />
+      <Parameter Name="dcCardholder" Mode="In" Type="String" />
+      <Parameter Name="dcPCTID" Mode="In" Type="String" />
+      <Parameter Name="fcCodProducto" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelPI_Notaria">
+      <Parameter Name="dnNumNotaria" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelPI_Tasador">
+      <Parameter Name="dnNumTasador" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelParamHipotecario">
+      <Parameter Name="dcCodProducto" Mode="In" Type="String" />
+      <Parameter Name="dcCodMoneda" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelParamLineaCredito">
+      <Parameter Name="CodLineaCredito" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelParamLineaCreditoDe">
+      <Parameter Name="CodLineaCredito" Mode="In" Type="Int32" />
+      <Parameter Name="PuntajeInicial" Mode="In" Type="Decimal" />
+      <Parameter Name="PuntajeFinal" Mode="In" Type="Decimal" />
+      <Parameter Name="IngresoBrutoInicial" Mode="In" Type="Decimal" />
+      <Parameter Name="IngresoBrutoFinal" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelParamLineaCreditoOP">
+      <Parameter Name="CodLineaCredito" Mode="In" Type="Int32" />
+      <Parameter Name="CodRelObjInves" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelParamMontoMaximo">
+      <Parameter Name="CodRelObjInves" Mode="In" Type="Int32" />
+      <Parameter Name="CodMoneda" Mode="In" Type="String" />
+      <Parameter Name="Plazo" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelParamMontoMinimo">
+      <Parameter Name="CodRelObjInves" Mode="In" Type="Int32" />
+      <Parameter Name="CodMoneda" Mode="In" Type="String" />
+      <Parameter Name="Plazo" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelParamPlazo">
+      <Parameter Name="CodRelObjInves" Mode="In" Type="Int32" />
+      <Parameter Name="Plazo" Mode="In" Type="Int32" />
+      <Parameter Name="ProductoHost" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelParamProductoHost">
+      <Parameter Name="CodRelObjInves" Mode="In" Type="Int32" />
+      <Parameter Name="Plazo" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapIngCampanaViaBCP">
+      <Parameter Name="fcCodProducto" Mode="In" Type="String" />
+      <Parameter Name="dcDescripcion" Mode="In" Type="String" />
+      <Parameter Name="dcIndicadorDesactivada" Mode="In" Type="String" />
+      <Parameter Name="CodCampanaHeredaVia" Mode="In" Type="String" />
+      <Parameter Name="CodCampanaHeredaNor" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapIngComportamiento1" ReturnType="Collection(Int32)">
+      <Parameter Name="NombreObjInves" Mode="In" Type="String" />
+      <Parameter Name="CodTipoEntidad" Mode="In" Type="String" />
+      <Parameter Name="CodTipoRelacion" Mode="In" Type="String" />
+      <Parameter Name="CodRelacion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapIngComportamiento2">
+      <Parameter Name="CodReglaCondicion" Mode="In" Type="Int32" />
+      <Parameter Name="CodTipoEntidad" Mode="In" Type="String" />
+      <Parameter Name="CodCampo" Mode="In" Type="String" />
+      <Parameter Name="CodOperador" Mode="In" Type="String" />
+      <Parameter Name="Valor" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapIngCond" ReturnType="Collection(Int32)">
+      <Parameter Name="CodRegla" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapIngCondicionDetalle" ReturnType="Collection(Decimal)">
+      <Parameter Name="CodReglaCondicion" Mode="In" Type="Int32" />
+      <Parameter Name="CodEntidad" Mode="In" Type="String" />
+      <Parameter Name="CodCampo" Mode="In" Type="String" />
+      <Parameter Name="CodOperador" Mode="In" Type="String" />
+      <Parameter Name="Valor" Mode="In" Type="String" />
+      <Parameter Name="CodOperadorLogico" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapIngControlOperativo" ReturnType="Collection(Int32)">
+      <Parameter Name="NombreObjInves" Mode="In" Type="String" />
+      <Parameter Name="CodTipoEntidad" Mode="In" Type="String" />
+      <Parameter Name="CodEntidad" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapIngDecision">
+      <Parameter Name="CodReglaCondicion" Mode="In" Type="Int32" />
+      <Parameter Name="CodEntidad" Mode="In" Type="String" />
+      <Parameter Name="CodCampo" Mode="In" Type="String" />
+      <Parameter Name="CodOperador" Mode="In" Type="String" />
+      <Parameter Name="Valor" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapIngParametros" ReturnType="Collection(Decimal)">
+      <Parameter Name="CodRegla" Mode="In" Type="Int32" />
+      <Parameter Name="CodEntidad" Mode="In" Type="String" />
+      <Parameter Name="CodCampo" Mode="In" Type="String" />
+      <Parameter Name="Valor" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapIngRegla" ReturnType="Collection(Decimal)">
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+      <Parameter Name="CodTipoRegla" Mode="In" Type="String" />
+      <Parameter Name="CodSubTipoRegla" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapIngReglaCondicionDet" ReturnType="Collection(Decimal)">
+      <Parameter Name="CodReglaCondicion" Mode="In" Type="Int32" />
+      <Parameter Name="CodEntidad" Mode="In" Type="String" />
+      <Parameter Name="CodCampo" Mode="In" Type="String" />
+      <Parameter Name="CodOperador" Mode="In" Type="String" />
+      <Parameter Name="Valor" Mode="In" Type="String" />
+      <Parameter Name="CodOperadorLogico" Mode="In" Type="String" />
+      <Parameter Name="CodTipoDato" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsPI_Estudio">
+      <Parameter Name="dnNumEstudio" Mode="In" Type="Int32" />
+      <Parameter Name="dcDesEstudio" Mode="In" Type="String" />
+      <Parameter Name="dcDirEstudio" Mode="In" Type="String" />
+      <Parameter Name="dcTelEstudio" Mode="In" Type="String" />
+      <Parameter Name="dcDesPersonaContacto" Mode="In" Type="String" />
+      <Parameter Name="dcDirCorreoEstudio" Mode="In" Type="String" />
+      <Parameter Name="chrUsuario" Mode="In" Type="String" />
+      <Parameter Name="dcIndicadorActivo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsPI_Notaria">
+      <Parameter Name="dnNumNotaria" Mode="In" Type="Int32" />
+      <Parameter Name="dcDesNotaria" Mode="In" Type="String" />
+      <Parameter Name="dcDirNotaria" Mode="In" Type="String" />
+      <Parameter Name="dcTelNotaria" Mode="In" Type="String" />
+      <Parameter Name="dcDesPersonaContacto" Mode="In" Type="String" />
+      <Parameter Name="dcCodNotariaConsist" Mode="In" Type="String" />
+      <Parameter Name="chrUsuario" Mode="In" Type="String" />
+      <Parameter Name="dcIndicadorActivo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsPI_Tasador">
+      <Parameter Name="dnNumTasador" Mode="In" Type="Int32" />
+      <Parameter Name="dcDesTasador" Mode="In" Type="String" />
+      <Parameter Name="dcDirTasador" Mode="In" Type="String" />
+      <Parameter Name="dcTelTasador" Mode="In" Type="String" />
+      <Parameter Name="dcDirCorreoTasador" Mode="In" Type="String" />
+      <Parameter Name="chrUsuario" Mode="In" Type="String" />
+      <Parameter Name="dcIndicadorActivoAS" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsParamHipotecario">
+      <Parameter Name="dcCodProducto" Mode="In" Type="String" />
+      <Parameter Name="dcCodMoneda" Mode="In" Type="String" />
+      <Parameter Name="dnNumPlazoMedio" Mode="In" Type="Int32" />
+      <Parameter Name="dnNumPlazoMaximo" Mode="In" Type="Int32" />
+      <Parameter Name="dnTasaSeguroVivienda" Mode="In" Type="Decimal" />
+      <Parameter Name="dnTasaEfectiva" Mode="In" Type="Decimal" />
+      <Parameter Name="dmMonPortesMensual" Mode="In" Type="Decimal" />
+      <Parameter Name="dmMonMaximo" Mode="In" Type="Decimal" />
+      <Parameter Name="dmMonMinimo" Mode="In" Type="Decimal" />
+      <Parameter Name="dcCodUsuarioAuditoria" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsParamLineaCredito" ReturnType="Collection(Int32)">
+      <Parameter Name="Descripcion" Mode="In" Type="String" />
+      <Parameter Name="IndRegistroActivo" Mode="In" Type="String" />
+      <Parameter Name="TipoCruce" Mode="In" Type="String" />
+      <Parameter Name="IndicadorMasivo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsParamLineaCreditoDe" ReturnType="Collection(String)">
+      <Parameter Name="CodLineaCredito" Mode="In" Type="Int32" />
+      <Parameter Name="PuntajeInicial" Mode="In" Type="Decimal" />
+      <Parameter Name="PuntajeFinal" Mode="In" Type="Decimal" />
+      <Parameter Name="IngresoBrutoInicial" Mode="In" Type="Decimal" />
+      <Parameter Name="IngresoBrutoFinal" Mode="In" Type="Decimal" />
+      <Parameter Name="MontoLineaCredito" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsParamLineaCreditoOP" ReturnType="Collection(String)">
+      <Parameter Name="CodLineaCredito" Mode="In" Type="Int32" />
+      <Parameter Name="CodRelObjInves" Mode="In" Type="Int32" />
+      <Parameter Name="CodOpcionPago" Mode="In" Type="String" />
+      <Parameter Name="IndicadorMasivo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsParamMontoMaximo">
+      <Parameter Name="CodRelObjInves" Mode="In" Type="Int32" />
+      <Parameter Name="CodMoneda" Mode="In" Type="String" />
+      <Parameter Name="Plazo" Mode="In" Type="Int32" />
+      <Parameter Name="MontoMaximo" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsParamMontoMinimo">
+      <Parameter Name="CodRelObjInves" Mode="In" Type="Int32" />
+      <Parameter Name="CodMoneda" Mode="In" Type="String" />
+      <Parameter Name="Plazo" Mode="In" Type="Int32" />
+      <Parameter Name="MontoMinimo" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsParamPlazo">
+      <Parameter Name="CodRelObjInves" Mode="In" Type="Int32" />
+      <Parameter Name="Plazo" Mode="In" Type="Int32" />
+      <Parameter Name="ProductoHost" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelCondicionVP">
+      <Parameter Name="CodTipoCredito" Mode="In" Type="String" />
+      <Parameter Name="CodVPSegmento" Mode="In" Type="String" />
+      <Parameter Name="Afiliacion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelDiasPago">
+      <Parameter Name="CodRelObjInves" Mode="In" Type="Int32" />
+      <Parameter Name="DiasPago" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelDocumento">
+      <Parameter Name="pcCodDatosDocumento" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelEmpresaPermitida">
+      <Parameter Name="dcRUC" Mode="In" Type="String" />
+      <Parameter Name="dcProceso" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelEntidadFinanciera">
+      <Parameter Name="pnCodEntidad" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelFraudes">
+      <Parameter Name="CodFraude" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelPI_Estudio">
+      <Parameter Name="dnNumEstudio" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelParamTasa">
+      <Parameter Name="CodRelObjInves" Mode="In" Type="Int32" />
+      <Parameter Name="CodMoneda" Mode="In" Type="String" />
+      <Parameter Name="Opcion" Mode="In" Type="String" />
+      <Parameter Name="PuntajeInicial" Mode="In" Type="Decimal" />
+      <Parameter Name="PuntajeFinal" Mode="In" Type="Decimal" />
+      <Parameter Name="TipoTasa" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelPerfilInfocorp">
+      <Parameter Name="dcPerfil" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelPeriodoGracia">
+      <Parameter Name="CodRelObjInves" Mode="In" Type="Int32" />
+      <Parameter Name="PeriodoGracia" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsVersionTablasMant">
+      <Parameter Name="pnCodTabla" Mode="InOut" Type="Int32" />
+      <Parameter Name="dcNombre" Mode="In" Type="String" />
+      <Parameter Name="ddVersion" Mode="In" Type="DateTime" />
+      <Parameter Name="dcStoredProcedure" Mode="In" Type="String" />
+      <Parameter Name="dbParametros" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModTarjetaEntidad">
+      <Parameter Name="pnCodEntidad" Mode="In" Type="Int32" />
+      <Parameter Name="pnCodTarjeta" Mode="In" Type="Int32" />
+      <Parameter Name="dcDescTarjeta" Mode="In" Type="String" />
+      <Parameter Name="dcCodProducto" Mode="In" Type="String" />
+      <Parameter Name="dcEstado" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModUserCode6">
+      <Parameter Name="ClienteConRuc" Mode="In" Type="String" />
+      <Parameter Name="SeguroCrediticio" Mode="In" Type="String" />
+      <Parameter Name="ClienteConGarantias" Mode="In" Type="String" />
+      <Parameter Name="IndicadorBloqueoLinea" Mode="In" Type="String" />
+      <Parameter Name="UserCode6" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModUsuarioCredito">
+      <Parameter Name="NombreUsuario" Mode="In" Type="String" />
+      <Parameter Name="IndicadorRegistroActivo" Mode="In" Type="String" />
+      <Parameter Name="CodInfocorpVerif" Mode="In" Type="String" />
+      <Parameter Name="PerfilUsuario" Mode="In" Type="Int32" />
+      <Parameter Name="CodNivelUsuario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModVersionTablasMant">
+      <Parameter Name="pnCodTabla" Mode="In" Type="Int32" />
+      <Parameter Name="dcNombre" Mode="In" Type="String" />
+      <Parameter Name="ddVersion" Mode="In" Type="DateTime" />
+      <Parameter Name="dcStoredProcedure" Mode="In" Type="String" />
+      <Parameter Name="dbParametros" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModificarCutoff">
+      <Parameter Name="pcCodCampana" Mode="In" Type="String" />
+      <Parameter Name="pnValor" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapModificarProducto">
+      <Parameter Name="pcCodProducto" Mode="In" Type="String" />
+      <Parameter Name="dcNombreProducto" Mode="In" Type="String" />
+      <Parameter Name="pcDiasPago" Mode="In" Type="String" />
+      <Parameter Name="pcMoneda" Mode="In" Type="String" />
+      <Parameter Name="pcMonedaDefault" Mode="In" Type="String" />
+      <Parameter Name="pcValorALS" Mode="In" Type="String" />
+      <Parameter Name="pcValidaCta" Mode="In" Type="String" />
+      <Parameter Name="pcValidaPlazo" Mode="In" Type="String" />
+      <Parameter Name="pcValidaPago" Mode="In" Type="String" />
+      <Parameter Name="pcValidaDesem" Mode="In" Type="String" />
+      <Parameter Name="pnCanal" Mode="In" Type="Int32" />
+      <Parameter Name="pcDescEnvio" Mode="In" Type="String" />
+      <Parameter Name="pcTipoCuenta" Mode="In" Type="String" />
+      <Parameter Name="pcNroCuenta" Mode="In" Type="String" />
+      <Parameter Name="pcFlagMiVivienda" Mode="In" Type="String" />
+      <Parameter Name="pcFlagValorConstr" Mode="In" Type="String" />
+      <Parameter Name="pcFlagAmpliacion" Mode="In" Type="String" />
+      <Parameter Name="pcModalidad" Mode="In" Type="String" />
+      <Parameter Name="dcCardholder" Mode="In" Type="String" />
+      <Parameter Name="dcEsquema" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapObtenerCutoff" ReturnType="Collection(BD_MICREDITOModel.usp_MapObtenerCutoff_Result)">
+      <Parameter Name="pcCodCampana" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapReglasCampanaConyuge">
+      <Parameter Name="CodCampanna" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsEntidadFinanciera">
+      <Parameter Name="pnCodEntidad" Mode="In" Type="Int32" />
+      <Parameter Name="dcDescEntidad" Mode="In" Type="String" />
+      <Parameter Name="dcEstado" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsFraudes" ReturnType="Collection(Int32)">
+      <Parameter Name="TipoIDC" Mode="In" Type="String" />
+      <Parameter Name="NumIDC" Mode="In" Type="String" />
+      <Parameter Name="ApellidoPaterno" Mode="In" Type="String" />
+      <Parameter Name="ApellidoMaterno" Mode="In" Type="String" />
+      <Parameter Name="Nombres" Mode="In" Type="String" />
+      <Parameter Name="Direccion" Mode="In" Type="String" />
+      <Parameter Name="CodLocalidad" Mode="In" Type="String" />
+      <Parameter Name="Telefono" Mode="In" Type="String" />
+      <Parameter Name="Empleador" Mode="In" Type="String" />
+      <Parameter Name="Observacion" Mode="In" Type="String" />
+      <Parameter Name="Activo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsParamProductoHost">
+      <Parameter Name="CodRelObjInves" Mode="In" Type="Int32" />
+      <Parameter Name="Plazo" Mode="In" Type="Int32" />
+      <Parameter Name="ProductoHost" Mode="In" Type="String" />
+      <Parameter Name="CodALSProductoHost" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsParamTasa" ReturnType="Collection(String)">
+      <Parameter Name="CodRelObjInves" Mode="In" Type="Int32" />
+      <Parameter Name="CodMoneda" Mode="In" Type="String" />
+      <Parameter Name="Opcion" Mode="In" Type="String" />
+      <Parameter Name="IndicadorBancaExclusiva" Mode="In" Type="String" />
+      <Parameter Name="PuntajeInicial" Mode="In" Type="Decimal" />
+      <Parameter Name="PuntajeFinal" Mode="In" Type="Decimal" />
+      <Parameter Name="Tasa" Mode="In" Type="Decimal" />
+      <Parameter Name="IndPorDefecto" Mode="In" Type="String" />
+      <Parameter Name="CodIndiceTasa" Mode="In" Type="String" />
+      <Parameter Name="CodTipoTasa" Mode="In" Type="String" />
+      <Parameter Name="PCT_ID" Mode="In" Type="String" />
+      <Parameter Name="Pricing_Ctrl" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsPerfilInfocorp">
+      <Parameter Name="dcPerfil" Mode="In" Type="String" />
+      <Parameter Name="dcDescripcion" Mode="In" Type="String" />
+      <Parameter Name="dcIndicadorActivo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsPeriodoGracia">
+      <Parameter Name="CodRelObjInves" Mode="In" Type="Int32" />
+      <Parameter Name="PeriodoGracia" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsRelObjInvAutonomia">
+      <Parameter Name="NombreUsuario" Mode="In" Type="String" />
+      <Parameter Name="RangoAniosPlazoMenor" Mode="In" Type="Int32" />
+      <Parameter Name="RangoAniosPlazoMayor" Mode="In" Type="Int32" />
+      <Parameter Name="IndicadorGarantia" Mode="In" Type="String" />
+      <Parameter Name="MontoLimiteAprobacion" Mode="In" Type="Decimal" />
+      <Parameter Name="NombreUsuarioSuperior" Mode="In" Type="String" />
+      <Parameter Name="Activo" Mode="In" Type="String" />
+      <Parameter Name="TipoSolicitud" Mode="In" Type="String" />
+      <Parameter Name="CodPRoducto" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsTarjetaEntidad">
+      <Parameter Name="pnCodEntidad" Mode="In" Type="Int32" />
+      <Parameter Name="pnCodTarjeta" Mode="In" Type="Int32" />
+      <Parameter Name="dcDescTarjeta" Mode="In" Type="String" />
+      <Parameter Name="dcCodProducto" Mode="In" Type="String" />
+      <Parameter Name="dcEstado" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsTipoCambio">
+      <Parameter Name="Monto" Mode="In" Type="Decimal" />
+      <Parameter Name="Fecha" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsUsuarioCredito" ReturnType="Collection(String)">
+      <Parameter Name="NombreUsuario" Mode="In" Type="String" />
+      <Parameter Name="PerfilUsuario" Mode="In" Type="Int32" />
+      <Parameter Name="CodNivelUsuario" Mode="In" Type="String" />
+      <Parameter Name="CodInfocorpVerif" Mode="In" Type="String" />
+      <Parameter Name="IndicadorRegistroActivo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapExisteProducto" ReturnType="Collection(String)">
+      <Parameter Name="dcDescripcion" Mode="In" Type="String" />
+      <Parameter Name="CodProductoHost" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapFijaMontosMaximos">
+      <Parameter Name="chrCodProducto" Mode="In" Type="String" />
+      <Parameter Name="chrCodMoneda" Mode="In" Type="String" />
+      <Parameter Name="mnyMonto" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapFijaMontosMinimos">
+      <Parameter Name="chrCodProducto" Mode="In" Type="String" />
+      <Parameter Name="chrCodMoneda" Mode="In" Type="String" />
+      <Parameter Name="mnyMonto" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapIngCampanaPorDefecto">
+      <Parameter Name="CodCampana" Mode="In" Type="String" />
+      <Parameter Name="TipoSolicitud" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapIngRelObjInvesRegla">
+      <Parameter Name="CodRelObjInves" Mode="In" Type="Int32" />
+      <Parameter Name="CodRegla" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapIngRelacionObjInves" ReturnType="Collection(Int32)">
+      <Parameter Name="CodRelacion" Mode="In" Type="String" />
+      <Parameter Name="CodTipoRelacion" Mode="In" Type="String" />
+      <Parameter Name="NombreObjInves" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsCondicionVP">
+      <Parameter Name="CodTipoCredito" Mode="In" Type="String" />
+      <Parameter Name="CodVPSegmento" Mode="In" Type="String" />
+      <Parameter Name="Afiliacion" Mode="In" Type="String" />
+      <Parameter Name="PCT_ID" Mode="In" Type="String" />
+      <Parameter Name="Pricing_Ctrl" Mode="In" Type="String" />
+      <Parameter Name="pmLineaCredito" Mode="In" Type="Decimal" />
+      <Parameter Name="CodCampana" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsDiasPago">
+      <Parameter Name="CodRelObjInves" Mode="In" Type="Int32" />
+      <Parameter Name="DiasPago" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsDocumento">
+      <Parameter Name="pcCodDatosDocumento" Mode="In" Type="String" />
+      <Parameter Name="dcDescripcion" Mode="In" Type="String" />
+      <Parameter Name="dcCodTipoPersona" Mode="In" Type="String" />
+      <Parameter Name="dcCodTipoCampoCorreccion" Mode="In" Type="String" />
+      <Parameter Name="dcCodSituacionCorreccion" Mode="In" Type="String" />
+      <Parameter Name="dcCodTipoDatoDocumento" Mode="In" Type="String" />
+      <Parameter Name="dcMensajeAdicionalInternet" Mode="In" Type="String" />
+      <Parameter Name="dcNuevaDescripcion" Mode="In" Type="String" />
+      <Parameter Name="dcCodigoPadre" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapInsEmpresaPermitida">
+      <Parameter Name="dcRUC" Mode="In" Type="String" />
+      <Parameter Name="dcProceso" Mode="In" Type="String" />
+      <Parameter Name="dcIndicadorValidez" Mode="In" Type="String" />
+      <Parameter Name="dcIndicadorActivo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapCrearProductoTN">
+      <Parameter Name="pcCodProductoHost" Mode="In" Type="String" />
+      <Parameter Name="dcNombreProducto" Mode="In" Type="String" />
+      <Parameter Name="pcCodProductoBase" Mode="In" Type="String" />
+      <Parameter Name="pcDiasPago" Mode="In" Type="String" />
+      <Parameter Name="pcMoneda" Mode="In" Type="String" />
+      <Parameter Name="pcMonedaDefault" Mode="In" Type="String" />
+      <Parameter Name="dcEsquema" Mode="In" Type="String" />
+      <Parameter Name="pcValidaCta" Mode="In" Type="String" />
+      <Parameter Name="pcValidaPago" Mode="In" Type="String" />
+      <Parameter Name="pnCanal" Mode="In" Type="Int32" />
+      <Parameter Name="pcDescEnvio" Mode="In" Type="String" />
+      <Parameter Name="dcCardholder" Mode="In" Type="String" />
+      <Parameter Name="dcPCTID" Mode="In" Type="String" />
+      <Parameter Name="fcCodProducto" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelRegla" ReturnType="Collection(String)">
+      <Parameter Name="CodRegla" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelReglaCondicion">
+      <Parameter Name="CodReglaCondicion" Mode="In" Type="Int32" />
+      <Parameter Name="CodEntidad" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelReglaCondicionDet">
+      <Parameter Name="CodReglaCondicionDetalle" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelRelObjInvAutonomia">
+      <Parameter Name="CodRelObjInvesAutonomia" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelTarjetaEntidad">
+      <Parameter Name="pnCodEntidad" Mode="In" Type="Int32" />
+      <Parameter Name="pnCodTarjeta" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelUsuarioCredito" ReturnType="Collection(String)">
+      <Parameter Name="NombreUsuario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapDelVersionTablasMant">
+      <Parameter Name="pnCodTabla" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapEliDecision">
+      <Parameter Name="CodReglaCondicionDecision" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapEliParametros">
+      <Parameter Name="CodReglaParametro" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapEliminaProducto" ReturnType="Collection(String)">
+      <Parameter Name="pcCodProducto" Mode="In" Type="String" />
+      <Parameter Name="intResultado" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapUpdGastosNotariales">
+      <Parameter Name="CodRelObjInves" Mode="In" Type="Int32" />
+      <Parameter Name="GastosNotariales" Mode="In" Type="Decimal" />
+      <Parameter Name="CodMoneda" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapUpdSegDes">
+      <Parameter Name="Producto" Mode="In" Type="String" />
+      <Parameter Name="CodMoneda" Mode="In" Type="String" />
+      <Parameter Name="SegDes" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapUpdTipoSeguroBien">
+      <Parameter Name="CodProducto" Mode="In" Type="String" />
+      <Parameter Name="TasaSeguro" Mode="In" Type="Decimal" />
+      <Parameter Name="CodTipoSeguro" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_AdmPar_Sel_VPSEGMENTO" ReturnType="Collection(BD_MICREDITOModel.sp_AdmPar_Sel_VPSEGMENTO_Result)">
+      <Parameter Name="CodVPSegmento" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MAPSelJerarquiaEmpleado" ReturnType="Collection(BD_MICREDITOModel.usp_MAPSelJerarquiaEmpleado_Result)" />
+    <FunctionImport Name="usp_SelEmpleadosDisponibles" ReturnType="Collection(BD_MICREDITOModel.usp_SelEmpleadosDisponibles_Result)">
+      <Parameter Name="P_TEAM_ID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_InsEmpleadoEquipo">
+      <Parameter Name="P_TEAM_ID" Mode="In" Type="String" />
+      <Parameter Name="P_USER_ID" Mode="In" Type="String" />
+      <Parameter Name="P_TEAM_LEDR" Mode="In" Type="String" />
+      <Parameter Name="P_ACTIVE_FLAG" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="usp_SelEmpleados" ReturnType="Collection(BD_MICREDITOModel.usp_SelEmpleados_Result)" />
+    <FunctionImport Name="usp_SelEmpleadosEquipo" ReturnType="Collection(BD_MICREDITOModel.usp_SelEmpleadosEquipo_Result)">
+      <Parameter Name="P_TEAM_ID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_SelDetalleEquipo" ReturnType="Collection(BD_MICREDITOModel.usp_SelDetalleEquipo_Result)">
+      <Parameter Name="P_TEAM_ID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_SelDettalleEmpleado" ReturnType="Collection(BD_MICREDITOModel.usp_SelDettalleEmpleado_Result)">
+      <Parameter Name="P_USER_ID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_InsEmpleado">
+      <Parameter Name="P_USER_ID" Mode="In" Type="String" />
+      <Parameter Name="P_FIRST_NAME" Mode="In" Type="String" />
+      <Parameter Name="P_MIDL_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_LAST_NAME" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_InsEquipo">
+      <Parameter Name="P_TEAM_ID" Mode="In" Type="String" />
+      <Parameter Name="P_TEAM_NAME" Mode="In" Type="String" />
+      <Parameter Name="P_PARENT_TEAM_ID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spMapObtenerTipoIngreso" ReturnType="Collection(String)">
+      <Parameter Name="CodCampanna" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spMapActualizarTipoIngreso">
+      <Parameter Name="CodCampanna" Mode="In" Type="String" />
+      <Parameter Name="Valor" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelEstadoSolicitudCondi" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelEstadoSolicitudCondi_Result1)">
+      <Parameter Name="pcCodEstadoSolicitud" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapObtenerProducto" ReturnType="Collection(BD_MICREDITOModel.usp_MapObtenerProducto_Result)">
+      <Parameter Name="pcCodProducto" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_SEL_CARGO" ReturnType="Collection(BD_MICREDITOModel.SP_SEL_CARGO_Result)" />
+    <FunctionImport Name="SP_SEL_LOCALIDAD" ReturnType="Collection(BD_MICREDITOModel.SP_SEL_LOCALIDAD_Result)" />
+    <FunctionImport Name="usp_MapSelParametrosGeneral" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelParametrosGeneral_Result)">
+      <Parameter Name="NomObjInves" Mode="In" Type="String" />
+      <Parameter Name="CodTipoEntidad" Mode="In" Type="String" />
+      <Parameter Name="CodEntidad" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelProductos" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelProductos_Result)" />
+    <FunctionImport Name="usp_MapGetParametros" ReturnType="Collection(BD_MICREDITOModel.usp_MapGetParametros_Result)">
+      <Parameter Name="COD_TIPOPARAMETRO" Mode="In" Type="Int32" />
+      <Parameter Name="COD_PRODUCTO" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapGetTipoParametro" ReturnType="Collection(BD_MICREDITOModel.usp_MapGetTipoParametro_Result)" />
+    <FunctionImport Name="usp_MapUpdParametro">
+      <Parameter Name="CodParametro" Mode="In" Type="Int32" />
+      <Parameter Name="ValorMaximo" Mode="In" Type="String" />
+      <Parameter Name="ValorMinimo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_MapSelPerfil" ReturnType="Collection(BD_MICREDITOModel.usp_MapSelPerfil_Result)" />
+    <FunctionImport Name="TasaSolicitud_G" ReturnType="Collection(BD_MICREDITOModel.TasaSolicitud_G_Result)">
+      <Parameter Name="TipoSolicitud" Mode="In" Type="String" />
+      <Parameter Name="Producto" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="TasaSolicitud_U">
+      <Parameter Name="Tipo_solicitud" Mode="In" Type="String" />
+      <Parameter Name="Producto" Mode="In" Type="String" />
+      <Parameter Name="Tiposeguro" Mode="In" Type="String" />
+      <Parameter Name="Tasa" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="INDICETRE_Add">
+      <Parameter Name="INDICE_CH" Mode="In" Type="String" />
+      <Parameter Name="INDICADORDESACTIVADA_CH" Mode="In" Type="String" />
+      <Parameter Name="SPREADTREE_DC" Mode="In" Type="Decimal" />
+      <Parameter Name="TASA_DC" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="INDICETRE_Delete">
+      <Parameter Name="INDICE_CH" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="INDICETRE_List" ReturnType="Collection(BD_MICREDITOModel.INDICETRE_List_Result)" />
+    <FunctionImport Name="INDICETRE_Update">
+      <Parameter Name="INDICE_CH" Mode="In" Type="String" />
+      <Parameter Name="INDICADORDESACTIVADA_CH" Mode="In" Type="String" />
+      <Parameter Name="SPREADTREE_DC" Mode="In" Type="Decimal" />
+      <Parameter Name="TASA_DC" Mode="In" Type="Decimal" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="usp_MapSelVersionTablasMant_Result">
+    <Property Type="Int32" Name="pnCodTabla" Nullable="false" />
+    <Property Type="String" Name="dcNombre" Nullable="false" MaxLength="30" />
+    <Property Type="DateTime" Name="ddVersion" Nullable="false" Precision="23" />
+    <Property Type="String" Name="dcStoredProcedure" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="dbParametros" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelUserCode6_Result">
+    <Property Type="String" Name="ClienteConRuc" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="SeguroCrediticio" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="ClienteConGarantias" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="IndicadorBloqueoLinea" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="UserCode6" Nullable="true" MaxLength="2" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelUsuarioCredito_Result">
+    <Property Type="String" Name="NombreUsuario" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="NombreCompleto" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="NivelUsuario" Nullable="false" MaxLength="40" />
+    <Property Type="String" Name="CodInfocorpVerif" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="IndicadorRegistroActivo" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="IndLogin" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="CodNivelUsuario" Nullable="false" MaxLength="2" />
+    <Property Type="Int32" Name="EXISTE" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelUsuarioSamNUC_Result">
+    <Property Type="String" Name="NombreUsuario" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="NombreCompleto" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Perfil" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="Descripcion" Nullable="false" MaxLength="40" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelPerfilCliente_Result">
+    <Property Type="Int32" Name="CodReglaCondicionDetalle" Nullable="false" />
+    <Property Type="String" Name="CodCampo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="CodOperador" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="Valor" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelPerfilInfocorp_Result">
+    <Property Type="String" Name="pcIdPerfil" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="dcDescripcion" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="dcIndicadorActivo" Nullable="false" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelPortesSeguroPorProducto_Result">
+    <Property Type="Int32" Name="CodRelObjInves" Nullable="false" />
+    <Property Type="String" Name="CodMoneda" Nullable="false" MaxLength="2" />
+    <Property Type="Decimal" Name="Portes" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="Seguro" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="GastosNotariales" Nullable="false" Precision="19" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelProducto_Result">
+    <Property Type="String" Name="pcCodProducto" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="fcCodTipoSolicitud" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="dcDescripcion" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="ddFechaIngreso" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="ddFechaModificacion" Nullable="true" Precision="23" />
+    <Property Type="String" Name="dcIndicadorRegistroActivo" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="dcTipoCreditoNegocio" Nullable="true" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelProductoCanal_Result">
+    <Property Type="String" Name="pcCodProducto" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="dcDescripcion" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelReglaCondicionDet_Result">
+    <Property Type="Int32" Name="CodReglaCondicion" Nullable="false" />
+    <Property Type="Int32" Name="CodReglaCondicionDetalle" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CodOperador" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="Valor" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CodOperadorLogico" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="CodCampo" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="CodTipoDato" Nullable="true" MaxLength="2" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelReglasxPolRel_Result">
+    <Property Type="Int32" Name="CodRegla" Nullable="false" />
+    <Property Type="Int32" Name="CodRelObjInves" Nullable="false" />
+    <Property Type="String" Name="NombreRegla" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelAceptacionEspecialDe_Result">
+    <Property Type="Int32" Name="RangoAniosPlazoMenor" Nullable="false" />
+    <Property Type="Int32" Name="RangoAniosPlazoMayor" Nullable="false" />
+    <Property Type="String" Name="IndicadorGarantia" Nullable="false" MaxLength="1" />
+    <Property Type="Decimal" Name="MontoLimiteAprobacion" Nullable="false" Precision="19" />
+    <Property Type="String" Name="ApellidoPaterno" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="ApellidoMaterno" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombres" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Cargo" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Dominio" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="CodCargo" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelAceptacionEspecialLi_Result">
+    <Property Type="String" Name="CodUsuarioSAPE" Nullable="false" MaxLength="8" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="93" />
+    <Property Type="String" Name="Cargo" Nullable="false" MaxLength="40" />
+    <Property Type="String" Name="Activo" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="Dominio" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="ApellidoPaterno" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="ApellidoMaterno" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombres" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelAsignacionBonus_Result">
+    <Property Type="String" Name="CodCreditoCampanna" Nullable="false" MaxLength="3" />
+    <Property Type="Decimal" Name="PuntosBonus" Nullable="false" Precision="19" />
+    <Property Type="String" Name="Beneficiario" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="Activo_Desactivo" Nullable="true" MaxLength="1" />
+    <Property Type="DateTime" Name="Fecha_Inicio" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="Fecha_Fin" Nullable="false" Precision="23" />
+    <Property Type="String" Name="Usr_Create" Nullable="true" MaxLength="15" />
+    <Property Type="DateTime" Name="Date_Create" Nullable="true" Precision="23" />
+    <Property Type="String" Name="Usr_Update" Nullable="true" MaxLength="15" />
+    <Property Type="DateTime" Name="Date_Update" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelBanca_Result">
+    <Property Type="String" Name="CodBanca" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Sistema" Nullable="true" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelCEM_Result">
+    <Property Type="Int32" Name="CodReglaCondicionDetalle" Nullable="false" />
+    <Property Type="String" Name="ValorCondicion" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="CodReglaCondicionDecision" Nullable="false" />
+    <Property Type="String" Name="ValorDecision" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelCampana_Result">
+    <Property Type="String" Name="pcCodCampana" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="fcCodProducto" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="dcCodCampanaHost" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="dcDescripcion" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="dcIndicadorDesactivada" Nullable="false" MaxLength="1" />
+    <Property Type="DateTime" Name="ddFechaIngreso" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="ddFechaModificacion" Nullable="true" Precision="23" />
+    <Property Type="String" Name="dcIndicadorRegistroActivo" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="CodTipoDiferencia" Nullable="true" MaxLength="1" />
+    <Property Type="DateTime" Name="ddFechaInicio" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="ddFechaFin" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelCampos_Result">
+    <Property Type="String" Name="CodCampo" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ObjNombre" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="Tipo" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="CodTipoDato" Nullable="true" MaxLength="2" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelCanal_Result">
+    <Property Type="Int32" Name="pnCodCanal" Nullable="false" />
+    <Property Type="String" Name="dcDescCanal" Nullable="false" MaxLength="32" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelComportamiento_Result">
+    <Property Type="Int32" Name="CodReglaCondicionDecision" Nullable="false" />
+    <Property Type="String" Name="CodCampo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="CodOperador" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="Valor" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelCondicion_Result">
+    <Property Type="String" Name="pcCodCondicion" Nullable="false" MaxLength="4" />
+    <Property Type="String" Name="dcDescripcion" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="dcIndicadorRegistroActivo" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="dcDescripcionConsulta" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="dcIndPermisoParaConsulta" Nullable="true" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelCondicionVP_Result">
+    <Property Type="String" Name="CodTipoCredito" Nullable="true" MaxLength="6" />
+    <Property Type="String" Name="CodVPSegmento" Nullable="true" MaxLength="3" />
+    <Property Type="String" Name="Afiliacion" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="PCT_ID" Nullable="true" MaxLength="3" />
+    <Property Type="String" Name="Pricing_Ctrl" Nullable="true" MaxLength="3" />
+    <Property Type="Decimal" Name="dmLineaCredito" Nullable="true" Precision="19" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelUserCode6_Result1">
+    <Property Type="String" Name="ClienteConRuc" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="SeguroCrediticio" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="ClienteConGarantias" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="IndicadorBloqueoLinea" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="UserCode6" Nullable="true" MaxLength="2" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelUsuarioCredito_Result1">
+    <Property Type="String" Name="NombreUsuario" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="NombreCompleto" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="NivelUsuario" Nullable="false" MaxLength="40" />
+    <Property Type="String" Name="CodInfocorpVerif" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="IndicadorRegistroActivo" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="IndLogin" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="CodNivelUsuario" Nullable="false" MaxLength="2" />
+    <Property Type="Int32" Name="EXISTE" Nullable="false" />
+    <Property Type="Int32" Name="Perfil" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelUsuarioSamNUC_Result1">
+    <Property Type="String" Name="NombreUsuario" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="NombreCompleto" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Perfil" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="Descripcion" Nullable="false" MaxLength="40" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelVersionTablasMant_Result1">
+    <Property Type="Int32" Name="pnCodTabla" Nullable="false" />
+    <Property Type="String" Name="dcNombre" Nullable="false" MaxLength="30" />
+    <Property Type="DateTime" Name="ddVersion" Nullable="false" Precision="23" />
+    <Property Type="String" Name="dcStoredProcedure" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="dbParametros" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelRelObjInvAutonomiaRe_Result">
+    <Property Type="String" Name="NombreUsuario" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="NombreCompleto" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Perfil" Nullable="false" MaxLength="2" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelSegmentacion_Result">
+    <Property Type="String" Name="CodVPSegmento" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="dcHabilitado" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="dcAfiliacion" Nullable="true" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelTarjetaEntidad_Result">
+    <Property Type="Int32" Name="pnCodEntidad" Nullable="false" />
+    <Property Type="Int32" Name="pnCodTarjetaEnt" Nullable="false" />
+    <Property Type="String" Name="dcDescTarjeta" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="dcEstado" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="pnCodProducto" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="dcDescProducto" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelTipoCambio_Result">
+    <Property Type="DateTime" Name="Fecha" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="Monto" Nullable="true" Precision="19" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelTipoSeguroBien_Result">
+    <Property Type="String" Name="dcDescripcion" Nullable="false" MaxLength="50" />
+    <Property Type="Decimal" Name="dnTasaSeguro" Nullable="false" Precision="19" />
+    <Property Type="String" Name="pcCodTipoSeguro" Nullable="false" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelTipoSolicitud_Result">
+    <Property Type="String" Name="pcCodTipoSolicitud" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="dcDescripcion" Nullable="false" MaxLength="30" />
+    <Property Type="DateTime" Name="ddFechaIngreso" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="ddFechaModificacion" Nullable="true" Precision="23" />
+    <Property Type="String" Name="dcIndicadorRegistroActivo" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="CodBanca" Nullable="true" MaxLength="2" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelTipoTasa_Result">
+    <Property Type="String" Name="dcDescripcion" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="pcCodTipoTasaEn" Nullable="true" MaxLength="2" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelPortesSeguroPorProducto_Result1">
+    <Property Type="Int32" Name="CodRelObjInves" Nullable="false" />
+    <Property Type="String" Name="CodMoneda" Nullable="false" MaxLength="2" />
+    <Property Type="Decimal" Name="Portes" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="Seguro" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="GastosNotariales" Nullable="false" Precision="19" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelProducto_Result1">
+    <Property Type="String" Name="pcCodProducto" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="fcCodTipoSolicitud" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="dcDescripcion" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="ddFechaIngreso" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="ddFechaModificacion" Nullable="true" Precision="23" />
+    <Property Type="String" Name="dcIndicadorRegistroActivo" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="dcTipoCreditoNegocio" Nullable="true" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelProductoCanal_Result1">
+    <Property Type="String" Name="pcCodProducto" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="dcDescripcion" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelReglaCondicionDet_Result1">
+    <Property Type="Int32" Name="CodReglaCondicion" Nullable="false" />
+    <Property Type="Int32" Name="CodReglaCondicionDetalle" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CodOperador" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="Valor" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CodOperadorLogico" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="CodCampo" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="CodTipoDato" Nullable="true" MaxLength="2" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelReglasxPolRel_Result1">
+    <Property Type="Int32" Name="CodRegla" Nullable="false" />
+    <Property Type="Int32" Name="CodRelObjInves" Nullable="false" />
+    <Property Type="String" Name="NombreRegla" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelRelObjInvAutonomia_Result">
+    <Property Type="Int32" Name="CodRelObjInvesAutonomia" Nullable="false" />
+    <Property Type="Int32" Name="RangoAniosPlazoMenor" Nullable="false" />
+    <Property Type="Int32" Name="RangoAniosPlazoMayor" Nullable="false" />
+    <Property Type="String" Name="IndicadorGarantia" Nullable="false" MaxLength="1" />
+    <Property Type="Decimal" Name="MontoLimiteAprobacion" Nullable="false" Precision="19" />
+    <Property Type="String" Name="Activo" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="NombreUsuarioSuperior" Nullable="false" MaxLength="15" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelRelObjInvAutonomiaRN_Result">
+    <Property Type="String" Name="NombreUsuario" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="NombreCompleto" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelEntidadObjInves_Result">
+    <Property Type="Int32" Name="CodObjInves" Nullable="true" />
+    <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="250" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelEstadoSolicitud_Result">
+    <Property Type="String" Name="pcCodEstadoSolicitud" Nullable="false" MaxLength="4" />
+    <Property Type="String" Name="dcDescripcion" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="dcIndicadorRegistroActivo" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="dcAsignadoPorSistema" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="dcDescripcionConsulta" Nullable="true" MaxLength="60" />
+    <Property Type="String" Name="dcCodEstadoConsulta" Nullable="true" MaxLength="4" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelEstadoSolicitudCondi_Result">
+    <Property Type="String" Name="pcCodCondicion" Nullable="false" MaxLength="4" />
+    <Property Type="String" Name="dcDescripcion" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="dcTipoCondicion" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="dcIndicadorRegistroActivo" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="pcCodEstadoSolicitud" Nullable="false" MaxLength="4" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelEstadoSolicitudJusti_Result">
+    <Property Type="String" Name="pcCodJustificacion" Nullable="false" MaxLength="4" />
+    <Property Type="String" Name="dcDescripcion" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="dcIndicadorRegistroActivo" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="pcCodEstadoSolicitud" Nullable="false" MaxLength="4" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelFinalidad_Result">
+    <Property Type="String" Name="pcCodHipotecarioFinalidad" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="dcDescripcion" Nullable="true" MaxLength="40" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelFinalidadCC_Result">
+    <Property Type="String" Name="pcCodFinalidad" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="dcDescripcion" Nullable="true" MaxLength="40" />
+    <Property Type="String" Name="fcCodProducto" Nullable="false" MaxLength="3" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelFraudePorCod_Result">
+    <Property Type="Int32" Name="CodFraude" Nullable="false" />
+    <Property Type="String" Name="Empleador" Nullable="true" MaxLength="40" />
+    <Property Type="String" Name="TipoIDC" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="NumIDC" Nullable="true" MaxLength="11" />
+    <Property Type="String" Name="ApellidoPaterno" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="ApellidoMaterno" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombres" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Direccion" Nullable="true" MaxLength="60" />
+    <Property Type="String" Name="CodLocalidad" Nullable="true" MaxLength="4" />
+    <Property Type="String" Name="DesLocalidad" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Telefono" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Observacion" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Activo" Nullable="false" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelFraudes_Result">
+    <Property Type="Int32" Name="CodFraude" Nullable="false" />
+    <Property Type="String" Name="Apellidos" Nullable="true" MaxLength="93" />
+    <Property Type="String" Name="Empleador" Nullable="true" MaxLength="40" />
+    <Property Type="String" Name="Observacion" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelParamLineaCreditoDet_Result">
+    <Property Type="Decimal" Name="PuntajeInicial" Nullable="false" Precision="18" Scale="4" />
+    <Property Type="Decimal" Name="PuntajeFinal" Nullable="false" Precision="18" Scale="4" />
+    <Property Type="Decimal" Name="IngresoBrutoInicial" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="IngresoBrutoFinal" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="MontoLineaCredito" Nullable="true" Precision="19" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelParamLineaCreditoOP_Result">
+    <Property Type="Int32" Name="CodRelObjInves" Nullable="false" />
+    <Property Type="String" Name="CodOpcionPago" Nullable="false" MaxLength="2" />
+    <Property Type="Int32" Name="CodLineaCredito" Nullable="false" />
+    <Property Type="String" Name="IndicadorMasivo" Nullable="true" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelParamProductoHost_Result">
+    <Property Type="Int32" Name="Plazo" Nullable="false" />
+    <Property Type="String" Name="ProductoHost" Nullable="true" MaxLength="6" />
+    <Property Type="String" Name="CodALSProductoHost" Nullable="true" MaxLength="6" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelParamTasas_Result">
+    <Property Type="String" Name="IndicadorBancaExclusiva" Nullable="false" MaxLength="1" />
+    <Property Type="Decimal" Name="PuntajeInicial" Nullable="true" Precision="18" Scale="4" />
+    <Property Type="Decimal" Name="PuntajeFinal" Nullable="true" Precision="18" Scale="4" />
+    <Property Type="Decimal" Name="Tasa" Nullable="true" Precision="18" Scale="4" />
+    <Property Type="String" Name="CodIndiceTasa" Nullable="true" MaxLength="3" />
+    <Property Type="String" Name="IndPorDefecto" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="CodMoneda" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="Opcion" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="PCT_ID" Nullable="true" MaxLength="3" />
+    <Property Type="String" Name="Pricing_Ctrl" Nullable="true" MaxLength="3" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelParamTransmision_Result">
+    <Property Type="String" Name="pcCodCampana" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="dcRequiereTransmision" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="dcRequiereActConsist" Nullable="false" MaxLength="1" />
+    <Property Type="Int32" Name="dcDiasEnvioCartasDenegacion" Nullable="false" />
+    <Property Type="DateTime" Name="ddFechaIngreso" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="ddFechaModificacion" Nullable="false" Precision="23" />
+    <Property Type="String" Name="dcRequiereEnvioCarta" Nullable="true" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelParametros_Result">
+    <Property Type="Int32" Name="CodReglaParametro" Nullable="false" />
+    <Property Type="String" Name="CodCampo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Valor" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="CodRegla" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelParametrosValores_Result">
+    <Property Type="String" Name="dcNombre" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="dcCodigo" Nullable="true" MaxLength="2" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelPerfilCliente_Result1">
+    <Property Type="Int32" Name="CodReglaCondicionDetalle" Nullable="false" />
+    <Property Type="String" Name="CodCampo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="CodOperador" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="Valor" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelPerfilInfocorp_Result1">
+    <Property Type="String" Name="pcIdPerfil" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="dcDescripcion" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="dcIndicadorActivo" Nullable="false" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelObjInvesCampo_Result">
+    <Property Type="String" Name="CodCampo" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Tipo" Nullable="true" MaxLength="10" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelObjInvesHijos_Result">
+    <Property Type="Int32" Name="CodObjInves" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelPI_Estudio_Result">
+    <Property Type="Int32" Name="dnNumEstudio" Nullable="false" />
+    <Property Type="String" Name="dcDesEstudio" Nullable="true" MaxLength="40" />
+    <Property Type="String" Name="dcDirEstudio" Nullable="true" MaxLength="60" />
+    <Property Type="String" Name="dcTelEstudio" Nullable="true" MaxLength="32" />
+    <Property Type="String" Name="dcDesPersonaContacto" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="dcDirCorreoEstudio" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="dcIndicadorActivo" Nullable="true" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelPI_Notaria_Result">
+    <Property Type="Int32" Name="dnNumNotaria" Nullable="false" />
+    <Property Type="String" Name="dcDesNotaria" Nullable="true" MaxLength="60" />
+    <Property Type="String" Name="dcDirNotaria" Nullable="true" MaxLength="60" />
+    <Property Type="String" Name="dcTelNotaria" Nullable="true" MaxLength="32" />
+    <Property Type="String" Name="dcDesPersonaContacto" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="dcCodNotariaConsist" Nullable="false" MaxLength="4" />
+    <Property Type="String" Name="dcIndicadorActivo" Nullable="true" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelPI_Tasador_Result">
+    <Property Type="Int32" Name="dnNumTasador" Nullable="false" />
+    <Property Type="String" Name="dcDesTasador" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="dcDirTasador" Nullable="true" MaxLength="60" />
+    <Property Type="String" Name="dcTelTasador" Nullable="true" MaxLength="32" />
+    <Property Type="String" Name="dcDirCorreoTasador" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="dcIndicadorActivo" Nullable="true" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelParamHipotecario_Result">
+    <Property Type="String" Name="dcCodProducto" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="dcCodMoneda" Nullable="false" MaxLength="2" />
+    <Property Type="Int32" Name="dnNumPlazoMedio" Nullable="true" />
+    <Property Type="Int32" Name="dnNumPlazoMaximo" Nullable="true" />
+    <Property Type="Decimal" Name="dnTasaSeguroVivienda" Nullable="true" Precision="18" Scale="4" />
+    <Property Type="Decimal" Name="dnTasaEfectiva" Nullable="true" Precision="18" Scale="4" />
+    <Property Type="Decimal" Name="dmMonPortesMensual" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="dmMonMaximo" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="dmMonMinimo" Nullable="true" Precision="19" />
+    <Property Type="DateTime" Name="ddFecAuditoria" Nullable="true" Precision="23" />
+    <Property Type="String" Name="dcCodUsuarioAuditoria" Nullable="true" MaxLength="15" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelParamLineaCredito_Result">
+    <Property Type="Int32" Name="CodLineaCredito" Nullable="false" />
+    <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="IndRegistroActivo" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="TipoCruce" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="IndicadorMasivo" Nullable="true" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelDocumento_Result">
+    <Property Type="String" Name="pcCodDatosDocumento" Nullable="false" MaxLength="4" />
+    <Property Type="String" Name="dcDescripcion" Nullable="false" MaxLength="120" />
+    <Property Type="String" Name="dcCodTipoPersona" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="dcCodTipoCampoCorreccion" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="dcCodSituacionCorreccion" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="dcCodTipoDatoDocumento" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="dcMensajeAdicionalInternet" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="dcNuevaDescripcion" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="dcCodigoPadre" Nullable="true" MaxLength="4" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelEmpresaPermitida_Result">
+    <Property Type="String" Name="dcRUC" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="dcIndicadorValidez" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="dcIndicadorActivo" Nullable="false" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelEntidadFinanciera_Result">
+    <Property Type="Int32" Name="pnCodEntidad" Nullable="false" />
+    <Property Type="String" Name="dcDescEntidad" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="dcEstado" Nullable="false" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelGastosNotariales_Result">
+    <Property Type="String" Name="dcDescripcion" Nullable="false" MaxLength="15" />
+    <Property Type="Decimal" Name="GastosNotariales" Nullable="false" Precision="19" />
+    <Property Type="String" Name="CodMoneda" Nullable="false" MaxLength="2" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelJustificacion_Result">
+    <Property Type="String" Name="pcCodJustificacion" Nullable="false" MaxLength="4" />
+    <Property Type="String" Name="dcDescripcion" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="dcIndicadorRegistroActivo" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="dcDescripcionConsulta" Nullable="true" MaxLength="255" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelMoneda_Result">
+    <Property Type="String" Name="pcCodMoneda" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="dcDescripcion" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="dcSimbolo" Nullable="false" MaxLength="3" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelMontoMaximo_Result">
+    <Property Type="String" Name="CodMoneda" Nullable="false" MaxLength="2" />
+    <Property Type="Int32" Name="Plazo" Nullable="false" />
+    <Property Type="Decimal" Name="MontoMaximo" Nullable="true" Precision="19" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelMontoMinimo_Result">
+    <Property Type="String" Name="CodMoneda" Nullable="false" MaxLength="2" />
+    <Property Type="Int32" Name="Plazo" Nullable="false" />
+    <Property Type="Decimal" Name="MontoMinimo" Nullable="true" Precision="19" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelNivelUsuario_Result">
+    <Property Type="String" Name="CodNivelUsuario" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="Descripcion" Nullable="false" MaxLength="40" />
+    <Property Type="DateTime" Name="FechaIngreso" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="FechaModificacion" Nullable="false" Precision="23" />
+    <Property Type="String" Name="IndicadorRegistroActivo" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="DescripcionConsulta" Nullable="true" MaxLength="40" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelCondicionVPxCampana_Result">
+    <Property Type="String" Name="fcCodProducto" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="pcCodCampana" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="CodTipoCredito" Nullable="true" MaxLength="6" />
+    <Property Type="String" Name="CodVPSegmento" Nullable="true" MaxLength="3" />
+    <Property Type="String" Name="Afiliacion" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="PCT_ID" Nullable="true" MaxLength="3" />
+    <Property Type="String" Name="Pricing_Ctrl" Nullable="true" MaxLength="3" />
+    <Property Type="Decimal" Name="dmLineaCredito" Nullable="true" Precision="19" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelCondicionVPxProducto_Result">
+    <Property Type="String" Name="fcCodProducto" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="CodTipoCredito" Nullable="true" MaxLength="6" />
+    <Property Type="String" Name="CodVPSegmento" Nullable="true" MaxLength="3" />
+    <Property Type="String" Name="Afiliacion" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="PCT_ID" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="Pricing_Ctrl" Nullable="false" MaxLength="3" />
+    <Property Type="Decimal" Name="dmLineaCredito" Nullable="false" Precision="19" />
+    <Property Type="String" Name="Habilitado" Nullable="false" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelCondiciones_Result">
+    <Property Type="Int32" Name="CodReglaCondicion" Nullable="false" />
+    <Property Type="Int32" Name="CodReglaCondicionDetalle" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CodOperador" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="Valor" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CodOperadorLogico" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="CodCampo" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="CodTipoDato" Nullable="true" MaxLength="2" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelDatosDocNoAsigCam_Result">
+    <Property Type="String" Name="pcCodDatosDocumento" Nullable="false" MaxLength="4" />
+    <Property Type="String" Name="dcDescripcion" Nullable="false" MaxLength="120" />
+    <Property Type="String" Name="dcCodTipoPersona" Nullable="false" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelDatosDocumentoPorCam_Result">
+    <Property Type="String" Name="pcCodDatosDocumento" Nullable="false" MaxLength="4" />
+    <Property Type="String" Name="dcDescripcion" Nullable="false" MaxLength="120" />
+    <Property Type="String" Name="dcDestinoEnvio" Nullable="true" MaxLength="2" />
+    <Property Type="String" Name="dcCodSituacion" Nullable="true" MaxLength="2" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelDecisiones_Result">
+    <Property Type="Int32" Name="CodReglaCondicionDecision" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CodOperador" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="Valor" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="CodReglaCondicion" Nullable="false" />
+    <Property Type="String" Name="CodCampo" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="usp_MapBNSelCalPrestamo_Result">
+    <Property Type="Int32" Name="Esquema_Id" Nullable="false" />
+    <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="50" />
+    <Property Type="Decimal" Name="Valor" Nullable="true" Precision="15" Scale="4" />
+  </ComplexType>
+  <ComplexType Name="usp_MapBNSelGruposCIIU_Result">
+    <Property Type="Int32" Name="CodigoGrupo" Nullable="false" />
+    <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="128" />
+  </ComplexType>
+  <ComplexType Name="usp_MapBNSelRatiosFinancieros_Result">
+    <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="50" />
+    <Property Type="Decimal" Name="Ratio" Nullable="true" Precision="15" Scale="4" />
+    <Property Type="Int32" Name="CodigoGrupo" Nullable="false" />
+    <Property Type="Int32" Name="Esquema_Id" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="usp_MapBNSelRestricciones_Result">
+    <Property Type="Int32" Name="Esquema_Id" Nullable="false" />
+    <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Operador" Nullable="true" MaxLength="10" />
+    <Property Type="Decimal" Name="Valor" Nullable="true" Precision="15" Scale="4" />
+  </ComplexType>
+  <ComplexType Name="usp_MapCheckStoredProc_Result">
+    <Property Type="String" Name="name" Nullable="false" MaxLength="128" />
+    <Property Type="String" Name="user" Nullable="false" MaxLength="128" />
+  </ComplexType>
+  <ComplexType Name="usp_MapObtenerCutoff_Result">
+    <Property Type="String" Name="pcCodCampana" Nullable="false" MaxLength="3" />
+    <Property Type="Int32" Name="dnCutOff" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_AdmPar_Sel_VPSEGMENTO_Result">
+    <Property Type="String" Name="CodVPSegmento" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="FechaIngreso" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="FechaModificacion" Nullable="true" Precision="23" />
+    <Property Type="String" Name="IndRegistroActivo" Nullable="true" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="usp_MAPSelJerarquiaEmpleado_Result">
+    <Property Type="String" Name="TEAM_ID" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="TEAM_NAME" Nullable="false" MaxLength="35" />
+    <Property Type="String" Name="PARENT_TEAM_ID" Nullable="false" MaxLength="10" />
+  </ComplexType>
+  <ComplexType Name="usp_SelEmpleadosDisponibles_Result">
+    <Property Type="String" Name="USER_ID" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="NombreUsuario" Nullable="false" MaxLength="94" />
+  </ComplexType>
+  <ComplexType Name="usp_SelEmpleados_Result">
+    <Property Type="String" Name="USER_ID" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="NombreEmpleado" Nullable="false" MaxLength="94" />
+  </ComplexType>
+  <ComplexType Name="usp_SelEmpleadosEquipo_Result">
+    <Property Type="String" Name="USER_ID" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="NombreUsuario" Nullable="false" MaxLength="94" />
+    <Property Type="String" Name="TEAM_LEDR" Nullable="true" MaxLength="1" />
+    <Property Type="Decimal" Name="ACTIVE_FLAG" Nullable="true" Precision="1" Scale="0" />
+    <Property Type="String" Name="TEAM_ID" Nullable="true" MaxLength="10" />
+  </ComplexType>
+  <ComplexType Name="usp_SelDetalleEquipo_Result">
+    <Property Type="String" Name="TEAM_ID" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="TEAM_NAME" Nullable="false" MaxLength="35" />
+    <Property Type="String" Name="PARENT_TEAM_ID" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="PARENT_TEAM_NAME" Nullable="false" MaxLength="35" />
+  </ComplexType>
+  <ComplexType Name="usp_SelDettalleEmpleado_Result">
+    <Property Type="String" Name="USER_ID" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="FIRST_NAME" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="MIDL_NAME" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="LAST_NAME" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelEstadoSolicitudCondi_Result1">
+    <Property Type="String" Name="pcCodCondicion" Nullable="false" MaxLength="4" />
+    <Property Type="String" Name="dcDescripcion" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="dcTipoCondicion" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="dcIndicadorRegistroActivo" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="pcCodEstadoSolicitud" Nullable="false" MaxLength="4" />
+  </ComplexType>
+  <ComplexType Name="usp_MapObtenerProducto_Result">
+    <Property Type="String" Name="fcCodTipoSolicitud" Nullable="false" />
+    <Property Type="String" Name="dcNombreProducto" Nullable="false" />
+    <Property Type="String" Name="pcDiasPago" Nullable="false" />
+    <Property Type="String" Name="pcMoneda" Nullable="false" />
+    <Property Type="String" Name="pcMonedaDefault" Nullable="false" />
+    <Property Type="String" Name="pcValorALS" Nullable="false" />
+    <Property Type="String" Name="pcValidaCta" Nullable="false" />
+    <Property Type="String" Name="pcValidaPlazo" Nullable="false" />
+    <Property Type="String" Name="pcValidaPago" Nullable="false" />
+    <Property Type="String" Name="pcValidaDesem" Nullable="false" />
+    <Property Type="String" Name="pnCanal" Nullable="false" />
+    <Property Type="String" Name="pcDescEnvio" Nullable="false" />
+    <Property Type="String" Name="pcTipoCuenta" Nullable="false" />
+    <Property Type="String" Name="pcNroCuenta" Nullable="false" />
+    <Property Type="String" Name="pcFlagMiVivienda" Nullable="false" />
+    <Property Type="String" Name="pcFlagValorConstr" Nullable="false" />
+    <Property Type="String" Name="pcFlagAmpliacion" Nullable="false" />
+    <Property Type="String" Name="pcModalidad" Nullable="false" />
+    <Property Type="String" Name="dcCardholder" Nullable="false" />
+    <Property Type="String" Name="dcEsquema" Nullable="false" />
+    <Property Type="String" Name="dcTipoCreditoNegocio" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_SEL_CARGO_Result">
+    <Property Type="String" Name="pcCodCargo" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="dcDescripcion" Nullable="false" MaxLength="40" />
+    <Property Type="DateTime" Name="ddFechaIngreso" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="ddFechaModificacion" Nullable="true" Precision="23" />
+    <Property Type="String" Name="dcIndicadorRegistroActivo" Nullable="true" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="SP_SEL_LOCALIDAD_Result">
+    <Property Type="String" Name="pcCodLocalidad" Nullable="false" MaxLength="4" />
+    <Property Type="String" Name="dcDescripcion" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="dcCodPostal" Nullable="true" MaxLength="2" />
+    <Property Type="String" Name="dcPrefijoTelefonico" Nullable="false" MaxLength="3" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelSegDes_Result">
+    <Property Type="String" Name="Producto" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="dcDescripcion" Nullable="false" MaxLength="15" />
+    <Property Type="Decimal" Name="Seguro" Nullable="true" Precision="19" />
+    <Property Type="String" Name="dcCodMoneda" Nullable="true" MaxLength="2" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelParametrosGeneral_Result">
+    <Property Type="Int32" Name="CodReglaParametro" Nullable="false" />
+    <Property Type="String" Name="CodCampo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Valor" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="CodRegla" Nullable="false" />
+    <Property Type="String" Name="CodTipoDato" Nullable="true" MaxLength="2" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelProductos_Result">
+    <Property Type="String" Name="pcCodProducto" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="fcCodTipoSolicitud" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="dcDescripcion" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="usp_MapGetParametros_Result">
+    <Property Type="Int32" Name="CodParametro" Nullable="false" />
+    <Property Type="String" Name="CodProducto" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="Descripcion" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="TipoParametro" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="TipoValor" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="ValorMinimo" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ValorMaximo" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="CodTipoParametro" Nullable="false" />
+    <Property Type="String" Name="Tipo" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="usp_MapGetTipoParametro_Result">
+    <Property Type="Int32" Name="CodTipoParametro" Nullable="false" />
+    <Property Type="String" Name="Descripcion" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Tipo" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="usp_MapSelPerfil_Result">
+    <Property Type="Int32" Name="CodPerfil" Nullable="false" />
+    <Property Type="String" Name="Perfil" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Nemonico" Nullable="false" MaxLength="5" />
+    <Property Type="DateTime" Name="FechaIngreso" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="FechaModificacion" Nullable="false" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="TasaSolicitud_G_Result">
+    <Property Type="String" Name="pcCodTipoSeguro" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="dcDescripcion" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="dcCodALS" Nullable="true" MaxLength="10" />
+    <Property Type="Decimal" Name="dnTasaSeguro" Nullable="true" Precision="12" Scale="6" />
+    <Property Type="String" Name="dcIndicadorTasaRequerida" Nullable="true" MaxLength="1" />
+    <Property Type="Decimal" Name="dnTna" Nullable="true" Precision="12" Scale="6" />
+    <Property Type="String" Name="dcIndActivo" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="CodTipoCredito" Nullable="false" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="INDICETRE_List_Result">
+    <Property Type="String" Name="pcIndice" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="dcIndicadorDesactivada" Nullable="true" MaxLength="1" />
+    <Property Type="DateTime" Name="ddfFechaCreacion" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="spreadTREE" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="tasa" Nullable="true" Precision="18" Scale="2" />
+  </ComplexType>
+</Schema>

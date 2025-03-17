@@ -1,0 +1,648 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1B797E2A-A226-44F2-86B7-A25B578BD6C6}|WebMicredito\\WebMicredito.csproj|d:\\t25208\\micredito\\micre_micredito_web\\webmicredito\\pages\\solicitud\\solicitud.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B797E2A-A226-44F2-86B7-A25B578BD6C6}|WebMicredito\\WebMicredito.csproj|solutionrelative:webmicredito\\pages\\solicitud\\solicitud.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B797E2A-A226-44F2-86B7-A25B578BD6C6}|WebMicredito\\WebMicredito.csproj|d:\\t25208\\micredito\\micre_micredito_web\\webmicredito\\wwwroot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1B797E2A-A226-44F2-86B7-A25B578BD6C6}|WebMicredito\\WebMicredito.csproj|solutionrelative:webmicredito\\wwwroot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{387751CF-EB60-4EDF-B4E8-574CC7910B64}|MICRE.Services\\MICRE.Services.csproj|d:\\t25208\\micredito\\micre_micredito_web\\micre.services\\services\\solicitudgenericoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{387751CF-EB60-4EDF-B4E8-574CC7910B64}|MICRE.Services\\MICRE.Services.csproj|solutionrelative:micre.services\\services\\solicitudgenericoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{387751CF-EB60-4EDF-B4E8-574CC7910B64}|MICRE.Services\\MICRE.Services.csproj|d:\\t25208\\micredito\\micre_micredito_web\\micre.services\\manager\\managersolicitudgenerico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{387751CF-EB60-4EDF-B4E8-574CC7910B64}|MICRE.Services\\MICRE.Services.csproj|solutionrelative:micre.services\\manager\\managersolicitudgenerico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{387751CF-EB60-4EDF-B4E8-574CC7910B64}|MICRE.Services\\MICRE.Services.csproj|d:\\t25208\\micredito\\micre_micredito_web\\micre.services\\manager\\managerinfocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{387751CF-EB60-4EDF-B4E8-574CC7910B64}|MICRE.Services\\MICRE.Services.csproj|solutionrelative:micre.services\\manager\\managerinfocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{387751CF-EB60-4EDF-B4E8-574CC7910B64}|MICRE.Services\\MICRE.Services.csproj|d:\\t25208\\micredito\\micre_micredito_web\\micre.services\\services\\infoclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{387751CF-EB60-4EDF-B4E8-574CC7910B64}|MICRE.Services\\MICRE.Services.csproj|solutionrelative:micre.services\\services\\infoclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B797E2A-A226-44F2-86B7-A25B578BD6C6}|WebMicredito\\WebMicredito.csproj|d:\\t25208\\micredito\\micre_micredito_web\\webmicredito\\pages\\nuevasolicitud\\nuevasolicitudfiador.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B797E2A-A226-44F2-86B7-A25B578BD6C6}|WebMicredito\\WebMicredito.csproj|solutionrelative:webmicredito\\pages\\nuevasolicitud\\nuevasolicitudfiador.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B797E2A-A226-44F2-86B7-A25B578BD6C6}|WebMicredito\\WebMicredito.csproj|d:\\t25208\\micredito\\micre_micredito_web\\webmicredito\\pages\\nuevasolicitud\\nuevasolicitudcodeudor.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B797E2A-A226-44F2-86B7-A25B578BD6C6}|WebMicredito\\WebMicredito.csproj|solutionrelative:webmicredito\\pages\\nuevasolicitud\\nuevasolicitudcodeudor.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B797E2A-A226-44F2-86B7-A25B578BD6C6}|WebMicredito\\WebMicredito.csproj|d:\\t25208\\micredito\\micre_micredito_web\\webmicredito\\pages\\nuevasolicitud\\nuevasolicitud.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B797E2A-A226-44F2-86B7-A25B578BD6C6}|WebMicredito\\WebMicredito.csproj|solutionrelative:webmicredito\\pages\\nuevasolicitud\\nuevasolicitud.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B797E2A-A226-44F2-86B7-A25B578BD6C6}|WebMicredito\\WebMicredito.csproj|d:\\t25208\\micredito\\micre_micredito_web\\webmicredito\\shared\\components\\decisioncomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B797E2A-A226-44F2-86B7-A25B578BD6C6}|WebMicredito\\WebMicredito.csproj|solutionrelative:webmicredito\\shared\\components\\decisioncomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B797E2A-A226-44F2-86B7-A25B578BD6C6}|WebMicredito\\WebMicredito.csproj|d:\\t25208\\micredito\\micre_micredito_web\\webmicredito\\pages\\nuevasolicitud\\nsdatosbasicos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B797E2A-A226-44F2-86B7-A25B578BD6C6}|WebMicredito\\WebMicredito.csproj|solutionrelative:webmicredito\\pages\\nuevasolicitud\\nsdatosbasicos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{242A95C0-CA04-4753-BB63-85FE2D63378C}|MICRE.Entitie\\MICRE.Entitie.csproj|d:\\t25208\\micredito\\micre_micredito_web\\micre.entitie\\response\\datosrefinanciamiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{242A95C0-CA04-4753-BB63-85FE2D63378C}|MICRE.Entitie\\MICRE.Entitie.csproj|solutionrelative:micre.entitie\\response\\datosrefinanciamiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{387751CF-EB60-4EDF-B4E8-574CC7910B64}|MICRE.Services\\MICRE.Services.csproj|d:\\t25208\\micredito\\micre_micredito_web\\micre.services\\manager\\managerparametrica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{387751CF-EB60-4EDF-B4E8-574CC7910B64}|MICRE.Services\\MICRE.Services.csproj|solutionrelative:micre.services\\manager\\managerparametrica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B797E2A-A226-44F2-86B7-A25B578BD6C6}|WebMicredito\\WebMicredito.csproj|d:\\t25208\\micredito\\micre_micredito_web\\webmicredito\\pages\\tareascurso\\tareascurso.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B797E2A-A226-44F2-86B7-A25B578BD6C6}|WebMicredito\\WebMicredito.csproj|solutionrelative:webmicredito\\pages\\tareascurso\\tareascurso.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{242A95C0-CA04-4753-BB63-85FE2D63378C}|MICRE.Entitie\\MICRE.Entitie.csproj|d:\\t25208\\micredito\\micre_micredito_web\\micre.entitie\\entitie\\parametrica\\coddescripcionentitie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{242A95C0-CA04-4753-BB63-85FE2D63378C}|MICRE.Entitie\\MICRE.Entitie.csproj|solutionrelative:micre.entitie\\entitie\\parametrica\\coddescripcionentitie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{242A95C0-CA04-4753-BB63-85FE2D63378C}|MICRE.Entitie\\MICRE.Entitie.csproj|d:\\t25208\\micredito\\micre_micredito_web\\micre.entitie\\response\\excepcionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{242A95C0-CA04-4753-BB63-85FE2D63378C}|MICRE.Entitie\\MICRE.Entitie.csproj|solutionrelative:micre.entitie\\response\\excepcionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{242A95C0-CA04-4753-BB63-85FE2D63378C}|MICRE.Entitie\\MICRE.Entitie.csproj|d:\\t25208\\micredito\\micre_micredito_web\\micre.entitie\\response\\resultadoservicioresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{242A95C0-CA04-4753-BB63-85FE2D63378C}|MICRE.Entitie\\MICRE.Entitie.csproj|solutionrelative:micre.entitie\\response\\resultadoservicioresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{387751CF-EB60-4EDF-B4E8-574CC7910B64}|MICRE.Services\\MICRE.Services.csproj|d:\\t25208\\micredito\\micre_micredito_web\\micre.services\\manager\\managerlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{387751CF-EB60-4EDF-B4E8-574CC7910B64}|MICRE.Services\\MICRE.Services.csproj|solutionrelative:micre.services\\manager\\managerlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{242A95C0-CA04-4753-BB63-85FE2D63378C}|MICRE.Entitie\\MICRE.Entitie.csproj|d:\\t25208\\micredito\\micre_micredito_web\\micre.entitie\\entitie\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{242A95C0-CA04-4753-BB63-85FE2D63378C}|MICRE.Entitie\\MICRE.Entitie.csproj|solutionrelative:micre.entitie\\entitie\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{242A95C0-CA04-4753-BB63-85FE2D63378C}|MICRE.Entitie\\MICRE.Entitie.csproj|d:\\t25208\\micredito\\micre_micredito_web\\micre.entitie\\entitie\\tipocambiomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{242A95C0-CA04-4753-BB63-85FE2D63378C}|MICRE.Entitie\\MICRE.Entitie.csproj|solutionrelative:micre.entitie\\entitie\\tipocambiomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B797E2A-A226-44F2-86B7-A25B578BD6C6}|WebMicredito\\WebMicredito.csproj|d:\\t25208\\micredito\\micre_micredito_web\\webmicredito\\compilerconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1B797E2A-A226-44F2-86B7-A25B578BD6C6}|WebMicredito\\WebMicredito.csproj|solutionrelative:webmicredito\\compilerconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{242A95C0-CA04-4753-BB63-85FE2D63378C}|MICRE.Entitie\\MICRE.Entitie.csproj|d:\\t25208\\micredito\\micre_micredito_web\\micre.entitie\\datosfiador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{242A95C0-CA04-4753-BB63-85FE2D63378C}|MICRE.Entitie\\MICRE.Entitie.csproj|solutionrelative:micre.entitie\\datosfiador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{387751CF-EB60-4EDF-B4E8-574CC7910B64}|MICRE.Services\\MICRE.Services.csproj|d:\\t25208\\micredito\\micre_micredito_web\\micre.services\\micre.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{387751CF-EB60-4EDF-B4E8-574CC7910B64}|MICRE.Services\\MICRE.Services.csproj|solutionrelative:micre.services\\micre.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7682E2C-DBFA-4EB9-97E4-1919A1038411}|MICRE.Common\\MICRE.Common.csproj|d:\\t25208\\micredito\\micre_micredito_web\\micre.common\\service\\serviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7682E2C-DBFA-4EB9-97E4-1919A1038411}|MICRE.Common\\MICRE.Common.csproj|solutionrelative:micre.common\\service\\serviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7682E2C-DBFA-4EB9-97E4-1919A1038411}|MICRE.Common\\MICRE.Common.csproj|d:\\t25208\\micredito\\micre_micredito_web\\micre.common\\micre.common.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{B7682E2C-DBFA-4EB9-97E4-1919A1038411}|MICRE.Common\\MICRE.Common.csproj|solutionrelative:micre.common\\micre.common.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{387751CF-EB60-4EDF-B4E8-574CC7910B64}|MICRE.Services\\MICRE.Services.csproj|d:\\t25208\\micredito\\micre_micredito_web\\micre.services\\micre.services.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{387751CF-EB60-4EDF-B4E8-574CC7910B64}|MICRE.Services\\MICRE.Services.csproj|solutionrelative:micre.services\\micre.services.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{242A95C0-CA04-4753-BB63-85FE2D63378C}|MICRE.Entitie\\MICRE.Entitie.csproj|d:\\t25208\\micredito\\micre_micredito_web\\micre.entitie\\micre.entitie.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{242A95C0-CA04-4753-BB63-85FE2D63378C}|MICRE.Entitie\\MICRE.Entitie.csproj|solutionrelative:micre.entitie\\micre.entitie.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{242A95C0-CA04-4753-BB63-85FE2D63378C}|MICRE.Entitie\\MICRE.Entitie.csproj|d:\\t25208\\micredito\\micre_micredito_web\\micre.entitie\\entitie\\solicitudes\\cuentaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{242A95C0-CA04-4753-BB63-85FE2D63378C}|MICRE.Entitie\\MICRE.Entitie.csproj|solutionrelative:micre.entitie\\entitie\\solicitudes\\cuentaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{242A95C0-CA04-4753-BB63-85FE2D63378C}|MICRE.Entitie\\MICRE.Entitie.csproj|d:\\t25208\\micredito\\micre_micredito_web\\micre.entitie\\entitie\\decisionresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{242A95C0-CA04-4753-BB63-85FE2D63378C}|MICRE.Entitie\\MICRE.Entitie.csproj|solutionrelative:micre.entitie\\entitie\\decisionresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B797E2A-A226-44F2-86B7-A25B578BD6C6}|WebMicredito\\WebMicredito.csproj|d:\\t25208\\micredito\\micre_micredito_web\\webmicredito\\shared\\homelayout\\navuser.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B797E2A-A226-44F2-86B7-A25B578BD6C6}|WebMicredito\\WebMicredito.csproj|solutionrelative:webmicredito\\shared\\homelayout\\navuser.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{242A95C0-CA04-4753-BB63-85FE2D63378C}|MICRE.Entitie\\MICRE.Entitie.csproj|d:\\t25208\\micredito\\micre_micredito_web\\micre.entitie\\request\\addexcepcionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{242A95C0-CA04-4753-BB63-85FE2D63378C}|MICRE.Entitie\\MICRE.Entitie.csproj|solutionrelative:micre.entitie\\request\\addexcepcionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B797E2A-A226-44F2-86B7-A25B578BD6C6}|WebMicredito\\WebMicredito.csproj|d:\\t25208\\micredito\\micre_micredito_web\\webmicredito\\pages\\nuevasolicitud\\nsformnuevasolicitud.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B797E2A-A226-44F2-86B7-A25B578BD6C6}|WebMicredito\\WebMicredito.csproj|solutionrelative:webmicredito\\pages\\nuevasolicitud\\nsformnuevasolicitud.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B797E2A-A226-44F2-86B7-A25B578BD6C6}|WebMicredito\\WebMicredito.csproj|d:\\t25208\\micredito\\micre_micredito_web\\webmicredito\\pages\\nuevasolicitud\\nstarjetadetalle.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B797E2A-A226-44F2-86B7-A25B578BD6C6}|WebMicredito\\WebMicredito.csproj|solutionrelative:webmicredito\\pages\\nuevasolicitud\\nstarjetadetalle.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B797E2A-A226-44F2-86B7-A25B578BD6C6}|WebMicredito\\WebMicredito.csproj|d:\\t25208\\micredito\\micre_micredito_web\\webmicredito\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B797E2A-A226-44F2-86B7-A25B578BD6C6}|WebMicredito\\WebMicredito.csproj|solutionrelative:webmicredito\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DecisionComponent.razor",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\WebMicredito\\Shared\\Components\\DecisionComponent.razor",
+              "RelativeDocumentMoniker": "WebMicredito\\Shared\\Components\\DecisionComponent.razor",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\WebMicredito\\Shared\\Components\\DecisionComponent.razor",
+              "RelativeToolTip": "WebMicredito\\Shared\\Components\\DecisionComponent.razor",
+              "ViewState": "AQIAACoCAAAAAAAAAAAAAD4CAABsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-13T19:04:13.774Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Solicitud.razor",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\WebMicredito\\Pages\\Solicitud\\Solicitud.razor",
+              "RelativeDocumentMoniker": "WebMicredito\\Pages\\Solicitud\\Solicitud.razor",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\WebMicredito\\Pages\\Solicitud\\Solicitud.razor",
+              "RelativeToolTip": "WebMicredito\\Pages\\Solicitud\\Solicitud.razor",
+              "ViewState": "AQIAAP8JAAAAAAAAAAAAAEoIAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-15T22:51:29.546Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SolicitudGenericoService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Services\\Services\\SolicitudGenericoService.cs",
+              "RelativeDocumentMoniker": "MICRE.Services\\Services\\SolicitudGenericoService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Services\\Services\\SolicitudGenericoService.cs",
+              "RelativeToolTip": "MICRE.Services\\Services\\SolicitudGenericoService.cs",
+              "ViewState": "AQIAADYBAAAAAAAAAAAawEgBAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T19:25:33.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\WebMicredito\\wwwroot\\appsettings.json",
+              "RelativeDocumentMoniker": "WebMicredito\\wwwroot\\appsettings.json",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\WebMicredito\\wwwroot\\appsettings.json",
+              "RelativeToolTip": "WebMicredito\\wwwroot\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-14T22:03:41.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ManagerSolicitudGenerico.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Services\\Manager\\ManagerSolicitudGenerico.cs",
+              "RelativeDocumentMoniker": "MICRE.Services\\Manager\\ManagerSolicitudGenerico.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Services\\Manager\\ManagerSolicitudGenerico.cs",
+              "RelativeToolTip": "MICRE.Services\\Manager\\ManagerSolicitudGenerico.cs",
+              "ViewState": "AQIAACYBAAAAAAAAAAAmwDcBAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T15:48:11.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NuevaSolicitudCodeudor.razor",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\WebMicredito\\Pages\\NuevaSolicitud\\NuevaSolicitudCodeudor.razor",
+              "RelativeDocumentMoniker": "WebMicredito\\Pages\\NuevaSolicitud\\NuevaSolicitudCodeudor.razor",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\WebMicredito\\Pages\\NuevaSolicitud\\NuevaSolicitudCodeudor.razor",
+              "RelativeToolTip": "WebMicredito\\Pages\\NuevaSolicitud\\NuevaSolicitudCodeudor.razor",
+              "ViewState": "AQIAAB0DAAAAAAAAAAAlwCEDAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-26T16:42:00.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ManagerInfocliente.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Services\\Manager\\ManagerInfocliente.cs",
+              "RelativeDocumentMoniker": "MICRE.Services\\Manager\\ManagerInfocliente.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Services\\Manager\\ManagerInfocliente.cs",
+              "RelativeToolTip": "MICRE.Services\\Manager\\ManagerInfocliente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T19:25:06.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "InfoclienteService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Services\\Services\\InfoclienteService.cs",
+              "RelativeDocumentMoniker": "MICRE.Services\\Services\\InfoclienteService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Services\\Services\\InfoclienteService.cs",
+              "RelativeToolTip": "MICRE.Services\\Services\\InfoclienteService.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAmwCgAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T16:44:16.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NuevaSolicitudFiador.razor",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\WebMicredito\\Pages\\NuevaSolicitud\\NuevaSolicitudFiador.razor",
+              "RelativeDocumentMoniker": "WebMicredito\\Pages\\NuevaSolicitud\\NuevaSolicitudFiador.razor",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\WebMicredito\\Pages\\NuevaSolicitud\\NuevaSolicitudFiador.razor",
+              "RelativeToolTip": "WebMicredito\\Pages\\NuevaSolicitud\\NuevaSolicitudFiador.razor",
+              "ViewState": "AQIAAB8EAAAAAAAAAAAAwDEEAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-24T19:25:43.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NuevaSolicitud.razor",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\WebMicredito\\Pages\\NuevaSolicitud\\NuevaSolicitud.razor",
+              "RelativeDocumentMoniker": "WebMicredito\\Pages\\NuevaSolicitud\\NuevaSolicitud.razor",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\WebMicredito\\Pages\\NuevaSolicitud\\NuevaSolicitud.razor",
+              "RelativeToolTip": "WebMicredito\\Pages\\NuevaSolicitud\\NuevaSolicitud.razor",
+              "ViewState": "AQIAAP8FAAAAAAAAAAAjwBIGAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T18:12:18.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "NSDatosBasicos.razor",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\WebMicredito\\Pages\\NuevaSolicitud\\NSDatosBasicos.razor",
+              "RelativeDocumentMoniker": "WebMicredito\\Pages\\NuevaSolicitud\\NSDatosBasicos.razor",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\WebMicredito\\Pages\\NuevaSolicitud\\NSDatosBasicos.razor",
+              "RelativeToolTip": "WebMicredito\\Pages\\NuevaSolicitud\\NSDatosBasicos.razor",
+              "ViewState": "AQIAANAAAAAAAAAAAAAwwOMAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-16T14:17:35.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ManagerParametrica.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Services\\Manager\\ManagerParametrica.cs",
+              "RelativeDocumentMoniker": "MICRE.Services\\Manager\\ManagerParametrica.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Services\\Manager\\ManagerParametrica.cs",
+              "RelativeToolTip": "MICRE.Services\\Manager\\ManagerParametrica.cs",
+              "ViewState": "AQIAABACAAAAAAAAAAAAACsCAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T22:40:43.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DatosRefinanciamiento.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Entitie\\Response\\DatosRefinanciamiento.cs",
+              "RelativeDocumentMoniker": "MICRE.Entitie\\Response\\DatosRefinanciamiento.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Entitie\\Response\\DatosRefinanciamiento.cs",
+              "RelativeToolTip": "MICRE.Entitie\\Response\\DatosRefinanciamiento.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T19:55:11.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TareasCurso.razor",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\WebMicredito\\Pages\\TareasCurso\\TareasCurso.razor",
+              "RelativeDocumentMoniker": "WebMicredito\\Pages\\TareasCurso\\TareasCurso.razor",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\WebMicredito\\Pages\\TareasCurso\\TareasCurso.razor",
+              "RelativeToolTip": "WebMicredito\\Pages\\TareasCurso\\TareasCurso.razor",
+              "ViewState": "AQIAAJkCAAAAAAAAAAArwKwCAAB1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-03T15:20:14.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CodDescripcionEntitie.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Entitie\\Entitie\\Parametrica\\CodDescripcionEntitie.cs",
+              "RelativeDocumentMoniker": "MICRE.Entitie\\Entitie\\Parametrica\\CodDescripcionEntitie.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Entitie\\Entitie\\Parametrica\\CodDescripcionEntitie.cs",
+              "RelativeToolTip": "MICRE.Entitie\\Entitie\\Parametrica\\CodDescripcionEntitie.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T19:50:26.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ResultadoServicioResponse.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Entitie\\Response\\ResultadoServicioResponse.cs",
+              "RelativeDocumentMoniker": "MICRE.Entitie\\Response\\ResultadoServicioResponse.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Entitie\\Response\\ResultadoServicioResponse.cs",
+              "RelativeToolTip": "MICRE.Entitie\\Response\\ResultadoServicioResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T22:00:54.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ExcepcionResponse.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Entitie\\Response\\ExcepcionResponse.cs",
+              "RelativeDocumentMoniker": "MICRE.Entitie\\Response\\ExcepcionResponse.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Entitie\\Response\\ExcepcionResponse.cs",
+              "RelativeToolTip": "MICRE.Entitie\\Response\\ExcepcionResponse.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABQAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T20:36:18.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TipoCambioModel.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Entitie\\Entitie\\TipoCambioModel.cs",
+              "RelativeDocumentMoniker": "MICRE.Entitie\\Entitie\\TipoCambioModel.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Entitie\\Entitie\\TipoCambioModel.cs",
+              "RelativeToolTip": "MICRE.Entitie\\Entitie\\TipoCambioModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T21:40:12.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Entitie\\Entitie\\LoginModel.cs",
+              "RelativeDocumentMoniker": "MICRE.Entitie\\Entitie\\LoginModel.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Entitie\\Entitie\\LoginModel.cs",
+              "RelativeToolTip": "MICRE.Entitie\\Entitie\\LoginModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T21:40:16.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ManagerLogin.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Services\\Manager\\ManagerLogin.cs",
+              "RelativeDocumentMoniker": "MICRE.Services\\Manager\\ManagerLogin.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Services\\Manager\\ManagerLogin.cs",
+              "RelativeToolTip": "MICRE.Services\\Manager\\ManagerLogin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T21:41:02.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "compilerconfig.json",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\WebMicredito\\compilerconfig.json",
+              "RelativeDocumentMoniker": "WebMicredito\\compilerconfig.json",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\WebMicredito\\compilerconfig.json",
+              "RelativeToolTip": "WebMicredito\\compilerconfig.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-28T18:24:30.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DatosFiador.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Entitie\\DatosFiador.cs",
+              "RelativeDocumentMoniker": "MICRE.Entitie\\DatosFiador.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Entitie\\DatosFiador.cs",
+              "RelativeToolTip": "MICRE.Entitie\\DatosFiador.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAswFIAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T16:23:33.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MICRE.Services.csproj",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Services\\MICRE.Services.csproj",
+              "RelativeDocumentMoniker": "MICRE.Services\\MICRE.Services.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Services\\MICRE.Services.csproj",
+              "RelativeToolTip": "MICRE.Services\\MICRE.Services.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-01T19:05:08.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ServiceClient.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Common\\Service\\ServiceClient.cs",
+              "RelativeDocumentMoniker": "MICRE.Common\\Service\\ServiceClient.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Common\\Service\\ServiceClient.cs",
+              "RelativeToolTip": "MICRE.Common\\Service\\ServiceClient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T19:05:10.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "MICRE.Services",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Services\\MICRE.Services.csproj",
+              "RelativeDocumentMoniker": "MICRE.Services\\MICRE.Services.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Services\\MICRE.Services.csproj",
+              "RelativeToolTip": "MICRE.Services\\MICRE.Services.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-01T19:00:36.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "MICRE.Entitie",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Entitie\\MICRE.Entitie.csproj",
+              "RelativeDocumentMoniker": "MICRE.Entitie\\MICRE.Entitie.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Entitie\\MICRE.Entitie.csproj",
+              "RelativeToolTip": "MICRE.Entitie\\MICRE.Entitie.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-01T19:00:31.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "MICRE.Common",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Common\\MICRE.Common.csproj",
+              "RelativeDocumentMoniker": "MICRE.Common\\MICRE.Common.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Common\\MICRE.Common.csproj",
+              "RelativeToolTip": "MICRE.Common\\MICRE.Common.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-01T19:00:23.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CuentaViewModel.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Entitie\\Entitie\\Solicitudes\\CuentaViewModel.cs",
+              "RelativeDocumentMoniker": "MICRE.Entitie\\Entitie\\Solicitudes\\CuentaViewModel.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Entitie\\Entitie\\Solicitudes\\CuentaViewModel.cs",
+              "RelativeToolTip": "MICRE.Entitie\\Entitie\\Solicitudes\\CuentaViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T17:37:25.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "DecisionResponseModel.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Entitie\\Entitie\\DecisionResponseModel.cs",
+              "RelativeDocumentMoniker": "MICRE.Entitie\\Entitie\\DecisionResponseModel.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Entitie\\Entitie\\DecisionResponseModel.cs",
+              "RelativeToolTip": "MICRE.Entitie\\Entitie\\DecisionResponseModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T15:19:40.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "NavUser.razor",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\WebMicredito\\Shared\\HomeLayout\\NavUser.razor",
+              "RelativeDocumentMoniker": "WebMicredito\\Shared\\HomeLayout\\NavUser.razor",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\WebMicredito\\Shared\\HomeLayout\\NavUser.razor",
+              "RelativeToolTip": "WebMicredito\\Shared\\HomeLayout\\NavUser.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-20T20:32:18.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AddExcepcionRequest.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Entitie\\Request\\AddExcepcionRequest.cs",
+              "RelativeDocumentMoniker": "MICRE.Entitie\\Request\\AddExcepcionRequest.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\MICRE.Entitie\\Request\\AddExcepcionRequest.cs",
+              "RelativeToolTip": "MICRE.Entitie\\Request\\AddExcepcionRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBAAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T20:56:13.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "NSTarjetaDetalle.razor",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\WebMicredito\\Pages\\NuevaSolicitud\\NSTarjetaDetalle.razor",
+              "RelativeDocumentMoniker": "WebMicredito\\Pages\\NuevaSolicitud\\NSTarjetaDetalle.razor",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\WebMicredito\\Pages\\NuevaSolicitud\\NSTarjetaDetalle.razor",
+              "RelativeToolTip": "WebMicredito\\Pages\\NuevaSolicitud\\NSTarjetaDetalle.razor",
+              "ViewState": "AQIAABsAAAAAAAAAACBjwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-16T14:17:50.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "NSFormNuevaSolicitud.razor",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\WebMicredito\\Pages\\NuevaSolicitud\\NSFormNuevaSolicitud.razor",
+              "RelativeDocumentMoniker": "WebMicredito\\Pages\\NuevaSolicitud\\NSFormNuevaSolicitud.razor",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\WebMicredito\\Pages\\NuevaSolicitud\\NSFormNuevaSolicitud.razor",
+              "RelativeToolTip": "WebMicredito\\Pages\\NuevaSolicitud\\NSFormNuevaSolicitud.razor",
+              "ViewState": "AQIAAAwAAAAAAAAAACBjwCkAAAB9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-16T14:17:45.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\WebMicredito\\_Imports.razor",
+              "RelativeDocumentMoniker": "WebMicredito\\_Imports.razor",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_MICREDITO_WEB\\WebMicredito\\_Imports.razor",
+              "RelativeToolTip": "WebMicredito\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-13T17:38:27.429Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

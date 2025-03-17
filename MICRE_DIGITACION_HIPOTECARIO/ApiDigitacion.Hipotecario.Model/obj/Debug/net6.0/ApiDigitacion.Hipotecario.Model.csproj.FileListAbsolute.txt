@@ -1,0 +1,15 @@
+D:\T25208\MICREDITO\MICRE_DIGITACION_HIPOTECARIO\ApiDigitacion.Hipotecario.Model\bin\Debug\net6.0\ApiDigitacion.Hipotecario.Model.deps.json
+D:\T25208\MICREDITO\MICRE_DIGITACION_HIPOTECARIO\ApiDigitacion.Hipotecario.Model\bin\Debug\net6.0\ApiDigitacion.Hipotecario.Model.dll
+D:\T25208\MICREDITO\MICRE_DIGITACION_HIPOTECARIO\ApiDigitacion.Hipotecario.Model\bin\Debug\net6.0\ApiDigitacion.Hipotecario.Model.pdb
+D:\T25208\MICREDITO\MICRE_DIGITACION_HIPOTECARIO\ApiDigitacion.Hipotecario.Model\bin\Debug\net6.0\BCP.Common.dll
+D:\T25208\MICREDITO\MICRE_DIGITACION_HIPOTECARIO\ApiDigitacion.Hipotecario.Model\bin\Debug\net6.0\BCP.Common.pdb
+D:\T25208\MICREDITO\MICRE_DIGITACION_HIPOTECARIO\ApiDigitacion.Hipotecario.Model\obj\Debug\net6.0\ApiDigitacion.Hipotecario.Model.csproj.AssemblyReference.cache
+D:\T25208\MICREDITO\MICRE_DIGITACION_HIPOTECARIO\ApiDigitacion.Hipotecario.Model\obj\Debug\net6.0\ApiDigitacion.Hipotecario.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\T25208\MICREDITO\MICRE_DIGITACION_HIPOTECARIO\ApiDigitacion.Hipotecario.Model\obj\Debug\net6.0\ApiDigitacion.Hipotecario.Model.AssemblyInfoInputs.cache
+D:\T25208\MICREDITO\MICRE_DIGITACION_HIPOTECARIO\ApiDigitacion.Hipotecario.Model\obj\Debug\net6.0\ApiDigitacion.Hipotecario.Model.AssemblyInfo.cs
+D:\T25208\MICREDITO\MICRE_DIGITACION_HIPOTECARIO\ApiDigitacion.Hipotecario.Model\obj\Debug\net6.0\ApiDigitacion.Hipotecario.Model.csproj.CoreCompileInputs.cache
+D:\T25208\MICREDITO\MICRE_DIGITACION_HIPOTECARIO\ApiDigitacion.Hipotecario.Model\obj\Debug\net6.0\ApiDigit.E8DCF9E5.Up2Date
+D:\T25208\MICREDITO\MICRE_DIGITACION_HIPOTECARIO\ApiDigitacion.Hipotecario.Model\obj\Debug\net6.0\ApiDigitacion.Hipotecario.Model.dll
+D:\T25208\MICREDITO\MICRE_DIGITACION_HIPOTECARIO\ApiDigitacion.Hipotecario.Model\obj\Debug\net6.0\refint\ApiDigitacion.Hipotecario.Model.dll
+D:\T25208\MICREDITO\MICRE_DIGITACION_HIPOTECARIO\ApiDigitacion.Hipotecario.Model\obj\Debug\net6.0\ApiDigitacion.Hipotecario.Model.pdb
+D:\T25208\MICREDITO\MICRE_DIGITACION_HIPOTECARIO\ApiDigitacion.Hipotecario.Model\obj\Debug\net6.0\ref\ApiDigitacion.Hipotecario.Model.dll

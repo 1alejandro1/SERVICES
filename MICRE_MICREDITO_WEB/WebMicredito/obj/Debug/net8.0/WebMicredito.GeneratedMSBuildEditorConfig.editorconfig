@@ -1,0 +1,115 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = WebMicredito
+build_property.RootNamespace = WebMicredito
+build_property.ProjectDir = D:\T25208\MICREDITO\MICRE_MICREDITO_WEB\WebMicredito\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\T25208\MICREDITO\MICRE_MICREDITO_WEB\WebMicredito
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/T25208/MICREDITO/MICRE_MICREDITO_WEB/WebMicredito/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_MICREDITO_WEB/WebMicredito/Pages/Home/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_MICREDITO_WEB/WebMicredito/Pages/Home/TarjetaModulo.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxUYXJqZXRhTW9kdWxvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_MICREDITO_WEB/WebMicredito/Pages/Login/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5cTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_MICREDITO_WEB/WebMicredito/Pages/Modales/CModalGenerico.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9kYWxlc1xDTW9kYWxHZW5lcmljby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_MICREDITO_WEB/WebMicredito/Pages/NuevaSolicitud/NSDatosBasicos.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTnVldmFTb2xpY2l0dWRcTlNEYXRvc0Jhc2ljb3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_MICREDITO_WEB/WebMicredito/Pages/NuevaSolicitud/NSFormNuevaSolicitud.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTnVldmFTb2xpY2l0dWRcTlNGb3JtTnVldmFTb2xpY2l0dWQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_MICREDITO_WEB/WebMicredito/Pages/NuevaSolicitud/NSTarjetaDetalle.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTnVldmFTb2xpY2l0dWRcTlNUYXJqZXRhRGV0YWxsZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_MICREDITO_WEB/WebMicredito/Pages/NuevaSolicitud/NSTarjetaFiltros.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTnVldmFTb2xpY2l0dWRcTlNUYXJqZXRhRmlsdHJvcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_MICREDITO_WEB/WebMicredito/Pages/NuevaSolicitud/NuevaSolicitud.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTnVldmFTb2xpY2l0dWRcTnVldmFTb2xpY2l0dWQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_MICREDITO_WEB/WebMicredito/Pages/NuevaSolicitud/NuevaSolicitudCodeudor.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTnVldmFTb2xpY2l0dWRcTnVldmFTb2xpY2l0dWRDb2RldWRvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_MICREDITO_WEB/WebMicredito/Pages/NuevaSolicitud/NuevaSolicitudFiador.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTnVldmFTb2xpY2l0dWRcTnVldmFTb2xpY2l0dWRGaWFkb3IucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_MICREDITO_WEB/WebMicredito/Pages/Solicitud/PerfilConsulta.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU29saWNpdHVkXFBlcmZpbENvbnN1bHRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_MICREDITO_WEB/WebMicredito/Pages/Solicitud/Solicitud.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU29saWNpdHVkXFNvbGljaXR1ZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_MICREDITO_WEB/WebMicredito/Pages/TareasCurso/TareasCurso.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFyZWFzQ3Vyc29cVGFyZWFzQ3Vyc28ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_MICREDITO_WEB/WebMicredito/Shared/Components/DecisionComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcRGVjaXNpb25Db21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_MICREDITO_WEB/WebMicredito/Shared/Components/LoadingComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcTG9hZGluZ0NvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_MICREDITO_WEB/WebMicredito/Shared/Components/ModalComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcTW9kYWxDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_MICREDITO_WEB/WebMicredito/Shared/HomeLayout/HomeLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEhvbWVMYXlvdXRcSG9tZUxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_MICREDITO_WEB/WebMicredito/Shared/HomeLayout/NavUser.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEhvbWVMYXlvdXRcTmF2VXNlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_MICREDITO_WEB/WebMicredito/Shared/Login/LoginLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luXExvZ2luTGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_MICREDITO_WEB/WebMicredito/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/MICREDITO/MICRE_MICREDITO_WEB/WebMicredito/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 

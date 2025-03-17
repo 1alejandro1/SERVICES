@@ -1,0 +1,262 @@
+[
+  {
+    "ContainingType": "MICREDITO.EVALUACION.API.Controllers.EvaluacionController",
+    "Method": "Post",
+    "RelativePath": "api/Evaluacion/v1/Cargar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICREDITO.EVALUACION.API.DTOs.FileRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICREDITO.EVALUACION.ENTITIES.Evaluacion",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "MICREDITO.EVALUACION.ENTITIES.Error",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICREDITO.EVALUACION.API.Controllers.EvaluacionController",
+    "Method": "Aprobar",
+    "RelativePath": "api/Evaluacion/v1/Estado/Aprobar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nroEvaluacion",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "codSolicitud",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "usuario",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "MICREDITO.EVALUACION.ENTITIES.Error",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICREDITO.EVALUACION.API.Controllers.EvaluacionController",
+    "Method": "Rechazar",
+    "RelativePath": "api/Evaluacion/v1/Estado/Rechazar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nroEvaluacion",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "usuario",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "MICREDITO.EVALUACION.ENTITIES.Error",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICREDITO.EVALUACION.API.Controllers.EvaluacionController",
+    "Method": "GetEvaluacion",
+    "RelativePath": "api/Evaluacion/v1/GetEvaluacion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nroEvaluacion",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICREDITO.EVALUACION.ENTITIES.Evaluacion",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "MICREDITO.EVALUACION.ENTITIES.Error",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICREDITO.EVALUACION.API.Controllers.EvaluacionController",
+    "Method": "Post",
+    "RelativePath": "api/Evaluacion/v1/Guardar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICREDITO.EVALUACION.API.DTOs.EvaluacionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "MICREDITO.EVALUACION.ENTITIES.Error",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICREDITO.EVALUACION.API.Controllers.EvaluacionController",
+    "Method": "Get",
+    "RelativePath": "api/Evaluacion/v1/ListEvaluacion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuario",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICREDITO.EVALUACION.ENTITIES.Evaluacion, MICREDITO.EVALUACION.ENTITIES, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "MICREDITO.EVALUACION.ENTITIES.Error",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICREDITO.EVALUACION.API.Controllers.EvaluacionController",
+    "Method": "Search",
+    "RelativePath": "api/Evaluacion/v1/SearchEvaluacion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICREDITO.EVALUACION.API.DTOs.BuscarEvaluacionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICREDITO.EVALUACION.ENTITIES.BandejaEvaluacion, MICREDITO.EVALUACION.ENTITIES, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "MICREDITO.EVALUACION.ENTITIES.Error",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 500
+      }
+    ]
+  }
+]

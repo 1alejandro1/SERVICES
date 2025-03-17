@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MICRE_APP_EXCEPCIONES.props" />
+</Project>

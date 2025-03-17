@@ -1,0 +1,127 @@
+﻿@using BCP.CROSS.MODELS.Reportes.Analista
+@using Sarc.WebApp.Models.Reportes.Analista
+<div class="row align-content-center">
+    <div class="col">
+        <h4><strong>REPORTE ANALISTA / ESPECIALIDAD</strong></h4>
+    </div>
+    <div class="col-10">
+        <table class="table table-hover table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col" class="table-tomato">ANALISTA / ESPECIALDIAD</th>
+                    <th scope="col" class="table-midnightblue">ATM DINERO NO DISPENSADO</th>
+                    <th scope="col" class="table-midnightblue">CERTIFICACIONES</th>
+                    <th scope="col" class="table-midnightblue">COMPLEJO</th>
+                    <th scope="col" class="table-midnightblue">RECLAMOS/CONSULTAS - Generales</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (EspecialidadViewModel item in _dataTable)
+                {
+                    <tr>
+                        <th scope="row" class="table-midnightblue">@item.Nombre</th>
+                        <td class="table-light">@item.ATM</td>
+                        <td class="table-light">@item.Certificaciones</td>
+                        <td class="table-light">@item.Complejo</td>
+                        <td class="table-light">@item.Reclamos</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+@code {
+    [Parameter]
+    public List<EspecialidadModel> Data { get; set; }
+    public List<string> _tiposEspecialidad = new List<string>();
+    public List<EspecialidadViewModel> _dataTable = new List<EspecialidadViewModel>();
+    protected override void OnInitialized()
+    {
+        GetTipos(); //TODO:Generar mas especialidades segun la informacion recibida del controlador
+        CreateDataTable();
+        PopulateData();
+    }
+    public void GetTipos()
+    {
+        foreach (EspecialidadModel item in Data)
+        {
+            bool flag = true;
+            foreach (string tipo in _tiposEspecialidad)
+            {
+                if (item.Especialidad == tipo)
+                {
+                    flag = false;
+                }
+            }
+            if (flag)
+            {
+                _tiposEspecialidad.Add(item.Especialidad);
+            }
+        }
+
+    }
+    public void CreateDataTable()
+    {
+        foreach (EspecialidadModel item in Data)
+        {
+            bool flag = true;
+            foreach (EspecialidadViewModel item2 in _dataTable)
+            {
+                if (item2.Nombre == item.Nombre) flag = false;
+            }
+            if (flag)
+            {
+                _dataTable.Add(
+                new EspecialidadViewModel(
+                    nombre: item.Nombre
+                )
+            );
+            }
+        }
+    }
+    public void PopulateData()
+    {
+        foreach (EspecialidadModel item in Data)
+        {
+            foreach (EspecialidadViewModel item2 in _dataTable)
+            {
+                if (item.Nombre == item2.Nombre)
+                {
+                    switch (item.Especialidad)
+                    {
+                        case "ATM DINERO NO DISPENSADO":
+                            item2.ATM = item.Cantidad;
+                            break;
+                        case "CERTIFICACIONES":
+                            item2.Certificaciones = item.Cantidad;
+                            break;
+                        case "COMPLEJO":
+                            item2.Complejo = item.Cantidad;
+                            break;
+                        case "OTRAS SOL":
+                            item2.OtrasSol = item.Cantidad;
+                            break;
+                        case "RECLAMOS/CONSULTAS - Generales":
+                            item2.Reclamos = item.Cantidad;
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+        }
+    }
+}
+<style lang="css">
+    .table-tomato {
+        background-color: tomato !important;
+        color: white !important;
+        vertical-align: middle;
+    }
+
+    .table-midnightblue {
+        background-color: midnightblue !important;
+        color: white !important;
+        vertical-align: middle;
+    }
+</style>

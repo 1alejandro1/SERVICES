@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\DATA\BCP.CROSS.DATAACCESS\BCP.CROSS.DATAACCESS.csproj" />
+    <ProjectReference Include="..\..\DATA\BCP.CROSS.MODELS\BCP.CROSS.MODELS.csproj" />
+    <ProjectReference Include="..\BCP.CROSS.INFOCLIENTE\BCP.CROSS.INFOCLIENTE.csproj" />
+    <ProjectReference Include="..\BCP.CROSS.SECRYPT\BCP.CROSS.SECRYPT.csproj" />
+    <ProjectReference Include="..\BCP.CROSS.SEGURINET\BCP.CROSS.SEGURINET.csproj" />
+    <ProjectReference Include="..\BCP.Framework.Logs\BCP.Framework.Logs.csproj" />
+  </ItemGroup>
+
+</Project>

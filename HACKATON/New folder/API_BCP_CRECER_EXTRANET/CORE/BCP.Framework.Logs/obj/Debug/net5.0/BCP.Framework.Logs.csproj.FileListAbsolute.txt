@@ -1,0 +1,36 @@
+D:\BC2545\SARC\FORFULARIO EXPRESS\Fuentes\API_SARC\CORE\BCP.Framework.Logs\bin\Debug\net5.0\BCP.Framework.Logs.deps.json
+D:\BC2545\SARC\FORFULARIO EXPRESS\Fuentes\API_SARC\CORE\BCP.Framework.Logs\bin\Debug\net5.0\BCP.Framework.Logs.dll
+D:\BC2545\SARC\FORFULARIO EXPRESS\Fuentes\API_SARC\CORE\BCP.Framework.Logs\bin\Debug\net5.0\ref\BCP.Framework.Logs.dll
+D:\BC2545\SARC\FORFULARIO EXPRESS\Fuentes\API_SARC\CORE\BCP.Framework.Logs\bin\Debug\net5.0\BCP.Framework.Logs.pdb
+D:\BC2545\SARC\FORFULARIO EXPRESS\Fuentes\API_SARC\CORE\BCP.Framework.Logs\obj\Debug\net5.0\BCP.Framework.Logs.csproj.AssemblyReference.cache
+D:\BC2545\SARC\FORFULARIO EXPRESS\Fuentes\API_SARC\CORE\BCP.Framework.Logs\obj\Debug\net5.0\BCP.Framework.Logs.GeneratedMSBuildEditorConfig.editorconfig
+D:\BC2545\SARC\FORFULARIO EXPRESS\Fuentes\API_SARC\CORE\BCP.Framework.Logs\obj\Debug\net5.0\BCP.Framework.Logs.AssemblyInfoInputs.cache
+D:\BC2545\SARC\FORFULARIO EXPRESS\Fuentes\API_SARC\CORE\BCP.Framework.Logs\obj\Debug\net5.0\BCP.Framework.Logs.AssemblyInfo.cs
+D:\BC2545\SARC\FORFULARIO EXPRESS\Fuentes\API_SARC\CORE\BCP.Framework.Logs\obj\Debug\net5.0\BCP.Framework.Logs.csproj.CoreCompileInputs.cache
+D:\BC2545\SARC\FORFULARIO EXPRESS\Fuentes\API_SARC\CORE\BCP.Framework.Logs\obj\Debug\net5.0\BCP.Framework.Logs.dll
+D:\BC2545\SARC\FORFULARIO EXPRESS\Fuentes\API_SARC\CORE\BCP.Framework.Logs\obj\Debug\net5.0\ref\BCP.Framework.Logs.dll
+D:\BC2545\SARC\FORFULARIO EXPRESS\Fuentes\API_SARC\CORE\BCP.Framework.Logs\obj\Debug\net5.0\BCP.Framework.Logs.pdb
+D:\BC2545\HACKATON\API_SARC\CORE\BCP.Framework.Logs\bin\Debug\net5.0\BCP.Framework.Logs.deps.json
+D:\BC2545\HACKATON\API_SARC\CORE\BCP.Framework.Logs\bin\Debug\net5.0\BCP.Framework.Logs.dll
+D:\BC2545\HACKATON\API_SARC\CORE\BCP.Framework.Logs\bin\Debug\net5.0\ref\BCP.Framework.Logs.dll
+D:\BC2545\HACKATON\API_SARC\CORE\BCP.Framework.Logs\bin\Debug\net5.0\BCP.Framework.Logs.pdb
+D:\BC2545\HACKATON\API_SARC\CORE\BCP.Framework.Logs\obj\Debug\net5.0\BCP.Framework.Logs.csproj.AssemblyReference.cache
+D:\BC2545\HACKATON\API_SARC\CORE\BCP.Framework.Logs\obj\Debug\net5.0\BCP.Framework.Logs.GeneratedMSBuildEditorConfig.editorconfig
+D:\BC2545\HACKATON\API_SARC\CORE\BCP.Framework.Logs\obj\Debug\net5.0\BCP.Framework.Logs.AssemblyInfoInputs.cache
+D:\BC2545\HACKATON\API_SARC\CORE\BCP.Framework.Logs\obj\Debug\net5.0\BCP.Framework.Logs.AssemblyInfo.cs
+D:\BC2545\HACKATON\API_SARC\CORE\BCP.Framework.Logs\obj\Debug\net5.0\BCP.Framework.Logs.csproj.CoreCompileInputs.cache
+D:\BC2545\HACKATON\API_SARC\CORE\BCP.Framework.Logs\obj\Debug\net5.0\BCP.Framework.Logs.dll
+D:\BC2545\HACKATON\API_SARC\CORE\BCP.Framework.Logs\obj\Debug\net5.0\ref\BCP.Framework.Logs.dll
+D:\BC2545\HACKATON\API_SARC\CORE\BCP.Framework.Logs\obj\Debug\net5.0\BCP.Framework.Logs.pdb
+D:\BC2545\HACKATON\BCPCRECER_API\CORE\BCP.Framework.Logs\bin\Debug\net5.0\BCP.Framework.Logs.deps.json
+D:\BC2545\HACKATON\BCPCRECER_API\CORE\BCP.Framework.Logs\bin\Debug\net5.0\BCP.Framework.Logs.dll
+D:\BC2545\HACKATON\BCPCRECER_API\CORE\BCP.Framework.Logs\bin\Debug\net5.0\ref\BCP.Framework.Logs.dll
+D:\BC2545\HACKATON\BCPCRECER_API\CORE\BCP.Framework.Logs\bin\Debug\net5.0\BCP.Framework.Logs.pdb
+D:\BC2545\HACKATON\BCPCRECER_API\CORE\BCP.Framework.Logs\obj\Debug\net5.0\BCP.Framework.Logs.csproj.AssemblyReference.cache
+D:\BC2545\HACKATON\BCPCRECER_API\CORE\BCP.Framework.Logs\obj\Debug\net5.0\BCP.Framework.Logs.GeneratedMSBuildEditorConfig.editorconfig
+D:\BC2545\HACKATON\BCPCRECER_API\CORE\BCP.Framework.Logs\obj\Debug\net5.0\BCP.Framework.Logs.AssemblyInfoInputs.cache
+D:\BC2545\HACKATON\BCPCRECER_API\CORE\BCP.Framework.Logs\obj\Debug\net5.0\BCP.Framework.Logs.AssemblyInfo.cs
+D:\BC2545\HACKATON\BCPCRECER_API\CORE\BCP.Framework.Logs\obj\Debug\net5.0\BCP.Framework.Logs.csproj.CoreCompileInputs.cache
+D:\BC2545\HACKATON\BCPCRECER_API\CORE\BCP.Framework.Logs\obj\Debug\net5.0\BCP.Framework.Logs.dll
+D:\BC2545\HACKATON\BCPCRECER_API\CORE\BCP.Framework.Logs\obj\Debug\net5.0\ref\BCP.Framework.Logs.dll
+D:\BC2545\HACKATON\BCPCRECER_API\CORE\BCP.Framework.Logs\obj\Debug\net5.0\BCP.Framework.Logs.pdb

@@ -1,0 +1,16 @@
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaModificaciones\bin\Debug\CapaModificaciones.dll
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaModificaciones\bin\Debug\CapaModificaciones.pdb
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaModificaciones\bin\Debug\BCP.InfoCliente.WSModificaciones.Entidades.dll
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaModificaciones\bin\Debug\Comunes.dll
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaModificaciones\bin\Debug\Newtonsoft.Json.dll
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaModificaciones\bin\Debug\BCP.MIC_COORDINADOR.Models.dll
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaModificaciones\bin\Debug\NLog.dll
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaModificaciones\bin\Debug\Comunes.pdb
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaModificaciones\bin\Debug\Newtonsoft.Json.xml
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaModificaciones\bin\Debug\BCP.MIC_COORDINADOR.Models.pdb
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaModificaciones\bin\Debug\NLog.xml
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaModificaciones\obj\Debug\CapaModificaciones.csproj.AssemblyReference.cache
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaModificaciones\obj\Debug\CapaModificaciones.csproj.CoreCompileInputs.cache
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaModificaciones\obj\Debug\CapaModificaciones.csproj.CopyComplete
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaModificaciones\obj\Debug\CapaModificaciones.dll
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaModificaciones\obj\Debug\CapaModificaciones.pdb

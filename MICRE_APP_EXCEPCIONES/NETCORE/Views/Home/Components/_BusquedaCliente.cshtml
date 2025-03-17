@@ -1,0 +1,86 @@
+﻿@model ClienteBusqueda
+@* Views/Home/Components/_BusquedaCliente.cshtml *@
+
+<body>
+    <div class="card mb-3">
+        @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+        {
+            <div class="toast-container position-fixed bottom-0 end-0 p-3" id="toast-button">
+                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                        <img src="~/images/logobcp.svg" style="width: 50px; height: 50px;" class="rounded me-2" alt="BCP logo">
+                        <strong class="me-auto">Mensaje</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                        @ViewBag.ErrorMessage
+                    </div>
+                </div>
+            </div>
+        }
+        <div class="pt-2">
+            <div class="custom-border m-3" style="display: flex; align-items: baseline;">
+                <h3>Búsqueda del cliente</h3>
+            </div>
+        </div>
+        <div class="card-body">
+            <form asp-action=@ViewBag.Action asp-controller=@ViewBag.Controller method="Post" class="needs-validation" novalidate>
+                <div class="input-group mx-2 pb-3">
+                    <div class="form-floating has-validation">
+                        <input asp-for="Ci" type="number" min="0" class="form-control" id="CedulaIdentidad" placeholder="Cédula de identidad" required maxlength="8" oninput="this.value = this.value.slice(0, 8)" title="Debe contener exactamente 8 dígitos numéricos">
+
+                        <label class="fst-italic" for="CedulaIdentidad">Cédula de identidad</label>
+                        <div class="invalid-feedback">
+                            Este campo es necesario.
+                        </div>
+                    </div>
+
+                    <div class="form-floating has-validation">
+                        <select asp-for="Extencion" class="form-select" aria-label="Seleccione una extensión" required>
+                            <option value="QLP" selected>La Paz</option>
+                            <option value="QCB">Cochabamba</option>
+                            <option value="QSC">Santa Cruz</option>
+                            <option value="QCH">Chuquisaca</option>
+                            <option value="QPO">Potosí</option>
+                            <option value="QPA">Pando</option>
+                            <option value="QOR">Oruro</option>
+                            <option value="QTJ">Tarija</option>
+                            <option value="QBE">Beni</option>
+                            <option value="QPE">Persona Extranjera</option>
+                            <option value="QXX">Sin extensión</option>
+                        </select>
+                        <label class="fst-italic" for="floatingInputUser">Extensión</label>
+                        <div class="invalid-feedback">
+                            Este campo es necesario.
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-floating has-validation">
+                        <input asp-for="Complemento" type="text" class="form-control" id="floatingInputUser" maxlength="2" placeholder="Complemento" value="00" oninput="this.value = this.value.toUpperCase()">
+                        <label class="fst-italic" for="floatingInputUser">Complemento</label>
+                        <div class="invalid-feedback">
+                            Este campo es necesario.
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg send">Buscar</button>
+                </div>
+            </form>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+                var toastList = toastElList.map(function (toastEl) {
+                    return new bootstrap.Toast(toastEl)
+                })
+                toastList.forEach(toast => toast.show())
+            });
+        </script>
+
+    </div>
+</body>
+
+

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Conexion_SMTP_BCP"
+  DTS:DTSID="{4E1BF81E-F61B-41F7-9847-ECE05252C596}"
+  DTS:Description="Conexion_SMTP_BCP"
+  DTS:CreationName="SMTP">
+  <DTS:ObjectData>
+    <SmtpConnectionManager
+      ConnectionString="SmtpServer=btbexc00.bancred.com.bo;UseWindowsAuthentication=True;EnableSsl=True;"
+      ConnectByProxy="False" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

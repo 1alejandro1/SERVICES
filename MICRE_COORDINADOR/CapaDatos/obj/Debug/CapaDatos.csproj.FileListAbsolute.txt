@@ -1,0 +1,9 @@
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaDatos\bin\Debug\CapaDatos.dll
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaDatos\bin\Debug\CapaDatos.pdb
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaDatos\bin\Debug\Newtonsoft.Json.dll
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaDatos\bin\Debug\Newtonsoft.Json.xml
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaDatos\obj\Debug\CapaDatos.dll
+D:\T25208\MICREDITO\MICRE_COORDINADOR\CapaDatos\obj\Debug\CapaDatos.pdb

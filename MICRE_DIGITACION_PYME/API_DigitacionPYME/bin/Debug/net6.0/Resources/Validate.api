@@ -1,0 +1,18 @@
+{
+    "Completed": {
+        "LongName": "Completado",
+        "Code": "00"
+    },
+    "Exception": {
+        "LongName": "Excepción",
+        "Code": "97"
+    },
+    "Sql": {
+        "LongName": "Ha ocurrido un error y puede que el servicio no este disponible temporalmente",
+        "Code": "98"
+    },
+    "Error": {
+        "LongName": "Error",
+        "Code": "99"
+    }
+}

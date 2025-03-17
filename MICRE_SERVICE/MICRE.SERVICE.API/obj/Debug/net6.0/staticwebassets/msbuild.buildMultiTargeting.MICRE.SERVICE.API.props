@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MICRE.SERVICE.API.props" />
+</Project>

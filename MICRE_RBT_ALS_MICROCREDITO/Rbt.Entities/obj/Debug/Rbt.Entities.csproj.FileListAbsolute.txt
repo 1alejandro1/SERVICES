@@ -1,0 +1,6 @@
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_MICROCREDITO\Rbt.Entities\bin\Debug\Rbt.Entities.dll
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_MICROCREDITO\Rbt.Entities\bin\Debug\Rbt.Entities.pdb
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_MICROCREDITO\Rbt.Entities\obj\Debug\Rbt.Entities.csproj.AssemblyReference.cache
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_MICROCREDITO\Rbt.Entities\obj\Debug\Rbt.Entities.csproj.CoreCompileInputs.cache
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_MICROCREDITO\Rbt.Entities\obj\Debug\Rbt.Entities.dll
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_MICROCREDITO\Rbt.Entities\obj\Debug\Rbt.Entities.pdb

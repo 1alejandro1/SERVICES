@@ -1,0 +1,92 @@
+[
+  {
+    "ContainingType": "ApiDigitacion.Hipotecario.Controllers.CalculoController",
+    "Method": "ObtenerCem",
+    "RelativePath": "api/Calculo/Cem",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ApiDigitacion.Hipotecario.Model.DTO.RequestCalculo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiDigitacion.Hipotecario.Controllers.CalculoController",
+    "Method": "Condiciones",
+    "RelativePath": "api/Calculo/Condiciones",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ApiDigitacion.Hipotecario.Model.DTO.RequestCondiciones",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiDigitacion.Hipotecario.Controllers.CalificacionesController",
+    "Method": "GetPDH",
+    "RelativePath": "api/Calificaciones/PDH",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ApiDigitacion.Hipotecario.Model.DTO.RequestCalificaciones",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ApiDigitacion.Hipotecario.Services.DatosRespuestaEntity",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ApiDigitacion.Hipotecario.Controllers.SeguridadController",
+    "Method": "Encriptar",
+    "RelativePath": "api/Seguridad/encriptar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ApiDigitacion.Hipotecario.Model.DTO.RequestTexto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiDigitacion.Hipotecario.Controllers.SolicitudController",
+    "Method": "NuevaSolicitud",
+    "RelativePath": "api/Solicitud/crear",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ApiDigitacion.Hipotecario.Model.DTO.RequestNuevaSolicitud",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

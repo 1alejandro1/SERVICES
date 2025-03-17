@@ -1,0 +1,5 @@
+D:\T25208\MICREDITO\MICRE_DIGITACION_HIPOTECARIO\ApiDigitacion.Hipotecario.Test\obj\Debug\net8.0\ApiDigitacion.Hipotecario.Test.csproj.AssemblyReference.cache
+D:\T25208\MICREDITO\MICRE_DIGITACION_HIPOTECARIO\ApiDigitacion.Hipotecario.Test\obj\Debug\net8.0\ApiDigitacion.Hipotecario.Test.GeneratedMSBuildEditorConfig.editorconfig
+D:\T25208\MICREDITO\MICRE_DIGITACION_HIPOTECARIO\ApiDigitacion.Hipotecario.Test\obj\Debug\net8.0\ApiDigitacion.Hipotecario.Test.AssemblyInfoInputs.cache
+D:\T25208\MICREDITO\MICRE_DIGITACION_HIPOTECARIO\ApiDigitacion.Hipotecario.Test\obj\Debug\net8.0\ApiDigitacion.Hipotecario.Test.AssemblyInfo.cs
+D:\T25208\MICREDITO\MICRE_DIGITACION_HIPOTECARIO\ApiDigitacion.Hipotecario.Test\obj\Debug\net8.0\ApiDigitacion.Hipotecario.Test.csproj.CoreCompileInputs.cache

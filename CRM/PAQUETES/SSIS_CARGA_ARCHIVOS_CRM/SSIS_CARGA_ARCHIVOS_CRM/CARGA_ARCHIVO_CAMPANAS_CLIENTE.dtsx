@@ -1,0 +1,2993 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/17/2024 7:37:04 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="W204SISF35030"
+  DTS:CreatorName="BTBNET\T25208"
+  DTS:DTSID="{D5CEA4CF-E4B8-4E38-B035-C14C1BA1EFB9}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5556.0"
+  DTS:LocaleID="16394"
+  DTS:ObjectName="CARGA_ARCHIVO_CAMPANAS_CLIENTE"
+  DTS:PackageType="5"
+  DTS:VersionBuild="86"
+  DTS:VersionGUID="{959204A4-31D9-47C5-B0D7-3CC1A4D042C7}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[20240617_2004.log]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{74C08618-8016-4D68-9C70-527DE5F99EF1}"
+      DTS:ObjectName="20240617_2004.log">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::v_rutalog] +  @[User::v_logname]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="1"
+          DTS:ConnectionString="D:\BCB_LOGS\Paquetes\CRM\CARGA_ARCHIVOS_CAMPANAS_CLIENTE\LOGS\20240624_1325.log" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ConexionArchivoCampanasCliente]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{C33EBE6A-BA45-45DD-BFF8-A47AF126BCF9}"
+      DTS:ObjectName="ConexionArchivoCampanasCliente">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="RaggedRight"
+          DTS:LocaleID="16394"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter="_x000D__x000A_"
+          DTS:DataRowsToSkip="1"
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="D:\BCB_LOGS\Paquetes\CRM\CARGA_ARCHIVOS_CAMPANAS_CLIENTE\ARCHIVOS\CAMPANAS_CLIENTE.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="81"
+              DTS:MaximumWidth="80"
+              DTS:DataType="129"
+              DTS:ObjectName="COD_CAMPANA"
+              DTS:DTSID="{60973183-75AA-4279-AD2C-D2AC538C68CC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="13"
+              DTS:MaximumWidth="13"
+              DTS:DataType="129"
+              DTS:ObjectName="CIC"
+              DTS:DTSID="{32D424B4-D740-453F-82A3-7DBCE5804B5A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="7"
+              DTS:MaximumWidth="7"
+              DTS:DataType="129"
+              DTS:ObjectName="MONEDA"
+              DTS:DTSID="{41C77458-7461-44E8-A6E0-39F4EAB0B539}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="201"
+              DTS:MaximumWidth="201"
+              DTS:DataType="129"
+              DTS:ObjectName="SERVICIO_DEUDA"
+              DTS:DTSID="{A32C575F-BE83-41B0-9586-C856A8E3D3D2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="201"
+              DTS:MaximumWidth="201"
+              DTS:DataType="129"
+              DTS:ObjectName="MAXIMA_CALIFICACION_SBEF"
+              DTS:DTSID="{72FACB22-E5A5-4916-A0AE-306490906482}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="257"
+              DTS:MaximumWidth="257"
+              DTS:DataType="129"
+              DTS:ObjectName="SALDO_PROMEDIO"
+              DTS:DTSID="{17E44C31-D6BD-4730-B48D-5ECDA96627F5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="257"
+              DTS:MaximumWidth="257"
+              DTS:DataType="129"
+              DTS:ObjectName="MONTO_LINEA"
+              DTS:DTSID="{E09CFAC3-6E6D-47F8-A010-A11E5E5D578D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="201"
+              DTS:MaximumWidth="201"
+              DTS:DataType="129"
+              DTS:ObjectName="TIPO_PRODUCTO"
+              DTS:DTSID="{9D1DBC45-3E31-4CAD-9DE7-10500CD922ED}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="201"
+              DTS:MaximumWidth="201"
+              DTS:DataType="129"
+              DTS:ObjectName="TASA"
+              DTS:DTSID="{EFA4AC2A-3639-411B-9CD4-C56AA7848264}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="201"
+              DTS:MaximumWidth="201"
+              DTS:DataType="129"
+              DTS:ObjectName="PLAZO"
+              DTS:DTSID="{4EA93443-E661-49CC-968A-6CF91BA3A57E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="201"
+              DTS:MaximumWidth="201"
+              DTS:DataType="129"
+              DTS:ObjectName="CUOTA"
+              DTS:DTSID="{49BD5C43-13D0-462B-9DA4-D066DCB4861B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="201"
+              DTS:MaximumWidth="201"
+              DTS:DataType="129"
+              DTS:ObjectName="NUMERO_OPERACION"
+              DTS:DTSID="{072A4630-C405-423B-8DA2-0F0B665D0FC2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="257"
+              DTS:MaximumWidth="257"
+              DTS:DataType="129"
+              DTS:ObjectName="MENSAJE"
+              DTS:DTSID="{111BE001-DD21-40F5-BA92-2D48529B3F13}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="201"
+              DTS:MaximumWidth="201"
+              DTS:DataType="129"
+              DTS:ObjectName="DEUDA_VIGENTE"
+              DTS:DTSID="{B6D51AE5-AE64-4A9A-844F-56007311D2D3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="201"
+              DTS:MaximumWidth="201"
+              DTS:DataType="129"
+              DTS:ObjectName="MATRICULA_RESPONSABLE"
+              DTS:DTSID="{770972B4-BEAD-45A2-8A22-D20763970336}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="201"
+              DTS:MaximumWidth="201"
+              DTS:DataType="129"
+              DTS:ObjectName="FECHA_FIN_ACTIVIDAD"
+              DTS:DTSID="{43B3301C-C5B8-468E-AFEB-8D08749E493F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="201"
+              DTS:MaximumWidth="201"
+              DTS:DataType="129"
+              DTS:ObjectName="MONEDA_1"
+              DTS:DTSID="{EFA0D012-828B-4618-BDF3-5EE9C28FD464}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="201"
+              DTS:MaximumWidth="201"
+              DTS:DataType="129"
+              DTS:ObjectName="NUMERO_OPERACIONES_1"
+              DTS:DTSID="{96938E6F-CAB2-4C19-ABA1-3CF8A0E46BB6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="201"
+              DTS:MaximumWidth="201"
+              DTS:DataType="129"
+              DTS:ObjectName="MONTO_LINEA_1"
+              DTS:DTSID="{FFC6A813-FEFE-426F-B856-C641C468B395}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="201"
+              DTS:MaximumWidth="201"
+              DTS:DataType="129"
+              DTS:ObjectName="EMPRESA"
+              DTS:DTSID="{ADCBC8C7-7BC1-489E-B65F-6BCCD7E7DC29}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="201"
+              DTS:MaximumWidth="201"
+              DTS:DataType="129"
+              DTS:ObjectName="DESCRIPCION_CORTA_1"
+              DTS:DTSID="{D29AE421-CA1A-4E98-806D-CB14AC82B810}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="257"
+              DTS:MaximumWidth="257"
+              DTS:DataType="129"
+              DTS:ObjectName="DESCRIPCION_MEDIA_1"
+              DTS:DTSID="{468CA864-1508-4406-B270-077B561B3945}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="257"
+              DTS:MaximumWidth="257"
+              DTS:DataType="129"
+              DTS:ObjectName="DESCRIPCION_LARGA_1"
+              DTS:DTSID="{9BC429AB-0053-4644-9692-F9BD3EBE8697}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="12"
+              DTS:MaximumWidth="12"
+              DTS:DataType="129"
+              DTS:ObjectName="PRIORIDAD"
+              DTS:DTSID="{CB45BD5A-0DE8-43E9-925B-9AA0DB664809}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="201"
+              DTS:MaximumWidth="201"
+              DTS:DataType="129"
+              DTS:ObjectName="VALIDA_CARGA"
+              DTS:DTSID="{E6D207B5-9958-4B98-B177-6E64DE8AD2EC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="201"
+              DTS:MaximumWidth="201"
+              DTS:DataType="129"
+              DTS:ObjectName="DESCRIPCION_ERROR"
+              DTS:DTSID="{D1C4E9A8-92CF-430C-B467-CABFCB036C54}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="53"
+              DTS:DataType="129"
+              DTS:ObjectName="PRIORIDAD_CLIENTE"
+              DTS:DTSID="{5710A0AC-1B43-4BA8-9C82-6754E8C34B06}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:LogProviders>
+    <DTS:LogProvider
+      DTS:ConfigString="20240617_2004.log"
+      DTS:CreationName="Microsoft.LogProviderTextFile"
+      DTS:Description="Writes log entries for events to a CSV file"
+      DTS:DTSID="{C8DD70C9-2133-4E30-85C7-4694D36DE1DA}"
+      DTS:ObjectName="SSIS log provider for Text files">
+      <DTS:ObjectData>
+        <InnerObject />
+      </DTS:ObjectData>
+    </DTS:LogProvider>
+  </DTS:LogProviders>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="3"
+      DTS:DTSID="{16B3B8E9-986E-4C91-956B-86F8BD429B1B}"
+      DTS:ObjectName="P_Depuracion_Logs">
+      <DTS:Property
+        DTS:DataType="3"
+        DTS:Name="ParameterValue">8</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{98350AB8-8BF4-4DA6-AB1D-F528E12D32BE}"
+      DTS:ObjectName="P_mailError">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">dtoro@bcp.com.bo</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{4E0DCE45-48EC-43B2-B148-D24BC831F6F4}"
+      DTS:ObjectName="P_mailExito">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">dtoro@bcp.com.bo</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{91C75DBE-5B2F-449F-9F35-2B799D0402F1}"
+      DTS:ObjectName="P_mailRemitente">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">jllanos@bcp.com.bo</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{96E818F9-1010-49A1-BE1B-37F872A615A7}"
+      DTS:ObjectName="P_nameBaseCRMEmail">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">BD_CRMFUENTE</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{8BAC064B-9F17-4309-B8FF-07DC628BBA0E}"
+      DTS:ObjectName="P_nameTableCampanasCliente_Email">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">dbo.CAMP_MIEMBRO</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{C8633115-7939-4724-A4A2-402AAC089732}"
+      DTS:ObjectName="P_rutaArchivo">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">D:\BCB_LOGS\Paquetes\CRM\CARGA_ARCHIVOS_CAMPANAS_CLIENTE\ARCHIVOS\CAMPANAS_CLIENTE.txt</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{66760C00-7DE0-4C78-8D25-44515074B5FA}"
+      DTS:ObjectName="P_rutaArchivoDestino">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">D:\BCB_LOGS\Paquetes\CRM\CARGA_ARCHIVOS_CAMPANAS_CLIENTE\BACKUP\</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{899460C7-4BA6-4712-B20B-AED34B3E1137}"
+      DTS:ObjectName="P_rutalog">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">D:\BCB_LOGS\Paquetes\CRM\CARGA_ARCHIVOS_CAMPANAS_CLIENTE\LOGS\</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{23DAA726-39F7-495D-9841-E7BCF6167592}"
+      DTS:ObjectName="P_ServSMTP">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">btbexc00.bancred.com.bo</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{5830AB35-E9C0-4096-BF55-A68DB10792FB}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="GETDATE()"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_date">
+      <DTS:VariableValue
+        DTS:DataType="7">6/24/2024 1:25:32 PM</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{B9EB6801-3760-4FDE-A1BA-A02913940EF6}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_Depuracion_Logs]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_Depuracion_Logs">
+      <DTS:VariableValue
+        DTS:DataType="3">8</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{E7B503CF-03CB-4BA3-B9DD-74FC1137DA9D}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_Error">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{DC29F713-C3EA-4D73-9530-8D3FEFCE1687}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="SUBSTRING(((REPLACE((REPLACE((REPLACE( (DT_WSTR, 50) (DT_DBTIMESTAMP) GETDATE(),&quot;-&quot;,&quot;&quot;)),&quot; &quot;,&quot;_&quot;)),&quot;:&quot;,&quot;&quot;))),1,13)+&quot;.log&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_logname">
+      <DTS:VariableValue
+        DTS:DataType="8">20240624_1325.log</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{045D9789-F684-468C-B903-B0E283C9B368}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_mailExito]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_mailError">
+      <DTS:VariableValue
+        DTS:DataType="8">dtoro@bcp.com.bo</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{66DC40EE-963E-4B71-966D-0D2383677A65}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_mailExito]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_mailExito">
+      <DTS:VariableValue
+        DTS:DataType="8">dtoro@bcp.com.bo</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{9A001008-C221-4BDC-94FC-3C4E6416B422}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_mailRemitente]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_mailRemitente">
+      <DTS:VariableValue
+        DTS:DataType="8">jllanos@bcp.com.bo</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{EE9DD3D5-54CF-4988-9C76-7BB9E8E5612B}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_nameBaseCRMEmail]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_nameBaseCRMEmail">
+      <DTS:VariableValue
+        DTS:DataType="8">BD_CRMFUENTE</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{680B3E9A-C706-4B5E-8183-297D81228959}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_nameTableCampanasCliente_Email]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_nameTableCampanasCliente_Email">
+      <DTS:VariableValue
+        DTS:DataType="8">dbo.CAMP_MIEMBRO</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{19BD78D9-BABC-43B1-9A39-38F1DB428238}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_PackageName">
+      <DTS:VariableValue
+        DTS:DataType="8">CARGA_ARCHIVOS_CAMPANAS_CLIENTE</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{CF08BFE1-719F-491D-ABD0-E5B9FA407FFB}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_rutaArchivo]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_rutaArchivo">
+      <DTS:VariableValue
+        DTS:DataType="8">D:\BCB_LOGS\Paquetes\CRM\CARGA_ARCHIVOS_CAMPANAS_CLIENTE\ARCHIVOS\CAMPANAS_CLIENTE.txt</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{624926AF-1E7B-4FDD-B8CB-330C7CF6FFA6}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_rutaArchivoDestino]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_rutaArchivoDestino">
+      <DTS:VariableValue
+        DTS:DataType="8">D:\BCB_LOGS\Paquetes\CRM\CARGA_ARCHIVOS_CAMPANAS_CLIENTE\BACKUP\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{11D783D9-A7DC-4A58-A4DE-59EE08232F3E}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_rutalog]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_rutalog">
+      <DTS:VariableValue
+        DTS:DataType="8">D:\BCB_LOGS\Paquetes\CRM\CARGA_ARCHIVOS_CAMPANAS_CLIENTE\LOGS\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{F63050F0-2EA4-4F5C-B2CF-BBFE468E1B44}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::P_ServSMTP]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_ServSMTP">
+      <DTS:VariableValue
+        DTS:DataType="8">btbexc00.bancred.com.bo</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{8A71AEE5-6740-446E-AA78-49A35CC7A999}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_total_Campanas_Cliente">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:LoggingOptions
+    DTS:FilterKind="0"
+    DTS:LoggingMode="1">
+    <DTS:Property
+      DTS:DataType="8"
+      DTS:Name="EventFilter">3,7,OnError,10,OnProgress,12,OnTaskFailed</DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnError"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnProgress"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnTaskFailed"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:SelectedLogProviders>
+      <DTS:SelectedLogProvider
+        DTS:InstanceID="{C8DD70C9-2133-4E30-85C7-4694D36DE1DA}" />
+    </DTS:SelectedLogProviders>
+  </DTS:LoggingOptions>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Correo de Error de Carga Data CAMPANAS CLIENTE"
+      DTS:CreationName="Microsoft.SendMailTask"
+      DTS:Description="Se envia cuando ocurre algun error en algun proceso del paquete"
+      DTS:DTSID="{AB47BDE0-A281-4E23-AC9E-F0128DC60A78}"
+      DTS:ExecutableType="Microsoft.SendMailTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Correo de Error de Carga Data CAMPANAS CLIENTE"
+      DTS:TaskContact="Send Mail Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:PropertyExpression
+        DTS:Name="FromLine">@[User::v_mailRemitente]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="MessageSource">"Señores,\n\nha ocurrido un error en la ejecución del paquete: "+ @[User::v_PackageName]  + " del Servidor " + @[System::MachineName] + ".\n\n\tFecha y hora de ejecución:\t\t "+(DT_WSTR, 50) (DT_DATE) @[System::StartTime] +"\n\nError en el proceso de carga de datos del archivo " + @[User::v_rutaArchivo] +"\n\nPara mayor detalle revise el archivo LOG [" +@[User::v_rutalog] +"\\"+ @[User::v_logname]  +"]\n\nSaludos.\n\nPRODUCCION DE SISTEMAS\nBanco de Credito de Bolivia S.A."</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="Subject">"Error carga de archivo a base de datos del Paquete " +    @[User::v_PackageName] + " para CRM"</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="ToLine">@[User::v_mailError]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <SendMailTask:SendMailTaskData
+          SendMailTask:SMTPServer="{4E1BF81E-F61B-41F7-9847-ECE05252C596}"
+          SendMailTask:From="jllanos@bcp.com.bo"
+          SendMailTask:To="dtoro@bcp.com.bo"
+          SendMailTask:Subject="Error carga de archivo a base de datos del Paquete CARGA_ARCHIVOS_CAMPANAS_CLIENTE para CRM"
+          SendMailTask:Priority="High"
+          SendMailTask:MessageSource="Señores,&#xA;&#xA;ha ocurrido un error en la ejecución del paquete: CARGA_ARCHIVOS_CAMPANAS_CLIENTE del Servidor W204SISF35002.&#xA;&#xA;&#x9;Fecha y hora de ejecución:&#x9;&#x9; 24/06/2024 01:25:31 p.m.&#xA;&#xA;Error en el proceso de carga de datos del archivo D:\BCB_LOGS\Paquetes\CRM\CARGA_ARCHIVOS_CAMPANAS_CLIENTE\ARCHIVOS\CAMPANAS_CLIENTE.txt&#xA;&#xA;Para mayor detalle revise el archivo LOG [D:\BCB_LOGS\Paquetes\CRM\CARGA_ARCHIVOS_CAMPANAS_CLIENTE\LOGS\\20240624_1325.log]&#xA;&#xA;Saludos.&#xA;&#xA;PRODUCCION DE SISTEMAS&#xA;Banco de Credito de Bolivia S.A." xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Correo de Error de Limpieza de Logs"
+      DTS:CreationName="Microsoft.SendMailTask"
+      DTS:DelayValidation="True"
+      DTS:Description="Se envia cuando ocurre algun error en algun proceso del paquete"
+      DTS:DTSID="{F8D6EA57-BCFF-43E0-84FC-51618D51E97F}"
+      DTS:ExecutableType="Microsoft.SendMailTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Correo de Error de Limpieza de Logs"
+      DTS:TaskContact="Send Mail Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:PropertyExpression
+        DTS:Name="FromLine">@[User::v_mailRemitente]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="MessageSource">"Señores,\n\nha ocurrido un error en la ejecución del paquete: "+ @[User::v_PackageName]  + " del Servidor " + @[System::MachineName] + ".\n\n\tFecha y hora de ejecución:\t\t "+(DT_WSTR, 50) (DT_DATE) @[System::StartTime] +"\n\nPara mayor detalle revise el archivo LOG [" +@[User::v_rutalog] +"\\"+ @[User::v_logname]  +"]\n\nSaludos.\n\nPRODUCCION DE SISTEMAS\nBanco de Credito de Bolivia S.A."</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="Subject">"Error en depuracion de Logs del Paquete " +    @[User::v_PackageName] + " para CRM"</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="ToLine">@[User::v_mailError]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <SendMailTask:SendMailTaskData
+          SendMailTask:SMTPServer="{4E1BF81E-F61B-41F7-9847-ECE05252C596}"
+          SendMailTask:From="jllanos@bcp.com.bo"
+          SendMailTask:To="dtoro@bcp.com.bo"
+          SendMailTask:Subject="Error en depuracion de Logs del Paquete CARGA_ARCHIVOS_CAMPANAS_CLIENTE para CRM"
+          SendMailTask:Priority="High"
+          SendMailTask:MessageSource="Señores,&#xA;&#xA;ha ocurrido un error en la ejecución del paquete: CARGA_ARCHIVOS_CAMPANAS_CLIENTE del Servidor W204SISF35002.&#xA;&#xA;&#x9;Fecha y hora de ejecución:&#x9;&#x9; 24/06/2024 01:25:31 p.m.&#xA;&#xA;Para mayor detalle revise el archivo LOG [D:\BCB_LOGS\Paquetes\CRM\CARGA_ARCHIVOS_CAMPANAS_CLIENTE\LOGS\\20240624_1325.log]&#xA;&#xA;Saludos.&#xA;&#xA;PRODUCCION DE SISTEMAS&#xA;Banco de Credito de Bolivia S.A." xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Correo de Error de Validacion de archivo"
+      DTS:CreationName="Microsoft.SendMailTask"
+      DTS:Description="Se envia cuando ocurre algun error en algun proceso del paquete"
+      DTS:DTSID="{7EDDE120-FCAD-45F5-89D6-3DC1ACCD8177}"
+      DTS:ExecutableType="Microsoft.SendMailTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Correo de Error de Validacion de archivo"
+      DTS:TaskContact="Send Mail Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="2">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:PropertyExpression
+        DTS:Name="FromLine">@[User::v_mailRemitente]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="MessageSource">"Señores,\n\nha ocurrido un error en la ejecución del paquete: "+ @[User::v_PackageName]  + " del Servidor " + @[System::MachineName] + ".\n\n\tFecha y hora de ejecución:\t\t "+(DT_WSTR, 50) (DT_DATE) @[System::StartTime] +"\n\nError en el proceso de validar la existencia del Archivo" + @[User::v_rutaArchivo]  + "\n\nPara mayor detalle revise el archivo LOG [" +@[User::v_rutalog] +"\\"+ @[User::v_logname]  +"]\n\nSaludos.\n\nPRODUCCION DE SISTEMAS\nBanco de Credito de Bolivia S.A."</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="Subject">"Error en el proceso de validar la existencia del archivo del Paquete " +    @[User::v_PackageName] + " para CRM"</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="ToLine">@[User::v_mailError]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <SendMailTask:SendMailTaskData
+          SendMailTask:SMTPServer="{4E1BF81E-F61B-41F7-9847-ECE05252C596}"
+          SendMailTask:From="jllanos@bcp.com.bo"
+          SendMailTask:To="dtoro@bcp.com.bo"
+          SendMailTask:Subject="Error en el proceso de validar la existencia del archivo del Paquete CARGA_ARCHIVOS_CAMPANAS_CLIENTE para CRM"
+          SendMailTask:Priority="High"
+          SendMailTask:MessageSource="Señores,&#xA;&#xA;ha ocurrido un error en la ejecución del paquete: CARGA_ARCHIVOS_CAMPANAS_CLIENTE del Servidor W204SISF35002.&#xA;&#xA;&#x9;Fecha y hora de ejecución:&#x9;&#x9; 24/06/2024 01:25:31 p.m.&#xA;&#xA;Error en el proceso de validar la existencia del ArchivoD:\BCB_LOGS\Paquetes\CRM\CARGA_ARCHIVOS_CAMPANAS_CLIENTE\ARCHIVOS\CAMPANAS_CLIENTE.txt&#xA;&#xA;Para mayor detalle revise el archivo LOG [D:\BCB_LOGS\Paquetes\CRM\CARGA_ARCHIVOS_CAMPANAS_CLIENTE\LOGS\\20240624_1325.log]&#xA;&#xA;Saludos.&#xA;&#xA;PRODUCCION DE SISTEMAS&#xA;Banco de Credito de Bolivia S.A." xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Correo de Finalización Satisfactoria"
+      DTS:CreationName="Microsoft.SendMailTask"
+      DTS:Description="Se envia cuando ocurre algun error en algun proceso del paquete"
+      DTS:DTSID="{928298A3-9367-4423-90D0-3AE87D3E0461}"
+      DTS:ExecutableType="Microsoft.SendMailTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Correo de Finalización Satisfactoria"
+      DTS:TaskContact="Send Mail Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="3">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:PropertyExpression
+        DTS:Name="FromLine">@[User::v_mailRemitente]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="MessageSource">"NOTIFICACION DE EJECUCION 
+
+La ejecucion del paquete "+ @[User::v_PackageName]  + " fue satisfactoria
+
+"+"Fecha Inicio Ejecucion: "+ (DT_WSTR, 50) (DT_DATE) @[System::StartTime] +
+"
+
+Fecha Fin Ejecucion: "+ (DT_WSTR, 50) (DT_DATE) GETDATE()+
+" 
+Cantidad de registros insertados " + (DT_WSTR, 250) @[User::v_total_Campanas_Cliente] + " en la tabla: " + @[User::v_nameTableCampanasCliente_Email]   +  
+"
+
+Se proceso la Carga Automaticamente desde el siguiente Servidor:
+
+" + @[System::MachineName]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="Subject">"Ejecución Satisfactoria del paquete " +   @[User::v_PackageName] + " para CRM"</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="ToLine">@[User::v_mailError]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <SendMailTask:SendMailTaskData
+          SendMailTask:SMTPServer="{4E1BF81E-F61B-41F7-9847-ECE05252C596}"
+          SendMailTask:From="jllanos@bcp.com.bo"
+          SendMailTask:To="dtoro@bcp.com.bo"
+          SendMailTask:Subject="Ejecución Satisfactoria del paquete CARGA_ARCHIVOS_CAMPANAS_CLIENTE para CRM"
+          SendMailTask:MessageSource="NOTIFICACION DE EJECUCION &#xA;&#xA;La ejecucion del paquete CARGA_ARCHIVOS_CAMPANAS_CLIENTE fue satisfactoria&#xA;&#xA;Fecha Inicio Ejecucion: 24/06/2024 01:25:31 p.m.&#xA;&#xA;Fecha Fin Ejecucion: 24/06/2024 01:25:32 p.m. &#xA;Cantidad de registros insertados 0 en la tabla: dbo.CAMP_MIEMBRO&#xA;&#xA;Se proceso la Carga Automaticamente desde el siguiente Servidor:&#xA;&#xA;W204SISF35002" xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Correo de Inexistencia de Archivo"
+      DTS:CreationName="Microsoft.SendMailTask"
+      DTS:Description="Se envia cuando ocurre algun error en algun proceso del paquete"
+      DTS:DTSID="{2E5ABBF8-E6CB-45C1-B8BE-ED96AB41F7E4}"
+      DTS:ExecutableType="Microsoft.SendMailTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Correo de Inexistencia de Archivo"
+      DTS:TaskContact="Send Mail Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="4">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:PropertyExpression
+        DTS:Name="FromLine">@[User::v_mailRemitente]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="MessageSource">"Señores,\n\nha ocurrido un error al validar la existencia del archivo " + @[User::v_rutaArchivo]  + " del paquete: "+ @[User::v_PackageName]  + " del Servidor " + @[System::MachineName] + ".\n\n\tFecha y hora de ejecución:\t\t "+(DT_WSTR, 50) (DT_DATE) @[System::StartTime] +"\n\nValidar que el archivo se encuentre en la ruta especificada o que se tenga permisos de accesos."+"\n\nPara mayor detalle revise el archivo LOG [" +@[User::v_rutalog] +"\\"+ @[User::v_logname]  +"]\n\nSaludos.\n\nPRODUCCION DE SISTEMAS\nBanco de Credito de Bolivia S.A."</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="Subject">"Error al validar la existencia del archivo del Paquete " +    @[User::v_PackageName] + " para CRM"</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="ToLine">@[User::v_mailError]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <SendMailTask:SendMailTaskData
+          SendMailTask:SMTPServer="{4E1BF81E-F61B-41F7-9847-ECE05252C596}"
+          SendMailTask:From="jllanos@bcp.com.bo"
+          SendMailTask:To="dtoro@bcp.com.bo"
+          SendMailTask:Subject="Error al validar la existencia del archivo del Paquete CARGA_ARCHIVOS_CAMPANAS_CLIENTE para CRM"
+          SendMailTask:MessageSource="Señores,&#xA;&#xA;ha ocurrido un error al validar la existencia del archivo D:\BCB_LOGS\Paquetes\CRM\CARGA_ARCHIVOS_CAMPANAS_CLIENTE\ARCHIVOS\CAMPANAS_CLIENTE.txt del paquete: CARGA_ARCHIVOS_CAMPANAS_CLIENTE del Servidor W204SISF35002.&#xA;&#xA;&#x9;Fecha y hora de ejecución:&#x9;&#x9; 24/06/2024 01:25:31 p.m.&#xA;&#xA;Validar que el archivo se encuentre en la ruta especificada o que se tenga permisos de accesos.&#xA;&#xA;Para mayor detalle revise el archivo LOG [D:\BCB_LOGS\Paquetes\CRM\CARGA_ARCHIVOS_CAMPANAS_CLIENTE\LOGS\\20240624_1325.log]&#xA;&#xA;Saludos.&#xA;&#xA;PRODUCCION DE SISTEMAS&#xA;Banco de Credito de Bolivia S.A." xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Depura Logs"
+      DTS:CreationName="Microsoft.ScriptTask"
+      DTS:Description="Script Task"
+      DTS:DTSID="{7D488363-08F1-48E2-BDC1-3874DF3DED7D}"
+      DTS:ExecutableType="Microsoft.ScriptTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Depura Logs"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:ObjectData>
+        <ScriptProject
+          Name="ST_178c968cb18a4a08be5dcb6832584f06"
+          VSTAMajorVersion="14"
+          VSTAMinorVersion="0"
+          Language="CSharp"
+          ReadOnlyVariables="User::v_Depuracion_Logs,User::v_logname,User::v_rutalog" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Sequence Container Carga data"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{140CA46E-1E6F-4FDF-A600-54F661A4C472}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Sequence Container Carga data">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{07038B02-A0D0-4329-9526-D960745621E1}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Cargar Data Delete - Insert"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0" />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Data Conversion"
+                  componentClassID="Microsoft.DataConvert"
+                  contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Data Conversion"
+                  name="Data Conversion"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Data Conversion.Inputs[Data Conversion Input]"
+                      name="Data Conversion Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Data Conversion.Inputs[Data Conversion Input].Columns[DESCRIPCION_CORTA_1]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="200"
+                          cachedName="DESCRIPCION_CORTA_1"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[DESCRIPCION_CORTA_1]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Data Conversion.Inputs[Data Conversion Input].Columns[DESCRIPCION_MEDIA_1]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="400"
+                          cachedName="DESCRIPCION_MEDIA_1"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[DESCRIPCION_MEDIA_1]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Data Conversion.Inputs[Data Conversion Input].Columns[DESCRIPCION_LARGA_1]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="600"
+                          cachedName="DESCRIPCION_LARGA_1"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[DESCRIPCION_LARGA_1]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Data Conversion.Outputs[Data Conversion Output]"
+                      exclusionGroup="1"
+                      name="Data Conversion Output"
+                      synchronousInputId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Data Conversion.Inputs[Data Conversion Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DESCRIPCION_CORTA_1]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="200"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DESCRIPCION_CORTA_1]"
+                          name="Copy of DESCRIPCION_CORTA_1"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[DESCRIPCION_CORTA_1]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DESCRIPCION_MEDIA_1]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="400"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DESCRIPCION_MEDIA_1]"
+                          name="Copy of DESCRIPCION_MEDIA_1"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[DESCRIPCION_MEDIA_1]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DESCRIPCION_LARGA_1]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="600"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DESCRIPCION_LARGA_1]"
+                          name="Copy of DESCRIPCION_LARGA_1"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[DESCRIPCION_LARGA_1]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Data Conversion.Outputs[Data Conversion Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Data Conversion Error Output"
+                      synchronousInputId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Data Conversion.Inputs[Data Conversion Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="16394"
+                  name="File Source Campanas Cliente"
+                  usesDispositions="true"
+                  validateExternalMetadata="False"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[ConexionArchivoCampanasCliente]"
+                      connectionManagerRefId="Package.ConnectionManagers[ConexionArchivoCampanasCliente]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[CIC]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[CIC]"
+                          length="12"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[CIC]"
+                          name="CIC"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[COD_CAMPANA]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[COD_CAMPANA]"
+                          length="80"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[COD_CAMPANA]"
+                          name="COD_CAMPANA"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[MONEDA]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[MONEDA]"
+                          length="3"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[MONEDA]"
+                          name="MONEDA"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[SERVICIO_DEUDA]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[SERVICIO_DEUDA]"
+                          length="200"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[SERVICIO_DEUDA]"
+                          name="SERVICIO_DEUDA"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[MAXIMA_CALIFICACION_SBEF]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[MAXIMA_CALIFICACION_SBEF]"
+                          length="200"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[MAXIMA_CALIFICACION_SBEF]"
+                          name="MAXIMA_CALIFICACION_SBEF"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[SALDO_PROMEDIO]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[SALDO_PROMEDIO]"
+                          length="100"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[SALDO_PROMEDIO]"
+                          name="SALDO_PROMEDIO"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[MONTO_LINEA]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[MONTO_LINEA]"
+                          length="100"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[MONTO_LINEA]"
+                          name="MONTO_LINEA"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[TIPO_PRODUCTO]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[TIPO_PRODUCTO]"
+                          length="200"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[TIPO_PRODUCTO]"
+                          name="TIPO_PRODUCTO"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[TASA]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[TASA]"
+                          length="200"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[TASA]"
+                          name="TASA"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[PLAZO]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[PLAZO]"
+                          length="200"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[PLAZO]"
+                          name="PLAZO"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[CUOTA]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[CUOTA]"
+                          length="200"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[CUOTA]"
+                          name="CUOTA"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[NUMERO_OPERACION]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[NUMERO_OPERACION]"
+                          length="200"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[NUMERO_OPERACION]"
+                          name="NUMERO_OPERACION"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[MENSAJE]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[MENSAJE]"
+                          length="600"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[MENSAJE]"
+                          name="MENSAJE"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[DEUDA_VIGENTE]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[DEUDA_VIGENTE]"
+                          length="200"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[DEUDA_VIGENTE]"
+                          name="DEUDA_VIGENTE"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[MATRICULA_RESPONSABLE]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[MATRICULA_RESPONSABLE]"
+                          length="200"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[MATRICULA_RESPONSABLE]"
+                          name="MATRICULA_RESPONSABLE"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[FECHA_FIN_ACTIVIDAD]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[FECHA_FIN_ACTIVIDAD]"
+                          length="200"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[FECHA_FIN_ACTIVIDAD]"
+                          name="FECHA_FIN_ACTIVIDAD"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[MONEDA_1]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[MONEDA_1]"
+                          length="200"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[MONEDA_1]"
+                          name="MONEDA_1"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[NUMERO_OPERACIONES_1]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[NUMERO_OPERACIONES_1]"
+                          length="200"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[NUMERO_OPERACIONES_1]"
+                          name="NUMERO_OPERACIONES_1"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[MONTO_LINEA_1]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[MONTO_LINEA_1]"
+                          length="200"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[MONTO_LINEA_1]"
+                          name="MONTO_LINEA_1"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[EMPRESA]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[EMPRESA]"
+                          length="200"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[EMPRESA]"
+                          name="EMPRESA"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[DESCRIPCION_CORTA_1]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[DESCRIPCION_CORTA_1]"
+                          length="200"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[DESCRIPCION_CORTA_1]"
+                          name="DESCRIPCION_CORTA_1"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[DESCRIPCION_MEDIA_1]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[DESCRIPCION_MEDIA_1]"
+                          length="400"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[DESCRIPCION_MEDIA_1]"
+                          name="DESCRIPCION_MEDIA_1"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[DESCRIPCION_LARGA_1]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[DESCRIPCION_LARGA_1]"
+                          length="600"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[DESCRIPCION_LARGA_1]"
+                          name="DESCRIPCION_LARGA_1"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[PRIORIDAD]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[PRIORIDAD]"
+                          length="200"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[PRIORIDAD]"
+                          name="PRIORIDAD"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[VALIDA_CARGA]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[VALIDA_CARGA]"
+                          length="200"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[VALIDA_CARGA]"
+                          name="VALIDA_CARGA"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[DESCRIPCION_ERROR]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[DESCRIPCION_ERROR]"
+                          length="200"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[DESCRIPCION_ERROR]"
+                          name="DESCRIPCION_ERROR"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[PRIORIDAD_CLIENTE]"
+                          codePage="65001"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[PRIORIDAD_CLIENTE]"
+                          length="200"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[PRIORIDAD_CLIENTE]"
+                          name="PRIORIDAD_CLIENTE"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[CIC]"
+                          codePage="65001"
+                          dataType="str"
+                          length="13"
+                          name="CIC" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[COD_CAMPANA]"
+                          codePage="65001"
+                          dataType="str"
+                          length="80"
+                          name="COD_CAMPANA" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[MONEDA]"
+                          codePage="65001"
+                          dataType="str"
+                          length="7"
+                          name="MONEDA" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[SERVICIO_DEUDA]"
+                          codePage="65001"
+                          dataType="str"
+                          length="201"
+                          name="SERVICIO_DEUDA" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[MAXIMA_CALIFICACION_SBEF]"
+                          codePage="65001"
+                          dataType="str"
+                          length="201"
+                          name="MAXIMA_CALIFICACION_SBEF" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[SALDO_PROMEDIO]"
+                          codePage="65001"
+                          dataType="str"
+                          length="257"
+                          name="SALDO_PROMEDIO" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[MONTO_LINEA]"
+                          codePage="65001"
+                          dataType="str"
+                          length="257"
+                          name="MONTO_LINEA" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[TIPO_PRODUCTO]"
+                          codePage="65001"
+                          dataType="str"
+                          length="201"
+                          name="TIPO_PRODUCTO" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[TASA]"
+                          codePage="65001"
+                          dataType="str"
+                          length="201"
+                          name="TASA" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[PLAZO]"
+                          codePage="65001"
+                          dataType="str"
+                          length="201"
+                          name="PLAZO" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[CUOTA]"
+                          codePage="65001"
+                          dataType="str"
+                          length="201"
+                          name="CUOTA" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[NUMERO_OPERACION]"
+                          codePage="65001"
+                          dataType="str"
+                          length="201"
+                          name="NUMERO_OPERACION" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[MENSAJE]"
+                          codePage="65001"
+                          dataType="str"
+                          length="257"
+                          name="MENSAJE" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[DEUDA_VIGENTE]"
+                          codePage="65001"
+                          dataType="str"
+                          length="201"
+                          name="DEUDA_VIGENTE" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[MATRICULA_RESPONSABLE]"
+                          codePage="65001"
+                          dataType="str"
+                          length="201"
+                          name="MATRICULA_RESPONSABLE" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[FECHA_FIN_ACTIVIDAD]"
+                          codePage="65001"
+                          dataType="str"
+                          length="201"
+                          name="FECHA_FIN_ACTIVIDAD" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[MONEDA_1]"
+                          codePage="65001"
+                          dataType="str"
+                          length="201"
+                          name="MONEDA_1" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[NUMERO_OPERACIONES_1]"
+                          codePage="65001"
+                          dataType="str"
+                          length="201"
+                          name="NUMERO_OPERACIONES_1" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[MONTO_LINEA_1]"
+                          codePage="65001"
+                          dataType="str"
+                          length="201"
+                          name="MONTO_LINEA_1" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[EMPRESA]"
+                          codePage="65001"
+                          dataType="str"
+                          length="201"
+                          name="EMPRESA" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[DESCRIPCION_CORTA_1]"
+                          codePage="65001"
+                          dataType="str"
+                          length="201"
+                          name="DESCRIPCION_CORTA_1" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[DESCRIPCION_MEDIA_1]"
+                          codePage="65001"
+                          dataType="str"
+                          length="257"
+                          name="DESCRIPCION_MEDIA_1" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[DESCRIPCION_LARGA_1]"
+                          codePage="65001"
+                          dataType="str"
+                          length="257"
+                          name="DESCRIPCION_LARGA_1" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[PRIORIDAD]"
+                          codePage="65001"
+                          dataType="str"
+                          length="12"
+                          name="PRIORIDAD" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[VALIDA_CARGA]"
+                          codePage="65001"
+                          dataType="str"
+                          length="201"
+                          name="VALIDA_CARGA" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[DESCRIPCION_ERROR]"
+                          codePage="65001"
+                          dataType="str"
+                          length="201"
+                          name="DESCRIPCION_ERROR" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].ExternalColumns[PRIORIDAD_CLIENTE]"
+                          codePage="65001"
+                          dataType="str"
+                          length="53"
+                          name="PRIORIDAD_CLIENTE" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Command"
+                  componentClassID="Microsoft.OLEDBCommand"
+                  contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+                  description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
+                  name="OLE DB Command"
+                  usesDispositions="true"
+                  version="2">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      expressionType="Notify"
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">exec [dbo].[del_CAMP_MIEMBRO] ?,?</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">65001</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Command.Connections[OleDbConnection]"
+                      connectionManagerID="{969B7C30-074F-4883-804F-2BF3AC6E1FB3}:invalid"
+                      connectionManagerRefId="{969B7C30-074F-4883-804F-2BF3AC6E1FB3}:invalid"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Command.Inputs[OLE DB Command Input]"
+                      errorOrTruncationOperation="Command Execution"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Command Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Command.Inputs[OLE DB Command Input].Columns[COD_CAMPANA]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="80"
+                          cachedName="COD_CAMPANA"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[@IdCamp]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[COD_CAMPANA]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Command.Inputs[OLE DB Command Input].Columns[CIC]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="12"
+                          cachedName="CIC"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[@CIC]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[CIC]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[@IdCamp]"
+                          codePage="65001"
+                          dataType="str"
+                          length="80"
+                          name="@IdCamp">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">65</property>
+                          </properties>
+                        </externalMetadataColumn>
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[@CIC]"
+                          codePage="65001"
+                          dataType="str"
+                          length="12"
+                          name="@CIC">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                              name="DBParamInfoFlags">65</property>
+                          </properties>
+                        </externalMetadataColumn>
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Command.Outputs[OLE DB Command Output]"
+                      exclusionGroup="1"
+                      name="OLE DB Command Output"
+                      synchronousInputId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Command.Inputs[OLE DB Command Input]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Command.Outputs[OLE DB Command Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Command Error Output"
+                      synchronousInputId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Command.Inputs[OLE DB Command Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[CAMP_MIEMBRO]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">65001</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">true</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="{969B7C30-074F-4883-804F-2BF3AC6E1FB3}:invalid"
+                      connectionManagerRefId="{969B7C30-074F-4883-804F-2BF3AC6E1FB3}:invalid"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CIC]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="12"
+                          cachedName="CIC"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CIC]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[CIC]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MONEDA]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="3"
+                          cachedName="MONEDA"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Moneda]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[MONEDA]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MENSAJE]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="600"
+                          cachedName="MENSAJE"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mensaje]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[MENSAJE]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[EMPRESA]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="200"
+                          cachedName="EMPRESA"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Empresa]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[EMPRESA]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SERVICIO_DEUDA]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="200"
+                          cachedName="SERVICIO_DEUDA"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ServicioDeuda]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[SERVICIO_DEUDA]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MAXIMA_CALIFICACION_SBEF]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="200"
+                          cachedName="MAXIMA_CALIFICACION_SBEF"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MaximaCalificacionSBEF]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[MAXIMA_CALIFICACION_SBEF]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MONTO_LINEA]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="MONTO_LINEA"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MontoLinea]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[MONTO_LINEA]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TIPO_PRODUCTO]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="200"
+                          cachedName="TIPO_PRODUCTO"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TipoProducto1]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[TIPO_PRODUCTO]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TASA]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="200"
+                          cachedName="TASA"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Tasa1]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[TASA]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PRIORIDAD_CLIENTE]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="200"
+                          cachedName="PRIORIDAD_CLIENTE"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PrioridadCliente]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[PRIORIDAD_CLIENTE]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DESCRIPCION_ERROR]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="200"
+                          cachedName="DESCRIPCION_ERROR"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DescripcionError]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[DESCRIPCION_ERROR]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VALIDA_CARGA]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="200"
+                          cachedName="VALIDA_CARGA"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ValidaCarga]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[VALIDA_CARGA]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PRIORIDAD]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="200"
+                          cachedName="PRIORIDAD"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Prioridad1]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[PRIORIDAD]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PLAZO]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="200"
+                          cachedName="PLAZO"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Plazo1]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[PLAZO]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CUOTA]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="200"
+                          cachedName="CUOTA"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Cuota1]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[CUOTA]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NUMERO_OPERACION]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="200"
+                          cachedName="NUMERO_OPERACION"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NúmeroOperación]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[NUMERO_OPERACION]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MATRICULA_RESPONSABLE]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="200"
+                          cachedName="MATRICULA_RESPONSABLE"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MatriculaResponsable]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[MATRICULA_RESPONSABLE]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FECHA_FIN_ACTIVIDAD]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="200"
+                          cachedName="FECHA_FIN_ACTIVIDAD"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FechaFinActividad]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[FECHA_FIN_ACTIVIDAD]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MONEDA_1]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="200"
+                          cachedName="MONEDA_1"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Moneda1]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[MONEDA_1]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NUMERO_OPERACIONES_1]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="200"
+                          cachedName="NUMERO_OPERACIONES_1"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NúmeroOperación1]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[NUMERO_OPERACIONES_1]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MONTO_LINEA_1]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="200"
+                          cachedName="MONTO_LINEA_1"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MontoLinea1]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[MONTO_LINEA_1]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[COD_CAMPANA]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="80"
+                          cachedName="COD_CAMPANA"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdCamp]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[COD_CAMPANA]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DEUDA_VIGENTE]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="200"
+                          cachedName="DEUDA_VIGENTE"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DeudaVigente]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[DEUDA_VIGENTE]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SALDO_PROMEDIO]"
+                          cachedCodepage="65001"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="SALDO_PROMEDIO"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SalarioPromedio]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output].Columns[SALDO_PROMEDIO]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of DESCRIPCION_CORTA_1]"
+                          cachedDataType="wstr"
+                          cachedLength="200"
+                          cachedName="Copy of DESCRIPCION_CORTA_1"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DescripcionCorta1]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DESCRIPCION_CORTA_1]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of DESCRIPCION_MEDIA_1]"
+                          cachedDataType="wstr"
+                          cachedLength="400"
+                          cachedName="Copy of DESCRIPCION_MEDIA_1"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DescripcionMedia1]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DESCRIPCION_MEDIA_1]" />
+                        <inputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of DESCRIPCION_LARGA_1]"
+                          cachedDataType="wstr"
+                          cachedLength="600"
+                          cachedName="Copy of DESCRIPCION_LARGA_1"
+                          externalMetadataColumnId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DescripcionLarga1]"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DESCRIPCION_LARGA_1]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdCamp]"
+                          codePage="65001"
+                          dataType="str"
+                          length="80"
+                          name="IdCamp" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CIC]"
+                          codePage="65001"
+                          dataType="str"
+                          length="12"
+                          name="CIC" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Moneda]"
+                          codePage="65001"
+                          dataType="str"
+                          length="3"
+                          name="Moneda" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ServicioDeuda]"
+                          codePage="65001"
+                          dataType="str"
+                          length="200"
+                          name="ServicioDeuda" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MaximaCalificacionSBEF]"
+                          codePage="65001"
+                          dataType="str"
+                          length="200"
+                          name="MaximaCalificacionSBEF" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SalarioPromedio]"
+                          codePage="65001"
+                          dataType="str"
+                          length="100"
+                          name="SalarioPromedio" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MontoLinea]"
+                          codePage="65001"
+                          dataType="str"
+                          length="100"
+                          name="MontoLinea" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TipoProducto1]"
+                          codePage="65001"
+                          dataType="str"
+                          length="200"
+                          name="TipoProducto1" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Tasa1]"
+                          codePage="65001"
+                          dataType="str"
+                          length="200"
+                          name="Tasa1" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Plazo1]"
+                          codePage="65001"
+                          dataType="str"
+                          length="200"
+                          name="Plazo1" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Cuota1]"
+                          codePage="65001"
+                          dataType="str"
+                          length="200"
+                          name="Cuota1" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NúmeroOperación]"
+                          codePage="65001"
+                          dataType="str"
+                          length="200"
+                          name="NúmeroOperación" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mensaje]"
+                          codePage="65001"
+                          dataType="str"
+                          length="600"
+                          name="Mensaje" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DeudaVigente]"
+                          codePage="65001"
+                          dataType="str"
+                          length="200"
+                          name="DeudaVigente" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MatriculaResponsable]"
+                          codePage="65001"
+                          dataType="str"
+                          length="200"
+                          name="MatriculaResponsable" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FechaFinActividad]"
+                          codePage="65001"
+                          dataType="str"
+                          length="200"
+                          name="FechaFinActividad" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Moneda1]"
+                          codePage="65001"
+                          dataType="str"
+                          length="200"
+                          name="Moneda1" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NúmeroOperación1]"
+                          codePage="65001"
+                          dataType="str"
+                          length="200"
+                          name="NúmeroOperación1" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MontoLinea1]"
+                          codePage="65001"
+                          dataType="str"
+                          length="200"
+                          name="MontoLinea1" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Empresa]"
+                          codePage="65001"
+                          dataType="str"
+                          length="200"
+                          name="Empresa" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DescripcionCorta1]"
+                          dataType="wstr"
+                          length="200"
+                          name="DescripcionCorta1" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DescripcionMedia1]"
+                          dataType="wstr"
+                          length="400"
+                          name="DescripcionMedia1" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DescripcionLarga1]"
+                          dataType="wstr"
+                          length="600"
+                          name="DescripcionLarga1" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Prioridad1]"
+                          codePage="65001"
+                          dataType="str"
+                          length="200"
+                          name="Prioridad1" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ValidaCarga]"
+                          codePage="65001"
+                          dataType="str"
+                          length="200"
+                          name="ValidaCarga" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DescripcionError]"
+                          codePage="65001"
+                          dataType="str"
+                          length="200"
+                          name="DescripcionError" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PrioridadCliente]"
+                          codePage="65001"
+                          dataType="str"
+                          length="200"
+                          name="PrioridadCliente" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FechaGestion]"
+                          dataType="dbTimeStamp"
+                          name="FechaGestion" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Row Count"
+                  componentClassID="Microsoft.RowCount"
+                  contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+                  name="Row Count">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable to hold the row count."
+                      name="VariableName">User::v_total_Campanas_Cliente</property>
+                  </properties>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Row Count.Inputs[Row Count Input 1]"
+                      hasSideEffects="true"
+                      name="Row Count Input 1">
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Row Count.Outputs[Row Count Output 1]"
+                      name="Row Count Output 1"
+                      synchronousInputId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Row Count.Inputs[Row Count Input 1]">
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert.Paths[Data Conversion Output]"
+                  endId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Row Count.Inputs[Row Count Input 1]"
+                  name="Data Conversion Output"
+                  startId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Data Conversion.Outputs[Data Conversion Output]" />
+                <path
+                  refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert.Paths[Flat File Source Output]"
+                  endId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Flat File Source Output"
+                  startId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente.Outputs[Flat File Source Output]" />
+                <path
+                  refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert.Paths[OLE DB Command Output]"
+                  endId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="OLE DB Command Output"
+                  startId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Command.Outputs[OLE DB Command Output]" />
+                <path
+                  refId="Package\Sequence Container Carga data\Cargar Data Delete - Insert.Paths[Row Count Output 1]"
+                  endId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Command.Inputs[OLE DB Command Input]"
+                  name="Row Count Output 1"
+                  startId="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Row Count.Outputs[Row Count Output 1]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container Carga data\Copy File Origen a Destino"
+          DTS:CreationName="Microsoft.FileSystemTask"
+          DTS:Description="File System Task"
+          DTS:DTSID="{40214ADA-2707-4D1F-AAF5-3D8DED57C80C}"
+          DTS:ExecutableType="Microsoft.FileSystemTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Copy File Origen a Destino"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0" />
+          <DTS:ObjectData>
+            <FileSystemData
+              TaskOverwriteDestFile="True"
+              TaskSourcePath="User::v_rutaArchivo"
+              TaskIsSourceVariable="True"
+              TaskDestinationPath="User::v_rutaArchivoDestino"
+              TaskIsDestinationVariable="True" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container Carga data\Delete File Origen"
+          DTS:CreationName="Microsoft.FileSystemTask"
+          DTS:Description="File System Task"
+          DTS:DTSID="{F367EEF9-87AD-46FC-9129-81A2AF95612A}"
+          DTS:ExecutableType="Microsoft.FileSystemTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Delete File Origen"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0" />
+          <DTS:ObjectData>
+            <FileSystemData
+              TaskOperationType="DeleteFile"
+              TaskSourcePath="User::v_rutaArchivo"
+              TaskIsSourceVariable="True" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container Carga data.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{AEFC0603-E228-468C-97DD-5FC50775A87C}"
+          DTS:From="Package\Sequence Container Carga data\Copy File Origen a Destino"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Sequence Container Carga data\Delete File Origen" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container Carga data.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{6D94B7FB-5580-4CBE-90A7-69CABA53E9A5}"
+          DTS:From="Package\Sequence Container Carga data\Cargar Data Delete - Insert"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\Sequence Container Carga data\Copy File Origen a Destino" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Valida existencia archivo"
+      DTS:CreationName="Microsoft.ScriptTask"
+      DTS:Description="Script Task"
+      DTS:DTSID="{AC0DBEFA-48A1-4B21-821F-043118C98C0B}"
+      DTS:ExecutableType="Microsoft.ScriptTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Valida existencia archivo"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:ObjectData>
+        <ScriptProject
+          Name="ST_f5aaaad5b45b404f9ff01a0bd765ae38"
+          VSTAMajorVersion="14"
+          VSTAMinorVersion="0"
+          Language="CSharp"
+          ReadOnlyVariables="User::v_rutaArchivo"
+          ReadWriteVariables="User::v_Error" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{CC747851-47F8-4CF9-957E-765BA899EF2B}"
+      DTS:From="Package\Depura Logs"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Valida existencia archivo" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{776AAC5D-CD35-4FAA-9A4D-BE5BD28B6E67}"
+      DTS:From="Package\Depura Logs"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Correo de Error de Limpieza de Logs"
+      DTS:Value="1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{8E35BAF9-89E6-401B-9B16-1F29D1D578A8}"
+      DTS:EvalOp="3"
+      DTS:Expression="@v_Error!=&quot;&quot;"
+      DTS:From="Package\Valida existencia archivo"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Correo de Inexistencia de Archivo"
+      DTS:Value="2" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{CD510100-74AD-4E78-A68E-5BB69091E836}"
+      DTS:From="Package\Valida existencia archivo"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Correo de Error de Validacion de archivo"
+      DTS:Value="1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{4A806AFB-5396-4E65-9121-0E69F4FF475D}"
+      DTS:From="Package\Valida existencia archivo"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Sequence Container Carga data" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{480DC9C3-1BB7-406D-9538-D03E0948F87C}"
+      DTS:From="Package\Sequence Container Carga data"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\Correo de Finalización Satisfactoria" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{BCF36339-428F-4259-A4DE-F297FEAD9144}"
+      DTS:From="Package\Sequence Container Carga data"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 6"
+      DTS:To="Package\Correo de Error de Carga Data CAMPANAS CLIENTE"
+      DTS:Value="1" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="270,60"
+          Id="Package\Correo de Error de Carga Data CAMPANAS CLIENTE"
+          TopLeft="757,821" />
+        <NodeLayout
+          Size="259,42"
+          Id="Package\Correo de Error de Limpieza de Logs"
+          TopLeft="698,468" />
+        <NodeLayout
+          Size="268,42"
+          Id="Package\Correo de Error de Validacion de archivo"
+          TopLeft="696,557" />
+        <NodeLayout
+          Size="253,42"
+          Id="Package\Correo de Finalización Satisfactoria"
+          TopLeft="353,1084" />
+        <NodeLayout
+          Size="220,42"
+          Id="Package\Correo de Inexistencia de Archivo"
+          TopLeft="60,563" />
+        <NodeLayout
+          Size="134,42"
+          Id="Package\Depura Logs"
+          TopLeft="409,463" />
+        <NodeLayout
+          Size="211,42"
+          Id="Package\Sequence Container Carga data\Cargar Data Delete - Insert"
+          TopLeft="38,37" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Sequence Container Carga data\Copy File Origen a Destino"
+          TopLeft="60,134" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Sequence Container Carga data\Delete File Origen"
+          TopLeft="58,219" />
+        <EdgeLayout
+          Id="Package\Sequence Container Carga data.PrecedenceConstraints[Constraint]"
+          TopLeft="140.5,176">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43"
+              Start="0,0"
+              End="0,35.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container Carga data.PrecedenceConstraints[Constraint 1]"
+          TopLeft="142.5,79">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,55"
+              Start="0,0"
+              End="0,47.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="276,312"
+          Size="276,355"
+          Id="Package\Sequence Container Carga data"
+          TopLeft="342,673" />
+        <NodeLayout
+          Size="200,42"
+          Id="Package\Valida existencia archivo"
+          TopLeft="381,558" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="478.5,505">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,53"
+              Start="0,0"
+              End="0,45.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,45.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="543,486.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="155,0"
+              Start="0,0"
+              End="147.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="147.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="58.50865234375,5,30.4826953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="381,581.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-101,0"
+              Start="0,0"
+              End="-93.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-93.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-80.7155859375,5,67.931171875,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="581,578.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="115,0"
+              Start="0,0"
+              End="107.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="107.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="38.50865234375,5,30.4826953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="480.5,600">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,73"
+              Start="0,0"
+              End="0,65.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,65.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="479.75,1028">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,56"
+              Start="0,0"
+              End="0,48.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="618,850.75">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="139,0"
+              Start="0,0"
+              End="131.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="131.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="50.50865234375,5,30.4826953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <AnnotationLayout
+          Text="Paquete para la carga de CAMPAÑAS CLIENTE para CRM &#xA;------------ CRM&#xA;-----------------&#xA;Descripción:&#xA;Paquete que carga los registros del archivo CAMPANAS_CLIENTE.txt&#xA;Fuente:&#xA;&#xA;Base fuente:&#xA;BD_CRMFUENTE&#xA;Tabla fuente:&#xA;[dbo].[CAMP_MIEMBRO]&#xA;Fecha de creación :&#xA;14/06/2024&#xA;Autor:&#xA;Douglas Toro Salas - T25208 - Canales Presenciales&#xA;Modificado por:&#xA;&#xA;(Q000....)"
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="387,311"
+          Id="66dc7cc3-6a0e-48de-b2bf-a8996cf11eb2"
+          TopLeft="151,60" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Sequence Container Carga data\Cargar Data Delete - Insert">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="133,42"
+          Id="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Row Count"
+          TopLeft="230,170" />
+        <NodeLayout
+          Size="175,42"
+          Id="Package\Sequence Container Carga data\Cargar Data Delete - Insert\File Source Campanas Cliente"
+          TopLeft="207,77" />
+        <NodeLayout
+          Size="173,42"
+          Id="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Command"
+          TopLeft="210,252" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination"
+          TopLeft="206,344" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Sequence Container Carga data\Cargar Data Delete - Insert\Data Conversion"
+          TopLeft="467,167" />
+        <EdgeLayout
+          Id="Package\Sequence Container Carga data\Cargar Data Delete - Insert.Paths[Row Count Output 1]"
+          TopLeft="296.5,212">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,40"
+              Start="0,0"
+              End="0,32.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container Carga data\Cargar Data Delete - Insert.Paths[OLE DB Command Output]"
+          TopLeft="295.5,294">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,50"
+              Start="0,0"
+              End="0,42.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container Carga data\Cargar Data Delete - Insert.Paths[Flat File Source Output]"
+          TopLeft="294.5,119">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="253,48"
+              Start="0,0"
+              End="253,40.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20"
+                    Point2="0,24"
+                    Point3="4,24" />
+                  <mssgle:LineSegment
+                    End="249,24" />
+                  <mssgle:CubicBezierSegment
+                    Point1="249,24"
+                    Point2="253,24"
+                    Point3="253,28" />
+                  <mssgle:LineSegment
+                    End="253,40.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container Carga data\Cargar Data Delete - Insert.Paths[Data Conversion Output]"
+          TopLeft="467,189.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-104,0"
+              Start="0,0"
+              End="-96.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-96.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container Carga data\Cargar Data Delete - Insert\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

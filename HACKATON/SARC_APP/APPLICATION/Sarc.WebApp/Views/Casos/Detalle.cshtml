@@ -1,0 +1,265 @@
+﻿@using BCP.CROSS.MODELS
+@using BCP.CROSS.MODELS.Caso
+@model ServiceResponse<CasoDTOAll>
+
+@{
+    ViewData["Title"] = "Detalle Caso";
+}
+
+@if (@Model?.Data != null && @Model?.Meta.StatusCode == 200)
+{
+    <div class="caso__detalle">
+    <div class="card bg-bgcontent-dark rounded shadow mb-3">
+        <div class="card-header">
+            <div class="row g-3">
+                <div class="col-sm-6">
+                    <p class="text-muted">Nro Caso: <span class="text-light fw-bold">@Model.Data.NroCaso</span></p>
+                </div>
+                <div class="col-sm-6">
+                    <p class="text-muted">Asignado a: <span class="text-light fw-bold">@Model.Data.FuncionarioAtencion</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card bg-bgcontent-dark rounded shadow mb-3">
+        <div class="card-header">
+                <p class="card-title text-secondary fw-bold">DATOS CLIENTE</p>
+            </div>
+        <div class="card-body">
+            
+            <div class="row g-5">
+                <div class="col-3">
+                    <div class="row g-2">
+                        <p class="col-sm-auto text-muted">IDC:</p>
+                        <div class="col">
+                            <p class="border-bottom">@Model.Data.Idc</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="row g-2">
+                        <p class="col-sm-auto text-muted">Apeliido Paterno/Empresa :</p>
+                        <div class="col">
+                            <p class="border-bottom">@Model.Data.ApellidoPaterno</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-6">
+                    <div class="row g-2">
+                        <p class="col-sm-auto text-muted">Apellido Materno:</p>
+                        <div class="col">
+                            <p class="border-bottom">@Model.Data.ApellidoMaterno</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="row g-2">
+                        <p class="col-sm-auto text-muted">Nombres: </p>
+                        <div class="col">
+                            <p class="border-bottom">@Model.Data.Nombres</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card bg-bgcontent-dark rounded shadow mb-3">
+        <div class="card-header">
+            <p class="card-title text-secondary p-0 fw-bold">PRODUCTO</p>
+        </div>
+        <div class="card-body">
+            <div class="row g-5">
+                <div class="col-12">
+                    <div class="row g-2">
+                        <p class="col-auto text-muted">Producto:</p>
+                        <div class="col">
+                            <p class="border-bottom">@Model.Data.Producto</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-12">
+                    <div class="row g-2">
+                        <p class="col-auto text-muted">Servicio:</p>
+                        <div class="col">
+                            <p class="border-bottom">@Model.Data.Servicio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card bg-bgcontent-dark rounded shadow mb-3">
+        <div class="card-header">
+            <p class="card-title text-secondary fw-bold">DETALLE DEL CASO</p>
+        </div>
+        <div class="card-body">
+            <div class="row g-5">
+                <div class="col-6">
+                    <div class="row g-2">
+                        <p class="col-sm-auto text-muted">Monto TXN:</p>
+                        <div class="col">
+                            <p class="border-bottom">@Model.Data.Monto @Model.Data.Moneda</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="row g-2">
+                        <p class="col-sm-auto text-muted">Fecha TXN:</p>
+                        <div class="col">
+                            <p class="border-bottom">@Model.Data.FechaTxn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-6">
+                    <div class="row g-2">
+                        <p class="col-sm-auto text-muted">Número de Cuenta:</p>
+                        <div class="col">
+                            <p class="border-bottom">@Model.Data.Cuenta</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="row g-2">
+                        <p class="col-sm-auto text-muted">Numero de Tarjeta:</p>
+                        <div class="col">
+                            <p class="border-bottom">@Model.Data.Tarjeta</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-6">
+                    <div class="row g-2">
+                        <p class="col-sm-auto text-muted">ATM Sucursal:</p>
+                        <div class="col">
+                            <p class="border-bottom">@Model.Data.ATMSucursal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="row g-2">
+                        <p class="col-sm-auto text-muted">ATM Ubicación:</p>
+                        <div class="col">
+                            <p class="border-bottom">@Model.Data.ATMUbicacion</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-12">
+                    <div class="row g-2">
+                        <p class="col-sm-auto text-muted">Descripción:</p>
+                        <div class="col">
+                             @if (!string.IsNullOrEmpty(@Model.Data.InformacionAdicional))
+                            {
+                               <p class="border-bottom">@Model.Data.InformacionAdicional</p>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-12">
+                    <div class="row g-2">
+                        <p class="col-sm-auto text-muted">Documentación Adjunta:</p>
+                        <div class="col">
+                            @if (!string.IsNullOrEmpty(@Model.Data.DocumentacionAdjuntaEntrada))
+                            {
+                                <p class="border-bottom">@Model.Data.DocumentacionAdjuntaEntrada</p>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-4">
+                    <div class="row g-2">
+                        <p class="col-sm-auto text-muted">Vía de Respuesta:</p>
+                        <div class="col">
+                            @switch (@Model.Data.ViaEnvioRespuesta)
+                            {
+                                case "E":
+                                    <p class="border-bottom">Email</p>
+                                    break;
+                                case "O":
+                                    <p class="border-bottom">En Oficina BCP</p>
+                                    break;
+                                case "S":
+                                    <p class="border-bottom">SMS</p>
+                                    break;
+                                case "C":
+                                    <p class="border-bottom">Carta</p>
+                                    break;
+                                case "T":
+                                    <p class="border-bottom">Teléfono</p>
+                                    break;
+                                case "W":
+                                    <p class="border-bottom">WhatsApp</p>
+                                    break;
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="row g-2">
+                        <p class="col-sm-auto text-muted">Celular:</p>
+                        <div class="col">
+                            <p class="border-bottom">@Model.Data.SMSRespuesta</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="row g-2">
+                        <p class="col-sm-auto text-muted">Teléfono:</p>
+                        <div class="col">
+                            <p class="border-bottom">@Model.Data.TelefonoRespuesta</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-4">
+                    <div class="row g-2">
+                        <p class="col-sm-auto text-muted">Email:</p>
+                        <div class="col">
+                            <p class="border-bottom">@Model.Data.EmailRespuesta</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="row g-2">
+                        <p class="col-sm-auto text-muted">Dirección:</p>
+                        <div class="col">
+                            <p class="border-bottom">@Model.Data.DireccionRespuesta</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <a class="btn btn-primary m-2" href="@Url.Action("SolucionCaso", "Analista" ,new {nroCaso = @Model.Data.NroCaso})">Solucionar</a>
+        <a class="btn btn-warning m-2" href="@Url.Action("RechazarCaso", "Analista", new {nroCaso = @Model.Data.NroCaso})">Rechazar</a>
+        <a class="btn btn-success m-2" href="@Url.Action("BandejadeEntrada", "Analista")">Volver</a>
+    </div>
+</div>
+}
+else if(Model != null && Model?.Meta != null)
+{
+    <div class="alert alert-danger">
+        <p>@Model.Meta.Msj</p>
+    </div>
+}
+else{
+    <p>No hay datos para mostrar...</p>
+}

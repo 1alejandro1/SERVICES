@@ -1,0 +1,10 @@
+D:\T25208\MICREDITO\MICRE_WEB\MICREDITO.Scrypt\bin\Debug\netstandard2.1\MICREDITO.Scrypt.deps.json
+D:\T25208\MICREDITO\MICRE_WEB\MICREDITO.Scrypt\bin\Debug\netstandard2.1\MICREDITO.Scrypt.dll
+D:\T25208\MICREDITO\MICRE_WEB\MICREDITO.Scrypt\bin\Debug\netstandard2.1\MICREDITO.Scrypt.pdb
+D:\T25208\MICREDITO\MICRE_WEB\MICREDITO.Scrypt\obj\Debug\netstandard2.1\MICREDITO.Scrypt.csproj.AssemblyReference.cache
+D:\T25208\MICREDITO\MICRE_WEB\MICREDITO.Scrypt\obj\Debug\netstandard2.1\MICREDITO.Scrypt.GeneratedMSBuildEditorConfig.editorconfig
+D:\T25208\MICREDITO\MICRE_WEB\MICREDITO.Scrypt\obj\Debug\netstandard2.1\MICREDITO.Scrypt.AssemblyInfoInputs.cache
+D:\T25208\MICREDITO\MICRE_WEB\MICREDITO.Scrypt\obj\Debug\netstandard2.1\MICREDITO.Scrypt.AssemblyInfo.cs
+D:\T25208\MICREDITO\MICRE_WEB\MICREDITO.Scrypt\obj\Debug\netstandard2.1\MICREDITO.Scrypt.csproj.CoreCompileInputs.cache
+D:\T25208\MICREDITO\MICRE_WEB\MICREDITO.Scrypt\obj\Debug\netstandard2.1\MICREDITO.Scrypt.dll
+D:\T25208\MICREDITO\MICRE_WEB\MICREDITO.Scrypt\obj\Debug\netstandard2.1\MICREDITO.Scrypt.pdb

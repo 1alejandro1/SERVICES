@@ -1,0 +1,1010 @@
+[
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.CalificacionesController",
+    "Method": "GetArchivoNegativo",
+    "RelativePath": "api/Calificaciones/ArchivoNegativo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.CalificacionesRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.DatosRespuestaEntitie",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.CalificacionesController",
+    "Method": "GetDeudasClienteBCP",
+    "RelativePath": "api/Calificaciones/DeudasClienteBCP",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.ENTITIE.Model.GetClienteBCPRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Model.CalificacionList",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.CalificacionesController",
+    "Method": "GetDeudasMora",
+    "RelativePath": "api/Calificaciones/DeudasMora",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.CalificacionesRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.Response\u00601[[MICRE.SERVICE.ENTITIE.Response.Calificacion.ContadoresMora, MICRE.SERVICE.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.CalificacionesController",
+    "Method": "GetEnameChecker",
+    "RelativePath": "api/Calificaciones/EnameChecker",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.EnameCheckerRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.Response\u00601[[MICRE.SERVICE.ENTITIE.Response.DatosRespuesta, MICRE.SERVICE.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.CalificacionesController",
+    "Method": "GetCalificacionASFI",
+    "RelativePath": "api/Calificaciones/GetCalificacionASFI",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.CalificacionASFIRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.Response\u00601[[MICRE.SERVICE.ENTITIE.Response.Calificacion.CalificacionASFIResponse, MICRE.SERVICE.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.CalificacionesController",
+    "Method": "GetDeudasInternasCanal_v2",
+    "RelativePath": "api/Calificaciones/GetDeudasInternasCanal_v2",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.DeudasInternasRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.Response\u00601[[MICRE.SERVICE.ENTITIE.Response.Calificacion.DeudasInternasResponse, MICRE.SERVICE.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.CalificacionesController",
+    "Method": "GetDeudasInternasCanal_v3",
+    "RelativePath": "api/Calificaciones/GetDeudasInternasCanal_v3",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.DeudasInternasRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.Response\u00601[[MICRE.SERVICE.ENTITIE.Response.Infocred.TipoDeudasOtrosBancos, MICRE.SERVICE.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.CalificacionesController",
+    "Method": "GetPremium",
+    "RelativePath": "api/Calificaciones/GetPremium",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.CalificacionesRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.Response\u00601[[MICRE.SERVICE.ENTITIE.Response.DatosRespuesta, MICRE.SERVICE.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.CalificacionesController",
+    "Method": "GetNumeroDeudasInternas",
+    "RelativePath": "api/Calificaciones/GetProductoDeuda",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.DeudasInternasRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.Response\u00601[[MICRE.SERVICE.ENTITIE.Response.DEUDASEXT, MICRE.SERVICE.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.CalificacionesController",
+    "Method": "GetPDH",
+    "RelativePath": "api/Calificaciones/PDH",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.CalificacionesRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.DatosRespuestaEntitie",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.CalificacionesController",
+    "Method": "GetPDH_CBM",
+    "RelativePath": "api/Calificaciones/PDH_CBM",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.CalificacionesRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.PDH_CBM_Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.CalificacionesController",
+    "Method": "GetPDH_VD",
+    "RelativePath": "api/Calificaciones/PDH_VD",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.CalificacionesRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.DatosRespuestaEntitie",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.CalificacionesController",
+    "Method": "GetPDHList",
+    "RelativePath": "api/Calificaciones/PDH-ListaCliente",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.CalificacionesRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MICRE.SERVICE.ENTITIE.Response.PDH_ListaClienteResponse, MICRE.SERVICE.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.CalificacionesController",
+    "Method": "GetRetencionSirej",
+    "RelativePath": "api/Calificaciones/RetencionSIREJ",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.CalificacionesRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.DatosRespuestaEntitie",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.CalificacionesController",
+    "Method": "GetTasaHipotecario",
+    "RelativePath": "api/Calificaciones/TasaHipotecario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.CalificacionesRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.Response\u00601[[MICRE.SERVICE.ENTITIE.Response.Calificacion.RespTasaHip, MICRE.SERVICE.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.CuentasController",
+    "Method": "GetCuentasEspeciales",
+    "RelativePath": "api/Cuentas/CuentasEspeciales",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.CuentasRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.Response\u00601[[System.Collections.Generic.List\u00601[[MICRE.SERVICE.ENTITIE.Response.CuentasEspeciales, MICRE.SERVICE.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.CuentasController",
+    "Method": "GetCuentasPasivas",
+    "RelativePath": "api/Cuentas/CuentasPasivas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.CuentasRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.Response\u00601[[System.Collections.Generic.List\u00601[[MICRE.SERVICE.ENTITIE.Response.CuentasPyme, MICRE.SERVICE.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.CuentasController",
+    "Method": "GetDPF",
+    "RelativePath": "api/Cuentas/DPFbyCIC",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.CuentasRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.Response\u00601[[MICRE.SERVICE.ENTITIE.Response.DPFResponse, MICRE.SERVICE.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.DeudasController",
+    "Method": "GetCompraRefinanciamiento",
+    "RelativePath": "api/Deudas/CompraRefinanciamiento",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.SolicitudRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.Response\u00601[[MICRE.SERVICE.ENTITIE.Model.Deudas.DatosRefinanciamiento, MICRE.SERVICE.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.InfoclienteController",
+    "Method": "GetPersonaJuridica",
+    "RelativePath": "api/Infocliente/PersonaJuridica",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.InfoclienteJuridicoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.Response\u00601[[MICRE.SERVICE.ENTITIE.Response.DatosNit, MICRE.SERVICE.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.InfoclienteController",
+    "Method": "GetPersonaNatural",
+    "RelativePath": "api/Infocliente/PersonaNatural",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.infoclienteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.Response\u00601[[MICRE.SERVICE.ENTITIE.Response.DatosCliente, MICRE.SERVICE.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.InfocredController",
+    "Method": "Consulta",
+    "RelativePath": "api/Infocred/Consulta",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.ConsultaInfocredRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.ConsultaInfocredResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.InfocredController",
+    "Method": "ConsultaDatos",
+    "RelativePath": "api/Infocred/ConsultaDatos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.ConsultaInfocredRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.ConsultaDatosInfocredResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.InfocredController",
+    "Method": "GetDeudasCliente",
+    "RelativePath": "api/Infocred/DeudasCliente",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.ENTITIE.Model.CalificacionListRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Model.CalificacionList",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.InfocredController",
+    "Method": "GETEvaluacionComportamientoVD",
+    "RelativePath": "api/Infocred/EvaluacionComportamientoVD",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.ENTITIE.Model.ComportamientoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Model.EVALUACION_COMPORTAMIENTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.InfocredController",
+    "Method": "GetDatosInfocred",
+    "RelativePath": "api/Infocred/GetDatosInfocred",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.ENTITIE.Model.ComportamientoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Model.Infocred",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.InfocredController",
+    "Method": "GetDatosPersonalesInfocred",
+    "RelativePath": "api/Infocred/GetDatosPersonalesInfocred",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.DatosPersonalesInfocredRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Model.DatosPersonalesInfoCred",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.InfocredController",
+    "Method": "GetDeudasExternas",
+    "RelativePath": "api/Infocred/GetDeudasExternas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.ConsultaInfocredRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.DEUDASEXT",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.InfocredController",
+    "Method": "GetDeudasExternasCanal_v2",
+    "RelativePath": "api/Infocred/GetDeudasExternasCanal_v2",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.ConsultaInfocredRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.Response\u00601[[MICRE.SERVICE.ENTITIE.Response.Infocred.TipoDeudasOtrosBancos, MICRE.SERVICE.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.InfocredController",
+    "Method": "GetDeudasExternasNewCanal_v2",
+    "RelativePath": "api/Infocred/GetDeudasExternasNewCanal_v2",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.ConsultaInfocredRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.Response\u00601[[MICRE.SERVICE.ENTITIE.Response.Infocred.TipoDeudasOtrosBancos, MICRE.SERVICE.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.InfocredController",
+    "Method": "GetHistorialDeudasFILTROSII",
+    "RelativePath": "api/Infocred/GetHistorialDeudas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.ENTITIE.Request.HistorialDeudasRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.HistorialList",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.InfocredController",
+    "Method": "GetHistorialDeudasIndirectasfILTROSII",
+    "RelativePath": "api/Infocred/GetHistorialDeudasIndirectas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.ENTITIE.Request.HistorialDeudasRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.HistorialList",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.InfocredController",
+    "Method": "GetNumeroDeudas",
+    "RelativePath": "api/Infocred/GetNumeroDeudas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.ConsultaInfocredRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Model.DatosNumeroDeudas",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.InfocredController",
+    "Method": "GetCalificacionASFINEW",
+    "RelativePath": "api/Infocred/ValidaCalificacionCliente",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.CalificacionAsfinewIIRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Model.CALIFICACION_ASFI_NEW",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.ScoreController",
+    "Method": "GetConsultaScoreConsumo",
+    "RelativePath": "api/Score/ConsultaScoreConsumo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.SolicitudRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.Response\u00601[[MICRE.SERVICE.ENTITIE.Response.ScoreResponse, MICRE.SERVICE.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.ScoreController",
+    "Method": "GetConsultaScoreConsumoNuevo",
+    "RelativePath": "api/Score/ConsultaScoreConsumoNuevo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.SolicitudRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.Response\u00601[[MICRE.SERVICE.ENTITIE.Response.ScoreResponseConsumo, MICRE.SERVICE.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.ScoreController",
+    "Method": "GetConsultaScorePYMEAsync",
+    "RelativePath": "api/Score/ConsultaScorePYME",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.API.DTOs.SolicitudRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.Response\u00601[[MICRE.SERVICE.ENTITIE.Response.ScoreResponse, MICRE.SERVICE.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.SegCryptController",
+    "Method": "GetEncriptado",
+    "RelativePath": "api/SegCrypt/Encriptar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE.SERVICE.ENTITIE.Model.SegCryptRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Model.SegCryptResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MICRE.SERVICE.API.Controllers.SmartLinkController",
+    "Method": "GetTipoCambio",
+    "RelativePath": "api/SmartLink/TipoCambio",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE.SERVICE.ENTITIE.Response.Response\u00601[[MICRE.SERVICE.ENTITIE.Response.TipoCambio, MICRE.SERVICE.ENTITIE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

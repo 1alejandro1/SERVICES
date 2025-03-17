@@ -1,0 +1,140 @@
+
+.container__login {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    margin:0;
+    padding: 15px;
+}
+
+.content__login {
+    display: flex;
+    min-height: 470px;
+    max-width: 700px;
+    min-width: 470px;
+    justify-items: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #3c3e4dd0;
+    /*border-right: 7px solid #F36E29;*/
+    border-radius: 7px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.img_segurinet {
+    background-color: #ffffff;
+    height: 100%;
+    background-image: url("../images/SEGURINET.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 7px 0 0 7px;
+}
+.transbox {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    color: #ffffff;
+    background: linear-gradient(to top right, rgba(2, 48, 175, 0.986) -80%, rgba(255, 255, 255, 0.055) 60%);
+    opacity: 1;
+    padding: 5px;
+}
+.img_BCP {
+    background-color: #ffffff;
+    border-radius: 7px 0 0 7px;
+    width: 100%;
+}
+select option{
+    color: #000;
+}
+
+.textarea-nrocuenta{
+    resize: none
+}
+
+.img__error {
+    height: 250px;
+    width: 100%;
+    background-image: url("../images/bug_fixing.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.table{
+    font-size: 12px;
+}
+
+thead, tbody, tfoot, tr, td, th {
+    border-color: #424242ff;
+    border-style: solid;
+    border-width: 0;
+}
+
+.caso__detalle {
+    min-height: calc(100vh - 65px);
+    min-width: 720px;
+    overflow-x: visible;
+}
+
+.box__content-message{
+    position: relative;
+    display: flex;
+    align-items: center;
+}   
+
+.box__message{
+    margin-left: 20px;
+    background-color: #ccb48728;
+    padding: 10px;
+    border-radius: 5px;
+}
+.box__message::before{
+    content: "";
+    top: 35%;
+    position: absolute;
+    left: 40px;
+    z-index: 1;
+    border: solid 15px transparent;
+    border-right-color: #ccb48728;
+}
+
+
+
+.circle-success{
+    fill: #2FB590;
+    stroke: #0c694a;
+    stroke-width: 0.187em;
+}
+
+.circle-nosuccess{
+    fill: #EC5568;
+    stroke: #a12222;
+    stroke-width: 0.187em;
+}
+
+.message_proccess{
+    font-style:italic;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #80858d;
+}
+
+.loading {
+    position: fixed;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 3000;
+    top: 65px;
+    margin:0;
+    padding:0;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #bec2c5;
+}

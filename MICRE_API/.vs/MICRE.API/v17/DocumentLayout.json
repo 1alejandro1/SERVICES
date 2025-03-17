@@ -1,0 +1,875 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\T25208\\MICREDITO\\MICRE_API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\repository\\micreditorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\repository\\micreditorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\controllers\\creditocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\controllers\\creditocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\services\\creditoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\services\\creditoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\controllers\\solicitudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\controllers\\solicitudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\services\\solicitudservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\services\\solicitudservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\repository\\pymerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\repository\\pymerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\middleware\\basicauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\middleware\\basicauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BF0FFFE-675C-4CE9-9FDE-5A10F77B763A}|MICRE.API.MODEL\\MICRE.API.MODEL.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.model\\response\\focremiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BF0FFFE-675C-4CE9-9FDE-5A10F77B763A}|MICRE.API.MODEL\\MICRE.API.MODEL.csproj|solutionrelative:micre.api.model\\response\\focremiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\middleware\\customheaderswaggerattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\middleware\\customheaderswaggerattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\common\\apirest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\common\\apirest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\healthcheks\\apihealthcheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\healthcheks\\apihealthcheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BF0FFFE-675C-4CE9-9FDE-5A10F77B763A}|MICRE.API.MODEL\\MICRE.API.MODEL.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.model\\applicationconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BF0FFFE-675C-4CE9-9FDE-5A10F77B763A}|MICRE.API.MODEL\\MICRE.API.MODEL.csproj|solutionrelative:micre.api.model\\applicationconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\services\\digitacionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\services\\digitacionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\dtos\\tarjetacreditorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\dtos\\tarjetacreditorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\services\\parametrosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\services\\parametrosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BF0FFFE-675C-4CE9-9FDE-5A10F77B763A}|MICRE.API.MODEL\\MICRE.API.MODEL.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.model\\response\\datos_resp_solicitud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BF0FFFE-675C-4CE9-9FDE-5A10F77B763A}|MICRE.API.MODEL\\MICRE.API.MODEL.csproj|solutionrelative:micre.api.model\\response\\datos_resp_solicitud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BF0FFFE-675C-4CE9-9FDE-5A10F77B763A}|MICRE.API.MODEL\\MICRE.API.MODEL.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.model\\request\\datostarjetacredito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BF0FFFE-675C-4CE9-9FDE-5A10F77B763A}|MICRE.API.MODEL\\MICRE.API.MODEL.csproj|solutionrelative:micre.api.model\\request\\datostarjetacredito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\services\\servicioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\services\\servicioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\services\\scoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\services\\scoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\services\\binesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\services\\binesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\models\\tarjetacreditomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\models\\tarjetacreditomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\models\\solicitudmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\models\\solicitudmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\models\\serviceresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\models\\serviceresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\models\\seguimientopantallamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\models\\seguimientopantallamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\models\\scoremodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\models\\scoremodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\models\\personamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\models\\personamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\models\\pdhmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\models\\pdhmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\models\\patrimoniomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\models\\patrimoniomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\models\\normativamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\models\\normativamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\models\\infoclientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\models\\infoclientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\models\\estadonumsolicitudmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\models\\estadonumsolicitudmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\models\\empresamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\models\\empresamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\models\\emailconfigmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\models\\emailconfigmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\models\\datostarjetaadicionalmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\models\\datostarjetaadicionalmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\models\\cuentaespecialmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\models\\cuentaespecialmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\models\\creditoconsumomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\models\\creditoconsumomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\models\\codigoparametromodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\models\\codigoparametromodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\models\\binesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\models\\binesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\models\\authenticationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\models\\authenticationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\models\\acciomaydatospersonalespymemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\models\\acciomaydatospersonalespymemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\healthcheks\\secrypthealthcheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\healthcheks\\secrypthealthcheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\healthcheks\\extension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\healthcheks\\extension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\dtos\\scorerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\dtos\\scorerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.app\\dtos\\rptsolicituddenaprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEB370A5-819C-4E17-8B45-A206CAC1FE6F}|MICRE.API.APP\\MICRE.API.APP.csproj|solutionrelative:micre.api.app\\dtos\\rptsolicituddenaprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BF0FFFE-675C-4CE9-9FDE-5A10F77B763A}|MICRE.API.MODEL\\MICRE.API.MODEL.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.model\\response\\registrarexcepcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BF0FFFE-675C-4CE9-9FDE-5A10F77B763A}|MICRE.API.MODEL\\MICRE.API.MODEL.csproj|solutionrelative:micre.api.model\\response\\registrarexcepcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BF0FFFE-675C-4CE9-9FDE-5A10F77B763A}|MICRE.API.MODEL\\MICRE.API.MODEL.csproj|d:\\t25208\\micredito\\micre_api\\micre.api.model\\request\\addexcepcionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BF0FFFE-675C-4CE9-9FDE-5A10F77B763A}|MICRE.API.MODEL\\MICRE.API.MODEL.csproj|solutionrelative:micre.api.model\\request\\addexcepcionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 22,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\appsettings.json",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\appsettings.json",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\appsettings.json",
+              "RelativeToolTip": "MICRE.API.APP\\appsettings.json",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAAAG0AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2023-09-18T20:08:42.786Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SolicitudService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Services\\SolicitudService.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Services\\SolicitudService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Services\\SolicitudService.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Services\\SolicitudService.cs",
+              "ViewState": "AQIAAHYFAAAAAAAAAAAuwIwFAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:59:38.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MicreditoRepository.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Repository\\MicreditoRepository.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Repository\\MicreditoRepository.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Repository\\MicreditoRepository.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Repository\\MicreditoRepository.cs",
+              "ViewState": "AQIAABYFAAAAAAAAAAAAwCgFAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:59:24.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreditoController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Controllers\\CreditoController.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Controllers\\CreditoController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Controllers\\CreditoController.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Controllers\\CreditoController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAACAAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T13:04:53.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreditoService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Services\\CreditoService.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Services\\CreditoService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Services\\CreditoService.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Services\\CreditoService.cs",
+              "ViewState": "AQIAAJgAAAAAAAAAAAAAAK0AAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:59:29.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SolicitudController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Controllers\\SolicitudController.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Controllers\\SolicitudController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Controllers\\SolicitudController.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Controllers\\SolicitudController.cs",
+              "ViewState": "AQIAAHcAAAAAAAAAAAAAAEcBAABoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T19:21:20.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BasicAuthenticationHandler.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Middleware\\BasicAuthenticationHandler.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Middleware\\BasicAuthenticationHandler.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Middleware\\BasicAuthenticationHandler.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Middleware\\BasicAuthenticationHandler.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAkwCgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T22:46:09.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PymeRepository.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Repository\\PymeRepository.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Repository\\PymeRepository.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Repository\\PymeRepository.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Repository\\PymeRepository.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAAwGYAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T16:52:56.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FocremiResponse.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.MODEL\\Response\\FocremiResponse.cs",
+              "RelativeDocumentMoniker": "MICRE.API.MODEL\\Response\\FocremiResponse.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.MODEL\\Response\\FocremiResponse.cs",
+              "RelativeToolTip": "MICRE.API.MODEL\\Response\\FocremiResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T21:58:01.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CustomHeaderSwaggerAttribute.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Middleware\\CustomHeaderSwaggerAttribute.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Middleware\\CustomHeaderSwaggerAttribute.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Middleware\\CustomHeaderSwaggerAttribute.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Middleware\\CustomHeaderSwaggerAttribute.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:57:54.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ApiRest.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Common\\ApiRest.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Common\\ApiRest.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Common\\ApiRest.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Common\\ApiRest.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwA4AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T16:08:48.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Program.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Program.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Program.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Program.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAmwE4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T18:28:59.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ApiHealthCheck.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Healthcheks\\ApiHealthCheck.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Healthcheks\\ApiHealthCheck.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Healthcheks\\ApiHealthCheck.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Healthcheks\\ApiHealthCheck.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAA1wCsAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:57:46.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ApplicationConfig.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.MODEL\\ApplicationConfig.cs",
+              "RelativeDocumentMoniker": "MICRE.API.MODEL\\ApplicationConfig.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.MODEL\\ApplicationConfig.cs",
+              "RelativeToolTip": "MICRE.API.MODEL\\ApplicationConfig.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAawA4AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T19:25:18.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TarjetaCreditoRequest.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\DTOs\\TarjetaCreditoRequest.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\DTOs\\TarjetaCreditoRequest.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\DTOs\\TarjetaCreditoRequest.cs",
+              "RelativeToolTip": "MICRE.API.APP\\DTOs\\TarjetaCreditoRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:57:31.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DigitacionService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Services\\DigitacionService.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Services\\DigitacionService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Services\\DigitacionService.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Services\\DigitacionService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAB8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:59:31.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "RegistrarExcepcion.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.MODEL\\Response\\RegistrarExcepcion.cs",
+              "RelativeDocumentMoniker": "MICRE.API.MODEL\\Response\\RegistrarExcepcion.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.MODEL\\Response\\RegistrarExcepcion.cs",
+              "RelativeToolTip": "MICRE.API.MODEL\\Response\\RegistrarExcepcion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T20:14:35.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "AddExcepcionRequest.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.MODEL\\Request\\AddExcepcionRequest.cs",
+              "RelativeDocumentMoniker": "MICRE.API.MODEL\\Request\\AddExcepcionRequest.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.MODEL\\Request\\AddExcepcionRequest.cs",
+              "RelativeToolTip": "MICRE.API.MODEL\\Request\\AddExcepcionRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T20:14:33.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ParametrosService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Services\\ParametrosService.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Services\\ParametrosService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Services\\ParametrosService.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Services\\ParametrosService.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAcwA0AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:59:32.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ScoreService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Services\\ScoreService.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Services\\ScoreService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Services\\ScoreService.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Services\\ScoreService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:59:34.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Datos_Resp_Solicitud.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.MODEL\\Response\\Datos_Resp_Solicitud.cs",
+              "RelativeDocumentMoniker": "MICRE.API.MODEL\\Response\\Datos_Resp_Solicitud.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.MODEL\\Response\\Datos_Resp_Solicitud.cs",
+              "RelativeToolTip": "MICRE.API.MODEL\\Response\\Datos_Resp_Solicitud.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:59:53.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ServicioService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Services\\ServicioService.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Services\\ServicioService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Services\\ServicioService.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Services\\ServicioService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:59:36.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DatosTarjetaCredito.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.MODEL\\Request\\DatosTarjetaCredito.cs",
+              "RelativeDocumentMoniker": "MICRE.API.MODEL\\Request\\DatosTarjetaCredito.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.MODEL\\Request\\DatosTarjetaCredito.cs",
+              "RelativeToolTip": "MICRE.API.MODEL\\Request\\DatosTarjetaCredito.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAA1wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:59:45.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BinesService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Services\\BinesService.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Services\\BinesService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Services\\BinesService.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Services\\BinesService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:59:28.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "TarjetaCreditoModel.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\TarjetaCreditoModel.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Models\\TarjetaCreditoModel.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\TarjetaCreditoModel.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Models\\TarjetaCreditoModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:59:16.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "SolicitudModel.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\SolicitudModel.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Models\\SolicitudModel.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\SolicitudModel.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Models\\SolicitudModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:59:13.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ServiceResponseModel.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\ServiceResponseModel.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Models\\ServiceResponseModel.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\ServiceResponseModel.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Models\\ServiceResponseModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:59:09.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "SeguimientoPantallaModel.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\SeguimientoPantallaModel.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Models\\SeguimientoPantallaModel.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\SeguimientoPantallaModel.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Models\\SeguimientoPantallaModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:59:05.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ScoreModel.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\ScoreModel.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Models\\ScoreModel.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\ScoreModel.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Models\\ScoreModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:59:02.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "PersonaModel.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\PersonaModel.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Models\\PersonaModel.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\PersonaModel.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Models\\PersonaModel.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA4wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:58:59.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "PdhModel.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\PdhModel.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Models\\PdhModel.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\PdhModel.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Models\\PdhModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:58:49.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "PatrimonioModel.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\PatrimonioModel.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Models\\PatrimonioModel.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\PatrimonioModel.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Models\\PatrimonioModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:58:44.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "NormativaModel.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\NormativaModel.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Models\\NormativaModel.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\NormativaModel.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Models\\NormativaModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:58:42.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "InfoclienteModel.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\InfoclienteModel.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Models\\InfoclienteModel.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\InfoclienteModel.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Models\\InfoclienteModel.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAuwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:58:37.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "EstadoNumSolicitudModel.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\EstadoNumSolicitudModel.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Models\\EstadoNumSolicitudModel.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\EstadoNumSolicitudModel.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Models\\EstadoNumSolicitudModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:58:35.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "EmpresaModel.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\EmpresaModel.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Models\\EmpresaModel.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\EmpresaModel.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Models\\EmpresaModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:58:33.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "EmailConfigModel.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\EmailConfigModel.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Models\\EmailConfigModel.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\EmailConfigModel.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Models\\EmailConfigModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:58:18.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "DatosTarjetaAdicionalModel.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\DatosTarjetaAdicionalModel.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Models\\DatosTarjetaAdicionalModel.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\DatosTarjetaAdicionalModel.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Models\\DatosTarjetaAdicionalModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:58:16.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "CuentaEspecialModel.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\CuentaEspecialModel.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Models\\CuentaEspecialModel.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\CuentaEspecialModel.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Models\\CuentaEspecialModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:58:14.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "CreditoConsumoModel.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\CreditoConsumoModel.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Models\\CreditoConsumoModel.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\CreditoConsumoModel.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Models\\CreditoConsumoModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:58:11.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "CodigoParametroModel.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\CodigoParametroModel.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Models\\CodigoParametroModel.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\CodigoParametroModel.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Models\\CodigoParametroModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:58:09.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "BinesModel.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\BinesModel.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Models\\BinesModel.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\BinesModel.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Models\\BinesModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:58:06.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "AuthenticationModel.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\AuthenticationModel.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Models\\AuthenticationModel.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\AuthenticationModel.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Models\\AuthenticationModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:58:04.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "AccioMayDatosPersonalesPymeModel.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\AccioMayDatosPersonalesPymeModel.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Models\\AccioMayDatosPersonalesPymeModel.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Models\\AccioMayDatosPersonalesPymeModel.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Models\\AccioMayDatosPersonalesPymeModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:57:58.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "SecryptHealthCheck.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Healthcheks\\SecryptHealthCheck.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Healthcheks\\SecryptHealthCheck.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Healthcheks\\SecryptHealthCheck.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Healthcheks\\SecryptHealthCheck.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:57:49.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Extension.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Healthcheks\\Extension.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\Healthcheks\\Extension.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\Healthcheks\\Extension.cs",
+              "RelativeToolTip": "MICRE.API.APP\\Healthcheks\\Extension.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:57:47.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ScoreRequest.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\DTOs\\ScoreRequest.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\DTOs\\ScoreRequest.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\DTOs\\ScoreRequest.cs",
+              "RelativeToolTip": "MICRE.API.APP\\DTOs\\ScoreRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:57:22.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "RPTSolicitudDenApRequest.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\DTOs\\RPTSolicitudDenApRequest.cs",
+              "RelativeDocumentMoniker": "MICRE.API.APP\\DTOs\\RPTSolicitudDenApRequest.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_API\\MICRE.API.APP\\DTOs\\RPTSolicitudDenApRequest.cs",
+              "RelativeToolTip": "MICRE.API.APP\\DTOs\\RPTSolicitudDenApRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:57:11.622Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

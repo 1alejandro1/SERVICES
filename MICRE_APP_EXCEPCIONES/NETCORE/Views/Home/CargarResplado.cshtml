@@ -1,0 +1,384 @@
+﻿@model BackUps
+
+@{
+    ViewData["Title"] = "CargarResplado";
+}
+<head>
+    <link rel="stylesheet" href="~/dropzone/dist/min/dropzone.min.css" />
+</head>
+<body>
+    @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+    {
+        <div class="toast-container position-fixed bottom-0 end-0 p-3" id="toast-button">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <img src="~/images/logobcp.svg" style="width: 50px; height: 50px;" class="rounded me-2" alt="BCP logo">
+                    <strong class="me-auto">Mensaje</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    @ViewBag.ErrorMessage
+                </div>
+            </div>
+        </div>
+    }
+    <div class="card row">
+        <div class="card-body">
+            <div class="pb-1">
+                <div class="custom-border px-2" style="display: flex; align-items: center;">
+                    <h6>Carga de respaldos</h6>
+                </div>
+            </div>
+            <div class="p-3">
+                <div class="pb-2">
+                    <div class="alert-border border-warning pt-1">
+                        <h6><strong>Paso 1.</strong> Carga los respaldos obligatorios que se muestran en la lista de la columna izquierda. Adicionalmente, añade los siguientes respaldos según corresponda:</h6>
+                    </div>
+                </div>
+
+                @section Scripts {
+                                <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                            var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+                            var toastList = toastElList.map(function (toastEl) {
+                                return new bootstrap.Toast(toastEl)
+                            })
+                            toastList.forEach(toast => toast.show())
+                        });
+
+                        Dropzone.options.myDropzone = {
+                            paramName: "file", // El nombre que se usará para el archivo en el servidor
+                            maxFilesize:@Model.MaxFilesizeExcepcion, // Tamaño máximo del archivo en MB
+                            acceptedFiles: ".jpeg,.jpg,.png,.gif,.pdf",
+                            dictDefaultMessage: "Arrastra el documento en esta sección o presiona aquí",
+                            dictFileTooBig: "El archivo es demasiado grande ({{filesize}}MB). Tamaño máximo: {{maxFilesize}}MB.",
+                            maxFiles: 1, // Permitir solo un archivo
+                            addRemoveLinks: true, // Agregar enlaces de eliminación
+                            dictRemoveFile: "Eliminar archivo",
+                            autoProcessQueue: false, // Desactivar la subida automática
+                            init: function () {
+                                var myDropzone = this;
+
+                                document.getElementById("confirmUploadButton").addEventListener("click", function () {
+                                    myDropzone.processQueue(); // Subir el archivo cuando se confirme
+                                    $('#confirmUploadModal').modal('hide'); // Cerrar el modal
+                                });
+
+                                this.on("addedfile", function (file) {
+                                    $('#confirmUploadModal').modal('show'); // Mostrar el modal cuando se añade un archivo
+                                });
+
+                                this.on("success", function (file, response) {
+                                    location.reload();
+                                    console.log("Archivo subido con éxito:", response);
+                                });
+
+                                this.on("error", function (file, response) {
+                                    console.log("Error al subir el archivo:", response);
+                                });
+
+                                this.on("maxfilesexceeded", function (file) {
+                                    this.removeAllFiles(); // Eliminar archivos anteriores
+                                    this.addFile(file); // Agregar el nuevo archivo
+                                });
+
+                                this.on("removedfile", function (file) {
+                                    if (file.serverId) {
+                                        // Realiza una solicitud para eliminar el archivo en el servidor
+                                        fetch('@Url.Action("DeleteFile", "Home")' + `/${file.serverId}`, {
+                                            method: 'DELETE'
+                                        }).then(response => {
+                                            if (response.ok) {
+                                                console.log("Archivo eliminado con éxito");
+                                            } else {
+                                                console.log("Error al eliminar el archivo");
+                                            }
+                                        });
+                                    }
+                                });
+                            }
+                        };
+                                </script>
+                }
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hexagon-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866z" />
+                </svg>
+                Pantalla AMAI (si el cliente tiene operaciones vigentes)
+                <div class="pb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hexagon-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866z" />
+                    </svg>
+                    Pantalla NAZIR (si el cliente tiene tarjeta de crédito)
+                </div>
+                <div class="pb-2">
+
+                    <h6><strong>Tipo de archivos permitidos: </strong> .jpeg, .jpg, .png, .gif, .pdf</h6>
+                </div>
+
+                
+                <div class="pb-3">
+                    <div class="alert-border border-warning pt-1">
+                        <h6><strong>Paso 2.</strong> Carga los respaldos que consideres necesarios en la columna derecha.</h6>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="pb-3"><div class="custom-border" style="display: flex; align-items: center;"><h6>Documentos respaldos (Titular)</h6> </div></div>
+                        @if(string.IsNullOrEmpty(Model.Infocred)){
+                            <form action="@Url.Action("UploadFile", "Home")" class="dropzone bg-success-subtle mb-2" id="myDropzone">
+                                <div class="alert alert-success" role="alert">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                    </svg><strong> Infocred (obligatorio)</strong>
+                                </div>
+                                <input type="hidden" name="tipoRespaldo" value="INFOCRED" />
+                            </form>
+                        }
+                        @if (string.IsNullOrEmpty(Model.Asfi))
+                        {
+                            <form action="@Url.Action("UploadFile", "Home")" class="dropzone bg-success-subtle mb-2" id="myDropzone">
+                                <div class="alert alert-success" role="alert">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                    </svg><strong> CIC Asfi (obligatorio)</strong>
+                                </div>
+                                <input type="hidden" name="tipoRespaldo" value="ASFI" />
+                            </form>
+                        }
+                        @if (Model.Tarjeta == true)
+                        {
+                            @if (string.IsNullOrEmpty(Model.AmaiNazir))
+                            {
+                                <form action="@Url.Action("UploadFile", "Home")" class="dropzone bg-success-subtle mb-2" id="myDropzone">
+                                    <div class="alert alert-success" role="alert">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                            <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                        </svg><strong> Pantalla AMAI/NAZIR (Opcional)</strong>
+                                        <input type="hidden" name="tipoRespaldo" value="AMAI_NAZIR" />
+                                    </div>
+                                </form>
+                            }
+                        }
+                        else
+                        {
+                            @if (string.IsNullOrEmpty(Model.AmaiNazir))
+                            {
+                                <form action="@Url.Action("UploadFile", "Home")" class="dropzone bg-success-subtle mb-2" id="myDropzone">
+                                    <div class="alert alert-success" role="alert">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                            <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                        </svg><strong> Pantalla AMAI/NAZIR (Opcional)</strong>
+                                        <input type="hidden" name="tipoRespaldo" value="AMAI_NAZIR" />
+                                    </div>
+                                </form>
+                            }
+                        }
+                        @if (!string.IsNullOrEmpty(Model.conyuigueId))
+                        {
+                            <div class="pb-3"><div class="custom-border" style="display: flex; align-items: center;"><h6>Documentos respaldos (Cónyuge)</h6> </div></div>
+                            @if (string.IsNullOrEmpty(Model.AsfiConyugue))
+                            {
+                                <form action="@Url.Action("UploadFile", "Home")" class="dropzone bg-success-subtle mb-2" id="myDropzone">
+                                    <div class="alert alert-success" role="alert">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                            <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                        </svg><strong> Infocred Cónyuge (obligatorio)</strong>
+                                    </div>
+                                    <input type="hidden" name="tipoRespaldo" value="CASFI" />
+                                </form>
+                            }
+                            @if(string.IsNullOrEmpty(Model.InfocredConyugue))
+                            {
+                                <form action="@Url.Action("UploadFile", "Home")" class="dropzone bg-success-subtle mb-2" id="myDropzone">
+                                    <div class="alert alert-success" role="alert">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                            <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                        </svg><strong> CIC Asfi Cónyuge (obligatorio)</strong>
+                                    </div>
+                                    <input type="hidden" name="tipoRespaldo" value="CINFOCRED" />
+                                </form>
+                            }
+                        }
+                        @if (Model.Tarjeta == true)
+                        {
+
+                            @if (string.IsNullOrEmpty(Model.AmaiNazirConyugue) && (!string.IsNullOrEmpty(Model.conyuigueId)))
+                            {
+                                <form action="@Url.Action("UploadFile", "Home")" class="dropzone bg-success-subtle mb-2" id="myDropzone">
+                                    <div class="alert alert-success" role="alert">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                            <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                        </svg><strong> Pantalla AMAI/NAZIR Cónyuge (Opcional)</strong>
+                                        <input type="hidden" name="tipoRespaldo" value="CAMAI_NAZIR" />
+                                    </div>
+                                </form>
+                            }
+                        }
+                        else
+                        {
+
+                            @if (string.IsNullOrEmpty(Model.AmaiNazirConyugue) && (!string.IsNullOrEmpty(Model.conyuigueId)))
+                            {
+                                <form action="@Url.Action("UploadFile", "Home")" class="dropzone bg-success-subtle mb-2" id="myDropzone">
+                                    <div class="alert alert-success" role="alert">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                            <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                        </svg><strong> Pantalla AMAI/NAZIR Cónyuge (Opcional)</strong>
+                                        <input type="hidden" name="tipoRespaldo" value="CAMAI_NAZIR" />
+                                    </div>
+                                </form>
+                            }
+
+                        }
+                    </div>
+                    <div class="col">
+                        <div class="pb-3"><div class="custom-border" style="display: flex; align-items: center;"><h6>Documentos respaldos (Opcionales)</h6> </div></div>
+                        @if (string.IsNullOrEmpty(Model.Respaldo1))
+                        {
+                            <form action="@Url.Action("UploadFile", "Home")" class="dropzone bg-primary-subtle mb-2" id="myDropzone">
+                                <div class="alert alert-primary" role="alert">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                    </svg><strong> Respaldo 1 (opcional)</strong>
+                                    <input type="hidden" name="tipoRespaldo" value="RESPALDO1" />
+                                </div>
+                            </form>
+                        }
+                        @if (string.IsNullOrEmpty(Model.Respaldo2)){
+                            <form action="@Url.Action("UploadFile", "Home")" class="dropzone bg-primary-subtle mb-2" id="myDropzone">
+                                <div class="alert alert-primary" role="alert">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                    </svg><strong> Respaldo 2 (opcional)</strong>
+                                    <input type="hidden" name="tipoRespaldo" value="RESPALDO2" />
+                                </div>
+                            </form>
+                        }
+                        @if (string.IsNullOrEmpty(Model.Respaldo3))
+                        {
+                            <form action="@Url.Action("UploadFile", "Home")" class="dropzone bg-primary-subtle mb-2" id="myDropzone">
+                                <div class="alert alert-primary" role="alert">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                    </svg><strong> Respaldo 3 (opcional)</strong>
+                                    <input type="hidden" name="tipoRespaldo" value="RESPALDO3" />
+                                </div>
+                            </form>
+                        }
+                        @if (string.IsNullOrEmpty(Model.Respaldo4))
+                        {
+                            <form action="@Url.Action("UploadFile", "Home")" class="dropzone bg-primary-subtle mb-2" id="myDropzone">
+                                <div class="alert alert-primary" role="alert">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                    </svg><strong> Respaldo 4 (opcional)</strong>
+                                    <input type="hidden" name="tipoRespaldo" value="RESPALDO4"/>
+                                </div>
+                            </form>
+                        }
+                    </div>
+                </div>
+                <div>
+
+                    @if (!string.IsNullOrEmpty(Model.conyuigueId))
+                    {
+                        bool allFieldsFilled = !string.IsNullOrEmpty(Model.Infocred) && !string.IsNullOrEmpty(Model.Asfi) && !string.IsNullOrEmpty(Model.InfocredConyugue) && !string.IsNullOrEmpty(Model.AsfiConyugue);
+                        if (allFieldsFilled)
+                        {
+                            <form asp-action="SendDate" asp-controller="Home" method="post">
+                                <button type="submit" data-bs-toggle="modal" data-bs-target="#LoadingPage" id="submitButton" class="btn btn-outline-success">Finalizar Registro</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <button type="submit" id="submitButton" class="btn btn-outline-success" disabled>Finalizar Registro</button>
+                        }
+                    }
+                    else
+                    {
+                        bool allFieldsFilled = !string.IsNullOrEmpty(Model.Infocred) && !string.IsNullOrEmpty(Model.Asfi);
+                        if (allFieldsFilled)
+                        {
+                            <form asp-action="SendDate" asp-controller="Home" method="post">
+                                <button type="submit" data-bs-toggle="modal" data-bs-target="#LoadingPage" id="submitButton" class="btn btn-outline-success">Finalizar Registro</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <button type="submit" id="submitButton" class="btn btn-outline-success" disabled>Finalizar Registro</button>
+                        }
+                    }
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="LoadingPage" tabindex="-1" aria-labelledby="exampleModalLabe2l" aria-hidden="true" data-bs-backdrop="static">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="d-flex justify-content-center px-5">
+                    <div class="spinner-grow text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center px-5">
+                    <div class="spinner-grow text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center px-5">
+                    <div class="spinner-grow text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center px-5">
+                    <div class="spinner-grow text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="confirmUploadModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog alert alert-danger">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="confirmUploadModal">Subir Archivo</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6><strong>¿Estás seguro de que deseas subir este archivo?</strong></h6>
+                        <p>una vez subido no se podra borrar</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-danger" id="confirmUploadButton">Subir Archivo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/dropzone/dist/min/dropzone.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var canSubmit = document.getElementById("canSubmit").value === "True";
+            var submitButton = document.getElementById("submitButton");
+            submitButton.disabled = !canSubmit;
+        });
+    </script>
+</body>

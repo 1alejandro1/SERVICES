@@ -1,0 +1,12 @@
+D:\T25208\MICREDITO\MICRE_MICREDITO_WEB\MICRE.Entitie\bin\Debug\net8.0\MICRE.Entitie.deps.json
+D:\T25208\MICREDITO\MICRE_MICREDITO_WEB\MICRE.Entitie\bin\Debug\net8.0\MICRE.Entitie.dll
+D:\T25208\MICREDITO\MICRE_MICREDITO_WEB\MICRE.Entitie\bin\Debug\net8.0\MICRE.Entitie.pdb
+D:\T25208\MICREDITO\MICRE_MICREDITO_WEB\MICRE.Entitie\obj\Debug\net8.0\MICRE.Entitie.csproj.AssemblyReference.cache
+D:\T25208\MICREDITO\MICRE_MICREDITO_WEB\MICRE.Entitie\obj\Debug\net8.0\MICRE.Entitie.GeneratedMSBuildEditorConfig.editorconfig
+D:\T25208\MICREDITO\MICRE_MICREDITO_WEB\MICRE.Entitie\obj\Debug\net8.0\MICRE.Entitie.AssemblyInfoInputs.cache
+D:\T25208\MICREDITO\MICRE_MICREDITO_WEB\MICRE.Entitie\obj\Debug\net8.0\MICRE.Entitie.AssemblyInfo.cs
+D:\T25208\MICREDITO\MICRE_MICREDITO_WEB\MICRE.Entitie\obj\Debug\net8.0\MICRE.Entitie.csproj.CoreCompileInputs.cache
+D:\T25208\MICREDITO\MICRE_MICREDITO_WEB\MICRE.Entitie\obj\Debug\net8.0\MICRE.Entitie.dll
+D:\T25208\MICREDITO\MICRE_MICREDITO_WEB\MICRE.Entitie\obj\Debug\net8.0\refint\MICRE.Entitie.dll
+D:\T25208\MICREDITO\MICRE_MICREDITO_WEB\MICRE.Entitie\obj\Debug\net8.0\MICRE.Entitie.pdb
+D:\T25208\MICREDITO\MICRE_MICREDITO_WEB\MICRE.Entitie\obj\Debug\net8.0\ref\MICRE.Entitie.dll

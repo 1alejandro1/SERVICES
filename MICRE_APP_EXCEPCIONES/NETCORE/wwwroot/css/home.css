@@ -1,0 +1,22 @@
+.custom-navbar {
+    min-width: 250px;
+}
+.custom-content {
+    width: calc(100% - 250px);
+}
+
+.custom-bg-conyugue {
+    background-color: #E9EAF3;
+}
+    .custom-bg-conyugue .list-group-item {
+        background-color: #E9EAF3;
+    }
+
+.tiny-label {
+    font-size: .7rem;
+    color: #9e9e9e;
+}
+
+.custom-dropdown-toggle::after {
+    display: none !important;
+}

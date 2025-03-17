@@ -1,0 +1,65 @@
+﻿@using MICRE.ABSTRACTION.ENTITIES.Response
+@model ExcepcionCliente
+@* Views/Solicitud/Components/_ExceptionRow.cshtml *@
+
+<div class="alert alert-warning" role="alert">
+    <div class="row">
+        <div class="cold d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#collapseExample{@Model.IdProductoExcepcion}" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <div>
+                <div><strong>Excepción @Model.IdProductoExcepcion</strong></div>
+                <div><small>@Model.DescripcionExcepcion</small></div>
+            </div>
+            <p>
+                @Model.Estado
+            </p>
+        </div>
+        <div class="collapse" id="collapseExample{@Model.IdProductoExcepcion}">
+            <div class="card card-body mt-2">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="col">
+                            <strong>Instancia correspondiente</strong>
+                        </div>
+                        <div class="col">
+                            <small>FFFFFF - Jefatura CBM</small>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="col">
+                            <strong>Detalle de la justificación</strong>
+                        </div>
+                        <div class="col">
+                            <small>@Model.Justificacion</small>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="col">
+                            <strong>Producto relacionado a la excepción</strong>
+                        </div>
+                        <div class="col">
+                            <small>@Model.DescripcionProducto</small>
+                        </div>
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-end col mt-3">
+                    <button type="button" class="btn btn-primary mx-1" onclick="abrirModal('@Model.IdProductoExcepcion', '#responderSolicitud')" data-bs-toggle="modal">
+                        <i class="fa-solid fa-pen"></i>
+                        Responder
+                    </button>
+                    <button type="button" class="btn btn-success" onclick="abrirModal('@Model.IdProductoExcepcion', '#aprobarSolicitud')">
+                        <i class="fa-solid fa-check"></i>
+                        Aprobar
+                    </button>
+                    <button type="button" class="btn btn-warning mx-2" onclick="abrirModal('@Model.IdProductoExcepcion', '#observarSolicitud')" data-bs-toggle="modal">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        Observar
+                    </button>
+                    <button type="button" class="btn btn-danger" onclick="abrirModal('@Model.IdProductoExcepcion', '#rechazarSolicitud')" data-bs-toggle="modal">
+                        <i class="fa-solid fa-trash"></i>
+                        Rechazar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

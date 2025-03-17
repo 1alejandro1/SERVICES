@@ -1,0 +1,9 @@
+D:\T25208\MICREDITO\MICRE_DIGITACION\Comunes\bin\Debug\Comunes.dll
+D:\T25208\MICREDITO\MICRE_DIGITACION\Comunes\bin\Debug\Comunes.pdb
+D:\T25208\MICREDITO\MICRE_DIGITACION\Comunes\bin\Debug\NLog.dll
+D:\T25208\MICREDITO\MICRE_DIGITACION\Comunes\bin\Debug\NLog.xml
+D:\T25208\MICREDITO\MICRE_DIGITACION\Comunes\obj\Debug\Comunes.csproj.AssemblyReference.cache
+D:\T25208\MICREDITO\MICRE_DIGITACION\Comunes\obj\Debug\Comunes.csproj.CoreCompileInputs.cache
+D:\T25208\MICREDITO\MICRE_DIGITACION\Comunes\obj\Debug\Comunes.csproj.CopyComplete
+D:\T25208\MICREDITO\MICRE_DIGITACION\Comunes\obj\Debug\Comunes.dll
+D:\T25208\MICREDITO\MICRE_DIGITACION\Comunes\obj\Debug\Comunes.pdb

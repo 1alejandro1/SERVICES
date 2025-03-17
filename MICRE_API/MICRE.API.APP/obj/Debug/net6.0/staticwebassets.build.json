@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "RtGBYfF41gsPjfjKfBVsz/nMPAhyHDdDn1jUrnIEGtY=",
+  "Source": "MICRE.API.APP",
+  "BasePath": "_content/MICRE.API.APP",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

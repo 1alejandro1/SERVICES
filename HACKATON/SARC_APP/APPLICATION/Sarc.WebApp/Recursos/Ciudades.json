@@ -1,0 +1,69 @@
+
+ [
+    {
+      "departamentoId": "101",
+      "provincia": "SUCRE",
+      "id": "SUCRE"
+    },
+    {
+      "departamentoId": "201",
+      "provincia": "LA PAZ",
+      "id": "LA PAZ"
+    },
+    {
+      "departamentoId": "201",
+      "provincia": "EL ALTO",
+      "id": "EL ALTO"
+    },
+    {
+      "departamentoId": "301",
+      "provincia": "COCHABAMBA",
+      "id": "COCHABAMBA"
+    },
+    {
+      "departamentoId": "301",
+      "provincia": "QUILLACOLLO",
+      "id": "QUILLACOLLO"
+    },
+    {
+      "departamentoId": "401",
+      "provincia": "ORURO",
+      "id": "ORURO"
+    },
+    {
+      "departamentoId": "901",
+      "provincia": "PANDO",
+      "id": "PANDO"
+    },
+    {
+      "departamentoId": "501",
+      "provincia": "POTOSI",
+      "id": "POTOSI"
+    },
+    {
+      "departamentoId": "601",
+      "provincia": "TARIJA",
+      "id": "TARIJA"
+    },
+    {
+      "departamentoId": "701",
+      "provincia": "SANTA CRUZ",
+      "id": "SANTA CRUZ"
+    },
+    {
+      "departamentoId": "701",
+      "provincia": "WARNES",
+      "id": "WARNES"
+    },
+    {
+      "departamentoId": "701",
+      "provincia": "MONTERO",
+      "id": "MONTERO"
+    },
+    {
+      "departamentoId": "801",
+      "provincia": "BENI",
+      "id": "BENI"
+    }
+  ]
+

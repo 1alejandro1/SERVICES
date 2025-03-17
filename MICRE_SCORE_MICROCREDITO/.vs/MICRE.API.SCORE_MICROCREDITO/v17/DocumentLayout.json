@@ -1,0 +1,460 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FC206546-6071-4306-8D01-9A66176C73A8}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|d:\\t25208\\micredito\\micre_score_microcredito\\micre.business\\manager\\managerscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC206546-6071-4306-8D01-9A66176C73A8}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|solutionrelative:micre.business\\manager\\managerscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC206546-6071-4306-8D01-9A66176C73A8}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|d:\\t25208\\micredito\\micre_score_microcredito\\micre.business\\managerdatabase\\managerrepextcentral.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC206546-6071-4306-8D01-9A66176C73A8}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|solutionrelative:micre.business\\managerdatabase\\managerrepextcentral.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC206546-6071-4306-8D01-9A66176C73A8}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|d:\\t25208\\micredito\\micre_score_microcredito\\micre.business\\managerdatabase\\managerbdmicredito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC206546-6071-4306-8D01-9A66176C73A8}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|solutionrelative:micre.business\\managerdatabase\\managerbdmicredito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC206546-6071-4306-8D01-9A66176C73A8}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|d:\\t25208\\micredito\\micre_score_microcredito\\micre.business\\services\\servicescoremicrocredito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC206546-6071-4306-8D01-9A66176C73A8}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|solutionrelative:micre.business\\services\\servicescoremicrocredito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62DEBDAE-EC1D-474B-A17A-EAB68CEF4A24}|MICRE.API.SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO.csproj|d:\\t25208\\micredito\\micre_score_microcredito\\micre.api.score_microcredito\\controllers\\scoremicrocreditocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62DEBDAE-EC1D-474B-A17A-EAB68CEF4A24}|MICRE.API.SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO.csproj|solutionrelative:micre.api.score_microcredito\\controllers\\scoremicrocreditocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62DEBDAE-EC1D-474B-A17A-EAB68CEF4A24}|MICRE.API.SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO.csproj|d:\\t25208\\micredito\\micre_score_microcredito\\micre.api.score_microcredito\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{62DEBDAE-EC1D-474B-A17A-EAB68CEF4A24}|MICRE.API.SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO.csproj|solutionrelative:micre.api.score_microcredito\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC206546-6071-4306-8D01-9A66176C73A8}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|d:\\t25208\\micredito\\micre_score_microcredito\\micre.business\\manager\\managerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC206546-6071-4306-8D01-9A66176C73A8}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|solutionrelative:micre.business\\manager\\managerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC206546-6071-4306-8D01-9A66176C73A8}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|d:\\t25208\\micredito\\micre_score_microcredito\\micre.business\\manager\\managerexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC206546-6071-4306-8D01-9A66176C73A8}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|solutionrelative:micre.business\\manager\\managerexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62DEBDAE-EC1D-474B-A17A-EAB68CEF4A24}|MICRE.API.SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO.csproj|d:\\t25208\\micredito\\micre_score_microcredito\\micre.api.score_microcredito\\controllers\\prescoremicrocreditocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62DEBDAE-EC1D-474B-A17A-EAB68CEF4A24}|MICRE.API.SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO.csproj|solutionrelative:micre.api.score_microcredito\\controllers\\prescoremicrocreditocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62DEBDAE-EC1D-474B-A17A-EAB68CEF4A24}|MICRE.API.SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO.csproj|d:\\t25208\\micredito\\micre_score_microcredito\\micre.api.score_microcredito\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62DEBDAE-EC1D-474B-A17A-EAB68CEF4A24}|MICRE.API.SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO.csproj|solutionrelative:micre.api.score_microcredito\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A01CA2-CDF0-443A-8929-CDE00E310062}|MICRE.ENTITY\\MICRE.ENTITY.csproj|d:\\t25208\\micredito\\micre_score_microcredito\\micre.entity\\request\\calculadorarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55A01CA2-CDF0-443A-8929-CDE00E310062}|MICRE.ENTITY\\MICRE.ENTITY.csproj|solutionrelative:micre.entity\\request\\calculadorarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC905976-8EA1-4416-8262-C35701197346}|MICRE.LOGGER\\MICRE.LOGGER.csproj|d:\\t25208\\micredito\\micre_score_microcredito\\micre.logger\\extension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC905976-8EA1-4416-8262-C35701197346}|MICRE.LOGGER\\MICRE.LOGGER.csproj|solutionrelative:micre.logger\\extension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9F6BF59-7EBF-443E-9202-CAF5425C9749}|MICRE.COMMON\\MICRE.COMMON.csproj|d:\\t25208\\micredito\\micre_score_microcredito\\micre.common\\service\\serviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9F6BF59-7EBF-443E-9202-CAF5425C9749}|MICRE.COMMON\\MICRE.COMMON.csproj|solutionrelative:micre.common\\service\\serviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14616C85-0E34-4BA5-9905-8E9563CFF517}|MICRE.SECURITY\\MICRE.SECURITY.csproj|d:\\t25208\\micredito\\micre_score_microcredito\\micre.security\\segcrypt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14616C85-0E34-4BA5-9905-8E9563CFF517}|MICRE.SECURITY\\MICRE.SECURITY.csproj|solutionrelative:micre.security\\segcrypt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC206546-6071-4306-8D01-9A66176C73A8}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|d:\\t25208\\micredito\\micre_score_microcredito\\micre.business\\managerdatabase\\managerbdbdiapl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC206546-6071-4306-8D01-9A66176C73A8}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|solutionrelative:micre.business\\managerdatabase\\managerbdbdiapl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D013569C-B40C-45DB-8C2E-F67148DD3155}|MICRE.API.SCORE_MICROCREDITO.TEST\\MICRE.API.SCORE_MICROCREDITO.TEST.csproj|d:\\t25208\\micredito\\micre_score_microcredito\\micre.api.score_microcredito.test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D013569C-B40C-45DB-8C2E-F67148DD3155}|MICRE.API.SCORE_MICROCREDITO.TEST\\MICRE.API.SCORE_MICROCREDITO.TEST.csproj|solutionrelative:micre.api.score_microcredito.test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62DEBDAE-EC1D-474B-A17A-EAB68CEF4A24}|MICRE.API.SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO.csproj|d:\\t25208\\micredito\\micre_score_microcredito\\micre.api.score_microcredito\\micre.api.score_microcredito.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{62DEBDAE-EC1D-474B-A17A-EAB68CEF4A24}|MICRE.API.SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO.csproj|solutionrelative:micre.api.score_microcredito\\micre.api.score_microcredito.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC206546-6071-4306-8D01-9A66176C73A8}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|d:\\t25208\\micredito\\micre_score_microcredito\\micre.business\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC206546-6071-4306-8D01-9A66176C73A8}|MICRE.BUSINESS\\MICRE.BUSINESS.csproj|solutionrelative:micre.business\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62DEBDAE-EC1D-474B-A17A-EAB68CEF4A24}|MICRE.API.SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO.csproj|d:\\t25208\\micredito\\micre_score_microcredito\\micre.api.score_microcredito\\helpers\\basicauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62DEBDAE-EC1D-474B-A17A-EAB68CEF4A24}|MICRE.API.SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO.csproj|solutionrelative:micre.api.score_microcredito\\helpers\\basicauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62DEBDAE-EC1D-474B-A17A-EAB68CEF4A24}|MICRE.API.SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO.csproj|d:\\t25208\\micredito\\micre_score_microcredito\\micre.api.score_microcredito\\helpers\\swaggerdefaultvalues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62DEBDAE-EC1D-474B-A17A-EAB68CEF4A24}|MICRE.API.SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO.csproj|solutionrelative:micre.api.score_microcredito\\helpers\\swaggerdefaultvalues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62DEBDAE-EC1D-474B-A17A-EAB68CEF4A24}|MICRE.API.SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO.csproj|d:\\t25208\\micredito\\micre_score_microcredito\\micre.api.score_microcredito\\helpers\\customheaderswaggerattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62DEBDAE-EC1D-474B-A17A-EAB68CEF4A24}|MICRE.API.SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO.csproj|solutionrelative:micre.api.score_microcredito\\helpers\\customheaderswaggerattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A01CA2-CDF0-443A-8929-CDE00E310062}|MICRE.ENTITY\\MICRE.ENTITY.csproj|d:\\t25208\\micredito\\micre_score_microcredito\\micre.entity\\request\\infocredrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55A01CA2-CDF0-443A-8929-CDE00E310062}|MICRE.ENTITY\\MICRE.ENTITY.csproj|solutionrelative:micre.entity\\request\\infocredrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ServiceScoreMicrocredito.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.BUSINESS\\Services\\ServiceScoreMicrocredito.cs",
+              "RelativeDocumentMoniker": "MICRE.BUSINESS\\Services\\ServiceScoreMicrocredito.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.BUSINESS\\Services\\ServiceScoreMicrocredito.cs",
+              "RelativeToolTip": "MICRE.BUSINESS\\Services\\ServiceScoreMicrocredito.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAYwB8AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T17:13:52.993Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ManagerScore.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.BUSINESS\\Manager\\ManagerScore.cs",
+              "RelativeDocumentMoniker": "MICRE.BUSINESS\\Manager\\ManagerScore.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.BUSINESS\\Manager\\ManagerScore.cs",
+              "RelativeToolTip": "MICRE.BUSINESS\\Manager\\ManagerScore.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAtwEgAAACKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T21:41:42.62Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ScoreMicrocreditoController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO\\Controllers\\ScoreMicrocreditoController.cs",
+              "RelativeDocumentMoniker": "MICRE.API.SCORE_MICROCREDITO\\Controllers\\ScoreMicrocreditoController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO\\Controllers\\ScoreMicrocreditoController.cs",
+              "RelativeToolTip": "MICRE.API.SCORE_MICROCREDITO\\Controllers\\ScoreMicrocreditoController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAswB0AAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T21:20:16.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ManagerRepextCentral.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.BUSINESS\\ManagerDataBase\\ManagerRepextCentral.cs",
+              "RelativeDocumentMoniker": "MICRE.BUSINESS\\ManagerDataBase\\ManagerRepextCentral.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.BUSINESS\\ManagerDataBase\\ManagerRepextCentral.cs",
+              "RelativeToolTip": "MICRE.BUSINESS\\ManagerDataBase\\ManagerRepextCentral.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T16:38:10.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ManagerServices.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.BUSINESS\\Manager\\ManagerServices.cs",
+              "RelativeDocumentMoniker": "MICRE.BUSINESS\\Manager\\ManagerServices.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.BUSINESS\\Manager\\ManagerServices.cs",
+              "RelativeToolTip": "MICRE.BUSINESS\\Manager\\ManagerServices.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAwD8AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T19:02:43.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ManagerBdMicredito.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.BUSINESS\\ManagerDataBase\\ManagerBdMicredito.cs",
+              "RelativeDocumentMoniker": "MICRE.BUSINESS\\ManagerDataBase\\ManagerBdMicredito.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.BUSINESS\\ManagerDataBase\\ManagerBdMicredito.cs",
+              "RelativeToolTip": "MICRE.BUSINESS\\ManagerDataBase\\ManagerBdMicredito.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAqwBQAAACWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T20:29:58.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO\\appsettings.json",
+              "RelativeDocumentMoniker": "MICRE.API.SCORE_MICROCREDITO\\appsettings.json",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO\\appsettings.json",
+              "RelativeToolTip": "MICRE.API.SCORE_MICROCREDITO\\appsettings.json",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACEAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-24T23:23:16.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PreScoreMicrocreditoController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO\\Controllers\\PreScoreMicrocreditoController.cs",
+              "RelativeDocumentMoniker": "MICRE.API.SCORE_MICROCREDITO\\Controllers\\PreScoreMicrocreditoController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO\\Controllers\\PreScoreMicrocreditoController.cs",
+              "RelativeToolTip": "MICRE.API.SCORE_MICROCREDITO\\Controllers\\PreScoreMicrocreditoController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAqwB0AAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T16:02:18.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ManagerExcel.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.BUSINESS\\Manager\\ManagerExcel.cs",
+              "RelativeDocumentMoniker": "MICRE.BUSINESS\\Manager\\ManagerExcel.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.BUSINESS\\Manager\\ManagerExcel.cs",
+              "RelativeToolTip": "MICRE.BUSINESS\\Manager\\ManagerExcel.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAYwBYAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T21:29:07.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO\\Program.cs",
+              "RelativeDocumentMoniker": "MICRE.API.SCORE_MICROCREDITO\\Program.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO\\Program.cs",
+              "RelativeToolTip": "MICRE.API.SCORE_MICROCREDITO\\Program.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T23:29:00.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CalculadoraRequest.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.ENTITY\\Request\\CalculadoraRequest.cs",
+              "RelativeDocumentMoniker": "MICRE.ENTITY\\Request\\CalculadoraRequest.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.ENTITY\\Request\\CalculadoraRequest.cs",
+              "RelativeToolTip": "MICRE.ENTITY\\Request\\CalculadoraRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T14:56:40.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Extension.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.LOGGER\\Extension.cs",
+              "RelativeDocumentMoniker": "MICRE.LOGGER\\Extension.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.LOGGER\\Extension.cs",
+              "RelativeToolTip": "MICRE.LOGGER\\Extension.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA8AAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T19:49:52.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ServiceClient.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.COMMON\\Service\\ServiceClient.cs",
+              "RelativeDocumentMoniker": "MICRE.COMMON\\Service\\ServiceClient.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.COMMON\\Service\\ServiceClient.cs",
+              "RelativeToolTip": "MICRE.COMMON\\Service\\ServiceClient.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAhwE8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T17:21:25.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SegCrypt.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.SECURITY\\SegCrypt.cs",
+              "RelativeDocumentMoniker": "MICRE.SECURITY\\SegCrypt.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.SECURITY\\SegCrypt.cs",
+              "RelativeToolTip": "MICRE.SECURITY\\SegCrypt.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAADgv1MAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T22:07:53.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ManagerBdBdiapl.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.BUSINESS\\ManagerDataBase\\ManagerBdBdiapl.cs",
+              "RelativeDocumentMoniker": "MICRE.BUSINESS\\ManagerDataBase\\ManagerBdBdiapl.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.BUSINESS\\ManagerDataBase\\ManagerBdBdiapl.cs",
+              "RelativeToolTip": "MICRE.BUSINESS\\ManagerDataBase\\ManagerBdBdiapl.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAhwC8AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T23:58:05.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO.TEST\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "MICRE.API.SCORE_MICROCREDITO.TEST\\UnitTest1.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO.TEST\\UnitTest1.cs",
+              "RelativeToolTip": "MICRE.API.SCORE_MICROCREDITO.TEST\\UnitTest1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T20:54:17.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MICRE.API.SCORE_MICROCREDITO.csproj",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO.csproj",
+              "RelativeDocumentMoniker": "MICRE.API.SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO.csproj",
+              "RelativeToolTip": "MICRE.API.SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-28T20:09:27.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.BUSINESS\\Services\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "MICRE.BUSINESS\\Services\\AuthenticationService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.BUSINESS\\Services\\AuthenticationService.cs",
+              "RelativeToolTip": "MICRE.BUSINESS\\Services\\AuthenticationService.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAADwvyoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T22:17:32.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BasicAuthenticationHandler.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO\\Helpers\\BasicAuthenticationHandler.cs",
+              "RelativeDocumentMoniker": "MICRE.API.SCORE_MICROCREDITO\\Helpers\\BasicAuthenticationHandler.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO\\Helpers\\BasicAuthenticationHandler.cs",
+              "RelativeToolTip": "MICRE.API.SCORE_MICROCREDITO\\Helpers\\BasicAuthenticationHandler.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAUwEoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T20:49:00.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "InfocredRequest.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.ENTITY\\Request\\InfocredRequest.cs",
+              "RelativeDocumentMoniker": "MICRE.ENTITY\\Request\\InfocredRequest.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.ENTITY\\Request\\InfocredRequest.cs",
+              "RelativeToolTip": "MICRE.ENTITY\\Request\\InfocredRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T17:19:45.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SwaggerDefaultValues.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO\\Helpers\\SwaggerDefaultValues.cs",
+              "RelativeDocumentMoniker": "MICRE.API.SCORE_MICROCREDITO\\Helpers\\SwaggerDefaultValues.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO\\Helpers\\SwaggerDefaultValues.cs",
+              "RelativeToolTip": "MICRE.API.SCORE_MICROCREDITO\\Helpers\\SwaggerDefaultValues.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAcwBQAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T21:21:44.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CustomHeaderSwaggerAttribute.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO\\Helpers\\CustomHeaderSwaggerAttribute.cs",
+              "RelativeDocumentMoniker": "MICRE.API.SCORE_MICROCREDITO\\Helpers\\CustomHeaderSwaggerAttribute.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_SCORE_MICROCREDITO\\MICRE.API.SCORE_MICROCREDITO\\Helpers\\CustomHeaderSwaggerAttribute.cs",
+              "RelativeToolTip": "MICRE.API.SCORE_MICROCREDITO\\Helpers\\CustomHeaderSwaggerAttribute.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T20:50:14.321Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

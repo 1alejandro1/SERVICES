@@ -1,0 +1,2176 @@
+﻿@model InmuebleForm
+@* Views/Home/Components/_TitularForm.cshtml *@
+
+<div id="formCarousel" class="carousel slide" data-bs-keyboard="false">
+    <input type="text" id="Cambio" class="d-none" value="@ViewBag.Cambio" step="0.01" readonly />
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <form asp-action="ExceptRegister" asp-controller="Home" method="post" id="form1" class="needs-validation" novalidate>
+                <div class="pb-3"><div class="custom-border" style="display: flex; align-items: center;"><h4>Información personal del titular</h4> </div></div>
+
+                <div class="card-body">
+
+                    <div class="input-group mb-3">
+                        <div class="form-floating has-validation">
+                            @Html.DropDownListFor(x => x.score, (List<SelectListItem>)Model.LstScore, new { @class = "form-select" })
+                            @Html.HiddenFor(x => x.score)
+                            <label class="fst-italic" for="floatingInputGrid">Score</label>
+                            <div class="invalid-feedback">
+                                Este campo es necesario.
+                            </div>
+                        </div>
+                        <div class="form-floating has-validation">
+                            @Html.DropDownListFor(x => x.tipoCliente, (List<SelectListItem>)Model.LstTipoCliente, new { @class = "form-select" })
+                            @Html.HiddenFor(x => x.tipoCliente)
+                            <label class="fst-italic" for="floatingInputGrid">Tipo cliente</label>
+                            <div class="invalid-feedback">
+                                Este campo es necesario.
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="input-group mb-3">
+
+                        <div class="form-floating has-validation">
+                            @if (!string.IsNullOrEmpty(ViewBag.Ci))
+                            {
+                                <input type="text" class="form-control" id="floatingInputGrid" placeholder="Cédula de identidad" value="@ViewBag.Ci" disabled>
+                                <input asp-for="InformacionPersonalTitular.ci" type="text" class="form-control d-none" id="floatingInputGrid" placeholder="Cédula de identidad" value="@ViewBag.Ci">
+                            }
+                            else
+                            {
+                                <input asp-for="InformacionPersonalTitular.ci" type="number" min="0" class="form-control" id="CedulaIdentidad" placeholder="Cédula de identidad" required maxlength="8" oninput="this.value = this.value.slice(0, 8)" title="Debe contener exactamente 8 dígitos numéricos">
+                            }
+
+                            <label class="fst-italic" for="floatingInputGrid">Cédula de identidad</label>
+                            <div class="invalid-feedback">
+                                Este campo es necesario.
+                            </div>
+                        </div>
+
+                        <div class="form-floating">
+                            @if (!string.IsNullOrEmpty(ViewBag.Extension))
+                            {
+                                <select class="form-select" id="floatingInputGrid" aria-label="Complemento" disabled>
+                                    @if (ViewBag.Extension == "LP")
+                                    {
+                                        <option value="QLP" selected>La Paz</option>
+                                    }
+                                    else if (ViewBag.Extension == "CB")
+                                    {
+                                        <option value="QCB" selected>Cochabamba</option>
+                                    }
+                                    else if (ViewBag.Extension == "SC")
+                                    {
+                                        <option value="QSC" selected>Santa Cruz</option>
+                                    }
+                                    else if (ViewBag.Extension == "CH")
+                                    {
+                                        <option value="QCH" selected>Chuquisaca</option>
+                                    }
+                                    else if (ViewBag.Extension == "PO")
+                                    {
+                                        <option value="QPO" selected>Potosí</option>
+                                    }
+                                    else if (ViewBag.Extension == "PA")
+                                    {
+                                        <option value="QPA" selected>Pando</option>
+                                    }
+                                    else if (ViewBag.Extension == "OR")
+                                    {
+                                        <option value="QOR" selected>Oruro</option>
+                                    }
+                                    else if (ViewBag.Extension == "TJ")
+                                    {
+                                        <option value="QTJ" selected>Tarija</option>
+                                    }
+                                    else if (ViewBag.Extension == "BE")
+                                    {
+                                        <option value="QBE" selected>Beni</option>
+                                    }
+                                    else if (ViewBag.Extension == "XX")
+                                    {
+                                        <option value="QXX" selected>Sin extensión</option>
+                                    }
+                                    else if (ViewBag.Extension == "PE")
+                                    {
+                                        <option value="QPE" selected>Persona Extranjera</option>
+                                    }
+                                </select>
+                                <select asp-for="InformacionPersonalTitular.extension" class="form-select d-none" id="floatingInputGrid" aria-label="Complemento">
+                                    @if (ViewBag.Extension == "LP")
+                                    {
+                                        <option value="QLP" selected>La Paz</option>
+                                    }
+                                    else if (ViewBag.Extension == "CB")
+                                    {
+                                        <option value="QCB" selected>Cochabamba</option>
+                                    }
+                                    else if (ViewBag.Extension == "SC")
+                                    {
+                                        <option value="QSC" selected>Santa Cruz</option>
+                                    }
+                                    else if (ViewBag.Extension == "CH")
+                                    {
+                                        <option value="QCH" selected>Chuquisaca</option>
+                                    }
+                                    else if (ViewBag.Extension == "PO")
+                                    {
+                                        <option value="QPO" selected>Potosí</option>
+                                    }
+                                    else if (ViewBag.Extension == "PA")
+                                    {
+                                        <option value="QPA" selected>Pando</option>
+                                    }
+                                    else if (ViewBag.Extension == "OR")
+                                    {
+                                        <option value="QOR" selected>Oruro</option>
+                                    }
+                                    else if (ViewBag.Extension == "TJ")
+                                    {
+                                        <option value="QTJ" selected>Tarija</option>
+                                    }
+                                    else if (ViewBag.Extension == "BE")
+                                    {
+                                        <option value="QBE" selected>Beni</option>
+                                    }
+                                    else if (ViewBag.Extension == "PE")
+                                    {
+                                        <option value="QPE">Persona Extranjera</option>
+                                    }
+                                    else if (ViewBag.Extension == "XX")
+                                    {
+                                        <option value="QXX" selected>Sin extencion</option>
+                                    }
+                                    else if (ViewBag.Extension == "PE")
+                                    {
+                                        <option value="QPE" selected>Persona Extranjera</option>
+                                    }
+                                </select>
+                            }
+                            else
+                            {
+                                <select asp-for="InformacionPersonalTitular.extension" class="form-select" id="floatingInputGrid" aria-label="Complemento">
+                                    <option value="QLP">La Paz</option>
+                                    <option value="QCB">Cochabamba</option>
+                                    <option value="QSC">Santa Cruz</option>
+                                    <option value="QCH">Chuquisaca</option>
+                                    <option value="QPO">Potosí</option>
+                                    <option value="QPA">Pando</option>
+                                    <option value="QOR">Oruro</option>
+                                    <option value="QTJ">Tarija</option>
+                                    <option value="QBE">Beni</option>
+                                    <option value="QPE">Persona Extranjera</option>
+                                    <option value="QXX">Sin extencion</option>
+                                </select>
+                            }
+
+
+                            <label class="fst-italic" for="floatingSelectGrid">Seleccione una extensión</label>
+                            <div class="invalid-feedback">
+                                Seleccione una extensión.
+                            </div>
+                        </div>
+
+                        <div class="form-floating has-validation">
+                            @if (!string.IsNullOrEmpty(ViewBag.Ci))
+                            {
+                                <input asp-for="InformacionPersonalTitular.complemento" type="text" class="form-control d-none" id="floatingInputGrid" placeholder="Complemento" value="@ViewBag.Complemento">
+                                <input type="text" class="form-control" id="floatingInputGrid" placeholder="Complemento" value="@ViewBag.Complemento" disabled>
+                            }
+                            else
+                            {
+                                <input asp-for="InformacionPersonalTitular.complemento" type="text" maxlength="2" class="form-control" id="floatingInputGrid" placeholder="Complemento" value="00" oninput="this.value = this.value.toUpperCase()" required>
+                            }
+
+                            <label class="fst-italic" for="floatingInputGrid">Complemento</label>
+                            <div class="invalid-feedback">
+                                Este campo es necesario.
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="input-group mb-1">
+                        <div class="form-floating has-validation">
+                            @if (!string.IsNullOrEmpty(ViewBag.NombreTitular))
+                            {
+                                <input type="text" class="form-control" id="floatingInputGrid" placeholder="Nombre del Titular" value="@ViewBag.NombreTitular" disabled>
+                                <input asp-for="InformacionPersonalTitular.nombres" type="text" class="form-control d-none" id="floatingInputGrid" placeholder="Nombre del Titular" value="@ViewBag.NombreTitular">
+                            }
+                            else
+                            {
+                                <input asp-for="InformacionPersonalTitular.nombres" type="text" maxlength="20" class="form-control" id="floatingInputGrid" placeholder="Nombre del Titular" value="@ViewBag.NombreTitular" required>
+                            }
+                            <label class="fst-italic" for="floatingInputGrid">Nombre del Titular</label>
+                            <div class="invalid-feedback">
+                                Este campo es necesario.
+                            </div>
+                        </div>
+                        <div class="form-floating">
+                            @if (!string.IsNullOrEmpty(ViewBag.ApellidoPTitular))
+                            {
+                                <input type="text" class="form-control" id="floatingInputGrid" placeholder="Apellido Paterno" value="@ViewBag.ApellidoPTitular" disabled>
+                                <input asp-for="InformacionPersonalTitular.paterno" type="text" class="form-control d-none" id="floatingInputGrid" placeholder="Apellido Paterno" value="@ViewBag.ApellidoPTitular">
+                            }
+                            else
+                            {
+                                <input asp-for="InformacionPersonalTitular.paterno" type="text" maxlength="20" class="form-control" id="floatingInputGrid" placeholder="Apellido Paterno" value="@ViewBag.ApellidoPTitular" required>
+                            }
+                            <label class="fst-italic" for="floatingInputGrid">Apellido Paterno</label>
+                            <div class="invalid-feedback">
+                                Este campo es necesario.
+                            </div>
+                        </div>
+                        <div class="form-floating">
+                            @if (!string.IsNullOrEmpty(ViewBag.ApellidoMTitular))
+                            {
+                                <input type="text" class="form-control" id="floatingInputGrid" placeholder="Apellido Materno" value="@ViewBag.ApellidoMTitular" disabled>
+                                <input asp-for="InformacionPersonalTitular.materno" type="text" class="form-control d-none" id="floatingInputGrid" placeholder="Apellido Materno" value="@ViewBag.ApellidoMTitular">
+                            }
+                            else
+                            {
+                                <input asp-for="InformacionPersonalTitular.materno" maxlength="20" type="text" class="form-control" id="floatingInputGrid" placeholder="Apellido Materno" value="@ViewBag.ApellidoMTitular" required>
+                            }
+                            <label class="fst-italic" for="floatingInputGrid">Apellido Materno</label>
+                            <div class="invalid-feedback">
+                                Este campo es necesario.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-floating pb-3">
+                        @if (!string.IsNullOrEmpty(ViewBag.IdEstadoCivilConyugue?.ToString()))
+                        {
+                            <select class="form-control" id="EstadoCivil" disabled>
+                                <option value="" disabled selected>Seleccione una opción</option>
+                                @foreach (var item in Model.EstadoCivil)
+                                {
+                                    <option value="@item.IdParametro" selected="@(item.IdParametro.ToString() == ViewBag.EstadoCivil)">@item.Descripcion</option>
+                                }
+                            </select>
+                            <select asp-for="InformacionPersonalTitular.idEstadoCivil" class="form-control d-none" id="EstadoCivil" required>
+                                <option value="" disabled selected>Seleccione una opción</option>
+                                @foreach (var item in Model.EstadoCivil)
+                                {
+                                    <option value="@item.IdParametro" selected="@(item.IdParametro.ToString() == ViewBag.EstadoCivil)">@item.Descripcion</option>
+                                }
+                            </select>
+
+                        }
+                        else
+                        {
+                            <select asp-for="InformacionPersonalTitular.idEstadoCivil" class="form-control" id="EstadoCivil1" onchange="toggleSpouseOption()" required>
+                                <option value="" disabled selected>Seleccione una opción</option>
+                                @foreach (var item in Model.EstadoCivil)
+                                {
+                                    <option value="@item.IdParametro">@item.Descripcion</option>
+                                }
+                            </select>
+                            <label class="fst-italic" for="EstadoCivil">Estado Civil</label>
+                        }
+                        <label class="fst-italic" for="floatingSelectGrid">Seleccione un estado civil</label>
+                        <div class="invalid-feedback">
+                            Seleccione un estado civil.
+                        </div>
+                    </div>
+
+                    @if (ViewBag.Conyugue == true)
+                    {
+                        <div class="form-check form-switch pt-2" style="display: flex; justify-content: flex-end;">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" onchange="toggleModal()">
+                            <label class="form-check-label px-2" for="flexSwitchCheckChecked">¿Se incluirá la participación del cónyuge?</label>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="form-check form-switch pt-2" id="spouseOn" style="display: none; justify-content: flex-end;">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" onchange="toggleModal()">
+                            <label class="form-check-label px-2" for="flexSwitchCheckChecked">¿Se incluirá la participación del cónyuge?</label>
+                        </div>
+                    }
+                </div>
+
+                <div class="pb-3"><div class="custom-border" style="display: flex; align-items: center;"><h4>Deudas e Inmuebles del titular</h4> </div></div>
+
+                <div class="card-body">
+                    <div class="input-group mx-2 pb-3">
+                        <p class="alert-border border-warning fst-italic"><strong>Nota: </strong>Complete los campos únicamente si el cliente tiene deudas</p>
+                    </div>
+
+                    <!--convertir con comas y a dolares ademas de reflejar los valores-->
+                    <input asp-for="DeudaPersonale.deudaBCPBOL" type="text" id="deudaBsSinComas" class="form-control d-none" maxlength="15" pattern="[0-9,\.]*">
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Bs</span>
+                        <div class="form-floating">
+                            <input type="text" id="deudaBs" class="form-control" placeholder="Deuda total en el BCP (Bs)" oninput="formatearNumero(this); sincronizarSinComas(this, 'deudaBsSinComas'); actualizarDolares('deudaBsSinComas', 'Dolares');" maxlength="15" pattern="[0-9,\.]*">
+                            <label class="fst-italic" for="deudaBs">Total BCP (Bs)</label>
+                        </div>
+                        <span class="input-group-text">$</span>
+                        <div class="form-floating">
+                            <input asp-for="DeudaPersonale.deudaBCPUSD" type="text" class="form-control" id="Dolares" value="0.00" disabled>
+                            <label class="fst-italic" for="Dolares">
+                                Total BCP ($us)
+                            </label>
+                        </div>
+
+                    </div>
+                    <!--fin del bloque-->
+
+                    <input asp-for="DeudaPersonale.deudaSFNBOL" type="text" id="deudaBsSinComas2" class="form-control d-none" maxlength="15" pattern="[0-9,\.]*">
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Bs</span>
+                        <div class="form-floating">
+                            <input type="text" id="deudaBs2" class="form-control" id="floatingInput" placeholder="Deuda total SFN sin BCP (Bs)" oninput="formatearNumero(this); sincronizarSinComas(this, 'deudaBsSinComas2'); actualizarDolares('deudaBsSinComas2', 'Dolares2');" maxlength="15" pattern="[0-9,\.]*">
+                            <label class="fst-italic" for="floatingInput">Total SFN (Bs)</label>
+                        </div>
+                        <span class="input-group-text">$</span>
+                        <div class="form-floating">
+                            <input asp-for="DeudaPersonale.deudaSFNUSD" type="text" class="form-control" id="Dolares2" value="0.00" disabled>
+                            <label class="fst-italic" for="Dolares2">
+                                Total SFN ($us)
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--fin del bloque-->
+
+                    <div class="input-group mx-2 pb-3">
+                        <p class="fst-italic alert-border border-warning"><strong>Nota: </strong>Complete los campos únicamente si el cliente posee casas, terrenos y/o departamentos</p>
+                    </div>
+
+                    <input asp-for="DeudaInmueble.valorInmuebleUSD" type="text" id="valorInmuebleSinComas" class="form-control d-none" maxlength="15" pattern="[0-9,\.]*">
+
+                    <div class="input-group mx-2 pb-3">
+                        <div class="form-floating">
+                            <textarea asp-for="DeudaInmueble.inmuebleHipotecado" class="form-control" placeholder="Leave a comment here" id="inmuebleHipotecado" oninput="toggleRequired('inmuebleHipotecado', 'valorInmuebleUSD')" maxlength="500"></textarea>
+                            <label for="inmuebleHipotecado">Inmueble hipotecado en el BCP</label>
+                        </div>
+
+                        <div class="px-2 col-5 form-floating">
+                            <input type="text" id="valorInmuebleUSD" aria-label="Valor del inmueble (expresada en dólares)" oninput="sincronizarSinComas(this, 'valorInmuebleSinComas'); formatearNumero(this); toggleRequired('inmuebleHipotecado', 'valorInmuebleUSD'); sumaDolares('valorLibreInmuebleSinComas', 'valorInmuebleSinComas')" placeholder="Valor del inmueble (expresada en dólares)" class="form-control" maxlength="15">
+                            <label for="valorInmuebleUSD">Valor del inmueble ($us)</label>
+                        </div>
+                    </div>
+
+                    <input asp-for="DeudaInmueble.valorInmuebleLibreDeudaUSD" type="text" id="valorLibreInmuebleSinComas" class="form-control d-none" maxlength="15" pattern="[0-9,\.]*">
+
+                    <div class="input-group mx-2 pb-3">
+                        <div class="form-floating">
+                            <textarea asp-for="DeudaInmueble.inmuebleLibreDeuda" class="form-control" placeholder="Leave a comment here" oninput="toggleRequired('inmuebleLibre', 'valorLibreUSD')" id="inmuebleLibre" maxlength="500"></textarea>
+                            <label for="inmuebleLibre">Inmueble libre de deudas</label>
+                        </div>
+                        <div class="px-2 col-5 form-floating">
+                            <input type="text" id="valorLibreUSD" aria-label="Valor del inmueble (expresada en dólares)" oninput="sincronizarSinComas(this, 'valorLibreInmuebleSinComas'); formatearNumero(this); toggleRequired('inmuebleLibre', 'valorLibreUSD'); sumaDolares('valorLibreInmuebleSinComas', 'valorInmuebleSinComas')" placeholder="Valor del inmueble (expresada en dólares)" class="form-control" maxlength="15">
+                            <label for="valorLibreUSD">Valor del inmueble ($us)</label>
+                        </div>
+                    </div>
+
+                    <input asp-for="DeudaInmueble.totalGarantia" type="text" class="form-control d-none" id="totalGarantiaOculto" value="0.00">
+
+                    <div class="input-group mx-2 pb-3">
+                        <span class="input-group-text">$</span>
+
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="garantiaTotal" value="0.00" disabled>
+                            <label for="garantiaTotal">Total de garantías ($us)</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end pb-3">
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <a href="@Url.Action("IndexExcepcion","Home")" class="btn btn-outline-secondary">Atrás</a>
+                        <button type="button" class="next btn btn-primary send">Siguiente</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="carousel-item" id="corousel-2">
+            <form asp-action="ExceptRegister" asp-controller="Home" id="form2" method="post" class="needs-validation" novalidate>
+                <div class="pb-3"><div class="custom-border px-2" style="display: flex; align-items: center;"><h6>Información laboral del titular</h6> </div></div>
+                <div>
+                    <div class="form-floating pb-3">
+                        @if (!string.IsNullOrEmpty(ViewBag.IdSituaciónLaboral?.ToString()))
+                        {
+                            <select class="form-control" data-id="@ViewBag.IdSituacionLaboral" id="motivo" disabled>
+                                <option value="" disabled selected>Seleccione una opción</option>
+                                @foreach (var item in Model.Laboral)
+                                {
+                                    <option data-name="@item.Descripcion" data-id="@item.IdParametro" value="@item.IdParametro" selected="@(item.IdParametro == ViewBag.IdSituacionLaboral)">@item.Descripcion</option>
+                                }
+                            </select>
+                            <select asp-for="InformacionLaboral.idSituacionLaboral" name="InformacionLaboral.idSituacionLaboral" data-id="ViewBag.IdSituacionLaboral" class="form-control d-none" id="EstadoCivil" required>
+                                <option value="" disabled selected>Seleccione una opción</option>
+                                @foreach (var item in Model.Laboral)
+                                {
+                                    <option data-name="@item.Descripcion" data-id="@item.IdParametro" value="@item.IdParametro" selected="@(item.IdParametro == ViewBag.IdSituacionLaboral)">@item.Descripcion</option>
+                                }
+                            </select>
+                        }
+                        else
+                        {
+                            <select asp-for="InformacionLaboral.idSituacionLaboral" name="InformacionLaboral.idSituacionLaboral" data-id="ViewBag.IdSituacionLaboral" class="form-control" id="motivo" required>
+                                <option value="" disabled selected>Seleccione una opción</option>
+                                @foreach (var item in Model.Laboral)
+                                {
+                                    <option data-name="@item.Descripcion" data-id="@item.IdParametro" value="@item.IdParametro">@item.Descripcion</option>
+                                }
+                            </select>
+                            <label class="fst-italic" for="EstadoCivil">Situación laboral</label>
+                        }
+                        <label class="fst-italic" for="floatingSelectGrid">Seleccione su Situación laboral</label>
+                        <div class="invalid-feedback">
+                            Seleccione una situación laboral.
+                        </div>
+                    </div>
+
+                </div>
+                <div class="InputsPlaces" id="InputsPlaces">
+                </div>
+
+                <div class="d-flex justify-content-end pb-3 px-2">
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <button type="button" class="prev btn btn-outline-secondary">Atrás</button>
+                        <button type="button" class="next btn btn-primary send">Siguiente</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="carousel-item">
+            <form asp-action="ExceptRegister" asp-controller="Home" method="post" id="form3" class="needs-validation" novalidate>
+                <div id="checkboxGroup">
+                    <div class="pb-3"><div class="custom-border px-2" style="display: flex; align-items: center;"><h6>Selección de Producto</h6> </div></div>
+
+
+                    <small><strong>Selecciona una tarjeta de crédito</strong></small>
+                    <div class="input-group mb-3">
+                        @for (int i = 0; i < Model.ProductosChecks?.Count; i++)
+                        {
+                            var producto = Model.ProductosChecks[i];
+                            if (producto.Tipo == "PRODUCTO" && producto.Codigo == "01")
+                            {
+                                <div class="form-check mx-1">
+                                    <input asp-for="Productos[i].idProducto" class="form-check-input check-prod" type="checkbox" data-id="@i" value="@producto.IdParametro" id="credito-@i" data-category="01" data-name="@producto.Descripcion">
+                                    <label class="form-check-label" for="credito-@i">@producto.Descripcion</label>
+                                </div>
+                            }
+                        }
+                    </div>
+
+                    <small><strong>Selecciona un crédito de consumo</strong></small>
+                    <div class="input-group mb-3">
+                        @for (int i = 0; i < Model.ProductosChecks?.Count; i++)
+                        {
+                            var producto = Model.ProductosChecks[i];
+                            if (producto.Tipo == "PRODUCTO" && producto.Codigo == "02")
+                            {
+                                <div class="form-check mx-1">
+                                    <input asp-for="Productos[i].idProducto" class="form-check-input check-prod" type="checkbox" data-id="@i" value="@producto.IdParametro" id="consumo-@i" data-category="02" data-name="@producto.Descripcion">
+                                    <label class="form-check-label" for="consumo-@i">@producto.Descripcion</label>
+                                </div>
+                            }
+                        }
+                    </div>
+
+                    <small><strong>Selecciona un crédito hipotecario</strong></small>
+                    <div class="input-group mb-3">
+                        @for (int i = 0; i < Model.ProductosChecks?.Count; i++)
+                        {
+                            var producto = Model.ProductosChecks[i];
+                            if (producto.Tipo == "PRODUCTO" && producto.Codigo == "03")
+                            {
+                                <div class="form-check mx-1">
+                                    <input asp-for="Productos[i].idProducto" class="form-check-input check-prod" type="checkbox" data-id="@i" value="@producto.IdParametro" id="hipotecario-@i" data-category="03" data-name="@producto.Descripcion">
+                                    <label class="form-check-label" for="hipotecario-@i">@producto.Descripcion</label>
+                                </div>
+                            }
+                        }
+                    </div>
+
+                    <small><strong>Selecciona un Crédito negocio</strong></small>
+                    <div class="input-group mb-3">
+                        @for (int i = 0; i < Model.ProductosChecks?.Count; i++)
+                        {
+                            var producto = Model.ProductosChecks[i];
+                            if (producto.Tipo == "PRODUCTO" && producto.Codigo == "04")
+                            {
+                                <div class="form-check mx-1">
+                                    <input asp-for="Productos[i].idProducto" class="form-check-input check-prod" type="checkbox" data-id="@i" value="@producto.IdParametro" id="trabajo-@i" data-category="04" data-name="@producto.Descripcion">
+                                    <label class="form-check-label" for="trabajo-@i">@producto.Descripcion</label>
+                                </div>
+                            }
+                        }
+                    </div>
+                </div>
+                <div id="itemForms">
+                </div>
+
+                <div class="d-flex justify-content-end pb-3 pt-3">
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <button type="button" class="prev btn btn-outline-secondary">Atrás</button>
+                        <button type="button" onclick="submitAllForms()" id="submitButton" class="next btn btn-primary send" disabled>Siguiente</button>
+                        <button type="submit" class="d-none" id="botonOculto" disabled>Submit</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <div class="carousel-item">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="pt-2"><div class="custom-border" style="display: flex; align-items: center;"><h5>Datos Personales</h5> </div></div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" onclick="closeModal()" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form asp-action="ExceptRegister" asp-controller="Home" method="post" id="form4" class="needs-validation" novalidate>
+                    <div class="pb-3"><div class="custom-border" style="display: flex; align-items: center;"><h4>Información personal del Cónyuge</h4> </div></div>
+
+                    <div class="input-group mb-3">
+                        <div class="form-floating has-validation">
+                            @if (!string.IsNullOrEmpty(ViewBag.CiConyugue))
+                            {
+                                <input type="text" class="form-control" id="floatingInputGrid" placeholder="Cédula de identidad" value="@ViewBag.CiConyugue" disabled>
+                                <input asp-for="InformacionPersonalConyugue.ci" type="text" class="form-control d-none" id="floatingInputGrid" placeholder="Cédula de identidad" value="@ViewBag.CiConyugue">
+                            }
+                            else
+                            {
+                                <input asp-for="InformacionPersonalConyugue.ci" type="number" class="form-control" min="0" id="CedulaIdentidad" placeholder="Cédula de identidad" required maxlength="8" oninput="this.value = this.value.slice(0, 8)" title="Debe contener exactamente 8 dígitos numéricos">
+
+                            }
+
+                            <label class="fst-italic" for="floatingInputGrid">Cédula de identidad</label>
+                            <div class="invalid-feedback">
+                                Este campo es necesario.
+                            </div>
+                        </div>
+
+                        <div class="form-floating">
+                            @if (!string.IsNullOrEmpty(ViewBag.ExtensionConyugue))
+                            {
+                                <select class="form-select" id="floatingInputGrid" aria-label="Complemento" disabled>
+                                    @if (ViewBag.ExtensionConyugue == "LP")
+                                    {
+                                        <option value="QLP" selected>La Paz</option>
+                                    }
+                                    else if (ViewBag.ExtensionConyugue == "CB")
+                                    {
+                                        <option value="QCB" selected>Cochabamba</option>
+                                    }
+                                    else if (ViewBag.ExtensionConyugue == "SC")
+                                    {
+                                        <option value="QSC" selected>Santa Cruz</option>
+                                    }
+                                    else if (ViewBag.ExtensionConyugue == "CH")
+                                    {
+                                        <option value="QCH" selected>Chuquisaca</option>
+                                    }
+                                    else if (ViewBag.ExtensionConyugue == "PO")
+                                    {
+                                        <option value="QPO" selected>Potosí</option>
+                                    }
+                                    else if (ViewBag.ExtensionConyugue == "PA")
+                                    {
+                                        <option value="QPA" selected>Pando</option>
+                                    }
+                                    else if (ViewBag.ExtensionConyugue == "OR")
+                                    {
+                                        <option value="QOR" selected>Oruro</option>
+                                    }
+                                    else if (ViewBag.ExtensionConyugue == "TJ")
+                                    {
+                                        <option value="QTJ" selected>Tarija</option>
+                                    }
+                                    else if (ViewBag.ExtensionConyugue == "BE")
+                                    {
+                                        <option value="QBE" selected>Beni</option>
+                                    }
+                                    else if (ViewBag.ExtensionConyugue == "XX")
+                                    {
+                                        <option value="QXX" selected>Sin extencion</option>
+                                    }
+                                </select>
+                                <select asp-for="InformacionPersonalConyugue.extension" class="form-select d-none" id="floatingInputGrid" aria-label="Complemento">
+                                    @if (ViewBag.ExtensionConyugue == "LP")
+                                    {
+                                        <option value="QLP" selected>La Paz</option>
+                                    }
+                                    else if (ViewBag.ExtensionConyugue == "CB")
+                                    {
+                                        <option value="QCB" selected>Cochabamba</option>
+                                    }
+                                    else if (ViewBag.ExtensionConyugue == "SC")
+                                    {
+                                        <option value="QSC" selected>Santa Cruz</option>
+                                    }
+                                    else if (ViewBag.ExtensionConyugue == "CH")
+                                    {
+                                        <option value="QCH" selected>Chuquisaca</option>
+                                    }
+                                    else if (ViewBag.ExtensionConyugue == "PO")
+                                    {
+                                        <option value="QPO" selected>Potosí</option>
+                                    }
+                                    else if (ViewBag.ExtensionConyugue == "PA")
+                                    {
+                                        <option value="QPA" selected>Pando</option>
+                                    }
+                                    else if (ViewBag.ExtensionConyugue == "OR")
+                                    {
+                                        <option value="QOR" selected>Oruro</option>
+                                    }
+                                    else if (ViewBag.ExtensionConyugue == "TJ")
+                                    {
+                                        <option value="QTJ" selected>Tarija</option>
+                                    }
+                                    else if (ViewBag.ExtensionConyugue == "BE")
+                                    {
+                                        <option value="QBE" selected>Beni</option>
+                                    }
+                                    else if (ViewBag.ExtensionConyugue == "XX")
+                                    {
+                                        <option value="QXX" selected>Sin extensión</option>
+                                    }
+                                </select>
+                            }
+                            else
+                            {
+                                <select asp-for="InformacionPersonalConyugue.extension" class="form-select" id="floatingInputGrid" aria-label="Complemento">
+                                    <option value="QLP">La Paz</option>
+                                    <option value="QCB">Cochabamba</option>
+                                    <option value="QSC">Santa Cruz</option>
+                                    <option value="QCH">Chuquisaca</option>
+                                    <option value="QPO">Potosí</option>
+                                    <option value="QPA">Pando</option>
+                                    <option value="QOR">Oruro</option>
+                                    <option value="QTJ">Tarija</option>
+                                    <option value="QBE">Beni</option>
+                                    <option value="QXX">Sin extensión</option>
+                                </select>
+                            }
+
+                            <label class="fst-italic" for="floatingSelectGrid">Seleccione una extensión</label>
+                            <div class="invalid-feedback">
+                                Seleccione una extensión.
+                            </div>
+                        </div>
+
+                        <div class="form-floating has-validation">
+                            @if (!string.IsNullOrEmpty(ViewBag.ComplementoConyugue))
+                            {
+                                <input type="text" class="form-control" id="floatingInputGrid" placeholder="Nombre del Cónyuge" value="@ViewBag.ComplementoConyugue" disabled>
+                                <input asp-for="InformacionPersonalConyugue.complemento" type="text" class="form-control d-none" id="floatingInputGrid" placeholder="Nombre del Cónyuge" value="@ViewBag.ComplementoConyugue">
+                            }
+                            else
+                            {
+                                <input asp-for="InformacionPersonalConyugue.complemento" type="text" maxlength="2" class="form-control" id="floatingInputGrid" placeholder="Nombre del Cónyuge" value="00" required>
+                            }
+                            <label class="fst-italic" for="floatingInputGrid">Complemento</label>
+                            <div class="invalid-feedback">
+                                Este campo es necesario.
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="input-group mb-1">
+                        <div class="form-floating has-validation">
+                            @if (!string.IsNullOrEmpty(ViewBag.NombreConyugue))
+                            {
+                                <input type="text" class="form-control" id="floatingInputGrid" placeholder="Nombre del Cónyuge" value="@ViewBag.NombreConyugue" disabled>
+                                <input asp-for="InformacionPersonalConyugue.nombres" type="text" class="form-control d-none" id="floatingInputGrid" placeholder="Nombre del Cónyuge" value="@ViewBag.NombreConyugue">
+                            }
+                            else
+                            {
+                                <input asp-for="InformacionPersonalConyugue.nombres" maxlength="20" type="text" class="form-control" id="floatingInputGrid" placeholder="Nombre del Cónyuge" value="@ViewBag.NombreConyugue" required>
+                            }
+                            <label class="fst-italic" for="floatingInputGrid">Nombre del Cónyuge</label>
+                            <div class="invalid-feedback">
+                                Este campo es necesario.
+                            </div>
+                        </div>
+                        <div class="form-floating">
+                            @if (!string.IsNullOrEmpty(ViewBag.ApellidoPConyugue))
+                            {
+                                <input type="text" class="form-control" id="floatingInputGrid" placeholder="Apellido Paterno" value="@ViewBag.ApellidoPConyugue" disabled>
+                                <input asp-for="InformacionPersonalConyugue.paterno" type="text" class="form-control d-none" id="floatingInputGrid" placeholder="Apellido Paterno" value="@ViewBag.ApellidoPConyugue">
+                            }
+                            else
+                            {
+                                <input asp-for="InformacionPersonalConyugue.paterno" maxlength="20" type="text" class="form-control" id="floatingInputGrid" placeholder="Apellido Paterno" value="@ViewBag.ApellidoPConyugue" required>
+                            }
+                            <label class="fst-italic" for="floatingInputGrid">Apellido Paterno</label>
+                            <div class="invalid-feedback">
+                                Este campo es necesario.
+                            </div>
+                        </div>
+                        <div class="form-floating">
+                            @if (!string.IsNullOrEmpty(ViewBag.ApellidoMConyugue))
+                            {
+                                <input type="text" class="form-control" id="floatingInputGrid" placeholder="Apellido Materno" value="@ViewBag.ApellidoMConyugue" disabled>
+                                <input asp-for="InformacionPersonalConyugue.materno" type="text" class="form-control d-none" id="floatingInputGrid" placeholder="Apellido Materno" value="@ViewBag.ApellidoMConyugue">
+                            }
+                            else
+                            {
+                                <input asp-for="InformacionPersonalConyugue.materno" maxlength="20" type="text" class="form-control" id="floatingInputGrid" placeholder="Apellido Materno" value="@ViewBag.ApellidoMConyugue" required>
+                            }
+                            <label class="fst-italic" for="floatingInputGrid">Apellido Materno</label>
+                            <div class="invalid-feedback">
+                                Este campo es necesario.
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-floating pb-3">
+                        @if (!string.IsNullOrEmpty(ViewBag.IdEstadoCivilConyugue?.ToString()))
+                        {
+                            <select class="form-control" id="EstadoCivil" disabled>
+                                <option value="" disabled selected>Seleccione una opción</option>
+                                @foreach (var item in Model.EstadoCivil)
+                                {
+                                    <option value="@item.IdParametro" selected="@(item.IdParametro.ToString() == ViewBag.EstadoCivil)">@item.Descripcion</option>
+                                }
+                            </select>
+                            <select asp-for="InformacionPersonalConyugue.idEstadoCivil" name="InformacionPersonalConyugue.idEstadoCivil" class="form-control d-none" required>
+                                <option value="" disabled selected>Seleccione una opción</option>
+                                @foreach (var item in Model.EstadoCivil)
+                                {
+                                    <option value="@item.IdParametro" selected="@(item.IdParametro.ToString() == ViewBag.EstadoCivil)">@item.Descripcion</option>
+                                }
+                            </select>
+
+                        }
+                        else
+                        {
+                            <select asp-for="InformacionPersonalConyugue.idEstadoCivil" name="InformacionPersonalConyugue.idEstadoCivil" class="form-control" required>
+                                <option value="" disabled selected>Seleccione una opción</option>
+                                @foreach (var item in Model.EstadoCivil)
+                                {
+                                    <option value="@item.IdParametro">@item.Descripcion</option>
+                                }
+                            </select>
+                            <label class="fst-italic" for="EstadoCivil">Estado Civil</label>
+                        }
+                        <label class="fst-italic" for="floatingSelectGrid">Seleccione un estado civil</label>
+                        <div class="invalid-feedback">
+                            Seleccione un estado civil.
+                        </div>
+                    </div>
+
+                    <div class="pb-3 pt-3"><div class="custom-border" style="display: flex; align-items: center;"><h4>Deudas del Cónyuge</h4> </div></div>
+                    <div class="input-group mx-2 pb-3">
+                        <p class="alert-border border-warning fst-italic"><strong>Nota: </strong>Complete los campos únicamente si el Cónyuge tiene deudas</p>
+                    </div>
+
+                    <input asp-for="DeudaPersonalConyugue.deudaBCPBOL" type="text" id="deudaBsSinComasCon" class="form-control d-none" maxlength="15" pattern="[0-9,\.]*">
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Bs</span>
+                        <div class="form-floating">
+                            <input type="text" id="deudaBs" class="form-control" placeholder="Deuda total en el BCP (Bs)" oninput="formatearNumero(this); sincronizarSinComas(this, 'deudaBsSinComasCon'); actualizarDolares('deudaBsSinComasCon', 'DolaresCon');" maxlength="15" pattern="[0-9,\.]*">
+                            <label class="fst-italic" for="deudaBs">Total BCP (Bs)</label>
+                        </div>
+                        <span class="input-group-text">$</span>
+                        <div class="form-floating">
+                            <input asp-for="DeudaPersonale.deudaBCPUSD" type="text" class="form-control" id="DolaresCon" value="0.00" disabled>
+                            <label class="fst-italic" for="DolaresCon">
+                                Total BCP ($us)
+                            </label>
+                        </div>
+
+                    </div>
+                    <!--fin del bloque-->
+
+                    <input asp-for="DeudaPersonalConyugue.deudaSFNBOL" type="text" id="deudaBsSinComas2Con" class="form-control d-none" maxlength="15" pattern="[0-9,\.]*">
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Bs</span>
+                        <div class="form-floating">
+                            <input type="text" id="deudaBs2" class="form-control" id="floatingInput" placeholder="Deuda total SFN sin BCP (Bs)" oninput="formatearNumero(this); sincronizarSinComas(this, 'deudaBsSinComas2Con'); actualizarDolares('deudaBsSinComas2Con', 'Dolares2Con');" maxlength="15" pattern="[0-9,\.]*">
+                            <label class="fst-italic" for="floatingInput">Total SFN (Bs)</label>
+                        </div>
+                        <span class="input-group-text">$</span>
+                        <div class="form-floating">
+                            <input asp-for="DeudaPersonale.deudaSFNUSD" type="text" class="form-control" id="Dolares2Con" value="0.00" disabled>
+                            <label class="fst-italic" for="Dolares2Con">
+                                Total SFN ($us)
+                            </label>
+                        </div>
+                    </div>
+                    <div class="pb-3"><div class="custom-border px-2" style="display: flex; align-items: center;"><h6>Información laboral del Cónyuge</h6> </div></div>
+
+                    <div class="form-floating pb-3">
+                        @if (!string.IsNullOrEmpty(ViewBag.IdSituacionLaboralConyugue?.ToString()))
+                        {
+                            <select class="form-control" data-id="@ViewBag.IdSituacionLaboralConyugue" id="laboral" disabled>
+                                <option value="" disabled selected>Seleccione una opción</option>
+                                @foreach (var item in Model.Laboral)
+                                {
+                                    <option data-name="@item.Descripcion" data-id="@item.IdParametro" value="@item.IdParametro" selected="@(item.IdParametro == ViewBag.IdSituacionLaboral)">@item.Descripcion</option>
+                                }
+                            </select>
+                            <select asp-for="InformacionLaboralConyugue.idSituacionLaboral" name="InformacionLaboralConyugue.idSituacionLaboral" data-id="ViewBag.IdSituacionLaboralConyugue" class="form-control d-none" id="EstadoCivil" required>
+                                <option value="" disabled selected>Seleccione una opción</option>
+                                @foreach (var item in Model.Laboral)
+                                {
+                                    <option data-name="@item.Descripcion" data-id="@item.IdParametro" value="@item.IdParametro" selected="@(item.IdParametro == ViewBag.IdSituacionLaboral)">@item.Descripcion</option>
+                                }
+                            </select>
+                        }
+                        else
+                        {
+                            <select asp-for="InformacionLaboralConyugue.idSituacionLaboral" name="InformacionLaboralConyugue.idSituacionLaboral" data-id="@ViewBag.IdSituacionLaboralConyugue" class="form-control" id="laboral" required>
+                                <option value="" disabled selected>Seleccione una opción</option>
+                                @foreach (var item in Model.Laboral)
+                                {
+                                    <option data-name="@item.Descripcion" data-id="@item.IdParametro" value="@item.IdParametro">@item.Descripcion</option>
+                                }
+                            </select>
+                            <label class="fst-italic" for="EstadoCivil">Situación laboral</label>
+                        }
+                        <label class="fst-italic" for="floatingSelectGrid">Seleccione una Situación laboral</label>
+                        <div class="invalid-feedback">
+                            Seleccione una situación laboral.
+                        </div>
+                    </div>
+                    <div class="InputsPlaces" id="InputsConyu">
+                    </div>
+
+                    <div class="d-flex justify-content-end pb-3">
+                        <div class="btn-group pt-3" role="group" aria-label="Basic radio toggle button group">
+                            <button type="button" class="btn btn-secondary" onclick="closeModal()" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="next btn btn-primary send" onclick="validateFields()">Guardar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/infor-laboral.js"></script>
+
+<script>
+    document.onkeydown = event => {
+        if (event.key === "ArrowRight") {
+            // console.log('se preciono la flecha derecha en titular form');
+            event.preventDefault();
+        }
+    }
+
+
+    function toggleSpouseOption() {
+        var estadoCivil = document.getElementById("EstadoCivil1").value;
+        var spouseOption = document.getElementById("spouseOn");
+        if (estadoCivil == "2" || estadoCivil == "322") {
+            // Asegúrate de que el valor coincida con el valor de la opción "Casado"
+            spouseOption.style.display = "flex";
+        } else {
+            spouseOption.style.display = "none";
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+
+        const selector = document.getElementById('laboral');
+        const itemForms = document.getElementById('InputsConyu');
+        const initialId = selector.getAttribute('data-id');
+
+        selector.addEventListener('change', function () {
+            const selectedOption = this.options[this.selectedIndex];
+            const productName = selectedOption.getAttribute('data-name');
+            const id = selectedOption.value;
+            // Limpiar el contenido existente
+            itemForms.innerHTML = '';
+
+            if (id) {
+                addLab(productName, id);
+            }
+        });
+
+        if (initialId) {
+            const selectedOption = selector.querySelector(`option[value="${initialId}"]`);
+            const productName = selectedOption.textContent;
+            const id = selectedOption.value;
+
+            addLab(productName, id);
+        }
+
+        function addLab(name, id) {
+            const productDiv = document.createElement('div');
+            productDiv.className = 'dynamic-div';
+            productDiv.id = `product-${id}`;
+
+            if (name === 'DEPENDIENTE') {
+                productDiv.innerHTML = `
+                            <div id="${id}">
+                                <div class="input-group mb-3 mt-3">
+                                        <div class="form-floating">
+    @if (!string.IsNullOrEmpty(ViewBag.EmpresaConyugue))
+    {
+                                                            <input type="text" class="form-control" id="floatingInputGrid" placeholder="Apellido Materno" value="@ViewBag.EmpresaConyugue" disabled>
+                                                            <input asp-for="InformacionLaboralConyugue.nombreEmpresa" name="InformacionLaboralConyugue.nombreEmpresa" type="text" class="form-control d-none" id="floatingInputGrid" placeholder="Apellido Materno" value="@ViewBag.EmpresaConyugue">
+    }
+    else
+    {
+                                                            <input asp-for="InformacionLaboralConyugue.nombreEmpresa" name="InformacionLaboralConyugue.nombreEmpresa" type="text" class="form-control" id="floatingInputGrid" placeholder="Apellido Materno" value="@ViewBag.EmpresaConyugue" required>
+    }
+                                                <label class="fst-italic" for="floatingInputGrid">Nombre de la empresa</label>
+                                            <div class="invalid-feedback">
+                                                Este campo es necesario.
+                                            </div>
+                                        </div>
+                                        <div class="form-floating">
+    @if (ViewBag.IdAntiguedadLaboralConyugue != null && ViewBag.IdAntiguedadLaboralConyugue != 0)
+    {
+                                                <select class="form-control" data-id="@ViewBag.IdAntiguedadLaboralConyugue" id="actividadEconomica" disabled>
+                                                <option value="" disabled selected>Seleccione una opción</option>
+            @foreach (var item in Model.Antiguiedades)
+            {
+                                                            <option value="@item.IdParametro" selected="@(item.IdParametro == ViewBag.IdAntiguedadLaboralConyugue)">@item.Descripcion</option>
+            }
+                                                    </select>
+                                                            <label class="fst-italic" for="actividadEconomica">Antigüedad</label>
+                                                            <select asp-for="InformacionLaboralConyugue.idAntiguedadLaboral" data-id="@ViewBag.IdAntiguedadLaboralConyugue" class="form-control d-none" id="actividadEconomica" required>
+                                                        <option value="" disabled selected>Seleccione una opción</option>
+            @foreach (var item in Model.Antiguiedades)
+            {
+                                                             <option value="@item.IdParametro" selected="@(item.IdParametro == ViewBag.IdAntiguedadLaboralConyugue)">@item.Descripcion</option>
+            }
+                                                    </select>
+    }
+    else
+    {
+                                                <select asp-for="InformacionLaboralConyugue.idAntiguedadLaboral" data-id="@ViewBag.IdAntiguedadLaboralConyugue" class="form-control" id="actividadEconomica" required>
+                                                <option value="" disabled selected>Seleccione una opción</option>
+            @foreach (var item in Model.Antiguiedades)
+            {
+                                                            <option value="@item.IdParametro">@item.Descripcion</option>
+            }
+                                                </select>
+                                                <label class="fst-italic" for="actividadEconomica">Antigüedad</label>
+    }
+                                        </div>
+                                    </div>
+
+                                    <input asp-for="InformacionLaboralConyugue.ingresoLiquidoBOL" name="InformacionLaboralConyugue.ingresoLiquidoBOL" type="text" id="ingresosBsSinComasDePcON" class="form-control d-none" maxlength="15" pattern="[0-9,\.]*">
+
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">Bs</span>
+                                        <div class="form-floating">
+                                                <input  type="text" id="deudaBs" class="form-control" placeholder="Deuda total en el BCP (Bs)" oninput="formatearNumero(this); sincronizarSinComas(this, 'ingresosBsSinComasDePcON'); actualizarDolares('ingresosBsSinComasDePcON', 'DolaresIns');" maxlength="15" pattern="[0-9,\.]*" required>
+                                                <label class="fst-italic" for="deudaBs">Ingresos Líquidos (Bs)</label>
+                                        </div>
+                                        <span class="input-group-text">$</span>
+                                        <div class="form-floating">
+                                            <input asp-for="DeudaPersonale.deudaBCPUSD" type="text" class="form-control" id="DolaresIns" value="0.00" disabled>
+                                            <label class="fst-italic" for="DolaresIns">
+                                                    Ingresos Líquidos ($us)
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                <div class="pb-3"><strong>Cliente con Pago de Haberes</strong></div>
+
+                                    <div class="col-md-3">
+                                        <select asp-for="InformacionLaboralConyugue.pagoHaberes" name="InformacionLaboralConyugue.pagoHaberes" class="form-select" id="validationCustom04" required>
+                                        <option value=false selected>No</option>
+                                        <option value=true>Sí</option>
+                                    </select>
+                                    <div class="invalid-feedback">Selecciona un estado Haberes.</div>
+                                </div>
+                            </div>
+                        `;
+            }
+            else if (name === 'INDEPENDIENTE') {
+                productDiv.innerHTML = `
+                            <div id="${id}">
+                                        <div class="form-floating pb-3">
+    @if (!string.IsNullOrEmpty(ViewBag.IdProfesionConyugue?.ToString()))
+    {
+                                                    <select asp-for="InformacionLaboralConyugue.idProfesion" name="InformacionLaboralConyugue.idProfesion" class="form-control" data-id="@ViewBag.IdProfesionConyugue" id="profesion" disabled>
+                                                    <option value="" disabled selected>Seleccione una opción</option>
+            @foreach (var item in Model.Profesiones)
+            {
+                                                                        <option value="@item.IdParametro" selected="@(item.IdParametro == ViewBag.IdProfesionConyugue)">@item.Descripcion</option>
+            }
+                                                        </select>
+                                                                <select asp-for="InformacionLaboralConyugue.idProfesion" name="InformacionLaboralConyugue.idProfesion" data-id="@ViewBag.IdProfesionConyugue" class="form-control d-none" id="profesion" required>
+                                                        <option value="" disabled selected>Seleccione una opción</option>
+            @foreach (var item in Model.Profesiones)
+            {
+                                                                  <option value="@item.IdParametro" selected="@(item.IdParametro == ViewBag.IdProfesionConyugue)">@item.Descripcion</option>
+            }
+                                                    </select>
+    }
+    else
+    {
+                                                    <select asp-for="InformacionLaboralConyugue.idProfesion" name="InformacionLaboralConyugue.idProfesion" data-id="@ViewBag.IdProfesionConyugue" class="form-control" id="profesion" required>
+                                                    <option value="" disabled selected>Seleccione una opción</option>
+            @foreach (var item in Model.Profesiones)
+            {
+                                                                <option value="@item.IdParametro">@item.Descripcion</option>
+            }
+                                        </select>
+                                        <label class="fst-italic" for="profesion">Profesión</label>
+    }
+                    <label class="fst-italic" for="floatingSelectGrid">Seleccione una profesión</label>
+                    <div class="invalid-feedback">
+                        Seleccione una profesión.
+                    </div>
+                </div>
+
+
+                                        <input asp-for="InformacionLaboralConyugue.ingresoLiquidoBOL" name="InformacionLaboralConyugue.ingresoLiquidoBOL" type="text" id="ingresosBsSinComas" class="form-control d-none" maxlength="15" pattern="[0-9,\.]*">
+
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Bs</span>
+                                            <div class="form-floating">
+                                                    <input  type="text" id="deudaBs" class="form-control" placeholder="Ingresos Líquidos (Bs)" oninput="formatearNumero(this); sincronizarSinComas(this, 'ingresosBsSinComas'); actualizarDolares('ingresosBsSinComas', 'DolaresInS');" maxlength="15" pattern="[0-9,\.]*" required>
+                                                    <label class="fst-italic" for="deudaBs">Ingresos Líquidos (Bs)</label>
+                                            </div>
+                                            <span class="input-group-text">$</span>
+                                            <div class="form-floating">
+                                                <input asp-for="DeudaPersonale.deudaBCPUSD" type="text" class="form-control" id="DolaresInS" value="0.00" disabled>
+                                                    <label class="fst-italic" for="DolaresInS">
+                                                        Ingresos Líquidos ($us)
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                </div>
+                            `;
+            } else if (name === 'JUBILADO') {
+                productDiv.innerHTML = `
+                            <div id="${id}">
+
+                                    <input asp-for="InformacionLaboralConyugue.ingresoLiquidoBOL" name="InformacionLaboralConyugue.ingresoLiquidoBOL" type="text" id="ingresosBsSinComasjub" class="form-control d-none" maxlength="15" pattern="[0-9,\.]*">
+
+                                    <div class="input-group mb-3 mt-3">
+                                        <span class="input-group-text">Bs</span>
+                                        <div class="form-floating">
+                                                <input  type="text" id="deudaBs" class="form-control" placeholder="Deuda total en el BCP (Bs)" oninput="formatearNumero(this); sincronizarSinComas(this, 'ingresosBsSinComasjub'); actualizarDolares('ingresosBsSinComasjub', 'DolaresIJ');" maxlength="15" pattern="[0-9,\.]*" required>
+                                            <label class="fst-italic" for="deudaBs">Total BCP (Bs)</label>
+                                        </div>
+                                        <span class="input-group-text">$</span>
+                                        <div class="form-floating">
+                                            <input asp-for="DeudaPersonale.deudaBCPUSD" type="text" class="form-control" id="DolaresIJ" value="0.00" disabled>
+                                                <label class="fst-italic" for="DolaresIJ">
+                                                    Ingresos Líquidos ($us)
+                                            </label>
+                                        </div>
+
+                                    </div>
+                            </div>
+                                `;
+
+            } else {
+                productDiv.innerHTML = `
+                                <div id="${id}">
+                                            <div class="form-floating pb-3">
+    @if (!string.IsNullOrEmpty(ViewBag.IdActividadEconomicaConyugue?.ToString()))
+    {
+                                                        <select class="form-control" data-id="@ViewBag.IdActividadEconomica" id="actividadEconomica" disabled>
+                                                            <option value="" disabled selected>Seleccione una opción</option>
+            @foreach (var item in Model.ActividadEconomica)
+            {
+                                                                                    <option value="@item.IdParametro" selected="@(item.IdParametro == ViewBag.IdActividadEconomicaConyugue)">@item.Descripcion</option>
+            }
+                                                            </select>
+                                                                    <select asp-for="InformacionLaboralConyugue.actividadEconomica" data-id="@ViewBag.IdActividadEconomicaConyugue" class="form-control d-none" id="actividadEconomica">
+                                                                <option value="" disabled selected>Seleccione una opción</option>
+            @foreach (var item in Model.ActividadEconomica)
+            {
+                                                                                    <option value="@item.IdParametro" selected="@(item.IdParametro == ViewBag.IdActividadEconomicaConyugue)">@item.Descripcion</option>
+            }
+                                                            </select>
+    }
+    else
+    {
+                                                                <select asp-for="InformacionLaboralConyugue.actividadEconomica" data-id="@ViewBag.IdActividadEconomicaConyugue" class="form-control" id="actividadEconomica" required>
+                                                            <option value="" disabled selected>Seleccione una opción</option>
+            @foreach (var item in Model.ActividadEconomica)
+            {
+                                                                                        <option value="@item.IdParametro">@item.Descripcion</option>
+            }
+                                                        </select>
+                                                        <label class="fst-italic" for="actividadEconomica">Actividad económica</label>
+    }
+                                                <label class="fst-italic" for="floatingSelectGrid">Seleccione una actividad económica</label>
+                                                <div class="invalid-feedback">
+                                                    Seleccione una actividad económica.
+                                                </div>
+                                            </div>
+
+                                                <input asp-for="InformacionLaboralConyugue.ingresoLiquidoBOL" name="InformacionLaboralConyugue.ingresoLiquidoBOL" type="text" id="ingresosBsSinComasIn" class="form-control d-none" maxlength="15" pattern="[0-9,\.]*">
+
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text">Bs</span>
+                                                <div class="form-floating">
+                                                    <input  type="text" id="deudaBs" class="form-control" placeholder="Ingresos Líquidos (Bs)" oninput="formatearNumero(this); sincronizarSinComas(this, 'ingresosBsSinComasIn'); actualizarDolares('ingresosBsSinComasIn', 'DolaresOn');" maxlength="15" pattern="[0-9,\.]*" required>
+                                                    <label class="fst-italic" for="deudaBs">Ingresos Líquidos (Bs)</label>
+                                                </div>
+                                                <span class="input-group-text">$</span>
+                                                <div class="form-floating">
+                                                    <input asp-for="DeudaPersonale.deudaBCPUSD" type="text" class="form-control" id="DolaresOn" value="0.00" disabled>
+                                                        <label class="fst-italic" for="DolaresOn">
+                                                            Ingresos Líquidos ($us)
+                                                    </label>
+                                                </div>
+
+                                            </div>
+                                    </div>
+                                `;
+            }
+            itemForms.appendChild(productDiv);
+        }
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        const selector = document.getElementById('motivo');
+        const itemForms = document.getElementById('InputsPlaces');
+        const initialId = selector.getAttribute('data-id');
+
+        selector.addEventListener('change', function () {
+            const selectedOption = this.options[this.selectedIndex];
+            const productName = selectedOption.getAttribute('data-name');
+            const id = selectedOption.value;
+            // Limpiar el contenido existente
+            itemForms.innerHTML = '';
+
+            if (id) {
+                addLab(productName, id);
+            }
+        });
+
+        if (initialId) {
+            const selectedOption = selector.querySelector(`option[value="${initialId}"]`);
+            const productName = selectedOption.textContent;
+            const id = selectedOption.value;
+
+            addLab(productName, id);
+        }
+
+        function addLab(name, id) {
+            const productDiv = document.createElement('div');
+            productDiv.className = 'dynamic-div';
+            productDiv.id = `product-${id}`;
+
+            if (name === 'DEPENDIENTE') {
+                productDiv.innerHTML = `
+                        <div id="${id}">
+                            <div class="input-group mb-3 mt-3">
+                                    <div class="form-floating">
+    @if (!string.IsNullOrEmpty(ViewBag.Empresa))
+    {
+                                                        <input type="text" class="form-control" id="floatingInputGrid" placeholder="Apellido Materno" value="@ViewBag.Empresa" disabled>
+                                                        <input asp-for="InformacionLaboral.nombreEmpresa" name="InformacionLaboral.nombreEmpresa" type="text" class="form-control d-none" id="floatingInputGrid" placeholder="Apellido Materno" value="@ViewBag.Empresa">
+    }
+    else
+    {
+                                                       <input asp-for="InformacionLaboral.nombreEmpresa" name="InformacionLaboral.nombreEmpresa" type="text" class="form-control" id="floatingInputGrid" placeholder="Apellido Materno" value="@ViewBag.Empresa" required>
+    }
+                                            <label class="fst-italic" for="floatingInputGrid">Nombre de la empresa</label>
+                                        <div class="invalid-feedback">
+                                            Este campo es necesario.
+                                        </div>
+                                    </div>
+                                        <div class="form-floating">
+    @if (ViewBag.IdAntiguedadLaboral != null && ViewBag.IdAntiguedadLaboral != 0)
+    {
+                                                    <select class="form-control" data-id="@ViewBag.IdAntiguedadLaboral" id="actividadEconomica" disabled>
+                                                        <option value="" disabled selected>Seleccione una opción</option>
+            @foreach (var item in Model.Antiguiedades)
+            {
+                                                            <option value="@item.IdParametro" selected="@(item.IdParametro == ViewBag.IdAntiguedadLaboral)">@item.Descripcion</option>
+            }
+                                                </select>
+                                                        <label class="fst-italic" for="actividadEconomica">Antigüedad</label>
+                                                <select asp-for="InformacionLaboral.idAntiguedadLaboral" data-id="@ViewBag.IdAntiguedadLaboral" class="form-control d-none" id="actividadEconomica" required>
+                                                    <option value="" disabled selected>Seleccione una opción</option>
+            @foreach (var item in Model.Antiguiedades)
+            {
+                                                                <option value="@item.IdParametro" selected="@(item.IdParametro == ViewBag.IdAntiguedadLaboral)">@item.Descripcion</option>
+            }
+                                                 </select>
+    }
+    else
+    {
+                                                <select asp-for="InformacionLaboral.idAntiguedadLaboral" data-id="@ViewBag.IdAntiguedadLaboral" class="form-control" id="actividadEconomica" required>
+                                                    <option value="" disabled selected>Seleccione una opción</option>
+            @foreach (var item in Model.Antiguiedades)
+            {
+                                                            <option value="@item.IdParametro">@item.Descripcion</option>
+            }
+                                                </select>
+                                                <label class="fst-italic" for="actividadEconomica">Antigüedad</label>
+    }
+                                        </div>
+                                            </div>
+                                <input asp-for="InformacionLaboral.ingresoLiquidoBOL" name="InformacionLaboral.ingresoLiquidoBOL" type="text" id="ingresosBsSinComas" class="form-control d-none" maxlength="15" pattern="[0-9,\.]*">
+
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Bs</span>
+                                    <div class="form-floating">
+                                            <input  type="text" id="deudaBs" class="form-control" placeholder="Deuda total en el BCP (Bs)" oninput="formatearNumero(this); sincronizarSinComas(this, 'ingresosBsSinComas'); actualizarDolares('ingresosBsSinComas', 'DolaresI');" maxlength="15" pattern="[0-9,\.]*" required>
+                                            <label class="fst-italic" for="deudaBs">Ingresos Líquidos (Bs)</label>
+                                    </div>
+                                    <span class="input-group-text">$</span>
+                                    <div class="form-floating">
+                                        <input asp-for="DeudaPersonale.deudaBCPUSD" type="text" class="form-control" id="DolaresI" value="0.00" disabled>
+                                        <label class="fst-italic" for="DolaresI">
+                                                Ingresos Líquidos ($us)
+                                        </label>
+                                    </div>
+
+                                </div>
+                                        <input asp-for="InformacionLaboral.OtrosIngresosBOL" name="InformacionLaboral.OtrosIngresosBOL" type="text" id="otrosIngresosBsSinComas" class="form-control d-none" maxlength="15" pattern="[0-9,\.]*">
+
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">Bs</span>
+                                        <div class="form-floating">
+                                                    <input  type="text" id="otrosdeudaBs" class="form-control" placeholder="Deuda total en el BCP (Bs)" oninput="formatearNumero(this); sincronizarSinComas(this, 'otrosIngresosBsSinComas'); actualizarDolares('otrosIngresosBsSinComas', 'DolaresIO');" maxlength="15" pattern="[0-9,\.]*">
+                                                <label class="fst-italic" for="otrosdeudaBs">Otros Ingresos (Bs)</label>
+                                        </div>
+                                        <span class="input-group-text">$</span>
+                                        <div class="form-floating">
+                                            <input asp-for="DeudaPersonale.deudaBCPUSD" type="text" class="form-control" id="DolaresIO" value="0.00" disabled>
+                                            <label class="fst-italic" for="DolaresIO">
+                                                    Otros Ingresos ($us)
+                                            </label>
+                                        </div>
+
+                                    </div>
+                            <div class="pb-3"><strong>Cliente con Pago de Haberes</strong></div>
+    @if (!string.IsNullOrEmpty(ViewBag.ClientePDH?.ToString()))
+    {
+                                <div class="col-md-3">
+                                    <select  class="form-select" id="validationCustom04" disabled>
+                @if (ViewBag.ClientePDH == true)
+                {
+                                                <option value=true selected>Sí</option>
+                }
+                else
+                {
+                                                <option value=false selected>No</option>
+                }
+
+                                    </select>
+                                    <div class="invalid-feedback">Selecciona un estado Haberes.</div>
+                                </div>
+                                <div class="col-md-3">
+                                        <select  asp-for="InformacionLaboral.pagoHaberes" name="InformacionLaboral.pagoHaberes" class="form-select d-none" id="validationCustom04">
+                @if (ViewBag.ClientePDH == true)
+                {
+                                                     <option value=true selected>Sí</option>
+                }
+                else
+                {
+                                                     <option value=false selected>No</option>
+                }
+
+                                            </select>
+                                            <div class="invalid-feedback">Selecciona un estado Haberes.</div>
+                                        </div>
+    }
+    else
+    {
+                                        <div class="col-md-3">
+                                            <select asp-for="InformacionLaboral.pagoHaberes" name="InformacionLaboral.pagoHaberes" class="form-select" id="validationCustom04" required>
+                                                <option value=false selected>No</option>
+                                                <option value=true>Sí</option>
+                                            </select>
+                                        <div class="invalid-feedback">Selecciona un estado Haberes.</div>
+                                    </div>
+    }
+
+                        </div>
+                    `;
+            }
+            else if (name === 'INDEPENDIENTE') {
+                productDiv.innerHTML = `
+                        <div id="${id}">
+                                    <div class="form-floating pb-3">
+    @if (!string.IsNullOrEmpty(ViewBag.IdProfesion?.ToString()))
+    {
+                                                    <select asp-for="InformacionLaboral.idProfesion" name="InformacionLaboral.idProfesion" class="form-control" data-id="@ViewBag.IdProfesion" id="profesion" disabled>
+                                                    <option value="" disabled selected>Seleccione una opción</option>
+            @foreach (var item in Model.Profesiones)
+            {
+                                                                    <option value="@item.IdParametro" selected="@(item.IdParametro == ViewBag.IdProfesion)">@item.Descripcion</option>
+            }
+                                                </select>
+                                                                <select asp-for="InformacionLaboral.idProfesion" name="InformacionLaboral.idProfesion" data-id="ViewBag.IdProfesion" class="form-control d-none" id="profesion" required>
+                                                    <option value="" disabled selected>Seleccione una opción</option>
+            @foreach (var item in Model.Profesiones)
+            {
+                                                                    <option value="@item.IdParametro" selected="@(item.IdParametro == ViewBag.IdProfesion)">@item.Descripcion</option>
+            }
+                                                </select>
+    }
+    else
+    {
+                                                        <select asp-for="InformacionLaboral.idProfesion" name="InformacionLaboral.idProfesion" data-id="ViewBag.IdProfesion" class="form-control" id="profesion" required>
+                                                    <option value="" disabled selected>Seleccione una opción</option>
+            @foreach (var item in Model.Profesiones)
+            {
+                                                                    <option value="@item.IdParametro">@item.Descripcion</option>
+            }
+                                                </select>
+                                                <label class="fst-italic" for="profesion">Profesión</label>
+    }
+                                <label class="fst-italic" for="floatingSelectGrid">Seleccione una profesión</label>
+                                <div class="invalid-feedback">
+                                    Seleccione una profesión.
+                                </div>
+
+                            </div>
+
+
+                                    <input asp-for="InformacionLaboral.ingresoLiquidoBOL" name="InformacionLaboral.ingresoLiquidoBOL" type="text" id="ingresosBsSinComas" class="form-control d-none" maxlength="15" pattern="[0-9,\.]*">
+
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">Bs</span>
+                                        <div class="form-floating">
+                                                <input  type="text" id="deudaBs" class="form-control" placeholder="Ingresos Líquidos (Bs)" oninput="formatearNumero(this); sincronizarSinComas(this, 'ingresosBsSinComas'); actualizarDolares('ingresosBsSinComas', 'DolaresFa');" maxlength="15" pattern="[0-9,\.]*" required>
+                                                <label class="fst-italic" for="deudaBs">Ingresos Líquidos (Bs)</label>
+                                        </div>
+                                        <span class="input-group-text">$</span>
+                                        <div class="form-floating">
+                                            <input asp-for="DeudaPersonale.deudaBCPUSD" type="text" class="form-control" id="DolaresFa" value="0.00" disabled>
+                                                <label class="fst-italic" for="DolaresFa">
+                                                    Ingresos Líquidos ($us)
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                    <input asp-for="InformacionLaboral.OtrosIngresosBOL" name="InformacionLaboral.OtrosIngresosBOL" type="text" id="otrosIngresosBsSinComas" class="form-control d-none" maxlength="15" pattern="[0-9,\.]*">
+
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Bs</span>
+                                            <div class="form-floating">
+                                                        <input  type="text" id="otrosdeudaBs" class="form-control" placeholder="Deuda total en el BCP (Bs)" oninput="formatearNumero(this); sincronizarSinComas(this, 'otrosIngresosBsSinComas'); actualizarDolares('otrosIngresosBsSinComas', 'DolaresIO');" maxlength="15" pattern="[0-9,\.]*">
+                                                    <label class="fst-italic" for="otrosdeudaBs">Otros Ingresos (Bs)</label>
+                                            </div>
+                                            <span class="input-group-text">$</span>
+                                            <div class="form-floating">
+                                                <input asp-for="DeudaPersonale.deudaBCPUSD" type="text" class="form-control" id="DolaresIO" value="0.00" disabled>
+                                                <label class="fst-italic" for="DolaresIO">
+                                                        Otros Ingresos ($us)
+                                                </label>
+                                            </div>
+                                            </div>
+                            </div>
+                        `;
+            } else if (name === 'JUBILADO') {
+                productDiv.innerHTML = `
+                        <div id="${id}">
+
+                                <input asp-for="InformacionLaboral.ingresoLiquidoBOL" name="InformacionLaboral.ingresoLiquidoBOL" type="text" id="ingresosBsSinComas" class="form-control d-none" maxlength="15" pattern="[0-9,\.]*">
+
+                                <div class="input-group mb-3 mt-3">
+                                    <span class="input-group-text">Bs</span>
+                                    <div class="form-floating">
+                                        <input  type="text" id="deudaBs" class="form-control" placeholder="Deuda total en el BCP (Bs)" oninput="formatearNumero(this); sincronizarSinComas(this, 'ingresosBsSinComas'); actualizarDolares('ingresosBsSinComas', 'Dolaresjn');" maxlength="15" pattern="[0-9,\.]*" required>
+                                        <label class="fst-italic" for="deudaBs">Total BCP (Bs)</label>
+                                    </div>
+                                    <span class="input-group-text">$</span>
+                                    <div class="form-floating">
+                                        <input asp-for="DeudaPersonale.deudaBCPUSD" type="text" class="form-control" id="Dolaresjn" value="0.00" disabled>
+                                        <label class="fst-italic" for="Dolaresjn">
+                                                Ingresos Líquidos ($us)
+                                        </label>
+                                    </div>
+
+                                </div>
+                                         <input asp-for="InformacionLaboral.OtrosIngresosBOL" name="InformacionLaboral.OtrosIngresosBOL" type="text" id="otrosIngresosBsSinComas" class="form-control d-none" maxlength="15" pattern="[0-9,\.]*">
+
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Bs</span>
+                                            <div class="form-floating">
+                                                        <input  type="text" id="otrosdeudaBs" class="form-control" placeholder="Deuda total en el BCP (Bs)" oninput="formatearNumero(this); sincronizarSinComas(this, 'otrosIngresosBsSinComas'); actualizarDolares('otrosIngresosBsSinComas', 'DolaresIO');" maxlength="15" pattern="[0-9,\.]*">
+                                                    <label class="fst-italic" for="otrosdeudaBs">Otros Ingresos (Bs)</label>
+                                            </div>
+                                            <span class="input-group-text">$</span>
+                                            <div class="form-floating">
+                                                <input asp-for="DeudaPersonale.deudaBCPUSD" type="text" class="form-control" id="DolaresIO" value="0.00" disabled>
+                                                <label class="fst-italic" for="DolaresIO">
+                                                        Otros Ingresos ($us)
+                                                </label>
+                                            </div>
+
+                                        </div>
+                        </div>
+                            `;
+
+            } else {
+                productDiv.innerHTML = `
+                            <div id="${id}">
+                                        <div class="form-floating pb-3">
+    @if (!string.IsNullOrEmpty(ViewBag.IdActividadEconomica?.ToString()))
+    {
+                                                            <select class="form-control" data-id="@ViewBag.IdActividadEconomica" id="actividadEconomica" disabled>
+                                                                <option value="" disabled selected>Seleccione una opción</option>
+            @foreach (var item in Model.ActividadEconomica)
+            {
+                                                                                <option value="@item.IdParametro" selected="@(item.IdParametro == ViewBag.IdActividadEconomica)">@item.Descripcion</option>
+            }
+                                                            </select>
+                                                                            <select asp-for="InformacionLaboral.idActividadEconomica" name="InformacionLaboral.idActividadEconomica" data-id="ViewBag.IdActividadEconomica" class="form-control d-none" id="actividadEconomica" required>
+                                                                <option value="" disabled selected>Seleccione una opción</option>
+            @foreach (var item in Model.ActividadEconomica)
+            {
+                                                                                <option value="@item.IdParametro" selected="@(item.IdParametro == ViewBag.IdActividadEconomica)">@item.Descripcion</option>
+            }
+                                                            </select>
+    }
+    else
+    {
+                                                                            <select asp-for="InformacionLaboral.idActividadEconomica" name="InformacionLaboral.idActividadEconomica" data-id="ViewBag.IdActividadEconomica" class="form-control" id="actividadEconomica" required>
+                                                                <option value="" disabled selected>Seleccione una opción</option>
+            @foreach (var item in Model.ActividadEconomica)
+            {
+                                                                                <option value="@item.IdParametro">@item.Descripcion</option>
+            }
+                                                            </select>
+                                                            <label class="fst-italic" for="actividadEconomica">Actividad económica</label>
+    }
+                                            <label class="fst-italic" for="floatingSelectGrid">Seleccione una actividad económica</label>
+                                            <div class="invalid-feedback">
+                                                Seleccione una actividad económica.
+                                            </div>
+                                        </div>
+
+                                        <input asp-for="InformacionLaboral.ingresoLiquidoBOL" name="InformacionLaboral.ingresoLiquidoBOL" type="text" id="ingresosBsSinComas" class="form-control d-none" maxlength="15" pattern="[0-9,\.]*">
+
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Bs</span>
+                                            <div class="form-floating">
+                                                    <input  type="text" id="deudaBs" class="form-control" placeholder="Ingresos Líquidos (Bs)" oninput="formatearNumero(this); sincronizarSinComas(this, 'ingresosBsSinComas'); actualizarDolares('ingresosBsSinComas', 'DolaresOt');" maxlength="15" pattern="[0-9,\.]*" required>
+                                                <label class="fst-italic" for="deudaBs">Ingresos Líquidos (Bs)</label>
+                                            </div>
+                                            <span class="input-group-text">$</span>
+                                            <div class="form-floating">
+                                                    <input asp-for="DeudaPersonale.deudaBCPUSD" type="text" class="form-control" id="DolaresOt" value="0.00" disabled>
+                                                <label class="fst-italic" for="DolaresOt">
+                                                        Ingresos Líquidos ($us)
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                                 <input asp-for="InformacionLaboral.OtrosIngresosBOL" name="InformacionLaboral.OtrosIngresosBOL" type="text" id="otrosIngresosBsSinComas" class="form-control d-none" maxlength="15" pattern="[0-9,\.]*">
+
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Bs</span>
+                                            <div class="form-floating">
+                                                        <input  type="text" id="otrosdeudaBs" class="form-control" placeholder="Deuda total en el BCP (Bs)" oninput="formatearNumero(this); sincronizarSinComas(this, 'otrosIngresosBsSinComas'); actualizarDolares('otrosIngresosBsSinComas', 'DolaresIO');" maxlength="15" pattern="[0-9,\.]*">
+                                                    <label class="fst-italic" for="otrosdeudaBs">Otros Ingresos (Bs)</label>
+                                            </div>
+                                            <span class="input-group-text">$</span>
+                                            <div class="form-floating">
+                                                <input asp-for="DeudaPersonale.deudaBCPUSD" type="text" class="form-control" id="DolaresIO" value="0.00" disabled>
+                                                <label class="fst-italic" for="DolaresIO">
+                                                        Otros Ingresos ($us)
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                </div>
+                            `;
+            }
+            itemForms.appendChild(productDiv);
+        }
+    });
+    function formatearNumero(input) {
+        let value = input.value.replace(/\D/g, ''); // Elimina todo lo que no sea dígito
+        if (value === '0' || value === '') {
+            input.value = ''; // Dejar el campo vacío si el valor es 0 o está vacío
+        } else {
+            value = Number(value).toLocaleString('en'); // Formatea el número con comas
+            input.value = value;
+        }
+    }
+    function sincronizarSinComas(origen, destinoId) {
+        var destino = document.getElementById(destinoId);
+        destino.value = origen.value.replace(/,/g, '');
+    }
+    function formatearNumerodes(input) {
+        let value = input.value.replace(/[^0-9.]/g, ''); // Permitir también el punto decimal
+        value = Number(value).toLocaleString('en', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); // Formatear con dos decimales
+        input.value = value;
+    }
+
+    function limpiarNumero(inputId) {
+        let input = document.getElementById(inputId);
+        input.value = input.value.replace(/,/g, ''); // Elimina las comas antes de enviar
+        return true; // Permite el envío del formulario
+    }
+
+    function toggleRequired(inmueble, deuda) {
+        var inmuebleHipotecado = document.getElementById(inmueble); //'inmuebleHipotecado'
+        var valorInmuebleUSD = document.getElementById(deuda);  ///'valorInmuebleUSD'
+
+        if (inmuebleHipotecado.value.trim() !== '') {
+            valorInmuebleUSD.setAttribute('required', 'required');
+        } else {
+            valorInmuebleUSD.removeAttribute('required');
+        }
+
+        if (valorInmuebleUSD.value.trim() !== '') {
+            inmuebleHipotecado.setAttribute('required', 'required');
+        } else {
+            inmuebleHipotecado.removeAttribute('required');
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+        const checkboxes = document.querySelectorAll('.check-prod');
+        const submitButton = document.getElementById('submitButton');
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', function () {
+                const anyChecked = Array.from(checkboxes).some(cb => cb.checked);
+                submitButton.disabled = !anyChecked;
+            });
+        });
+    });
+    function submitAllForms() {
+        // Crear un objeto FormData para recopilar todos los datos
+        let formData = new FormData();
+        const forms = document.querySelectorAll('.needs-validation');
+        const submitButton = document.getElementById('botonOculto');
+
+        // Variable para verificar si todos los formularios son válidos
+        let allFormsValid = true;
+
+        // Función para validar un formulario
+        function validateForm(form) {
+            if (!form.checkValidity()) {
+                allFormsValid = false;
+                form.classList.add('was-validated');
+            }
+        }
+
+        // Recopilar datos del primer formulario
+        let form1 = document.getElementById('form1');
+        new FormData(form1).forEach((value, key) => formData.append(key, value));
+
+        // Recopilar datos del segundo formulario
+        let form2 = document.getElementById('form2');
+        new FormData(form2).forEach((value, key) => formData.append(key, value));
+
+        // Recopilar datos del tercer formulario
+        let form3 = document.getElementById('form3');
+        validateForm(form3);
+        new FormData(form3).forEach((value, key) => formData.append(key, value));
+
+        //Recopilar datos del tercer formulario conyugue
+        const checkbox = document.getElementById('flexSwitchCheckChecked');
+        if (checkbox.checked) {
+            let form4 = document.getElementById('form4');
+            new FormData(form4).forEach((value, key) => formData.append(key, value));
+        }
+        if (allFormsValid) {
+            fetch('@Url.Action("ExceptRegisterForm", "Home")', {
+                method: 'POST',
+                body: formData
+            }).then(response => {
+                if (response.ok) {
+                    //alert('Datos enviados exitosamente');
+                    document.getElementById("botonOculto").removeAttribute('disabled');
+                    document.getElementById("botonOculto").click();
+                } else {
+                    alert('Error al enviar los datos');
+                }
+            }).catch(error => {
+                console.error('Error:', error);
+                alert('Error al enviar los datos');
+            });
+        } else {
+            /// aqui pondre un toast si me da tiempo
+        }
+
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const checkboxes = document.querySelectorAll('.check-prod');
+        const itemForms = document.getElementById('itemForms');
+        let productCount = 0; // Variable global para contar los productos añadidos
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', function () {
+                const productName = this.getAttribute('data-name');
+                const id = this.getAttribute('data-id');
+                if (this.checked) {
+                    addProduct(productName, id);
+                } else {
+                    removeProduct(id);
+                }
+            });
+        });
+
+        function addProduct(name, id) {
+            const productDiv = document.createElement('div');
+            productDiv.className = 'product-item';
+            productDiv.id = `product-${id}`;
+
+            if (name.includes("garantía") && name.includes("Consumo")) {
+                productDiv.innerHTML = `
+                                    <div id="contentDiv">
+                                    <div class="pb-3 pt-2">
+                                        <div class="custom-border" style="display: flex; align-items: center;">
+                                            <h6>Producto seleccionado: ${name}</h6>
+                                        </div>
+                                    </div>
+                                        <input asp-for="Productos[${id}].montoSolicitadoBOL" name="Productos[${id}].montoSolicitadoBOL" type="text" id="montoInBsSinComas${id}" class="form-control d-none" maxlength="11" pattern="[0-9,\.]*">
+
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Bs</span>
+                                            <div class="form-floating">
+                                                    <input  type="text" id="DolaresMo${id}" class="form-control" placeholder="Deuda total en el BCP (Bs)" oninput="formatearNumero(this); sincronizarSinComas(this, 'montoInBsSinComas${id}'); actualizarDolares('montoInBsSinComas${id}', 'DolaresInmu${id}'); calculateDivision(${id});" maxlength="15" pattern="[0-9,\.]*" required>
+                                                    <label class="fst-italic" for="DolaresMo${id}">Monto solicitado (Bs)</label>
+                                            </div>
+                                            <span class="input-group-text">$</span>
+                                            <div class="form-floating">
+                                                        <input asp-for="DeudaPersonale.deudaBCPUSD" type="text" class="form-control" id="DolaresInmu${id}" value="0.00" disabled>
+                                                        <label class="fst-italic" for="DolaresInmu${id}">
+                                                    Monto solicitado ($us)
+                                                </label>
+                                            </div>
+
+                                            </div>
+                                        <div class="form-floating">
+                                                <select asp-for="Productos[${id}].idFinalidad" name="Productos[${id}].idFinalidad" class="form-control" id="finalidad" required>
+                                                <option value="" disabled selected>Seleccione una opción</option>
+    @foreach (var item in Model.Finalidades_C)
+    {
+                                                            <option value="@item.IdParametro">@item.Descripcion</option>
+    }
+                                            </select>
+                                            <label class="fst-italic" for="Finalidad">Finalidades</label>
+                                        </div>
+                                    <div>
+                                        <div class="input-group mb-3 mt-3">
+                                            <div class="form-floating">
+                                                <input asp-for="Productos[${id}].descripcionInmueble" name="Productos[${id}].descripcionInmueble" type="text" class="form-control" id="inmuebleGar${id}" maxlength="50" placeholder="¿Qué inmueble se dejará como garantía?" required>
+                                                <label class="fst-italic" for="inmuebleGar${id}">
+                                                    ¿Qué inmueble se dejará como garantía?
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        <input asp-for="Productos[${id}].valorInmuebleBOL" name="Productos[${id}].valorInmuebleBOL" type="text" id="montoBsSinComas${id}" class="form-control d-none" maxlength="11" pattern="[0-9,\.]*">
+
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Bs</span>
+                                            <div class="form-floating">
+                                                 <input  type="text" id="Dolareso${id}" class="form-control" placeholder="Deuda total en el BCP (Bs)" oninput="formatearNumero(this); sincronizarSinComas(this, 'montoBsSinComas${id}'); actualizarDolares('montoBsSinComas${id}', 'DolaresM${id}'); calculateDivision(${id})" maxlength="15" pattern="[0-9,\.]*" required>
+                                                 <label class="fst-italic" for="Dolareso${id}">Valor del inmueble (Bs)</label>
+                                            </div>
+                                            <span class="input-group-text">$</span>
+                                            <div class="form-floating">
+                                                            <input asp-for="DeudaPersonale.deudaBCPUSD" type="text" class="form-control" id="DolaresM${id}" value="0.00" disabled>
+                                                            <label class="fst-italic" for="DolaresM${id}">
+                                                    Valor del inmueble ($us)
+                                                </label>
+                                            </div>
+
+                                                    <input asp-for="Productos[${id}].ltv" name="Productos[${id}].ltv" type="text" id="resultEnabled${id}" class="form-control d-none">
+                                                <span class="input-group-text">LTV</span>
+                                            <input type="text" id="resultDisabled${id}" class="form-control" disabled>
+                                        </div>
+                                </div>
+                            `;
+            } else if (name.includes("Consumo")) {
+                productDiv.innerHTML = `
+                                    <div id="contentDiv">
+                                        <div class="pb-3 pt-2">
+                                            <div class="custom-border" style="display: flex; align-items: center;">
+                                                <h6>Producto seleccionado: ${name}</h6>
+                                            </div>
+                                        </div>
+                                                        <input asp-for="Productos[${id}].montoSolicitadoBOL" name="Productos[${id}].montoSolicitadoBOL" type="text" id="montoInBsSinComas${id}" class="form-control d-none" maxlength="11" pattern="[0-9,\.]*">
+
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Bs</span>
+                                                    <div class="form-floating">
+                                                             <input  type="text" id="DolaresMo" class="form-control" placeholder="Deuda total en el BCP (Bs)" oninput="formatearNumero(this); sincronizarSinComas(this, 'montoInBsSinComas${id}'); actualizarDolares('montoInBsSinComas${id}', 'DolaresInmu${id}');" maxlength="11" pattern="[0-9,\.]*" required>
+                                                     <label class="fst-italic" for="DolaresMo">Monto solicitado (Bs)</label>
+                                                    </div>
+                                                    <span class="input-group-text">$</span>
+                                                    <div class="form-floating">
+                                                            <input asp-for="DeudaPersonale.deudaBCPUSD" type="text" class="form-control" id="DolaresInmu${id}" value="0.00" disabled>
+                                                            <label class="fst-italic" for="DolaresInmu${id}">
+                                                            Monto solicitado ($us)
+                                                        </label>
+                                                    </div>
+
+                                                    </div>
+                                        <div>
+                                            <div class="form-floating">
+                                                    <select asp-for="Productos[${id}].idFinalidad" name="Productos[${id}].idFinalidad" class="form-control" id="finalidad" required>
+                                                    <option value="" disabled selected>Seleccione una opción</option>
+    @foreach (var item in Model.Finalidades_C)
+    {
+                                                                    <option value="@item.IdParametro">@item.Descripcion</option>
+    }
+                                                </select>
+                                                <label class="fst-italic" for="Finalidad">Finalidades</label>
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                Please select a valid state.
+                                            </div>
+                                        </div>
+                                    </div>
+                                `;
+            } else if (name.includes("garantía") && name.includes("Capital de trabajo")) {
+                productDiv.innerHTML = `
+                                    <div id="contentDiv">
+                                    <div class="pb-3 pt-2">
+                                        <div class="custom-border" style="display: flex; align-items: center;">
+                                            <h6>Producto seleccionado: ${name}</h6>
+                                        </div>
+                                    </div>
+                                        <input asp-for="Productos[${id}].montoSolicitadoBOL" name="Productos[${id}].montoSolicitadoBOL" type="text" id="montoInBsSinComas${id}" class="form-control d-none" maxlength="11" pattern="[0-9,\.]*">
+
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Bs</span>
+                                            <div class="form-floating">
+                                                    <input  type="text" id="DolaresMo${id}" class="form-control" placeholder="Deuda total en el BCP (Bs)" oninput="formatearNumero(this); sincronizarSinComas(this, 'montoInBsSinComas${id}'); actualizarDolares('montoInBsSinComas${id}', 'DolaresInmu${id}'); calculateDivision(${id});" maxlength="15" pattern="[0-9,\.]*" required>
+                                                    <label class="fst-italic" for="DolaresMo${id}">Monto solicitado (Bs)</label>
+                                            </div>
+                                            <span class="input-group-text">$</span>
+                                            <div class="form-floating">
+                                                        <input asp-for="DeudaPersonale.deudaBCPUSD" type="text" class="form-control" id="DolaresInmu${id}" value="0.00" disabled>
+                                                        <label class="fst-italic" for="DolaresInmu${id}">
+                                                    Monto solicitado ($us)
+                                                </label>
+                                            </div>
+
+                                            </div>
+                                        <div class="form-floating">
+                                                <select asp-for="Productos[${id}].idFinalidad" name="Productos[${id}].idFinalidad" class="form-control" id="finalidad" required>
+                                                <option value="" disabled selected>Seleccione una opción</option>
+    @foreach (var item in Model.Finalidades_N)
+    {
+                                                            <option value="@item.IdParametro">@item.Descripcion</option>
+    }
+                                            </select>
+                                            <label class="fst-italic" for="Finalidad">Finalidades</label>
+                                        </div>
+                                    <div>
+                                        <div class="input-group mb-3 mt-3">
+                                            <div class="form-floating">
+                                                <input asp-for="Productos[${id}].descripcionInmueble" name="Productos[${id}].descripcionInmueble" type="text" class="form-control" id="inmuebleGar${id}" maxlength="50" placeholder="¿Qué inmueble se dejará como garantía?" required>
+                                                <label class="fst-italic" for="inmuebleGar${id}">
+                                                    ¿Qué inmueble se dejará como garantía?
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        <input asp-for="Productos[${id}].valorInmuebleBOL" name="Productos[${id}].valorInmuebleBOL" type="text" id="montoBsSinComas${id}" class="form-control d-none" maxlength="11" pattern="[0-9,\.]*">
+
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Bs</span>
+                                            <div class="form-floating">
+                                                 <input  type="text" id="Dolareso${id}" class="form-control" placeholder="Deuda total en el BCP (Bs)" oninput="formatearNumero(this); sincronizarSinComas(this, 'montoBsSinComas${id}'); actualizarDolares('montoBsSinComas${id}', 'DolaresM${id}'); calculateDivision(${id})" maxlength="15" pattern="[0-9,\.]*" required>
+                                                 <label class="fst-italic" for="Dolareso${id}">Valor del inmueble (Bs)</label>
+                                            </div>
+                                            <span class="input-group-text">$</span>
+                                            <div class="form-floating">
+                                                            <input asp-for="DeudaPersonale.deudaBCPUSD" type="text" class="form-control" id="DolaresM${id}" value="0.00" disabled>
+                                                            <label class="fst-italic" for="DolaresM${id}">
+                                                    Valor del inmueble ($us)
+                                                </label>
+                                            </div>
+
+                                                    <input asp-for="Productos[${id}].ltv" name="Productos[${id}].ltv" type="text" id="resultEnabled${id}" class="form-control d-none">
+                                                <span class="input-group-text">LTV</span>
+                                            <input type="text" id="resultDisabled${id}" class="form-control" disabled>
+                                        </div>
+                                </div>
+                            `;
+            } else if (name.includes("garantía") && name.includes("Activo fijo")) {
+                productDiv.innerHTML = `
+                                    <div id="contentDiv">
+                                    <div class="pb-3 pt-2">
+                                        <div class="custom-border" style="display: flex; align-items: center;">
+                                            <h6>Producto seleccionado: ${name}</h6>
+                                        </div>
+                                    </div>
+                                        <input asp-for="Productos[${id}].montoSolicitadoBOL" name="Productos[${id}].montoSolicitadoBOL" type="text" id="montoInBsSinComas${id}" class="form-control d-none" maxlength="11" pattern="[0-9,\.]*">
+
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Bs</span>
+                                            <div class="form-floating">
+                                                    <input  type="text" id="DolaresMo${id}" class="form-control" placeholder="Deuda total en el BCP (Bs)" oninput="formatearNumero(this); sincronizarSinComas(this, 'montoInBsSinComas${id}'); actualizarDolares('montoInBsSinComas${id}', 'DolaresInmu${id}'); calculateDivision(${id});" maxlength="15" pattern="[0-9,\.]*" required>
+                                                    <label class="fst-italic" for="DolaresMo${id}">Monto solicitado (Bs)</label>
+                                            </div>
+                                            <span class="input-group-text">$</span>
+                                            <div class="form-floating">
+                                                        <input asp-for="DeudaPersonale.deudaBCPUSD" type="text" class="form-control" id="DolaresInmu${id}" value="0.00" disabled>
+                                                        <label class="fst-italic" for="DolaresInmu${id}">
+                                                    Monto solicitado ($us)
+                                                </label>
+                                            </div>
+
+                                            </div>
+                                        <div class="form-floating">
+                                                <select asp-for="Productos[${id}].idFinalidad" name="Productos[${id}].idFinalidad" class="form-control" id="finalidad" required>
+                                                <option value="" disabled selected>Seleccione una opción</option>
+    @foreach (var item in Model.Finalidades_N)
+    {
+                                                            <option value="@item.IdParametro">@item.Descripcion</option>
+    }
+                                            </select>
+                                            <label class="fst-italic" for="Finalidad">Finalidades</label>
+                                        </div>
+                                    <div>
+                                        <div class="input-group mb-3 mt-3">
+                                            <div class="form-floating">
+                                                <input asp-for="Productos[${id}].descripcionInmueble" name="Productos[${id}].descripcionInmueble" type="text" class="form-control" id="inmuebleGar${id}" maxlength="50" placeholder="¿Qué inmueble se dejará como garantía?" required>
+                                                <label class="fst-italic" for="inmuebleGar${id}">
+                                                    ¿Qué inmueble se dejará como garantía?
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        <input asp-for="Productos[${id}].valorInmuebleBOL" name="Productos[${id}].valorInmuebleBOL" type="text" id="montoBsSinComas${id}" class="form-control d-none" maxlength="11" pattern="[0-9,\.]*">
+
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Bs</span>
+                                            <div class="form-floating">
+                                                 <input  type="text" id="Dolareso${id}" class="form-control" placeholder="Deuda total en el BCP (Bs)" oninput="formatearNumero(this); sincronizarSinComas(this, 'montoBsSinComas${id}'); actualizarDolares('montoBsSinComas${id}', 'DolaresM${id}'); calculateDivision(${id})" maxlength="15" pattern="[0-9,\.]*" required>
+                                                 <label class="fst-italic" for="Dolareso${id}">Valor del inmueble (Bs)</label>
+                                            </div>
+                                            <span class="input-group-text">$</span>
+                                            <div class="form-floating">
+                                                            <input asp-for="DeudaPersonale.deudaBCPUSD" type="text" class="form-control" id="DolaresM${id}" value="0.00" disabled>
+                                                            <label class="fst-italic" for="DolaresM${id}">
+                                                    Valor del inmueble ($us)
+                                                </label>
+                                            </div>
+
+                                                    <input asp-for="Productos[${id}].ltv" name="Productos[${id}].ltv" type="text" id="resultEnabled${id}" class="form-control d-none">
+                                                <span class="input-group-text">LTV</span>
+                                            <input type="text" id="resultDisabled${id}" class="form-control" disabled>
+                                        </div>
+                                </div>
+                            `;
+            } else if (name.includes("Capital de trabajo")) {
+                productDiv.innerHTML = `
+                                    <div id="contentDiv">
+                                        <div class="pb-3 pt-2">
+                                            <div class="custom-border" style="display: flex; align-items: center;">
+                                                <h6>Producto seleccionado: ${name}</h6>
+                                            </div>
+                                        </div>
+                                                        <input asp-for="Productos[${id}].montoSolicitadoBOL" name="Productos[${id}].montoSolicitadoBOL" type="text" id="montoInBsSinComas${id}" class="form-control d-none" maxlength="11" pattern="[0-9,\.]*">
+
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Bs</span>
+                                                    <div class="form-floating">
+                                                             <input  type="text" id="DolaresMo" class="form-control" placeholder="Deuda total en el BCP (Bs)" oninput="formatearNumero(this); sincronizarSinComas(this, 'montoInBsSinComas${id}'); actualizarDolares('montoInBsSinComas${id}', 'DolaresInmu${id}');" maxlength="11" pattern="[0-9,\.]*" required>
+                                                     <label class="fst-italic" for="DolaresMo">Monto solicitado (Bs)</label>
+                                                    </div>
+                                                    <span class="input-group-text">$</span>
+                                                    <div class="form-floating">
+                                                            <input asp-for="DeudaPersonale.deudaBCPUSD" type="text" class="form-control" id="DolaresInmu${id}" value="0.00" disabled>
+                                                            <label class="fst-italic" for="DolaresInmu${id}">
+                                                            Monto solicitado ($us)
+                                                        </label>
+                                                    </div>
+
+                                                    </div>
+                                        <div>
+                                            <div class="form-floating">
+                                                    <select asp-for="Productos[${id}].idFinalidad" name="Productos[${id}].idFinalidad" class="form-control" id="finalidad" required>
+                                                    <option value="" disabled selected>Seleccione una opción</option>
+    @foreach (var item in Model.Finalidades_N)
+    {
+                                                                    <option value="@item.IdParametro">@item.Descripcion</option>
+    }
+                                                </select>
+                                                <label class="fst-italic" for="Finalidad">Finalidades</label>
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                Please select a valid state.
+                                            </div>
+                                        </div>
+                                    </div>
+                                `;
+            } else if (name.includes("Activo fijo")) {
+                productDiv.innerHTML = `
+                                    <div id="contentDiv">
+                                        <div class="pb-3 pt-2">
+                                            <div class="custom-border" style="display: flex; align-items: center;">
+                                                <h6>Producto seleccionado: ${name}</h6>
+                                            </div>
+                                        </div>
+                                                        <input asp-for="Productos[${id}].montoSolicitadoBOL" name="Productos[${id}].montoSolicitadoBOL" type="text" id="montoInBsSinComas${id}" class="form-control d-none" maxlength="11" pattern="[0-9,\.]*">
+
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Bs</span>
+                                                    <div class="form-floating">
+                                                             <input  type="text" id="DolaresMo" class="form-control" placeholder="Deuda total en el BCP (Bs)" oninput="formatearNumero(this); sincronizarSinComas(this, 'montoInBsSinComas${id}'); actualizarDolares('montoInBsSinComas${id}', 'DolaresInmu${id}');" maxlength="11" pattern="[0-9,\.]*" required>
+                                                     <label class="fst-italic" for="DolaresMo">Monto solicitado (Bs)</label>
+                                                    </div>
+                                                    <span class="input-group-text">$</span>
+                                                    <div class="form-floating">
+                                                            <input asp-for="DeudaPersonale.deudaBCPUSD" type="text" class="form-control" id="DolaresInmu${id}" value="0.00" disabled>
+                                                            <label class="fst-italic" for="DolaresInmu${id}">
+                                                            Monto solicitado ($us)
+                                                        </label>
+                                                    </div>
+
+                                                    </div>
+                                        <div>
+                                            <div class="form-floating">
+                                                    <select asp-for="Productos[${id}].idFinalidad" name="Productos[${id}].idFinalidad" class="form-control" id="finalidad" required>
+                                                    <option value="" disabled selected>Seleccione una opción</option>
+    @foreach (var item in Model.Finalidades_N)
+    {
+                                                                    <option value="@item.IdParametro">@item.Descripcion</option>
+    }
+                                                </select>
+                                                <label class="fst-italic" for="Finalidad">Finalidades</label>
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                Please select a valid state.
+                                            </div>
+                                        </div>
+                                    </div>
+                                `;
+            } else if (name.includes("Tarjeta")) {
+                productDiv.innerHTML = `
+                                        <div id="contentDiv">
+                                            <div class="pb-3 pt-2">
+                                                <div class="custom-border" style="display: flex; align-items: center;">
+                                                    <h6>Producto seleccionado: ${name}</h6>
+                                                </div>
+                                            </div>
+                                            <input asp-for="Productos[${id}].montoSolicitadoBOL" name="Productos[${id}].montoSolicitadoBOL" type="text" id="montoInBsSinComas${id}" class="form-control d-none" maxlength="11" pattern="[0-9,\.]*">
+
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text">Bs</span>
+                                                <div class="form-floating">
+                                                        <input  type="text" id="DolaresMo${id}" class="form-control" placeholder="Deuda total en el BCP (Bs)" oninput="formatearNumero(this); sincronizarSinComas(this, 'montoInBsSinComas${id}'); actualizarDolares('montoInBsSinComas${id}', 'DolaresInmu${id}'); calculateDivision(${id});" maxlength="15" pattern="[0-9,\.]*" required>
+                                                        <label class="fst-italic" for="DolaresMo${id}">Monto solicitado (Bs)</label>
+                                                </div>
+                                                <span class="input-group-text">$</span>
+                                                <div class="form-floating">
+                                                    <input asp-for="DeudaPersonale.deudaBCPUSD" type="text" class="form-control" id="DolaresInmu${id}" value="0.00" disabled>
+                                                    <label class="fst-italic" for="DolaresInmu${id}">
+                                                        Monto solicitado ($us)
+                                                    </label>
+                                                </div>
+
+                                            </div>
+
+                                    </div>
+                                `;
+            } else if (name.includes("Hipotecario")) {
+                productDiv.innerHTML = `
+                                <div id="contentDiv">
+                                    <div class="pb-3 pt-2">
+                                        <div class="custom-border" style="display: flex; align-items: center;">
+                                            <h6>Producto seleccionado: ${name}</h6>
+                                        </div>
+                                    </div>
+                                                    <input asp-for="Productos[${id}].montoSolicitadoBOL" name="Productos[${id}].montoSolicitadoBOL" type="text" id="montoInBsSinComas${id}" class="form-control d-none" maxlength="11" pattern="[0-9,\.]*">
+
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text">Bs</span>
+                                                <div class="form-floating">
+                                                         <input  type="text" id="DolaresMo" class="form-control" placeholder="Deuda total en el BCP (Bs)" oninput="formatearNumero(this); sincronizarSinComas(this, 'montoInBsSinComas${id}'); actualizarDolares('montoInBsSinComas${id}', 'DolaresInmu${id}');" maxlength="11" pattern="[0-9,\.]*" required>
+                                                 <label class="fst-italic" for="DolaresMo">Monto solicitado (Bs)</label>
+                                                </div>
+                                                <span class="input-group-text">$</span>
+                                                <div class="form-floating">
+                                                        <input asp-for="DeudaPersonale.deudaBCPUSD" type="text" class="form-control" id="DolaresInmu${id}" value="0.00" disabled>
+                                                        <label class="fst-italic" for="DolaresInmu${id}">
+                                                        Monto solicitado ($us)
+                                                    </label>
+                                                </div>
+
+                                                </div>
+                                    <div>
+                                        <div class="form-floating">
+                                                <select asp-for="Productos[${id}].idFinalidad" name="Productos[${id}].idFinalidad" class="form-control" id="finalidad" required>
+                                                <option value="" disabled selected>Seleccione una opción</option>
+    @foreach (var item in Model.Finalidades_H)
+    {
+                                                            <option value="@item.IdParametro">@item.Descripcion</option>
+    }
+                                            </select>
+                                            <label class="fst-italic" for="Finalidad">Finalidades</label>
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Please select a valid state.
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+            }
+            itemForms.appendChild(productDiv);
+        }
+
+        function removeProduct(id) {
+            const productDiv = document.getElementById(`product-${id}`);
+            if (productDiv) {
+                itemForms.removeChild(productDiv);
+            }
+        }
+    });
+
+    function calculateDivision(id) {
+        var montoSolicitado = parseFloat(document.getElementById(`montoInBsSinComas${id}`).value.replace(/,/g, ''));
+        var valorInmueble = parseFloat(document.getElementById(`montoBsSinComas${id}`).value.replace(/,/g, ''));
+
+        if (!isNaN(montoSolicitado) && !isNaN(valorInmueble) && valorInmueble !== 0) {
+            var result = montoSolicitado / valorInmueble;
+            document.getElementById(`resultEnabled${id}`).value = result.toFixed(2);
+            document.getElementById(`resultDisabled${id}`).value = result.toFixed(2);
+        } else {
+            document.getElementById(`resultEnabled${id}`).value = '';
+            document.getElementById(`resultDisabled${id}`).value = '';
+        }
+    }
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const checkboxes = document.querySelectorAll('.check-prod');
+        const maxSelections = 3;
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', function () {
+                const category = this.getAttribute('data-category');
+                const selectedInCategory = document.querySelectorAll(`.check-prod[data-category="${category}"]:checked`).length;
+                const totalSelected = document.querySelectorAll('.check-prod:checked').length;
+
+                // Disable other checkboxes in the same category if one is already selected
+                if (selectedInCategory > 0) {
+                    document.querySelectorAll(`.check-prod[data-category="${category}"]`).forEach(cb => {
+                        if (!cb.checked) {
+                            cb.disabled = true;
+                        }
+                    });
+                } else {
+                    document.querySelectorAll(`.check-prod[data-category="${category}"]`).forEach(cb => {
+                        cb.disabled = false;
+                    });
+                }
+
+                // Disable all checkboxes if max selections reached
+                if (totalSelected >= maxSelections) {
+                    checkboxes.forEach(cb => {
+                        if (!cb.checked) {
+                            cb.disabled = true;
+                        }
+                    });
+                } else {
+                    checkboxes.forEach(cb => {
+                        if (!cb.getAttribute('data-category') || document.querySelectorAll(`.check-prod[data-category="${cb.getAttribute('data-category')}"]:checked`).length === 0) {
+                            cb.disabled = false;
+                        }
+                    });
+                }
+            });
+        });
+    });
+
+    function actualizarDolares(idorigen, iddestino) {
+        let tipoCambio = document.getElementById('Cambio').value;
+        tipoCambio = tipoCambio.replace(',', '.');
+
+        let parsedValue = parseFloat(tipoCambio);
+        let deudaBs = document.getElementById(idorigen).value;
+        deudaBs = deudaBs.replace(/[^0-9]/g, ''); // Eliminar todo lo que no sea dígito
+        document.getElementById(idorigen).value = deudaBs;
+
+        let dolares = (deudaBs * (1 / parsedValue)).toFixed(2).toString(); // Mantener dos decimales
+        document.getElementById(iddestino).value = dolares;
+
+        // Formatear el valor en el input de destino
+        formatearNumerodes(document.getElementById(iddestino));
+    }
+
+    function sumaDolares(valorDol1, valorDol2) {
+
+        const element1 = document.getElementById(valorDol1);
+        const element2 = document.getElementById(valorDol2);
+
+        // Verificar si los elementos existen
+        if (!element1) {
+            console.error(`Elemento con ID ${valorDol1} no encontrado`);
+            return;
+        }
+        if (!element2) {
+            console.error(`Elemento con ID ${valorDol2} no encontrado`);
+            return;
+        }
+
+        // Obtener los valores y convertirlos a números, tomando 0 si están vacíos
+        const valor1 = parseFloat(element1.value) || 0;
+        const valor2 = parseFloat(element2.value) || 0;
+        const garantia = valor1 + valor2;
+
+        document.getElementById('totalGarantiaOculto').value = garantia;
+
+        const garantiaTotalElement = document.getElementById('garantiaTotal');
+        if (garantiaTotalElement) {
+            garantiaTotalElement.value = garantia;
+            formatearNumerodes(garantiaTotalElement);
+        } else {
+            console.error('Elemento con ID "garantiaTotal" no encontrado');
+        }
+    }
+
+    // Asegurarse de que el DOM esté completamente cargado antes de agregar los event listeners
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const input1 = document.getElementById('valorInmuebleSinComas');
+        const input2 = document.getElementById('valorLibreInmuebleSinComas');
+
+        if (input1) input1.addEventListener('input', () => sumaDolares('valorInmuebleSinComas', 'valorLibreInmuebleSinComas'));
+        if (input2) input2.addEventListener('input', () => sumaDolares('valorLibreInmuebleSinComas', 'valorInmuebleSinComas'));
+    });
+
+
+    function toggleModal() {
+        const checkbox = document.getElementById('flexSwitchCheckChecked');
+        if (checkbox.checked) {
+            var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+            myModal.show();
+        }
+    }
+
+    function closeModal() {
+        const checkbox = document.getElementById('flexSwitchCheckChecked');
+        checkbox.checked = false;
+        var myModal = bootstrap.Modal.getInstance(document.getElementById('myModal'));
+        myModal.hide();
+    }
+
+    function validateFields() {
+        const currentForm = document.querySelector('.modal-body form');
+        if (!currentForm.checkValidity()) {
+            currentForm.reportValidity();
+        } else {
+            var myModal = bootstrap.Modal.getInstance(document.getElementById('myModal'));
+            myModal.hide();
+        }
+    }
+</script>

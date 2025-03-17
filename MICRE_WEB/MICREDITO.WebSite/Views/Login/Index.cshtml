@@ -1,0 +1,38 @@
+﻿@model MICREDITO.WebSite.Models.LoginModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="container shadow">
+    <div class="row">
+        <div class="col backgroud">
+            <img src="~/Content/Image/splashcreen.jpg" />
+        </div>
+        <div class="col login">
+            @using (Html.BeginForm("Login", "Login", FormMethod.Post, new { autocomplete = "off", id = "formLogin" }))
+            {
+                <div class="form-group">
+                    <label>USUARIO</label>
+                    @Html.TextBoxFor(x => x.usuario, new { @class = "form-control", Type = "text" })
+                </div>
+                <div class="form-group">
+                    <label>CONTRASEÑA</label>
+                    @Html.TextBoxFor(x => x.password, new { @class = "form-control", Type = "password" })
+                </div>
+                <div class="form-group text-right" style="margin-top: 20px;">
+                    <button class="btn btn-primary btn-login" type="submit">INGRESAR</button>
+                </div>
+                if (!string.IsNullOrEmpty(ViewBag.Mensaje))
+                {
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        @ViewBag.Mensaje
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>

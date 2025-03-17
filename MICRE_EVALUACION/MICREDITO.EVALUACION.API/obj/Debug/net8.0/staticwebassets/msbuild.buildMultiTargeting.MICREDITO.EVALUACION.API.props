@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MICREDITO.EVALUACION.API.props" />
+</Project>

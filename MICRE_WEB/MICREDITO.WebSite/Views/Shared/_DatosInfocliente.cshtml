@@ -1,0 +1,176 @@
+﻿@model MICREDITO.Model.Common.PersonaModel
+
+<div>
+    <label>DATOS BASICOS</label><br />
+    <div class="layout-card">
+        <div class="row">
+            <div class="form-group label-content col-4">
+                <label>NOMBRE</label><br />
+                @Model.nombres
+            </div>
+            <div class="form-group label-content col-4">
+                <label>PATERNO</label><br />
+                @Model.paterno
+            </div>
+            <div class="form-group label-content col-4">
+                <label>MATERNO</label><br />
+                @Model.materno
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group label-content col-3">
+                <label>FECHA NACIMIENTO</label><br />
+                @Model.fechaNacimiento.ToString("dd/MM/yyyy")
+            </div>
+            <div class="form-group label-content col-3">
+                <label>SEXO</label><br />
+                @Model.sexo
+            </div>
+            <div class="form-group label-content col-3">
+                <label>ESTADO CIVIL</label><br />
+                @Model.estadoCivil
+            </div>
+            <div class="form-group label-content col-3">
+                <label>NACIONALIDAD</label><br />
+                @Model.nacionalidad
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group label-content col-3">
+                <label>INSTRUCCION</label><br />
+                @Model.instruccion
+            </div>
+            <div class="form-group label-content col-3">
+                <label>SITUACION LABORAL</label><br />
+                @Model.situacionLaboral
+            </div>
+            <div class="form-group label-content col-3">
+                <label>CIIU</label><br />
+                @Model.ciiu
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <label>DATOS DIRECCION PERSONAL</label><br />
+    <div class="layout-card">
+        <div class="row">
+            <div class="form-group label-content col-4">
+                <label>TELEFONO</label><br />
+                @Model.telefono
+            </div>
+            <div class="form-group label-content col-4">
+                <label>CELULAR</label><br />
+                @Model.celular
+            </div>
+            <div class="form-group label-content col-4">
+                <label>CORREO ELECTRONICO</label><br />
+                @Model.email
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group label-content col-4">
+                <label>TIPO DIRECCION</label><br />
+                @Model.tipoCalle
+            </div>
+            <div class="form-group label-content col-4">
+                <label>DIRECCION</label><br />
+                @Model.calle
+            </div>
+            <div class="form-group label-content col-4">
+                <label>NRO DIRECCION</label><br />
+                @Model.nroCalle
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group label-content col-6">
+                <label>LOCALIDAD</label><br />
+                @Model.localidad
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <label>DATOS DIRECCION LABORAL</label><br />
+    <div class="layout-card">
+        <div class="row">
+            <div class="form-group label-content col-4">
+                <label>NIT</label><br />
+                @Model.numIDCEmpresa
+            </div>
+            <div class="form-group label-content col-4">
+                <label>NOMBRE EMPRESA</label><br />
+                @Model.empresa
+            </div>
+            <div class="form-group label-content col-4">
+                <label>TELEFONO</label><br />
+                @Model.telefonoLaboral
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group label-content col-4">
+                <label>TIPO DIRECCION</label><br />
+                @Model.tipoCalleLaboral
+            </div>
+            <div class="form-group label-content col-4">
+                <label>DIRECCION</label><br />
+                @Model.calleLaboral
+            </div>
+            <div class="form-group label-content col-4">
+                <label>NRO DIRECCION</label><br />
+                @Model.nroCalleLaboral
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group label-content col-4">
+                <label>CARGO ACTUAL</label><br />
+                @Model.cargo
+            </div>
+            <div class="form-group label-content col-4">
+                <label>FECHA INGRESO</label><br />
+                @Model.fechaIngreso.ToString("dd/MM/yyyy")
+            </div>
+            <div class="form-group label-content col-4">
+                <label>INGRESO BRUTO</label><br />
+                @Model.ingresoBrutoMensual
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group label-content col-6">
+                <label>LOCALIDAD</label><br />
+                @Model.localidadLaboral
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (!string.IsNullOrEmpty(Model.numIdcConyuge))
+{
+    <div>
+        <label>DATOS CONYUGE</label><br />
+        <div class="layout-card">
+            <div class="row">
+                <div class="form-group label-content col-3">
+                    <label>CARNET</label><br />
+                    @Model.numIdcConyuge
+                </div>
+                <div class="form-group label-content col-3">
+                    <label>NOMBRES</label><br />
+                    @Model.nombresConyuge
+                </div>
+                <div class="form-group label-content col-3">
+                    <label>PATERNO</label><br />
+                    @Model.paternoConyuge
+                </div>
+                <div class="form-group label-content col-3">
+                    <label>MATERNO</label><br />
+                    @Model.maternoConyuge
+                </div>
+            </div>
+        </div>
+    </div>
+}

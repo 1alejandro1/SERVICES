@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MICRE.AUTHENTICATION.API.props" />
+</Project>

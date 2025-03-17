@@ -1,0 +1,383 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.BancaSeguro.DataAccess\\BCP.API_DigitacionPYME.DataAccess.csproj": {}
+  },
+  "projects": {
+    "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.BancaSeguro.DataAccess\\BCP.API_DigitacionPYME.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.BancaSeguro.DataAccess\\BCP.API_DigitacionPYME.DataAccess.csproj",
+        "projectName": "BCP.API_DigitacionPYME.DataAccess",
+        "projectPath": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.BancaSeguro.DataAccess\\BCP.API_DigitacionPYME.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\T25208\\.nuget\\packages\\",
+        "outputPath": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.BancaSeguro.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\T25208\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.BancaSeguro.Models\\BCP.API_DigitacionPYME.Models.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.BancaSeguro.Models\\BCP.API_DigitacionPYME.Models.csproj"
+              },
+              "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Framework.Common\\BCP.Framework.Common.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Framework.Common\\BCP.Framework.Common.csproj"
+              },
+              "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Framework.Logs\\BCP.Framework.Logs.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Framework.Logs\\BCP.Framework.Logs.csproj"
+              },
+              "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Framework.Security\\BCP.Framework.Security.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Framework.Security\\BCP.Framework.Security.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.BancaSeguro.Models\\BCP.API_DigitacionPYME.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.BancaSeguro.Models\\BCP.API_DigitacionPYME.Models.csproj",
+        "projectName": "BCP.API_DigitacionPYME.Models",
+        "projectPath": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.BancaSeguro.Models\\BCP.API_DigitacionPYME.Models.csproj",
+        "packagesPath": "C:\\Users\\T25208\\.nuget\\packages\\",
+        "outputPath": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.BancaSeguro.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\T25208\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Framework.Common\\BCP.Framework.Common.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Framework.Common\\BCP.Framework.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Framework.Common\\BCP.Framework.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Framework.Common\\BCP.Framework.Common.csproj",
+        "projectName": "BCP.Framework.Common",
+        "projectPath": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Framework.Common\\BCP.Framework.Common.csproj",
+        "packagesPath": "C:\\Users\\T25208\\.nuget\\packages\\",
+        "outputPath": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Framework.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\T25208\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Framework.Logs\\BCP.Framework.Logs.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Framework.Logs\\BCP.Framework.Logs.csproj",
+        "projectName": "BCP.Framework.Logs",
+        "projectPath": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Framework.Logs\\BCP.Framework.Logs.csproj",
+        "packagesPath": "C:\\Users\\T25208\\.nuget\\packages\\",
+        "outputPath": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Framework.Logs\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\T25208\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.9.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Framework.Security\\BCP.Framework.Security.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Framework.Security\\BCP.Framework.Security.csproj",
+        "projectName": "BCP.Framework.Security",
+        "projectPath": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Framework.Security\\BCP.Framework.Security.csproj",
+        "packagesPath": "C:\\Users\\T25208\\.nuget\\packages\\",
+        "outputPath": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Framework.Security\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\T25208\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.BancaSeguro.Models\\BCP.API_DigitacionPYME.Models.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.BancaSeguro.Models\\BCP.API_DigitacionPYME.Models.csproj"
+              },
+              "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Framework.Common\\BCP.Framework.Common.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_PYME\\BCP.Framework.Common\\BCP.Framework.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

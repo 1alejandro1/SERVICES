@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "CRM_CARGADATOSPERSONAS_SSI", "CRM_CARGADATOSPERSONAS_SSI.dtproj", "{BDF2235C-3385-4A1E-885F-9BED589762E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDF2235C-3385-4A1E-885F-9BED589762E8}.Development|Default.ActiveCfg = Development
+		{BDF2235C-3385-4A1E-885F-9BED589762E8}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {79178463-56F6-4D5D-8BA4-5420624321F0}
+	EndGlobalSection
+EndGlobal

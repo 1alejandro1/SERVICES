@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "DukjkwaAMGlvopfh2mxaytLvtDRxkSUOrg1IoYsuGYY=",
+  "Source": "MICRE.AUTHENTICATION.API",
+  "BasePath": "_content/MICRE.AUTHENTICATION.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,42 @@
+﻿@using BCP.CROSS.MODELS.Reportes
+<div class="row align-content-center">
+    <div class="col">
+        <h4><strong>REPORTE CAPACIDAD INSTALADA POR SERVICIO</strong></h4>
+    </div>
+    <div class="col-10">
+        <table class="table table-hover table-borderless">
+            <thead>
+                <tr class="text-uppercase">
+                        <th class="table-tomato">Caso</th>
+                        <th class="table-tomato">Capacidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (CapacidadEspecialidadModel item in Data)
+                {
+                    <tr>
+                        <th scope="row" class="table-midnightblue">@item.Descripcion</th>
+                        <td class="table-light">@item.Capacidad</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+@code {
+    [Parameter]
+    public List<CapacidadEspecialidadModel> Data { get; set; }
+}
+<style lang="css">
+    .table-tomato {
+        background-color: tomato !important;
+        color: white !important;
+        vertical-align: middle;
+    }
+
+    .table-midnightblue {
+        background-color: midnightblue !important;
+        color: white !important;
+        vertical-align: middle;
+    }
+</style>

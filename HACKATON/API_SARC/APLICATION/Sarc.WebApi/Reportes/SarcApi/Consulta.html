@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Reporte Registro Consulta</title>
+	<style>
+		body {
+			align-items: center;
+			justify-content: center;
+			display: flex;
+			font-family: Arial;
+			flex-direction: column;
+			line-height: 15px;
+			margin-top: -5px;
+		}
+
+		div b {
+			padding-top: 1px;
+		}
+
+		div {
+			margin: 10px;
+			padding: 2px;
+			padding-top: 10px;
+		}
+
+		#contenedor {
+			padding: 60px;
+			margin-left: 6px;
+			font-size: 90%;
+			padding-bottom: 0px;
+		}
+
+		#cabecera, #tipoSolucion {
+			border-top-color: black;
+			border-bottom-color: black;
+			border-top-width: 2px;
+			border-top-style: solid;
+			border-bottom-width: 2px;
+			border-bottom-style: solid;
+		}
+
+		#DocumentacionAdjunta {
+			border-bottom-color: black;
+			border-bottom-width: 2px;
+			border-bottom-style: solid;
+			font-size: 90%;
+		}
+
+		#descripcionSolucion, #descripcionDocumentacionAdjunta {
+			height: 40px;
+		}
+
+		#DatosReclamo {
+			width: 100%;
+		}
+
+		#cabecera {
+			font-size: 90%;
+		}
+
+		#tipoSolucion {
+			font-size: 90%;
+		}
+
+		#datosCliente {
+			font-size: 90%;
+		}
+
+		#DatosAdicionales {
+			font-size: 90%;
+			padding-bottom: 25px;
+		}
+
+		#FirmaCliente {
+			font-size: 90%;
+			width: 89%;
+		}
+
+		#PsudoFirma {
+			width: 74%;
+		}
+
+		#Firma {
+			width: 18%;
+			justify-content: right;
+			position: relative;
+			margin-left: 77%;
+			margin-bottom: -2%;
+		}
+
+		#FirmaCliente div {
+			float: left;
+			font-size: 90%;
+		}
+
+		#DatosReclamo div {
+			float: left;
+		}
+
+		#F1 {
+			width: 39%;
+		}
+
+		#F2 {
+			font-size: 60%;
+			padding-left: 38%;
+			letter-spacing: 0.5px;
+		}
+
+		#PiePagina {
+			font-size: 60%;
+			position: static;
+		}
+
+		#RutaSharepoint {
+			height: 30px;
+		}
+
+		#EspacioBlanco {
+			height: 50px;
+		}
+
+		footer {
+			align-items: center;
+			justify-content: center;
+			display: flex;
+			font-family: Arial;
+			padding: 50px;
+			letter-spacing: 0.5px;
+			margin-left: -6%;
+		}
+	</style>	
+</head>
+<body>
+	<div id="contenedor">
+		<div id="cabecera">
+			<b>Fecha Registro:</b>&emsp;<b>@FechaRegistro</b><br>
+			<b>Número de Registro:</b>&emsp;<b>@NroCaso</b><br>
+		</div>
+		<div id="datosCliente">
+			<b>1.Datos del Cliente</b><br />
+			<b>Apellidos:</b>&emsp;@Apellidos<br>
+			<b>Nombres:</b>&emsp;@Nombres<br></br>
+			<b>Documento de Identidad:</b>&emsp;@ClienteIdc&emsp;<b>Sucursal:</b>&emsp;@Sucursal<br>
+			<b>Agencia:</b>&emsp;@Agencia<br>
+			<b>Direccion:</b>&emsp;@Direccion<br></br>
+			<b>Nombre de la empresa o Institución a la que representa:</b><br>
+			@NombreEmpresa<br>
+		</div>
+		<div id="tipoSolucion">
+			<b>2. Consultas</b><br>
+			@ClasificacionReclamo<br>
+			<b>Cuenta:</b>&emsp;@NroCuenta&emsp;&emsp;&emsp;<b>Tarjeta:</b>&emsp;@NroTarjeta&emsp;&emsp;&emsp;&emsp;<b>Importe:</b>&emsp;@Monto&nbsp;@Moneda<br>
+			<p id="descripcionSolucion">@DescripcionCaso</p>
+		</div>
+		<div id="DocumentacionAdjunta">
+			<b>3. Documentación que se adjunta</b><br>
+			<p id="descripcionDocumentacionAdjunta">@DocumentacionAdjunta</p>
+		</div>
+		<div id="DatosAdicionales">
+			<b>4. Clasificación Consultas:</b>&emsp;@DescripcionProducto&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>5.Atentido por:</b>&nbsp;Consultas<br>
+			<b>6. Observaciones:</b>&emsp;Asignado por:&emsp;@Usuario<br>
+		</div>
+
+		<div id="PsudoFirma"></div>
+		<div id="Firma">
+			<b>Firma del cliente</b>
+		</div>
+		<div id="FirmaCliente">
+			<p>Si la presente solicitud genera un costo, autorizo al Banco de Crédito de Bolivia S.A. el débito de la comisión en cualquiera de mis cuentas cuando corresponda y de acuerdo a tarifario.</p>
+		</div>
+		<div id="EspacioBlanco"></div>
+		<div id="DatosReclamo">
+			<div id="F1"></div>
+			<div id="F2">
+				Número de Registro:&emsp;@NroCaso<br>
+				Fecha de Registro:&emsp;@FechaRegistro<br>
+				<p>En el plazo de cinco (5) días hábiles administrativos a partir del día de mañana, usted recibirá la carta de respuesta a su reclamo a través del medio que haya requerido o puede apersonarse por la Entidad Financiera a recoger su respuesta.</p>
+			</div>
+		</div>
+		<br>
+
+	</div>
+</body>
+<footer>
+	<div id="PiePagina">
+		<p>Firma y Sello del Receptor de la Consulta&emsp;&emsp;&emsp;&emsp;@Usuario</p>
+		<b>Descripción de la Consulta</b><br>
+		@ClasificacionReclamo<br></br>
+		<p id="RutaSharepoint">@DescripcionCaso</p>
+		<p>Cuando se trata de solicitudes de “Liquidación de Operaciones” el tiempo de atención es de 3 días hábiles y el recojo será en Oficinas Centrales.</p>
+		<p>Para solicitudes de certificación de deuda(directa o indirecta) y consultas por desconocimiento de deuda autorizo al Banco de Crédito de Bolivia consultar la Cetral de Información Crediticia. (CIC y Buros de Información)</p>
+	</div>
+</footer>
+</html>

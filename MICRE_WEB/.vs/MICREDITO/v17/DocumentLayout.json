@@ -1,0 +1,447 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\T25208\\MICREDITO\\MICRE_WEB\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{84A9E492-C6FD-44E9-A8E1-4EF465B98436}|MICREDITO.BusinessLogic\\MICREDITO.BusinessLogic.csproj|D:\\T25208\\MICREDITO\\MICRE_WEB\\micredito.businesslogic\\solicitudservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84A9E492-C6FD-44E9-A8E1-4EF465B98436}|MICREDITO.BusinessLogic\\MICREDITO.BusinessLogic.csproj|solutionrelative:micredito.businesslogic\\solicitudservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4170A7-6D08-4191-B568-94FDD3D0A566}|MICREDITO.WebSite\\MICREDITO.WebSite.csproj|d:\\t25208\\micredito\\micre_web\\micredito.website\\views\\evaluacion\\view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E4170A7-6D08-4191-B568-94FDD3D0A566}|MICREDITO.WebSite\\MICREDITO.WebSite.csproj|solutionrelative:micredito.website\\views\\evaluacion\\view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4170A7-6D08-4191-B568-94FDD3D0A566}|MICREDITO.WebSite\\MICREDITO.WebSite.csproj|D:\\T25208\\MICREDITO\\MICRE_WEB\\micredito.website\\controllers\\evaluacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E4170A7-6D08-4191-B568-94FDD3D0A566}|MICREDITO.WebSite\\MICREDITO.WebSite.csproj|solutionrelative:micredito.website\\controllers\\evaluacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8192F93-7F41-4F8A-809F-D26001A7160D}|MICREDITO.Common\\MICREDITO.Common.csproj|D:\\T25208\\MICREDITO\\MICRE_WEB\\micredito.common\\util.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8192F93-7F41-4F8A-809F-D26001A7160D}|MICREDITO.Common\\MICREDITO.Common.csproj|solutionrelative:micredito.common\\util.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8192F93-7F41-4F8A-809F-D26001A7160D}|MICREDITO.Common\\MICREDITO.Common.csproj|D:\\T25208\\MICREDITO\\MICRE_WEB\\micredito.common\\managerapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8192F93-7F41-4F8A-809F-D26001A7160D}|MICREDITO.Common\\MICREDITO.Common.csproj|solutionrelative:micredito.common\\managerapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4170A7-6D08-4191-B568-94FDD3D0A566}|MICREDITO.WebSite\\MICREDITO.WebSite.csproj|D:\\T25208\\MICREDITO\\MICRE_WEB\\micredito.website\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{2E4170A7-6D08-4191-B568-94FDD3D0A566}|MICREDITO.WebSite\\MICREDITO.WebSite.csproj|solutionrelative:micredito.website\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84A9E492-C6FD-44E9-A8E1-4EF465B98436}|MICREDITO.BusinessLogic\\MICREDITO.BusinessLogic.csproj|D:\\T25208\\MICREDITO\\MICRE_WEB\\micredito.businesslogic\\refinanciamientocompraservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84A9E492-C6FD-44E9-A8E1-4EF465B98436}|MICREDITO.BusinessLogic\\MICREDITO.BusinessLogic.csproj|solutionrelative:micredito.businesslogic\\refinanciamientocompraservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4170A7-6D08-4191-B568-94FDD3D0A566}|MICREDITO.WebSite\\MICREDITO.WebSite.csproj|D:\\T25208\\MICREDITO\\MICRE_WEB\\micredito.website\\views\\shared\\_excepciones.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E4170A7-6D08-4191-B568-94FDD3D0A566}|MICREDITO.WebSite\\MICREDITO.WebSite.csproj|solutionrelative:micredito.website\\views\\shared\\_excepciones.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7686434D-DD66-4968-9EEC-1EA8D745583B}|MICREDITO.Model\\MICREDITO.Model.csproj|D:\\T25208\\MICREDITO\\MICRE_WEB\\micredito.model\\common\\solicitudmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7686434D-DD66-4968-9EEC-1EA8D745583B}|MICREDITO.Model\\MICREDITO.Model.csproj|solutionrelative:micredito.model\\common\\solicitudmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4170A7-6D08-4191-B568-94FDD3D0A566}|MICREDITO.WebSite\\MICREDITO.WebSite.csproj|D:\\T25208\\MICREDITO\\MICRE_WEB\\micredito.website\\controllers\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E4170A7-6D08-4191-B568-94FDD3D0A566}|MICREDITO.WebSite\\MICREDITO.WebSite.csproj|solutionrelative:micredito.website\\controllers\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4170A7-6D08-4191-B568-94FDD3D0A566}|MICREDITO.WebSite\\MICREDITO.WebSite.csproj|D:\\T25208\\MICREDITO\\MICRE_WEB\\micredito.website\\views\\evaluacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E4170A7-6D08-4191-B568-94FDD3D0A566}|MICREDITO.WebSite\\MICREDITO.WebSite.csproj|solutionrelative:micredito.website\\views\\evaluacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84A9E492-C6FD-44E9-A8E1-4EF465B98436}|MICREDITO.BusinessLogic\\MICREDITO.BusinessLogic.csproj|D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.BusinessLogic\\EvaluacionService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84A9E492-C6FD-44E9-A8E1-4EF465B98436}|MICREDITO.BusinessLogic\\MICREDITO.BusinessLogic.csproj|solutionrelative:MICREDITO.BusinessLogic\\EvaluacionService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4170A7-6D08-4191-B568-94FDD3D0A566}|MICREDITO.WebSite\\MICREDITO.WebSite.csproj|D:\\T25208\\MICREDITO\\MICRE_WEB\\micredito.website\\views\\shared\\_datossolicitud.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E4170A7-6D08-4191-B568-94FDD3D0A566}|MICREDITO.WebSite\\MICREDITO.WebSite.csproj|solutionrelative:micredito.website\\views\\shared\\_datossolicitud.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4170A7-6D08-4191-B568-94FDD3D0A566}|MICREDITO.WebSite\\MICREDITO.WebSite.csproj|D:\\T25208\\MICREDITO\\MICRE_WEB\\micredito.website\\views\\solicitud\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E4170A7-6D08-4191-B568-94FDD3D0A566}|MICREDITO.WebSite\\MICREDITO.WebSite.csproj|solutionrelative:micredito.website\\views\\solicitud\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4170A7-6D08-4191-B568-94FDD3D0A566}|MICREDITO.WebSite\\MICREDITO.WebSite.csproj|D:\\T25208\\MICREDITO\\MICRE_WEB\\micredito.website\\controllers\\base\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E4170A7-6D08-4191-B568-94FDD3D0A566}|MICREDITO.WebSite\\MICREDITO.WebSite.csproj|solutionrelative:micredito.website\\controllers\\base\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4170A7-6D08-4191-B568-94FDD3D0A566}|MICREDITO.WebSite\\MICREDITO.WebSite.csproj|D:\\T25208\\MICREDITO\\MICRE_WEB\\micredito.website\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E4170A7-6D08-4191-B568-94FDD3D0A566}|MICREDITO.WebSite\\MICREDITO.WebSite.csproj|solutionrelative:micredito.website\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4170A7-6D08-4191-B568-94FDD3D0A566}|MICREDITO.WebSite\\MICREDITO.WebSite.csproj|D:\\T25208\\MICREDITO\\MICRE_WEB\\micredito.website\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E4170A7-6D08-4191-B568-94FDD3D0A566}|MICREDITO.WebSite\\MICREDITO.WebSite.csproj|solutionrelative:micredito.website\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4170A7-6D08-4191-B568-94FDD3D0A566}|MICREDITO.WebSite\\MICREDITO.WebSite.csproj|D:\\T25208\\MICREDITO\\MICRE_WEB\\micredito.website\\views\\shared\\_evaluacionpersona.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E4170A7-6D08-4191-B568-94FDD3D0A566}|MICREDITO.WebSite\\MICREDITO.WebSite.csproj|solutionrelative:micredito.website\\views\\shared\\_evaluacionpersona.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3FF0974-96FC-4A25-997E-FEF1B363BD80}|BCP.CROSS.LOGGER\\BCP.CROSS.LOGGER.csproj|d:\\t25208\\micredito\\micre_web\\bcp.cross.logger\\extension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3FF0974-96FC-4A25-997E-FEF1B363BD80}|BCP.CROSS.LOGGER\\BCP.CROSS.LOGGER.csproj|solutionrelative:bcp.cross.logger\\extension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3FF0974-96FC-4A25-997E-FEF1B363BD80}|BCP.CROSS.LOGGER\\BCP.CROSS.LOGGER.csproj|d:\\t25208\\micredito\\micre_web\\bcp.cross.logger\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3FF0974-96FC-4A25-997E-FEF1B363BD80}|BCP.CROSS.LOGGER\\BCP.CROSS.LOGGER.csproj|solutionrelative:bcp.cross.logger\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3FF0974-96FC-4A25-997E-FEF1B363BD80}|BCP.CROSS.LOGGER\\BCP.CROSS.LOGGER.csproj|d:\\t25208\\micredito\\micre_web\\bcp.cross.logger\\loggeroptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3FF0974-96FC-4A25-997E-FEF1B363BD80}|BCP.CROSS.LOGGER\\BCP.CROSS.LOGGER.csproj|solutionrelative:bcp.cross.logger\\loggeroptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 24,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ManagerApi.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.Common\\ManagerApi.cs",
+              "RelativeDocumentMoniker": "MICREDITO.Common\\ManagerApi.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.Common\\ManagerApi.cs",
+              "RelativeToolTip": "MICREDITO.Common\\ManagerApi.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T19:35:40.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EvaluacionController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.WebSite\\Controllers\\EvaluacionController.cs",
+              "RelativeDocumentMoniker": "MICREDITO.WebSite\\Controllers\\EvaluacionController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.WebSite\\Controllers\\EvaluacionController.cs",
+              "RelativeToolTip": "MICREDITO.WebSite\\Controllers\\EvaluacionController.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAowF4AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T14:21:45.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SolicitudService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.BusinessLogic\\SolicitudService.cs",
+              "RelativeDocumentMoniker": "MICREDITO.BusinessLogic\\SolicitudService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.BusinessLogic\\SolicitudService.cs",
+              "RelativeToolTip": "MICREDITO.BusinessLogic\\SolicitudService.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAtwFoAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T23:37:26.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RefinanciamientoCompraService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.BusinessLogic\\RefinanciamientoCompraService.cs",
+              "RelativeDocumentMoniker": "MICREDITO.BusinessLogic\\RefinanciamientoCompraService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.BusinessLogic\\RefinanciamientoCompraService.cs",
+              "RelativeToolTip": "MICREDITO.BusinessLogic\\RefinanciamientoCompraService.cs",
+              "ViewState": "AQIAAJMAAAAAAAAAAAArwKQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T20:53:07.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "View.cshtml",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.WebSite\\Views\\Evaluacion\\View.cshtml",
+              "RelativeDocumentMoniker": "MICREDITO.WebSite\\Views\\Evaluacion\\View.cshtml",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.WebSite\\Views\\Evaluacion\\View.cshtml",
+              "RelativeToolTip": "MICREDITO.WebSite\\Views\\Evaluacion\\View.cshtml",
+              "ViewState": "AQIAABkBAAAAAAAAAAAAACsBAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-23T22:40:44.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Extension.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_WEB\\BCP.CROSS.LOGGER\\Extension.cs",
+              "RelativeDocumentMoniker": "BCP.CROSS.LOGGER\\Extension.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_WEB\\BCP.CROSS.LOGGER\\Extension.cs",
+              "RelativeToolTip": "BCP.CROSS.LOGGER\\Extension.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T16:31:33.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.WebSite\\Web.config",
+              "RelativeDocumentMoniker": "MICREDITO.WebSite\\Web.config",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.WebSite\\Web.config",
+              "RelativeToolTip": "MICREDITO.WebSite\\Web.config",
+              "ViewState": "AQIAACcAAAAAAAAAAAD4v0AAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-09-04T17:07:46.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ErrorController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.WebSite\\Controllers\\ErrorController.cs",
+              "RelativeDocumentMoniker": "MICREDITO.WebSite\\Controllers\\ErrorController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.WebSite\\Controllers\\ErrorController.cs",
+              "RelativeToolTip": "MICREDITO.WebSite\\Controllers\\ErrorController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T13:36:33.571Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Util.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.Common\\Util.cs",
+              "RelativeDocumentMoniker": "MICREDITO.Common\\Util.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.Common\\Util.cs",
+              "RelativeToolTip": "MICREDITO.Common\\Util.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T04:49:56.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_excepciones.cshtml",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.WebSite\\Views\\Shared\\_excepciones.cshtml",
+              "RelativeDocumentMoniker": "MICREDITO.WebSite\\Views\\Shared\\_excepciones.cshtml",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.WebSite\\Views\\Shared\\_excepciones.cshtml",
+              "RelativeToolTip": "MICREDITO.WebSite\\Views\\Shared\\_excepciones.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T14:56:53.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Logger.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_WEB\\BCP.CROSS.LOGGER\\Logger.cs",
+              "RelativeDocumentMoniker": "BCP.CROSS.LOGGER\\Logger.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_WEB\\BCP.CROSS.LOGGER\\Logger.cs",
+              "RelativeToolTip": "BCP.CROSS.LOGGER\\Logger.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T16:31:24.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "LoggerOptions.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_WEB\\BCP.CROSS.LOGGER\\LoggerOptions.cs",
+              "RelativeDocumentMoniker": "BCP.CROSS.LOGGER\\LoggerOptions.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_WEB\\BCP.CROSS.LOGGER\\LoggerOptions.cs",
+              "RelativeToolTip": "BCP.CROSS.LOGGER\\LoggerOptions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T16:31:31.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SolicitudModel.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.Model\\Common\\SolicitudModel.cs",
+              "RelativeDocumentMoniker": "MICREDITO.Model\\Common\\SolicitudModel.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.Model\\Common\\SolicitudModel.cs",
+              "RelativeToolTip": "MICREDITO.Model\\Common\\SolicitudModel.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAnwB8AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T15:04:05.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.WebSite\\Views\\Evaluacion\\Index.cshtml",
+              "RelativeDocumentMoniker": "MICREDITO.WebSite\\Views\\Evaluacion\\Index.cshtml",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.WebSite\\Views\\Evaluacion\\Index.cshtml",
+              "RelativeToolTip": "MICREDITO.WebSite\\Views\\Evaluacion\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-10T18:49:12.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.WebSite\\Views\\Solicitud\\Index.cshtml",
+              "RelativeDocumentMoniker": "MICREDITO.WebSite\\Views\\Solicitud\\Index.cshtml",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.WebSite\\Views\\Solicitud\\Index.cshtml",
+              "RelativeToolTip": "MICREDITO.WebSite\\Views\\Solicitud\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-04T13:40:11.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EvaluacionService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.BusinessLogic\\EvaluacionService.cs",
+              "RelativeDocumentMoniker": "MICREDITO.BusinessLogic\\EvaluacionService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.BusinessLogic\\EvaluacionService.cs",
+              "RelativeToolTip": "MICREDITO.BusinessLogic\\EvaluacionService.cs",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAcwEoAAABfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T16:35:15.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_DatosSolicitud.cshtml",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.WebSite\\Views\\Shared\\_DatosSolicitud.cshtml",
+              "RelativeDocumentMoniker": "MICREDITO.WebSite\\Views\\Shared\\_DatosSolicitud.cshtml",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.WebSite\\Views\\Shared\\_DatosSolicitud.cshtml",
+              "RelativeToolTip": "MICREDITO.WebSite\\Views\\Shared\\_DatosSolicitud.cshtml",
+              "ViewState": "AQIAAJYAAAAAAAAAAAAAAJsAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-23T20:16:04.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.WebSite\\Controllers\\Base\\BaseController.cs",
+              "RelativeDocumentMoniker": "MICREDITO.WebSite\\Controllers\\Base\\BaseController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.WebSite\\Controllers\\Base\\BaseController.cs",
+              "RelativeToolTip": "MICREDITO.WebSite\\Controllers\\Base\\BaseController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAIAwwCoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T20:46:33.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.WebSite\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MICREDITO.WebSite\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.WebSite\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MICREDITO.WebSite\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T13:36:24.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.WebSite\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "MICREDITO.WebSite\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.WebSite\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "MICREDITO.WebSite\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T23:05:16.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_EvaluacionPersona.cshtml",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.WebSite\\Views\\Shared\\_EvaluacionPersona.cshtml",
+              "RelativeDocumentMoniker": "MICREDITO.WebSite\\Views\\Shared\\_EvaluacionPersona.cshtml",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_WEB\\MICREDITO.WebSite\\Views\\Shared\\_EvaluacionPersona.cshtml",
+              "RelativeToolTip": "MICREDITO.WebSite\\Views\\Shared\\_EvaluacionPersona.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-10T20:10:11.729Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

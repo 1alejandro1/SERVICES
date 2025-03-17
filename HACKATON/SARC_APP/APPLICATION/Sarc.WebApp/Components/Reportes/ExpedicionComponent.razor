@@ -1,0 +1,59 @@
+﻿@using BCP.CROSS.MODELS.Reportes
+<div class="row align-content-center">
+    <div class="col-12">
+        <h4><strong>REPORTE EXPEDICION</strong></h4>
+    </div>
+    <div class="col-10">
+        <table class="table table-hover table-borderless">
+            <thead>
+                <tr class="text-uppercase">
+                    <th class="table-tomato">NRO</th>
+                    <th class="table-tomato">FEC EXP</th>
+                    <th class="table-tomato">FEC EMI</th>
+                    <th class="table-tomato">NRO CASO</th>
+                    <th class="table-tomato">NOMBRE</th>
+                    <th class="table-tomato">DIRECCION</th>
+                    <th class="table-tomato">TELEFONO</th>
+                    <th class="table-tomato">SUCURSAL</th>
+                    <th class="table-tomato">RETENCION</th>
+                    <th class="table-tomato">USUARIO</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (ExpedicionModel item in Data)
+                {
+                    <tr>
+                        <th scope="row" class="table-light">@item.Nro</th>
+                        <td class="table-light">@item.FecExp</td>
+                        <td class="table-light">@item.FecEmi</td>
+                        <td class="table-light">@item.Carta</td>
+                        <td class="table-light">@item.Nombre</td>
+                        <td class="table-light">@item.Direccion</td>
+                        <td class="table-light">@item.Telefono</td>
+                        <td class="table-light">@item.Sucursal</td>
+                        <td class="table-light">@item.Retencion</td>
+                        <td class="table-light">@item.Usuario</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public List<ExpedicionModel> Data { get; set; }
+}
+<style lang="css">
+    .table-tomato {
+        background-color: tomato !important;
+        color: white !important;
+        vertical-align: middle;
+    }
+
+    .table-midnightblue {
+        background-color: midnightblue !important;
+        color: white !important;
+        vertical-align: middle;
+    }
+</style>

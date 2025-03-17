@@ -1,0 +1,1328 @@
+﻿
+@model MICREDITO.Model.EvaluacionCuantitativa
+
+@{
+    ViewBag.Title = "View";
+    var user = (MICREDITO.Authentication.UserMain)User;
+    var identity = (MICREDITO.Authentication.UserIdentity)user.Identity;
+}
+
+@if (!Model.nuevo)
+{
+    if (Model.codSolicitud != 0)
+    {
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top nav-second">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbar2">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a id="btnActualizar" class="nav-link" href="#">Actualizar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    }
+}
+<div class="container body-content">
+    <h2>Evaluacion</h2>
+
+    <!--NUEVO MODAL-->
+    <div class="modal fade" id="consultaCuentaModal" tabindex="-1" role="dialog" aria-labelledby="consultaCuentaModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="consultaCuentaModalLabel">CONSULTA NUMERO DE CUENTA</h5>
+                </div>
+                <div class="modal-body">
+                    @using (Html.BeginForm("ConsultaCuenta", "Evaluacion", FormMethod.Post, new { id = "consultaCuentaForm" }))
+                    {
+                        @Html.HiddenFor(m => m.desembolso.matricula)
+                        @Html.HiddenFor(m => m.desembolso.numSolicitud)
+
+                        <div class="form-group label-content">
+                            @Html.TextBoxFor(m => m.desembolso.cuentaSelecionada, new { @class = "form-control", id = "IdTextBox", placeholder = "EJ: XXX-XXXXXXXX-X-XX" })
+
+                        </div>
+                        <button class="btn btn-primary" id="BtnSubmitConsultaCuenta" type="submit">CONSULTA CTA</button>
+                        @*<button class="btn btn-primary" id="BtnSubmitConsultaCuenta" type="submit">AGREGAR</button>*@
+                        <button id="addToList" class="btn btn-primary">AGREGAR CTA</button>
+                    }
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="custom-button btn btn-secondary close" data-dismiss="modal" aria-label="Close">
+                        CERRAR
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tabs">
+        <ul class="tab-links">
+            <li class="tabActive"><a href="#tab1">TITULAR</a></li>
+            @if (Model.garantia)
+            {
+                <li><a href="#tab2">GARANTE</a></li>
+            }
+            <li><a href="#tab3">RESUMEN</a></li>
+            @if (!Model.nuevo)
+            {
+                if (Model.codSolicitud != 0)
+                {
+                    <li><a href="#tab6">DATOS SOLICITUD</a></li>
+                    <li><a href="#tab9">EXCEPCIONES</a></li>
+                }
+                <li><a href="#tab4">DATOS TITULAR</a></li>
+                if (Model.garantia)
+                {
+                    <li><a href="#tab5">DATOS GARANTE</a></li>
+                }
+                <!--AGREGO NUEVAS VENTANAS-->
+                if (Model.FLAG_SCORE_MICROCREDITO == "S")
+                {
+                    if (Model.codSolicitud != 0)
+                    {
+                        <li id="registroInventario" style="display: none;"><a href="#tab8">REGISTRO INVENTARIO</a></li>
+                        <li id="registroDesembolso" style="display: none;"><a href="#tab7">DESEMBOLSO</a></li>
+                    }
+                }
+            }
+        </ul>
+        <div class="tab-content">
+            <div id="tab1" class="tab active">
+                @Html.Partial("_EvaluacionPersona", Model.titular)
+            </div>
+            @if (Model.garantia)
+            {
+                <div id="tab2" class="tab">
+                    @Html.Partial("_EvaluacionPersona", Model.garante)
+                </div>
+            }
+            <div id="tab3" class="tab">
+                <div>
+                    <label>INFORMACION INICIAL</label><br />
+                    <div class="layout-card">
+                        <div class="row">
+                            <div class="form-group label-content col_3">
+                                <label>CI CLIENTE</label><br />
+                                @Model.resumen.nroDocumento
+                            </div>
+                            <div class="form-group label-content col_3">
+                                <label>EXTENSION</label><br />
+                                @Model.resumen.extensionDocumento
+                            </div>
+                            <div class="form-group label-content col_3">
+                                <label>TIPO DE VIVIENDA</label><br />
+                                @Model.resumen.tipoVivienda
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group label-content col_3">
+                                <label>NRO DEPENDIENTES</label><br />
+                                @Model.resumen.nroDependientes
+                            </div>
+                            <div class="form-group label-content col_3">
+                                <label>BANCARIZADO</label><br />
+                                @(Model.resumen.bancarizada ? "SI" : "NO")
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label>INFORMACION DATA ENTRY</label><br />
+                    <div class="layout-card">
+                        <div class="row">
+                            <div class="form-group label-content col_3">
+                                <label>VENTAS</label><br />
+                                @Model.resumen.ventas.ToString("#,#0.00")
+                            </div>
+                            <div class="form-group label-content col_3">
+                                <label>PATRIMONIO</label><br />
+                                @Model.resumen.patrimonio.ToString("#,#0.00")
+                            </div>
+                            <div class="form-group label-content col_3">
+                                <label>NRO PERSONAS OCUPADAS</label><br />
+                                @Model.resumen.nroPersonasOcupadas
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group label-content col_3">
+                                <label>SECTOR ECONOMICO</label><br />
+                                @Model.resumen.sectorEconomico
+                            </div>
+                            <div class="form-group label-content col_3">
+                                <label>ACTIVOS</label><br />
+                                @Model.resumen.activos.ToString("#,#0.00")
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label>DATOS DE LA OPERACION</label><br />
+                    <div class="layout-card">
+                        <div class="row">
+                            <div class="form-group label-content col_4">
+                                <label>TIPO DE CREDITO</label><br />
+                                @Model.resumen.tipoCredito
+                            </div>
+                            <div class="form-group label-content col_4">
+                                <label>CIIU DESTINO DE CREDITO</label><br />
+                                @Model.resumen.ciiuDestinoCredito
+                            </div>
+                            <div class="form-group label-content col_4">
+                                <label>FINALIDAD</label><br />
+                                @Model.resumen.finalidad
+                            </div>
+                            <div class="form-group label-content col_4">
+                                <label>MATRICULA OFICIAL</label><br />
+                                @Model.resumen.matriculaOficial
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group label-content col_4">
+                                <label>MONTO</label><br />
+                                @Model.resumen.monto.ToString("#,#0.00")
+                            </div>
+                            <div class="form-group label-content col_4">
+                                <label>PLAZO</label><br />
+                                @Model.resumen.plazo
+                            </div>
+                            <div class="form-group label-content col_4">
+                                <label>TASA</label><br />
+                                @Model.resumen.tasa.ToString("#,#0.00") %
+                            </div>
+                            <div class="form-group label-content col_4">
+                                <label>DIA DE PAGO</label><br />
+                                @Model.resumen.diaPago
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group label-content col_4">
+                                <label>CPOP</label><br />
+                                @Model.resumen.cpop
+                            </div>
+                            <div class="form-group label-content col_4">
+                                <label>TIPO DESGRAVAMEN</label><br />
+                                @Model.credito.CapitalConstante
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label>GARANTIA</label><br />
+                    <div class="layout-card">
+                        <div class="row">
+                            <div class="form-group label-content col_2">
+                                <label>CODIGO GARANTIA</label><br />
+                                @Model.resumen.codigoGarantia
+                            </div>
+                            <div class="form-group label-content col_2">
+                                <label>MONTO</label><br />
+                                @Model.resumen.garantiaMonto.ToString("#,#0.00")
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group label-content col_1">
+                                <label>DESCRIPCION</label><br />
+                                @Model.resumen.garantiaDescripcion
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label>DECISION</label><br />
+                    <div class="layout-card">
+                        <div class="row">
+                            <div class="form-group label-content col_1">
+                                <label>EXCEPCIONES</label><br />
+
+                                @if (Model.resumen.excepciones.Count > 0)
+                                {
+                                    foreach (var item in Model.resumen.excepciones)
+                                    {
+                                        <div>@item</div>
+                                    }
+                                }
+                                else
+                                {
+                                    <div class="alert alert-info alert-dismissible fade show" role="alert">
+                                        OPERACION SIN EXCEPCIONES
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @if (Model.garantia)
+                {
+                    <div>
+                        <label>GARANTE</label><br />
+                        <div class="layout-card">
+                            <div class="row">
+                                <div class="form-group label-content col_4">
+                                    <label>CI GARANTE</label><br />
+                                    @Model.resumen.nroDocumentoGarantia
+                                </div>
+                                <div class="form-group label-content col_4">
+                                    <label>EXT</label><br />
+                                    @Model.resumen.extensionDocumentoGarantia
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            @if (!Model.nuevo)
+            {
+                if (Model.codSolicitud != 0)
+                {
+                    <div id="tab6" class="tab">
+                        @Html.Partial("_DatosSolicitud", Model.solicitud)
+                    </div>
+                    <div id="tab9" class="tab">
+                        @Html.Partial("_excepciones", Model.excepcionResponseIdc)
+                    </div>
+                }
+                <div id="tab4" class="tab">
+                    @if (string.IsNullOrEmpty(ViewBag.mensajeTitular))
+                    {
+                        @Html.Partial("_DatosInfocliente", Model.datosTitular)
+                    }
+                    else
+                    {
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            @ViewBag.mensajeTitular
+                        </div>
+                    }
+                </div>
+                if (Model.garantia)
+                {
+                    <div id="tab5" class="tab">
+                        @if (string.IsNullOrEmpty(ViewBag.mensajeGarante))
+                        {
+                            @Html.Partial("_DatosInfocliente", Model.datosGarante)
+                        }
+                        else
+                        {
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                @ViewBag.mensajeGarante
+                            </div>
+                        }
+                    </div>
+                }
+                <!--Agrego nuevas pantallas-->
+
+                if (Model.FLAG_SCORE_MICROCREDITO == "S")
+                {
+                    <div id="tab7" class="tab">
+                        @if (string.IsNullOrEmpty(ViewBag.mensajeGarante))
+                        {
+                            @Html.Partial("_ContratoCronograma", Model.desembolso)
+                        }
+                        else
+                        {
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                @ViewBag.mensajeGarante
+                            </div>
+                        }
+                    </div>
+
+                    <div id="tab8" class="tab">
+                        @if (string.IsNullOrEmpty(ViewBag.mensajeGarante))
+                        {
+                            @Html.Partial("_Inventario", Model.inventario)
+                        }
+                        else
+                        {
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                @ViewBag.mensajeGarante
+                            </div>
+                        }
+                    </div>
+                }
+
+
+            }
+        </div>
+    </div>
+    @if (Model.nuevo)
+    {
+        using (Html.BeginForm("Save", "Evaluacion", FormMethod.Post))
+        {
+            <div>
+                @Html.HiddenFor(m => m.json)
+                <button type="submit" class="btn btn-block btn-primary">GUARDAR</button>
+            </div>
+        }
+    }
+
+
+    @if (identity.Data.servicio == "MICJFC" && !string.IsNullOrEmpty(Model.nroEvaluacion))
+    {
+        if (Model.codSolicitud == 0)
+        {
+            <div class="row align-items-end">
+                @if (ViewBag.error != true)
+                {
+                    <div class="col-sm">
+
+                        @using (Html.BeginForm("APROBAR", "Evaluacion", FormMethod.Post))
+                        {
+                            <!--AGREGO COMBO PARA SELECIONAR EL SEGURO DESGRAVAMEN TRADICIONAL/PLUS-->
+                            @*<div>
+                                    <label>SEGURO DESGRAVAMEN</label><br />
+                                    <div class="layout-card">
+                                        <div class="row">
+                                            <div class="form-group label-content col_2">
+                                                <label>SELECIONE DESGRAVAMEN</label><br />
+                                                @Html.DropDownListFor(m => m.SeguroDesgravamen, Model.LstSeguroDesgravamen.Select(x => new SelectListItem { Text = x.descripcion, Value = x.codTipoSeguro }), new { @class = "form-control" })
+
+                                            </div>
+                                            <div class="form-group label-content col_2">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group label-content col_1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>*@
+                            @Html.HiddenFor(m => m.credito.CapitalConstante)
+                            @Html.HiddenFor(m => m.nroEvaluacion)
+                            @Html.HiddenFor(m => m.json)
+                            <button type="submit" class="btn btn-block btn-success">APROBAR</button>
+                        }
+                    </div>
+                }
+                <div class="col-sm">
+                    @using (Html.BeginForm("Rechazar", "Evaluacion", FormMethod.Post))
+                    {
+                        @Html.HiddenFor(m => m.nroEvaluacion)
+                        @Html.HiddenFor(m => m.json)
+                        <button type="submit" class="btn btn-block btn-danger">RECHAZAR</button>
+                    }
+                </div>
+            </div>
+        }
+    }
+</div>
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            GetTipoProducto($('#codTipoCredito').val());
+            GetTipoOperacion();
+            RulesMonto();
+            RulesPlazo();
+            RulesDiaPago();
+            $('#dvCompraRefinanciamiento').hide();
+            $('#refinanciamiento').hide();
+            $('input[data-val=True]').on('blur', function () {
+                var value = $(this).valid();
+            });
+
+            jQuery.extend(jQuery.validator.methods, {
+                number: function (value, element) {
+                    return this.optional(element)
+                        || /^-?(?:\d+|\d{1,3}(?:\.\d{3})+)(?:,\d+)?$/.test(value)
+                        || /^-?(?:\d+|\d{1,3}(?:,\d{3})+)(?:\.\d+)?$/.test(value);
+                },
+                range: function (value, element, param) {
+                    var _value = parseFloat(value.replace(',', ''));
+                    return this.optional(element) || (_value >= Number(param[0]) && _value <= Number(param[1]));
+                }
+            });
+            var checkboxCompra = document.getElementById('cbCompraRef');
+            if (checkboxCompra.checked) {
+                model.cbCompraRef = true;
+            }
+            else
+            {
+                model.cbCompraRef = false;
+            }
+        });
+
+        function GetTipoProducto(value) {
+            if (value == "704" || value == "705") {
+                $("select[name=destinoCredito]").hide();
+                $("label[data-label='tipoDestinoCredito']").hide();
+
+                $('select[name=destinoCredito]').val(1);
+
+            } else {
+                $("select[name=destinoCredito]").show();
+                $("label[data-label='tipoDestinoCredito']").show();
+            }
+
+            if (value == "705") {
+                $("select[name=finalidadCredito]").prop("disabled", false);
+            } else {
+                $("select[name=finalidadCredito]").prop("disabled", true);
+            }
+        }
+        function validateDecimal(input) {
+            const decimalPattern = /^[0-9]*\.?[0-9]+$/;
+            const errorMessage = document.getElementById('error-messageCompra');
+
+            if (decimalPattern.test(input.value)) {
+                errorMessage.style.display = 'none';
+                input.style.borderColor = '';
+            } else {
+                errorMessage.style.display = 'inline';
+                input.style.borderColor = 'red';
+            }
+        }
+        function GetTipoOperacion() {
+            $("#refinanciamiento").empty();
+            var value = $('#tipoOperacion').val();
+            var request = new Object();
+            request.codSolicitud = $("#codSolicitud").val();
+            var model = request;
+            if (value == 3 || value == 5) {
+                $.ajax({
+                    url: '@Url.Action("GetDeudasInternas", "Evaluacion")',
+                    type: 'POST',
+                    cache: false,
+                    data: model
+                }).done(function (result) {
+                    if (result.mensaje != "") {
+                        $("#refinanciamiento").append('<div class="alert alert-danger alert-dismissible fade show" role="alert"><strong>ALERTA!</strong> NO SE ENCONTRARON DEUDAS DEL CLIENTE.<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
+                    } else {
+                        var monto = 0;
+                        var html = '<label>TITULAR</label>';
+
+                        html += '<div class="table-responsive"><table class="table table-bordered">';
+                        html += '<thead><tr><th></th><th>OPERACION</th><th>MONEDA</th><th>MONTO</th></thead><tbody>';
+                        $.each(result.titular, function (index, row) {
+                            if (row.Monto > 0) {
+                                html += '<tr>';
+                                if (row.Activo == true) {
+                                    html += '<td><input id="checkboxRefi" name="chkRefinanciamiento[]" type="checkbox" onchange="TotalRefinanciamiento()" checked></td>';
+                                    monto += parseFloat(row.Monto);
+                                } else {
+                                    html += '<td><input id="checkboxRefi" name="chkRefinanciamiento[]" type="checkbox" onchange="TotalRefinanciamiento()"></td>';
+                                }
+                                html += '<td>' + row.NumeroOperacion + '</td>';
+                                html += '<td>' + row.Moneda + '</td>';
+                                html += '<td align="right">' + numeral(row.Monto).format('0,0.00') + '</td>';
+                                html += '</tr>';
+                            }
+                        });
+                        html += '</tbody></table></div>';
+
+                        if (result.conyuge.length > 0) {
+                            html += '<label>CONYUGE</label>';
+                            html += '<div class="table-responsive"><table class="table table-bordered">';
+                            html += '<thead><tr><th></th><th>OPERACION</th><th>MONEDA</th><th>MONTO</th></thead><tbody>';
+                            $.each(result.conyuge, function (index, row) {
+                                if (row.Monto > 0) {
+                                    html += '<tr>';
+                                    if (row.Activo == true) {
+                                        html += '<td><input id="checkboxRefi" name="chkRefinanciamiento[]" type="checkbox" onchange="TotalRefinanciamiento()" checked></td>';
+                                        monto += parseFloat(row.Monto);
+                                    } else {
+                                        html += '<td><input id="checkboxRefi" name="chkRefinanciamiento[]" type="checkbox" onchange="TotalRefinanciamiento()"></td>';
+                                    }
+                                    html += '<td>' + row.NumeroOperacion + '</td>';
+                                    html += '<td>' + row.Moneda + '</td>';
+                                    html += '<td align="right">' + numeral(row.Monto).format('0,0.00') + '</td>';
+                                    html += '</tr>';
+                                }
+                            });
+                            html += '</tbody></table></div>';
+                        }
+                        $("#compreDeuda_monto").val(numeral(monto).format('0,0.00'));
+                        $("#refinanciamiento").append(html);
+                    }
+                });
+            }
+            if (value == 1 || value == 2) {
+                $('#compreDeuda_monto').prop("disabled", false);
+            } else {
+                $("#compreDeuda_monto").val(numeral(0).format('0,0.00'));
+                $('#compreDeuda_monto').prop("disabled", true);
+            }
+        }
+
+        $('#FormDatosSolicitud').submit(function (event) {
+            event.preventDefault();
+            return false;
+        });
+
+        $('.tabs .tab-links a').on('click', function (e) {
+            var currentAttrValue = $(this).attr('href');
+            $('.tabs ' + currentAttrValue).show().siblings().hide();
+            $(this).parent('li').addClass('tabActive').siblings().removeClass('tabActive');
+            e.preventDefault();
+        });
+
+        $('.cardTabs a').click(function () {
+            var li = $(this).parent().parent();
+            li.children('li').removeClass('active');
+            $(this).parent().addClass('active');
+        });
+
+        $('#tipoOperacion').change(function () {
+            GetTipoOperacion();
+        })
+
+        $('#codTipoCredito').change(function () {
+            var value = $(this).val();
+            var url = '@Url.Action("GetListTipoCredito", "Evaluacion")';
+            $.get(url, { tipoCredito: value }, function (data) {
+                $("select[name=finalidadCredito]").empty();
+                $.each(data, function (index, row) {
+                    $("select[name=finalidadCredito]").append("<option value='" + row.Value + "'>" + row.Text + "</option>")
+                    $("select[name=finalidadCredito]").children('option:first-child').attr("selected", "selected")
+                });
+            });
+            GetTipoProducto(value);
+        })
+        $(document).ready(function () {
+            $('#cbCompraRef').change(function () {
+                if ($(this).is(':checked')) {
+                    $('#dvCompraRefinanciamiento').show();
+                    $('#refinanciamiento').show();
+                    $('#compreDeuda_monto').val("");
+                    $('#tipoOperacion').val("0");
+                } else {
+                    $('#dvCompraRefinanciamiento').hide();
+                    $('#refinanciamiento').hide();
+                    $("#refinanciamiento").empty();
+                }
+            });
+        });
+        function TotalRefinanciamiento() {
+            var totalMonto = 0;
+            $("#refinanciamiento input[type=checkbox]:checked").each(function () {
+                var item = $(this).parents('tr').children().eq(3).text();
+                totalMonto += parseFloat(item.replace(',', ''));
+            });
+            $("#compreDeuda_monto").val(numeral(totalMonto).format('0,0.00'));
+        };
+
+        $('select').on('change', function () {
+            $(this).children().removeAttr("selected")
+            $(this).children('option[value=' + this.value + ']').attr("selected", "selected")
+
+        })
+
+        $('#btnActualizar').click(function () {
+            var value = $('#FormDatosSolicitud').valid();
+            if (value == true) {
+                var model = new Object();
+                let message = "";
+                model.codSolicitud = $("#codSolicitud").val();
+                model.nroSolicitud = $("#nroSolicitud").val();
+                model.monto = parseFloat($("#monto").val().replace(',', ''));
+                model.plazo = parseInt($("#plazo").val());
+                model.diaPago = parseInt($("#diaPago").val());
+                //
+                model.codSeguroDesgravamen = $("select[name='getDesgravamen.nemonico']").val();
+                //
+                if ($("#flagRecalcular").val() == "false") {
+                    model.tasa = parseFloat($("#tasa").val().replace(',', ''));
+                    model.primeraCuota = parseFloat($("#primeraCuota").val().replace(',', ''));
+                    model.cuota = parseFloat($("#cuota").val().replace(',', ''));
+                    model.fechaPrimerPago = $("#fechaPrimerPago").val();
+                    model.cpop = $("#cpop").val();
+                } else {
+                    var select = $('#contentOfertas input[name="chk[]"]:checked').parents('tr').children();
+                    if (select.length == 0) {
+                        message = "AL RECALCULAR DEBE SELECCIONAR UNA OFERTA.";
+                    } else {
+                        model.tasa = parseFloat(select.eq(4).text());
+                        model.primeraCuota = parseFloat(select.eq(5).text().replace(',', ''));;
+                        model.cuota = parseFloat(select.eq(6).text().replace(',', ''));
+                        model.fechaPrimerPago = select.eq(7).text();
+                        model.cpop = select.eq(9).text();
+                    }
+                }
+                model.codTipoCredito = $("#codTipoCredito").val();
+                model.tipoCredito = $("#codTipoCredito option:selected").text();
+                model.codDestinoCredito = $("#destinoCredito").val();
+                model.finalidad = $("#finalidadCredito").val();
+                model.indiceEmpresa = parseFloat($("#indiceEmpresa").val().replace(',', ''));
+                model.codOperacion = parseInt($("#tipoOperacion").val());
+                model.operacion = new Object();
+                model.operacion.monto = $('#compreDeuda_monto').val();
+                $('#cbCompraRef').change(function () {
+                    if ($(this).is(':checked')) {
+                        model.cbCompraRef = true;
+                    } else {
+                        model.cbCompraRef = false;
+                    }
+                });
+                if (model.codOperacion != 0) {
+                    var monto = parseFloat(model.operacion.monto.replace(',', ''));
+                    if (model.codOperacion == 2) {
+                        monto = monto * 6.86;
+                    }
+                    if (monto <= 0) {
+                        message = "AL SER UNA OPERACION DE COMPRA O REFINANCIAMIENTO, EL MONTO TIENE QUE SER MAYOR A 0.";
+                    }
+                    if (monto > model.monto) {
+                        message = "EL MONTO DE COMPRA O REFINANCIAMIENTO NO PUEDE SER MAYOR AL MONTO DEL DESEMBOLSO.";
+                    }
+                    var checkboxCompra = document.getElementById('cbCompraRef');
+                    if (checkboxCompra.checked) {
+                        model.cbCompraRef = true;
+                        if (($('#compreDeuda_monto').val()) === "") {
+                            message = "EL MONTO DE COMPRA NO PUEDE SER VACIO.";
+                        }
+                    }
+                    else
+                    {
+                        model.cbCompraRef = false;
+                    }
+                }
+                if (model.codOperacion == 3 || model.codOperacion == 5) {
+                    model.operacion.monto = $('#compreDeuda_monto').val();
+                    if (model.operacion.monto = "") {
+                        model.operacion.monto = 0;
+                    }
+                    model.operacion.lstRefinanciamiento = new Array();
+                    $("#refinanciamiento input[type=checkbox]:checked").each(function () {
+                        var item = $(this).parents('tr').children();
+                        var _item = new Object();
+                        _item.nroOperacion = item.eq(1).text();
+                        _item.monto = parseFloat(item.eq(3).text().replace(',', ''));
+                        model.operacion.lstRefinanciamiento.push(_item);
+                    });
+                }
+                if (message == "") {
+                    $.ajax({
+                        url: '@Url.Action("Guardar", "Evaluacion")',
+                        type: 'POST',
+                        cache: false,
+                        data: model
+                    }).done(function (result) {
+                        $('.loading').hide();
+
+                        var tasa = numeral(model.tasa).format('0,0.00');
+                        var primeraCuota = numeral(model.primeraCuota).format('0,0.00');
+                        var cuota = numeral(model.cuota).format('0,0.00');
+
+                        $("#tasa").val(tasa);
+                        $("#primeraCuota").val(primeraCuota);
+                        $("#cuota").val(cuota);
+                        $("#fechaPrimerPago").val(model.fechaPrimerPago);
+
+
+                        $("#codCpop").children().removeAttr("selected")
+                        if (model.cpop == "SI" || model.cpop == "S") {
+                            $("#codCpop").val("S");
+                            $("#codCpop").children('option[value=S]').attr("selected", "selected")
+                        } else {
+                            $("#codCpop").val("N");
+                            $("#codCpop").children('option[value=N]').attr("selected", "selected")
+                        }
+                        Mensaje(result.mensaje, undefined, "");
+                    });
+                } else {
+                    Mensaje(message, undefined, "advertencia");
+                }
+            } else {
+                Mensaje("DATOS INCOMPLETOS O CON ERROR.", undefined, "advertencia");
+            }
+        });
+
+        $('#btnRecalcular').click(function () {
+            var value = $('#FormDatosSolicitud').valid();
+            if (value == true) {
+                var codDestinoCredito = $("select[name=destinoCredito]").val();
+                var monto = parseFloat($("#monto").val().replace(',', ''));
+                var codTipoCredito = $("select[name=codTipoCredito]").val();
+                var plazo = $("#plazo").val();
+                var diaPago = Math.floor($("#diaPago").val());
+                //
+                var tipoDesgravamen = $("select[name='getDesgravamen.nemonico']").val();
+                //
+                var url = '@Url.Action("GetOfertas", "Evaluacion")';
+                $.get(url, { codDestinoCredito: codDestinoCredito, monto: monto, producto: codTipoCredito, plazo: plazo, diaPago: diaPago, tipoDesgravamen: tipoDesgravamen }, function (data) {
+                    $("#contentOfertas").empty();
+                    if (data.length == 0) {
+                        $("#contentOfertas").append('<div class="alert alert-danger alert-dismissible fade show" role="alert"><strong>ALERTA!</strong> NO SE ENCONTRARON OFERTAS CON LAS CONDICIONES.<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
+                    } else {
+                        var html = '<div class="table-responsive"><table class="table table-bordered">';
+                        html += '<thead class="table-primary-bcp"><tr><th></th><th>PRODUCTO</th><th>MONTO</th><th>PLAZO</th><th>TASA</th><th>PRIMERA CUOTA</th><th>CUOTA</th><th>FECHA PRIMERA CUOTA</th><th>FECHA CUOTA</th><th>CPOP</th></tr></thead><tbody>';
+                        $.each(data, function (index, row) {
+                            html += '<tr>';
+                            html += '<td><input name="chk[]" type="checkbox"></td>';
+                            html += '<td>' + row.producto + '</td>';
+                            html += '<td>' + numeral(row.monto).format('0,0.00') + '</td>';
+                            html += '<td>' + row.plazo + '</td>';
+                            html += '<td>' + numeral(row.tasa).format('0,0.00') + '</td>';
+                            html += '<td>' + numeral(row.primeraCuota).format('0,0.00') + '</td>';
+                            html += '<td>' + numeral(row.cuota).format('0,0.00') + '</td>';
+                            html += '<td>' + row.fechaPrimeraCuota + '</td>';
+                            html += '<td>' + row.fechaCuota + '</td>';
+                            html += '<td>' + (row.cpop ? "SI" : "NO") + '</td';
+                            html += '</tr>';
+                        });
+                        html += '</tbody></table></div>';
+                        $("#contentOfertas").append(html);
+                        $("#flagRecalcular").val("true");
+                    }
+                    $('.loading').hide();
+                });
+            } else {
+                Mensaje("DATOS INCOMPLETOS O CON ERROR.", undefined, "advertencia");
+            }
+        })
+
+        function RulesMonto() {
+            $('input[name="monto"]').rules("remove");
+            $("#monto").removeAttr("disabled", "");
+            $("#monto").rules("add", "required");
+            $('input[name="monto"]').rules('add', {
+                required: true,
+                number: true,
+                range: [1, 9999999],
+                messages: {
+                    required: jQuery.validator.format("Campo requerido."),
+                    range: jQuery.validator.format("Se requiere que el valor este entre {0} y {1}"),
+                    number: jQuery.validator.format("Por favor ingrese un número valido.")
+                }
+            });
+        }
+
+        function RulesMontoRefinanciamiento() {
+            $('input[name="monto"]').rules("remove");
+            $("#monto").removeAttr("disabled", "");
+            $("#monto").rules("add", "required");
+            $('input[name="monto"]').rules('add', {
+                required: true,
+                number: true,
+                range: [1, 9999999],
+                messages: {
+                    required: jQuery.validator.format("Campo requerido."),
+                    range: jQuery.validator.format("Se requiere que el valor este entre {0} y {1}"),
+                    number: jQuery.validator.format("Por favor ingrese un número valido.")
+                }
+            });
+        }
+
+        function RulesPlazo() {
+            $('input[name="plazo"]').rules("remove");
+            $("#plazo").removeAttr("disabled", "");
+            $("#plazo").rules("add", "required");
+            $('input[name="plazo"]').rules('add', {
+                required: true,
+                range: [1, 600],
+                number: true,
+                messages: {
+                    required: jQuery.validator.format("Campo requerido."),
+                    range: jQuery.validator.format("Se requiere que el valor este entre {0} y {1}"),
+                    number: jQuery.validator.format("Por favor ingrese un número valido.")
+                }
+            });
+        }
+
+        function RulesDiaPago() {
+            $('input[name="diaPago"]').rules("remove");
+            $("#diaPago").removeAttr("disabled", "");
+            $("#diaPago").rules("add", "required");
+            $('input[name="diaPago"]').rules('add', {
+                required: true,
+                min: 1,
+                max: 28,
+                number: true,
+                messages: {
+                    required: jQuery.validator.format("Campo requerido."),
+                    min: jQuery.validator.format("Se requiere que sea mayor o igual a {0}"),
+                    max: jQuery.validator.format("Se requiere que sea menor o igual a {0}"),
+                    number: jQuery.validator.format("Por favor ingrese un número valido.")
+                }
+            });
+        }
+
+        function Mensaje(mensaje, time, tipo) {
+            if (time === undefined) time = 12000
+            _tipo = 'Mensaje';
+            if (tipo.toUpperCase() == "ERROR") {
+                _tipo += " error"
+            }
+            if (tipo.toUpperCase() == "ADVERTENCIA") {
+                _tipo += " warning"
+            }
+            $("body").append("<div class='" + _tipo + "'></div>");
+            $(".Mensaje").html(mensaje);
+            $(".Mensaje")
+                .animate({
+                    opacity: 1
+                }, 500
+                    , function () {
+                        $(".Mensaje").animate({
+                            opacity: 0
+                        }, time, function () {$(this).remove();}
+                        )
+                    })
+        }
+
+    </script>
+
+
+    @*NUEVOS SCRIPTS*@
+    <script>
+        //valida el formato del input solo deja ingresar numeros y guiones
+        $(document).ready(function () {
+            $('#IdFormato').on('keyup', function () {
+                var valor = $(this).val();
+                valor = valor.replace(/[^0-9\-]/g, '');
+                valor = valor.replace(/\-\-/g, '-');
+                $(this).val(valor);
+            });
+        });
+        //valida el formato del input solo deja ingresar numeros y guiones
+        $(document).ready(function () {
+            $('#IdTextBox').on('keyup', function () {
+                var valor = $(this).val();
+                valor = valor.replace(/[^0-9\-]/g, '');
+                valor = valor.replace(/\-\-/g, '-');
+                $(this).val(valor);
+            });
+        });
+    </script>
+    <script>
+        //refleja valor de la finalidad
+        let elementos_finalidad = document.querySelectorAll('[id^="idFinalidad"]');
+        for (let i = 0; i < elementos_finalidad.length; i++) {
+            elementos_finalidad[i].addEventListener('input', function () {
+                for (let j = 0; j < elementos_finalidad.length; j++) {
+                    if (i !== j) {
+                        elementos_finalidad[j].value = this.value;
+                    }
+                }
+            });
+        }
+
+    </script>
+    <script>
+    //Politica asignada
+    var politicas = @Html.Raw(Json.Encode(identity.Data.politicas));
+    var politicaPermitida = '@System.Configuration.ConfigurationManager.AppSettings["POLITICA_PERMITIDA"]';
+
+    function mostrarElementosSiContienePolitica() {
+        var registroInventario = document.getElementById("registroInventario");
+        var desembolso = document.getElementById("registroDesembolso");
+
+        if (politicas.includes(politicaPermitida)) {
+            registroInventario.style.display = "block";
+            desembolso.style.display = "block";
+        } else {
+            registroInventario.style.display = "none";
+            desembolso.style.display = "none";
+        }
+    }
+    window.onload = mostrarElementosSiContienePolitica;
+    </script>
+    <script>
+
+        //AJAX CONTRATO
+        $(document).ready(function () {
+
+            $('#dropdownCuentaSeleccionada').change(function () {
+                var selectedValue = $(this).val();
+                $('input[name="cuentaSelecionada"]').val(selectedValue);
+            });
+
+            $('#BtnSubmitContrato').on('click', function (e) {
+                e.preventDefault();
+
+                var form = $(this).closest('form');
+
+                $('.loading').show();
+
+                $.ajax({
+                    url: form.attr('action'),
+                    type: 'POST',
+                    data: form.serialize(),
+                    success: function (response) {
+                        if (response.success) {
+                            var byteArray = new Uint8Array(response.fileBytes);
+
+                            var blob = new Blob([byteArray], { type: 'application/pdf' });
+                            var link = document.createElement('a');
+                            link.href = window.URL.createObjectURL(blob);
+                            link.download = response.fileName;
+                            link.click();
+
+                            $('#BtnSubmitCronograma').prop('disabled', false);
+                            $('#BtnSubmitDesembolso').prop('disabled', false);
+                        } else {
+                            alert('Hubo un error al generar el CONTRATO: ' + response.message);
+
+                            $('#BtnSubmitCronograma').prop('disabled', true);
+                            $('#BtnSubmitDesembolso').prop('disabled', true);
+                        }
+                    },
+                    error: function () {
+                        alert('Hubo un error al generar el CONTRATO: ' + response.message);
+
+                        $('#BtnSubmitCronograma').prop('disabled', true);
+                        $('#BtnSubmitDesembolso').prop('disabled', true);
+                    }
+                }).done(function () {
+                    $('.loading').hide();
+                });
+            });
+        });
+
+        //AJAX CRONOGRAMA
+        $(document).ready(function () {
+
+            $('#dropdownCuentaSeleccionada').change(function () {
+                var selectedValue = $(this).val();
+                $('input[name="cuentaSelecionada"]').val(selectedValue);
+            });
+
+            $('#BtnSubmitCronograma').on('click', function (e) {
+                e.preventDefault();
+
+                var form = $(this).closest('form');
+
+                $('.loading').show();
+
+                $.ajax({
+                    url: form.attr('action'),
+                    type: 'POST',
+                    data: form.serialize(),
+                    success: function (response) {
+                        if (response.success) {
+                            var byteArray = new Uint8Array(response.fileBytes);
+
+                            var blob = new Blob([byteArray], { type: 'application/pdf' });
+                            var link = document.createElement('a');
+                            link.href = window.URL.createObjectURL(blob);
+                            link.download = response.fileName;
+                            link.click();
+                        } else {
+                            alert('Hubo un error al generar el CRONOGRAMA: ' + response.errorMessage);
+                        }
+                    },
+                    error: function () {
+                        alert('Hubo un error al generar el CRONOGRAMA: ' + Response.errorMessage);
+                    }
+                }).done(function () {
+                    $('.loading').hide();
+                });
+            });
+        });
+
+        //AJAX PARA INVENTARIO
+        $(document).ready(function () {
+            $('#BtnSubmitInventario').on('click', function (e) {
+                e.preventDefault();
+
+                var form = $(this).closest('form');
+
+                $('.loading').show();
+
+                $.ajax({
+                    url: form.attr('action'),
+                    type: 'POST',
+                    data: form.serialize(),
+                    success: function (response) {
+                        alert('Inventario registrado con éxito');
+                    },
+                    error: function () {
+                        alert('Error al registrar inventario');
+                    }
+                }).done(function () {
+                    $('.loading').hide();
+                    $('a[href="#tab7"]').click();
+                    $(window).scrollTop(0);
+                });
+            });
+        });
+
+        //SEGUROS MICROCREDITO
+        $(document).ready(function () {
+            $('#BtnSubmitSeguros').on('click', function (e) {
+                e.preventDefault();
+
+                var form = $(this).closest('form');
+
+                $('.loading').show();
+
+                $.ajax({
+                    url: form.attr('action'),
+                    type: 'POST',
+                    data: form.serialize(),
+                    success: function (response) {
+                        if (response) {
+                            alert('Se registraron los seguros con éxito');
+                        } else {
+                            alert('Se presentaron problemas al registrar los seguros');
+                        }
+                    },
+                    error: function () {
+                        alert('Error al registrar los seguros');
+                    }
+                }).done(function () {
+                    $('.loading').hide();
+                });
+            });
+        });
+
+        //AJAX CUENTA CONSULTA
+        $(document).ready(function () {
+            var addToListButton = $('#addToList');
+            addToListButton.prop('disabled', true);
+            $('#BtnSubmitConsultaCuenta').on('click', function (e) {
+                e.preventDefault();
+
+                var form = $(this).closest('form');
+
+                $('.loading').show();
+
+                $.ajax({
+                    url: form.attr('action'),
+                    type: 'POST',
+                    data: form.serialize(),
+                    success: function (response) {
+                        if (response.success) {
+                            var list = 'NUMERO CUENTA: ' + response.data.accountNumber + '\n';
+                            list += 'RAZON SOCIAL: ' + response.data.accountHolder + '\n';
+                            list += 'MONEDA: ' + response.data.currencyDescription;
+
+                            alert(list);
+                            addToListButton.prop('disabled', false);
+                            $('#IdTextBox').prop('disabled', false);
+                        } else {
+                            alert('Se presentaron problemas al consultar la cuenta: ' + response.message);
+                            addToListButton.prop('disabled', false);
+                        }
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        alert('Error al consultar la cuenta: ' + textStatus);
+                        addToListButton.prop('disabled', false);
+                    }
+                }).done(function () {
+                    $('.loading').hide();
+                });
+            });
+
+            addToListButton.on('click', function (e) {
+                e.preventDefault();
+
+                var newOptionValue = $('#IdTextBox').val();
+                var exists = false;
+
+                $('#dropdownCuentaSeleccionada option').each(function () {
+                    if (this.value == newOptionValue) {
+                        exists = true;
+                        return false;
+                    }
+                });
+
+                if (!exists) {
+                    $('#dropdownCuentaSeleccionada').append(new Option(newOptionValue, newOptionValue));
+                    $('#dropdownCuentaSeleccionada').val(newOptionValue).trigger('change');
+                    alert('Cuenta agregada con éxito: ' + newOptionValue);
+                    addToListButton.prop('disabled', true);
+                } else {
+                    alert('La opción ya existe en la lista');
+                }
+            });
+
+            $('#dropdownCuentaSeleccionada').change(function () {
+                var selectedValue = $(this).val();
+                $('input[name="cuentaSelecionada"]').val(selectedValue);
+            });
+        });
+
+        ////AJAX DESEMBOLSO
+
+        $(document).ready(function () {
+            $('#dropdownCuentaSeleccionada').change(function () {
+                var selectedValue = $(this).val();
+                $('input[name="cuentaSelecionada"]').val(selectedValue);
+            });
+
+            $('#BtnSubmitDesembolso').on('click', function (e) {
+                e.preventDefault();
+
+                var form = $(this).closest('form');
+                $('.loading').show();
+
+                $.ajax({
+                    url: form.attr('action'),
+                    type: 'POST',
+                    data: form.serialize(),
+                    success: function (response) {
+                        if (response.success) {
+                            alert(response.message);
+                        } else {
+                            alert(response.errorMessage);
+                        }
+                    },
+                    error: function () {
+                        alert('Error al realizar el desembolso: ' + response.errorMessage);
+                    }
+                }).done(function () {
+                    $('.loading').hide();
+                });
+            });
+        });
+
+        //EXCEPCIONES
+      $(document).ready(function () {
+                var isSubmitting = false;
+
+                $(".clickable-row").click(function () {
+                    var wasSelected = $(this).hasClass("selected-row");
+
+                    $(".clickable-row").removeClass("selected-row");
+
+                    if (wasSelected) {
+                        $("#details-container").hide();
+                        $("#details-body").empty();
+                        $("#BtnSubmitVincularExcepcion").prop("disabled", true);
+                    } else {
+                        $(this).addClass("selected-row");
+
+                        var excepciones = $(this).data("excepciones");
+                        var codSolicitud = $(this).data("codsolicitud");
+                        var matricula = $(this).data("matricula");
+                        //console.log("excepciones:", excepciones);
+                        if (excepciones) {
+                            var detailsBody = $("#details-body");
+                            detailsBody.empty();
+
+                            var hasExcepciones = false;
+
+                            excepciones.forEach(function (excepcion, index) {
+                                // Solo si es tipo producto 05
+                                if (excepcion.TipoProducto === '05') {
+                                    // Solo si es igual al cod solicitud o aun no esta asociado a ninguno se mostrara
+                                    if (String(excepcion.CodigoSolicitud) === codSolicitud || excepcion.CodigoSolicitud === 0) {
+                                        hasExcepciones = true;
+                                        var checked = excepcion.EstadoAsociacion ? "SI" : "NO";
+                                        var row = "<tr>" +
+                                            "<td>" + excepcion.UsuarioActualizacion + "</td>" +
+                                            "<td>" + excepcion.FechaActualizacion + "</td>" +
+                                            "<td>" + excepcion.IdExcepcion + "</td>" +
+                                            "<td>" + excepcion.DescripcionExcepcion + "</td>" +
+                                            "<td>" + excepcion.Justificacion + "</td>" +
+                                            "<td>" + excepcion.DescripcionFinalidad + "</td>" +
+                                            "<td>" + excepcion.MontoSolicitado + "</td>" +
+                                            "<td>" + excepcion.Estado + "</td>" +
+                                            "<td>" + checked + "</td>" +
+                                            "</tr>";
+                                        detailsBody.append(row);
+                                    }
+                                }
+                            });
+
+                            if (hasExcepciones) {
+                                $("#details-container").show();
+                                $("#BtnSubmitVincularExcepcion").prop("disabled", false);
+                            } else {
+                                $("#details-container").hide();
+                                $("#details-body").empty();
+                                $("#BtnSubmitVincularExcepcion").prop("disabled", true);
+                                setTimeout(function() {
+                                    alert('No hay excepciones registradas para este producto.');
+                                }, 180);
+                            }
+                        } else {
+                            $("#details-container").hide();
+                            $("#details-body").empty();
+                            $("#BtnSubmitVincularExcepcion").prop("disabled", true);
+                        }
+                    }
+                });
+
+                $('#BtnSubmitVincularExcepcion').on('click', function (e) {
+                    e.preventDefault();
+
+                    if (isSubmitting) {
+                        return;
+                    }
+
+                    var selectedRow = $(".clickable-row.selected-row");
+                    if (selectedRow.length === 0) {
+                        alert("Por favor, seleccione una fila.");
+                        return;
+                    }
+
+                    var excepciones = selectedRow.data("excepciones");
+                    var codSolicitud = selectedRow.data("codsolicitud");
+                    var matricula = selectedRow.data("matricula");
+
+                    //cambia valor del flag a su valor opuesto
+                    excepciones.forEach(function (excepcion) {
+                        excepcion.EstadoAsociacion = !excepcion.EstadoAsociacion;
+                    });
+
+                    var dataToSend = {
+                        excepciones: excepciones,
+                        codSolicitud: codSolicitud,
+                        matricula: matricula
+                    };
+
+                    isSubmitting = true;
+                    $('.loading').show();
+
+                    $.ajax({
+                        url: '@Url.Action("VincularException", "Evaluacion")',
+                        type: 'POST',
+                        data: JSON.stringify(dataToSend),
+                        contentType: 'application/json; charset=utf-8',
+                        dataType: 'json',
+                        success: function (response) {
+                            //si la respuesta es exitosa se actualiza el estado del flag
+                            if (response.Exitoso) {
+                                alert(response.SuccessMessage);
+                                selectedRow.data("excepciones", excepciones);
+                                var detailsBody = $("#details-body");
+                                detailsBody.empty();
+
+                                excepciones.forEach(function (excepcion) {
+                                    if (excepcion.TipoProducto === '05') {
+                                        if (String(excepcion.CodigoSolicitud) === codSolicitud || excepcion.CodigoSolicitud === 0) {
+                                            var checked = excepcion.EstadoAsociacion ? "SI" : "NO";
+                                            var row = "<tr>" +
+                                                "<td>" + excepcion.UsuarioActualizacion + "</td>" +
+                                                "<td>" + excepcion.FechaActualizacion + "</td>" +
+                                                "<td>" + excepcion.IdExcepcion + "</td>" +
+                                                "<td>" + excepcion.DescripcionExcepcion + "</td>" +
+                                                "<td>" + excepcion.Justificacion + "</td>" +
+                                                "<td>" + excepcion.DescripcionFinalidad + "</td>" +
+                                                "<td>" + excepcion.MontoSolicitado + "</td>" +
+                                                "<td>" + excepcion.Estado + "</td>" +
+                                                "<td>" + checked + "</td>" +
+                                                "</tr>";
+                                            detailsBody.append(row);
+                                        }
+                                    }
+                                });
+                                selectedRow.find("td:eq(9)").text(response.Indicador);
+                            } else {
+                                alert(response.ErrorMessage);
+                                console.error(response.Exception);
+                            }
+                        },
+                        error: function (xhr, status, error) {
+                            alert('Ocurrió un error al vincular/desvincular las excepciones.');
+                        },
+                        complete: function () {
+                            isSubmitting = false;
+                            $('.loading').hide();
+                        }
+                    });
+                });
+            });
+    </script>
+    <style>
+        .selected-row {
+            background-color: #d1e7ff;
+        }
+    </style>
+}

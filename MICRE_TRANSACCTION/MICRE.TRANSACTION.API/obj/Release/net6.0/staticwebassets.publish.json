@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "imCAheTSNqyOu6VEUu+x/VMRDX++2Kp9LnrMizT5Gps=",
+  "Source": "MICRE.TRANSACTION.API",
+  "BasePath": "_content/MICRE.TRANSACTION.API",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

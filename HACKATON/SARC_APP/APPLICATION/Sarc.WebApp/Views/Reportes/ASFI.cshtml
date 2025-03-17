@@ -1,0 +1,104 @@
+﻿@using Newtonsoft.Json
+@using Sarc.WebApp.Components.Reportes.ASFI
+@using Sarc.WebApp.Models.Reportes
+@using BCP.CROSS.MODELS
+@using BCP.CROSS.MODELS.Reportes.ASFI;
+@using System.Data
+@model ReportesFormViewModel
+@{
+    ViewData["Title"] = "Reporte ASFI";
+    bool responseExist = false;
+    Meta meta = new Meta();
+    List<SolucionadosModel> ListaSolucionados = new List<SolucionadosModel>();
+    List<RegistradosModel> ListaRegistrados = new List<RegistradosModel>();
+    var tipo = ViewBag.tipo;
+    var data = "[{}]";
+    var dataJson = Json.Serialize(data);
+    var excelTitle = "Reporte_ASFI_" + DateTime.Now.ToString("yyyyMMdd") + ".xlsx";
+    if (ViewBag.response != null)
+    {
+        meta = ViewBag.response.Meta;
+        responseExist = true;
+        switch (tipo)
+        {
+            case "Solucionados":
+                ListaSolucionados = ViewBag.response.Data;
+                break;
+            case "Registrados":
+                ListaRegistrados = ViewBag.response.Data;
+                break;
+            default:
+                break;
+        }
+    }
+
+}
+<div class="container">
+    <div class="card bg-dark">
+        <div class="card-body">
+            <form asp-action="ASFI" asp-controller="Reportes" method="post" class="row">
+                <div class="col-12">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" asp-for="ASFITipo" id="Tipo" checked value="Solucionados">
+                        <label class="form-check-label" for="Tipo">
+                            Solucionados
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" asp-for="ASFITipo" id="Tipo" value="Registrados">
+                        <label class="form-check-label" for="Tipo2">
+                            Registrados
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 my-2">
+                    <label for="FechaIni" class="form-label">Fecha de inicio</label>
+                    <input type="date" class="form-control" asp-for="FechaIni" id="FechaIni" placeholder="name@example.com">
+                </div>
+                <div class="col-12 col-md-4  my-2">
+                    <label for="FechaFin" class="form-label">Fecha Final</label>
+                    <input type="date" class="form-control" asp-for="FechaFin" id="FechaFin" placeholder="name@example.com">
+                </div>
+                <div class="col-12 mt-2">
+                    <button type="submit" class="btn btn-primary mb-3">Generar Reporte</button>
+                </div>
+            </form>
+            @if (responseExist)
+            {
+                @if (ViewBag.response.Data != null)
+                {
+                    switch (tipo)
+                    {
+                        case "Solucionados":
+                            dataJson = Json.Serialize(ListaSolucionados.ToArray());
+                            <component type="typeof(SolucionadosTableComponent)" render-mode="ServerPrerendered" param-Data='ListaSolucionados' />
+                            break;
+                        case "Registrados":
+                            dataJson = Json.Serialize(ListaRegistrados.ToArray());
+                            <component type="typeof(RegistradosTableComponent)" render-mode="ServerPrerendered" param-Data='ListaRegistrados' />
+                            break;
+                        default:
+                            break;
+                    }
+                    <button type="button" id="downloadexcel" class="btn btn-primary">Descargar Excel</button>
+                }
+                else
+                {
+                    <div class="alert alert-warning" role="alert">
+                        @meta.Msj
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+
+@section scripts{
+<script type="text/javascript">
+    var data=@dataJson;
+    var title="@excelTitle";
+        $("#downloadexcel").click(function(){
+                GenerarExcel(data,title);
+        });
+</script>
+}

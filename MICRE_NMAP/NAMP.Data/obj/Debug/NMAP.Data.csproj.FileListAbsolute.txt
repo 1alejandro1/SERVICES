@@ -1,0 +1,12 @@
+D:\T25208\MICREDITO\MICRE_NMAP\NAMP.Data\bin\Debug\NMAP.Data.dll.config
+D:\T25208\MICREDITO\MICRE_NMAP\NAMP.Data\bin\Debug\NMAP.Data.dll
+D:\T25208\MICREDITO\MICRE_NMAP\NAMP.Data\bin\Debug\NMAP.Data.pdb
+D:\T25208\MICREDITO\MICRE_NMAP\NAMP.Data\bin\Debug\EntityFramework.dll
+D:\T25208\MICREDITO\MICRE_NMAP\NAMP.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\T25208\MICREDITO\MICRE_NMAP\NAMP.Data\bin\Debug\EntityFramework.xml
+D:\T25208\MICREDITO\MICRE_NMAP\NAMP.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\T25208\MICREDITO\MICRE_NMAP\NAMP.Data\obj\Debug\NMAP.Data.csproj.AssemblyReference.cache
+D:\T25208\MICREDITO\MICRE_NMAP\NAMP.Data\obj\Debug\NMAP.Data.csproj.CoreCompileInputs.cache
+D:\T25208\MICREDITO\MICRE_NMAP\NAMP.Data\obj\Debug\NMAP.Data.csproj.Up2Date
+D:\T25208\MICREDITO\MICRE_NMAP\NAMP.Data\obj\Debug\NMAP.Data.dll
+D:\T25208\MICREDITO\MICRE_NMAP\NAMP.Data\obj\Debug\NMAP.Data.pdb

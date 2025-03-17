@@ -1,0 +1,183 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\T25208\\MICREDITO\\MICRE_CEM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3913E14C-3ECB-4874-B868-B624F1267FBC}|BCP.CROSS.DATAACCESS\\BCP.CROSS.DATAACCESS.csproj|d:\\t25208\\micredito\\micre_cem\\bcp.cross.dataaccess\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3913E14C-3ECB-4874-B868-B624F1267FBC}|BCP.CROSS.DATAACCESS\\BCP.CROSS.DATAACCESS.csproj|solutionrelative:bcp.cross.dataaccess\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3AEA2A6-AA3C-4FA0-BE0E-0215640B7B0F}|MICREDITO.CEM.ENTITIES\\MICREDITO.CEM.ENTITIES.csproj|d:\\t25208\\micredito\\micre_cem\\micredito.cem.entities\\tasadeuda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3AEA2A6-AA3C-4FA0-BE0E-0215640B7B0F}|MICREDITO.CEM.ENTITIES\\MICREDITO.CEM.ENTITIES.csproj|solutionrelative:micredito.cem.entities\\tasadeuda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3AEA2A6-AA3C-4FA0-BE0E-0215640B7B0F}|MICREDITO.CEM.ENTITIES\\MICREDITO.CEM.ENTITIES.csproj|d:\\t25208\\micredito\\micre_cem\\micredito.cem.entities\\tipocambiobase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3AEA2A6-AA3C-4FA0-BE0E-0215640B7B0F}|MICREDITO.CEM.ENTITIES\\MICREDITO.CEM.ENTITIES.csproj|solutionrelative:micredito.cem.entities\\tipocambiobase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{832D635F-01A4-48F8-83D2-B4DCA07319D2}|MICREDITO.CEM.API\\MICREDITO.CEM.API.csproj|d:\\t25208\\micredito\\micre_cem\\micredito.cem.api\\services\\cemvdservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{832D635F-01A4-48F8-83D2-B4DCA07319D2}|MICREDITO.CEM.API\\MICREDITO.CEM.API.csproj|solutionrelative:micredito.cem.api\\services\\cemvdservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{832D635F-01A4-48F8-83D2-B4DCA07319D2}|MICREDITO.CEM.API\\MICREDITO.CEM.API.csproj|d:\\t25208\\micredito\\micre_cem\\micredito.cem.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{832D635F-01A4-48F8-83D2-B4DCA07319D2}|MICREDITO.CEM.API\\MICREDITO.CEM.API.csproj|solutionrelative:micredito.cem.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{832D635F-01A4-48F8-83D2-B4DCA07319D2}|MICREDITO.CEM.API\\MICREDITO.CEM.API.csproj|d:\\t25208\\micredito\\micre_cem\\micredito.cem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{832D635F-01A4-48F8-83D2-B4DCA07319D2}|MICREDITO.CEM.API\\MICREDITO.CEM.API.csproj|solutionrelative:micredito.cem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{832D635F-01A4-48F8-83D2-B4DCA07319D2}|MICREDITO.CEM.API\\MICREDITO.CEM.API.csproj|d:\\t25208\\micredito\\micre_cem\\micredito.cem.api\\controllers\\cemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{832D635F-01A4-48F8-83D2-B4DCA07319D2}|MICREDITO.CEM.API\\MICREDITO.CEM.API.csproj|solutionrelative:micredito.cem.api\\controllers\\cemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{832D635F-01A4-48F8-83D2-B4DCA07319D2}|MICREDITO.CEM.API\\MICREDITO.CEM.API.csproj|d:\\t25208\\micredito\\micre_cem\\micredito.cem.api\\services\\cemhnservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{832D635F-01A4-48F8-83D2-B4DCA07319D2}|MICREDITO.CEM.API\\MICREDITO.CEM.API.csproj|solutionrelative:micredito.cem.api\\services\\cemhnservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{832D635F-01A4-48F8-83D2-B4DCA07319D2}|MICREDITO.CEM.API\\MICREDITO.CEM.API.csproj|d:\\t25208\\micredito\\micre_cem\\micredito.cem.api\\services\\cemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{832D635F-01A4-48F8-83D2-B4DCA07319D2}|MICREDITO.CEM.API\\MICREDITO.CEM.API.csproj|solutionrelative:micredito.cem.api\\services\\cemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataAccess.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_CEM\\BCP.CROSS.DATAACCESS\\DataAccess.cs",
+              "RelativeDocumentMoniker": "BCP.CROSS.DATAACCESS\\DataAccess.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_CEM\\BCP.CROSS.DATAACCESS\\DataAccess.cs",
+              "RelativeToolTip": "BCP.CROSS.DATAACCESS\\DataAccess.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAwwEgAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T19:59:38.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TasaDeuda.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_CEM\\MICREDITO.CEM.ENTITIES\\TasaDeuda.cs",
+              "RelativeDocumentMoniker": "MICREDITO.CEM.ENTITIES\\TasaDeuda.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_CEM\\MICREDITO.CEM.ENTITIES\\TasaDeuda.cs",
+              "RelativeToolTip": "MICREDITO.CEM.ENTITIES\\TasaDeuda.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T19:58:56.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TipoCambioBase.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_CEM\\MICREDITO.CEM.ENTITIES\\TipoCambioBase.cs",
+              "RelativeDocumentMoniker": "MICREDITO.CEM.ENTITIES\\TipoCambioBase.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_CEM\\MICREDITO.CEM.ENTITIES\\TipoCambioBase.cs",
+              "RelativeToolTip": "MICREDITO.CEM.ENTITIES\\TipoCambioBase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T19:58:54.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_CEM\\MICREDITO.CEM.API\\Startup.cs",
+              "RelativeDocumentMoniker": "MICREDITO.CEM.API\\Startup.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_CEM\\MICREDITO.CEM.API\\Startup.cs",
+              "RelativeToolTip": "MICREDITO.CEM.API\\Startup.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAvwCYAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T19:57:55.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CemHNService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_CEM\\MICREDITO.CEM.API\\Services\\CemHNService.cs",
+              "RelativeDocumentMoniker": "MICREDITO.CEM.API\\Services\\CemHNService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_CEM\\MICREDITO.CEM.API\\Services\\CemHNService.cs",
+              "RelativeToolTip": "MICREDITO.CEM.API\\Services\\CemHNService.cs",
+              "ViewState": "AQIAAJMAAAAAAAAAAAAawKIAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T15:33:57.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_CEM\\MICREDITO.CEM.API\\appsettings.json",
+              "RelativeDocumentMoniker": "MICREDITO.CEM.API\\appsettings.json",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_CEM\\MICREDITO.CEM.API\\appsettings.json",
+              "RelativeToolTip": "MICREDITO.CEM.API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2023-12-14T13:18:37.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CemService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_CEM\\MICREDITO.CEM.API\\Services\\CemService.cs",
+              "RelativeDocumentMoniker": "MICREDITO.CEM.API\\Services\\CemService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_CEM\\MICREDITO.CEM.API\\Services\\CemService.cs",
+              "RelativeToolTip": "MICREDITO.CEM.API\\Services\\CemService.cs",
+              "ViewState": "AQIAALEAAAAAAAAAAAAuwKIAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-08-18T17:05:08.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CemVDService.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_CEM\\MICREDITO.CEM.API\\Services\\CemVDService.cs",
+              "RelativeDocumentMoniker": "MICREDITO.CEM.API\\Services\\CemVDService.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_CEM\\MICREDITO.CEM.API\\Services\\CemVDService.cs",
+              "RelativeToolTip": "MICREDITO.CEM.API\\Services\\CemVDService.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAuwFkAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-08-18T17:05:27.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CEMController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_CEM\\MICREDITO.CEM.API\\Controllers\\CEMController.cs",
+              "RelativeDocumentMoniker": "MICREDITO.CEM.API\\Controllers\\CEMController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_CEM\\MICREDITO.CEM.API\\Controllers\\CEMController.cs",
+              "RelativeToolTip": "MICREDITO.CEM.API\\Controllers\\CEMController.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAowD0AAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-08-18T17:04:49.703Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

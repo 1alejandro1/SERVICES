@@ -1,0 +1,1001 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES.csproj": {}
+  },
+  "projects": {
+    "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.AUTHORIZATION\\MICRE.ABSTRACTION.AUTHORIZATION.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.AUTHORIZATION\\MICRE.ABSTRACTION.AUTHORIZATION.csproj",
+        "projectName": "MICRE.ABSTRACTION.AUTHORIZATION",
+        "projectPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.AUTHORIZATION\\MICRE.ABSTRACTION.AUTHORIZATION.csproj",
+        "packagesPath": "C:\\Users\\T25208\\.nuget\\packages\\",
+        "outputPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.AUTHORIZATION\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\T25208\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.CONNECTIONS.SERVICES\\MICRE.APPLICATION.CONNECTIONS.SERVICES.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.CONNECTIONS.SERVICES\\MICRE.APPLICATION.CONNECTIONS.SERVICES.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.8.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.DATAACCESS\\MICRE.ABSTRACTION.DATAACCESS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.DATAACCESS\\MICRE.ABSTRACTION.DATAACCESS.csproj",
+        "projectName": "MICRE.ABSTRACTION.DATAACCESS",
+        "projectPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.DATAACCESS\\MICRE.ABSTRACTION.DATAACCESS.csproj",
+        "packagesPath": "C:\\Users\\T25208\\.nuget\\packages\\",
+        "outputPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.DATAACCESS\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\T25208\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.SECRYPT\\MICRE.ABSTRACTION.SECRYPT.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.SECRYPT\\MICRE.ABSTRACTION.SECRYPT.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.ENTITIES\\MICRE.ABSTRACTION.ENTITIES.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.ENTITIES\\MICRE.ABSTRACTION.ENTITIES.csproj",
+        "projectName": "MICRE.ABSTRACTION.ENTITIES",
+        "projectPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.ENTITIES\\MICRE.ABSTRACTION.ENTITIES.csproj",
+        "packagesPath": "C:\\Users\\T25208\\.nuget\\packages\\",
+        "outputPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.ENTITIES\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\T25208\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.LOGGER\\MICRE.ABSTRACTION.LOGGER.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.LOGGER\\MICRE.ABSTRACTION.LOGGER.csproj",
+        "projectName": "MICRE.ABSTRACTION.LOGGER",
+        "projectPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.LOGGER\\MICRE.ABSTRACTION.LOGGER.csproj",
+        "packagesPath": "C:\\Users\\T25208\\.nuget\\packages\\",
+        "outputPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.LOGGER\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\T25208\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.SECRYPT\\MICRE.ABSTRACTION.SECRYPT.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.SECRYPT\\MICRE.ABSTRACTION.SECRYPT.csproj",
+        "projectName": "MICRE.ABSTRACTION.SECRYPT",
+        "projectPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.SECRYPT\\MICRE.ABSTRACTION.SECRYPT.csproj",
+        "packagesPath": "C:\\Users\\T25208\\.nuget\\packages\\",
+        "outputPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.SECRYPT\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\T25208\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.BUSSINESS\\MICRE.APPLICATION.BUSSINESS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.BUSSINESS\\MICRE.APPLICATION.BUSSINESS.csproj",
+        "projectName": "MICRE.APPLICATION.BUSSINESS",
+        "projectPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.BUSSINESS\\MICRE.APPLICATION.BUSSINESS.csproj",
+        "packagesPath": "C:\\Users\\T25208\\.nuget\\packages\\",
+        "outputPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.BUSSINESS\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\T25208\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.ENTITIES\\MICRE.ABSTRACTION.ENTITIES.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.ENTITIES\\MICRE.ABSTRACTION.ENTITIES.csproj"
+              },
+              "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.CONNECTIONS.DATABASE\\MICRE.APPLICATION.CONNECTIONS.DATABASE.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.CONNECTIONS.DATABASE\\MICRE.APPLICATION.CONNECTIONS.DATABASE.csproj"
+              },
+              "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.CONNECTIONS.SERVICES\\MICRE.APPLICATION.CONNECTIONS.SERVICES.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.CONNECTIONS.SERVICES\\MICRE.APPLICATION.CONNECTIONS.SERVICES.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "iTextSharp-LGPL": {
+              "target": "Package",
+              "version": "[4.1.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.COMMONS\\MICRE.APPLICATION.COMMONS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.COMMONS\\MICRE.APPLICATION.COMMONS.csproj",
+        "projectName": "MICRE.APPLICATION.COMMONS",
+        "projectPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.COMMONS\\MICRE.APPLICATION.COMMONS.csproj",
+        "packagesPath": "C:\\Users\\T25208\\.nuget\\packages\\",
+        "outputPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.COMMONS\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\T25208\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.CONNECTIONS.DATABASE\\MICRE.APPLICATION.CONNECTIONS.DATABASE.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.CONNECTIONS.DATABASE\\MICRE.APPLICATION.CONNECTIONS.DATABASE.csproj",
+        "projectName": "MICRE.APPLICATION.CONNECTIONS.DATABASE",
+        "projectPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.CONNECTIONS.DATABASE\\MICRE.APPLICATION.CONNECTIONS.DATABASE.csproj",
+        "packagesPath": "C:\\Users\\T25208\\.nuget\\packages\\",
+        "outputPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.CONNECTIONS.DATABASE\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\T25208\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.DATAACCESS\\MICRE.ABSTRACTION.DATAACCESS.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.DATAACCESS\\MICRE.ABSTRACTION.DATAACCESS.csproj"
+              },
+              "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.ENTITIES\\MICRE.ABSTRACTION.ENTITIES.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.ENTITIES\\MICRE.ABSTRACTION.ENTITIES.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.CONNECTIONS.SERVICES\\MICRE.APPLICATION.CONNECTIONS.SERVICES.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.CONNECTIONS.SERVICES\\MICRE.APPLICATION.CONNECTIONS.SERVICES.csproj",
+        "projectName": "MICRE.APPLICATION.CONNECTIONS.SERVICES",
+        "projectPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.CONNECTIONS.SERVICES\\MICRE.APPLICATION.CONNECTIONS.SERVICES.csproj",
+        "packagesPath": "C:\\Users\\T25208\\.nuget\\packages\\",
+        "outputPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.CONNECTIONS.SERVICES\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\T25208\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.ENTITIES\\MICRE.ABSTRACTION.ENTITIES.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.ENTITIES\\MICRE.ABSTRACTION.ENTITIES.csproj"
+              },
+              "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.LOGGER\\MICRE.ABSTRACTION.LOGGER.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.LOGGER\\MICRE.ABSTRACTION.LOGGER.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES.csproj",
+        "projectName": "MICRE_API_EXCEPCIONES",
+        "projectPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES.csproj",
+        "packagesPath": "C:\\Users\\T25208\\.nuget\\packages\\",
+        "outputPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE_API_EXCEPCIONES\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\T25208\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.AUTHORIZATION\\MICRE.ABSTRACTION.AUTHORIZATION.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.AUTHORIZATION\\MICRE.ABSTRACTION.AUTHORIZATION.csproj"
+              },
+              "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.DATAACCESS\\MICRE.ABSTRACTION.DATAACCESS.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.DATAACCESS\\MICRE.ABSTRACTION.DATAACCESS.csproj"
+              },
+              "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.ENTITIES\\MICRE.ABSTRACTION.ENTITIES.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.ENTITIES\\MICRE.ABSTRACTION.ENTITIES.csproj"
+              },
+              "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.LOGGER\\MICRE.ABSTRACTION.LOGGER.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.LOGGER\\MICRE.ABSTRACTION.LOGGER.csproj"
+              },
+              "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.SECRYPT\\MICRE.ABSTRACTION.SECRYPT.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.ABSTRACTION.SECRYPT\\MICRE.ABSTRACTION.SECRYPT.csproj"
+              },
+              "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.BUSSINESS\\MICRE.APPLICATION.BUSSINESS.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.BUSSINESS\\MICRE.APPLICATION.BUSSINESS.csproj"
+              },
+              "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.COMMONS\\MICRE.APPLICATION.COMMONS.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.COMMONS\\MICRE.APPLICATION.COMMONS.csproj"
+              },
+              "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.CONNECTIONS.DATABASE\\MICRE.APPLICATION.CONNECTIONS.DATABASE.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.CONNECTIONS.DATABASE\\MICRE.APPLICATION.CONNECTIONS.DATABASE.csproj"
+              },
+              "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.CONNECTIONS.SERVICES\\MICRE.APPLICATION.CONNECTIONS.SERVICES.csproj": {
+                "projectPath": "D:\\T25208\\MICREDITO\\MICRE_API_EXCEPCIONES\\MICRE.APPLICATION.CONNECTIONS.SERVICES\\MICRE.APPLICATION.CONNECTIONS.SERVICES.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.21.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.9.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

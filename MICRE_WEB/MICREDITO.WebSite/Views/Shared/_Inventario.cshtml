@@ -1,0 +1,99 @@
+﻿@model MICREDITO.Model.Inventario.DatosAdicionalesModel
+
+<!--SECCION 1-->
+<label> <strong> REGISTRO INVENTARIO</strong></label>
+<br />
+<label> <strong> FORMULARIO DE GARANTIA</strong></label>
+<br />
+<div class="layout-card">
+    <div class="col">
+
+        @using (Html.BeginForm("ADDInventario", "Evaluacion", FormMethod.Post))
+        {
+            @Html.HiddenFor(m => m.dataInventario.codSolicitud)
+            @Html.HiddenFor(m => m.nroEvaluacion)
+            <div class="form-group label-content col-sm-4">
+                <label>FINALIDAD</label><br />
+                @Html.TextBoxFor(m => m.dataInventario.inventario10, new { @class = "form-control", data_val = true , id = "idFinalidad" })
+            </div>
+            <div class="form-group label-content col-sm-4">
+                <label>INVENTARIO 1</label><br />
+                @Html.TextBoxFor(m => m.dataInventario.inventario1, new { @class = "form-control", data_val = true })
+            </div>
+            <div class="form-group label-content col-sm-4">
+                <label>INVENTARIO 2</label><br />
+                @Html.TextBoxFor(m => m.dataInventario.inventario2, new { @class = "form-control", data_val = true })
+            </div>
+            <div class="form-group label-content col-sm-4">
+                <label>INVENTARIO 3</label><br />
+                @Html.TextBoxFor(m => m.dataInventario.inventario3, new { @class = "form-control", data_val = true })
+            </div>
+            <div class="form-group label-content col-sm-4">
+                <label>INVENTARIO 4</label><br />
+                @Html.TextBoxFor(m => m.dataInventario.inventario4, new { @class = "form-control", data_val = true })
+            </div>
+            <div class="form-group label-content col-sm-4">
+                <label>INVENTARIO 5</label><br />
+                @Html.TextBoxFor(m => m.dataInventario.inventario5, new { @class = "form-control", data_val = true })
+            </div>
+            <div class="form-group label-content col-sm-4">
+                <label>INVENTARIO 6</label><br />
+                @Html.TextBoxFor(m => m.dataInventario.inventario6, new { @class = "form-control", data_val = true })
+            </div>
+            <div class="form-group label-content col-sm-4">
+                <label>INVENTARIO 7</label><br />
+                @Html.TextBoxFor(m => m.dataInventario.inventario7, new { @class = "form-control", data_val = true })
+            </div>
+            <div class="form-group label-content col-sm-4">
+                <label>FECHA INVENTARIO</label><br />
+                @Html.TextBoxFor(m => m.dataInventario.fechaInventario, "{0:yyyy-MM-dd}", new { @class = "form-control datepicker", @type = "date" })
+            </div>
+            <div class="form-group label-content col-sm-4">
+                <label>DIRECCION</label><br />
+                @Html.TextAreaFor(m => m.dataInventario.inventario9, new { @class = "form-control", data_val = true })
+
+            </div>
+            <div class="form-group label-content col-sm-4">
+
+                <label>CIUDAD</label>
+                @{
+                    var ciudades = new List<SelectListItem>
+                                                            {
+                            new SelectListItem { Text = "--SELECCIONAR--", Value = "" },
+                            new SelectListItem { Text = "CHUQUISACA", Value = "CHUQUISACA" },
+                            new SelectListItem { Text = "LA PAZ", Value = "LA PAZ" },
+                            new SelectListItem { Text = "COCHABAMBA", Value = "COCHABAMBA" },
+                            new SelectListItem { Text = "ORURO", Value = "ORURO" },
+                            new SelectListItem { Text = "POTOSI", Value = "POTOSI" },
+                            new SelectListItem { Text = "TARIJA", Value = "TARIJA" },
+                            new SelectListItem { Text = "SANTA CRUZ", Value = "SANTA CRUZ" },
+                            new SelectListItem { Text = "BENI", Value = "BENI" },
+                            new SelectListItem { Text = "PANDO", Value = "PANDO" },
+                            new SelectListItem { Text = "EL ALTO", Value = "EL ALTO" }
+                        };
+                }
+
+                @Html.DropDownListFor(m => m.dataInventario.inventario8, ciudades, new { @class = "form-control" })
+
+            </div>
+
+            <div class="form-group label-content col-sm-4 text-center">
+                <button id="BtnSubmitInventario" class="btn btn-primary">GUARDAR</button>
+            </div>
+        }
+    </div>
+
+</div>
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}

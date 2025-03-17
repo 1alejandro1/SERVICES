@@ -1,0 +1,80 @@
+[
+  {
+    "ContainingType": "API_SCORE_CONSUMO.Controllers.ScoreConsumoController",
+    "Method": "GetCalculoDirecto",
+    "RelativePath": "api/ScoreConsumo/CalculoDirecto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE_ENTITY.Model.CaluladoraResponseDirecto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE_COMMON.Model.Response\u00601[[MICRE_ENTITY.Model.CalculadoraResponse, MICRE_ENTITY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_SCORE_CONSUMO.Controllers.ScoreConsumoController",
+    "Method": "GetCosultaScoreConsumo",
+    "RelativePath": "api/ScoreConsumo/ConsultaScoreConsumo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE_ENTITY.Request.ScoreConsumoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE_COMMON.Model.Response\u00601[[MICRE_ENTITY.Response.ScoreConsumoResponse, MICRE_ENTITY, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_SCORE_CONSUMO.Controllers.SegCryptController",
+    "Method": "GetEncriptado",
+    "RelativePath": "api/SegCrypt/Encriptar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MICRE_ENTITY.Model.SegCryptRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MICRE_ENTITY.Model.SegCryptResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

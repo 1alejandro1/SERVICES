@@ -1,0 +1,89 @@
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Business.dll
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Business.pdb
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\MICRE_RBT_PLAN_PAGOS\RBT_Business\obj\Debug\RBT.Business.csproj.AssemblyReference.cache
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\MICRE_RBT_PLAN_PAGOS\RBT_Business\obj\Debug\RBT.Business.csproj.CoreCompileInputs.cache
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\MICRE_RBT_PLAN_PAGOS\RBT_Business\obj\Debug\RBT_Business.dll
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\MICRE_RBT_PLAN_PAGOS\RBT_Business\obj\Debug\RBT_Business.pdb
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\Newtonsoft.Json.dll
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\NLog.dll
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Common.dll
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_DataAccess.dll
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Entity.dll
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Logger.dll
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Security.dll
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Common.pdb
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_DataAccess.pdb
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Entity.pdb
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Logger.pdb
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Security.pdb
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\Newtonsoft.Json.xml
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\NLog.xml
+D:\Doc_Micael\REPOS\ROBOT_PLAN\RBT_Business\bin\Debug\RBT_Business.dll
+D:\Doc_Micael\REPOS\ROBOT_PLAN\RBT_Business\bin\Debug\RBT_Business.pdb
+D:\Doc_Micael\REPOS\ROBOT_PLAN\RBT_Business\bin\Debug\Newtonsoft.Json.dll
+D:\Doc_Micael\REPOS\ROBOT_PLAN\RBT_Business\bin\Debug\NLog.dll
+D:\Doc_Micael\REPOS\ROBOT_PLAN\RBT_Business\bin\Debug\RBT_Common.dll
+D:\Doc_Micael\REPOS\ROBOT_PLAN\RBT_Business\bin\Debug\RBT_DataAccess.dll
+D:\Doc_Micael\REPOS\ROBOT_PLAN\RBT_Business\bin\Debug\RBT_Entity.dll
+D:\Doc_Micael\REPOS\ROBOT_PLAN\RBT_Business\bin\Debug\RBT_Logger.dll
+D:\Doc_Micael\REPOS\ROBOT_PLAN\RBT_Business\bin\Debug\RBT_Security.dll
+D:\Doc_Micael\REPOS\ROBOT_PLAN\RBT_Business\bin\Debug\RBT_Common.pdb
+D:\Doc_Micael\REPOS\ROBOT_PLAN\RBT_Business\bin\Debug\RBT_DataAccess.pdb
+D:\Doc_Micael\REPOS\ROBOT_PLAN\RBT_Business\bin\Debug\RBT_Entity.pdb
+D:\Doc_Micael\REPOS\ROBOT_PLAN\RBT_Business\bin\Debug\RBT_Logger.pdb
+D:\Doc_Micael\REPOS\ROBOT_PLAN\RBT_Business\bin\Debug\RBT_Security.pdb
+D:\Doc_Micael\REPOS\ROBOT_PLAN\RBT_Business\bin\Debug\Newtonsoft.Json.xml
+D:\Doc_Micael\REPOS\ROBOT_PLAN\RBT_Business\bin\Debug\NLog.xml
+D:\Doc_Micael\REPOS\ROBOT_PLAN\RBT_Business\obj\Debug\RBT.Business.csproj.AssemblyReference.cache
+D:\Doc_Micael\REPOS\ROBOT_PLAN\RBT_Business\obj\Debug\RBT.Business.csproj.CoreCompileInputs.cache
+D:\Doc_Micael\REPOS\ROBOT_PLAN\RBT_Business\obj\Debug\RBT.Business.csproj.CopyComplete
+D:\Doc_Micael\REPOS\ROBOT_PLAN\RBT_Business\obj\Debug\RBT_Business.dll
+D:\Doc_Micael\REPOS\ROBOT_PLAN\RBT_Business\obj\Debug\RBT_Business.pdb
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Business.dll
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Business.pdb
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\Newtonsoft.Json.dll
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\NLog.dll
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Common.dll
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_DataAccess.dll
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Entity.dll
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Logger.dll
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Security.dll
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Common.pdb
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_DataAccess.pdb
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Entity.pdb
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Logger.pdb
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Security.pdb
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\Newtonsoft.Json.xml
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\NLog.xml
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\RBT_Business\obj\Debug\RBT.Business.csproj.AssemblyReference.cache
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\RBT_Business\obj\Debug\RBT.Business.csproj.CoreCompileInputs.cache
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\RBT_Business\obj\Debug\RBT_Business.dll
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\RBT_Business\obj\Debug\RBT_Business.pdb
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Business.dll.config
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RestSharp.dll
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RestSharp.xml
+D:\Doc_Micael\REPOS\_MICRE_RBT_PLAN_PAGOS\RBT_Business\obj\Debug\RBT.Business.csproj.CopyComplete
+D:\AzureDevops\ROBOTS MICREDITO\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Business.dll.config
+D:\AzureDevops\ROBOTS MICREDITO\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Business.dll
+D:\AzureDevops\ROBOTS MICREDITO\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Business.pdb
+D:\AzureDevops\ROBOTS MICREDITO\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\Newtonsoft.Json.dll
+D:\AzureDevops\ROBOTS MICREDITO\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\NLog.dll
+D:\AzureDevops\ROBOTS MICREDITO\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Common.dll
+D:\AzureDevops\ROBOTS MICREDITO\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_DataAccess.dll
+D:\AzureDevops\ROBOTS MICREDITO\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Entity.dll
+D:\AzureDevops\ROBOTS MICREDITO\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Logger.dll
+D:\AzureDevops\ROBOTS MICREDITO\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Security.dll
+D:\AzureDevops\ROBOTS MICREDITO\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RestSharp.dll
+D:\AzureDevops\ROBOTS MICREDITO\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Common.pdb
+D:\AzureDevops\ROBOTS MICREDITO\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_DataAccess.pdb
+D:\AzureDevops\ROBOTS MICREDITO\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Entity.pdb
+D:\AzureDevops\ROBOTS MICREDITO\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Logger.pdb
+D:\AzureDevops\ROBOTS MICREDITO\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RBT_Security.pdb
+D:\AzureDevops\ROBOTS MICREDITO\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\Newtonsoft.Json.xml
+D:\AzureDevops\ROBOTS MICREDITO\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\NLog.xml
+D:\AzureDevops\ROBOTS MICREDITO\MICRE_RBT_PLAN_PAGOS\RBT_Business\bin\Debug\RestSharp.xml
+D:\AzureDevops\ROBOTS MICREDITO\MICRE_RBT_PLAN_PAGOS\RBT_Business\obj\Debug\RBT.Business.csproj.AssemblyReference.cache
+D:\AzureDevops\ROBOTS MICREDITO\MICRE_RBT_PLAN_PAGOS\RBT_Business\obj\Debug\RBT.Business.csproj.CoreCompileInputs.cache
+D:\AzureDevops\ROBOTS MICREDITO\MICRE_RBT_PLAN_PAGOS\RBT_Business\obj\Debug\RBT.Business.csproj.CopyComplete
+D:\AzureDevops\ROBOTS MICREDITO\MICRE_RBT_PLAN_PAGOS\RBT_Business\obj\Debug\RBT_Business.dll
+D:\AzureDevops\ROBOTS MICREDITO\MICRE_RBT_PLAN_PAGOS\RBT_Business\obj\Debug\RBT_Business.pdb

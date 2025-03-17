@@ -1,0 +1,6 @@
+D:\BC2545\HACKATON\API_BCP_CRECER_INTRANET\APLICATION\BcpCrecer.WebApi\obj\Release\net5.0\BcpCrecer.WebApi.csproj.AssemblyReference.cache
+D:\BC2545\HACKATON\API_BCP_CRECER_INTRANET\APLICATION\BcpCrecer.WebApi\obj\Release\net5.0\BcpCrecer.WebApi.GeneratedMSBuildEditorConfig.editorconfig
+D:\BC2545\HACKATON\API_BCP_CRECER_INTRANET\APLICATION\BcpCrecer.WebApi\obj\Release\net5.0\BcpCrecer.WebApi.AssemblyInfoInputs.cache
+D:\BC2545\HACKATON\API_BCP_CRECER_INTRANET\APLICATION\BcpCrecer.WebApi\obj\Release\net5.0\BcpCrecer.WebApi.AssemblyInfo.cs
+D:\BC2545\HACKATON\API_BCP_CRECER_INTRANET\APLICATION\BcpCrecer.WebApi\obj\Release\net5.0\BcpCrecer.WebApi.csproj.CoreCompileInputs.cache
+D:\BC2545\HACKATON\API_BCP_CRECER_INTRANET\APLICATION\BcpCrecer.WebApi\obj\Release\net5.0\BcpCrecer.WebApi.MvcApplicationPartsAssemblyInfo.cache

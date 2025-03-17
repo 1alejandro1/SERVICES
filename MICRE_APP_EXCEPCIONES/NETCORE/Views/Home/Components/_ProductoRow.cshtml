@@ -1,0 +1,47 @@
+﻿@model NETCORE.TDOs.ProductoTDO
+@* Views/Home/Components/_ProductoRow.cshtml*@
+
+
+<div id="contentDiv" style="display: none">
+    <div class="pb-3 pt-2"><div class="custom-border" style="display: flex; align-items: center;"><h6>Producto seleccionado: {Productos[i].IdProducto}</h6> </div></div>
+    <div class="input-group mb-3 mt-3">
+        <span class="input-group-text"> Bs</span>
+        <div class="form-floating">
+            <input asp-for="montoSolicitadoBOL" type="text" id="deudaBs3" class="form-control" placeholder="Deuda total en el BCP (Bs)" oninput="actualizarDolares('deudaBs3', 'Dolares3')" required>
+            <label class="fst-italic" for="floatingInput">
+                Monto solicitado (Bs)
+            </label>
+        </div>
+        <span class="input-group-text"> $</span>
+        <div class="form-floating">
+            <input asp-for="montoSolicitadoUSD" type="text" class="form-control" id="Dolares3" value="0.00" disabled>
+            <label class="fst-italic" for="Dolares3">
+                Monto solicitado ($us)
+            </label>
+        </div>
+    </div>
+    <div>
+        <div class="form-floating">
+            <select asp-for="idFinalidad" class="form-select" id="floatingSelect" aria-label="Floating label select example" required>
+                <option value="1">Libre disponibilidad</option>
+                <option value="2">Vehicular Plus - Compra de vehículo nuevo</option>
+                <option value="3">Vehículo eléctrico/híbrido</option>
+                <option value="4">Compra de deuda y libre disponibilidad</option>
+                <option value="5">Reutilización crédito BCP y libre disponibilidad</option>
+                <option value="6">Compra de deuda y reutilización crédito BCP</option>
+            </select>
+            <label for="floatingSelect">Finalidad</label>
+        </div>
+        <div class="invalid-feedback">
+            Please select a valid state.
+        </div>
+    </div>
+</div> <!--efectivo consumo-->
+
+<script>
+    document.onkeydown = event => {
+        if (event.key === "ArrowRight") {
+            event.preventDefault();
+        }
+    }
+</script>

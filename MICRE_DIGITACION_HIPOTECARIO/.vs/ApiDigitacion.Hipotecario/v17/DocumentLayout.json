@@ -1,0 +1,665 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C8164817-235E-48AB-984D-C514AE15B72F}|ApiDigitacion.Hipotecario.Business\\ApiDigitacion.Hipotecario.Business.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario.business\\solicitudmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8164817-235E-48AB-984D-C514AE15B72F}|ApiDigitacion.Hipotecario.Business\\ApiDigitacion.Hipotecario.Business.csproj|solutionrelative:apidigitacion.hipotecario.business\\solicitudmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80F4E85A-0473-4094-A9E9-06D0E699554E}|ApiDigitacion.Hipotecario.Model\\ApiDigitacion.Hipotecario.Model.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario.model\\dto\\requestcondiciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80F4E85A-0473-4094-A9E9-06D0E699554E}|ApiDigitacion.Hipotecario.Model\\ApiDigitacion.Hipotecario.Model.csproj|solutionrelative:apidigitacion.hipotecario.model\\dto\\requestcondiciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18BEE3D4-6CDA-44AA-8741-0A60A5419545}|ApiDigitacion.Hipotecario\\ApiDigitacion.Hipotecario.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario\\controllers\\calculocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18BEE3D4-6CDA-44AA-8741-0A60A5419545}|ApiDigitacion.Hipotecario\\ApiDigitacion.Hipotecario.csproj|solutionrelative:apidigitacion.hipotecario\\controllers\\calculocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18BEE3D4-6CDA-44AA-8741-0A60A5419545}|ApiDigitacion.Hipotecario\\ApiDigitacion.Hipotecario.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario\\controllers\\seguridadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18BEE3D4-6CDA-44AA-8741-0A60A5419545}|ApiDigitacion.Hipotecario\\ApiDigitacion.Hipotecario.csproj|solutionrelative:apidigitacion.hipotecario\\controllers\\seguridadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18BEE3D4-6CDA-44AA-8741-0A60A5419545}|ApiDigitacion.Hipotecario\\ApiDigitacion.Hipotecario.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario\\controllers\\calificacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18BEE3D4-6CDA-44AA-8741-0A60A5419545}|ApiDigitacion.Hipotecario\\ApiDigitacion.Hipotecario.csproj|solutionrelative:apidigitacion.hipotecario\\controllers\\calificacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18BEE3D4-6CDA-44AA-8741-0A60A5419545}|ApiDigitacion.Hipotecario\\ApiDigitacion.Hipotecario.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario\\controllers\\solicitudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18BEE3D4-6CDA-44AA-8741-0A60A5419545}|ApiDigitacion.Hipotecario\\ApiDigitacion.Hipotecario.csproj|solutionrelative:apidigitacion.hipotecario\\controllers\\solicitudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851A77AB-8D79-4AE4-9F63-B9610A49D12D}|ApiDigitacion.Hipotecario.Services\\ApiDigitacion.Hipotecario.Services.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario.services\\servicesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851A77AB-8D79-4AE4-9F63-B9610A49D12D}|ApiDigitacion.Hipotecario.Services\\ApiDigitacion.Hipotecario.Services.csproj|solutionrelative:apidigitacion.hipotecario.services\\servicesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8164817-235E-48AB-984D-C514AE15B72F}|ApiDigitacion.Hipotecario.Business\\ApiDigitacion.Hipotecario.Business.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario.business\\calculomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8164817-235E-48AB-984D-C514AE15B72F}|ApiDigitacion.Hipotecario.Business\\ApiDigitacion.Hipotecario.Business.csproj|solutionrelative:apidigitacion.hipotecario.business\\calculomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80F4E85A-0473-4094-A9E9-06D0E699554E}|ApiDigitacion.Hipotecario.Model\\ApiDigitacion.Hipotecario.Model.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario.model\\dto\\requestcalculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80F4E85A-0473-4094-A9E9-06D0E699554E}|ApiDigitacion.Hipotecario.Model\\ApiDigitacion.Hipotecario.Model.csproj|solutionrelative:apidigitacion.hipotecario.model\\dto\\requestcalculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8164817-235E-48AB-984D-C514AE15B72F}|ApiDigitacion.Hipotecario.Business\\ApiDigitacion.Hipotecario.Business.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario.business\\calificacionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8164817-235E-48AB-984D-C514AE15B72F}|ApiDigitacion.Hipotecario.Business\\ApiDigitacion.Hipotecario.Business.csproj|solutionrelative:apidigitacion.hipotecario.business\\calificacionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80F4E85A-0473-4094-A9E9-06D0E699554E}|ApiDigitacion.Hipotecario.Model\\ApiDigitacion.Hipotecario.Model.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario.model\\calificacion\\datoscreditohipotecario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80F4E85A-0473-4094-A9E9-06D0E699554E}|ApiDigitacion.Hipotecario.Model\\ApiDigitacion.Hipotecario.Model.csproj|solutionrelative:apidigitacion.hipotecario.model\\calificacion\\datoscreditohipotecario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80F4E85A-0473-4094-A9E9-06D0E699554E}|ApiDigitacion.Hipotecario.Model\\ApiDigitacion.Hipotecario.Model.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario.model\\datoscreditohipotecariohp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80F4E85A-0473-4094-A9E9-06D0E699554E}|ApiDigitacion.Hipotecario.Model\\ApiDigitacion.Hipotecario.Model.csproj|solutionrelative:apidigitacion.hipotecario.model\\datoscreditohipotecariohp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80F4E85A-0473-4094-A9E9-06D0E699554E}|ApiDigitacion.Hipotecario.Model\\ApiDigitacion.Hipotecario.Model.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario.model\\reqdatoscredito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80F4E85A-0473-4094-A9E9-06D0E699554E}|ApiDigitacion.Hipotecario.Model\\ApiDigitacion.Hipotecario.Model.csproj|solutionrelative:apidigitacion.hipotecario.model\\reqdatoscredito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80F4E85A-0473-4094-A9E9-06D0E699554E}|ApiDigitacion.Hipotecario.Model\\ApiDigitacion.Hipotecario.Model.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario.model\\dto\\requestdatoscredito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80F4E85A-0473-4094-A9E9-06D0E699554E}|ApiDigitacion.Hipotecario.Model\\ApiDigitacion.Hipotecario.Model.csproj|solutionrelative:apidigitacion.hipotecario.model\\dto\\requestdatoscredito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18BEE3D4-6CDA-44AA-8741-0A60A5419545}|ApiDigitacion.Hipotecario\\ApiDigitacion.Hipotecario.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{18BEE3D4-6CDA-44AA-8741-0A60A5419545}|ApiDigitacion.Hipotecario\\ApiDigitacion.Hipotecario.csproj|solutionrelative:apidigitacion.hipotecario\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8164817-235E-48AB-984D-C514AE15B72F}|ApiDigitacion.Hipotecario.Business\\ApiDigitacion.Hipotecario.Business.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario.business\\digitacionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8164817-235E-48AB-984D-C514AE15B72F}|ApiDigitacion.Hipotecario.Business\\ApiDigitacion.Hipotecario.Business.csproj|solutionrelative:apidigitacion.hipotecario.business\\digitacionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{949550EC-EDEF-4616-8C23-D6E51415C100}|ApiDigitacion.Hipotecario.DataAccess\\ApiDigitacion.Hipotecario.DataAccess.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario.dataaccess\\micreditomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{949550EC-EDEF-4616-8C23-D6E51415C100}|ApiDigitacion.Hipotecario.DataAccess\\ApiDigitacion.Hipotecario.DataAccess.csproj|solutionrelative:apidigitacion.hipotecario.dataaccess\\micreditomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851A77AB-8D79-4AE4-9F63-B9610A49D12D}|ApiDigitacion.Hipotecario.Services\\ApiDigitacion.Hipotecario.Services.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario.services\\parametrosmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851A77AB-8D79-4AE4-9F63-B9610A49D12D}|ApiDigitacion.Hipotecario.Services\\ApiDigitacion.Hipotecario.Services.csproj|solutionrelative:apidigitacion.hipotecario.services\\parametrosmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A90C9F6-5002-4333-8FD0-3327F470CB09}|BCP.Logs\\BCP.Logs.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\bcp.logs\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A90C9F6-5002-4333-8FD0-3327F470CB09}|BCP.Logs\\BCP.Logs.csproj|solutionrelative:bcp.logs\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77D0E4DD-48B2-44CA-BA8D-F576DADD188B}|ApiDigitacion.Hipotecario.Segurinet\\ApiDigitacion.Hipotecario.Segurinet.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario.segurinet\\segurinetmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77D0E4DD-48B2-44CA-BA8D-F576DADD188B}|ApiDigitacion.Hipotecario.Segurinet\\ApiDigitacion.Hipotecario.Segurinet.csproj|solutionrelative:apidigitacion.hipotecario.segurinet\\segurinetmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851A77AB-8D79-4AE4-9F63-B9610A49D12D}|ApiDigitacion.Hipotecario.Services\\ApiDigitacion.Hipotecario.Services.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario.services\\serviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851A77AB-8D79-4AE4-9F63-B9610A49D12D}|ApiDigitacion.Hipotecario.Services\\ApiDigitacion.Hipotecario.Services.csproj|solutionrelative:apidigitacion.hipotecario.services\\serviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80F4E85A-0473-4094-A9E9-06D0E699554E}|ApiDigitacion.Hipotecario.Model\\ApiDigitacion.Hipotecario.Model.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario.model\\calculadora\\cronogramaentitie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80F4E85A-0473-4094-A9E9-06D0E699554E}|ApiDigitacion.Hipotecario.Model\\ApiDigitacion.Hipotecario.Model.csproj|solutionrelative:apidigitacion.hipotecario.model\\calculadora\\cronogramaentitie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851A77AB-8D79-4AE4-9F63-B9610A49D12D}|ApiDigitacion.Hipotecario.Services\\ApiDigitacion.Hipotecario.Services.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario.services\\filtrosiimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851A77AB-8D79-4AE4-9F63-B9610A49D12D}|ApiDigitacion.Hipotecario.Services\\ApiDigitacion.Hipotecario.Services.csproj|solutionrelative:apidigitacion.hipotecario.services\\filtrosiimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE125637-5DA9-4127-82B1-634835D52BEE}|ApiDigitacion.Hipotecario.Test\\ApiDigitacion.Hipotecario.Test.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario.test\\unittestservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE125637-5DA9-4127-82B1-634835D52BEE}|ApiDigitacion.Hipotecario.Test\\ApiDigitacion.Hipotecario.Test.csproj|solutionrelative:apidigitacion.hipotecario.test\\unittestservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18BEE3D4-6CDA-44AA-8741-0A60A5419545}|ApiDigitacion.Hipotecario\\ApiDigitacion.Hipotecario.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario\\apidigitacion.hipotecario.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{18BEE3D4-6CDA-44AA-8741-0A60A5419545}|ApiDigitacion.Hipotecario\\ApiDigitacion.Hipotecario.csproj|solutionrelative:apidigitacion.hipotecario\\apidigitacion.hipotecario.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8164817-235E-48AB-984D-C514AE15B72F}|ApiDigitacion.Hipotecario.Business\\ApiDigitacion.Hipotecario.Business.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario.business\\apidigitacion.hipotecario.business.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{C8164817-235E-48AB-984D-C514AE15B72F}|ApiDigitacion.Hipotecario.Business\\ApiDigitacion.Hipotecario.Business.csproj|solutionrelative:apidigitacion.hipotecario.business\\apidigitacion.hipotecario.business.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{949550EC-EDEF-4616-8C23-D6E51415C100}|ApiDigitacion.Hipotecario.DataAccess\\ApiDigitacion.Hipotecario.DataAccess.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario.dataaccess\\apidigitacion.hipotecario.dataaccess.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{949550EC-EDEF-4616-8C23-D6E51415C100}|ApiDigitacion.Hipotecario.DataAccess\\ApiDigitacion.Hipotecario.DataAccess.csproj|solutionrelative:apidigitacion.hipotecario.dataaccess\\apidigitacion.hipotecario.dataaccess.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80F4E85A-0473-4094-A9E9-06D0E699554E}|ApiDigitacion.Hipotecario.Model\\ApiDigitacion.Hipotecario.Model.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario.model\\apidigitacion.hipotecario.model.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{80F4E85A-0473-4094-A9E9-06D0E699554E}|ApiDigitacion.Hipotecario.Model\\ApiDigitacion.Hipotecario.Model.csproj|solutionrelative:apidigitacion.hipotecario.model\\apidigitacion.hipotecario.model.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77D0E4DD-48B2-44CA-BA8D-F576DADD188B}|ApiDigitacion.Hipotecario.Segurinet\\ApiDigitacion.Hipotecario.Segurinet.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario.segurinet\\apidigitacion.hipotecario.segurinet.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{77D0E4DD-48B2-44CA-BA8D-F576DADD188B}|ApiDigitacion.Hipotecario.Segurinet\\ApiDigitacion.Hipotecario.Segurinet.csproj|solutionrelative:apidigitacion.hipotecario.segurinet\\apidigitacion.hipotecario.segurinet.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE125637-5DA9-4127-82B1-634835D52BEE}|ApiDigitacion.Hipotecario.Test\\ApiDigitacion.Hipotecario.Test.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario.test\\apidigitacion.hipotecario.test.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{AE125637-5DA9-4127-82B1-634835D52BEE}|ApiDigitacion.Hipotecario.Test\\ApiDigitacion.Hipotecario.Test.csproj|solutionrelative:apidigitacion.hipotecario.test\\apidigitacion.hipotecario.test.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECB10D37-09AE-4F8B-97B4-EE9FF1CF556E}|BCP.Common\\BCP.Common.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\bcp.common\\bcp.common.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{ECB10D37-09AE-4F8B-97B4-EE9FF1CF556E}|BCP.Common\\BCP.Common.csproj|solutionrelative:bcp.common\\bcp.common.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8C26364-4483-4093-B025-E22DC5090377}|BCP.Security\\BCP.Security.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\bcp.security\\bcp.security.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{D8C26364-4483-4093-B025-E22DC5090377}|BCP.Security\\BCP.Security.csproj|solutionrelative:bcp.security\\bcp.security.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851A77AB-8D79-4AE4-9F63-B9610A49D12D}|ApiDigitacion.Hipotecario.Services\\ApiDigitacion.Hipotecario.Services.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario.services\\filtrosimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851A77AB-8D79-4AE4-9F63-B9610A49D12D}|ApiDigitacion.Hipotecario.Services\\ApiDigitacion.Hipotecario.Services.csproj|solutionrelative:apidigitacion.hipotecario.services\\filtrosimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851A77AB-8D79-4AE4-9F63-B9610A49D12D}|ApiDigitacion.Hipotecario.Services\\ApiDigitacion.Hipotecario.Services.csproj|d:\\t25208\\micredito\\micre_digitacion_hipotecario\\apidigitacion.hipotecario.services\\getdeudasexternasv2entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851A77AB-8D79-4AE4-9F63-B9610A49D12D}|ApiDigitacion.Hipotecario.Services\\ApiDigitacion.Hipotecario.Services.csproj|solutionrelative:apidigitacion.hipotecario.services\\getdeudasexternasv2entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 26,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario\\appsettings.json",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario\\appsettings.json",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario\\appsettings.json",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario\\appsettings.json",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAA0AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2023-12-08T18:20:38.348Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "FiltrosIIManager.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Services\\FiltrosIIManager.cs",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario.Services\\FiltrosIIManager.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Services\\FiltrosIIManager.cs",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario.Services\\FiltrosIIManager.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAA2wD4AAAB4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-08T18:22:30.383Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SolicitudController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario\\Controllers\\SolicitudController.cs",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario\\Controllers\\SolicitudController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario\\Controllers\\SolicitudController.cs",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario\\Controllers\\SolicitudController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-15T13:40:55.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CalificacionesController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario\\Controllers\\CalificacionesController.cs",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario\\Controllers\\CalificacionesController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario\\Controllers\\CalificacionesController.cs",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario\\Controllers\\CalificacionesController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-15T13:41:51.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SolicitudManager.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Business\\SolicitudManager.cs",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario.Business\\SolicitudManager.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Business\\SolicitudManager.cs",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario.Business\\SolicitudManager.cs",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAUwH4AAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T19:29:24.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SeguridadController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario\\Controllers\\SeguridadController.cs",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario\\Controllers\\SeguridadController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario\\Controllers\\SeguridadController.cs",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario\\Controllers\\SeguridadController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T16:48:37.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CalculoController.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario\\Controllers\\CalculoController.cs",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario\\Controllers\\CalculoController.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario\\Controllers\\CalculoController.cs",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario\\Controllers\\CalculoController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowDIAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T17:13:00.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RequestCondiciones.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Model\\DTO\\RequestCondiciones.cs",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario.Model\\DTO\\RequestCondiciones.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Model\\DTO\\RequestCondiciones.cs",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario.Model\\DTO\\RequestCondiciones.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T23:41:27.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ServicesManager.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Services\\ServicesManager.cs",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario.Services\\ServicesManager.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Services\\ServicesManager.cs",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario.Services\\ServicesManager.cs",
+              "ViewState": "AQIAAIAAAAAAAAAAAAArwJYAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T23:51:08.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CalculoManager.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Business\\CalculoManager.cs",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario.Business\\CalculoManager.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Business\\CalculoManager.cs",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario.Business\\CalculoManager.cs",
+              "ViewState": "AQIAABwBAAAAAAAAAAA2wDABAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-15T14:36:14.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RequestCalculo.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Model\\DTO\\RequestCalculo.cs",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario.Model\\DTO\\RequestCalculo.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Model\\DTO\\RequestCalculo.cs",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario.Model\\DTO\\RequestCalculo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBMAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T21:43:13.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CalificacionManager.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Business\\CalificacionManager.cs",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario.Business\\CalificacionManager.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Business\\CalificacionManager.cs",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario.Business\\CalificacionManager.cs",
+              "ViewState": "AQIAAEkBAAAAAAAAAAAiwFYBAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-15T13:40:25.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DatosCreditoHipotecario.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Model\\Calificacion\\DatosCreditoHipotecario.cs",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario.Model\\Calificacion\\DatosCreditoHipotecario.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Model\\Calificacion\\DatosCreditoHipotecario.cs",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario.Model\\Calificacion\\DatosCreditoHipotecario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T15:53:29.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DatosCreditoHipotecarioHP.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Model\\DatosCreditoHipotecarioHP.cs",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario.Model\\DatosCreditoHipotecarioHP.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Model\\DatosCreditoHipotecarioHP.cs",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario.Model\\DatosCreditoHipotecarioHP.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T15:52:51.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DigitacionManager.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Business\\DigitacionManager.cs",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario.Business\\DigitacionManager.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Business\\DigitacionManager.cs",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario.Business\\DigitacionManager.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAIAwwF8AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-15T13:40:47.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RequestDatosCredito.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Model\\DTO\\RequestDatosCredito.cs",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario.Model\\DTO\\RequestDatosCredito.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Model\\DTO\\RequestDatosCredito.cs",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario.Model\\DTO\\RequestDatosCredito.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T15:52:22.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ReqDatosCredito.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Model\\ReqDatosCredito.cs",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario.Model\\ReqDatosCredito.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Model\\ReqDatosCredito.cs",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario.Model\\ReqDatosCredito.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T15:52:45.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ParametrosManager.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Services\\ParametrosManager.cs",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario.Services\\ParametrosManager.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Services\\ParametrosManager.cs",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario.Services\\ParametrosManager.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAtwGUAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T22:05:40.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MicreditoManager.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.DataAccess\\MicreditoManager.cs",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario.DataAccess\\MicreditoManager.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.DataAccess\\MicreditoManager.cs",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario.DataAccess\\MicreditoManager.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAIAzwEgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T23:45:33.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Logger.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\BCP.Logs\\Logger.cs",
+              "RelativeDocumentMoniker": "BCP.Logs\\Logger.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\BCP.Logs\\Logger.cs",
+              "RelativeToolTip": "BCP.Logs\\Logger.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwCgAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T15:26:48.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SegurinetManager.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Segurinet\\SegurinetManager.cs",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario.Segurinet\\SegurinetManager.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Segurinet\\SegurinetManager.cs",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario.Segurinet\\SegurinetManager.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAA3wFcAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T21:57:30.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ServiceClient.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Services\\ServiceClient.cs",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario.Services\\ServiceClient.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Services\\ServiceClient.cs",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario.Services\\ServiceClient.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAswCcAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T18:08:49.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CronogramaEntitie.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Model\\Calculadora\\CronogramaEntitie.cs",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario.Model\\Calculadora\\CronogramaEntitie.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Model\\Calculadora\\CronogramaEntitie.cs",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario.Model\\Calculadora\\CronogramaEntitie.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T14:27:12.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UnitTestServices.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Test\\UnitTestServices.cs",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario.Test\\UnitTestServices.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Test\\UnitTestServices.cs",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario.Test\\UnitTestServices.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAUwBwAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-15T14:40:31.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ApiDigitacion.Hipotecario",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario\\ApiDigitacion.Hipotecario.csproj",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario\\ApiDigitacion.Hipotecario.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario\\ApiDigitacion.Hipotecario.csproj",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario\\ApiDigitacion.Hipotecario.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-10T14:50:16.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ApiDigitacion.Hipotecario.Business",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Business\\ApiDigitacion.Hipotecario.Business.csproj",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario.Business\\ApiDigitacion.Hipotecario.Business.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Business\\ApiDigitacion.Hipotecario.Business.csproj",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario.Business\\ApiDigitacion.Hipotecario.Business.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-10T14:50:08.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ApiDigitacion.Hipotecario.DataAccess",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.DataAccess\\ApiDigitacion.Hipotecario.DataAccess.csproj",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario.DataAccess\\ApiDigitacion.Hipotecario.DataAccess.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.DataAccess\\ApiDigitacion.Hipotecario.DataAccess.csproj",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario.DataAccess\\ApiDigitacion.Hipotecario.DataAccess.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-10T14:50:02.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ApiDigitacion.Hipotecario.Model",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Model\\ApiDigitacion.Hipotecario.Model.csproj",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario.Model\\ApiDigitacion.Hipotecario.Model.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Model\\ApiDigitacion.Hipotecario.Model.csproj",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario.Model\\ApiDigitacion.Hipotecario.Model.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-10T14:49:56.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ApiDigitacion.Hipotecario.Segurinet",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Segurinet\\ApiDigitacion.Hipotecario.Segurinet.csproj",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario.Segurinet\\ApiDigitacion.Hipotecario.Segurinet.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Segurinet\\ApiDigitacion.Hipotecario.Segurinet.csproj",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario.Segurinet\\ApiDigitacion.Hipotecario.Segurinet.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-10T14:49:50.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ApiDigitacion.Hipotecario.Test",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Test\\ApiDigitacion.Hipotecario.Test.csproj",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario.Test\\ApiDigitacion.Hipotecario.Test.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Test\\ApiDigitacion.Hipotecario.Test.csproj",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario.Test\\ApiDigitacion.Hipotecario.Test.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-10T14:49:37.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "BCP.Common",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\BCP.Common\\BCP.Common.csproj",
+              "RelativeDocumentMoniker": "BCP.Common\\BCP.Common.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\BCP.Common\\BCP.Common.csproj",
+              "RelativeToolTip": "BCP.Common\\BCP.Common.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-10T14:49:31.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "BCP.Security",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\BCP.Security\\BCP.Security.csproj",
+              "RelativeDocumentMoniker": "BCP.Security\\BCP.Security.csproj",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\BCP.Security\\BCP.Security.csproj",
+              "RelativeToolTip": "BCP.Security\\BCP.Security.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-10T14:49:19.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "FiltrosIManager.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Services\\FiltrosIManager.cs",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario.Services\\FiltrosIManager.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Services\\FiltrosIManager.cs",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario.Services\\FiltrosIManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-08T18:24:44.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "GetDeudasExternasV2Entity.cs",
+              "DocumentMoniker": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Services\\GetDeudasExternasV2Entity.cs",
+              "RelativeDocumentMoniker": "ApiDigitacion.Hipotecario.Services\\GetDeudasExternasV2Entity.cs",
+              "ToolTip": "D:\\T25208\\MICREDITO\\MICRE_DIGITACION_HIPOTECARIO\\ApiDigitacion.Hipotecario.Services\\GetDeudasExternasV2Entity.cs",
+              "RelativeToolTip": "ApiDigitacion.Hipotecario.Services\\GetDeudasExternasV2Entity.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAmwBIAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-14T23:50:32.184Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

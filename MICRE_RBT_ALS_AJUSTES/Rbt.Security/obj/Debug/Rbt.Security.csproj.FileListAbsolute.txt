@@ -1,0 +1,5 @@
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_AJUSTES\Rbt.Security\bin\Debug\Rbt.Security.dll
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_AJUSTES\Rbt.Security\bin\Debug\Rbt.Security.pdb
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_AJUSTES\Rbt.Security\obj\Debug\Rbt.Security.csproj.CoreCompileInputs.cache
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_AJUSTES\Rbt.Security\obj\Debug\Rbt.Security.dll
+D:\T25208\MICREDITO\ROBOTS Y WS\MICRE_RBT_ALS_AJUSTES\Rbt.Security\obj\Debug\Rbt.Security.pdb

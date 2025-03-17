@@ -1,0 +1,116 @@
+trigger:
+  branches:
+    include:
+    - '*'
+  paths:
+    exclude:
+    - readme.md
+
+variables:
+  solution: '**/*.sln'
+  project: '**/BcpCrecer.WebApi.csproj'
+  testXUnit: '**/*Test*.csproj'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+  GroupAgent: Agentes_Desarrollo_Dev
+  Agent: Agente_S60546
+  Publish: 'API_BCP_CRECER_INTRANET'
+  PublishArtifact: '$(build.artifactstagingdirectory)'
+
+pool:
+  name: $(GroupAgent)
+  demands:
+  - Agent.name -equals $(Agent)
+
+steps:
+- task: CmdLine@2
+  displayName: 'Configuration Build'
+  inputs:
+    script:  |
+      echo ----------------------------------------------------------------------------
+      echo ----------------------------------------------------------------------------
+      echo COMPUTER NAME:           $(COMPUTERNAME)
+      echo ----------------------------------------------------------------------------
+      echo ----------------------------------------------------------------------------
+      echo DIRECTORIO ARTIFACT:     $(PublishArtifact)
+      echo DEFINITION NAME:         $(Build.DefinitionName)
+      echo PUBLISH:                 $(Publish)
+      echo ----------------------------------------------------------------------------
+      echo ----------------------------------------------------------------------------
+      echo AGENT NAME:              $(Agent)
+      echo SOLUTION:                $(solution)
+      echo BUILD CONFIGURATION      $(buildConfiguration)
+      echo SOURCE BRANCH NAME:      $(Build.SourceBranchName)
+      echo BUILD NUMBER:            $(Build.BuildNumber)
+      echo DIRECTORY:               $(System.DefaultWorkingDirectory)
+      echo TEMP:                    $(Agent.TempDirectory)
+      echo ----------------------------------------------------------------------------
+      echo ----------------------------------------------------------------------------
+
+- task: NuGetToolInstaller@1
+  inputs:
+    checkLatest: true
+
+- task: NuGetCommand@2
+  inputs:
+    restoreSolution: '$(solution)'
+
+- task: VSBuild@1
+  inputs:
+    solution: '$(solution)'
+    msbuildArgs: '/p:DeployOnBuild=true 
+                  /p:WebPublishMethod=Package 
+                  /p:PackageAsSingleFile=true 
+                  /p:SkipInvalidConfigurations=true 
+                  /p:DesktopBuildPackageLocation="$(PublishArtifact)/$(Publish).zip"
+                  /p:PackageLocation="$(PublishArtifact)"
+                  /p:AllowUnsafeBlocks=true'
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
+
+#- task: VSTest@2
+#  displayName: 'Test'
+#  inputs:
+#    testSelector: 'testAssemblies'
+#    testAssemblyVer2: |
+#      **\$(BuildConfiguration)\*test*.dll
+#      !**\obj\**
+#    searchFolder: '$(System.DefaultWorkingDirectory)'
+#    testRunTitle: 'Servicios AWS net'
+#    platform: '$(BuildPlatform)'
+#    configuration: '$(BuildConfiguration)'
+
+- task: DotNetCoreCLI@2
+  displayName: Testing Unit Test
+  inputs:
+    command: 'test'
+    projects: '$(testXUnit)'
+    publishTestResults: true
+    testRunTitle: 'Unit Test'
+
+
+- task: DotNetCoreCLI@2
+  displayName: 'Code Coverage'
+  inputs:
+    command: 'test'
+    projects: '$(testXUnit)'
+    arguments: '--no-build --configuration $(buildConfiguration) --collect:"XPlat Code Coverage" /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=$(Build.SourcesDirectory)/TestResults/Coverage/'
+    publishTestResults: false
+
+- task: PublishCodeCoverageResults@1
+  displayName: 'Publish code coverage report'
+  inputs:
+    codeCoverageTool: 'Cobertura'
+    summaryFileLocation: '$(Build.SourcesDirectory)/**/coverage.cobertura.xml'
+
+#- task: PublishSymbols@2
+#  displayName: 'Publish symbols path'
+#  inputs:
+#    SearchPattern: '**\bin\**\*.pdb'
+#    PublishSymbols: false
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact'
+  inputs:
+    PathtoPublish: '$(PublishArtifact)'
+    ArtifactName: '$(Publish)'
