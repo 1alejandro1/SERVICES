@@ -1,0 +1,125 @@
+SOPORTE OPERACIONES NO TRANSMITIDAS:
+
+-EN CASO DE QUE NO ESTÉ TRANSMITIENDO OPERACIONES HAY QUE PEDIR LOGS DEL ROBOT DE TRANSMISION Y SI HAY TIME OUT REPORTAR A SERVIDORES
+-(MICROCREDITO) EN CASO DE HABER ERROR "ESTADO E" EN REPORTE ALS, REVISAR DÍAS DIFERENCIA QUE SEA MENOR A 30, SI ES MENOR PUEDE QUE ESTÉ MAL LA CONFIG DE FECHA PARA LOS CAMBIOS DE ESTADO.
+- EN CASO DE QUE NO TRANSMITA ES POR QUE EL CLIENTE TIENE COMPLEMENTO (CONSULTAR DE CALIFICACIONPERSONA), PARA ELLO REGISTRAR GARANTÍA EN BP_GARANTIAS Y NOTIFICAR AL USUARIO QUE REGULARICE LA GARANTÍA MANUALMENTE.
+- EN CASO DE QUE ESTADO ESTÉ EN "N" Y EL MIC NO SE HAYA GENERADO, PUEDE QUE HAYA HABIDO UN ERROR CON LA GARANTÍA, HAY QUE ELIMINARLA Y SE CREARÁ AUTOMÁTICAMENTE ALS 
+- LOS SABADOS PUEDE QUE NO SE TRANSMITAN POR QUE SON OPERACIONES CON GARANTÍA FOGAGRE, LOS SABADOS NO HAY HOST Y DA ERROR (SOLO PARA CASOS SÁBADOS).
+- DA ERROR CON ESTADO 00 SI NO GENERÓ ALS SE PUEDE VOLVER A REPROCESAR CAMBIANDO EL INDICADOR TRANSMITIDO A "N", NO GENERA ALS HASTA QUE ESTÉ EN LA PANTALLA DE AMNS CON LOS MONTOS Y MENSAJE "PROCESSING COMPLETE"
+- PARA OPERACIONES PYME SE REGISTRA GARANTÍA FICTICIA PERO EN BN_GARANTIAS NO EN BP_GARANTIAS LUEGO EL ESTADO TRANSMITIDO EN "N" Y BORRAR SU ERROR EN CONTROL_GARANTIAS
+
+SOPORTES MICREDITO CLIENTE:
+
+-Revisar primero siempre los mensajes de error en captura para revisar en el cliente y en el coordinador.
+- Consultar datos del ticket y de la operación, detallar el problema con capturas.
+- Primero revisar la configuración de la máquina (formatos, versión aplicativo, base paramétrica)
+- Con el número de solicitud ver si hay error al consultar cliente o abrir operacion.
+- Ver Logs del Cliente y Logs del coordinador.
+- Revisar que los datos como el Cargo, Nacionalidad, Localidad, ... estén llenos en SOLICITUDPERSONA y SOLICITUD
+- A veces da error al digitar en la primera pantalla para todos los módulos, esto se debe a que el IDC del cónyuge esta como "00 NO APLICA 00", se debe cambiar en INFOCLIENTES
+- Cuendo no se puede digitar en Hipotecarios es por que el formato del IDC del conyuge del cliente está mal solo debe estar en 00 o vacío.
+
+
+NO MUESTRA DEUDAS DEL CONYUGE:
+
+-Debido a que el titular tiene que tener una deuda para que muestre las del conyuge.
+
+MICRE_MICROSERVICES
+
+
+NO GENERA FILTROS INTERNOS:
+
+-REVISAR LOGS API DOCUMENTOS Y COORDINADOR.
+-REVISAR EL CIC DE CALIFICACIONPERSONA Y SOLICITUDPERSONA PUEDE QUE ESTÉ NULL.
+-SI NO GENERA DEUDA ALS PUEDE QUE LA CUENTA ESTÉ EN ESTADO CANCELADA "RepExt BTBDBR01 SP - > micredito.ExtraerALS con el CIC".
+
+P -> TOMADO
+G -> Cuota Gorda (penultimo)
+S -> TRANSMITIDO
+N -> NO TRANSMITIDO
+
+
+ERROR AL GENERAR FILTROS INTERNOS
+-ERROR CON SP "SELINFOFILTRO3" normalmente es el EstadoCivil del Conyuge o titular, ó también por la nacionalidad 
+-Puede que el Cic del titular o conyuge o codeudor esté con el formato "FIC00000" (buscar en tabla micredito.codeudores), notificar a Adrian para cambiar en infoclientes y luego cambiar en micredito.
+
+
+
+ERROR NO TRANSMITIÓ, QUEDÓ CON X 
+- Puede deberse a que modificaron la operaciòn después de desembolsar, revisar fecha calculo y fecha desembolso fechacalculo < fechadesembolso 
+- Puede ser el producto que el monto no esté definido en los rangos del Extra, consultar logs y si es eso derivar a Carlos Velasco (control de calidad)
+
+
+
+
+OPERACIONES CON IDC DIPLOMATICO
+- Registrar manualmente la garantía. Y cambiar el formato del IDC con Z al final
+- Para Tarjetas solo cambiar el formato del IDC con Z al final
+
+
+OPERACIONES DESEMBOLSADAS POR ERROR / OPERACIONES EXTORNADAS
+-Extornar el mismo día antes de que el cliente disponga del dinero.
+-Validar si se creó el ALS con el dódigo de solicitud tablas (Select * from micredito.ALS_ROBOT_MICREDITO where pnCodSolicitud = 786253) y (Select * from micredito.CODIGOOPERACIONALS where pnCodSolicitud =  786253)
+-En caso de que se haya creado el ALS el usuario debe cancelar el ALS con cartera post venta.
+
+
+PARA ERROR ARCHIVO ATC 
+Si da error la generación del mismo hay que, 
+
+
+
+ERROR (NULL U OTRO) TARJETAS EN NAZIR
+Reprocesar el mismo día hasta antes de las 12 PM.
+
+
+*****NOTAS:
+*****LOS SÁBADOS NO SE TRANSMITEN OP CON FONDO FOGAGRE Y SE QUEDA EN "N"
+*****Micredito no realiza desembolsos en nigún flujo
+*****Para abrir parametros se necesita conforme de Cristhian Romero
+*****Para la garantía automatica se crea por el score >= 326 
+*****(solo emergencias) Si una Operación ya fué desembolsada cambiar el estado a un estado anterior y editar el campo dnSecuencia de la tabla [SECUENCIA_PROCESOSOLICITUD] a 15 para CBM y 24 para Micrcredito (19 es desembolsada) para abrir nuevamente la OP.
+
+
+
+******************************************************************************************************************************
+******************************************************************************************************************************
+************************************************DESCUADRE CONTABLE************************************************************
+******************************************************************************************************************************
+
+
+https://btbdow00/tfs/CANALES%20PRESENCIALES/MICRE_TRANSMISION/_git/MICRE_WS_MIGRADOR?path=%2F&version=GBDESARROLLO&_a=contents
+
+_______________
+
+(Enlace consulta estados solicitud) http://btbnmw00/srv_mic_coordinador/api/HistorialEstados?CodSolicitud=227079
+
+(Enlace consulta Cuotas - Calculadora) http://btbnmw00/srv_mic_coordinador/api/Cuotas?Plazo=72&Moneda=BOL&Tasa=15.50&TasaDesgravamen=1.600000&ValorDelBien=0&Monto=21582.00&FechaDesembolso=2023/10/04&DiaPago=9
+
+(Enlace operaciones digitadas ALS) http://btbnmw00/ReporteDesembolso/#
+
+(Enlace perfil consulta) http://btbnmw00/srv_mic_coordinador/api/PefilConsulta?codSolicitud=105620
+
+(Enlace validar cuenta Biztalk antiguo)  http://btbnmw00/srv_mic_coordinador/api/Cuentas?NumCuenta=201-51629344-3-33&Matricula=SISTEMAS
+
+(Enlace para ver el CRONOGRAMA de la operación)  http://btbnmw00/ReporteDesembolso/Als/Index
+
+Tablero para mejoras y errores Micredito (https://btbdow00/tfs/CANALES%20PRESENCIALES/MICRE_COORDINADOR/_sprints/taskboard/Sala%20del%20Equipo%20MICRE_COORDINADOR/MICRE_COORDINADOR/SPRINT%202%20-%201T%202023)
+
+---------
+* Para Habilitar Extornos solo Subgerencias y Julio con el Perfil 'DI' -----> SOLUCIÓN Cambiar en NMAP las matriculas con JF a Analista y se soluciona
+  adicionar en Aplicativo Cliente -> ModificacionEspecialViewModel.cs (338)
+  servicio == "MICCBM" && perfil == "DI" 
+
+
+<!-- ambiente en produccion: "B52CAOR1"-->
+<!--USUARIO EXTRA  B91053  Cl4u5525-->
+ <!--puerto en Prod 23-->
+ 
+ CERTI
+ --User:         SCORECO_USER  
+--Pass:         Sc0r3C0n5um0C3rti22o22022
+--PublicToken:  F47F14C1-57EB-479A-950C-13AF90CFCF36
+--AppUserId:    SCORECOUser22022022
+
+______
+//_credenciales.password = "U3pikN+u7tfhTBI_jfws8GVgg-dPGh";
