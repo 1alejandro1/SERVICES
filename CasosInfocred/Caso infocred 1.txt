@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<titular>
+	<cabecera Titulo="INFORME CONFIDENCIAL">
+		<fechaHora Titulo="Fecha Emisión">26/12/2019 10:45:34</fechaHora>
+		<reporteNumero Titulo="Nro. de Reporte">44525428982485736</reporteNumero>
+		<usuario Titulo="Emitido por" TipoDocumento="DESCONOCIDO" NumeroDocumento="7654321">Flores Coca Indira Elizabeth</usuario>
+		<entidad Titulo="Entidad" TipoDocumento="NIT" NumeroDocumento="1020435022">BANCO DE CREDITO DE BOLIVIA SA</entidad>
+		<nroSolicitud Titulo="Nro. Solicitud">445254289</nroSolicitud>
+		<tipoDeCambio Titulo="Tipo de Cambio" Fecha="26/12/2019" MonedaOrigen="Bs" MonedaDestino="USD" Compra="6,86" Venta="6,96"/>
+	</cabecera>
+	<datosPersonales Titulo="DATOS PERSONALES">
+		<datosGenerales>
+			<datosGenerales>
+				<nombreCompleto Titulo="Nombre Completo">GUERRERO MENDOZA WILDO XAVIER</nombreCompleto>
+				<tipoDocumento Titulo="Tipo Documento">CI</tipoDocumento>
+				<nroDocumento Titulo="Nro. Documento">7209676</nroDocumento>
+				<ext Titulo="Ext.">TJ</ext>
+				<estadoCivil Titulo="Estado Civil"/>
+				<tipoPersona Titulo="Tipo Persona">NATURAL</tipoPersona>
+				<fechaNacFechaDef Titulo="Fecha Nac./Fecha Def.">27/11/1989</fechaNacFechaDef>
+			</datosGenerales>
+		</datosGenerales>
+		<datosConyuge/>
+		<domicilio/>
+		<score>
+			<score>
+				<score Titulo="Score">938</score>
+				<descripcion Titulo="Descripcion">RIESGO BAJO</descripcion>
+			</score>
+		</score>
+	</datosPersonales>
+	<datosFinancieros>
+		<sISTEMAFINANCIERO Titulo="SISTEMA FINANCIERO">
+			<sISTEMAFINANCIERO Titulo="DEUDA EN EL SISTEMA FINANCIERO SALDOS EXPRESADOS EN BOLIVIANOS">
+				<fila numero="1">
+					<sISTEMA titulo="SISTEMA" tipo="char">R</sISTEMA>
+					<eNTIDAD titulo="ENTIDAD" tipo="varchar">BANCO FIE SA</eNTIDAD>
+					<fECHAACTUALIZACION titulo="FECHA ACTUALIZACION" tipo="char">30/11/2019</fECHAACTUALIZACION>
+					<fECHAPROCESAMIENTO titulo="FECHA PROCESAMIENTO" tipo="char">15/12/2019</fECHAPROCESAMIENTO>
+					<tIPOCREDITO titulo="TIPO CREDITO" tipo="char">N0 - CONSUMO</tIPOCREDITO>
+					<tIPOOBLIGADO titulo="TIPO OBLIGADO" tipo="char">5A - DEUDOR A SOLA FIRMA</tIPOOBLIGADO>
+					<fECHAINICIO titulo="FECHA INICIO" tipo="smalldatetime">05/07/2019 0:00:00</fECHAINICIO>
+					<fECHAULTIMACUOTA titulo="FECHA ULTIMA CUOTA" tipo="smalldatetime">16/07/2022 0:00:00</fECHAULTIMACUOTA>
+					<mONEDA titulo="MONEDA" tipo="char">MN</mONEDA>
+					<mONTOORIGINAL titulo="MONTO ORIGINAL" tipo="money">11,512</mONTOORIGINAL>
+					<vALORCUOTA titulo="VALOR CUOTA" tipo="money">477</vALORCUOTA>
+					<cALIFICACION titulo="CALIFICACION" tipo="char">A</cALIFICACION>
+					<eSTADO titulo="ESTADO" tipo="char">VIGENTE</eSTADO>
+					<sALDOTOTAL titulo="SALDO TOTAL" tipo="money">10,739</sALDOTOTAL>
+					<sALDODIFERIDO titulo="SALDO DIFERIDO" tipo="money">5,123</sALDODIFERIDO>
+					<cONTINGENTE titulo="CONTINGENTE" tipo="money">0</cONTINGENTE>
+					<dIASMORA titulo="DIAS MORA" tipo="int">0</dIASMORA>
+					<hISTORICO titulo="HISTORICO" tipo="char">511111555555555555</hISTORICO>
+					<pERIODODEPAGO titulo="PERIODO DE PAGO" tipo="char">MENSUAL</pERIODODEPAGO>
+					<tIPCAN titulo="TIP CAN" tipo="char"/>
+					<tIPINT titulo="TIP INT" tipo="char">FV</tIPINT>
+					<tIPOPE titulo="TIP OPE" tipo="char">01</tIPOPE>
+					<tIPING titulo="TIP ING" tipo="char">I</tIPING>
+					<cAEDEC titulo="CAEDEC" tipo="char">H - 50102</cAEDEC>
+					<aCTECONO titulo="ACTECONO" tipo="char">J - 60221</aCTECONO>
+				</fila>
+				<fila numero="2">
+					<sISTEMA titulo="SISTEMA" tipo="char">R</sISTEMA>
+					<eNTIDAD titulo="ENTIDAD" tipo="varchar">COOPERATIVA MAGISTERIO RURAL LTDA</eNTIDAD>
+					<fECHAACTUALIZACION titulo="FECHA ACTUALIZACION" tipo="char">30/11/2019</fECHAACTUALIZACION>
+					<fECHAPROCESAMIENTO titulo="FECHA PROCESAMIENTO" tipo="char">15/12/2019</fECHAPROCESAMIENTO>
+					<tIPOCREDITO titulo="TIPO CREDITO" tipo="char">N0 - CONSUMO</tIPOCREDITO>
+					<tIPOOBLIGADO titulo="TIPO OBLIGADO" tipo="char">1A - DEUDOR</tIPOOBLIGADO>
+					<fECHAINICIO titulo="FECHA INICIO" tipo="smalldatetime">30/01/2018 0:00:00</fECHAINICIO>
+					<fECHAULTIMACUOTA titulo="FECHA ULTIMA CUOTA" tipo="smalldatetime">17/01/2022 0:00:00</fECHAULTIMACUOTA>
+					<mONEDA titulo="MONEDA" tipo="char">MN</mONEDA>
+					<mONTOORIGINAL titulo="MONTO ORIGINAL" tipo="money">35,000</mONTOORIGINAL>
+					<vALORCUOTA titulo="VALOR CUOTA" tipo="money">1,021</vALORCUOTA>
+					<cALIFICACION titulo="CALIFICACION" tipo="char">A</cALIFICACION>
+					<eSTADO titulo="ESTADO" tipo="char">VIGENTE</eSTADO>
+					<sALDO titulo="SALDO" tipo="money">21,658</sALDO>
+					<cONTINGENTE titulo="CONTINGENTE" tipo="money">0</cONTINGENTE>
+					<dIASMORA titulo="DIAS MORA" tipo="int">0</dIASMORA>
+					<hISTORICO titulo="HISTORICO" tipo="char">511111111111111111</hISTORICO>
+					<pERIODODEPAGO titulo="PERIODO DE PAGO" tipo="char">MENSUAL</pERIODODEPAGO>
+					<tIPCAN titulo="TIP CAN" tipo="char"/>
+					<tIPINT titulo="TIP INT" tipo="char">FV</tIPINT>
+					<tIPOPE titulo="TIP OPE" tipo="char">01</tIPOPE>
+					<tIPING titulo="TIP ING" tipo="char">D</tIPING>
+					<cAEDEC titulo="CAEDEC" tipo="char">K - 65191</cAEDEC>
+					<aCTECONO titulo="ACTECONO" tipo="char">M - 75140</aCTECONO>
+				</fila>
+				<fila numero="2">
+					<sISTEMA titulo="SISTEMA" tipo="char">R</sISTEMA>
+					<eNTIDAD titulo="ENTIDAD" tipo="varchar">COOPERATIVA MAGISTERIO RURAL LTDA</eNTIDAD>
+					<fECHAACTUALIZACION titulo="FECHA ACTUALIZACION" tipo="char">30/11/2019</fECHAACTUALIZACION>
+					<fECHAPROCESAMIENTO titulo="FECHA PROCESAMIENTO" tipo="char">15/12/2019</fECHAPROCESAMIENTO>
+					<tIPOCREDITO titulo="TIPO CREDITO" tipo="char">N0 - CONSUMO</tIPOCREDITO>
+					<tIPOOBLIGADO titulo="TIPO OBLIGADO" tipo="char">1A - DEUDOR</tIPOOBLIGADO>
+					<fECHAINICIO titulo="FECHA INICIO" tipo="smalldatetime">30/01/2018 0:00:00</fECHAINICIO>
+					<fECHAULTIMACUOTA titulo="FECHA ULTIMA CUOTA" tipo="smalldatetime">17/01/2022 0:00:00</fECHAULTIMACUOTA>
+					<mONEDA titulo="MONEDA" tipo="char">MN</mONEDA>
+					<mONTOORIGINAL titulo="MONTO ORIGINAL" tipo="money">5,000</mONTOORIGINAL>
+					<vALORCUOTA titulo="VALOR CUOTA" tipo="money">1,021</vALORCUOTA>
+					<cALIFICACION titulo="CALIFICACION" tipo="char">A</cALIFICACION>
+					<eSTADO titulo="ESTADO" tipo="char">VIGENTE</eSTADO>
+					<sALDO titulo="SALDO" tipo="money">0</sALDO>
+					<cONTINGENTE titulo="CONTINGENTE" tipo="money">0</cONTINGENTE>
+					<dIASMORA titulo="DIAS MORA" tipo="int">0</dIASMORA>
+					<hISTORICO titulo="HISTORICO" tipo="char">511111111111111111</hISTORICO>
+					<pERIODODEPAGO titulo="PERIODO DE PAGO" tipo="char">MENSUAL</pERIODODEPAGO>
+					<tIPCAN titulo="TIP CAN" tipo="char"/>
+					<tIPINT titulo="TIP INT" tipo="char">FV</tIPINT>
+					<tIPOPE titulo="TIP OPE" tipo="char">01</tIPOPE>
+					<tIPING titulo="TIP ING" tipo="char">D</tIPING>
+					<cAEDEC titulo="CAEDEC" tipo="char">K - 65191</cAEDEC>
+					<aCTECONO titulo="ACTECONO" tipo="char">M - 75140</aCTECONO>
+				</fila>
+				<fila numero="3">
+					<sISTEMA titulo="SISTEMA" tipo="char">R</sISTEMA>
+					<eNTIDAD titulo="ENTIDAD" tipo="varchar">COOPERATIVA MAGISTERIO RURAL LTDA</eNTIDAD>
+					<fECHAACTUALIZACION titulo="FECHA ACTUALIZACION" tipo="char">30/11/2019</fECHAACTUALIZACION>
+					<fECHAPROCESAMIENTO titulo="FECHA PROCESAMIENTO" tipo="char">15/12/2019</fECHAPROCESAMIENTO>
+					<tIPOCREDITO titulo="TIPO CREDITO" tipo="char">N0 - CONSUMO</tIPOCREDITO>
+					<tIPOOBLIGADO titulo="TIPO OBLIGADO" tipo="char">02 - GARANTE</tIPOOBLIGADO>
+					<fECHAINICIO titulo="FECHA INICIO" tipo="smalldatetime">27/03/2018 0:00:00</fECHAINICIO>
+					<fECHAULTIMACUOTA titulo="FECHA ULTIMA CUOTA" tipo="smalldatetime">15/03/2021 0:00:00</fECHAULTIMACUOTA>
+					<mONEDA titulo="MONEDA" tipo="char">MN</mONEDA>
+					<mONTOORIGINAL titulo="MONTO ORIGINAL" tipo="money">8,500</mONTOORIGINAL>
+					<vALORCUOTA titulo="VALOR CUOTA" tipo="money">308</vALORCUOTA>
+					<cALIFICACION titulo="CALIFICACION" tipo="char">A</cALIFICACION>
+					<eSTADO titulo="ESTADO" tipo="char">VIGENTE</eSTADO>
+					<sALDO titulo="SALDO" tipo="money">4,268</sALDO>
+					<cONTINGENTE titulo="CONTINGENTE" tipo="money">0</cONTINGENTE>
+					<dIASMORA titulo="DIAS MORA" tipo="int">0</dIASMORA>
+					<hISTORICO titulo="HISTORICO" tipo="char">511111111111111111</hISTORICO>
+					<pERIODODEPAGO titulo="PERIODO DE PAGO" tipo="char">MENSUAL</pERIODODEPAGO>
+					<tIPCAN titulo="TIP CAN" tipo="char"/>
+					<tIPINT titulo="TIP INT" tipo="char">FV</tIPINT>
+					<tIPOPE titulo="TIP OPE" tipo="char">01</tIPOPE>
+					<tIPING titulo="TIP ING" tipo="char"/>
+					<cAEDEC titulo="CAEDEC" tipo="char">K - 65191</cAEDEC>
+					<aCTECONO titulo="ACTECONO" tipo="char">M - 75140</aCTECONO>
+				</fila>
+				<fila numero="4">
+					<sISTEMA titulo="SISTEMA" tipo="char">R</sISTEMA>
+					<eNTIDAD titulo="ENTIDAD" tipo="varchar">COOPERATIVA MAGISTERIO RURAL LTDA</eNTIDAD>
+					<fECHAACTUALIZACION titulo="FECHA ACTUALIZACION" tipo="char">30/11/2019</fECHAACTUALIZACION>
+					<fECHAPROCESAMIENTO titulo="FECHA PROCESAMIENTO" tipo="char">15/12/2019</fECHAPROCESAMIENTO>
+					<tIPOCREDITO titulo="TIPO CREDITO" tipo="char">N0 - CONSUMO</tIPOCREDITO>
+					<tIPOOBLIGADO titulo="TIPO OBLIGADO" tipo="char">02 - GARANTE</tIPOOBLIGADO>
+					<fECHAINICIO titulo="FECHA INICIO" tipo="smalldatetime">16/06/2016 0:00:00</fECHAINICIO>
+					<fECHAULTIMACUOTA titulo="FECHA ULTIMA CUOTA" tipo="smalldatetime">15/06/2024 0:00:00</fECHAULTIMACUOTA>
+					<mONEDA titulo="MONEDA" tipo="char">MN</mONEDA>
+					<mONTOORIGINAL titulo="MONTO ORIGINAL" tipo="money">150,000</mONTOORIGINAL>
+					<vALORCUOTA titulo="VALOR CUOTA" tipo="money">2,965</vALORCUOTA>
+					<cALIFICACION titulo="CALIFICACION" tipo="char">A</cALIFICACION>
+					<eSTADO titulo="ESTADO" tipo="char">VIGENTE</eSTADO>
+					<sALDO titulo="SALDO" tipo="money">108,836</sALDO>
+					<cONTINGENTE titulo="CONTINGENTE" tipo="money">0</cONTINGENTE>
+					<dIASMORA titulo="DIAS MORA" tipo="int">0</dIASMORA>
+					<hISTORICO titulo="HISTORICO" tipo="char">511111111111111111</hISTORICO>
+					<pERIODODEPAGO titulo="PERIODO DE PAGO" tipo="char">OTRO</pERIODODEPAGO>
+					<tIPCAN titulo="TIP CAN" tipo="char"/>
+					<tIPINT titulo="TIP INT" tipo="char">FV</tIPINT>
+					<tIPOPE titulo="TIP OPE" tipo="char">01</tIPOPE>
+					<tIPING titulo="TIP ING" tipo="char"/>
+					<cAEDEC titulo="CAEDEC" tipo="char">H - 50102</cAEDEC>
+					<aCTECONO titulo="ACTECONO" tipo="char">M - 75140</aCTECONO>
+				</fila>
+				<fila numero="5">
+					<sISTEMA titulo="SISTEMA" tipo="char">R</sISTEMA>
+					<eNTIDAD titulo="ENTIDAD" tipo="varchar">COOPERATIVA MAGISTERIO RURAL LTDA</eNTIDAD>
+					<fECHAACTUALIZACION titulo="FECHA ACTUALIZACION" tipo="char">30/11/2019</fECHAACTUALIZACION>t<fECHAPROCESAMIENTO titulo="FECHA PROCESAMIENTO" tipo="char">15/12/2019</fECHAPROCESAMIENTO>t<tIPOCREDITO titulo="TIPO CREDITO" tipo="char">M1 - MIC. IND. DEB. GAR.</tIPOCREDITO>t<tIPOOBLIGADO titulo="TIPO OBLIGADO" tipo="char">1B - CODEUDOR</tIPOOBLIGADO>
+					<fECHAINICIO titulo="FECHA INICIO" tipo="smalldatetime">12/08/2019 0:00:00</fECHAINICIO>
+					<fECHAULTIMACUOTA titulo="FECHA ULTIMA CUOTA" tipo="smalldatetime">12/08/2025 0:00:00</fECHAULTIMACUOTA>
+					<mONEDA titulo="MONEDA" tipo="char">MN</mONEDA>
+					<mONTOORIGINAL titulo="MONTO ORIGINAL" tipo="money">40,000</mONTOORIGINAL>
+					<vALORCUOTA titulo="VALOR CUOTA" tipo="money">807</vALORCUOTA>
+					<cALIFICACION titulo="CALIFICACION" tipo="char">B</cALIFICACION>
+					<eSTADO titulo="ESTADO" tipo="char">VIGENTE</eSTADO>
+					<sALDO titulo="SALDO" tipo="money">23,107</sALDO>
+					<cONTINGENTE titulo="CONTINGENTE" tipo="money">0</cONTINGENTE>
+					<dIASMORA titulo="DIAS MORA" tipo="int">18</dIASMORA>
+					<hISTORICO titulo="HISTORICO" tipo="char">551111111111111111</hISTORICO>
+					<pERIODODEPAGO titulo="PERIODO DE PAGO" tipo="char">MENSUAL</pERIODODEPAGO>
+					<tIPCAN titulo="TIP CAN" tipo="char"/>
+					<tIPINT titulo="TIP INT" tipo="char">FV</tIPINT>
+					<tIPOPE titulo="TIP OPE" tipo="char">01</tIPOPE>
+					<tIPING titulo="TIP ING" tipo="char"/>
+					<cAEDEC titulo="CAEDEC" tipo="char">E - 18103</cAEDEC>
+					<aCTECONO titulo="ACTECONO" tipo="char">O - 93099</aCTECONO>
+				</fila>
+			</sISTEMAFINANCIERO>
+			<tOTALSISTEMAFINANCIERO Titulo="TOTAL DEUDA EN EL SISTEMA FINANCIERO EXPRESADO EN BOLIVIANOS">
+				<fila numero="1">
+					<oRDEN titulo="ORDEN" tipo="int">1</oRDEN>
+					<dESCRIPCION titulo="DESCRIPCION" tipo="char">TOTAL DEUDA DIRECTA</dESCRIPCION>
+					<sALDO titulo="SALDO" tipo="money">32,397</sALDO>
+				</fila>
+				<fila numero="2">
+					<oRDEN titulo="ORDEN" tipo="int">2</oRDEN>
+					<dESCRIPCION titulo="DESCRIPCION" tipo="char">TOTAL DEUDA INDIRECTA</dESCRIPCION>
+					<sALDO titulo="SALDO" tipo="money">113,104</sALDO>
+				</fila>
+				<fila numero="3">
+					<oRDEN titulo="ORDEN" tipo="int">3</oRDEN>
+					<dESCRIPCION titulo="DESCRIPCION" tipo="char">TOTAL CONTINGENTE DIRECTO</dESCRIPCION>
+					<sALDO titulo="SALDO" tipo="money"/>
+				</fila>
+				<fila numero="4">
+					<oRDEN titulo="ORDEN" tipo="int">4</oRDEN>
+					<dESCRIPCION titulo="DESCRIPCION" tipo="char">TOTAL CONTINGENTE INDIRECTO</dESCRIPCION>
+					<sALDO titulo="SALDO" tipo="money"/>
+				</fila>
+			</tOTALSISTEMAFINANCIERO>
+			<dESCRIPCIONCAEDECACTECONO Titulo="">
+				<fila numero="1">
+					<cAEDECACTECO titulo="CAEDEC ACTECO" tipo="char">H</cAEDECACTECO>
+					<cODIGODESTINOCREDITOACTIVIDADECONOMICA titulo="CODIGO DESTINO CREDITO ACTIVIDAD ECONOMICA" tipo="char">50102</cODIGODESTINOCREDITOACTIVIDADECONOMICA>
+					<dESCRIPCIONCAEDECACTECO titulo="DESCRIPCION CAEDEC ACTECO" tipo="char">VENTA AL POR MAYOR Y MENOR</dESCRIPCIONCAEDECACTECO>
+					<dESCRIPCIONDESTINOCREDITOACTIVIDADECONOMICA titulo="DESCRIPCION DESTINO CREDITO ACTIVIDAD ECONOMICA" tipo="char">VENTA DE VEHICULOS AUTOMOTORES USADOS</dESCRIPCIONDESTINOCREDITOACTIVIDADECONOMICA>
+					<dESCRIPCIONREPORTECAEDECACTECO titulo="DESCRIPCION REPORTE CAEDEC ACTECO" tipo="char">H - 50102: VENTA AL POR MAYOR Y MENOR - VENTA DE VEHICULOS AUTOMOTORES USADOS</dESCRIPCIONREPORTECAEDECACTECO>
+				</fila>
+				<fila numero="2">
+					<cAEDECACTECO titulo="CAEDEC ACTECO" tipo="char">J</cAEDECACTECO>
+					<cODIGODESTINOCREDITOACTIVIDADECONOMICA titulo="CODIGO DESTINO CREDITO ACTIVIDAD ECONOMICA" tipo="char">60221</cODIGODESTINOCREDITOACTIVIDADECONOMICA>
+					<dESCRIPCIONCAEDECACTECO titulo="DESCRIPCION CAEDEC ACTECO" tipo="char">TRANSPORTE ALMACENAMIENTO Y COMUNICACIONES</dESCRIPCIONCAEDECACTECO>
+					<dESCRIPCIONDESTINOCREDITOACTIVIDADECONOMICA titulo="DESCRIPCION DESTINO CREDITO ACTIVIDAD ECONOMICA" tipo="char">SERVICIOS DE ALQUILER DE AUTOMOTORES CON CONDUCTOR</dESCRIPCIONDESTINOCREDITOACTIVIDADECONOMICA>
+					<dESCRIPCIONREPORTECAEDECACTECO titulo="DESCRIPCION REPORTE CAEDEC ACTECO" tipo="char">J - 60221: TRANSPORTE ALMACENAMIENTO Y COMUNICACIONES - SERVICIOS DE ALQUILER DE AUTOMOTORES CON CONDUCTOR</dESCRIPCIONREPORTECAEDECACTECO>
+				</fila>
+				<fila numero="3">
+					<cAEDECACTECO titulo="CAEDEC ACTECO" tipo="char">K</cAEDECACTECO>
+					<cODIGODESTINOCREDITOACTIVIDADECONOMICA titulo="CODIGO DESTINO CREDITO ACTIVIDAD ECONOMICA" tipo="char">65191</cODIGODESTINOCREDITOACTIVIDADECONOMICA>
+					<dESCRIPCIONCAEDECACTECO titulo="DESCRIPCION CAEDEC ACTECO" tipo="char">INTERMEDIACION FINANCIERA</dESCRIPCIONCAEDECACTECO>
+					<dESCRIPCIONDESTINOCREDITOACTIVIDADECONOMICA titulo="DESCRIPCION DESTINO CREDITO ACTIVIDAD ECONOMICA" tipo="char">SERVICIOS DE LAS ENTIDADES BANCARIAS</dESCRIPCIONDESTINOCREDITOACTIVIDADECONOMICA>
+					<dESCRIPCIONREPORTECAEDECACTECO titulo="DESCRIPCION REPORTE CAEDEC ACTECO" tipo="char">K - 65191: INTERMEDIACION FINANCIERA - SERVICIOS DE LAS ENTIDADES BANCARIAS</dESCRIPCIONREPORTECAEDECACTECO>
+				</fila>
+				<fila numero="4">
+					<cAEDECACTECO titulo="CAEDEC ACTECO" tipo="char">M</cAEDECACTECO>
+					<cODIGODESTINOCREDITOACTIVIDADECONOMICA titulo="CODIGO DESTINO CREDITO ACTIVIDAD ECONOMICA" tipo="char">75140</cODIGODESTINOCREDITOACTIVIDADECONOMICA>
+					<dESCRIPCIONCAEDECACTECO titulo="DESCRIPCION CAEDEC ACTECO" tipo="char">ADMINISTRACION PUBLICA DEFENSA Y SEGURIDAD SOCIAL OBLIGATORIA</dESCRIPCIONCAEDECACTECO>
+					<dESCRIPCIONDESTINOCREDITOACTIVIDADECONOMICA titulo="DESCRIPCION DESTINO CREDITO ACTIVIDAD ECONOMICA" tipo="char">ACTIVIDADES DE SERVICIOS AUXILIARES PARA LA ADMINISTRACION PUBLICA EN GENERAL</dESCRIPCIONDESTINOCREDITOACTIVIDADECONOMICA>
+					<dESCRIPCIONREPORTECAEDECACTECO titulo="DESCRIPCION REPORTE CAEDEC ACTECO" tipo="char">M - 75140: ADMINISTRACION PUBLICA DEFENSA Y SEGURIDAD SOCIAL OBLIGATORIA - ACTIVIDADES DE SERVICIOS AUXILIARES PARA LA ADMINISTRACION PUBLICA EN GENERAL</dESCRIPCIONREPORTECAEDECACTECO>
+				</fila>
+			</dESCRIPCIONCAEDECACTECONO>
+			<dESCRIPCIONTIPCAN Titulo=""/>
+			<dESCRIPCIONTIPINT Titulo="">
+				<fila numero="1">
+					<cODIGOTIPOINTERES titulo="CODIGO TIPO INTERES" tipo="char">FV</cODIGOTIPOINTERES>
+					<dESCRIPCIONTIPOINTERES titulo="DESCRIPCION TIPO INTERES" tipo="char">TASA FIJA CON PAGO AL VENCIMIENTO</dESCRIPCIONTIPOINTERES>
+					<dESCRIPCIONREPORTETIPINT titulo="DESCRIPCION REPORTE TIPINT" tipo="char">FV - TASA FIJA CON PAGO AL VENCIMIENTO</dESCRIPCIONREPORTETIPINT>
+				</fila>
+			</dESCRIPCIONTIPINT>
+			<dESCRIPCIONTIPOPE Titulo="">
+				<fila numero="1">
+					<cODIGOTIPOOPERACION titulo="CODIGO TIPO OPERACION" tipo="char">01</cODIGOTIPOOPERACION>
+					<dESCRIPCIONTIPOOPERACION titulo="DESCRIPCION TIPO OPERACION" tipo="char">PRESTAMO</dESCRIPCIONTIPOOPERACION>
+					<dESCRIPCIONREPORTETIPOPE titulo="DESCRIPCION REPORTE TIPOPE" tipo="char">01 - PRESTAMO</dESCRIPCIONREPORTETIPOPE>
+				</fila>
+			</dESCRIPCIONTIPOPE>
+			<dESCRIPCIONTIPING Titulo="">
+				<fila numero="1">
+					<cODIGOTIPOINGRESO titulo="CODIGO TIPO INGRESO" tipo="char">D</cODIGOTIPOINGRESO>
+					<dESCRIPCIONTIPOINGRESO titulo="DESCRIPCION TIPO INGRESO" tipo="char">DEPENDIENTE</dESCRIPCIONTIPOINGRESO>
+					<dESCRIPCIONREPORTETIPING titulo="DESCRIPCION REPORTE TIPING" tipo="char">D - DEPENDIENTE</dESCRIPCIONREPORTETIPING>
+				</fila>
+				<fila numero="2">
+					<cODIGOTIPOINGRESO titulo="CODIGO TIPO INGRESO" tipo="char">I</cODIGOTIPOINGRESO>
+					<dESCRIPCIONTIPOINGRESO titulo="DESCRIPCION TIPO INGRESO" tipo="char">INDEPENDIENTE</dESCRIPCIONTIPOINGRESO>
+					<dESCRIPCIONREPORTETIPING titulo="DESCRIPCION REPORTE TIPING" tipo="char">I - INDEPENDIENTE</dESCRIPCIONREPORTETIPING>
+				</fila>
+			</dESCRIPCIONTIPING>
+		</sISTEMAFINANCIERO>
+		<cUENTASCORRIENTES Titulo="REHABILITACION Y CLAUSURA DE CUENTAS CORRIENTES">
+			<cUENTASCORRIENTES Titulo=""/>
+		</cUENTASCORRIENTES>
+		<aFP Titulo="DEUDAS EN MORA POR APORTES A LAS AFPS">
+			<dEUDASAFPS Titulo="DEUDA DIRECTA"/>
+		</aFP>
+		<cASASCOMERCIALES Titulo="CASAS COMERCIALES">
+			<cACOMER Titulo="CASAS COMERCIALES"/>
+		</cASASCOMERCIALES>
+		<rECTIFICACIONES Titulo="RECTIFICACIONES">
+			<rECTIFICACION Titulo=""/>
+		</rECTIFICACIONES>
+		<formatoHistorial Titulo="HISTORIAL DE DEUDA">
+			<vwSaldosPersonaDeudaDirecta Titulo="HISTORIAL DE DEUDA DIRECTA">
+				<fila numero="1">
+					<aBREVIATURA titulo="MES" tipo="nvarchar">DIC</aBREVIATURA>
+					<eSTADO1 titulo="ESTADO 2019" tipo="nvarchar">5</eSTADO1>
+					<sALDO1 titulo=" SALDO 2019" tipo="money">0</sALDO1>
+					<eSTADO2 titulo="ESTADO 2018" tipo="nvarchar">1</eSTADO2>
+					<sALDO2 titulo=" SALDO 2018" tipo="money">28,606</sALDO2>
+					<eSTADO3 titulo="ESTADO 2017" tipo="nvarchar">1</eSTADO3>
+					<sALDO3 titulo=" SALDO 2017" tipo="money">23,619</sALDO3>
+					<eSTADO4 titulo="ESTADO 2016" tipo="nvarchar">1</eSTADO4>
+					<sALDO4 titulo=" SALDO 2016" tipo="money">17,277</sALDO4>
+					<eSTADO5 titulo="ESTADO 2015" tipo="nvarchar">1</eSTADO5>
+					<sALDO5 titulo=" SALDO 2015" tipo="money">23,304</sALDO5>
+				</fila>
+				<fila numero="2">
+					<aBREVIATURA titulo="MES" tipo="nvarchar">NOV</aBREVIATURA>
+					<eSTADO1 titulo="ESTADO 2019" tipo="nvarchar">1</eSTADO1>
+					<sALDO1 titulo=" SALDO 2019" tipo="money">32,397</sALDO1>
+					<eSTADO2 titulo="ESTADO 2018" tipo="nvarchar">1</eSTADO2>
+					<sALDO2 titulo=" SALDO 2018" tipo="money">29,063</sALDO2>
+					<eSTADO3 titulo="ESTADO 2017" tipo="nvarchar">1</eSTADO3>
+					<sALDO3 titulo=" SALDO 2017" tipo="money">23,953</sALDO3>
+					<eSTADO4 titulo="ESTADO 2016" tipo="nvarchar">1</eSTADO4>
+					<sALDO4 titulo=" SALDO 2016" tipo="money">17,624</sALDO4>
+					<eSTADO5 titulo="ESTADO 2015" tipo="nvarchar">1</eSTADO5>
+					<sALDO5 titulo=" SALDO 2015" tipo="money">23,800</sALDO5>
+				</fila>
+				<fila numero="3">
+					<aBREVIATURA titulo="MES" tipo="nvarchar">OCT</aBREVIATURA>
+					<eSTADO1 titulo="ESTADO 2019" tipo="nvarchar">1</eSTADO1>
+					<sALDO1 titulo=" SALDO 2019" tipo="money">33,403</sALDO1>
+					<eSTADO2 titulo="ESTADO 2018" tipo="nvarchar">1</eSTADO2>
+					<sALDO2 titulo=" SALDO 2018" tipo="money">29,063</sALDO2>
+					<eSTADO3 titulo="ESTADO 2017" tipo="nvarchar">1</eSTADO3>
+					<sALDO3 titulo=" SALDO 2017" tipo="money">24,265</sALDO3>
+					<eSTADO4 titulo="ESTADO 2016" tipo="nvarchar">1</eSTADO4>
+					<sALDO4 titulo=" SALDO 2016" tipo="money">18,345</sALDO4>
+					<eSTADO5 titulo="ESTADO 2015" tipo="nvarchar">5</eSTADO5>
+					<sALDO5 titulo=" SALDO 2015" tipo="money">0</sALDO5>
+				</fila>
+				<fila numero="4">
+					<aBREVIATURA titulo="MES" tipo="nvarchar">SEP</aBREVIATURA>
+					<eSTADO1 titulo="ESTADO 2019" tipo="nvarchar">1</eSTADO1>
+					<sALDO1 titulo=" SALDO 2019" tipo="money">34,207</sALDO1>
+					<eSTADO2 titulo="ESTADO 2018" tipo="nvarchar">1</eSTADO2>
+					<sALDO2 titulo=" SALDO 2018" tipo="money">30,284</sALDO2>
+					<eSTADO3 titulo="ESTADO 2017" tipo="nvarchar">1</eSTADO3>
+					<sALDO3 titulo=" SALDO 2017" tipo="money">24,601</sALDO3>
+					<eSTADO4 titulo="ESTADO 2016" tipo="nvarchar">1</eSTADO4>
+					<sALDO4 titulo=" SALDO 2016" tipo="money">18,581</sALDO4>
+					<eSTADO5 titulo="ESTADO 2015" tipo="nvarchar">5</eSTADO5>
+					<sALDO5 titulo=" SALDO 2015" tipo="money">0</sALDO5>
+				</fila>
+				<fila numero="5">
+					<aBREVIATURA titulo="MES" tipo="nvarchar">AGO</aBREVIATURA>
+					<eSTADO1 titulo="ESTADO 2019" tipo="nvarchar">1</eSTADO1>
+					<sALDO1 titulo=" SALDO 2019" tipo="money">35,154</sALDO1>
+					<eSTADO2 titulo="ESTADO 2018" tipo="nvarchar">1</eSTADO2>
+					<sALDO2 titulo=" SALDO 2018" tipo="money">30,890</sALDO2>
+					<eSTADO3 titulo="ESTADO 2017" tipo="nvarchar">1</eSTADO3>
+					<sALDO3 titulo=" SALDO 2017" tipo="money">24,924</sALDO3>
+					<eSTADO4 titulo="ESTADO 2016" tipo="nvarchar">1</eSTADO4>
+					<sALDO4 titulo=" SALDO 2016" tipo="money">19,274</sALDO4>
+					<eSTADO5 titulo="ESTADO 2015" tipo="nvarchar">1</eSTADO5>
+					<sALDO5 titulo=" SALDO 2015" tipo="money">18,412</sALDO5>
+				</fila>
+				<fila numero="6">
+					<aBREVIATURA titulo="MES" tipo="nvarchar">JUL</aBREVIATURA>
+					<eSTADO1 titulo="ESTADO 2019" tipo="nvarchar">1</eSTADO1>
+					<sALDO1 titulo=" SALDO 2019" tipo="money">35,745</sALDO1>
+					<eSTADO2 titulo="ESTADO 2018" tipo="nvarchar">1</eSTADO2>
+					<sALDO2 titulo=" SALDO 2018" tipo="money">31,637</sALDO2>
+					<eSTADO3 titulo="ESTADO 2017" tipo="nvarchar">1</eSTADO3>
+					<sALDO3 titulo=" SALDO 2017" tipo="money">25,000</sALDO3>
+					<eSTADO4 titulo="ESTADO 2016" tipo="nvarchar">1</eSTADO4>
+					<sALDO4 titulo=" SALDO 2016" tipo="money">19,632</sALDO4>
+					<eSTADO5 titulo="ESTADO 2015" tipo="nvarchar">1</eSTADO5>
+					<sALDO5 titulo=" SALDO 2015" tipo="money">18,989</sALDO5>
+				</fila>
+				<fila numero="7">
+					<aBREVIATURA titulo="MES" tipo="nvarchar">JUN</aBREVIATURA>
+					<eSTADO1 titulo="ESTADO 2019" tipo="nvarchar">1</eSTADO1>
+					<sALDO1 titulo=" SALDO 2019" tipo="money">25,109</sALDO1>
+					<eSTADO2 titulo="ESTADO 2018" tipo="nvarchar">1</eSTADO2>
+					<sALDO2 titulo=" SALDO 2018" tipo="money">32,062</sALDO2>
+					<eSTADO3 titulo="ESTADO 2017" tipo="nvarchar">1</eSTADO3>
+					<sALDO3 titulo=" SALDO 2017" tipo="money">25,000</sALDO3>
+					<eSTADO4 titulo="ESTADO 2016" tipo="nvarchar">1</eSTADO4>
+					<sALDO4 titulo=" SALDO 2016" tipo="money">20,075</sALDO4>
+					<eSTADO5 titulo="ESTADO 2015" tipo="nvarchar">1</eSTADO5>
+					<sALDO5 titulo=" SALDO 2015" tipo="money">19,586</sALDO5>
+				</fila>
+				<fila numero="8">
+					<aBREVIATURA titulo="MES" tipo="nvarchar">MAY</aBREVIATURA>
+					<eSTADO1 titulo="ESTADO 2019" tipo="nvarchar">1</eSTADO1>
+					<sALDO1 titulo=" SALDO 2019" tipo="money">25,638</sALDO1>
+					<eSTADO2 titulo="ESTADO 2018" tipo="nvarchar">1</eSTADO2>
+					<sALDO2 titulo=" SALDO 2018" tipo="money">32,476</sALDO2>
+					<eSTADO3 titulo="ESTADO 2017" tipo="nvarchar">1</eSTADO3>
+					<sALDO3 titulo=" SALDO 2017" tipo="money">19,193</sALDO3>
+					<eSTADO4 titulo="ESTADO 2016" tipo="nvarchar">1</eSTADO4>
+					<sALDO4 titulo=" SALDO 2016" tipo="money">20,825</sALDO4>
+					<eSTADO5 titulo="ESTADO 2015" tipo="nvarchar">1</eSTADO5>
+					<sALDO5 titulo=" SALDO 2015" tipo="money">20,164</sALDO5>
+				</fila>
+				<fila numero="9">
+					<aBREVIATURA titulo="MES" tipo="nvarchar">ABR</aBREVIATURA>
+					<eSTADO1 titulo="ESTADO 2019" tipo="nvarchar">1</eSTADO1>
+					<sALDO1 titulo=" SALDO 2019" tipo="money">26,393</sALDO1>
+					<eSTADO2 titulo="ESTADO 2018" tipo="nvarchar">1</eSTADO2>
+					<sALDO2 titulo=" SALDO 2018" tipo="money">33,117</sALDO2>
+					<eSTADO3 titulo="ESTADO 2017" tipo="nvarchar">1</eSTADO3>
+					<sALDO3 titulo=" SALDO 2017" tipo="money">19,655</sALDO3>
+					<eSTADO4 titulo="ESTADO 2016" tipo="nvarchar">1</eSTADO4>
+					<sALDO4 titulo=" SALDO 2016" tipo="money">21,320</sALDO4>
+					<eSTADO5 titulo="ESTADO 2015" tipo="nvarchar">1</eSTADO5>
+					<sALDO5 titulo=" SALDO 2015" tipo="money">20,743</sALDO5>
+				</fila>
+				<fila numero="10">
+					<aBREVIATURA titulo="MES" tipo="nvarchar">MAR</aBREVIATURA>
+					<eSTADO1 titulo="ESTADO 2019" tipo="nvarchar">1</eSTADO1>
+					<sALDO1 titulo=" SALDO 2019" tipo="money">27,025</sALDO1>
+					<eSTADO2 titulo="ESTADO 2018" tipo="nvarchar">1</eSTADO2>
+					<sALDO2 titulo=" SALDO 2018" tipo="money">33,622</sALDO2>
+					<eSTADO3 titulo="ESTADO 2017" tipo="nvarchar">1</eSTADO3>
+					<sALDO3 titulo=" SALDO 2017" tipo="money">20,000</sALDO3>
+					<eSTADO4 titulo="ESTADO 2016" tipo="nvarchar">1</eSTADO4>
+					<sALDO4 titulo=" SALDO 2016" tipo="money">21,815</sALDO4>
+					<eSTADO5 titulo="ESTADO 2015" tipo="nvarchar">1</eSTADO5>
+					<sALDO5 titulo=" SALDO 2015" tipo="money">21,314</sALDO5>
+				</fila>
+				<fila numero="11">
+					<aBREVIATURA titulo="MES" tipo="nvarchar">FEB</aBREVIATURA>
+					<eSTADO1 titulo="ESTADO 2019" tipo="nvarchar">1</eSTADO1>
+					<sALDO1 titulo=" SALDO 2019" tipo="money">27,662</sALDO1>
+					<eSTADO2 titulo="ESTADO 2018" tipo="nvarchar">1</eSTADO2>
+					<sALDO2 titulo=" SALDO 2018" tipo="money">34,248</sALDO2>
+					<eSTADO3 titulo="ESTADO 2017" tipo="nvarchar">1</eSTADO3>
+					<sALDO3 titulo=" SALDO 2017" tipo="money">16,073</sALDO3>
+					<eSTADO4 titulo="ESTADO 2016" tipo="nvarchar">1</eSTADO4>
+					<sALDO4 titulo=" SALDO 2016" tipo="money">22,311</sALDO4>
+					<eSTADO5 titulo="ESTADO 2015" tipo="nvarchar">1</eSTADO5>
+					<sALDO5 titulo=" SALDO 2015" tipo="money">21,852</sALDO5>
+				</fila>
+				<fila numero="12">
+					<aBREVIATURA titulo="MES" tipo="nvarchar">ENE</aBREVIATURA>
+					<eSTADO1 titulo="ESTADO 2019" tipo="nvarchar">1</eSTADO1>
+					<sALDO1 titulo=" SALDO 2019" tipo="money">28,133</sALDO1>
+					<eSTADO2 titulo="ESTADO 2018" tipo="nvarchar">1</eSTADO2>
+					<sALDO2 titulo=" SALDO 2018" tipo="money">35,000</sALDO2>
+					<eSTADO3 titulo="ESTADO 2017" tipo="nvarchar">1</eSTADO3>
+					<sALDO3 titulo=" SALDO 2017" tipo="money">16,680</sALDO3>
+					<eSTADO4 titulo="ESTADO 2016" tipo="nvarchar">1</eSTADO4>
+					<sALDO4 titulo=" SALDO 2016" tipo="money">22,807</sALDO4>
+					<eSTADO5 titulo="ESTADO 2015" tipo="nvarchar">1</eSTADO5>
+					<sALDO5 titulo=" SALDO 2015" tipo="money">22,396</sALDO5>
+				</fila>
+			</vwSaldosPersonaDeudaDirecta>
+			<vwSaldosPersonaDeudaIndirecta Titulo="HISTORIAL DE DEUDA INDIRECTA">
+				<fila numero="1">
+					<aBREVIATURA titulo="MES" tipo="nvarchar">DIC</aBREVIATURA>
+					<eSTADO1 titulo="ESTADO 2019" tipo="nvarchar">5</eSTADO1>
+					<sALDO1 titulo=" SALDO 2019" tipo="money">0</sALDO1>
+					<eSTADO2 titulo="ESTADO 2018" tipo="nvarchar">1</eSTADO2>
+					<sALDO2 titulo=" SALDO 2018" tipo="money">127,377</sALDO2>
+					<eSTADO3 titulo="ESTADO 2017" tipo="nvarchar">1</eSTADO3>
+					<sALDO3 titulo=" SALDO 2017" tipo="money">131,970</sALDO3>
+					<eSTADO4 titulo="ESTADO 2016" tipo="nvarchar">1</eSTADO4>
+					<sALDO4 titulo=" SALDO 2016" tipo="money">140,816</sALDO4>
+					<eSTADO5 titulo="ESTADO 2015" tipo="nvarchar">1</eSTADO5>
+					<sALDO5 titulo=" SALDO 2015" tipo="money">17,500</sALDO5>
+				</fila>
+				<fila numero="2">
+					<aBREVIATURA titulo="MES" tipo="nvarchar">NOV</aBREVIATURA>
+					<eSTADO1 titulo="ESTADO 2019" tipo="nvarchar">1</eSTADO1>
+					<sALDO1 titulo=" SALDO 2019" tipo="money">113,104</sALDO1>
+					<eSTADO2 titulo="ESTADO 2018" tipo="nvarchar">1</eSTADO2>
+					<sALDO2 titulo=" SALDO 2018" tipo="money">127,549</sALDO2>
+					<eSTADO3 titulo="ESTADO 2017" tipo="nvarchar">1</eSTADO3>
+					<sALDO3 titulo=" SALDO 2017" tipo="money">132,979</sALDO3>
+					<eSTADO4 titulo="ESTADO 2016" tipo="nvarchar">1</eSTADO4>
+					<sALDO4 titulo=" SALDO 2016" tipo="money">142,513</sALDO4>
+					<eSTADO5 titulo="ESTADO 2015" tipo="nvarchar">1</eSTADO5>
+					<sALDO5 titulo=" SALDO 2015" tipo="money">18,000</sALDO5>
+				</fila>
+				<fila numero="3">
+					<aBREVIATURA titulo="MES" tipo="nvarchar">OCT</aBREVIATURA>
+					<eSTADO1 titulo="ESTADO 2019" tipo="nvarchar">1</eSTADO1>
+					<sALDO1 titulo=" SALDO 2019" tipo="money">114,679</sALDO1>
+					<eSTADO2 titulo="ESTADO 2018" tipo="nvarchar">1</eSTADO2>
+					<sALDO2 titulo=" SALDO 2018" tipo="money">128,705</sALDO2>
+					<eSTADO3 titulo="ESTADO 2017" tipo="nvarchar">1</eSTADO3>
+					<sALDO3 titulo=" SALDO 2017" tipo="money">133,725</sALDO3>
+					<eSTADO4 titulo="ESTADO 2016" tipo="nvarchar">1</eSTADO4>
+					<sALDO4 titulo=" SALDO 2016" tipo="money">143,965</sALDO4>
+					<eSTADO5 titulo="ESTADO 2015" tipo="nvarchar">1</eSTADO5>
+					<sALDO5 titulo=" SALDO 2015" tipo="money">18,000</sALDO5>
+				</fila>
+				<fila numero="4">
+					<aBREVIATURA titulo="MES" tipo="nvarchar">SEP</aBREVIATURA>
+					<eSTADO1 titulo="ESTADO 2019" tipo="nvarchar">1</eSTADO1>
+					<sALDO1 titulo=" SALDO 2019" tipo="money">114,923</sALDO1>
+					<eSTADO2 titulo="ESTADO 2018" tipo="nvarchar">1</eSTADO2>
+					<sALDO2 titulo=" SALDO 2018" tipo="money">130,872</sALDO2>
+					<eSTADO3 titulo="ESTADO 2017" tipo="nvarchar">1</eSTADO3>
+					<sALDO3 titulo=" SALDO 2017" tipo="money">134,961</sALDO3>
+					<eSTADO4 titulo="ESTADO 2016" tipo="nvarchar">1</eSTADO4>
+					<sALDO4 titulo=" SALDO 2016" tipo="money">145,531</sALDO4>
+					<eSTADO5 titulo="ESTADO 2015" tipo="nvarchar">5</eSTADO5>
+					<sALDO5 titulo=" SALDO 2015" tipo="money">0</sALDO5>
+				</fila>
+				<fila numero="5">
+					<aBREVIATURA titulo="MES" tipo="nvarchar">AGO</aBREVIATURA>
+					<eSTADO1 titulo="ESTADO 2019" tipo="nvarchar">1</eSTADO1>
+					<sALDO1 titulo=" SALDO 2019" tipo="money">115,142</sALDO1>
+					<eSTADO2 titulo="ESTADO 2018" tipo="nvarchar">1</eSTADO2>
+					<sALDO2 titulo=" SALDO 2018" tipo="money">132,268</sALDO2>
+					<eSTADO3 titulo="ESTADO 2017" tipo="nvarchar">1</eSTADO3>
+					<sALDO3 titulo=" SALDO 2017" tipo="money">135,746</sALDO3>
+					<eSTADO4 titulo="ESTADO 2016" tipo="nvarchar">1</eSTADO4>
+					<sALDO4 titulo=" SALDO 2016" tipo="money">147,074</sALDO4>
+					<eSTADO5 titulo="ESTADO 2015" tipo="nvarchar">5</eSTADO5>
+					<sALDO5 titulo=" SALDO 2015" tipo="money">0</sALDO5>
+				</fila>
+				<fila numero="6">
+					<aBREVIATURA titulo="MES" tipo="nvarchar">JUL</aBREVIATURA>
+					<eSTADO1 titulo="ESTADO 2019" tipo="nvarchar">1</eSTADO1>
+					<sALDO1 titulo=" SALDO 2019" tipo="money">116,674</sALDO1>
+					<eSTADO2 titulo="ESTADO 2018" tipo="nvarchar">1</eSTADO2>
+					<sALDO2 titulo=" SALDO 2018" tipo="money">132,498</sALDO2>
+					<eSTADO3 titulo="ESTADO 2017" tipo="nvarchar">1</eSTADO3>
+					<sALDO3 titulo=" SALDO 2017" tipo="money">135,747</sALDO3>
+					<eSTADO4 titulo="ESTADO 2016" tipo="nvarchar">1</eSTADO4>
+					<sALDO4 titulo=" SALDO 2016" tipo="money">148,456</sALDO4>
+					<eSTADO5 titulo="ESTADO 2015" tipo="nvarchar">5</eSTADO5>
+					<sALDO5 titulo=" SALDO 2015" tipo="money">0</sALDO5>
+				</fila>
+				<fila numero="7">
+					<aBREVIATURA titulo="MES" tipo="nvarchar">JUN</aBREVIATURA>
+					<eSTADO1 titulo="ESTADO 2019" tipo="nvarchar">1</eSTADO1>
+					<sALDO1 titulo=" SALDO 2019" tipo="money">116,958</sALDO1>
+					<eSTADO2 titulo="ESTADO 2018" tipo="nvarchar">1</eSTADO2>
+					<sALDO2 titulo=" SALDO 2018" tipo="money">133,683</sALDO2>
+					<eSTADO3 titulo="ESTADO 2017" tipo="nvarchar">1</eSTADO3>
+					<sALDO3 titulo=" SALDO 2017" tipo="money">135,791</sALDO3>
+					<eSTADO4 titulo="ESTADO 2016" tipo="nvarchar">1</eSTADO4>
+					<sALDO4 titulo=" SALDO 2016" tipo="money">164,499</sALDO4>
+					<eSTADO5 titulo="ESTADO 2015" tipo="nvarchar">5</eSTADO5>
+					<sALDO5 titulo=" SALDO 2015" tipo="money">0</sALDO5>
+				</fila>
+				<fila numero="8">
+					<aBREVIATURA titulo="MES" tipo="nvarchar">MAY</aBREVIATURA>
+					<eSTADO1 titulo="ESTADO 2019" tipo="nvarchar">1</eSTADO1>
+					<sALDO1 titulo=" SALDO 2019" tipo="money">118,437</sALDO1>
+					<eSTADO2 titulo="ESTADO 2018" tipo="nvarchar">1</eSTADO2>
+					<sALDO2 titulo=" SALDO 2018" tipo="money">134,971</sALDO2>
+					<eSTADO3 titulo="ESTADO 2017" tipo="nvarchar">1</eSTADO3>
+					<sALDO3 titulo=" SALDO 2017" tipo="money">136,809</sALDO3>
+					<eSTADO4 titulo="ESTADO 2016" tipo="nvarchar">1</eSTADO4>
+					<sALDO4 titulo=" SALDO 2016" tipo="money">15,000</sALDO4>
+					<eSTADO5 titulo="ESTADO 2015" tipo="nvarchar">5</eSTADO5>
+					<sALDO5 titulo=" SALDO 2015" tipo="money">0</sALDO5>
+				</fila>
+				<fila numero="9">
+					<aBREVIATURA titulo="MES" tipo="nvarchar">ABR</aBREVIATURA>
+					<eSTADO1 titulo="ESTADO 2019" tipo="nvarchar">1</eSTADO1>
+					<sALDO1 titulo=" SALDO 2019" tipo="money">119,960</sALDO1>
+					<eSTADO2 titulo="ESTADO 2018" tipo="nvarchar">1</eSTADO2>
+					<sALDO2 titulo=" SALDO 2018" tipo="money">136,149</sALDO2>
+					<eSTADO3 titulo="ESTADO 2017" tipo="nvarchar">1</eSTADO3>
+					<sALDO3 titulo=" SALDO 2017" tipo="money">137,655</sALDO3>
+					<eSTADO4 titulo="ESTADO 2016" tipo="nvarchar">1</eSTADO4>
+					<sALDO4 titulo=" SALDO 2016" tipo="money">15,499</sALDO4>
+					<eSTADO5 titulo="ESTADO 2015" tipo="nvarchar">5</eSTADO5>
+					<sALDO5 titulo=" SALDO 2015" tipo="money">0</sALDO5>
+				</fila>
+				<fila numero="10">
+					<aBREVIATURA titulo="MES" tipo="nvarchar">MAR</aBREVIATURA>
+					<eSTADO1 titulo="ESTADO 2019" tipo="nvarchar">1</eSTADO1>
+					<sALDO1 titulo=" SALDO 2019" tipo="money">121,613</sALDO1>
+					<eSTADO2 titulo="ESTADO 2018" tipo="nvarchar">1</eSTADO2>
+					<sALDO2 titulo=" SALDO 2018" tipo="money">137,281</sALDO2>
+					<eSTADO3 titulo="ESTADO 2017" tipo="nvarchar">1</eSTADO3>
+					<sALDO3 titulo=" SALDO 2017" tipo="money">137,656</sALDO3>
+					<eSTADO4 titulo="ESTADO 2016" tipo="nvarchar">1</eSTADO4>
+					<sALDO4 titulo=" SALDO 2016" tipo="money">15,999</sALDO4>
+					<eSTADO5 titulo="ESTADO 2015" tipo="nvarchar">5</eSTADO5>
+					<sALDO5 titulo=" SALDO 2015" tipo="money">0</sALDO5>
+				</fila>
+				<fila numero="11">
+					<aBREVIATURA titulo="MES" tipo="nvarchar">FEB</aBREVIATURA>
+					<eSTADO1 titulo="ESTADO 2019" tipo="nvarchar">1</eSTADO1>
+					<sALDO1 titulo=" SALDO 2019" tipo="money">123,046</sALDO1>
+					<eSTADO2 titulo="ESTADO 2018" tipo="nvarchar">1</eSTADO2>
+					<sALDO2 titulo=" SALDO 2018" tipo="money">129,997</sALDO2>
+					<eSTADO3 titulo="ESTADO 2017" tipo="nvarchar">1</eSTADO3>
+					<sALDO3 titulo=" SALDO 2017" tipo="money">137,657</sALDO3>
+					<eSTADO4 titulo="ESTADO 2016" tipo="nvarchar">1</eSTADO4>
+					<sALDO4 titulo=" SALDO 2016" tipo="money">16,398</sALDO4>
+					<eSTADO5 titulo="ESTADO 2015" tipo="nvarchar">5</eSTADO5>
+					<sALDO5 titulo=" SALDO 2015" tipo="money">0</sALDO5>
+				</fila>
+				<fila numero="12">
+					<aBREVIATURA titulo="MES" tipo="nvarchar">ENE</aBREVIATURA>
+					<eSTADO1 titulo="ESTADO 2019" tipo="nvarchar">1</eSTADO1>
+					<sALDO1 titulo=" SALDO 2019" tipo="money">124,437</sALDO1>
+					<eSTADO2 titulo="ESTADO 2018" tipo="nvarchar">1</eSTADO2>
+					<sALDO2 titulo=" SALDO 2018" tipo="money">131,035</sALDO2>
+					<eSTADO3 titulo="ESTADO 2017" tipo="nvarchar">1</eSTADO3>
+					<sALDO3 titulo=" SALDO 2017" tipo="money">139,314</sALDO3>
+					<eSTADO4 titulo="ESTADO 2016" tipo="nvarchar">1</eSTADO4>
+					<sALDO4 titulo=" SALDO 2016" tipo="money">17,500</sALDO4>
+					<eSTADO5 titulo="ESTADO 2015" tipo="nvarchar">5</eSTADO5>
+					<sALDO5 titulo=" SALDO 2015" tipo="money">0</sALDO5>
+				</fila>
+			</vwSaldosPersonaDeudaIndirecta>
+		</formatoHistorial>
+	</datosFinancieros>
+	<cONSULTASREALIZADAS>
+		<cONSULTASREALIZADAS>
+			<iNSTITUCION Titulo="INSTITUCION">BANCO FIE S.A.</iNSTITUCION>
+			<fECHA Titulo="FECHA">24/06/2019 12:47:29</fECHA>
+			<cONSULTA Titulo="CONSULTA">Infocred Basico</cONSULTA>
+		</cONSULTASREALIZADAS>
+		<cONSULTASREALIZADAS>
+			<iNSTITUCION Titulo="INSTITUCION">COOPERATIVA DE AHORRO Y CRÉDITO ABIERTA MAGISTERIO RURAL R.L.</iNSTITUCION>
+			<fECHA Titulo="FECHA">22/03/2018 18:01:47</fECHA>
+			<cONSULTA Titulo="CONSULTA">Infocred Basico</cONSULTA>
+		</cONSULTASREALIZADAS>
+		<cONSULTASREALIZADAS>
+			<iNSTITUCION Titulo="INSTITUCION">BANCO DE CREDITO DE BOLIVIA SA</iNSTITUCION>
+			<fECHA Titulo="FECHA">26/12/2019 10:45:34</fECHA>
+			<cONSULTA Titulo="CONSULTA">Infocred+</cONSULTA>
+		</cONSULTASREALIZADAS>
+	</cONSULTASREALIZADAS>
+	<notas titulo="NOTAS">
+		<fECHAACTUALIZACION titulo="FECHA ACTUALIZACION">DATO QUE INDICA LA FECHA DE CORTE DE LA INFORMACION REPORTADA.</fECHAACTUALIZACION>
+		<fECHAPROCESAMIENTO titulo="FECHA PROCESAMIENTO">DATO QUE INDICA LA FECHA DE PROCESAMIENTO (CARGA) DE LA INFORMACION.</fECHAPROCESAMIENTO>
+		<sISTEMA titulo="SISTEMA">(R): ENTIDAD REGULADA POR LA  ASFI. (N): ENTIDAD NO REGULADA POR LA ASFI.</sISTEMA>
+		<hISTORICO titulo="HISTORICO">MUESTRA EL COMPORTAMIENTO HISTORICO DE LOS ULTIMOS 18 MESES, EL HISTORICO SE DEBE LEER DE IZQUIERDA A DERECHA DONDE EL PRIMER REGISTRO MUESTRA EL MES ACTUAL, EL SEGUNDO MUESTRA EL MES ANTERIOR Y ASI SUCESIVAMENTE. LOS NUMEROS QUE TIENE EL HISTORICO SE INTERPRETA DE LA SIGUIENTE MANERA: UNO (1) EL TITULAR ESTUVO VIGENTE ESE MES, DOS (2) EL TITULAR ESTUVO VENCIDO ESE MES, TRES (3) EL TITULAR ESTUVO EN EJECUCION ESE MES, CUATRO (4) EL TITULAR  ESTUVO CON DEUDA CASTIGADA ESE MES Y CINCO (5) NO SE TIENEN DATOS DE ESE MES.</hISTORICO>
+		<cAEDEC titulo="CAEDEC">CORRESPONDE AL CODIGO ASIGNADO POR LA ASFI PARA EL DESTINO DE CREDITO.</cAEDEC>
+		<aCTECONO titulo="ACT. ECONO.">CORRESPONDE AL CODIGO ASIGNADO PARA LA ACTIVIDAD ECONOMICA DEL TITULAR.</aCTECONO>
+		<rEHABILITACIONYCLAUSURADECUENTASCORRIENTES titulo="REHABILITACION Y CLAUSURA DE CUENTAS CORRIENTES">EN LA INFORMACION DE  REHABILITACION DE CUENTAS , LA FUENTE(ASFI)  NO CONSIGNA  LA ENTIDAD.</rEHABILITACIONYCLAUSURADECUENTASCORRIENTES>
+		<rECTIFICACIONES titulo="RECTIFICACIONES">DETALLE DE RECTIFICACIONES POR ERROR DE LA ENTIDAD REPORTANTE.</rECTIFICACIONES>
+		<mONTO titulo="MONTO">TODOS LOS MONTOS, CON EXCEPCIÓN DE MONTO ORIGINAL, ESTAN EXPRESADOS EN BOLIVIANOS A LA FECHA DE CORTE DE MES.</mONTO>
+		<mONTOORIGINAL titulo="MONTO ORIGINAL">EXPRESADOS EN LA MONEDA ORIGINAL DEL CREDITO (MN) MONEDA NACIONAL, (ME) MONEDA EXTRANJERA, (CMV) MONEDA NACIONAL CON MANTENIMIENTO DE VALOR Y (UFV) MONEDA NACIONAL UNIDAD FOMENTO A LA VIVIENDA.</mONTOORIGINAL>
+		<nOTAS titulo="NOTAS">TÓMESE EN CUENTA QUE LA INFORMACIÓN DE BANCA COMUNAL DE INSTITUCIONES FINANCIERAS DE DESARROLLO (IFDS) QUE CUENTAN CON LICENCIA DE FUNCIONAMIENTO DE LA AUTORIDAD DE SUPERVISIÓN DEL SISTEMA FINANCIERO (ASFI) ES PROVISTA POR LA CENTRAL DE INFORMACIÓN CREDITICIA (CIC) EN EL MARCO DE LA NORMATIVA VIGENTE:  LIBRO 3, TITULO II, CAPITULO II, SECCIÓN 3, ARTICULO 12° Y LIBRO 3, TITULO II, CAPITULO II, SECCIÓN 3, ARTICULO 12°, INCISO O).</nOTAS>
+		<aCLARACION titulo="ACLARACION">ESTE REPORTE ESTA SUJETO AL SECRETO BANCARIO CONFORME CON LA LEY 393 VIGENTE A PARTIR DEL 20 DE NOVIEMBRE DE 2013.</aCLARACION>
+	</notas>
+</titular>
