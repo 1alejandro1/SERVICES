@@ -1,0 +1,41 @@
+﻿@page "/NotCamera"
+
+@inject IJSRuntime JSRuntime
+@inject NavigationManager navigationManager
+@attribute [Authorize]
+
+<div style="display: flex; justify-content: center; align-items: center;">
+    <div style="flex-direction: column; padding-top: 10px">
+        <div style="text-align: center;">
+            @if (isMobile)
+            {
+                <img src="img/spots-c-sp-camera-close-d-mobile.svg" width="300" />
+            }
+            else
+            {
+                <img src="img/spots-c-sp-camera-close-d.svg" width="300" />
+            }
+        </div>
+        <div style="text-align: center;">
+            <h2>No pudimos acceder a tu cámara</h2>
+        </div>
+        <div style="text-align: center;">
+            <p>Para validar tu identidad, necesitamos que nos brindes permiso para acceder a tu cámara</p>
+        </div>
+        <NavLink class="nav-link" @onclick="GoToHome"> Volver a iniciar</NavLink>
+    </div>
+</div>
+
+@code {
+    private bool isMobile { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        isMobile = await JSRuntime.InvokeAsync<bool>("isDevice");
+        await base.OnInitializedAsync();
+    }
+    private void GoToHome()
+    {
+        navigationManager.NavigateTo("home", forceLoad: true);
+    }
+}

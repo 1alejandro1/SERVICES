@@ -1,0 +1,93 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = RecognitionPasiva.App
+build_property.RootNamespace = RecognitionPasiva.App
+build_property.ProjectDir = D:\T25208\Reconocimiento Facial\REFAC_APP\RecognitionPasiva.App\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\T25208\Reconocimiento Facial\REFAC_APP\RecognitionPasiva.App
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/T25208/Reconocimiento Facial/REFAC_APP/RecognitionPasiva.App/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/Reconocimiento Facial/REFAC_APP/RecognitionPasiva.App/Pages/Camera/NotCamera.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FtZXJhXE5vdENhbWVyYS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/Reconocimiento Facial/REFAC_APP/RecognitionPasiva.App/Pages/Common/FinishedProcess.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tbW9uXEZpbmlzaGVkUHJvY2Vzcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/Reconocimiento Facial/REFAC_APP/RecognitionPasiva.App/Pages/Common/State.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tbW9uXFN0YXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/Reconocimiento Facial/REFAC_APP/RecognitionPasiva.App/Pages/Home/CarnetIdentidad.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxDYXJuZXRJZGVudGlkYWQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/Reconocimiento Facial/REFAC_APP/RecognitionPasiva.App/Pages/Home/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/Reconocimiento Facial/REFAC_APP/RecognitionPasiva.App/Pages/Home/PruebaVidaActiva.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxQcnVlYmFWaWRhQWN0aXZhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/Reconocimiento Facial/REFAC_APP/RecognitionPasiva.App/Pages/Home/PruebaVidaPasiva.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxQcnVlYmFWaWRhUGFzaXZhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/Reconocimiento Facial/REFAC_APP/RecognitionPasiva.App/Pages/HttpStatus/HttpStatus401.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSHR0cFN0YXR1c1xIdHRwU3RhdHVzNDAxLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/Reconocimiento Facial/REFAC_APP/RecognitionPasiva.App/Pages/HttpStatus/HttpStatus403.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSHR0cFN0YXR1c1xIdHRwU3RhdHVzNDAzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/Reconocimiento Facial/REFAC_APP/RecognitionPasiva.App/Pages/HttpStatus/HttpStatus404.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSHR0cFN0YXR1c1xIdHRwU3RhdHVzNDA0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/Reconocimiento Facial/REFAC_APP/RecognitionPasiva.App/Pages/HttpStatus/HttpStatus500.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSHR0cFN0YXR1c1xIdHRwU3RhdHVzNTAwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/Reconocimiento Facial/REFAC_APP/RecognitionPasiva.App/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/Reconocimiento Facial/REFAC_APP/RecognitionPasiva.App/Shared/Componente/AlertComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudGVcQWxlcnRDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/Reconocimiento Facial/REFAC_APP/RecognitionPasiva.App/Shared/Componente/LoadingComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudGVcTG9hZGluZ0NvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/Reconocimiento Facial/REFAC_APP/RecognitionPasiva.App/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/Reconocimiento Facial/REFAC_APP/RecognitionPasiva.App/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T25208/Reconocimiento Facial/REFAC_APP/RecognitionPasiva.App/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-lp05nv8ldr
+
+[D:/T25208/Reconocimiento Facial/REFAC_APP/RecognitionPasiva.App/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-zum0xp12cf

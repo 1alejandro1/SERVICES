@@ -1,0 +1,1129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Liveness BCP</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+        hljs.configure({
+            tabReplace: '    ',
+        });
+        hljs.initHighlightingOnLoad();
+    </script>
+    <style>body {
+    position: relative;
+}
+
+h1 {
+    margin-top: 5px;
+}
+
+h1, h2, h3, h4 {
+    color: #2b2b2b;
+}
+
+h2:after {
+    content: ' ';
+}
+
+h5 {
+    font-weight: bold;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    display: none;
+    position: absolute;
+    margin-left: 8px;
+}
+
+h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
+    color: #a5a5a5;
+    display: initial;
+}
+
+.nav.nav-tabs > li > a {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.tab-content {
+    padding-top: 8px;
+}
+
+.table {
+    margin-bottom: 8px;
+}
+
+pre {
+    border-radius: 0px;
+    border: none;
+}
+
+pre code {
+    margin: -9.5px;
+}
+
+.request {
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.response-text-sample {
+    padding: 0px !important;
+}
+
+.response-text-sample pre {
+    margin-bottom: 0px;
+}
+
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 250px;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #2b2b2b;
+    padding-top: 20px;
+}
+
+#sidebar-wrapper ul {
+    width: 250px;
+}
+
+#sidebar-wrapper ul li {
+    margin-right: 10px;
+}
+
+#sidebar-wrapper ul li a:hover {
+    background: inherit;
+    text-decoration: none;
+}
+
+#sidebar-wrapper ul li a {
+    display: block;
+    color: #ECF0F1;
+    padding: 6px 15px;
+}
+
+#sidebar-wrapper ul li ul {
+    padding-left: 25px;
+}
+
+#sidebar-wrapper ul li ul li a {
+    padding: 1px 0px;
+}
+
+#sidebar-wrapper ul li a:hover,
+#sidebar-wrapper ul li a:focus {
+    color: #e0c46c;
+    border-right: solid 1px #e0c46c;
+}
+
+#sidebar-wrapper ul li.active > a {
+    color: #e0c46c;
+    border-right: solid 3px #e0c46c;
+}
+
+#sidebar-wrapper ul li:not(.active) ul {
+    display: none;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px 15px 15px 250px;
+}
+</style>
+</head>
+<body data-spy="scroll" data-target=".scrollspy">
+<div id="sidebar-wrapper">
+    <div class="scrollspy">
+    <ul id="main-menu" data-spy="affix" class="nav">
+        <li>
+            <a href="#doc-general-notes">General notes</a>
+        </li>
+        
+        <li>
+            <a href="#doc-api-detail">API detail</a>
+        </li>
+        
+        <li>
+            <a href="#request-1-gettoken">1. GetToken</a>
+        </li>
+        
+        <li>
+            <a href="#request-2-verify-liveness">2. Verify Liveness</a>
+        </li>
+        
+        
+    </ul>
+</div>
+
+</div>
+<div id="page-content-wrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Liveness BCP</h1>
+
+                <h2 id="doc-general-notes">
+                    General notes
+                    <a href="#doc-general-notes"><i class="glyphicon glyphicon-link"></i></a>
+                </h2>
+
+                <p>Los servicios a continuación permiten realizar la verificación de Prueba de Vida de una fotografía Selfie.</p>
+
+<p><strong>Considere:</strong></p>
+
+<ul>
+<li>Las variables BASIC_URL y BASIC__URL serán proporcionadas, considerando los ambientes correspondientes.</li>
+</ul>
+
+
+                
+
+                <h2 id="doc-api-detail">
+                    API detail
+                    <a href="#doc-api-detail"><i class="glyphicon glyphicon-link"></i></a>
+                </h2>
+
+                
+                
+                <div class="request">
+
+                    <h3 id="request-1-gettoken">
+                        1. GetToken
+                        <a href="#request-1-gettoken"><i class="glyphicon glyphicon-link"></i></a>
+                    </h3>
+
+                    <div><p>Este servicio permite obtener un token de sesión el cual será requerido en el servicio &ldquo;Verify Liveness&rdquo;.</p>
+
+<h2>Headers</h2>
+
+<ul>
+<li>Content-Type: application/x-www-form-urlencoded
+<br /></li>
+</ul>
+
+<h2><strong>Descripción de campos</strong></h2>
+
+<p>Los valores de los campos <strong>username</strong>, <strong>password</strong>, <strong>client_secret</strong> serán proporcionados, considerando el cliente correspondiente.</p>
+
+<ul>
+<li><strong>client_id</strong>
+
+<ul>
+<li>Campo obligatorio</li>
+<li>Tipo String (Valor constante: liveness)</li>
+<li>Longitud exacta 8</li>
+</ul></li>
+<li><strong>username</strong>
+
+<ul>
+<li>Campo obligatorio</li>
+<li>Tipo String</li>
+<li>Longitud minima 3</li>
+<li>Longitud máxima 15</li>
+</ul></li>
+<li><strong>password</strong>
+
+<ul>
+<li>Campo obligatorio</li>
+<li>Tipo String</li>
+<li>Longitud minima 10</li>
+<li>Longitud máxima 18</li>
+</ul></li>
+<li><strong>grant_type</strong>
+
+<ul>
+<li>Campo obligatorio</li>
+<li>Tipo String (Valor constante: password)</li>
+<li>Longitud exacta 8</li>
+</ul></li>
+<li><strong>client_secret</strong>
+
+<ul>
+<li>Campo obligatorio</li>
+<li>Tipo String</li>
+<li>Longitud minima 25</li>
+<li>Longitud máxima 40</li>
+</ul></li>
+</ul>
+
+<h2><strong>Descripción response</strong></h2>
+
+<h4>Code 200 - OK</h4>
+
+<p>Se pudo obtener correctamente el token.</p>
+
+<ul>
+<li><strong>access_token -</strong> Contiene el token de acceso que se usara en los siguientes EndPoints.
+
+<ul>
+<li>Tipo String</li>
+<li>Este campo no debe ser vacio o nulo</li>
+<li>Longitud min 1400</li>
+<li>Longitud max 1600</li>
+</ul></li>
+<li><strong>expires_in -</strong> Tiempo de validez del token de acceso, en segundos.
+
+<ul>
+<li>Tipo long (Valor constante: 36000 para dev-test y 2400 para producción)</li>
+</ul></li>
+<li><strong>refresh_expires_in</strong>
+
+<ul>
+<li>Tipo long (Valor constante: 36000 para dev-test y 2400 para producción)</li>
+</ul></li>
+<li><strong>refresh_token</strong>
+
+<ul>
+<li>Tipo String</li>
+<li>Longitud min 755</li>
+<li>Longitud max 765</li>
+</ul></li>
+<li><strong>token_type</strong>
+
+<ul>
+<li>Tipo String (Valor constante: &ldquo;Bearer&rdquo;)</li>
+</ul></li>
+<li><strong>not-before-policy</strong>
+
+<ul>
+<li>Tipo long (Valor constante: 0)</li>
+</ul></li>
+<li><strong>session_state</strong>
+
+<ul>
+<li>Tipo String</li>
+<li>Longitud unica 36</li>
+</ul></li>
+<li><strong>scope</strong>
+
+<ul>
+<li>Tipo String (Valores posibles: &ldquo;email profile&rdquo; o &ldquo;profile email&rdquo; )</li>
+<li>Longitud unica 13</li>
+</ul></li>
+</ul>
+
+<h4>Code 401 - Unauthorized</h4>
+
+<p>No se cuenta con la autorización correspondiente.</p>
+
+<h4>Code 400 - Bad request</h4>
+
+<p>Dato de un campo inválido.</p>
+
+<h4>Code 404 - Not Found</h4>
+
+<p>No se encuentra la URL del servicio.</p>
+
+<h4>Nota</h4>
+
+<p><em>Estas respuestas pertenecen a keycloak, en caso de requerir mayor información consultar su documentación oficial.</em></p>
+
+<p><a href="https://www.keycloak.org/docs-api/10.0/javadocs/index.html?org/keycloak/representations/AccessTokenResponse.html">https://www.keycloak.org/docs-api/10.0/javadocs/index.html?org/keycloak/representations/AccessTokenResponse.html</a></p>
+</div>
+
+                    <div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#request-1-gettoken-example-curl" data-toggle="tab">Curl</a></li>
+                            <li role="presentation"><a href="#request-1-gettoken-example-http" data-toggle="tab">HTTP</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="request-1-gettoken-example-curl">
+                                <pre><code class="hljs curl">curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "client_id=liveness&username={{usernameToken}}&password={{passwordToken}}&grant_type=password&client_secret={{client_secretToken}}" "{{BASIC__URL}}/auth/realms/liveness/protocol/openid-connect/token"</code></pre>
+                            </div>
+                            <div class="tab-pane" id="request-1-gettoken-example-http">
+                                <pre><code class="hljs http">POST %7B%7BBASIC__URL%7D%7D/auth/realms/liveness/protocol/openid-connect/token HTTP/1.1
+Host: 
+Content-Type: application/x-www-form-urlencoded
+
+client_id=liveness&username={{usernameToken}}&password={{passwordToken}}&grant_type=password&client_secret={{client_secretToken}}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            
+                            <li role="presentation" class="active">
+                                <a href="#request-1-gettoken-responses-513fd49b-fc9d-40af-812b-8b1b093272c7" data-toggle="tab">
+                                    
+                                    GetToken - 200 Ok
+                                    
+                                </a>
+                            </li>
+                            
+                            <li role="presentation">
+                                <a href="#request-1-gettoken-responses-38ca1fb4-1c6e-4373-8b6e-f227484ec210" data-toggle="tab">
+                                    
+                                    GetToken - 400 Bad Request
+                                    
+                                </a>
+                            </li>
+                            
+                            <li role="presentation">
+                                <a href="#request-1-gettoken-responses-7f711251-b016-47c0-9e96-d35985d8f4de" data-toggle="tab">
+                                    
+                                    GetToken - 401 Unauthorized
+                                    
+                                </a>
+                            </li>
+                            
+                            <li role="presentation">
+                                <a href="#request-1-gettoken-responses-ecd2eac4-5b75-4c9f-ac68-d196f08e36c0" data-toggle="tab">
+                                    
+                                    GetToken - 401 Unauthorized
+                                    
+                                </a>
+                            </li>
+                            
+                            <li role="presentation">
+                                <a href="#request-1-gettoken-responses-46a85d8d-4249-4fa8-a72a-3051e5df2d67" data-toggle="tab">
+                                    
+                                    GetToken - 404 Not Found
+                                    
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        <div class="tab-content">
+                            
+                            <div class="tab-pane active" id="request-1-gettoken-responses-513fd49b-fc9d-40af-812b-8b1b093272c7">
+                                <table class="table table-bordered">
+                                    <tr><th style="width: 20%;">Status</th><td>200 OK</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Cache-Control</th><td>no-store</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Set-Cookie</th><td>KEYCLOAK_LOCALE=; Version=1; Comment=Expiring cookie; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; Path=/auth/realms/liveness/; Secure; HttpOnly</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Set-Cookie</th><td>KC_RESTART=; Version=1; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; Path=/auth/realms/liveness/; Secure; HttpOnly</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-XSS-Protection</th><td>1; mode=block</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Pragma</th><td>no-cache</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-Frame-Options</th><td>SAMEORIGIN</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Referrer-Policy</th><td>no-referrer</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Date</th><td>Tue, 29 Nov 2022 22:12:01 GMT</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Connection</th><td>keep-alive</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Strict-Transport-Security</th><td>max-age=31536000; includeSubDomains</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-Content-Type-Options</th><td>nosniff</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Content-Type</th><td>application/json</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Content-Length</th><td>2317</td></tr>
+                                    
+                                    
+                                    
+                                    <tr><td class="response-text-sample" colspan="2">
+                                        <pre><code>{
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJGaGdxRmlmSTZDMXhNTXVvOEFoWktXa1FpSFFuWVo0TVJBVXB3cGEzbHAwIn0.eyJleHAiOjE2Njk3OTU5MjEsImlhdCI6MTY2OTc1OTkyMSwianRpIjoiMjU3Mjk5OGMtMDA1NS00NzRiLWE5NmUtMjhmM2UzNTE1OTk3IiwiaXNzIjoiaHR0cHM6Ly9kZXYuaW50ZXJzb2Z0ZmludGVjaHNlcnZpY2VzLmNvbTo4NDQzL2F1dGgvcmVhbG1zL2xpdmVuZXNzIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjJiZGY3ZDBjLWIyMTgtNDRjNy04YWViLTFiMDVhMWEwNWZmYiIsInR5cCI6IkJlYXJlciIsImF6cCI6ImxpdmVuZXNzIiwic2Vzc2lvbl9zdGF0ZSI6Ijc4NWIwY2JmLTQ1YjYtNGEyMi05NTkwLWU0ZGJhMzUzMGNmYiIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiIsInVzZXIiLCJkZWZhdWx0LXJvbGVzLWxpdmVuZXNzIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiNzg1YjBjYmYtNDViNi00YTIyLTk1OTAtZTRkYmEzNTMwY2ZiIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInVzZXJfaW5mbyI6IjJiZGY3ZDBjLWIyMTgtNDRjNy04YWViLTFiMDVhMWEwNWZmYiIsInByZWZlcnJlZF91c2VybmFtZSI6ImJjcCJ9.rBtq9M-5LPkRrmF-TN3scXxTzvMjdJ8M3Hu8cxhz9YrWYfN09583mzr9Bfs9Zhe_SXvAxXFCeGFj8iJS8o9RQM1f6tq6zhkGr6pcgBv-GFOIPfoUQ3ToV0dKUGxMBh5Ca69oVDmO702CGSKQxy9DA-dR-Izmh1y3FVPQ9mpizjHk9wyqxYvamkreD_1Fy4nLw25SMpPgRfb9GoegYMCTDnvACqzSi_aJ-lpqSyVoDPEan5-jCrxglvbN7W5qqfFTi_6qJFtikbcdSBf3IozA07_TPwrAM8K2v0VQvUUPgDiDY4CHKuLcfHmB-s_gCrbypwCNXV0Sgm1OlZTxYqZo6Q",
+    "expires_in": 36000,
+    "refresh_expires_in": 36000,
+    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJjZDRiOTgyOC1kNzk0LTQ5MmUtOTFjYi00MjA1ZDNiMmQwYTMifQ.eyJleHAiOjE2Njk3OTU5MjEsImlhdCI6MTY2OTc1OTkyMSwianRpIjoiNDkxZmRlNDUtYjBlYS00ZGFiLWFiN2YtNjU3ZjFkN2ExNWMyIiwiaXNzIjoiaHR0cHM6Ly9kZXYuaW50ZXJzb2Z0ZmludGVjaHNlcnZpY2VzLmNvbTo4NDQzL2F1dGgvcmVhbG1zL2xpdmVuZXNzIiwiYXVkIjoiaHR0cHM6Ly9kZXYuaW50ZXJzb2Z0ZmludGVjaHNlcnZpY2VzLmNvbTo4NDQzL2F1dGgvcmVhbG1zL2xpdmVuZXNzIiwic3ViIjoiMmJkZjdkMGMtYjIxOC00NGM3LThhZWItMWIwNWExYTA1ZmZiIiwidHlwIjoiUmVmcmVzaCIsImF6cCI6ImxpdmVuZXNzIiwic2Vzc2lvbl9zdGF0ZSI6Ijc4NWIwY2JmLTQ1YjYtNGEyMi05NTkwLWU0ZGJhMzUzMGNmYiIsInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsInNpZCI6Ijc4NWIwY2JmLTQ1YjYtNGEyMi05NTkwLWU0ZGJhMzUzMGNmYiJ9.jzIZmQhmAwaH_D4vsWZ0JMOvC_Y2GHSp0RmyNBCkveE",
+    "token_type": "Bearer",
+    "not-before-policy": 0,
+    "session_state": "785b0cbf-45b6-4a22-9590-e4dba3530cfb",
+    "scope": "email profile"
+}</code></pre>
+                                    </td></tr>
+                                    
+                                    
+                                </table>
+                            </div>
+                            
+                            <div class="tab-pane" id="request-1-gettoken-responses-38ca1fb4-1c6e-4373-8b6e-f227484ec210">
+                                <table class="table table-bordered">
+                                    <tr><th style="width: 20%;">Status</th><td>400 Bad Request</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Cache-Control</th><td>no-store</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-XSS-Protection</th><td>1; mode=block</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Pragma</th><td>no-cache</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-Frame-Options</th><td>SAMEORIGIN</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Referrer-Policy</th><td>no-referrer</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Date</th><td>Tue, 29 Nov 2022 22:11:35 GMT</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Connection</th><td>keep-alive</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Strict-Transport-Security</th><td>max-age=31536000; includeSubDomains</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-Content-Type-Options</th><td>nosniff</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Content-Type</th><td>application/json</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Content-Length</th><td>75</td></tr>
+                                    
+                                    
+                                    
+                                    <tr><td class="response-text-sample" colspan="2">
+                                        <pre><code>{
+    "error": "invalid_client",
+    "error_description": "Invalid client credentials"
+}</code></pre>
+                                    </td></tr>
+                                    
+                                    
+                                </table>
+                            </div>
+                            
+                            <div class="tab-pane" id="request-1-gettoken-responses-7f711251-b016-47c0-9e96-d35985d8f4de">
+                                <table class="table table-bordered">
+                                    <tr><th style="width: 20%;">Status</th><td>401 Unauthorized</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Cache-Control</th><td>no-store</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-XSS-Protection</th><td>1; mode=block</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Pragma</th><td>no-cache</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-Frame-Options</th><td>SAMEORIGIN</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Referrer-Policy</th><td>no-referrer</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Date</th><td>Tue, 29 Nov 2022 22:09:48 GMT</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Connection</th><td>keep-alive</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Strict-Transport-Security</th><td>max-age=31536000; includeSubDomains</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-Content-Type-Options</th><td>nosniff</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Content-Type</th><td>application/json</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Content-Length</th><td>72</td></tr>
+                                    
+                                    
+                                    
+                                    <tr><td class="response-text-sample" colspan="2">
+                                        <pre><code>{
+    "error": "invalid_grant",
+    "error_description": "Invalid user credentials"
+}</code></pre>
+                                    </td></tr>
+                                    
+                                    
+                                </table>
+                            </div>
+                            
+                            <div class="tab-pane" id="request-1-gettoken-responses-ecd2eac4-5b75-4c9f-ac68-d196f08e36c0">
+                                <table class="table table-bordered">
+                                    <tr><th style="width: 20%;">Status</th><td>401 Unauthorized</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Cache-Control</th><td>no-store</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-XSS-Protection</th><td>1; mode=block</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Pragma</th><td>no-cache</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-Frame-Options</th><td>SAMEORIGIN</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Referrer-Policy</th><td>no-referrer</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Date</th><td>Tue, 29 Nov 2022 22:10:44 GMT</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Connection</th><td>keep-alive</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Strict-Transport-Security</th><td>max-age=31536000; includeSubDomains</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-Content-Type-Options</th><td>nosniff</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Content-Type</th><td>application/json</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Content-Length</th><td>72</td></tr>
+                                    
+                                    
+                                    
+                                    <tr><td class="response-text-sample" colspan="2">
+                                        <pre><code>{
+    "error": "invalid_grant",
+    "error_description": "Invalid user credentials"
+}</code></pre>
+                                    </td></tr>
+                                    
+                                    
+                                </table>
+                            </div>
+                            
+                            <div class="tab-pane" id="request-1-gettoken-responses-46a85d8d-4249-4fa8-a72a-3051e5df2d67">
+                                <table class="table table-bordered">
+                                    <tr><th style="width: 20%;">Status</th><td>404 Not Found</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-XSS-Protection</th><td>1; mode=block</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-Frame-Options</th><td>SAMEORIGIN</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Referrer-Policy</th><td>no-referrer</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Date</th><td>Tue, 29 Nov 2022 22:04:49 GMT</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Connection</th><td>keep-alive</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Strict-Transport-Security</th><td>max-age=31536000; includeSubDomains</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-Content-Type-Options</th><td>nosniff</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Content-Type</th><td>application/json</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Content-Length</th><td>32</td></tr>
+                                    
+                                    
+                                    
+                                    <tr><td class="response-text-sample" colspan="2">
+                                        <pre><code>{
+    "error": "Realm does not exist"
+}</code></pre>
+                                    </td></tr>
+                                    
+                                    
+                                </table>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+
+                    <hr>
+                </div>
+                
+                
+                <div class="request">
+
+                    <h3 id="request-2-verify-liveness">
+                        2. Verify Liveness
+                        <a href="#request-2-verify-liveness"><i class="glyphicon glyphicon-link"></i></a>
+                    </h3>
+
+                    <div><p>Este servicio permite verificar una prueba de vida. con una fotografia selfie.</p>
+
+<h2>Headers</h2>
+
+<ul>
+<li>Content-Type: application/json</li>
+<li>Authorization token es el valor del campo &ldquo;access_token&rdquo; obtenido, en caso de tener un 200-Ok response, del EndPoint GetToken
+<br /></li>
+</ul>
+
+<h2><strong>Descripción de campos</strong></h2>
+
+<h4>BODY</h4>
+
+<ul>
+<li><strong>personalNumber</strong> - Numero de cedula de identidad
+
+<ul>
+<li>Campo obligatorio</li>
+<li>Tipo String (Números)</li>
+<li>Longitud min 6</li>
+<li>Longitud max 8</li>
+<li>Puede contener el complemento concatenado con guion medio, sin espacios, en este caso:</li>
+<li>Tipo String (2 caracteres alfanumericos)</li>
+<li>Longitud min 9</li>
+<li>Longitud max 11</li>
+</ul></li>
+<li><strong>selfieData</strong> - foto de la persona
+
+<ul>
+<li>Campo obligatorio</li>
+<li>Tipo String (foto en formato base64. Ejm: &ldquo;/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYGBgYHBgcICAcKCwoLCg8O&hellip;&hellip;..&rdquo;)</li>
+</ul></li>
+<li><strong>selfieFormat</strong> - formato de la foto de la persona
+
+<ul>
+<li>Campo obligatorio</li>
+<li>Tipo String (Opciones de valores permitidos: jpg, jpeg, png, JPG. JPEG, PNG)</li>
+</ul></li>
+</ul>
+
+<h2><strong>Descripción response</strong></h2>
+
+<h4>Code 200 - OK</h4>
+
+<p>Se pudo verificar correctamente la prueba de vida con la fotografía selfie.</p>
+
+<ul>
+<li><strong>message</strong>: Contiene el mensaje de confirmación de la verificación</li>
+<li><strong>data:</strong>
+
+<ul>
+<li><strong>Cédula de Identidad</strong>: Numero de cedula de identidad</li>
+</ul></li>
+<li><strong>error</strong>: Valor constante NULL</li>
+<li><strong>code</strong>: Codigo http status
+<br /></li>
+</ul>
+
+<h4>Code 400 - BAD REQUEST</h4>
+
+<p>Formato inválido de la estructura del body</p>
+
+<ul>
+<li><strong>message</strong>: Mensaje con el motivo del error</li>
+<li><strong>errors</strong>: Detalle del error</li>
+<li><strong>code</strong>: Codigo http status
+<br /></li>
+</ul>
+
+<h4>Code 401 - UNAUTHORIZED</h4>
+
+<p>No se cuenta con la autorización correspondiente.</p>
+
+<h4>Code 406 - NOT ACCEPTABLE</h4>
+
+<p>No se pudo leer ni obtener los datos de la cedula de identidad o no coindicen las fotos que se usaron al realizar la lectura OCR y la creacion de identidad</p>
+
+<ul>
+<li><strong>message</strong>: Mensaje de error. Valor constante ERROR</li>
+<li><strong>data</strong>: Valor constante NULL</li>
+<li><strong>error</strong>: Detalle del motivo del error</li>
+<li><strong>code</strong>: Código http status</li>
+</ul>
+</div>
+
+                    <div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#request-2-verify-liveness-example-curl" data-toggle="tab">Curl</a></li>
+                            <li role="presentation"><a href="#request-2-verify-liveness-example-http" data-toggle="tab">HTTP</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="request-2-verify-liveness-example-curl">
+                                <pre><code class="hljs curl">curl -X POST -H "Content-Type: application/json" -d '{
+    "personalNumber": "1234578",
+    "selfieData":"{{selfieBase64}}",
+    "selfieFormat":"jpeg"
+}' "{{BASIC_URL}}/api/ms-digital-liveness-bcp/verifyLiveness"</code></pre>
+                            </div>
+                            <div class="tab-pane" id="request-2-verify-liveness-example-http">
+                                <pre><code class="hljs http">POST %7B%7BBASIC_URL%7D%7D/api/ms-digital-liveness-bcp/verifyLiveness HTTP/1.1
+Host: 
+Content-Type: application/json
+
+{
+    "personalNumber": "1234578",
+    "selfieData":"{{selfieBase64}}",
+    "selfieFormat":"jpeg"
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            
+                            <li role="presentation" class="active">
+                                <a href="#request-2-verify-liveness-responses-0a7d10b1-79c4-414a-ac76-2b3828cdb44b" data-toggle="tab">
+                                    
+                                    Verify Liveness 200 - Ok
+                                    
+                                </a>
+                            </li>
+                            
+                            <li role="presentation">
+                                <a href="#request-2-verify-liveness-responses-c2a873b2-32e1-4fa1-b215-1019600b7c8c" data-toggle="tab">
+                                    
+                                    Verify Liveness 400 - Bad Request
+                                    
+                                </a>
+                            </li>
+                            
+                            <li role="presentation">
+                                <a href="#request-2-verify-liveness-responses-49c7e1f9-45f8-4307-bdf9-3ea508d06188" data-toggle="tab">
+                                    
+                                    Verify Liveness 400 - Bad Request
+                                    
+                                </a>
+                            </li>
+                            
+                            <li role="presentation">
+                                <a href="#request-2-verify-liveness-responses-a96a2279-7347-4bf0-b907-53372e9ca32b" data-toggle="tab">
+                                    
+                                    Verify Liveness 400 - Bad Request
+                                    
+                                </a>
+                            </li>
+                            
+                            <li role="presentation">
+                                <a href="#request-2-verify-liveness-responses-4a88180f-97b0-4212-baa0-c13768e38eff" data-toggle="tab">
+                                    
+                                    Verify Liveness  406 - Not Acceptable
+                                    
+                                </a>
+                            </li>
+                            
+                            <li role="presentation">
+                                <a href="#request-2-verify-liveness-responses-b6227939-5351-4658-a69c-dd32af85b877" data-toggle="tab">
+                                    
+                                    Verify Liveness  406 - Not Acceptable
+                                    
+                                </a>
+                            </li>
+                            
+                            <li role="presentation">
+                                <a href="#request-2-verify-liveness-responses-66cd9a62-2c3c-40e7-ab54-3cb1a0bf041b" data-toggle="tab">
+                                    
+                                    Verify Liveness 406 - Not Acceptable
+                                    
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        <div class="tab-content">
+                            
+                            <div class="tab-pane active" id="request-2-verify-liveness-responses-0a7d10b1-79c4-414a-ac76-2b3828cdb44b">
+                                <table class="table table-bordered">
+                                    <tr><th style="width: 20%;">Status</th><td>200 OK</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">transfer-encoding</th><td>chunked</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Vary</th><td>Origin</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Vary</th><td>Access-Control-Request-Method</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Vary</th><td>Access-Control-Request-Headers</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-Content-Type-Options</th><td>nosniff</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-XSS-Protection</th><td>1; mode=block</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Cache-Control</th><td>no-cache, no-store, max-age=0, must-revalidate</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Pragma</th><td>no-cache</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Expires</th><td>0</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-Frame-Options</th><td>DENY</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Content-Type</th><td>application/json</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Date</th><td>Tue, 29 Nov 2022 21:47:44 GMT</td></tr>
+                                    
+                                    
+                                    
+                                    <tr><td class="response-text-sample" colspan="2">
+                                        <pre><code>{
+    "message": "PRUEBA DE VIDA VÁLIDA",
+    "data": "Cédula de Identidad: 1234578",
+    "error": null,
+    "code": "OK"
+}</code></pre>
+                                    </td></tr>
+                                    
+                                    
+                                </table>
+                            </div>
+                            
+                            <div class="tab-pane" id="request-2-verify-liveness-responses-c2a873b2-32e1-4fa1-b215-1019600b7c8c">
+                                <table class="table table-bordered">
+                                    <tr><th style="width: 20%;">Status</th><td>400 Bad Request</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">transfer-encoding</th><td>chunked</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Vary</th><td>Origin</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Vary</th><td>Access-Control-Request-Method</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Vary</th><td>Access-Control-Request-Headers</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-Content-Type-Options</th><td>nosniff</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-XSS-Protection</th><td>1; mode=block</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Cache-Control</th><td>no-cache, no-store, max-age=0, must-revalidate</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Pragma</th><td>no-cache</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Expires</th><td>0</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-Frame-Options</th><td>DENY</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Content-Type</th><td>application/json</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Date</th><td>Tue, 29 Nov 2022 21:48:13 GMT</td></tr>
+                                    
+                                    
+                                    
+                                    <tr><td class="response-text-sample" colspan="2">
+                                        <pre><code>{
+    "message": "400 BAD_REQUEST: FORMATO DE BODY NO VALIDO",
+    "errors": [
+        {
+            "field": "selfieFormat",
+            "code": "Pattern",
+            "message": "EL FORMATO DEBE SER JPG-JPEG-PNG - jpg - jpeg - png"
+        }
+    ]
+}</code></pre>
+                                    </td></tr>
+                                    
+                                    
+                                </table>
+                            </div>
+                            
+                            <div class="tab-pane" id="request-2-verify-liveness-responses-49c7e1f9-45f8-4307-bdf9-3ea508d06188">
+                                <table class="table table-bordered">
+                                    <tr><th style="width: 20%;">Status</th><td>400 Bad Request</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">transfer-encoding</th><td>chunked</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Vary</th><td>Origin</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Vary</th><td>Access-Control-Request-Method</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Vary</th><td>Access-Control-Request-Headers</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-Content-Type-Options</th><td>nosniff</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-XSS-Protection</th><td>1; mode=block</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Cache-Control</th><td>no-cache, no-store, max-age=0, must-revalidate</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Pragma</th><td>no-cache</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Expires</th><td>0</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-Frame-Options</th><td>DENY</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Content-Type</th><td>application/json</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Date</th><td>Tue, 29 Nov 2022 21:48:31 GMT</td></tr>
+                                    
+                                    
+                                    
+                                    <tr><td class="response-text-sample" colspan="2">
+                                        <pre><code>{
+    "message": "400 BAD_REQUEST: FORMATO DE BODY NO VALIDO",
+    "errors": [
+        {
+            "field": "selfieData",
+            "code": "NotEmpty",
+            "message": "EL CAMPO selfieData ES CAMPO OBLIGATORIO"
+        }
+    ]
+}</code></pre>
+                                    </td></tr>
+                                    
+                                    
+                                </table>
+                            </div>
+                            
+                            <div class="tab-pane" id="request-2-verify-liveness-responses-a96a2279-7347-4bf0-b907-53372e9ca32b">
+                                <table class="table table-bordered">
+                                    <tr><th style="width: 20%;">Status</th><td>400 Bad Request</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">transfer-encoding</th><td>chunked</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Vary</th><td>Origin</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Vary</th><td>Access-Control-Request-Method</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Vary</th><td>Access-Control-Request-Headers</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-Content-Type-Options</th><td>nosniff</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-XSS-Protection</th><td>1; mode=block</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Cache-Control</th><td>no-cache, no-store, max-age=0, must-revalidate</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Pragma</th><td>no-cache</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Expires</th><td>0</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-Frame-Options</th><td>DENY</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Content-Type</th><td>application/json</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Date</th><td>Tue, 29 Nov 2022 21:49:21 GMT</td></tr>
+                                    
+                                    
+                                    
+                                    <tr><td class="response-text-sample" colspan="2">
+                                        <pre><code>{
+    "message": "400 BAD_REQUEST: FORMATO DE BODY NO VALIDO",
+    "errors": [
+        {
+            "field": "personalNumber",
+            "code": "Size",
+            "message": "EL personalNumber DEBE TENER ENTRE 6 A 11 DIGITOS"
+        }
+    ]
+}</code></pre>
+                                    </td></tr>
+                                    
+                                    
+                                </table>
+                            </div>
+                            
+                            <div class="tab-pane" id="request-2-verify-liveness-responses-4a88180f-97b0-4212-baa0-c13768e38eff">
+                                <table class="table table-bordered">
+                                    <tr><th style="width: 20%;">Status</th><td>406 Not Acceptable</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">transfer-encoding</th><td>chunked</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Vary</th><td>Origin</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Vary</th><td>Access-Control-Request-Method</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Vary</th><td>Access-Control-Request-Headers</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-Content-Type-Options</th><td>nosniff</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-XSS-Protection</th><td>1; mode=block</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Cache-Control</th><td>no-cache, no-store, max-age=0, must-revalidate</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Pragma</th><td>no-cache</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Expires</th><td>0</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-Frame-Options</th><td>DENY</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Content-Type</th><td>application/json</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Date</th><td>Tue, 29 Nov 2022 21:59:11 GMT</td></tr>
+                                    
+                                    
+                                    
+                                    <tr><td class="response-text-sample" colspan="2">
+                                        <pre><code>{
+    "message": "ERROR",
+    "data": null,
+    "error": "Probability too low: 1.11540416E-7",
+    "code": "NOT_ACCEPTABLE"
+}</code></pre>
+                                    </td></tr>
+                                    
+                                    
+                                </table>
+                            </div>
+                            
+                            <div class="tab-pane" id="request-2-verify-liveness-responses-b6227939-5351-4658-a69c-dd32af85b877">
+                                <table class="table table-bordered">
+                                    <tr><th style="width: 20%;">Status</th><td>406 Not Acceptable</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">transfer-encoding</th><td>chunked</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Vary</th><td>Origin</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Vary</th><td>Access-Control-Request-Method</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Vary</th><td>Access-Control-Request-Headers</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-Content-Type-Options</th><td>nosniff</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-XSS-Protection</th><td>1; mode=block</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Cache-Control</th><td>no-cache, no-store, max-age=0, must-revalidate</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Pragma</th><td>no-cache</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Expires</th><td>0</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-Frame-Options</th><td>DENY</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Content-Type</th><td>application/json</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Date</th><td>Tue, 29 Nov 2022 21:59:48 GMT</td></tr>
+                                    
+                                    
+                                    
+                                    <tr><td class="response-text-sample" colspan="2">
+                                        <pre><code>{
+    "message": "ERROR",
+    "data": null,
+    "error": "FACE_TOO_SMALL",
+    "code": "NOT_ACCEPTABLE"
+}</code></pre>
+                                    </td></tr>
+                                    
+                                    
+                                </table>
+                            </div>
+                            
+                            <div class="tab-pane" id="request-2-verify-liveness-responses-66cd9a62-2c3c-40e7-ab54-3cb1a0bf041b">
+                                <table class="table table-bordered">
+                                    <tr><th style="width: 20%;">Status</th><td>406 Not Acceptable</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">transfer-encoding</th><td>chunked</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Vary</th><td>Origin</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Vary</th><td>Access-Control-Request-Method</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Vary</th><td>Access-Control-Request-Headers</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-Content-Type-Options</th><td>nosniff</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-XSS-Protection</th><td>1; mode=block</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Cache-Control</th><td>no-cache, no-store, max-age=0, must-revalidate</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Pragma</th><td>no-cache</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Expires</th><td>0</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">X-Frame-Options</th><td>DENY</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Content-Type</th><td>application/json</td></tr>
+                                    
+                                    <tr><th style="width: 20%;">Date</th><td>Tue, 29 Nov 2022 22:00:34 GMT</td></tr>
+                                    
+                                    
+                                    
+                                    <tr><td class="response-text-sample" colspan="2">
+                                        <pre><code>{
+    "message": "ERROR",
+    "data": null,
+    "error": "FACE_TOO_CLOSE",
+    "code": "NOT_ACCEPTABLE"
+}</code></pre>
+                                    </td></tr>
+                                    
+                                    
+                                </table>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+
+                    <hr>
+                </div>
+                
+
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("table:not(.table)").addClass('table table-bordered');
+    });
+</script>
+</body>
+</html>

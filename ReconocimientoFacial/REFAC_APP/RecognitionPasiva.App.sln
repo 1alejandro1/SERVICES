@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecognitionPasiva.App", "RecognitionPasiva.App\RecognitionPasiva.App.csproj", "{FBB2A5D7-8F3B-4831-AC17-773DDD536224}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecognitionPasiva.App.Services", "RecognitionPasiva.App.Services\RecognitionPasiva.App.Services.csproj", "{6752E081-B678-4DE5-9D35-47B825012575}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CROSS", "CROSS", "{632F4493-8AAE-4F51-9BDD-8E3B0266572E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCP.CROSS.MODELS", "BCP.CROSS.MODELS\BCP.CROSS.MODELS.csproj", "{695863EF-E683-4D28-8E36-3389875A3117}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBB2A5D7-8F3B-4831-AC17-773DDD536224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBB2A5D7-8F3B-4831-AC17-773DDD536224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBB2A5D7-8F3B-4831-AC17-773DDD536224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBB2A5D7-8F3B-4831-AC17-773DDD536224}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6752E081-B678-4DE5-9D35-47B825012575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6752E081-B678-4DE5-9D35-47B825012575}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6752E081-B678-4DE5-9D35-47B825012575}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6752E081-B678-4DE5-9D35-47B825012575}.Release|Any CPU.Build.0 = Release|Any CPU
+		{695863EF-E683-4D28-8E36-3389875A3117}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{695863EF-E683-4D28-8E36-3389875A3117}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{695863EF-E683-4D28-8E36-3389875A3117}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{695863EF-E683-4D28-8E36-3389875A3117}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{695863EF-E683-4D28-8E36-3389875A3117} = {632F4493-8AAE-4F51-9BDD-8E3B0266572E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58A274E9-754E-4296-972A-38AF91DD0127}
+	EndGlobalSection
+EndGlobal

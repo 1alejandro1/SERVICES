@@ -1,0 +1,35 @@
+﻿@page "/FinishedProcess/{state}"
+
+@inject ILoginServices loginService
+@inject NavigationManager navigationManager
+
+<div style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 100; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; ">
+    @if (state == "success")
+    {
+        <img src="img/check.svg" style="margin: 10px; height: 100px;" />
+        <p>Se han completado todo los pasos de la verificación con exito.</p>
+    }
+    else
+    {
+        <img src="img/uncheck.svg" style="margin: 10px; height: 100px;" />
+        <p>No se completó la verificación, intenta nuevamente por favor.</p>
+    }
+</div>
+
+@code {
+    [Parameter] public string state { get; set; }
+    protected override Task OnInitializedAsync()
+    {
+        loginService.Logout();
+        if (string.IsNullOrEmpty(state))
+        {
+            navigationManager.NavigateTo("500");
+        }
+
+        if (!(state == "success" || state == "fail"))
+        {
+            navigationManager.NavigateTo("404");
+        }
+        return base.OnInitializedAsync();
+    }
+}

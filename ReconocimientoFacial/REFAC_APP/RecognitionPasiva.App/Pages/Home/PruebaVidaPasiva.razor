@@ -1,0 +1,371 @@
+﻿@page "/PruebaVidaPasiva"
+@using System.Text.RegularExpressions
+@using System.Text
+@using System.Web
+@using System.IO
+@using System.Drawing
+@inject IGatewayServices service
+@inject IJSRuntime JSRuntime
+@inject LoginSesion session
+@inject NavigationManager navigationManager
+@attribute [Authorize]
+
+
+
+@switch (step)
+{  
+    case "1":
+        <div class="Step1RekognitionContent">
+            <div style="text-align: center;">
+                <label>Toma en cuenta las siguientes recomendaciones</label>
+            </div>
+            <div class="Step1Rekognition">
+                <div class="Step1RekognitionCard">
+                    <div style="width: 60px; height: 60px;">
+                        <img src="img/icon_step_1_instruccion.svg" width="55" height="55" />
+                    </div>
+                    <div style="padding: 15px;">
+                        <p>Tener Un <b>dispositivo con cámara</b> y <b>autorizar el acceso</b> de tu dispositivo.</p>
+                    </div>
+                </div>
+                <div class="Step1RekognitionCard">
+                    <div style="width: 60px; height: 60px;">
+                        <img src="img/icon_step_2_instruccion.svg" width="55" height="55" />
+                    </div>
+                    <div style="padding: 15px;">
+                        <p>Sitúate en un lugar con <b>buena iluminación</b>.</p>
+                    </div>
+                </div>
+                <div class="Step1RekognitionCard">
+                    <div style="width: 60px; height: 60px;">
+                        <img src="img/icon_step_3_instruccion.svg" width="55" height="55" />
+                    </div>
+                    <div style="padding: 15px;">
+                        <p>Debes tener el <b>rostro descubierto</b>.</p>
+                        <p style="font-size: 12px;">Evita los lentes, gorra, barbijo y <b>cualquier objeto que pueda interrumpir la validación de identidad.</b></p>
+                    </div>
+                </div>
+                <div class="Step1RekognitionCard">
+                    <div style="width: 60px; height: 60px;">
+                        <img src="img/icon_step_4_instruccion.svg" width="55" height="55" />
+                    </div>
+                    <div style="padding: 15px;">
+                        <p><b>Evita</b> que aparezcan otros rostros y aparatos electrónicos dentro del área designada.</p>
+                    </div>
+                </div>
+            </div>
+            <button @onclick='() => EventChange("2")'>Continuar</button>
+        </div>
+        break;
+    case "2":
+        <div class="Step2RekognitionContent">
+            <div style="text-align: center;">
+                <label>Sigue las instrucciones:</label>
+            </div>
+            <div class="Step2Rekognition">
+                <ul class="lst-number">
+                    <li>Centra tu rostro en el óvalo.</li>
+                    <li>Una vez validado te solicitará girar el cuello levantando la punta de la nariz al cuadro verde.</li>
+                </ul>
+                <img class="imgInstruction" src="img/instruction.gif" />
+            </div>
+            <button @onclick='() => EventChange("3")'>Empezar</button>
+        </div>
+        break;
+    case "3":
+        //EventChange("3");    
+        @if (loading)
+        {
+            <Recognition.App.Shared.Componente.LoadingComponent mensaje="@loadingMensaje"></Recognition.App.Shared.Componente.LoadingComponent>
+        }
+        @if (alert)
+        {
+            <Recognition.App.Shared.Componente.AlertComponent icono="@alertIcono" mensaje="@alertMensaje" btnText="Continuar" EventBoton="EventBack"></Recognition.App.Shared.Componente.AlertComponent>
+        }
+        
+         <canvas id="canvas_sensor" style="position: fixed; top: 0px; left: 50%; transform: translate(-50%, 0%); visibility: visible; object-fit: cover;z-index: 1;"></canvas>
+         <video id="camera" style="position: fixed; top: 0px; left: 50%; height: 68%; width: 100%; object-fit: cover; z-index: -1; transform: translate(-50%, 0%) scaleX(-1)" />        
+         <canvas id="canvas_cropper" style="position: fixed; top: 0px; left: 50%; transform: translate(-50%, 0%)"></canvas>
+        
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <div id="block_bottom" style="height: 100%;width: 100%;top: 68%;background: #000000;position: fixed; left: 50%; transform: translate(-50%, 0%)"></div>
+            <label style="color: white; z-index: 1;">@mensaje</label>
+            <br />            
+             <p style="position: fixed; text-align: center; justify-content: center; align-items: center; left: 0; width: 100%; bottom: 10px; color: white; z-index: 1; ">@time Tiempo restante para la verificación</p>
+       
+           <div id="box_bottom" style="background: white;height: 4em;margin-top: 27em;width: 287px;border-radius: 10px;position: relative;">
+                 <div id="Instruction_face" style="background: white;border-radius: 4em;margin-top: -14px;width: 6em;height: 6em;margin-left: -12px;">
+                    <img style="height: 68px;margin: 13px;    position: relative;" src="img/@(mensajeInstruction.ToLower()).svg"/>
+                 </div>
+                    <p style="position: relative;width: 169px;margin-left: 6em;margin-top: -72px;">@mensajeInstruction</p>
+            </div> 
+           
+             
+            @if (!isMovil)
+            {
+            <div style="margin-left: -5.5em;">
+           @*  <div id="tomarFotografia" style="position: fixed; top: 0px; left: 50%; height: 100%; width: 100%; z-index: -1; transform: translate(-50%, 0%) scaleX(-1)">
+                <div class="content_video_document">                   
+                    <canvas id="canvas_sensor" class="canvasUnited" style="visibility: visible;"></canvas>
+                    <video id="viewCamera" class="canvasUnited" playsinline @onplay="DibujarRecuadro"></video>                  
+                </div>
+            </div>*@
+
+                <button width="83" height="83" style="position: fixed;z-index: 2;top: 83%;padding: 41px;background-image: url(/img/icon_press_camera.svg);border-radius: 42px;border: none;" @onclick='CapturarFotografia'></button>                
+             </div>
+            }
+            else
+            {
+                
+                <div style="margin-left: -5.5em;">             
+                <button width="83" height="83" style="position: fixed;z-index: 2;top: 83%;padding: 41px;background-image: url(/img/icon_press_camera.svg);border-radius: 42px;border: none;" @onclick='CapturarFotografia'></button>                
+                </div>
+            }
+            </div>
+            break;
+         case "4":         
+        if (isMovil)
+        {
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <div id="divCanvas"></div>
+                <div class="CarnetContainer">
+                    <button class="secondary" id="btVolerCargarImagen" @onclick="VolverCargarFotografia">Reintentar</button>
+                    <button id="btGuardarImagen" @onclick="GuardarPhoto">Cargar</button>
+                </div>
+            </div>
+        }
+        break;
+    default:
+        break;
+}
+
+@code {
+    private string step { get; set; }
+    private int time { get; set; }
+    private int intentos { get; set; }
+    private System.Threading.Timer? timer;
+    private System.Threading.Timer? timerRekognition;
+    private string mensaje { get; set; }
+    private string mensajeInstruction { get; set; }
+    private string imageInstruction { get; set; }
+    private bool loading { get; set; }
+    private string loadingMensaje { get; set; }
+    private bool alert { get; set; }
+    private string alertMensaje { get; set; }
+    private string alertIcono { get; set; }
+    private bool timeOut { get; set; }
+    private bool isMovil { get; set; }
+
+    private BCP.CROSS.MODELS.Response.InitRekognitionResponse instruction { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        intentos = 0;
+        isMovil = await JSRuntime.InvokeAsync<bool>("isDevice");
+        step = "3";
+        time = 600;
+        loading = false;
+        timeOut = false;
+        mensaje = "Sitúa tu rostro en el centro";
+        loadingMensaje = "Espere unos segundos";
+        await IniciarVideo();
+        var response = await service.Instruction(session.UserId);
+        mensajeInstruction = response.Response.selfi;
+        imageInstruction = response.Response.imgInstruccion;
+
+        await base.OnInitializedAsync();
+    }
+    async Task EventBack()
+    {
+        await JSRuntime.InvokeVoidAsync("stopVideo", "camera");
+        navigationManager.NavigateTo("Home");
+    }
+    async Task EventChange(string _step)
+
+    {
+        step = _step;
+        if (_step == "3")
+        {
+            loading = true;            
+            await IniciarVideo();
+        }
+    }
+    public async Task VolverCargarFotografia()
+    {
+        step="3";
+        await IniciarVideo();
+    }
+    public async Task IniciarVideo()
+    {
+
+        await JSRuntime.InvokeAsync<string>("startVideo", DotNetObjectReference.Create(this), "camera", "canvas_cropper", "canvas_sensor")
+            .ConfigureAwait(false);
+
+    }
+    public async Task IniciarInstruction()
+    {
+        var response = await service.Instruction(session.UserId);
+    }
+    public async Task EjecutarFile()
+    {
+        await JSRuntime.InvokeVoidAsync("ejecutarFile");
+    }
+
+    public async Task CapturarFotografia()
+    {
+        string image = await JSRuntime.InvokeAsync<String>("captureDocumentFromVideo", DotNetObjectReference.Create(this), "camera");
+    }
+    public async Task DibujarRecuadro()
+    {
+        await JSRuntime.InvokeVoidAsync("drawSquareToVideo", "camera", "canvas_cropper");
+    }
+    public async Task SubirCI()
+    {
+        await JSRuntime.InvokeVoidAsync("subirFotografia");
+    }
+    public async Task GirarImagen(string sentido)
+    {
+        await JSRuntime.InvokeVoidAsync("rotarImagen", sentido);
+    }
+    public async Task GuardarPhoto()
+    {
+        if (!isMovil)
+        {
+            await JSRuntime.InvokeVoidAsync("guardarImagen", DotNetObjectReference.Create(this));
+        }
+        else
+        {
+            await JSRuntime.InvokeVoidAsync("guardarFotografia", DotNetObjectReference.Create(this));
+        }
+    }
+    [JSInvokable]
+    public void OnLoad()
+    {
+        loading = false;
+        StateHasChanged();
+
+    }
+    [JSInvokable]
+    public async Task ConfirmarFotografia()
+    {
+        step = "4";
+
+    }
+    [JSInvokable]
+    public async Task ProcesarImagen(string imagen)
+    {
+        loadingMensaje = "Espere unos segundos. \r Estamos validando la información.";
+        loading = true;
+        var response = await service.LoadImage(session.UserId, CleanBase64(imagen), "ANVERSO");
+        if (!response.Error)
+        {
+            if (response.Response.Data.State)
+            {
+                navigationManager.NavigateTo("Home");
+            }
+            else
+            {
+                alertIcono = "uncheck.svg";
+                alertMensaje = response.Response.Data.Message;
+                alert = true;
+                StateHasChanged();
+            }
+        }
+        else
+        {
+            alertIcono = "uncheck.svg";
+            alertMensaje = response.Response.Data.Message;
+            alert = true;
+            StateHasChanged();
+        }
+    }
+    private static string CleanBase64(string image)
+    {
+        image = Regex.Replace(image, @"^data:image\/[a-zA-Z]+;base64,", string.Empty);
+        StringBuilder _sb = new StringBuilder();
+        _sb.Append(image);
+        return _sb.ToString();
+    }
+    [JSInvokable]
+    public async Task ProcessImagePasiva(string imageString)
+    {
+        loadingMensaje = "Espere unos segundos. \r Estamos validando la información.";
+        loading = true;
+
+        byte[] imageData = Convert.FromBase64String(imageString.Split(',')[1]);
+        string image = Convert.ToBase64String(imageData);
+
+        string image2 = Regex.Replace(imageString, @"^data:image\/[a-zA-Z]+;base64,", string.Empty);
+
+        imageString = CleanBase64(imageString);
+
+        var request = new BCP.CROSS.MODELS.Request.PasivaValidacionRequest
+        {                    
+            sessionID = session.UserId,
+            selfi = imageString
+        };
+       
+            var response = await service.Validation(request.sessionID, request.selfi);
+            mensaje = response.Response.message;
+            intentos++;
+
+            if (mensaje == "Sesión invalida.")
+            {
+                loading = false;
+                timerRekognition = null;
+                navigationManager.NavigateTo("401");
+                StateHasChanged();
+            }           
+            if (response.Response.success)
+            {
+                loading = false;
+                timerRekognition = null;
+                navigationManager.NavigateTo("state/success");
+                StateHasChanged();
+            }
+            else
+            {
+                 loading = false;
+                timerRekognition = null;
+                navigationManager.NavigateTo("state/fail");
+                StateHasChanged();
+            }
+        
+    }
+    [JSInvokable]
+    public async void StartTimer(int height, int width)
+    {
+        var response = await service.Init(session.UserId, session.CI, width, height);
+        instruction = response.Response.Data;  
+        loading = false;
+        //await JSRuntime.InvokeVoidAsync("DrawCanvasRectangle", "canvas", response.Response.Data.noseLeft, response.Response.Data.noseWidth, response.Response.Data.noseTop, response.Response.Data.noseHeight);
+        //await JSRuntime.InvokeVoidAsync("DrawCanvasEllipse", "canvas", response.Response.Data.areaLeft, response.Response.Data.areaWidth, response.Response.Data.areaTop, response.Response.Data.areaHeight);
+        StateHasChanged();
+        timer = new Timer(async (object? stateInfo) =>
+        {
+            time--;
+            if (time <= 0 && !timeOut)
+            {
+                timer = null;
+                await JSRuntime.InvokeVoidAsync("stopVideo", "camera");
+                await service.TimeOut(session.UserId);
+                timeOut = true;
+                navigationManager.NavigateTo("Home");
+            }
+            StateHasChanged();
+
+        }, new System.Threading.AutoResetEvent(false), 1000, 1000);
+        timerRekognition = new Timer(async (object? stateInfo) =>
+        {
+            if (time > 0)
+            {
+                //string image = await JSRuntime.InvokeAsync<String>("getFrame", "camera", "sensor", DotNetObjectReference.Create(this), width, height);
+            
+            }
+            else
+            {
+                timerRekognition = null;
+            }
+        }, new System.Threading.AutoResetEvent(false), 1000, 2000);
+    }    
+}

@@ -1,0 +1,16 @@
+﻿@using System.Web
+@using System.Text.RegularExpressions;
+
+<div class="loading">
+    <div style=" display: flex; flex-direction: column; align-items: center; ">
+        <img src="img/Logo BCP.svg" />
+        <p>
+            @((MarkupString)Regex.Replace(HttpUtility.HtmlEncode(mensaje), "\r?\n|\r", "<br />"))
+        </p>
+        <div class="icon-loading" style="color:white;width:40px;"></div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public string mensaje { get; set; }
+}

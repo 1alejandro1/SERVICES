@@ -1,0 +1,272 @@
+﻿@page "/home"
+@inject IGatewayServices service
+@inject IJSRuntime JSRuntime
+@inject LoginSesion session
+@inject NavigationManager navigationManager
+@attribute [Authorize]
+
+@if (loading)
+{
+    <RecognitionPasiva.App.Shared.Componente.LoadingComponent mensaje="Validando Sesión"></RecognitionPasiva.App.Shared.Componente.LoadingComponent>
+}
+
+<div style="display: flex; flex-direction: column; align-items: center;">
+    @if (esMenor)
+    {
+        <h2 style="text-align:center;">Validaremos tu identidad en 2 pasos</h2>
+    }
+    else
+    {
+        <h2 style="text-align:center;">Reconocimiento Facial</h2>
+    }
+    @if (finishedProcess)
+    {
+        <div class="alert alert-warning p-2 mb-2 mt-4 timer">
+            Esta ventana se cerrará en <strong>@time segundos</strong>
+        </div>
+    }
+    <div class="HomeCard">              
+                <div style="display: flex; flex-direction: column; padding: 15px; min-width: 300px;">
+                    <p style="width: 20em;"><b>Sigue las siguientes instrucciones para tomarte la foto</b></p>
+                    @if (!pruebaVidaPasiva)
+                    {
+                       
+                            if (error)
+                            {
+                               <button class="btn-error">Intento fallido</button>                               
+                            }
+                            else
+                            {
+                             <div style=" min-width: 250px;text-align: left;background: #F6F7F9;border-radius: 7px;margin-top: 2px;margin-bottom: 10px;height: 45px;padding: 10px;">
+                                 <div style="width: 297px; height: 50px;">
+                                     <img src="img/icon_cancel.svg" width="22" height="22" style="position: fixed;"/>                                 
+                                     <p width="100px" style="position: relative;width: 140px ;margin-left: 30px;">Sin gorra</p>                                     
+                                 
+                                     <img src="img/icon_cap.svg" width="35" height="25" style="position: fixed;margin-left: 8em;margin-top: -21px;"/>
+                              </div>
+                             </div>
+                             <div style=" min-width: 250px;text-align: left;background: #F6F7F9;border-radius: 7px;margin-top: 2px;margin-bottom: 10px;height: 45px;padding: 10px;">
+                                 <div style="width: 297px; height: 50px;">
+                                     <img src="img/icon_cancel.svg" width="22" height="22" style="position: fixed;"/>                                 
+                                     <p width="100px" style="position: relative;width: 140px ;margin-left: 30px;">Sin lentes</p>                                     
+                                 
+                                     <img src="img/icon_glass.svg" width="35" height="25" style="position: fixed;margin-left: 8em;margin-top: -21px;"/>
+                              </div>
+                             </div>
+                             <div style=" min-width: 250px;text-align: left;background: #F6F7F9;border-radius: 7px;margin-top: 2px;margin-bottom: 10px;height: 45px;padding: 10px;">
+                                 <div style="width: 297px; height: 50px;">
+                                     <img src="img/icon_cancel.svg" width="22" height="22" style="position: fixed;"/>                                 
+                                     <p width="100px" style="position: relative;width: 140px ;margin-left: 30px;">Sin barbijo</p>                                     
+                                 
+                                     <img src="img/icon_mask.svg" width="35" height="25" style="position: fixed;margin-left: 8em;margin-top: -21px;"/>
+                              </div>
+                             </div>
+                             <div style=" min-width: 250px;text-align: left;background: #F6F7F9;border-radius: 7px;margin-top: 2px;margin-bottom: 10px;height: 65px;padding: 10px;">
+                                 <div style="width: 297px; height: 65px;">
+                                     <img src="img/icon_cancel.svg" width="22" height="22" style="position: fixed;"/>                                 
+                                     <p style="position: relative;width: 180px ;margin-left: 30px;">Evita que aparezcan otros rostros dentro del área.</p>                                     
+                                 
+                                     <img src="img/icon_group.svg" width="35" height="25" style="position: fixed;margin-left: 15em;margin-top: -36px;"/>
+                              </div>
+                             </div>
+                             <div style=" min-width: 250px;text-align: left;background: #F6F7F9;border-radius: 7px;margin-top: 2px;margin-bottom: 10px;height: 70px;padding: 10px;">
+                                 <div style="width: 297px; height: 70px;">
+                                     <img src="img/icon_ok.svg" width="22" height="22" style="position: fixed;"/>                                 
+                                     <p style="position: relative;width: 180px ;margin-left: 30px;">Sitúate en un  lugar con buena iluminación.</p>                                     
+                                 
+                                     <img src="img/icon_light.svg" width="35" height="25" style="position: fixed;margin-left: 15em;margin-top: -36px;"/>
+                              </div>
+                             </div>                                 
+                             
+                             <button @onclick="EventPruebaVidaActiva">Tomar fotografía</button>
+                            }
+                       
+                    }
+                    else
+                    {
+                        <div style="background: #52C41A; color: white; border: none; border-radius: 5px; padding: 5px 10px; text-align: center;">
+                            <img src="img/check_v2.svg" />
+                        </div>
+                    }
+                </div>
+            </div>
+      @* <div class="HomeCard">            
+            <div style="display: flex; flex-direction: column; padding: 15px;">
+                <p><b>Sigue las instrucciones para tomarte la foto</b></p>
+
+                <div style="width: 115px; height: 75px;">
+                <p>Sin gorra</p>
+            </div>
+            <div style="width: 115px; height: 75px;">
+                <p>Sin lentes</p>
+            </div>
+            <div style="width: 115px; height: 75px;">
+                <p>Sin barbijo</p>
+            </div>
+            <div style="width: 115px; height: 75px;">
+             <p>Evita que aparezcan otros rostros dentro del área.</p>
+            </div>
+            <div style="width: 115px; height: 75px;">
+              <p>Sitúate en un  lugar con buena iluminación.</p>
+            </div>
+                @if (!reverso)
+                {
+
+                    <button @onclick="EventReverso">Tomar fotografía</button>
+                }
+                else
+                {
+                    <div style="background: #52C41A; color: white; border: none; border-radius: 5px; padding: 5px 10px; text-align: center;">
+                        <img src="img/check_v2.svg" />
+                    </div>
+                }
+            </div>
+        </div>
+    <div class="HomeContent">
+        <div class="HomeCard">
+            <div style="width: 115px; height: 75px;">
+                <img src="img/img_anverso.svg" width="115" height="75" />
+            </div>
+            <div style="display: flex; flex-direction: column; padding: 15px;">
+                <p>Sube una foto de tu documento de identidad de lado <b>ANVERSO</b></p>
+                @if (!anverso)
+                {
+                    <button @onclick="EventAnverso">Comenzar</button>
+                }
+                else
+                {
+                    <div style="background: #52C41A; color: white; border: none; border-radius: 5px; padding: 5px 10px; text-align: center;">
+                        <img src="img/check_v2.svg" />
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="HomeCard">
+           @* <div style="width: 115px; height: 75px;">
+                <img src="img/img_reverso.svg" width="115" height="75" />
+            </div>
+            <div style="display: flex; flex-direction: column; padding: 15px;">
+                <p><b>Sigue las instrucciones para tomarte la foto</b></p>
+                @if (!reverso)
+                {
+                    <button @onclick="EventReverso">Tomar fotografía</button>
+                }
+                else
+                {
+                    <div style="background: #52C41A; color: white; border: none; border-radius: 5px; padding: 5px 10px; text-align: center;">
+                        <img src="img/check_v2.svg" />
+                    </div>
+                }
+            </div>
+        </div>
+     @*   @if (!esMenor)
+        {
+            <div class="HomeCard">
+                <div style="width: 115px; height: 75px;">
+                    <img src="img/img_reconocimiento.svg" width="115" height="75" />
+                </div>
+                <div style="display: flex; flex-direction: column; padding: 15px;">
+                    <p>Permite el acceso a tu cámara y verifica tu identidad</p>
+                    @if (!pruebaVida)
+                    {
+                        @if (anverso && reverso)
+                        {
+                            if (error)
+                            {
+                                <button class="btn-error">Intento fallido</button>
+                            }
+                            else
+                            {
+                                <button @onclick="EventPruebaVidaActiva">Comenzar</button>
+                            }
+                        }
+                        else
+                        {
+                            @*<button @onclick="EventPruebaVidaActiva">Comenzar</button>
+                            <button disabled>Comenzar</button>
+                        }
+                    }
+                    else
+                    {
+                        <div style="background: #52C41A; color: white; border: none; border-radius: 5px; padding: 5px 10px; text-align: center;">
+                            <img src="img/check_v2.svg" />
+                        </div>
+                    }
+                </div>
+            </div>
+        }*@
+    </div>
+   @* <div class="HomeAlert">
+        <img src="img/IconExclamation.svg" style="position: absolute; left: 50%; transform: translate(-50%, 0%)" />
+        <div class="HomeAlertBorder">
+            <p style="color: #1890FF; text-align: center; font-size: 13px;">Recueda que tienes 3 intentos y un tiempo limitado para validar tu identidad, caso contrario deberás realizar la apertura en un agencia</p>
+        </div>
+    </div>*@
+
+
+@code {
+    private bool anverso = false;
+    private bool reverso = false;
+    private bool pruebaVida = false;
+    private bool pruebaVidaPasiva = false;
+    private bool esMenor = false;
+    private bool loading = true;
+    private bool close = false;
+    private bool error = false;
+    private bool finishedProcess = false;
+    private System.Threading.Timer? timer;
+    private int time { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        time = 5;
+        await JSRuntime.InvokeVoidAsync("destroyCameraGlobal");
+        var _data = await service.DataSession(session.UserId);
+        if (!_data.Error)
+        {
+            anverso = _data.Response.Data.carnetAnverso;
+            reverso = _data.Response.Data.carnetReverso;
+            pruebaVida = _data.Response.Data.pruebaVida;
+            esMenor = _data.Response.Data.esMenor;
+            var state = await service.State(session.UserId);
+            finishedProcess = state.Response.Data.FinishedProcess;
+            if (finishedProcess)
+            {
+                error = state.Response.Data.Phase.ToUpper() == "TIMEOUTSTATE" || state.Response.Data.Phase.ToUpper() == "VERIFICATIONFAILSTATE";
+            }
+            loading = false;
+            if (finishedProcess)
+            {
+
+                timer = new Timer(async (object? stateInfo) =>
+                {
+                    time--;
+                    if (time <= 0)
+                    {
+                        string state = error ? "fail" : "success";
+                        navigationManager.NavigateTo($"FinishedProcess/{state}");
+                    }
+                    StateHasChanged();
+
+                }, new System.Threading.AutoResetEvent(false), 1000, 1000);
+            }
+        }
+        else
+        {
+            navigationManager.NavigateTo("401");
+        }
+        await base.OnInitializedAsync();
+    }
+    public async Task EventAnverso()
+    {
+        navigationManager.NavigateTo("CarnetIdentidad/Anverso");
+    }
+    public async Task EventReverso()
+    {
+        navigationManager.NavigateTo("CarnetIdentidad/Reverso");
+    }
+    public async Task EventPruebaVidaActiva()
+    {
+        navigationManager.NavigateTo("PruebaVidaPasiva");
+    }
+}

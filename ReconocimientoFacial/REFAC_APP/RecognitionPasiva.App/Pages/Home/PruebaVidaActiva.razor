@@ -1,0 +1,226 @@
+﻿@page "/PruebaVidaActiva"
+@inject IGatewayServices service
+@inject IJSRuntime JSRuntime
+@inject LoginSesion session
+@inject NavigationManager navigationManager
+@attribute [Authorize]
+
+@if (step == "1" || step == "2")
+{
+    <div style="display: flex; flex-direction: row; align-items: center; margin-bottom: 20px">
+        <button @onclick="EventBack" style="background: none; border: none; border-radius: 0px; width: 45px; height: 45px; padding: 0px;">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><rect x="0" y="0" width="24" height="24" fill="none" stroke="none" /><path fill="currentColor" d="M21 11H6.414l5.293-5.293l-1.414-1.414L2.586 12l7.707 7.707l1.414-1.414L6.414 13H21z" /></svg>
+        </button>
+        <h2 style="padding-left: 10px; margin: 0px; width: 100%; text-align: center">Reconocimiento Facial</h2>
+    </div>
+}
+
+@switch (step)
+{
+    case "1":
+        <div class="Step1RekognitionContent">
+            <div style="text-align: center;">
+                <label>Toma en cuenta las siguientes recomendaciones</label>
+            </div>
+            <div class="Step1Rekognition">
+                <div class="Step1RekognitionCard">
+                    <div style="width: 60px; height: 60px;">
+                        <img src="img/icon_step_1_instruccion.svg" width="55" height="55" />
+                    </div>
+                    <div style="padding: 15px;">
+                        <p>Tener Un <b>dispositivo con cámara</b> y <b>autorizar el acceso</b> de tu dispositivo.</p>
+                    </div>
+                </div>
+                <div class="Step1RekognitionCard">
+                    <div style="width: 60px; height: 60px;">
+                        <img src="img/icon_step_2_instruccion.svg" width="55" height="55" />
+                    </div>
+                    <div style="padding: 15px;">
+                        <p>Sitúate en un lugar con <b>buena iluminación</b>.</p>
+                    </div>
+                </div>
+                <div class="Step1RekognitionCard">
+                    <div style="width: 60px; height: 60px;">
+                        <img src="img/icon_step_3_instruccion.svg" width="55" height="55" />
+                    </div>
+                    <div style="padding: 15px;">
+                        <p>Debes tener el <b>rostro descubierto</b>.</p>
+                        <p style="font-size: 12px;">Evita los lentes, gorra, barbijo y <b>cualquier objeto que pueda interrumpir la validación de identidad.</b></p>
+                    </div>
+                </div>
+                <div class="Step1RekognitionCard">
+                    <div style="width: 60px; height: 60px;">
+                        <img src="img/icon_step_4_instruccion.svg" width="55" height="55" />
+                    </div>
+                    <div style="padding: 15px;">
+                        <p><b>Evita</b> que aparezcan otros rostros y aparatos electrónicos dentro del área designada.</p>
+                    </div>
+                </div>
+            </div>
+            <button @onclick='() => EventChange("2")'>Continuar</button>
+        </div>
+        break;
+    case "2":
+        <div class="Step2RekognitionContent">
+            <div style="text-align: center;">
+                <label>Sigue las instrucciones:</label>
+            </div>
+            <div class="Step2Rekognition">
+                <ul class="lst-number">
+                    <li>Centra tu rostro en el óvalo.</li>
+                    <li>Una vez validado te solicitará girar el cuello levantando la punta de la nariz al cuadro verde.</li>
+                </ul>
+                <img class="imgInstruction" src="img/instruction.gif" />
+            </div>
+            <button @onclick='() => EventChange("3")'>Empezar</button>
+        </div>
+        break;
+    case "3":
+        @if (loading)
+        {
+            <Recognition.App.Shared.Componente.LoadingComponent mensaje="@loadingMensaje"></Recognition.App.Shared.Componente.LoadingComponent>
+        }
+        @if (alert)
+        {
+            <Recognition.App.Shared.Componente.AlertComponent icono="@alertIcono" mensaje="@alertMensaje" btnText="Continuar" EventBoton="EventBack"></Recognition.App.Shared.Componente.AlertComponent>
+        }
+        <canvas id="sensor" style="position: fixed; top: 0px; left: 50%; transform: translate(-50%, 0%); visibility: collapse; object-fit: cover"></canvas>
+
+        <video id="camera" style="position: fixed; top: 0px; left: 50%; height: 100%; width: 100%; object-fit: cover; z-index: -1; transform: translate(-50%, 0%) scaleX(-1)" />
+        <canvas id="canvas" style="position: fixed; top: 0px; left: 50%; transform: translate(-50%, 0%)"></canvas>
+
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <label style="color: white; z-index: 1;">@mensaje</label>
+            <br />
+        </div>
+
+        <p style="position: fixed; text-align: center; justify-content: center; align-items: center; left: 0; width: 100%; bottom: 25px; color: white; z-index: 1; ">@time Tiempo restante para la verificación</p>
+        break;
+    default:
+        break;
+}
+
+@code {
+    private string step { get; set; }
+    private int time { get; set; }
+    private System.Threading.Timer? timer;
+    private System.Threading.Timer? timerRekognition;
+    private string mensaje { get; set; }
+    private bool loading { get; set; }
+    private string loadingMensaje { get; set; }
+    private bool alert { get; set; }
+    private string alertMensaje { get; set; }
+    private string alertIcono { get; set; }
+    private bool timeOut { get; set; }
+    private BCP.CROSS.MODELS.Response.InitRekognitionResponse instruction { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        step = "1";
+        time = 60;
+        loading = false;
+        timeOut = false;
+        mensaje = "Sitúa tu rostro dentro del área";
+        loadingMensaje = "Espere unos segundos";
+        await base.OnInitializedAsync();
+    }
+    async Task EventBack()
+    {
+        await JSRuntime.InvokeVoidAsync("stopVideo", "camera");
+        navigationManager.NavigateTo("Home");
+    }
+    async Task EventChange(string _step)
+    {
+        step = _step;
+        if (_step == "3")
+        {
+            loading = true;
+            await JSRuntime.InvokeVoidAsync("startVideoTimer", DotNetObjectReference.Create(this), "camera", "canvas", "sensor");
+        }
+    }
+  
+    [JSInvokable]
+    public async Task ProcessImage(string imageString)
+    {
+        byte[] imageData = Convert.FromBase64String(imageString.Split(',')[1]);
+        string image = Convert.ToBase64String(imageData);
+        var request = new BCP.CROSS.MODELS.Request.VerifyRequest
+        {
+            areaHeight = instruction.areaHeight,
+            areaLeft = instruction.areaLeft,
+            areaTop = instruction.areaTop,
+            areaWidth = instruction.areaWidth,
+            cumpleArea = "",
+            image64 = image,
+            imageHeight = instruction.imageHeight,
+            imageWidth = instruction.imageWidth,
+            minFaceAreaPercent = instruction.minFaceAreaPercent,
+            noseHeight = instruction.noseHeight,
+            noseLeft = instruction.noseLeft,
+            noseTop = instruction.noseTop,
+            noseWidth = instruction.noseWidth,
+            sessionId = session.UserId
+        };
+        var response = await service.Verify(request);
+        mensaje = response.Response.Data.message;
+        if (response.Response.Data.phase.ToUpper() == "INSTRUCTIONSTATE")
+        {
+            timer = null;
+            loadingMensaje = "Espere unos segundos. \r Estamos validando la información.";
+            loading = true;
+            StateHasChanged();
+        }
+        if (response.Response.Data.phase.ToUpper() == "VERIFICATIONFAILSTATE")
+        {
+            timerRekognition = null;
+            alertIcono = "uncheck.svg";
+            alertMensaje = "No es posible completar la solicitud. \r Por favor pase por una agencia o comuníquese con la Banca por Teléfono.";
+            alert = true;
+            StateHasChanged();
+        }
+        if (response.Response.Data.state)
+        {
+            timerRekognition = null;
+            alertIcono = "check.svg";
+            alertMensaje = "Verificación exitosa";
+            alert = true;
+            StateHasChanged();
+        }
+
+    }
+    [JSInvokable]
+    public async void StartTimer(int height, int width)
+    {
+        var response = await service.Init(session.UserId, session.CI, width, height);
+        instruction = response.Response.Data;
+        loading = false;
+        await JSRuntime.InvokeVoidAsync("DrawCanvasRectangle", "canvas", response.Response.Data.noseLeft, response.Response.Data.noseWidth, response.Response.Data.noseTop, response.Response.Data.noseHeight);
+        await JSRuntime.InvokeVoidAsync("DrawCanvasEllipse", "canvas", response.Response.Data.areaLeft, response.Response.Data.areaWidth, response.Response.Data.areaTop, response.Response.Data.areaHeight);
+        StateHasChanged();
+        timer = new Timer(async (object? stateInfo) =>
+        {
+            time--;
+            if (time <= 0 && !timeOut)
+            {
+                timer = null;
+                await JSRuntime.InvokeVoidAsync("stopVideo", "camera");
+                await service.TimeOut(session.UserId);
+                timeOut = true;
+                navigationManager.NavigateTo("Home");
+            }
+            StateHasChanged();
+
+        }, new System.Threading.AutoResetEvent(false), 1000, 1000);
+        timerRekognition = new Timer(async (object? stateInfo) =>
+        {
+            if (time > 0)
+            {
+                string image = await JSRuntime.InvokeAsync<String>("getFrame", "camera", "sensor", DotNetObjectReference.Create(this), width, height);
+            }
+            else
+            {
+                timerRekognition = null;
+            }
+        }, new System.Threading.AutoResetEvent(false), 1000, 2000);
+    }
+}

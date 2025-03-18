@@ -1,0 +1,114 @@
+[
+	[
+		{
+			"BoundingPoly": null,
+			"Confidence": 0,
+			"Description": "Eye",
+			"Locale": "",
+			"Locations": [],
+			"Mid": "/m/014sv8",
+			"Properties": [],
+			"Score": 0.9365261,
+			"Topicality": 0.9365261
+		},
+		{
+			"BoundingPoly": null,
+			"Confidence": 0,
+			"Description": "Handwriting",
+			"Locale": "",
+			"Locations": [],
+			"Mid": "/m/0gkxy13",
+			"Properties": [],
+			"Score": 0.9128841,
+			"Topicality": 0.9128841
+		},
+		{
+			"BoundingPoly": null,
+			"Confidence": 0,
+			"Description": "Human body",
+			"Locale": "",
+			"Locations": [],
+			"Mid": "/m/02p0tk3",
+			"Properties": [],
+			"Score": 0.8854568,
+			"Topicality": 0.8854568
+		},
+		{
+			"BoundingPoly": null,
+			"Confidence": 0,
+			"Description": "Jaw",
+			"Locale": "",
+			"Locations": [],
+			"Mid": "/m/01k9lj",
+			"Properties": [],
+			"Score": 0.8771413,
+			"Topicality": 0.8771413
+		},
+		{
+			"BoundingPoly": null,
+			"Confidence": 0,
+			"Description": "Slope",
+			"Locale": "",
+			"Locations": [],
+			"Mid": "/m/078hm",
+			"Properties": [],
+			"Score": 0.864814162,
+			"Topicality": 0.864814162
+		},
+		{
+			"BoundingPoly": null,
+			"Confidence": 0,
+			"Description": "Font",
+			"Locale": "",
+			"Locations": [],
+			"Mid": "/m/03gq5hm",
+			"Properties": [],
+			"Score": 0.833119452,
+			"Topicality": 0.833119452
+		},
+		{
+			"BoundingPoly": null,
+			"Confidence": 0,
+			"Description": "Triangle",
+			"Locale": "",
+			"Locations": [],
+			"Mid": "/m/07jx7",
+			"Properties": [],
+			"Score": 0.817330837,
+			"Topicality": 0.817330837
+		},
+		{
+			"BoundingPoly": null,
+			"Confidence": 0,
+			"Description": "Art",
+			"Locale": "",
+			"Locations": [],
+			"Mid": "/m/0jjw",
+			"Properties": [],
+			"Score": 0.8105746,
+			"Topicality": 0.8105746
+		},
+		{
+			"BoundingPoly": null,
+			"Confidence": 0,
+			"Description": "Rectangle",
+			"Locale": "",
+			"Locations": [],
+			"Mid": "/m/0j62f",
+			"Properties": [],
+			"Score": 0.8030522,
+			"Topicality": 0.8030522
+		},
+		{
+			"BoundingPoly": null,
+			"Confidence": 0,
+			"Description": "Parallel",
+			"Locale": "",
+			"Locations": [],
+			"Mid": "/m/030zfn",
+			"Properties": [],
+			"Score": 0.788464367,
+			"Topicality": 0.788464367
+		}
+	]
+]

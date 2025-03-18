@@ -1,0 +1,313 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\obj\\Debug\\net6.0\\build-gz\\UxYd13S2.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\obj\\Debug\\net6.0\\scopedcss\\bundle\\RecognitionPasiva.App.styles.css",
+      "PackagePath": "staticwebassets\\RecognitionPasiva.App.styles.css"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\appsettings.json",
+      "PackagePath": "staticwebassets\\appsettings.json"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\css\\Roboto\\Font\\Roboto-Bold.ttf",
+      "PackagePath": "staticwebassets\\css\\Roboto\\Font\\Roboto-Bold.ttf"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\css\\Roboto\\Font\\Roboto-Light.ttf",
+      "PackagePath": "staticwebassets\\css\\Roboto\\Font\\Roboto-Light.ttf"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\css\\Roboto\\Font\\Roboto-Regular.ttf",
+      "PackagePath": "staticwebassets\\css\\Roboto\\Font\\Roboto-Regular.ttf"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\css\\Roboto\\Font\\Roboto-Thin.ttf",
+      "PackagePath": "staticwebassets\\css\\Roboto\\Font\\Roboto-Thin.ttf"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\css\\app.less",
+      "PackagePath": "staticwebassets\\css\\app.less"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\css\\app.min.css",
+      "PackagePath": "staticwebassets\\css\\app.min.css"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\css\\cropper.min.css",
+      "PackagePath": "staticwebassets\\css\\cropper.min.css"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\icon.ico",
+      "PackagePath": "staticwebassets\\icon.ico"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\IconExclamation.svg",
+      "PackagePath": "staticwebassets\\img\\IconExclamation.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\Loading.svg",
+      "PackagePath": "staticwebassets\\img\\Loading.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\Logo BCP.svg",
+      "PackagePath": "staticwebassets\\img\\Logo BCP.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\MyImage.jpg",
+      "PackagePath": "staticwebassets\\img\\MyImage.jpg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\check.svg",
+      "PackagePath": "staticwebassets\\img\\check.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\check_v2.svg",
+      "PackagePath": "staticwebassets\\img\\check_v2.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\error.png",
+      "PackagePath": "staticwebassets\\img\\error.png"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\icon_advertencia.svg",
+      "PackagePath": "staticwebassets\\img\\icon_advertencia.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\icon_camara.svg",
+      "PackagePath": "staticwebassets\\img\\icon_camara.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\icon_cancel.svg",
+      "PackagePath": "staticwebassets\\img\\icon_cancel.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\icon_cap.svg",
+      "PackagePath": "staticwebassets\\img\\icon_cap.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\icon_carnet.svg",
+      "PackagePath": "staticwebassets\\img\\icon_carnet.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\icon_galeria.svg",
+      "PackagePath": "staticwebassets\\img\\icon_galeria.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\icon_glass.svg",
+      "PackagePath": "staticwebassets\\img\\icon_glass.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\icon_group.svg",
+      "PackagePath": "staticwebassets\\img\\icon_group.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\icon_light.svg",
+      "PackagePath": "staticwebassets\\img\\icon_light.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\icon_mask.svg",
+      "PackagePath": "staticwebassets\\img\\icon_mask.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\icon_ok.svg",
+      "PackagePath": "staticwebassets\\img\\icon_ok.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\icon_press_camera.svg",
+      "PackagePath": "staticwebassets\\img\\icon_press_camera.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\icon_state_false.svg",
+      "PackagePath": "staticwebassets\\img\\icon_state_false.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\icon_step_1_instruccion.svg",
+      "PackagePath": "staticwebassets\\img\\icon_step_1_instruccion.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\icon_step_2_instruccion.svg",
+      "PackagePath": "staticwebassets\\img\\icon_step_2_instruccion.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\icon_step_3_instruccion.svg",
+      "PackagePath": "staticwebassets\\img\\icon_step_3_instruccion.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\icon_step_4_instruccion.svg",
+      "PackagePath": "staticwebassets\\img\\icon_step_4_instruccion.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\icon_success.svg",
+      "PackagePath": "staticwebassets\\img\\icon_success.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\icon_time.svg",
+      "PackagePath": "staticwebassets\\img\\icon_time.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\img_anverso.svg",
+      "PackagePath": "staticwebassets\\img\\img_anverso.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\img_reconocimiento.svg",
+      "PackagePath": "staticwebassets\\img\\img_reconocimiento.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\img_reverso.svg",
+      "PackagePath": "staticwebassets\\img\\img_reverso.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\instruction.gif",
+      "PackagePath": "staticwebassets\\img\\instruction.gif"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\r-ic-rotate-left-r.svg",
+      "PackagePath": "staticwebassets\\img\\r-ic-rotate-left-r.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\r-ic-rotate-right-r.svg",
+      "PackagePath": "staticwebassets\\img\\r-ic-rotate-right-r.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\sp_clock_d.svg",
+      "PackagePath": "staticwebassets\\img\\sp_clock_d.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\spots-c-sp-camera-close-d-mobile.svg",
+      "PackagePath": "staticwebassets\\img\\spots-c-sp-camera-close-d-mobile.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\spots-c-sp-camera-close-d.svg",
+      "PackagePath": "staticwebassets\\img\\spots-c-sp-camera-close-d.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\step_1_anverso.svg",
+      "PackagePath": "staticwebassets\\img\\step_1_anverso.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\step_1_reverso.svg",
+      "PackagePath": "staticwebassets\\img\\step_1_reverso.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\step_2_anverso.svg",
+      "PackagePath": "staticwebassets\\img\\step_2_anverso.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\step_2_reverso.svg",
+      "PackagePath": "staticwebassets\\img\\step_2_reverso.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\img\\uncheck.svg",
+      "PackagePath": "staticwebassets\\img\\uncheck.svg"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\js\\canvas.js",
+      "PackagePath": "staticwebassets\\js\\canvas.js"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\js\\carnet-identidad.js",
+      "PackagePath": "staticwebassets\\js\\carnet-identidad.js"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\js\\cropper.min.js",
+      "PackagePath": "staticwebassets\\js\\cropper.min.js"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\js\\utilities.js",
+      "PackagePath": "staticwebassets\\js\\utilities.js"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\js\\webcam.js",
+      "PackagePath": "staticwebassets\\js\\webcam.js"
+    },
+    {
+      "Id": "D:\\T25208\\Reconocimiento Facial\\REFAC_APP\\RecognitionPasiva.App\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.RecognitionPasiva.App.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.RecognitionPasiva.App.props",
+      "PackagePath": "build\\RecognitionPasiva.App.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.RecognitionPasiva.App.props",
+      "PackagePath": "buildMultiTargeting\\RecognitionPasiva.App.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.RecognitionPasiva.App.props",
+      "PackagePath": "buildTransitive\\RecognitionPasiva.App.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

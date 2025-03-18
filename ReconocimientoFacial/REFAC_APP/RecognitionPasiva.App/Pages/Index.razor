@@ -1,0 +1,38 @@
+﻿@page "/session"
+@inject IGatewayServices service
+@inject ILoginServices loginService
+@inject NavigationManager navigationManager
+
+<PageTitle>Inicio Session</PageTitle>
+<RecognitionPasiva.App.Shared.Componente.LoadingComponent mensaje="Cargando"></RecognitionPasiva.App.Shared.Componente.LoadingComponent>
+
+@code{
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public string guid { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        
+        if (!string.IsNullOrEmpty(guid))
+        {
+            var response = await service.Token(sessionID: guid);
+            if (!response.Error)
+            {
+                await loginService.Login(response.Response);
+                navigationManager.NavigateTo("home");
+            }
+            else
+            {
+                await loginService.Logout();
+                navigationManager.NavigateTo("500");
+            }
+        }
+        else
+        {
+            await loginService.Logout();
+            navigationManager.NavigateTo("401");
+        }
+
+    }
+}

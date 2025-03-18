@@ -1,0 +1,9 @@
+Semilla encriptada 
+5AF8B3477B3B3A1456B2B6F3CFCE1ECFC1D6DC0E6E011324FCCB85A4 = SegCryptMARKETPLACE_SOLI_x64
+
+
+{
+  "nameUsuario": "Albert",
+  "tokenUsuario": "3d7bc30c-8954-4190-8b2c-f76e8b8f5003",
+  "empresaGuid": "100037663-3efe-4b1d-8745-ceb8c0d8067w"
+}

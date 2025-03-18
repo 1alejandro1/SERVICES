@@ -1,0 +1,19 @@
+﻿<Router AppAssembly="@typeof(App).Assembly">
+    <Found Context="routeData">
+        <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)">
+            <Authorizing>
+                <RecognitionPasiva.App.Shared.Componente.LoadingComponent mensaje="Autorizando"></RecognitionPasiva.App.Shared.Componente.LoadingComponent>
+            </Authorizing>
+            <NotAuthorized>
+                <RecognitionPasiva.App.Pages.HttpStatus.HttpStatus403 />
+            </NotAuthorized>
+        </AuthorizeRouteView>
+        <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+    </Found>
+    <NotFound>
+        <PageTitle>Not found</PageTitle>
+        <LayoutView Layout="@typeof(MainLayout)">
+            <RecognitionPasiva.App.Pages.HttpStatus.HttpStatus404 />
+        </LayoutView>
+    </NotFound>
+</Router>

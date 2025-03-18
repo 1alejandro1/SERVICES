@@ -1,0 +1,112 @@
+[
+	{
+		"BoundingPoly": null,
+		"Confidence": 0,
+		"Description": "Eye",
+		"Locale": "",
+		"Locations": [],
+		"Mid": "/m/014sv8",
+		"Properties": [],
+		"Score": 0.9351776,
+		"Topicality": 0.9351776
+	},
+	{
+		"BoundingPoly": null,
+		"Confidence": 0,
+		"Description": "Gesture",
+		"Locale": "",
+		"Locations": [],
+		"Mid": "/m/0244x1",
+		"Properties": [],
+		"Score": 0.852604866,
+		"Topicality": 0.852604866
+	},
+	{
+		"BoundingPoly": null,
+		"Confidence": 0,
+		"Description": "Art",
+		"Locale": "",
+		"Locations": [],
+		"Mid": "/m/0jjw",
+		"Properties": [],
+		"Score": 0.841462255,
+		"Topicality": 0.841462255
+	},
+	{
+		"BoundingPoly": null,
+		"Confidence": 0,
+		"Description": "Handwriting",
+		"Locale": "",
+		"Locations": [],
+		"Mid": "/m/0gkxy13",
+		"Properties": [],
+		"Score": 0.839747,
+		"Topicality": 0.839747
+	},
+	{
+		"BoundingPoly": null,
+		"Confidence": 0,
+		"Description": "Plant",
+		"Locale": "",
+		"Locations": [],
+		"Mid": "/m/05s2s",
+		"Properties": [],
+		"Score": 0.820659,
+		"Topicality": 0.820659
+	},
+	{
+		"BoundingPoly": null,
+		"Confidence": 0,
+		"Description": "Slope",
+		"Locale": "",
+		"Locations": [],
+		"Mid": "/m/078hm",
+		"Properties": [],
+		"Score": 0.808984935,
+		"Topicality": 0.808984935
+	},
+	{
+		"BoundingPoly": null,
+		"Confidence": 0,
+		"Description": "Twig",
+		"Locale": "",
+		"Locations": [],
+		"Mid": "/m/016nqt",
+		"Properties": [],
+		"Score": 0.7939053,
+		"Topicality": 0.7939053
+	},
+	{
+		"BoundingPoly": null,
+		"Confidence": 0,
+		"Description": "Font",
+		"Locale": "",
+		"Locations": [],
+		"Mid": "/m/03gq5hm",
+		"Properties": [],
+		"Score": 0.7643255,
+		"Topicality": 0.7643255
+	},
+	{
+		"BoundingPoly": null,
+		"Confidence": 0,
+		"Description": "Wire fencing",
+		"Locale": "",
+		"Locations": [],
+		"Mid": "/m/0h8xdq1",
+		"Properties": [],
+		"Score": 0.7274968,
+		"Topicality": 0.7274968
+	},
+	{
+		"BoundingPoly": null,
+		"Confidence": 0,
+		"Description": "Music",
+		"Locale": "",
+		"Locations": [],
+		"Mid": "/m/04rlf",
+		"Properties": [],
+		"Score": 0.711128831,
+		"Topicality": 0.711128831
+	}
+]

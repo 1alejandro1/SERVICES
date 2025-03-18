@@ -1,0 +1,36 @@
+Segip Servicio General de
+Identificación Personal
+eres Unico
+C1:<5674962>
+Información complementarla
+SALE BE
+Apellido del esposo: <ROMERO>
+imiento
+Sistema
+M
+Fecha de impresión:
+Información del ciudadano nacional
+Pa La
+Primer apellido: <GALLARDO>
+Segundo apellido: <TORREZ>
+Nombre(s): <APOLONIA>
+Fecha de nacimiento: <09/02/1964>
+Procedencia: <CONSOLIDADO>
+Tipo de registro: <REGISTRO NACIONAL>
+Domicilio: <RES. LA BANDA CULPINA-CH.>
+Estado civil: <CASADA>
+***
+País: <BOLIVIA>
+Departamento: <CHUQUISACA>
+Provinda: <SUD CINTI>.
+Localidad: <EL TOLAR>
+Convenio Inter-Institucional
+ELIN
+Certificación de datos
+CONVENIO
+26-04-2019 2:36:20 PM
+Institución! BANCO MERCANTIL SANTA CRUZ
+Nombre de usuario CARMEN REMEDIOS CONDO AMADOR
+Para verificar la validez del documento, debe ser remitido al Servicio General de Identificación Personal.
+suMGal14-0023406
+:

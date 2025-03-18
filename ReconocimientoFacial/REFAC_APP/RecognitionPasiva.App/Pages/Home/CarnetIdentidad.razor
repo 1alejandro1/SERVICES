@@ -1,0 +1,269 @@
+﻿@page "/CarnetIdentidad/{tipo}"
+@using System.Text.RegularExpressions
+@using System.Text
+
+@inject LoginSesion session
+@inject NavigationManager navigationManager
+@inject IJSRuntime JSRuntime
+@inject IGatewayServices service
+@attribute [Authorize]
+
+@if (step == 1 || (step == 2 && !isMovil) || step == 3)
+{
+    <div style="display: flex; flex-direction: row; align-items: center; margin-bottom: 20px">
+        <button @onclick="EventBack" style="background: none; border: none; border-radius: 0px; width: 45px; height: 45px; padding: 0px;">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><rect x="0" y="0" width="24" height="24" fill="none" stroke="none" /><path fill="currentColor" d="M21 11H6.414l5.293-5.293l-1.414-1.414L2.586 12l7.707 7.707l1.414-1.414L6.414 13H21z" /></svg>
+        </button>
+        <h2 style="padding-left: 10px; margin: 0px; width: 100%; text-align: center">Instrucciones</h2>
+    </div>
+}
+@if (loading)
+{
+    <RecognitionPasiva.App.Shared.Componente.LoadingComponent mensaje="@loadingMensaje"></RecognitionPasiva.App.Shared.Componente.LoadingComponent>
+}
+@if (alert)
+{
+    <RecognitionPasiva.App.Shared.Componente.AlertComponent icono="@alertIcono" mensaje="@alertMensaje" btnText="Continuar" EventBoton="EventBack"></RecognitionPasiva.App.Shared.Componente.AlertComponent>
+}
+@switch (step)
+{
+    case 1:
+        <div style="text-align: center;">
+            <p>Asegúrate que el carnet del lado <strong>@tipo.ToUpper()</strong> se encuentre dentro del recuadro marcado.<br />y la camara de tu dispositivo tenga acceso permitido</p>
+        </div>
+        <div id="instruccionesPaso1" style="display: flex; flex-direction: column; align-items: center;">
+            <div class="HomeContent">
+                <div class="HomeCard">
+                    <div style="width: 115px; height: 75px;">
+                        <img src="img/step_1_@(tipo.ToLower()).svg" />
+                    </div>
+                    <div style="display: flex; flex-direction: column; padding: 15px;">
+                        <p>Asegúrate de tener tu <strong>carnet de identidad vigente</strong> a la mano.</p>
+                    </div>
+                </div>
+                <div class="HomeCard">
+                    <div style="width: 115px; height: 75px;">
+                        <img src="img/step_2_@(tipo.ToLower()).svg" />
+                    </div>
+                    <div style="display: flex; flex-direction: column; padding: 15px;">
+                        <p>Asegúrate que <strong>la totalidad del carnet quede dentro del espacio delimitado</strong> al momento de tomar la fotografía.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div id="divSubirArchivo">
+                @if (!isMovil)
+                {
+                    <input style="display:none;" id="fileCargarCI" type="file" accept="image/*" @onchange="SubirCI" />
+                    <button id="btCargarCI" @onclick="EjecutarFile">Seleccionar imagen</button>
+                }
+                else
+                {
+                    <button id="btCargarCI" @onclick="SiguienteStep">Continuar</button>
+                }
+            </div>
+            <div class="HomeAlert">
+                <img src="img/IconExclamation.svg" style="position: absolute; left: 50%; transform: translate(-50%, 0%)" />
+                <div class="HomeAlertBorder">
+                    <p style="color: #1890FF; text-align: center; font-size: 13px;">Validaremos la información y las fotografías cargadas. Si alguno de los documentos no cumpliera con los requisitos, se rechazará la solicitud debiendo intentar nuevamente.</p>
+                </div>
+            </div>
+        </div>
+        break;
+    case 2:
+        @if (!isMovil)
+        {
+            <div id="divVisualizarArchivo" style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+                <div style="text-align: center;">
+                    <p>Asegúrate que el carnet del lado <strong>@tipo.ToUpper()</strong> se encuentre dentro del recuadro marcado.</p>
+                </div>
+                <div style="display: flex; flex-direction: row; margin-top: 20px; margin-bottom: 20px;">
+                    <div id="btGirarIzq" style="flex-direction: row; margin-right: 10px; cursor: pointer;" @onclick='()=>GirarImagen("L")'>
+                        <img src="img/r-ic-rotate-left-r.svg" />
+                    </div>
+                    <div id="btGirarDer" style="flex-direction: row; margin-left: 10px; cursor: pointer; " @onclick='()=>GirarImagen("R")'>
+                        <img src="img/r-ic-rotate-right-r.svg" />
+                    </div>
+                </div>
+                <div id="panelFotografia">
+                    <input type="hidden" id="hTamanioImagen" />
+                    <img id="panelCI" />
+                </div>
+                <div style="display: flex; flex-direction: row; margin-top: 20px; margin-bottom: 20px;">
+                    <button id="btGuardarImagen" style="width:300px;" @onclick="GuardarCI">Recortar y subir foto</button>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div id="tomarFotografia" style="position: fixed; top: 0px; left: 50%; height: 100%; width: 100%; z-index: -1; transform: translate(-50%, 0%) scaleX(-1)">
+                <div class="content_video_document">
+                    <canvas id="canvas_sensor" class="canvasUnited" style="visibility: visible;"></canvas>
+                    <video id="viewCamera" class="canvasUnited" playsinline @onplay="DibujarRecuadro"></video>
+                    <canvas id="canvas_cropper" class="canvasUnited"></canvas>
+                </div>
+            </div>
+            <div style="position: fixed; display: flex; justify-content: center; align-items: center; left:0; width:100%; bottom: 25px;">
+                <button style="background: none" @onclick="CapturarFotografia">
+                    <div style="background: white; border-radius: 50%; width: 55px; height: 55px; padding-top: 10px; margin: auto;">
+                        <img src="img/icon_camara.svg" />
+                    </div>
+                    <label style="color: white; font-size: 15px">Tomar<br />Fotografia</label>
+                </button>
+            </div>
+        }
+        break;
+    case 3:
+        if (isMovil)
+        {
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <div id="divCanvas"></div>
+                <div class="CarnetContainer">
+                    <button class="secondary" id="btVolerCargarImagen" @onclick="VolverCargarFotografia">Reintentar</button>
+                    <button id="btGuardarImagen" @onclick="GuardarCI">Cargar</button>
+                </div>
+            </div>
+        }
+        break;
+}
+
+@code {
+    [Parameter] public string tipo { get; set; }
+    private int step { get; set; }
+    private bool isMovil { get; set; }
+    private bool loading { get; set; }
+    private string loadingMensaje { get; set; }
+    private bool alert { get; set; }
+    private string alertIcono { get; set; }
+    private string alertMensaje { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        step = 1;
+        loading = false;
+        alert = false;
+        loadingMensaje = "Espere unos segundos";
+        isMovil = await JSRuntime.InvokeAsync<bool>("isDevice");
+        bool navigation = (tipo == "Anverso" || tipo == "Reverso");
+        if (!navigation)
+        {
+            navigationManager.NavigateTo("home");
+        }
+        await base.OnInitializedAsync();
+    }
+
+    public async Task IniciarVideo()
+    {
+        var cameraStatus = await JSRuntime.InvokeAsync<string>("startVideoCanvas", DotNetObjectReference.Create(this), "viewCamera", "canvas_cropper", "canvas_sensor")
+            .ConfigureAwait(false);
+        if (!cameraStatus.Equals(""))
+        {
+            navigationManager.NavigateTo("NotCamera");
+        }
+    }
+
+    public async Task SiguienteStep()
+    {
+        step++;
+        loading = true;
+        StateHasChanged();
+        await IniciarVideo();
+    }
+
+    public async Task EjecutarFile()
+    {
+        await JSRuntime.InvokeVoidAsync("ejecutarFile");
+    }
+
+    public async Task CapturarFotografia()
+    {
+        await JSRuntime.InvokeVoidAsync("captureDocumentFromVideo", DotNetObjectReference.Create(this), "viewCamera").ConfigureAwait(false);
+    }
+
+    public async Task SubirCI()
+    {
+        await JSRuntime.InvokeVoidAsync("subirFotografia");
+        step++;
+    }
+    public async Task GirarImagen(string sentido)
+    {
+        await JSRuntime.InvokeVoidAsync("rotarImagen", sentido);
+    }
+    public async Task GuardarCI()
+    {
+        if (!isMovil)
+        {
+            await JSRuntime.InvokeVoidAsync("guardarImagen", DotNetObjectReference.Create(this));
+        }
+        else
+        {
+            await JSRuntime.InvokeVoidAsync("guardarFotografia", DotNetObjectReference.Create(this));
+        }
+    }
+
+    [JSInvokable]
+    public void OnLoad()
+    {
+        loading = false;
+        StateHasChanged();
+    }
+
+    [JSInvokable]
+    public async Task ConfirmarFotografia()
+    {
+        step++;
+    }
+
+    public async Task VolverCargarFotografia()
+    {
+        step--;
+        await IniciarVideo();
+    }
+
+    [JSInvokable]
+    public async Task ProcesarImagen(string imagen)
+    {
+        loadingMensaje = "Espere unos segundos. \r Estamos validando la información.";
+        loading = true;
+        var response = await service.LoadImage(session.UserId, CleanBase64(imagen), tipo.ToUpper());
+        if (!response.Error)
+        {
+            if (response.Response.Data.State)
+            {
+                navigationManager.NavigateTo("Home");
+            }
+            else
+            {
+                alertIcono = "uncheck.svg";
+                alertMensaje = response.Response.Data.Message;
+                alert = true;
+                StateHasChanged();
+            }
+        }
+        else
+        {
+            alertIcono = "uncheck.svg";
+            alertMensaje = response.Response.Data.Message;
+            alert = true;
+            StateHasChanged();
+        }
+    }
+
+    private static string CleanBase64(string image)
+    {
+        image = Regex.Replace(image, @"^data:image\/[a-zA-Z]+;base64,", string.Empty);
+        StringBuilder _sb = new StringBuilder();
+        _sb.Append(image);
+        return _sb.ToString();
+    }
+
+    async Task EventBack()
+    {
+        navigationManager.NavigateTo("home");
+    }
+
+    public async Task DibujarRecuadro()
+    {
+        await JSRuntime.InvokeVoidAsync("drawSquareToVideo", "viewCamera", "canvas_cropper");
+    }
+}
