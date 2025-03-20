@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <section name="New_MIC.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+    </sectionGroup>
+  </configSections>
+  <connectionStrings>
+    <add name="New_MIC.Properties.Settings.ParametricaMICConnectionString" connectionString="Data Source=|DataDirectory|\BDlocal\ParametricaMIC.sdf" providerName="Microsoft.SqlServerCe.Client.4.0" />
+    <add name="New_MIC.Properties.Settings.ParametricaMICConnectionString1" connectionString="Data Source=|DataDirectory|\Bdlocal2\ParametricaMIC.sdf" providerName="Microsoft.SqlServerCe.Client.4.0" />
+    <add name="New_MIC.Properties.Settings.ParametricaMICConnectionString2" connectionString="Data Source=|DataDirectory|\BDlocal\ParametricaMIC.sdf" providerName="Microsoft.SqlServerCe.Client.4.0" />
+  </connectionStrings>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
+  </startup>
+
+
+  <appSettings>
+  	<add key="SERVICIO.COORDINADOR.URL.1.6" 
+        value="https://btbnac01/MicreditoCoordinator/BCPService.svc" />
+	<add key="SERVICIO.COORDINADOR.CANAL" value="MICREDITO" />
+	<add key="SERVICIO.COORDINADOR.ASFI.CICS" value="/consulta/circ/v1" />
+	<add key="SERVICIO.COORDINADOR.ASFI.CPOP" value="/consulta/cpop/v1" />
+	<add key="SERVICIO.COORDINADOR.ASFI.CARTA" value="/carta/cpop/v1" />
+	<add key="SERVICIO.COORDINADOR.ASFI.CPOP.VALIDACION" value="/validacion/cpop/v1" />
+	<add key="SERVICIO.COORDINADOR.CALS.TASA" value="/consulta/tasa/v1" />
+   	<add key="SERVICIO.COORDINADOR.ESTADO" value="/servicio/enlinea/v1" />
+   	<add key="SERVICIO.COORDINADOR.CALS.TASA.REGISTRO" value="/tasa/preferencial/registro/v1" />
+   	<add key="SERVICIO.COORDINADOR.CALS.TASA.CONSULTA" value="/tasa/preferencial/consulta/v1" />
+	<add key="DATA_SOURCE_BD_LOCAL" value="D:\MICREDITO\" />
+	<add key="DIRECTORIO_LOG" value="D:\MICREDITO\CLI_Org_MiCredito" />
+	<add key="DirecDailyLogs" value="D:\MICREDITO\Logs_MICredito/${shortdate}/${shortdate}" />
+	<!--INICIO API CORE -->
+	<add key="PRODUCTOS_HIPOTECARIOS" value="120;143;151;153" />
+	<add key="URL_BASE_CORE" value="https://btbnmw00/ApiCore/api/" />
+    	<add key="CANAL_CORE" value="MICREDIUSER" />
+    	<add key="USUARIO_CORE" value="MICREDI_USER" />
+    	<add key="PASSWORD_CORE" value="E810D86FE6D2A81D48CF8D5169E29FA79F1840FF3C5AEF7E332EEB44D8C1" />
+    	<add key="TOKEN_CORE" value="EE9F4A7C-5ECD-4E8A-902B-A42F3CF61AA3" />
+    	<!--FIN API CORE -->
+
+
+
+    <!--PROYECTO EN PROCESO-->
+    <add key="PARAMETROS" value=" 'ACPD', 'DCLD', 'IVRQ'" />
+    <add key="URL_BASE" value="http://btbnmw00/srv_mic_coordinador/api/"/>
+
+    <add key="URL_SEGNET" value="http://btbiis00/WS_SegNet_Mic/WSSegNet.svc" />  
+    <!--PARAMETROS LOGS-->
+    <add key="APLICACION" value="MiCredito" />
+    <add key="ENTRADA_LOG" value="LOG_CLI_MICREDITO" />
+    <add key="REMITENTE_CORREOS" value="" />
+    <add key="SERVIDOR_CORREOS" value="" />
+    <add key="DESTINATARIO_CORREOS" value="" />
+    <!-- ACCESO A LOGS -->
+    <add key="LayoutNlog" value="${longdate} ${logger} ${message}" />
+    <!--UBICACION SECRIPT-->
+    <add key="segurinet.ubicacionSegCrypt" value="D:\SegCryptHILEC.dll" />
+    <!-- RUTA CONTRATO -->
+    <add key="RUTA_CONTRATO" value="D:\Contratos\" />
+    <!-- POLITICA ACCESO AL JEFE DE OFICINA -->
+    <add key="POLITICA_JEFEOFICINA" value="Evaluacion2" />
+    <!-- ACCESO A BASE DE DATOS DB_CAMPMKT -->
+    <add key="Server_MKT" value="BCRMKT00"></add>
+    <add key="BaseDatos_MKT" value="DB_CAMPMKT"></add>
+    <add key="Usuario_MKT" value="UsrHojaPDH"></add>
+    <add key="Password_MKT" value="UsrHojaPDH"></add>
+    <add key="Exactitud" value="0.01" />
+  
+    <!-- TIPOS TARJETA -->
+    	<add key="CLASICA" value="CLASICA REGULAR"/>
+	<add key="TRAVEL" value="SIGNATURE"/>
+	<add key="ORO" value="ORO"/>
+	<add key="NAZIR PYME" value="NAZIR PYME"/>
+	<add key="PRODUCTOS_ATC" value="NAZIR PYME"/>
+	<add key="FILTROSIIILINK" value="http://btbnmw00/Filtros III/"/>
+    <!-- LINK REGISTRO INFOCLIENTE -->
+    <add key="LINKINFOCLIENTE" value="https://btbweb00/Infoclientes/Busquedas/BusquedaClientes.aspx"/>
+ 
+    <!-- TIPOS DE SEGURO DESGRAVAMEN-->
+    <add key="COD_TIPOSEGURO" value="1,3"/>
+    
+    <!-- TIPOS DE CONTRATO-->
+    <add key="COD_TIPOCONTRATO" value="1"/>
+   
+    <!-- JUSTIFICACION DE ACEPTACION-->
+    <add key="COD_JUSTIFICACION" value="EVCC"/>
+   
+    <!-- VAL-->
+    <add key="VALOR" value="0"/>
+    
+    <add key="RESTRICCION_PDH" value="ND" />
+    <add key="RESTRICCION_PDH_M" value="0" />
+    <add key="ClientSettingsProvider.ServiceUri" value="" />
+<!--PARAMETROS MICRO-->
+    <add key="TIPO_PRODUCTO" value="HIMS"/>
+    <add key="CRED_PROD" value="0"/>
+    <add key="COD_ACFIJ" value="SFCT"/>
+    <add key="COD_CAPTRA" value="SFAF"/>
+<!-- LINK REGISTRO DATA ENTRY -->
+<add key="LINK_DATAENTRY" value="https://btbweb00/Infoclientes/Busquedas/BusquedaClientes.aspx"/>
+
+
+
+  </appSettings>
+  <system.serviceModel>
+    <bindings>
+      <basicHttpBinding>
+        <binding name="BasicHttpBinding_IServiceUsuarioDom" maxReceivedMessageSize="20000000" />
+        <binding name="BasicHttpBinding_IService1" />
+      </basicHttpBinding>
+      <customBinding>
+        <binding name="WebHttpBinding_IWSSegNet">
+          <textMessageEncoding messageVersion="Soap12" />
+        </binding>
+      </customBinding>
+    </bindings>
+    <client>
+      <endpoint address="http://devwsa11/SRV_MIC_GRUPODOMINIO/ServiceUsuarioDom.svc" binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IServiceUsuarioDom" contract="ServicioPoliticas.IServiceUsuarioDom" name="BasicHttpBinding_IServiceUsuarioDom" />
+      <endpoint binding="customBinding" bindingConfiguration="WebHttpBinding_IWSSegNet" contract="Segurinet.IWSSegNet" name="WebHttpBinding_IWSSegNet" />
+      <endpoint address="http://devwsa00.bancred.com.bo/WcfSimuladorExtranet/Service1.svc" binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IService1" contract="SrvSimulador.IService1" name="BasicHttpBinding_IService1" />
+    </client>
+  </system.serviceModel>
+  <system.web>
+    <membership defaultProvider="ClientAuthenticationMembershipProvider">
+      <providers>
+        <add name="ClientAuthenticationMembershipProvider" type="System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" />
+      </providers>
+    </membership>
+    <roleManager defaultProvider="ClientRoleProvider" enabled="true">
+      <providers>
+        <add name="ClientRoleProvider" type="System.Web.ClientServices.Providers.ClientRoleProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" cacheTimeout="86400" />
+      </providers>
+    </roleManager>
+  </system.web>
+</configuration>
